@@ -1,0 +1,19 @@
+a {
+	color: inherit;
+
+	&:visited {
+		color: inherit;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $yellow;
+	}
+	&:focus {
+		
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

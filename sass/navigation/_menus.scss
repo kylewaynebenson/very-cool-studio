@@ -1,0 +1,95 @@
+.main-navigation {
+	@media screen and (max-width: 37.5em) {
+		display: block;
+		float: right;
+		width: 100%;
+	}
+
+	ul {
+		@media screen and (max-width: 37.5em) {
+		display: none;
+		}
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		margin-top: -9px;
+		margin-bottom: 5px;
+	}
+	
+	li {
+		float: right;
+		position: relative;
+		padding-left: 30px;
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+	
+	a {
+		display: inline-block;
+		text-decoration: none;
+		font-family: $type-subhead;
+		font-weight: 300;
+		font-size: 1.6em;
+		line-height: 1;
+		padding-bottom: 10px;
+		letter-spacing: .02em;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+
+	font-family: 'Very Cool Icons';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.65em;
+	line-height: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (min-width: 37.5em) {
+	.site-branding, .site-title {
+		display: block;
+		float: left;
+		font-size: 1.02em;
+	}
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+		float: right;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}

@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Business Script';
+  font-weight: 300;
+  src: url('./type/BusinessScript-Regular.eot'); /* IE9 Compat Modes */
+  src: url('./type/BusinessScript-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./type/BusinessScript-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./type/BusinessScript-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+}
+@font-face {
+  font-family: 'Clayton Neue';
+  font-weight: 300;
+  src: url('./type/ClaytonNeue-Regular.eot'); /* IE9 Compat Modes */
+  src: url('./type/ClaytonNeue-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./type/ClaytonNeue-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./type/ClaytonNeue-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+}
+@font-face {
+  font-family: 'Clayton Neue';
+  font-weight: 600;
+  src: url('./type/ClaytonNeue-Bold.eot'); /* IE9 Compat Modes */
+  src: url('./type/ClaytonNeue-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./type/ClaytonNeue-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./type/ClaytonNeue-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+}
+@font-face {
+  font-family: 'Very Cool Icons';
+  src: url('./type/verycoolicons-regular.eot'); /* IE9 Compat Modes */
+  src: url('./type/verycoolicons-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./type/verycoolicons-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./type/verycoolicons-regular.woff') format('woff'), /* Pretty Modern Browsers */
+}
+.icon:before {
+    display: inline-block;
+    font-family: 'Very Cool Icons';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.6em;
+    line-height: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-2x:before {
+	font-size: 4em;
+}
+.icon-3x:before {
+	font-size: 4.4em;	
+}
+.icon-4x:before {
+	font-size: 5em;	
+}
+.icon-5x:before {
+	font-size: 6em;
+}
+.icon-logo:before {
+	content: "\E001";
+}
+.icon-squiggle:before {
+	content: "\E002";
+}
+.icon-hamburger:before {
+	content: "\E003";
+}
+.icon-pizza:before {
+	content: "\E005";
+}
+
+$type-text: "Cornbread";
+$type-headline: "Cornbread";
+$type-subhead: "Clayton Neue";
+$type-script-subhead: "Business Script";
+
+body,
+button,
+input,
+select,
+textarea {
+	color: $color__text-main;
+	font-family: $type-text;
+	@include font-size(1);
+	line-height: 1.6;
+}
+
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+
+@import "headings";
+
+@import "copy";

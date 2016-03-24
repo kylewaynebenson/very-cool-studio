@@ -1,0 +1,412 @@
+/*!
+Theme Name: verycoolstudio
+Theme URI: http://underscores.me/
+Author: Kyle Wayne Benson
+Author URI: http://kylewaynebenson.com
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: verycool
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+verycoolstudio is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Layout
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+    ## Posts and pages
+	## Asides
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "normalize";
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import "susy";
+
+$susy: (
+  columns: 24,  // The number of columns in your grid
+  gutters: 1/2, // The size of a gutter in relation to a single column
+  gutter-position: inside,
+);
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+.squiggle-divider-full {
+	&:after {
+		user-select: none; 
+		text-indent: 6px;
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		display: block;
+		font-family: 'Very Cool Icons';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1.65em;
+		overflow: hidden;
+		line-height: 1.1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		text-overflow: clip;
+		content: "\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002";
+	}
+}
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import "navigation/navigation";
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings";
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "site/secondary/widgets";
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+@import "site/site";
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import "modules/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";
+
+/*--------------------------------------------------------------
+# Link Styles
+--------------------------------------------------------------*/
+a.no-style {
+	text-decoration: none;
+	color: inherit;
+	&:hover {
+		color: inherit;
+	}
+}
+a.squiggle {
+	text-decoration: none;
+	font-family: $type-subhead;
+	font-weight: 500;
+	font-size: 1.3em;
+	letter-spacing: .05em;
+	display: inline-block;
+	padding-bottom: 7px;
+	color: $yellow;
+	text-decoration: none;
+	font-family: $type-subhead;
+	font-weight: 500;
+	font-size: 1.3em;
+	letter-spacing: .05em;
+	display: inline-block;
+	padding-bottom: 7px;
+	color: $yellow;
+	background-image: url(img/squiggle-yellow.png);
+	background-repeat: repeat-x;
+	background-position: 0px 100%;
+	background-size: 14px 9px;
+}
+.cat-links {
+	a {
+		margin-right: 3px;
+		background: $black;
+		color: $white;
+		font-family: $type-subhead;
+		letter-spacing: .08em;
+		font-size: 12px;
+		line-height: 1;
+		padding: 2px 8px 3px 8px;
+		font-weight: 500;
+		text-transform: uppercase;
+
+	}
+}
+
+/*--------------------------------------------------------------
+# Container Styles
+--------------------------------------------------------------*/
+.container {
+	margin-left: 2%;
+	margin-right: 2%;
+	@media (min-width: 768px) {
+		margin: 0 auto;
+		width: 768px;
+	}
+	@media (min-width: 1080px) {
+		margin: 0 auto;
+		width: 1050px;
+	}
+}
+/*--------------------------------------------------------------
+# Loop Styles
+--------------------------------------------------------------*/
+.blog, .home {
+	article.post {
+		float: left;
+		color: $white;
+		background:
+			linear-gradient(135deg, transparent 0px, $black 0) top left,
+			linear-gradient(225deg, transparent 0px, $black 0) top right,
+			linear-gradient(315deg, transparent 15px, $black 0) bottom right,
+			linear-gradient(45deg,  transparent 15px, $black 0) bottom left;
+		background-size: 52% 52%;
+		background-repeat: no-repeat;
+		a {
+			text-decoration: none;
+		}
+		h4, .h4 {
+			margin: -5px 0px 7px 0px;
+		}
+		@media only screen and (min-width: 600px) and (max-width: 1039px) {
+			width: span(10);
+			margin-right: span(1);
+			margin-left: span(1);
+			margin-bottom: span(2);
+		}
+		@media (min-width: 1040px) {
+			width: span(7.33333333333);
+			margin-right: span(1);
+			margin-bottom: span(1);
+			.attachment-post-thumbnail {
+				max-height: 276px;
+				width: auto;
+			}
+			&:nth-of-type(3) {
+				margin-right: 0px;
+			}
+			&.category-type.category-for-sale {
+				width: span(15.666666666666);
+				margin-right: 0px;
+				& + article.post {
+					margin-right: 0px;
+					margin-left: span(1);	
+				}
+			}
+		}
+		.entry-header {
+			background: $white;
+			padding: 18px 19px;
+			border: 3px solid $black;
+		}
+		.entry-footer {
+			padding: 20px;
+			.cat-links {
+				a {
+					background: $yellow;
+					color: $black;
+				}
+			}
+		}
+	}
+}
+/*--------------------------------------------------------------
+# Page Styles
+--------------------------------------------------------------*/
+#page {
+	padding: 10px;
+	color: $black;
+	background: $gray-1;
+	@media (min-width: 480px) {
+		padding: 25px;
+	}
+}
+#white-page.white-page {
+	background: $white;
+	padding: 15px;
+	@media (min-width: 768px) {
+		padding: 35px 50px;
+	}
+	@media (min-width: 1148px) {
+		margin: 0 auto;
+		width: 1148px;
+	}
+}
+.yellow-page {
+	color: $black;
+	background: $yellow;
+	margin-bottom: 1.2em;
+	margin-top: 0px;
+	padding: 15px;
+	.very-cool-flag {
+		img {
+			max-width: 100%;
+		}
+		width: 210px;
+		display: block;
+		margin: 0 auto;
+	}
+	.intro-text {
+		&:first-letter { 
+			float: left; 
+			font-size: 3em; 
+			line-height: .95; 
+			padding-top: 4px; 
+			padding-right: 9px; 
+			padding-left: 0px; 
+		}
+		@media (min-width: 768px) {
+			margin-bottom: 3em;
+		}
+	}
+	@media (min-width: 768px) {
+		padding: 35px 50px;
+		h2, .h2 {
+			text-align: center;
+		}
+		.intro-text {
+			column-count: 2;
+			column-gap: 40px;
+		}
+	}
+	@media (min-width: 1148px) {
+		margin: 0 auto;
+		width: 1148px;
+		margin-bottom: 2.5em;
+		padding: 115px;
+	}
+	.box {
+		background: $white;
+		box-shadow: -6px 6px $black;
+		padding: .3em 1.6em;
+		margin: 1.2em auto;
+		h3, h5 {
+			display: inline-block;
+			margin-top: 13px;
+			margin-bottom: 8px;
+		}
+		h3 {
+			margin-top: 0px;
+			margin-right: 8px;
+		}
+		h5.year {
+			float: right;
+		}
+		ul.list-inline {
+			margin-bottom: .85em;
+		}
+	}
+	.box + .box {
+		margin-top: 1.2em;
+		@media (min-width: 768px) {
+			margin-top: 2.5em;
+		}
+	}
+}
+/*--------------------------------------------------------------
+# Footer Styles
+--------------------------------------------------------------*/
+header.site-header {
+	padding-top: 10px;
+	margin-bottom: 18px;
+}
+footer.footer {
+	background: $gray-1;
+	padding-top: 1.2em;
+	@media (min-width: 1148px) {
+		padding-top: 2em;
+	}
+	@include clearfix;
+	.footer-contact {
+		@media (min-width: 768px) {
+			float: left;
+			width: span(14);
+			.contact-title {
+				@include span (8);
+				margin-bottom: 0px;
+			}
+			.contact-phone, .contact-address {
+				@include span (8);
+				text-align: right;
+				line-height: 1.2;
+			}
+		}
+		.contact-title {
+			margin-top: 0px;
+		}
+	}
+	.footer-available {
+		@media (min-width: 768px) {
+			float: left;
+			margin-left: gutter(2);
+			width: span(8 last);
+			}
+		img {
+			max-width: 326px;
+		}
+		.h3 {
+			line-height: 1.2;
+		}	
+	}
+	
+}

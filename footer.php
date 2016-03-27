@@ -29,10 +29,10 @@
 				</div>
 				<div class="contact-form">
 				  <?php echo $response; ?>
-				  <form action="<?php the_permalink(); ?>" method="post">
-				    <p><label for="message_email">Email: <br><input type="text" name="message_email" value="<?php echo esc_attr($_POST['message_email']); ?>"></label></p>
-				    <p><label for="message_text">Message: <br><textarea type="text" name="message_text"><?php echo esc_textarea($_POST['message_text']); ?></textarea></label></p>
-				    <p><label for="message_human">Human Verification: <span>*</span> <br><input type="text" style="width: 60px;" name="message_human"> + 3 = 5</label></p>
+				  <form action="<?php the_permalink(); ?>" method="post" class="footer-contact-form">
+				    <p><label for="message_email" class="hidden">Email:</label> <br><input type="text" name="message_email" value="<?php echo esc_attr($_POST['message_email']); ?>"></p>
+				    <p><label for="message_human" class="hidden">Human Verification: </label><br><input type="text" class="human" name="message_human"> + 3 = 5</p>
+				    <p><label for="message_text" class="hidden">Message:</label> <br><textarea type="text" name="message_text"><?php echo esc_textarea($_POST['message_text']); ?></textarea></p>
 				    <input type="hidden" name="submitted" value="1">
 				    <p><input type="submit" value="send"></p>
 				  </form>

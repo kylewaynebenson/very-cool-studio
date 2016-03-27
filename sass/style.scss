@@ -211,9 +211,13 @@ a.squiggle {
 /*--------------------------------------------------------------
 # Loop Styles
 --------------------------------------------------------------*/
-.blog, .home {
+.blog, .home, .archive, .category {
+	@media (min-width: 830px) {
+		#content {
+			margin-left: span(-1);
+		}
+	}
 	article.post {
-		float: left;
 		color: $white;
 		background:
 			linear-gradient(135deg, transparent 0px, $black 0) top left,
@@ -228,29 +232,73 @@ a.squiggle {
 		h4, .h4 {
 			margin: -5px 0px 7px 0px;
 		}
-		@media only screen and (min-width: 600px) and (max-width: 1039px) {
-			width: span(10);
-			margin-right: span(1);
-			margin-left: span(1);
-			margin-bottom: span(2);
+		h5, .h5 {
+			margin-top: -8px;
+			margin-bottom: 2px;
 		}
-		@media (min-width: 1040px) {
-			width: span(7.33333333333);
-			margin-right: span(1);
+		&.category-for-sale.category-type {
+			background: $white;
+			.entry-header {
+				padding-bottom: 15px;
+				border: 3px solid $gray-1;
+			}
+			.entry-footer {
+				border: 3px solid $gray-1;
+				border-top: 0px;
+			}
+			h5, .h5 {
+				display: none;
+			}
+			h4, .h4 {
+				font-weight: 300;
+				@media (min-width: 830px) {
+					font-size: 1.8em;
+				}
+				color: $black;
+				line-height: 1.15;
+			}
+		}
+		@media only screen and (min-width: 600px) and (max-width: 829px) {
+			width: 500px;
+			display: block;
+			margin: 0 auto;
 			margin-bottom: span(1);
-			.attachment-post-thumbnail {
-				max-height: 276px;
-				width: auto;
-			}
-			&:nth-of-type(3) {
+		}
+		@media (min-width: 830px) {
+			float: left;
+			width: span(7);
+			margin-left: span(1);
+			margin-bottom: span(1);
+			&.category-for-sale.category-type {
+				width: span(23);
 				margin-right: 0px;
-			}
-			&.category-type.category-for-sale {
-				width: span(15.666666666666);
-				margin-right: 0px;
-				& + article.post {
-					margin-right: 0px;
-					margin-left: span(1);	
+				color: $gray-1;
+				background:
+					linear-gradient(135deg, transparent 0px, $gray-1 0) top left,
+					linear-gradient(225deg, transparent 15px, $gray-1 0) top right,
+					linear-gradient(315deg, transparent 15px, $gray-1 0) bottom right,
+					linear-gradient(45deg,  transparent 0px, $gray-1 0) bottom left;
+				background-size: 52% 52%;
+				background-repeat: no-repeat;
+				.entry-header {
+					float: left;
+					background: $white;
+					width: span(17);
+				}
+				.entry-footer {
+					float: left;
+					width: span(7);
+					border: 0px;
+					height: 100%;
+				}
+				@media (min-width: 1080px) {
+					.entry-header {
+						width: span(17.5);
+					}
+					.entry-footer {
+						width: span(6.5);
+						padding-top: 25px;
+					}
 				}
 			}
 		}
@@ -271,14 +319,157 @@ a.squiggle {
 	}
 }
 /*--------------------------------------------------------------
+# Post Styles
+--------------------------------------------------------------*/
+.single {
+	.entry-header {
+		h1 {
+			margin-top: 0px;
+		}
+		ul.post-meta {
+			padding-left: 0px;
+			margin-left: 0px;
+			list-style-type: none;
+			li {
+				.post-meta-key {
+					font-family: $type-subhead;
+					font-weight: 600;
+					text-transform: uppercase;
+					letter-spacing: .17em;
+					font-size: .8em;
+					display: inline-block;
+					width: 80px;
+				}
+				&:last-of-type {
+					margin-top: 20px;
+					.post-meta-key {
+						display: none;
+					}
+					&:first-letter {
+						float: left; 
+						font-size: 3em; 
+						line-height: .95; 
+						padding-top: 4px; 
+						padding-right: 9px; 
+						padding-left: 0px; 
+					}
+				}
+			}
+		}
+	}
+	.entry-footer {
+		.cat-links {
+			@media only screen and (max-width: 767px) {
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+			}
+			a {
+				background: $gray-1;
+				color: $black;
+				display: inline-block;
+				text-decoration: none;
+				margin-bottom: 20px;
+			}
+		}
+		.post-navigation {
+			font-family: $type-subhead;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: .17em;
+			font-size: .8em;
+			.nav-next {
+				text-align: right;
+			}
+			.nav-previous, .nav-next  {
+				width: 50%;
+				float: left;
+				a {
+					color: $white;
+					background: $black;
+					text-decoration: none;
+					padding: 1px 5px 2px 5px;
+					position: relative;
+					text-align: center;
+					z-index: 1;
+					display: inline-block;
+					vertical-align: .7em;
+					@media only screen and (min-width: 768px) and (max-width: 1100px) {
+						width: 25px;
+						letter-spacing: -10px;
+						color: transparent;
+						user-select: none; 
+						text-align: center;
+					}
+				}
+
+			}
+			.nav-previous:before, .nav-previous:after, .nav-next:before, .nav-next:after  {
+				display: inline-block;
+				color: $black;
+				background: $white;
+				font-family: 'Very Cool Icons';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 2.55em;
+				line-height: 1;
+			}
+			.nav-previous:before {
+				content: "\E006";
+				margin-right: -14px;
+			}
+			.nav-next:after {
+				content: "\E006";
+				margin-left: -14px;
+			}
+			.nav-previous:after  {
+				content: "\E007";
+				margin-left: -11px;
+			}
+			.nav-next:before  {
+				content: "\E007";
+				margin-right: -11px;
+			}
+			.nav-next:before, .nav-next:after {
+				transform: rotate(180deg);
+			}
+		}
+	}
+	@media (min-width: 768px) {
+		.entry-header, .entry-footer {
+			width: span(7);
+			float: left;
+		}
+		.post-content {
+			width: span(16);
+			float: right;
+			min-height: 400px;
+		}
+
+	}
+	@media (min-width: 1101px) {
+		.entry-header, .entry-footer {
+			width: span(8);
+			float: left;
+		}
+		.post-content {
+			width: span(15);
+			float: right;
+		}
+
+	}
+}
+/*--------------------------------------------------------------
 # Page Styles
 --------------------------------------------------------------*/
 #page {
-	padding: 10px;
 	color: $black;
 	background: $gray-1;
 	@media (min-width: 480px) {
 		padding: 25px;
+	}
+	.page-title {
+		margin-top: 0px;
 	}
 }
 #white-page.white-page {
@@ -333,7 +524,7 @@ a.squiggle {
 		margin: 0 auto;
 		width: 1148px;
 		margin-bottom: 2.5em;
-		padding: 115px;
+		padding: 80px 115px;
 	}
 	.box {
 		background: $white;
@@ -363,6 +554,25 @@ a.squiggle {
 		}
 	}
 }
+.gray-page {
+	background: $gray-1;
+	padding: 15px;
+	h2, .h2 {
+		text-align: center;
+		&:first-of-type {
+			margin-top: 0px;
+		}
+	}
+	@media (min-width: 768px) {
+		padding: 35px 50px;
+		}
+	@media (min-width: 1148px) {
+		margin: 0 auto;
+		width: 1148px;
+		margin-bottom: 2.5em;
+		padding: 80px 115px;
+	}
+}
 /*--------------------------------------------------------------
 # Footer Styles
 --------------------------------------------------------------*/
@@ -373,8 +583,8 @@ header.site-header {
 footer.footer {
 	background: $gray-1;
 	padding-top: 1.2em;
-	@media (min-width: 1148px) {
-		padding-top: 2em;
+	@media (min-width: 900px) {
+		padding-top: 2.6em;
 	}
 	@include clearfix;
 	.footer-contact {
@@ -382,17 +592,49 @@ footer.footer {
 			float: left;
 			width: span(14);
 			.contact-title {
-				@include span (8);
+				@include span(6);
 				margin-bottom: 0px;
 			}
 			.contact-phone, .contact-address {
-				@include span (8);
+				@include span(11);
 				text-align: right;
 				line-height: 1.2;
+			}
+			.contact-address {
+				@include span(7);
+			}
+		}
+		@media (min-width: 1048px) {
+			.contact-phone, .contact-address, .contact-title {
+				@include span(8);	
 			}
 		}
 		.contact-title {
 			margin-top: 0px;
+		}
+		.footer-contact-form {
+			.human {
+				width: span(4);
+				display: inline-block;
+				text-align: center;
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+			textarea {
+				height: 66px;
+				color: $color__text-main;
+				font-family: $type-text;
+				@include font-size(1);
+				line-height: 1.6;
+				width: span(19);
+				float: left;
+			}
+			input[type="submit"] {
+				width: span(5);
+				height: 66px;
+				float: right;
+			}
+
 		}
 	}
 	.footer-available {

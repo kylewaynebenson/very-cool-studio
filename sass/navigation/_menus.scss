@@ -1,14 +1,12 @@
 .main-navigation {
-	@media screen and (max-width: 37.5em) {
-		display: block;
-		float: right;
+	@media screen and (max-width: 699px) {
 		width: 100%;
 	}
 
 	ul {
-		@media screen and (max-width: 37.5em) {
-		display: none;
-		}
+		@media screen and (max-width: 699px) {
+			display: none;
+			}
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -17,10 +15,16 @@
 	}
 	
 	li {
-		float: right;
-		position: relative;
-		padding-left: 30px;
-
+		@media screen and (max-width: 699px) {
+			width: 100%;
+			display: block;
+			float: left;
+			}
+		@media screen and (min-width: 700px) {
+			float: right;
+			position: relative;
+			padding-left: 30px;
+		}
 		&:hover > a,
 		&.focus > a {
 		}
@@ -45,23 +49,36 @@
 }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
+.main-navigation {
+	button.menu-toggle {
 
+	float: right;
 	font-family: 'Very Cool Icons';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 1.65em;
+	background: transparent;
+	border: 0px;
+	font-size: 3em;
 	line-height: 0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	}
+	&.toggled {
+		ul {
+			display: block;
+		}
+		button.menu-toggle {
+			display: block;
+		}
+	}
 }
+.site-branding, .site-title {
+	display: block;
+	float: left;
+	}
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 700px) {
 	.site-branding, .site-title {
-		display: block;
-		float: left;
 		font-size: 1.02em;
 	}
 	.menu-toggle {
@@ -82,14 +99,4 @@
 		overflow: hidden;
 	}
 
-	.nav-previous {
-		float: left;
-		width: 50%;
-	}
-
-	.nav-next {
-		float: right;
-		text-align: right;
-		width: 50%;
-	}
 }

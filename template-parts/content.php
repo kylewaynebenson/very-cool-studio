@@ -15,19 +15,34 @@
 		} ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_post_thumbnail(); ?>
+		<?php  if ( is_single() ) {
+			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_meta();
+			} else {
+			the_post_thumbnail(); 
+		}
+			?>
 	</header><!-- .entry-header -->
+	<div class="post-content">
+	<?php
+			if ( is_single() ) {
+				the_content();
+			} else {
+			}
+			 ?>
+	</div>
 	<footer class="entry-footer">
 		<?php
 			if ( is_single() ) {
-				the_title( '<h4 class="entry-title">', '</h4>' );
+				verycool_entry_footer();
+				the_post_navigation();
 			} else {
-				the_title( '<h4 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h4>' );
+				the_title( '<h5 class="sub-label">Project</h5><h4 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h4>' );
+				verycool_entry_footer();
 			}
 
 		if ( 'post' === get_post_type() ) : ?>
 		<?php
 		endif; ?>
-		<?php verycool_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

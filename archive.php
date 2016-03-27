@@ -45,7 +45,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+</div><!-- #white-box -->
 
 <?php
-get_sidebar();
 get_footer();

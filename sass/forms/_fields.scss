@@ -53,6 +53,13 @@ input[type="color"] {
 }
 
 textarea {
-	padding-left: 3px;
 	width: 100%;
+}
+label.hidden {
+	display: none;
+}
+form {
+	p {
+		margin: 0px;
+	}
 }

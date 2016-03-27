@@ -42,7 +42,8 @@ get_header(); ?>
 			?> */?>
 
 		</main><!-- #main -->
-		<div class="blog">
+		<div class="blog archive">
+			<div id="content">
 			<article class="post-9 post type-post status-publish format-standard has-post-thumbnail hentry category-design category-logo category-type">
 				<header class="entry-header">
 					<img width="425" height="425" src="http://kyles-macbook-pro.local:5757/wp-content/uploads/2016/03/jdawgs-logo.png" class="attachment-post-thumbnail wp-post-image" alt="jdawgs-logo">	</header><!-- .entry-header -->
@@ -61,11 +62,13 @@ get_header(); ?>
 				<footer class="entry-footer">
 					<h4 class="entry-title"><a href="http://kyles-macbook-pro.local:5757/2016/03/23/jdawgs/" rel="bookmark">Qualtrics</a></h4>				<span class="cat-links"><a href="http://kyles-macbook-pro.local:5757/category/design/" rel="category tag">Design</a>, <a href="http://kyles-macbook-pro.local:5757/category/logo/" rel="category tag">Logo</a>, <a href="http://kyles-macbook-pro.local:5757/category/type/" rel="category tag">Type</a></span>	</footer><!-- .entry-footer -->
 			</article>
-			<article class="post-9 post type-post status-publish format-standard has-post-thumbnail hentry category-type category-for-sale">
+			<article id="post-13" class="post-13 post type-post status-publish format-standard has-post-thumbnail hentry category-for-sale category-type">
 				<header class="entry-header">
-					<img width="425" height="425" src="http://kyles-macbook-pro.local:5757/wp-content/uploads/2016/03/jdawgs-logo.png" class="attachment-post-thumbnail wp-post-image" alt="jdawgs-logo">	</header><!-- .entry-header -->
+					<img width="980" height="425" src="http://kyles-macbook-pro.local:5757/wp-content/uploads/2016/03/kansas-casual4.jpg" class="attachment-post-thumbnail wp-post-image" alt="kansas-casual">	</header><!-- .entry-header -->
+				<div class="post-content">
+					</div>
 				<footer class="entry-footer">
-					<h4 class="entry-title"><a href="http://kyles-macbook-pro.local:5757/2016/03/23/jdawgs/" rel="bookmark">Kansas Casual</a></h4>				<span class="cat-links"><a href="http://kyles-macbook-pro.local:5757/category/design/" rel="category tag">Design</a>, <a href="http://kyles-macbook-pro.local:5757/category/logo/" rel="category tag">Logo</a>, <a href="http://kyles-macbook-pro.local:5757/category/type/" rel="category tag">Type</a></span>	</footer><!-- .entry-footer -->
+					<h5 class="sub-label">Project</h5><h4 class="entry-title"><a href="http://kyles-macbook-pro.local:5757/2016/03/24/kansas-casual/" rel="bookmark">Kansas Casual</a></h4><span class="cat-links"><a href="http://kyles-macbook-pro.local:5757/category/for-sale/" rel="category tag">For Sale</a>&nbsp;<a href="http://kyles-macbook-pro.local:5757/category/type/" rel="category tag">Type</a></span>			</footer><!-- .entry-footer -->
 			</article>
 			<article class="post-9 post type-post status-publish format-standard has-post-thumbnail hentry category-design category-logo category-type">
 				<header class="entry-header">
@@ -79,6 +82,39 @@ get_header(); ?>
 				<footer class="entry-footer">
 					<h4 class="entry-title"><a href="http://kyles-macbook-pro.local:5757/2016/03/23/jdawgs/" rel="bookmark">jDawgs</a></h4>				<span class="cat-links"><a href="http://kyles-macbook-pro.local:5757/category/design/" rel="category tag">Design</a>, <a href="http://kyles-macbook-pro.local:5757/category/logo/" rel="category tag">Logo</a>, <a href="http://kyles-macbook-pro.local:5757/category/type/" rel="category tag">Type</a></span>	</footer><!-- .entry-footer -->
 			</article>
+			<article id="post-9" class="post-9 post type-post status-publish format-standard has-post-thumbnail hentry category-design category-logo category-type">
+				<header class="entry-header">
+					<img width="425" height="425" src="http://kyles-macbook-pro.local:5757/wp-content/uploads/2016/03/jdawgs-logo.png" class="attachment-post-thumbnail wp-post-image" alt="jdawgs-logo">	</header><!-- .entry-header -->
+				<div class="post-content">
+					</div>
+				<footer class="entry-footer">
+					<h5 class="sub-label">Project</h5><h4 class="entry-title"><a href="http://kyles-macbook-pro.local:5757/2016/03/23/jdawgs/" rel="bookmark">jDawgs</a></h4><span class="cat-links"><a href="http://kyles-macbook-pro.local:5757/category/design/" rel="category tag">Design</a>&nbsp;<a href="http://kyles-macbook-pro.local:5757/category/logo/" rel="category tag">Logo</a>&nbsp;<a href="http://kyles-macbook-pro.local:5757/category/type/" rel="category tag">Type</a></span>			</footer><!-- .entry-footer -->
+			</article>
+			<article id="post-9" class="post-9 post type-post status-publish format-standard has-post-thumbnail hentry category-design category-logo category-type">
+				<header class="entry-header">
+					<img width="425" height="425" src="http://kyles-macbook-pro.local:5757/wp-content/uploads/2016/03/jdawgs-logo.png" class="attachment-post-thumbnail wp-post-image" alt="jdawgs-logo">	</header><!-- .entry-header -->
+				<div class="post-content">
+					</div>
+				<footer class="entry-footer">
+					<h5 class="sub-label">Project</h5><h4 class="entry-title"><a href="http://kyles-macbook-pro.local:5757/2016/03/23/jdawgs/" rel="bookmark">jDawgs</a></h4><span class="cat-links"><a href="http://kyles-macbook-pro.local:5757/category/design/" rel="category tag">Design</a>&nbsp;<a href="http://kyles-macbook-pro.local:5757/category/logo/" rel="category tag">Logo</a>&nbsp;<a href="http://kyles-macbook-pro.local:5757/category/type/" rel="category tag">Type</a></span>			</footer><!-- .entry-footer -->
+			</article>
+			<article id="post-9" class="post-9 post type-post status-publish format-standard has-post-thumbnail hentry category-design category-logo category-type">
+				<header class="entry-header">
+					<img width="425" height="425" src="http://kyles-macbook-pro.local:5757/wp-content/uploads/2016/03/jdawgs-logo.png" class="attachment-post-thumbnail wp-post-image" alt="jdawgs-logo">	</header><!-- .entry-header -->
+				<div class="post-content">
+					</div>
+				<footer class="entry-footer">
+					<h5 class="sub-label">Project</h5><h4 class="entry-title"><a href="http://kyles-macbook-pro.local:5757/2016/03/23/jdawgs/" rel="bookmark">jDawgs</a></h4><span class="cat-links"><a href="http://kyles-macbook-pro.local:5757/category/design/" rel="category tag">Design</a>&nbsp;<a href="http://kyles-macbook-pro.local:5757/category/logo/" rel="category tag">Logo</a>&nbsp;<a href="http://kyles-macbook-pro.local:5757/category/type/" rel="category tag">Type</a></span>			</footer><!-- .entry-footer -->
+			</article>
+			<article id="post-9" class="post-9 post type-post status-publish format-standard has-post-thumbnail hentry category-design category-logo category-type">
+				<header class="entry-header">
+					<img width="425" height="425" src="http://kyles-macbook-pro.local:5757/wp-content/uploads/2016/03/jdawgs-logo.png" class="attachment-post-thumbnail wp-post-image" alt="jdawgs-logo">	</header><!-- .entry-header -->
+				<div class="post-content">
+					</div>
+				<footer class="entry-footer">
+					<h5 class="sub-label">Project</h5><h4 class="entry-title"><a href="http://kyles-macbook-pro.local:5757/2016/03/23/jdawgs/" rel="bookmark">jDawgs</a></h4><span class="cat-links"><a href="http://kyles-macbook-pro.local:5757/category/design/" rel="category tag">Design</a>&nbsp;<a href="http://kyles-macbook-pro.local:5757/category/logo/" rel="category tag">Logo</a>&nbsp;<a href="http://kyles-macbook-pro.local:5757/category/type/" rel="category tag">Type</a></span>			</footer><!-- .entry-footer -->
+			</article>
+			</div>
 		</div>
 	</div><!-- #primary -->
 </div><!-- content -->
@@ -129,6 +165,20 @@ get_header(); ?>
 			</ul>
 		</footer>
 	</section>
+</div>
+<div class="gray-page">
+	<h2>Projects</h2>
+	<ul class="list-box">
+		<li><a href="http://www.oremisverycool.com/">Orem is Very Cool</a><span class="year">2016</span></li>
+		<li><a href="http://www.verycoolstudio.com/passion/">The Passionately Project</a><span class="year">2013-2014</span></li>
+		<li><a href="http://www.oremisverycool.com/">Cupmunicate</a><span class="year">2012</span></li>
+		<li><a href="http://www.oremisverycool.com/">Mr. Benson's Class</a><span class="year">2012</span></li>
+	</ul>
+	<h2>Interviews</h2>
+	<ul class="list-box">
+		<li><a href="http://www.??">The Balance Podcast</a><span class="year">2016</span></li>
+		<li><a href="http://www.oneminutewith.com/kylewaynebenson??">One Minute With</a><span class="year">2014</span></li>
+	</ul>
 </div>
 
 

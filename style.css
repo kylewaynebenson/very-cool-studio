@@ -244,9 +244,9 @@ th {
   src: url("./type/ClaytonNeue-Bold.eot?#iefix") format("embedded-opentype"), url("./type/ClaytonNeue-Bold.woff2") format("woff2"), url("./type/ClaytonNeue-Bold.woff") format("woff"); }
 @font-face {
   font-family: 'Very Cool Icons';
-  src: url("./type/verycoolicons-regular.eot");
+  src: url("./type/verycoolicons-Regular.eot");
   /* IE9 Compat Modes */
-  src: url("./type/verycoolicons-regular.eot?#iefix") format("embedded-opentype"), url("./type/verycoolicons-regular.woff2") format("woff2"), url("./type/verycoolicons-regular.woff") format("woff"); }
+  src: url("./type/verycoolicons-Regular.eot?#iefix") format("embedded-opentype"), url("./type/verycoolicons-Regular.woff2") format("woff2"), url("./type/verycoolicons-Regular.woff") format("woff"); }
 @font-face {
   font-family: 'Clayton Neue Cond';
   font-weight: 600;

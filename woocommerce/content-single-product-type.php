@@ -34,48 +34,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 	return;
 	 }
 ?>
-
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php
-		/**
-		 * woocommerce_before_single_product_summary hook.
-		 *
-		 * @hooked woocommerce_show_product_sale_flash - 10
-		 * @hooked woocommerce_show_product_images - 20
-		 */
-		do_action( 'woocommerce_before_single_product_summary' );
-	?>
-	<div class="summary entry-summary">
-
-		<?php
-			/**
-			 * woocommerce_single_product_summary hook.
-			 *
-			 * @hooked woocommerce_template_single_title - 5
-			 * @hooked woocommerce_template_single_rating - 10
-			 * @hooked woocommerce_template_single_price - 10
-			 * @hooked woocommerce_template_single_excerpt - 20
-			 * @hooked woocommerce_template_single_add_to_cart - 30
-			 * @hooked woocommerce_template_single_meta - 40
-			 * @hooked woocommerce_template_single_sharing - 50
-			 */
-			do_action( 'woocommerce_single_product_summary' );
-		?>
-
-	</div><!-- .summary -->
-
-	<?php
-		/**
-		 * woocommerce_after_single_product_summary hook.
-		 *
-		 * @hooked woocommerce_output_product_data_tabs - 10
-		 * @hooked woocommerce_upsell_display - 15
-		 * @hooked woocommerce_output_related_products - 20
-		 */
-		do_action( 'woocommerce_after_single_product_summary' );
-	?>
-	<div class="type-tester"> 
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="entry-header">
+		<?php 
+			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_meta();
+			?>
+	</header><!-- .entry-header -->
+	<div class="post-content">
+		<?php the_content(); ?>
+			<div class="type-tester"> 
 		<span contenteditable="true" id="type-tester-editable" class="fontselect fontsize fontweight de 64 textfield <?php echo $post->post_name;?>">Click here to try it!</span> 
 		<div class="type-tester-title">
 			<h4 class="entry-title"><?php the_title(); ?></h4>
@@ -163,11 +133,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class="type-tester-footer">
 			<form class="cart" method="post" enctype='multipart/form-data'>
 			 	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
-			 	<button type="submit" class="add-to-cart-button"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+			 	<button type="submit" class="chamfered-button chamfered-button-yellow"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
 			</form>
+			<h5 class="type-tester-notice">Opentype features listed above may not work in<br /> this demo because of limited browser support.</h5>
 		</div>
 	 </div>
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
+	</div>
+	<footer class="entry-footer">
+		<?php
+				verycool_entry_footer();
+				the_post_navigation();
+
+		if ( 'post' === get_post_type() ) : ?>
+		<?php
+		endif; ?>
+	</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
 
 </div><!-- #product-<?php the_ID(); ?> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>

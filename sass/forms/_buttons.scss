@@ -10,8 +10,6 @@ input[type="submit"] {
 	border: 3px solid $black;
 	background: $black;
 	color: $yellow;
-
-
 	&:hover {
 		
 	}
@@ -20,4 +18,46 @@ input[type="submit"] {
 	&:focus {
 		
 	}
+}
+.woocommerce-message a.button {
+	float: right;
+	margin-top: -2px;
+}
+.chamfered-button, input[type="submit"].chamfered-button, .woocommerce-message a.button {
+	color: $white;
+	text-decoration: none;
+	border: 0px;
+	background:
+		linear-gradient(135deg, transparent 5px, $black 0) top left,
+		linear-gradient(225deg, transparent 5px, $black 0) top right,
+		linear-gradient(315deg, transparent 5px, $black 0) bottom right,
+		linear-gradient(45deg,  transparent 5px, $black 0) bottom left;
+	background-size: 52% 52%;
+	background-repeat: no-repeat;
+	font-family: $type-subhead;
+	font-weight: 500;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 5px 20px;
+	letter-spacing: 1px;
+}
+input[type="submit"].chamfered-button-yellow, .chamfered-button-yellow {
+	color: $black;
+	background:
+		linear-gradient(135deg, transparent 5px, $yellow 0) top left,
+		linear-gradient(225deg, transparent 5px, $yellow 0) top right,
+		linear-gradient(315deg, transparent 5px, $yellow 0) bottom right,
+		linear-gradient(45deg,  transparent 5px, $yellow 0) bottom left;
+	background-size: 52% 52%;
+	background-repeat: no-repeat;
+}
+input[type="submit"].chamfered-button-white, .chamfered-button-white {
+	color: $black;
+	background:
+		linear-gradient(135deg, transparent 5px, $white 0) top left,
+		linear-gradient(225deg, transparent 5px, $white 0) top right,
+		linear-gradient(315deg, transparent 5px, $white 0) bottom right,
+		linear-gradient(45deg,  transparent 5px, $white 0) bottom left;
+	background-size: 52% 52%;
+	background-repeat: no-repeat;
 }

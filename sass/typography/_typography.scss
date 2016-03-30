@@ -48,28 +48,28 @@
     -moz-osx-font-smoothing: grayscale;
 }
 .icon-2x:before {
-	font-size: 4em;
+  font-size: 4em;
 }
 .icon-3x:before {
-	font-size: 4.4em;	
+  font-size: 4.4em; 
 }
 .icon-4x:before {
-	font-size: 5em;	
+  font-size: 5em; 
 }
 .icon-5x:before {
-	font-size: 6em;
+  font-size: 6em;
 }
 .icon-logo:before {
-	content: "\E001";
+  content: "\E001";
 }
 .icon-squiggle:before {
-	content: "\E002";
+  content: "\E002";
 }
 .icon-hamburger:before {
-	content: "\E003";
+  content: "\E003";
 }
 .icon-pizza:before {
-	content: "\E005";
+  content: "\E005";
 }
 .icon-arrow-head:before {
   content: "\E006";
@@ -79,6 +79,13 @@
 }
 .icon-shopping-cart:before {
   content: "\E009";
+}
+.icon-corner-left:before {
+  content: "\E008";
+}
+.icon-corner-right:before {
+  content: "\E008";
+  transform: scale(-1, 1);
 }
 
 $type-text: "Cornbread";
@@ -92,10 +99,10 @@ button,
 input,
 select,
 textarea {
-	color: $color__text-main;
-	font-family: $type-text;
-	@include font-size(1);
-	line-height: 1.6;
+  color: $color__text-main;
+  font-family: $type-text;
+  @include font-size(1);
+  line-height: 1.6;
 }
 
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;

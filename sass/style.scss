@@ -148,7 +148,11 @@ $susy: (
 /*--------------------------------------------------------------
 # Woocommerce
 --------------------------------------------------------------*/
-
+.woocommerce-message {
+	display: block;
+	background: $yellow;
+	padding: 20px;
+}
 
 /*--------------------------------------------------------------
 # Link Styles
@@ -515,14 +519,81 @@ a.squiggle {
 	}
 }
 /*--------------------------------------------------------------
+Cart Styles
+--------------------------------------------------------------*/
+.woocommerce-cart {
+
+		.cart {
+			#coupon_code {
+				width: span(6);
+			}
+			#coupon_code, input.chamfered-button {
+				float: left;
+				margin-top: 8px;
+				margin-bottom: 8px;
+			}
+			input.chamfered-button {
+				margin-left: 10px;
+			}
+			#update-cart {
+				float: right;
+			}
+	}
+}
+
+/*--------------------------------------------------------------
 Product Styles
 --------------------------------------------------------------*/
+.product {
+	.entry-header {
+		ul.post-meta {
+			li {
+				&:last-of-type {
+					display: none;
+				}
+			}
+		}
+	}
+}
 .type-tester {
 	display: block;
 	border: 3px solid $gray-1;
 	width: span(24);
 	font-weight: 300;
 	float: left;
+	position: relative;
+	@media (min-width: 768px) {
+		width: span(36);
+		margin-left: span(-12);
+	}
+	@media (min-width: 1101px) {
+		width: span(38.5);
+		margin-left: span(-14.5);
+
+	}
+	&:before, &:after {
+		display:block;
+		width: 19px;
+		height: 17px;
+		position: absolute;
+		background: $white;
+		z-index: 1;
+		bottom: -3px;
+		color: $gray-1;
+		font-family: 'Very Cool Icons';
+		font-style: normal;
+		font-size: 27px;
+		font-weight: 400;
+		line-height: .45;
+		content: "\E008";
+	}
+	&:before {
+		left: -3px;
+	}
+	&:after {
+		right: -3px;
+		transform: scale(-1, 1);
+	}
 	span {
 		outline: none;
 	}
@@ -559,12 +630,14 @@ Product Styles
 	.fontweight.bolditalic { font-weight: 800; font-style:italic;}
 
 	.type-tester-title {
-		padding: 14px 20px;
-		width: span(6);
-		text-align: center;
-		display: block;
-		border-right: 3px solid $gray-1;
-		float: left;
+		display: none;
+		@media only screen and (min-width: 965px) {
+			padding: 14px 20px;
+			width: span(7);
+			text-align: center;
+			display: block;
+			float: left;
+		}
 		h5, .h5 {
 			margin-top: 0px;
 			margin-bottom: 0px;
@@ -579,12 +652,16 @@ Product Styles
 		}
 	}
 	.type-tester-header {
+		@media only screen and (min-width: 965px) {
+			width: span(17);
+			float: right;
+			border-left: 3px solid $gray-1;
+		}
 		border-bottom: 3px solid $gray-1;
-		width: span(18);
-		float: right;
 		font-family: $type-subhead;
 		font-weight: 300 !important;
 		font-size: 20px;
+		@include clearfix;
 		.select {
 			position: relative;
 			float: left;
@@ -594,6 +671,10 @@ Product Styles
 				cursor: pointer;
 				outline: none;
 				min-width: 130px;
+				max-width: 150px;
+				@media only screen and (min-width: 965px) {
+					max-width: auto;
+				}
 				-webkit-appearance: none;
 				letter-spacing: .02em;
 				display: block;
@@ -641,11 +722,20 @@ Product Styles
 			}
 		}
 		.type-tester-checkbox {
+			@media only screen and (max-width: 600px) {
+				display: none;
+			}
 			cursor: pointer;
 			float: left;
 			color: $gray-2;
 			padding: 0px 10px 4px 10px;
 			border-right: 3px solid $gray-1;
+			&:last-of-type {
+				border-right: 0px;
+				@media only screen and (max-width: 660px) {
+					display: none;
+				}
+			}
 			input[type="checkbox"] {
 				cursor: pointer;
 				border: 3px solid $gray-2;
@@ -682,38 +772,36 @@ Product Styles
 
 	}
 	.type-tester-footer {
-		float: right;
+		@media only screen and (min-width: 965px) {
+			width: span(17);
+			float: right;
+		}
+		@media only screen and (max-width: 600px) {
+			text-align: center;
+		}
 		padding: 4px;
-		width: span(18);
-	}
-	.add_to_cart_button {
-		color: transparent;
-		position: absolute;
-		left: 10px;
-		bottom: 10px;
-		font-size: 0px;
-		border-radius: 0px;
-		background: transparent;
-		&:before {
-			display: inline-block;
-			color: $black;
-			font-family: 'Very Cool Icons';
-			font-style: normal;
-			font-size: 17px;
-			font-weight: 400;
-			padding: 3px 6px;
-			line-height: 1;
-			content: "\E009";
+		.cart {
+			display: inline;
+			button {
+				display: inline-block;
+				margin: 10px 20px 9px 12px;
+				@media only screen and (min-width: 965px) {
+					margin-left: -3px;
+				}
+			}
 		}
-		&.added:before {
-			content: "\2714";
-			font-size: 14px;
-			padding: 3px 5px;
-			color: $yellow;
+		.type-tester-notice {
+			line-height: 1.2;
+			letter-spacing: .05em;
+			@media only screen and (max-width: 600px) {
+				display: none;
+			}
+			float: right;
+			text-align: right;
+			font-weight: 300;
+			color: $gray-2;
+			margin: 10px 20px;
 		}
-	}
-	a.added_to_cart {
-		display: none;
 	}
 
 	.price {
@@ -736,12 +824,18 @@ Product Styles
 			margin-left: 0px;
 			list-style-type: none;
 			li {
+				&:not(:last-of-type) {
+					font-family: $type-subhead;
+					font-weight: 300;
+					font-size: 25px;
+					letter-spacing: .02em;
+				}
 				.post-meta-key {
 					font-family: $type-subhead;
 					font-weight: 600;
 					text-transform: uppercase;
 					letter-spacing: .17em;
-					font-size: .8em;
+					font-size: 15px;
 					display: inline-block;
 					width: 80px;
 				}
@@ -909,10 +1003,23 @@ body {
 			}
 		}	
 	}
+	.woocommerce-cart {
+		.page-title {
+			display: none;
+		}
+		header.site-header {
+			.site-branding:after {
+				content: "Cart";
+			}
+		}
+	}
 }
 #white-page.white-page {
 	background: $white;
 	padding: 15px;
+	.summary.entry-summary {
+		margin-top: 0px;
+	}
 	@media (min-width: 920px) {
 		padding: 35px 50px;
 		margin: 0 auto;

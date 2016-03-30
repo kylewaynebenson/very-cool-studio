@@ -26,6 +26,36 @@ textarea {
 		background: $white;
 	}
 }
+input[type="text"].input-white,
+input[type="email"].input-white,
+input[type="url"].input-white,
+input[type="password"].input-white,
+input[type="search"].input-white,
+input[type="number"].input-white,
+input[type="tel"].input-white,
+input[type="date"].input-white,
+input[type="month"].input-white,
+input[type="week"].input-white,
+input[type="time"].input-white,
+input[type="datetime"].input-white,
+input[type="datetime-local"].input-white,
+input[type="color"].input-white,
+textarea {
+	color: $gray-2;
+	border: 3px solid $gray-1;
+	border-radius: 0px;
+	background: $white;
+	width: 100%;
+	font-family: $type-subhead;
+	font-weight: 300;
+	padding: 1px 10px 2px 10px;
+	letter-spacing: .02em;
+	outline: none;
+	&:focus {
+		background: $white;
+		color: $black;
+	}
+}
 select {
 
 }

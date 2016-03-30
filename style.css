@@ -296,6 +296,14 @@ th {
 .icon-shopping-cart:before {
   content: "\E009"; }
 
+.icon-corner-left:before {
+  content: "\E008"; }
+
+.icon-corner-right:before {
+  content: "\E008";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1); }
+
 body,
 button,
 input,
@@ -473,21 +481,43 @@ table.list-box {
   font-family: "Clayton Neue";
   font-weight: 300;
   font-size: 1.6em;
-  letter-spacing: .02em;
-  border: 3px solid #231f20; }
+  letter-spacing: .02em; }
+  @media (max-width: 500px) {
+    table.list-box {
+      font-size: 1.2em;
+      line-height: 1.2; }
+      table.list-box th.product-quantity {
+        font-size: 0px;
+        color: #ffffff; }
+      table.list-box .product-quantity, table.list-box .product-remove {
+        max-width: 30px; } }
+  @media (max-width: 768px) {
+    table.list-box .product-price {
+      display: none; }
+    table.list-box thead th {
+      padding: 5px 0px 0px 0px; }
+    table.list-box tr td {
+      padding: 5px 0px;
+      border-bottom: 3px solid #f0f0f0; } }
+  @media (min-width: 769px) {
+    table.list-box {
+      border: 3px solid #231f20;
+      border-collapse: separate; }
+      table.list-box thead th {
+        padding: 7px 20px 0px 20px; }
+      table.list-box tr td {
+        padding: 5px 20px; }
+      table.list-box tr:nth-of-type(even) {
+        background: #f0f0f0; } }
   table.list-box thead {
     font-size: 16px;
     text-align: left; }
-    table.list-box thead th {
-      padding: 5px 20px 0px 20px; }
   table.list-box tr img {
     max-height: 30px;
     width: auto; }
   table.list-box tr a {
     text-decoration: none;
     line-height: 1; }
-  table.list-box tr td {
-    padding: 5px 20px; }
   table.list-box tr td.product-price, table.list-box tr td.product-quantity, table.list-box tr td.product-quantity input {
     font-family: "Business Script";
     font-weight: 300;
@@ -495,15 +525,8 @@ table.list-box {
     table.list-box tr td.product-price input, table.list-box tr td.product-quantity input, table.list-box tr td.product-quantity input input {
       border: 0px;
       width: 50px; }
-  table.list-box tr .year {
-    float: right;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: .17em;
-    padding-top: 10px;
-    font-size: .5em; }
-  table.list-box tr:nth-of-type(even) {
-    background: #f0f0f0; }
+  table.list-box tr .product-subtotal {
+    text-align: right; }
 
 .squiggle-divider-full:after {
   -webkit-user-select: none;
@@ -541,6 +564,39 @@ input[type="submit"] {
   border: 3px solid #231f20;
   background: #231f20;
   color: #ffd138; }
+
+.woocommerce-message a.button {
+  float: right;
+  margin-top: -2px; }
+
+.chamfered-button, input[type="submit"].chamfered-button, .woocommerce-message a.button {
+  color: #ffffff;
+  text-decoration: none;
+  border: 0px;
+  background: -webkit-linear-gradient(315deg, transparent 5px, #231f20 0) top left, -webkit-linear-gradient(225deg, transparent 5px, #231f20 0) top right, -webkit-linear-gradient(135deg, transparent 5px, #231f20 0) bottom right, -webkit-linear-gradient(45deg, transparent 5px, #231f20 0) bottom left;
+  background: linear-gradient(135deg, transparent 5px, #231f20 0) top left, linear-gradient(225deg, transparent 5px, #231f20 0) top right, linear-gradient(315deg, transparent 5px, #231f20 0) bottom right, linear-gradient(45deg, transparent 5px, #231f20 0) bottom left;
+  background-size: 52% 52%;
+  background-repeat: no-repeat;
+  font-family: "Clayton Neue";
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  letter-spacing: 1px; }
+
+input[type="submit"].chamfered-button-yellow, .chamfered-button-yellow {
+  color: #231f20;
+  background: -webkit-linear-gradient(315deg, transparent 5px, #ffd138 0) top left, -webkit-linear-gradient(225deg, transparent 5px, #ffd138 0) top right, -webkit-linear-gradient(135deg, transparent 5px, #ffd138 0) bottom right, -webkit-linear-gradient(45deg, transparent 5px, #ffd138 0) bottom left;
+  background: linear-gradient(135deg, transparent 5px, #ffd138 0) top left, linear-gradient(225deg, transparent 5px, #ffd138 0) top right, linear-gradient(315deg, transparent 5px, #ffd138 0) bottom right, linear-gradient(45deg, transparent 5px, #ffd138 0) bottom left;
+  background-size: 52% 52%;
+  background-repeat: no-repeat; }
+
+input[type="submit"].chamfered-button-white, .chamfered-button-white {
+  color: #231f20;
+  background: -webkit-linear-gradient(315deg, transparent 5px, #ffffff 0) top left, -webkit-linear-gradient(225deg, transparent 5px, #ffffff 0) top right, -webkit-linear-gradient(135deg, transparent 5px, #ffffff 0) bottom right, -webkit-linear-gradient(45deg, transparent 5px, #ffffff 0) bottom left;
+  background: linear-gradient(135deg, transparent 5px, #ffffff 0) top left, linear-gradient(225deg, transparent 5px, #ffffff 0) top right, linear-gradient(315deg, transparent 5px, #ffffff 0) bottom right, linear-gradient(45deg, transparent 5px, #ffffff 0) bottom left;
+  background-size: 52% 52%;
+  background-repeat: no-repeat; }
 
 input[type="text"],
 input[type="email"],
@@ -582,6 +638,49 @@ textarea {
   input[type="color"]:focus,
   textarea:focus {
     background: #ffffff; }
+
+input[type="text"].input-white,
+input[type="email"].input-white,
+input[type="url"].input-white,
+input[type="password"].input-white,
+input[type="search"].input-white,
+input[type="number"].input-white,
+input[type="tel"].input-white,
+input[type="date"].input-white,
+input[type="month"].input-white,
+input[type="week"].input-white,
+input[type="time"].input-white,
+input[type="datetime"].input-white,
+input[type="datetime-local"].input-white,
+input[type="color"].input-white,
+textarea {
+  color: #e0e0e0;
+  border: 3px solid #f0f0f0;
+  border-radius: 0px;
+  background: #ffffff;
+  width: 100%;
+  font-family: "Clayton Neue";
+  font-weight: 300;
+  padding: 1px 10px 2px 10px;
+  letter-spacing: .02em;
+  outline: none; }
+  input[type="text"].input-white:focus,
+  input[type="email"].input-white:focus,
+  input[type="url"].input-white:focus,
+  input[type="password"].input-white:focus,
+  input[type="search"].input-white:focus,
+  input[type="number"].input-white:focus,
+  input[type="tel"].input-white:focus,
+  input[type="date"].input-white:focus,
+  input[type="month"].input-white:focus,
+  input[type="week"].input-white:focus,
+  input[type="time"].input-white:focus,
+  input[type="datetime"].input-white:focus,
+  input[type="datetime-local"].input-white:focus,
+  input[type="color"].input-white:focus,
+  textarea:focus {
+    background: #ffffff;
+    color: #231f20; }
 
 textarea {
   width: 100%; }
@@ -749,9 +848,21 @@ a {
     float: left; } }
 @media screen and (min-width: 700px) {
   .main-navigation li {
-    float: right;
+    float: left;
     position: relative;
     padding-left: 30px; } }
+.main-navigation li.right .wcmenucart-contents {
+  position: relative; }
+  .main-navigation li.right .wcmenucart-contents .icon-shopping-cart:before {
+    font-size: 25px; }
+  .main-navigation li.right .wcmenucart-contents .amount {
+    color: #e0e0e0;
+    font-size: .5em;
+    font-family: "Business Script";
+    font-weight: 300;
+    position: absolute;
+    right: 0px;
+    bottom: -5px; }
 .main-navigation a {
   display: inline-block;
   text-decoration: none;
@@ -1027,6 +1138,11 @@ object {
 /*--------------------------------------------------------------
 # Woocommerce
 --------------------------------------------------------------*/
+.woocommerce-message {
+  display: block;
+  background: #ffd138;
+  padding: 20px; }
+
 /*--------------------------------------------------------------
 # Link Styles
 --------------------------------------------------------------*/
@@ -1325,14 +1441,61 @@ a.squiggle {
       color: #231f20; }
 
 /*--------------------------------------------------------------
+Cart Styles
+--------------------------------------------------------------*/
+.woocommerce-cart .cart #coupon_code {
+  width: 25%; }
+.woocommerce-cart .cart #coupon_code, .woocommerce-cart .cart input.chamfered-button {
+  float: left;
+  margin-top: 8px;
+  margin-bottom: 8px; }
+.woocommerce-cart .cart input.chamfered-button {
+  margin-left: 10px; }
+.woocommerce-cart .cart #update-cart {
+  float: right; }
+
+/*--------------------------------------------------------------
 Product Styles
 --------------------------------------------------------------*/
+.product .entry-header ul.post-meta li:last-of-type {
+  display: none; }
+
 .type-tester {
   display: block;
   border: 3px solid #f0f0f0;
   width: 100%;
   font-weight: 300;
-  float: left; }
+  float: left;
+  position: relative; }
+  @media (min-width: 768px) {
+    .type-tester {
+      width: 150%;
+      margin-left: -50%; } }
+  @media (min-width: 1101px) {
+    .type-tester {
+      width: 160.4166666667%;
+      margin-left: -60.4166666667%; } }
+  .type-tester:before, .type-tester:after {
+    display: block;
+    width: 19px;
+    height: 17px;
+    position: absolute;
+    background: #ffffff;
+    z-index: 1;
+    bottom: -3px;
+    color: #f0f0f0;
+    font-family: 'Very Cool Icons';
+    font-style: normal;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: .45;
+    content: "\E008"; }
+  .type-tester:before {
+    left: -3px; }
+  .type-tester:after {
+    right: -3px;
+    -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1); }
   .type-tester span {
     outline: none; }
   .type-tester .fontselect {
@@ -1377,12 +1540,14 @@ Product Styles
     font-weight: 800;
     font-style: italic; }
   .type-tester .type-tester-title {
-    padding: 14px 20px;
-    width: 25%;
-    text-align: center;
-    display: block;
-    border-right: 3px solid #f0f0f0;
-    float: left; }
+    display: none; }
+    @media only screen and (min-width: 965px) {
+      .type-tester .type-tester-title {
+        padding: 14px 20px;
+        width: 29.1666666667%;
+        text-align: center;
+        display: block;
+        float: left; } }
     .type-tester .type-tester-title h5, .type-tester .type-tester-title .h5 {
       margin-top: 0px;
       margin-bottom: 0px; }
@@ -1395,11 +1560,18 @@ Product Styles
       letter-spacing: .02em; }
   .type-tester .type-tester-header {
     border-bottom: 3px solid #f0f0f0;
-    width: 75%;
-    float: right;
     font-family: "Clayton Neue";
     font-weight: 300 !important;
     font-size: 20px; }
+    @media only screen and (min-width: 965px) {
+      .type-tester .type-tester-header {
+        width: 70.8333333333%;
+        float: right;
+        border-left: 3px solid #f0f0f0; } }
+    .type-tester .type-tester-header:after {
+      content: "";
+      display: table;
+      clear: both; }
     .type-tester .type-tester-header .select {
       position: relative;
       float: left;
@@ -1409,6 +1581,7 @@ Product Styles
         cursor: pointer;
         outline: none;
         min-width: 130px;
+        max-width: 150px;
         -webkit-appearance: none;
         letter-spacing: .02em;
         display: block;
@@ -1420,6 +1593,9 @@ Product Styles
         font-family: inherit;
         font-size: inherit;
         line-height: inherit; }
+        @media only screen and (min-width: 965px) {
+          .type-tester .type-tester-header .select select {
+            max-width: auto; } }
       .type-tester .type-tester-header .select .arr {
         background: transparent;
         bottom: 5px;
@@ -1456,6 +1632,14 @@ Product Styles
       color: #e0e0e0;
       padding: 0px 10px 4px 10px;
       border-right: 3px solid #f0f0f0; }
+      @media only screen and (max-width: 600px) {
+        .type-tester .type-tester-header .type-tester-checkbox {
+          display: none; } }
+      .type-tester .type-tester-header .type-tester-checkbox:last-of-type {
+        border-right: 0px; }
+        @media only screen and (max-width: 660px) {
+          .type-tester .type-tester-header .type-tester-checkbox:last-of-type {
+            display: none; } }
       .type-tester .type-tester-header .type-tester-checkbox input[type="checkbox"] {
         cursor: pointer;
         border: 3px solid #e0e0e0;
@@ -1484,34 +1668,33 @@ Product Styles
         content: "LG";
         margin-left: 5px; }
   .type-tester .type-tester-footer {
-    float: right;
-    padding: 4px;
-    width: 75%; }
-  .type-tester .add_to_cart_button {
-    color: transparent;
-    position: absolute;
-    left: 10px;
-    bottom: 10px;
-    font-size: 0px;
-    border-radius: 0px;
-    background: transparent; }
-    .type-tester .add_to_cart_button:before {
-      display: inline-block;
-      color: #231f20;
-      font-family: 'Very Cool Icons';
-      font-style: normal;
-      font-size: 17px;
-      font-weight: 400;
-      padding: 3px 6px;
-      line-height: 1;
-      content: "\E009"; }
-    .type-tester .add_to_cart_button.added:before {
-      content: "\2714";
-      font-size: 14px;
-      padding: 3px 5px;
-      color: #ffd138; }
-  .type-tester a.added_to_cart {
-    display: none; }
+    padding: 4px; }
+    @media only screen and (min-width: 965px) {
+      .type-tester .type-tester-footer {
+        width: 70.8333333333%;
+        float: right; } }
+    @media only screen and (max-width: 600px) {
+      .type-tester .type-tester-footer {
+        text-align: center; } }
+    .type-tester .type-tester-footer .cart {
+      display: inline; }
+      .type-tester .type-tester-footer .cart button {
+        display: inline-block;
+        margin: 10px 20px 9px 12px; }
+        @media only screen and (min-width: 965px) {
+          .type-tester .type-tester-footer .cart button {
+            margin-left: -3px; } }
+    .type-tester .type-tester-footer .type-tester-notice {
+      line-height: 1.2;
+      letter-spacing: .05em;
+      float: right;
+      text-align: right;
+      font-weight: 300;
+      color: #e0e0e0;
+      margin: 10px 20px; }
+      @media only screen and (max-width: 600px) {
+        .type-tester .type-tester-footer .type-tester-notice {
+          display: none; } }
   .type-tester .price {
     color: #ffd138;
     font-size: 1em;
@@ -1527,12 +1710,17 @@ Product Styles
   padding-left: 0px;
   margin-left: 0px;
   list-style-type: none; }
+  .single .entry-header ul.post-meta li:not(:last-of-type) {
+    font-family: "Clayton Neue";
+    font-weight: 300;
+    font-size: 25px;
+    letter-spacing: .02em; }
   .single .entry-header ul.post-meta li .post-meta-key {
     font-family: "Clayton Neue";
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: .17em;
-    font-size: .8em;
+    font-size: 15px;
     display: inline-block;
     width: 80px; }
   .single .entry-header ul.post-meta li:last-of-type {
@@ -1655,10 +1843,17 @@ body header.site-header .site-branding:after {
     content: "a Type Foundry"; }
 
   .home header.site-header .site-branding:after {
-    content: "a Design Studio"; } }
+    content: "a Design Studio"; }
+
+  .woocommerce-cart .page-title {
+    display: none; }
+  .woocommerce-cart header.site-header .site-branding:after {
+    content: "Cart"; } }
 #white-page.white-page {
   background: #ffffff;
   padding: 15px; }
+  #white-page.white-page .summary.entry-summary {
+    margin-top: 0px; }
   @media (min-width: 920px) {
     #white-page.white-page {
       padding: 35px 50px;

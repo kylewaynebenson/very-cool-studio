@@ -21,12 +21,29 @@
 			float: left;
 			}
 		@media screen and (min-width: 700px) {
-			float: right;
+			float: left;
 			position: relative;
 			padding-left: 30px;
 		}
 		&:hover > a,
 		&.focus > a {
+		}
+		&.right {
+			.wcmenucart-contents {
+				position: relative;
+				.icon-shopping-cart:before {
+					font-size: 25px;
+				}
+				.amount {
+					color: $gray-2;
+					font-size: .5em;
+					font-family: $type-script-subhead;
+					font-weight: 300;
+					position: absolute;
+					right: 0px;
+					bottom: -5px;
+				}
+			}
 		}
 	}
 	

@@ -145,7 +145,28 @@ function create_pages(){
         update_option("awesome_page_id", $postID);
     }
 }
+/**
+ * Add classes to category links
+**/
+add_filter('wp_list_categories', 'add_slug_class_wp_list_categories');
+function add_slug_class_wp_list_categories($list) {
 
+$cats = get_categories('hide_empty=0');
+	foreach($cats as $cat) {
+	$find = 'cat-item-' . $cat->term_id . '"';
+	$replace = 'cat-item-' . $cat->slug . ' cat-item-' . $cat->term_id . '"';
+	$list = str_replace( $find, $replace, $list );
+	$find = 'cat-item-' . $cat->term_id . ' ';
+	$replace = 'cat-item-' . $cat->slug . ' cat-item-' . $cat->term_id . ' ';
+	$list = str_replace( $find, $replace, $list );
+	}
+
+return $list;
+}
+/**
+ * Disable woocommerce styles
+ */
+add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 /**
  * Implement the Custom Header feature.
  */
@@ -170,3 +191,26 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+/**
+ * Excerpt allow shortcodes
+ */
+add_filter( 'the_excerpt', 'shortcode_unautop');
+add_filter( 'the_excerpt', 'do_shortcode');
+/**
+ * Price Shortcode
+ */
+function so_30165014_price_shortcode_callback( $atts ) {
+    $atts = shortcode_atts( array(
+        'id' => null,
+    ), $atts, 'bartag' );
+
+    $html = '';
+
+    if( intval( $atts['id'] ) > 0 && function_exists( 'wc_get_product' ) ){
+         $_product = wc_get_product( $atts['id'] );
+         $_product_trimmed = rtrim($_product->get_price(), ".00");
+         $html = '<h1 class="huge-h1 price">' . $_product_trimmed . $html = '</h1>';
+    }
+    return $html;
+}
+add_shortcode( 'woocommerce_price', 'so_30165014_price_shortcode_callback' );

@@ -47,7 +47,31 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
+<div class="clear"></div>
+<section id="type-section">
+        <?php
+            $args = array( 'post_type' => 'product', 'product_cat' => 'type', 'stock' => 1, 'posts_per_page' => 4, 'orderby' =>'date','order' => 'DESC' );
+            $loop = new WP_Query( $args );
+            while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
 
+		<article <?php post_class( $classes ); ?>>
+			<header class="entry-header">	
+		                    <a id="id-<?php the_id(); ?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+		                        <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" width="65px" height="115px" />'; ?>
+				</a>
+			</header>
+			<footer class="entry-footer">
+				<a href="<?php the_permalink(); ?>">
+					<h4 class="entry-title"><?php the_title(); ?></h4>
+					<h5><?php echo get_the_excerpt(); ?></h5>
+					<h4 class="price h4"><?php echo $product->get_price_html(); ?></h4>
+				</a>
+				<?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?>
+			</footer>
+		</article>
+        <?php endwhile; ?>
+        <?php wp_reset_query(); ?>
+</section><!-- /recent -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div><!-- #white-box -->

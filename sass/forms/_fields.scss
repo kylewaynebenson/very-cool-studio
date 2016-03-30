@@ -5,7 +5,6 @@ input[type="password"],
 input[type="search"],
 input[type="number"],
 input[type="tel"],
-input[type="range"],
 input[type="date"],
 input[type="month"],
 input[type="week"],
@@ -61,5 +60,130 @@ label.hidden {
 form {
 	p {
 		margin: 0px;
+	}
+	&.cart {
+		margin: 0px;
+		padding: 0px;
+	}
+}
+/* Range styles */
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: $gray-1;
+}
+input[type=range]::-webkit-slider-thumb {
+  height: 14px;
+  width: 14px;
+  border-radius: 37px;
+  background: $yellow;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: $gray-1;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: $gray-1;
+  border-radius: 0px;
+}
+input[type=range]::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 32px;
+  background: $gray-1;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: $gray-1;
+  border-radius: 0px;
+}
+input[type=range]::-ms-fill-upper {
+  background: $gray-1;
+  border-radius: 0px;
+}
+input[type=range]::-ms-thumb {
+  height: 18px;
+  width: 16px;
+  border-radius: 37px;
+  background: $gray-1;
+  cursor: pointer;
+  height: 4px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: $gray-1;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: $gray-1;
+}
+/* Select styles */
+.select {
+	position: relative;
+	display: inline-block;
+	select {
+		outline: none;
+		-webkit-appearance: none;
+		display: block;
+		margin: 0;
+		border: 0px;
+		background: #fff;
+		color: $gray-2;
+		line-height: normal;
+		font-family: inherit;
+		font-size: inherit;
+		line-height: inherit;
+	}
+	.arr {
+		background: #fff;
+		bottom: 5px;
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		width: 50px;
+		pointer-events: none;
+		&:before {
+			content: ' ';
+			position: absolute;
+			z-index: 1;
+			top: 50%;
+			right: 24px;
+			margin-top: -5px;
+			pointer-events: none;
+			border-top: 10px solid $gray-2;
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+		}
+		&:after {
+			content: ' ';
+			position: absolute;
+			z-index: 1;
+			top: 50%;
+			right: 28px;
+			margin-top: -5px;
+			pointer-events: none;
+			border-top: 6px solid #fff;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+		}
 	}
 }

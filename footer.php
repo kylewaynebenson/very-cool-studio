@@ -11,7 +11,6 @@
  */
 
 ?>
-
 	</div><!-- #content -->
 
 	<footer class="footer" role="contentinfo">

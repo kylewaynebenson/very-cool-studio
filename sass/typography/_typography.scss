@@ -29,6 +29,14 @@
        url('./type/verycoolicons-regular.woff2') format('woff2'), /* Super Modern Browsers */
        url('./type/verycoolicons-regular.woff') format('woff'), /* Pretty Modern Browsers */
 }
+@font-face {
+  font-family: 'Clayton Neue Cond';
+  font-weight: 600;
+  src: url('./type/ClaytonNeue-SemiBoldCondensed.eot'); /* IE9 Compat Modes */
+  src: url('./type/ClaytonNeue-SemiBoldCondensed.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./type/ClaytonNeue-SemiBoldCondensed.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./type/ClaytonNeue-SemiBoldCondensed.woff') format('woff'), /* Pretty Modern Browsers */
+}
 .icon:before {
     display: inline-block;
     font-family: 'Very Cool Icons';
@@ -69,9 +77,13 @@
 .icon-arrow-back:before {
   content: "\E007";
 }
+.icon-shopping-cart:before {
+  content: "\E009";
+}
 
 $type-text: "Cornbread";
 $type-headline: "Cornbread";
+$type-headline-cond: "Clayton Neue Cond";
 $type-subhead: "Clayton Neue";
 $type-script-subhead: "Business Script";
 

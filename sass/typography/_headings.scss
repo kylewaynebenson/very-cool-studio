@@ -5,6 +5,11 @@ h1, .h1 {
 	font-family: $type-headline;
 	font-weight: 300;
 }
+h1.huge-h1 {
+	font-family: $type-headline-cond;
+	font-weight: 600;
+	font-size: 6em;
+}
 h2, .h2 {
 	font-family: $type-script-subhead;
 	font-weight: 300;

@@ -1030,6 +1030,10 @@ footer.footer {
 	}
 	@include clearfix;
 	.footer-contact {
+		input {
+			padding: 8px 25px 12px 25px;
+			font-size: 1.6em;
+		}
 		@media (min-width: 768px) {
 			float: left;
 			width: span(14);

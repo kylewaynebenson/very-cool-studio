@@ -2,3 +2,54 @@ table {
 	margin: 0 0 1.5em;
 	width: 100%;
 }
+table.list-box {
+	box-sizing: border-box;
+	list-style-type: none;
+	margin-left: 0px;
+	padding-left: 0px;
+	font-family: $type-subhead;
+	font-weight: 300;
+	font-size: 1.6em;
+	letter-spacing: .02em;
+	border: 3px solid $black;
+	thead {
+		font-size: 16px;
+		text-align: left;
+		th {
+			padding: 5px 20px 0px 20px;
+		}
+	}
+	tr {
+		img {
+			max-height: 30px;
+			width: auto;
+		}
+		a {
+			text-decoration: none;
+			line-height: 1;
+		}
+		td {
+			padding: 5px 20px;
+		}
+		td.product-price, td.product-quantity, td.product-quantity input {
+			font-family: $type-script-subhead;
+			font-weight: 300;
+			font-size: 0.7em;
+			input {
+				border: 0px;
+				width: 50px;
+			}
+		}
+		.year {
+			float: right;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: .17em;
+			padding-top: 10px;
+			font-size: .5em;
+		}
+		&:nth-of-type(even) {
+			background: $gray-1;
+		}
+	}
+}

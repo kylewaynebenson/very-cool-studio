@@ -20,15 +20,12 @@ textarea {
 	width: 100%;
 	font-family: $type-subhead;
 	font-weight: 300;
-	font-size: 1.6em;
 	letter-spacing: .02em;
-	padding: 8px 25px 12px 25px;
 	outline: none;
 	&:focus {
 		background: $white;
 	}
 }
-
 select {
 
 }

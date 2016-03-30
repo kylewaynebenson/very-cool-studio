@@ -432,6 +432,29 @@ dt {
 dd {
   margin: 0 1.5em 1.5em; }
 
+.list-box {
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+  font-family: "Clayton Neue";
+  font-weight: 300;
+  font-size: 1.6em;
+  letter-spacing: .02em; }
+  .list-box li {
+    padding: 3px 19px 8px 19px; }
+    .list-box li a {
+      text-decoration: none;
+      line-height: 1; }
+    .list-box li .year {
+      float: right;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .17em;
+      padding-top: 10px;
+      font-size: .5em; }
+    .list-box li:nth-of-type(odd) {
+      background: #ffffff; }
+
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -441,6 +464,46 @@ img {
 table {
   margin: 0 0 1.5em;
   width: 100%; }
+
+table.list-box {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+  font-family: "Clayton Neue";
+  font-weight: 300;
+  font-size: 1.6em;
+  letter-spacing: .02em;
+  border: 3px solid #231f20; }
+  table.list-box thead {
+    font-size: 16px;
+    text-align: left; }
+    table.list-box thead th {
+      padding: 5px 20px 0px 20px; }
+  table.list-box tr img {
+    max-height: 30px;
+    width: auto; }
+  table.list-box tr a {
+    text-decoration: none;
+    line-height: 1; }
+  table.list-box tr td {
+    padding: 5px 20px; }
+  table.list-box tr td.product-price, table.list-box tr td.product-quantity, table.list-box tr td.product-quantity input {
+    font-family: "Business Script";
+    font-weight: 300;
+    font-size: 0.7em; }
+    table.list-box tr td.product-price input, table.list-box tr td.product-quantity input, table.list-box tr td.product-quantity input input {
+      border: 0px;
+      width: 50px; }
+  table.list-box tr .year {
+    float: right;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .17em;
+    padding-top: 10px;
+    font-size: .5em; }
+  table.list-box tr:nth-of-type(even) {
+    background: #f0f0f0; }
 
 .squiggle-divider-full:after {
   -webkit-user-select: none;
@@ -501,9 +564,7 @@ textarea {
   width: 100%;
   font-family: "Clayton Neue";
   font-weight: 300;
-  font-size: 1.6em;
   letter-spacing: .02em;
-  padding: 8px 25px 12px 25px;
   outline: none; }
   input[type="text"]:focus,
   input[type="email"]:focus,
@@ -804,29 +865,6 @@ a {
   .list-inline li {
     display: inline-block;
     padding-right: 20px; }
-
-.list-box {
-  list-style-type: none;
-  margin-left: 0px;
-  padding-left: 0px;
-  font-family: "Clayton Neue";
-  font-weight: 300;
-  font-size: 1.6em;
-  letter-spacing: .02em; }
-  .list-box li {
-    padding: 3px 19px 8px 19px; }
-    .list-box li a {
-      text-decoration: none;
-      line-height: 1; }
-    .list-box li .year {
-      float: right;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: .17em;
-      padding-top: 10px;
-      font-size: .5em; }
-    .list-box li:nth-of-type(odd) {
-      background: #ffffff; }
 
 /*--------------------------------------------------------------
 # Clearings
@@ -1729,6 +1767,9 @@ footer.footer {
     content: "";
     display: table;
     clear: both; }
+  footer.footer .footer-contact input {
+    padding: 8px 25px 12px 25px;
+    font-size: 1.6em; }
   @media (min-width: 768px) {
     footer.footer .footer-contact {
       float: left;

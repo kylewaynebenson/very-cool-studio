@@ -1834,7 +1834,11 @@ Product Styles
       text-align: center;
       z-index: 1;
       display: inline-block;
-      vertical-align: .7em; }
+      max-width: 120px;
+      text-overflow: hidden;
+      white-space: nowrap;
+      overflow: hidden;
+      vertical-align: .2em; }
       @media only screen and (min-width: 768px) and (max-width: 1160px) {
         .single .entry-footer .post-navigation .nav-previous a, .single .entry-footer .post-navigation .nav-next a {
           width: 25px;
@@ -1856,10 +1860,10 @@ Product Styles
     line-height: 1; }
   .single .entry-footer .post-navigation .nav-previous:before {
     content: "\E006";
-    margin-right: -14px; }
+    margin-right: -17px; }
   .single .entry-footer .post-navigation .nav-next:after {
     content: "\E006";
-    margin-left: -14px; }
+    margin-left: -17px; }
   .single .entry-footer .post-navigation .nav-previous:after {
     content: "\E007";
     margin-left: -11px; }

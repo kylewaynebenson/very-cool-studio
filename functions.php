@@ -263,3 +263,12 @@ function sk_wcmenucart($menu, $args) {
 	return $menu . $social;
 
 }
+/**
+ * Load fonts based on page
+ */
+function theme_styles()
+{
+  wp_register_style( 'webfonts',
+    get_template_directory_uri() . '/css/webfonts.css', array(), '20130227', 'all' );
+}
+add_action('wp_enqueue_scripts', 'theme_styles');

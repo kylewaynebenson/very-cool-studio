@@ -1532,7 +1532,6 @@ Product Styles
   display: block;
   border: 3px solid #f0f0f0;
   width: 100%;
-  font-weight: 300;
   float: left;
   position: relative; }
   @media (min-width: 768px) {
@@ -1590,23 +1589,25 @@ Product Styles
       -webkit-font-feature-settings: "smcp" 1;
               font-feature-settings: "smcp" 1; }
     .type-tester .fontselect.cardinal-grotesque {
-      font-family: 'Clayton Neue Cond';
+      font-family: 'Clayton Neue';
       line-height: 1; }
+      .type-tester .fontselect.cardinal-grotesque.semiboldcondensed, .type-tester .fontselect.cardinal-grotesque.lightcondensed {
+        font-family: 'Clayton Neue Cond'; }
     .type-tester .fontselect.business-script {
       font-family: 'Business Script';
       line-height: 1; }
+  .type-tester .fontweight.extralight {
+    font-weight: 100; }
   .type-tester .fontweight.light {
     font-weight: 200; }
   .type-tester .fontweight.regular {
-    font-weight: 400; }
+    font-weight: 300; }
+  .type-tester .fontweight.semibold {
+    font-weight: 500; }
   .type-tester .fontweight.bold {
-    font-weight: 800; }
-  .type-tester .fontweight.italic {
-    font-weight: 400;
-    font-style: italic; }
-  .type-tester .fontweight.bolditalic {
-    font-weight: 800;
-    font-style: italic; }
+    font-weight: 600; }
+  .type-tester .fontweight.extrabold {
+    font-weight: 700; }
   .type-tester .type-tester-title {
     display: none; }
     @media only screen and (min-width: 965px) {

@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Clayton Neue';
+  font-weight: 100;
+  src: url("../type/ClaytonNeue-ExtraLight.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/ClaytonNeue-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../type/ClaytonNeue-ExtraLight.woff2") format("woff2"), url("../type/ClaytonNeue-ExtraLight.woff") format("woff"); }
+@font-face {
+  font-family: 'Clayton Neue';
+  font-weight: 200;
+  src: url("../type/ClaytonNeue-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/ClaytonNeue-Light.eot?#iefix") format("embedded-opentype"), url("../type/ClaytonNeue-Light.woff2") format("woff2"), url("../type/ClaytonNeue-Light.woff") format("woff"); }
+@font-face {
+  font-family: 'Clayton Neue';
+  font-weight: 300;
+  src: url("../type/ClaytonNeue-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/ClaytonNeue-Regular.eot?#iefix") format("embedded-opentype"), url("../type/ClaytonNeue-Regular.woff2") format("woff2"), url("../type/ClaytonNeue-Regular.woff") format("woff"); }
+@font-face {
+  font-family: 'Clayton Neue';
+  font-weight: 500;
+  src: url("../type/ClaytonNeue-Semibold.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/ClaytonNeue-Semibold.eot?#iefix") format("embedded-opentype"), url("../type/ClaytonNeue-Semibold.woff2") format("woff2"), url("../type/ClaytonNeue-Semibold.woff") format("woff"); }
+@font-face {
+  font-family: 'Clayton Neue';
+  font-weight: 600;
+  src: url("../type/ClaytonNeue-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/ClaytonNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../type/ClaytonNeue-Bold.woff2") format("woff2"), url("../type/ClaytonNeue-Bold.woff") format("woff"); }
+@font-face {
+  font-family: 'Clayton Neue';
+  font-weight: 700;
+  src: url("../type/ClaytonNeue-ExtraBold.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/ClaytonNeue-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../type/ClaytonNeue-ExtraBold.woff2") format("woff2"), url("../type/ClaytonNeue-ExtraBold.woff") format("woff"); }
+@font-face {
+  font-family: 'Clayton Neue Cond';
+  font-weight: 600;
+  src: url("../type/ClaytonNeue-SemiBoldCondensed.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/ClaytonNeue-SemiBoldCondensed.eot?#iefix") format("embedded-opentype"), url("../type/ClaytonNeue-SemiBoldCondensed.woff2") format("woff2"), url("../type/ClaytonNeue-SemiBoldCondensed.woff") format("woff"); }

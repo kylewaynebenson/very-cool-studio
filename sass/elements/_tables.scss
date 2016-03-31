@@ -1,19 +1,48 @@
 table {
 	margin: 0 0 1.5em;
 	width: 100%;
+	font-family: $type-subhead;
+	font-weight: 300;
+	font-size: 1.6em;
+	letter-spacing: .02em;
+	caption {
+		background: $black;
+		color: $white;
+		text-transform: uppercase;
+		text-align: left;
+		font-family: "Andale Mono", AndaleMono, "Consolas", "Lucida Console", monospace;
+		padding: 5px 10px;
+	}
+	th {
+		text-transform: uppercase;
+		font-size: 16px;
+		text-align: left;
+		font-weight: 300;
+	}
+	@media (max-width: 500px) {
+		font-size: 1.2em;
+		line-height: 1.2;
+	}
+	@media (max-width: 768px) {
+		thead 	th {
+			padding: 5px 0px 0px 0px;
+		}
+		tr td, caption {
+			padding: 5px 0px;
+			border-bottom: 3px solid $gray-1;
+		}
+
+		caption {
+			padding: 5px 10px;
+		}
+	}
 }
 table.list-box {
 	box-sizing: border-box;
 	list-style-type: none;
 	margin-left: 0px;
 	padding-left: 0px;
-	font-family: $type-subhead;
-	font-weight: 300;
-	font-size: 1.6em;
-	letter-spacing: .02em;
 	@media (max-width: 500px) {
-		font-size: 1.2em;
-		line-height: 1.2;
 		th.product-quantity {
 			font-size: 0px;
 			color: $white;
@@ -26,15 +55,6 @@ table.list-box {
 	@media (max-width: 768px) {
 		.product-price {
 			display: none;
-		}
-		thead 	th {
-			padding: 5px 0px 0px 0px;
-		}
-		tr {
-			td {
-				padding: 5px 0px;
-				border-bottom: 3px solid $gray-1;
-			}
 		}
 	}
 	@media (min-width: 769px) {

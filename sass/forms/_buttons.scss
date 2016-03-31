@@ -23,7 +23,7 @@ input[type="submit"] {
 	float: right;
 	margin-top: -2px;
 }
-.chamfered-button, input[type="submit"].chamfered-button, .woocommerce-message a.button {
+.chamfered-button, input[type="submit"].chamfered-button, .woocommerce-message a.button, .wc-forward.button {
 	color: $white;
 	text-decoration: none;
 	border: 0px;
@@ -41,7 +41,7 @@ input[type="submit"] {
 	padding: 5px 20px;
 	letter-spacing: 1px;
 }
-input[type="submit"].chamfered-button-yellow, .chamfered-button-yellow {
+input[type="submit"].chamfered-button-yellow, .chamfered-button-yellow, .wc-forward.button {
 	color: $black;
 	background:
 		linear-gradient(135deg, transparent 5px, $yellow 0) top left,

@@ -522,22 +522,88 @@ a.squiggle {
 Cart Styles
 --------------------------------------------------------------*/
 .woocommerce-cart {
+	.wc-forward.button {
+		text-align: center;
+		padding: 15px 30px;
+		@media (max-width: 500px) {
+			display: block;
+			width: 100%;
+		}
+		@media (min-width: 650px) {
+			float: right;
+		}
+	}
+	table.cart-totals {
+		background: $gray-1;
+		border-collapse: collapse;
+		min-width: 300px;
+		tbody {
+			border-right: 20px solid transparent;
+			border-left: 20px solid transparent;
+			border-top: 15px solid transparent;
+			border-bottom: 12px solid transparent;
+			td {
+				padding-top: 0px;
+				border: 0px;
+				text-align: right;
+			}
+		}
+		caption {
+			padding-left: 20px;
+		}
+		@media (min-width: 650px) {
+			width: span(10);
+			float: left;
+		}
+		@media (min-width: 960px) {
+			width: span(8);
+			float: left;
+		}
+		th {
+			vertical-align: bottom;
+		}
+		td, th {
+			font-size: 16px;
+			text-transform: uppercase;
+			line-height: 1;
+		}
+		.amount {
+			font-weight: 300;
+		}
+		.shipping td {
+			color: transparent;
+			span.amount {
+				color: $black;
+			}
 
-		.cart {
-			#coupon_code {
-				width: span(6);
+		}
+		.order-total {
+			td {
+				font-family: $type-headline-cond;
+				font-weight: 600;
+				font-size: 3em;
+				line-height: 1;
 			}
-			#coupon_code, input.chamfered-button {
-				float: left;
-				margin-top: 8px;
-				margin-bottom: 8px;
+			td, th {
+				padding-bottom: 10px;
 			}
-			input.chamfered-button {
-				margin-left: 10px;
-			}
-			#update-cart {
-				float: right;
-			}
+		}
+	}	
+	.cart {
+		#coupon_code {
+			width: span(6);
+		}
+		#coupon_code, input.chamfered-button {
+			float: left;
+			margin-top: 8px;
+			margin-bottom: 8px;
+		}
+		input.chamfered-button {
+			margin-left: 10px;
+		}
+		#update-cart {
+			float: right;
+		}
 	}
 }
 

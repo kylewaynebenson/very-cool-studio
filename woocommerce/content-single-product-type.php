@@ -207,6 +207,8 @@ $('#type-tester-editable').focus(function() {
     }
 });
 </script>
-
 <?php do_action( 'woocommerce_after_single_product' ); ?>
+<div class="yellow-section">
+	
+</div>
 <?php wp_enqueue_style( 'webfonts' ); ?>

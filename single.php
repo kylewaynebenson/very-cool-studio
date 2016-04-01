@@ -28,6 +28,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	</div><!-- content -->
 </div><!-- #white-box -->
 
 <?php

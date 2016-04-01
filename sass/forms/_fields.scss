@@ -26,6 +26,21 @@ textarea {
 		background: $white;
 	}
 }
+.woocommerce-checkout .woocommerce input[type="text"],
+.woocommerce-checkout .woocommerce input[type="email"],
+.woocommerce-checkout .woocommerce input[type="url"],
+.woocommerce-checkout .woocommerce input[type="password"],
+.woocommerce-checkout .woocommerce input[type="search"],
+.woocommerce-checkout .woocommerce input[type="number"],
+.woocommerce-checkout .woocommerce input[type="tel"],
+.woocommerce-checkout .woocommerce input[type="date"],
+.woocommerce-checkout .woocommerce input[type="month"],
+.woocommerce-checkout .woocommerce input[type="week"],
+.woocommerce-checkout .woocommerce input[type="time"],
+.woocommerce-checkout .woocommerce input[type="datetime"],
+.woocommerce-checkout .woocommerce input[type="datetime-local"],
+.woocommerce-checkout .woocommerce input[type="color"],
+.woocommerce-checkout .woocommerce textarea,
 input[type="text"].input-white,
 input[type="email"].input-white,
 input[type="url"].input-white,
@@ -40,7 +55,7 @@ input[type="time"].input-white,
 input[type="datetime"].input-white,
 input[type="datetime-local"].input-white,
 input[type="color"].input-white,
-textarea {
+textarea.input-white {
 	color: $gray-2;
 	border: 3px solid $gray-1;
 	border-radius: 0px;

@@ -104,7 +104,7 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_sidebar' );
 	?>
 
-<div class="yellow-page">
+<div id="custom-type" class="yellow-page">
 	<div class="very-cool-flag">
 		<img src="<?php bloginfo('template_directory'); ?>/img/very-cool-flag.svg"/>
 	</div>

@@ -521,6 +521,19 @@ a.squiggle {
 /*--------------------------------------------------------------
 Cart Styles
 --------------------------------------------------------------*/
+.woocommerce-checkout {
+	.woocommerce {
+		@media (min-width: 650px) {
+			.col-1, .col-2 {
+				width: span(11);
+				float: left;
+			}
+			.col-2 {
+				float: right;
+			}
+		}
+	}
+}
 .woocommerce-cart {
 	.wc-forward.button {
 		text-align: center;
@@ -1030,7 +1043,32 @@ Product Styles
 /*--------------------------------------------------------------
 # Page Styles
 --------------------------------------------------------------*/
-
+.page-template-page-studio {
+	#page {
+		background: $black;
+		header.site-header {
+			.site-branding {
+				a {
+					display: block;
+				}
+				.icon-logo:before {
+					content: " ";
+					display: block;
+					width: 310px;
+					height: 50px;
+					background: url("img/stencil-logo.jpg");
+					background-size: 100% auto;
+					background-repeat: no-repeat;
+					margin-top: -13px;
+					margin-bottom: -4px;
+				}
+			}
+		}
+	}
+	footer.footer {
+		background: $black;
+	}
+}
 #page {
 	color: $black;
 	background: $gray-1;
@@ -1040,8 +1078,6 @@ Product Styles
 	.page-title {
 		margin-top: 0px;
 	}
-}
-body {
 	header.site-header {
 		.site-branding:after {
 			font-family: $type-script-subhead;
@@ -1062,6 +1098,13 @@ body {
 		header.site-header {
 			.site-branding:after {
 				content: "a Type Foundry";
+			}
+		}
+	}
+	.page-template-page-studio {
+		header.site-header {
+			.site-branding:after {
+				content: "a guy in Utah";
 			}
 		}
 	}
@@ -1201,8 +1244,10 @@ header.site-header {
 footer.footer {
 	background: $gray-1;
 	padding-top: 1.2em;
+	padding-bottom: 1.2em;
 	@media (min-width: 900px) {
 		padding-top: 2.6em;
+		padding-bottom: 2.6em;
 	}
 	@include clearfix;
 	.footer-contact {

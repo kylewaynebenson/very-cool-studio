@@ -99,6 +99,13 @@ textarea {
 label.hidden {
 	display: none;
 }
+label {
+	text-transform: uppercase;
+	font-size: 16px;
+	color: $black;
+	font-weight: 300;
+	font-family: $type-subhead;
+}
 form {
 	p {
 		margin: 0px;
@@ -107,6 +114,9 @@ form {
 		margin: 0px;
 		padding: 0px;
 	}
+}
+.address-field + .address-field {
+	margin-top: 10px;
 }
 /* Range styles */
 input[type=range] {

@@ -1,7 +1,4 @@
 {
-DisplayStrings = (
-/qualtrics_q_tab
-);
 date = "2016-03-23 07:06:39 +0000";
 familyName = "verycoolicons";
 fontMaster = (
@@ -768,6 +765,77 @@ width = 673;
 }
 );
 unicode = 2714;
+},
+{
+glyphname = caret_down;
+lastChange = "2016-03-31 23:23:55 +0000";
+layers = (
+{
+layerId = "37B69EBB-54A6-4442-9EDE-80FA4A91A6BC";
+name = Regular;
+paths = (
+{
+closed = 1;
+nodes = (
+"64 1152 LINE SMOOTH",
+"29 1152 OFFCURVE",
+"0 1123 OFFCURVE",
+"0 1088 CURVE SMOOTH",
+"0 1071 OFFCURVE",
+"7 1055 OFFCURVE",
+"19 1043 CURVE SMOOTH",
+"467 595 LINE SMOOTH",
+"479 583 OFFCURVE",
+"495 576 OFFCURVE",
+"512 576 CURVE SMOOTH",
+"529 576 OFFCURVE",
+"545 583 OFFCURVE",
+"557 595 CURVE SMOOTH",
+"1005 1043 LINE SMOOTH",
+"1017 1055 OFFCURVE",
+"1024 1071 OFFCURVE",
+"1024 1088 CURVE SMOOTH",
+"1024 1123 OFFCURVE",
+"995 1152 OFFCURVE",
+"960 1152 CURVE SMOOTH"
+);
+}
+);
+width = 1024;
+}
+);
+unicode = E044;
+},
+{
+glyphname = caret_left;
+lastChange = "2016-03-31 23:23:55 +0000";
+layers = (
+{
+layerId = "37B69EBB-54A6-4442-9EDE-80FA4A91A6BC";
+name = Regular;
+paths = (
+{
+closed = 1;
+nodes = (
+"19 829 LINE SMOOTH",
+"-7 803 OFFCURVE",
+"-7 765 OFFCURVE",
+"19 739 CURVE SMOOTH",
+"467 291 LINE SMOOTH",
+"505 253 OFFCURVE",
+"576 273 OFFCURVE",
+"576 336 CURVE SMOOTH",
+"576 1232 LINE SMOOTH",
+"576 1291 OFFCURVE",
+"506 1316 OFFCURVE",
+"467 1277 CURVE SMOOTH"
+);
+}
+);
+width = 640;
+}
+);
+unicode = E045;
 },
 {
 glyphname = barnaby_alt;

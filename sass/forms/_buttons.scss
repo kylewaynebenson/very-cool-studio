@@ -23,7 +23,7 @@ input[type="submit"] {
 	float: right;
 	margin-top: -2px;
 }
-.chamfered-button, input[type="submit"].chamfered-button, .woocommerce-message a.button, .wc-forward.button {
+.chamfered-button, input[type="submit"].chamfered-button, .woocommerce-message a.button, .wc-forward.button, #place_order.button {
 	color: $white;
 	text-decoration: none;
 	border: 0px;
@@ -41,7 +41,7 @@ input[type="submit"] {
 	padding: 5px 20px;
 	letter-spacing: 1px;
 }
-input[type="submit"].chamfered-button-yellow, .chamfered-button-yellow, .wc-forward.button {
+input[type="submit"].chamfered-button-yellow, .chamfered-button-yellow, .wc-forward.button, #place_order.button {
 	color: $black;
 	background:
 		linear-gradient(135deg, transparent 5px, $yellow 0) top left,
@@ -58,6 +58,16 @@ input[type="submit"].chamfered-button-white, .chamfered-button-white {
 		linear-gradient(225deg, transparent 5px, $white 0) top right,
 		linear-gradient(315deg, transparent 5px, $white 0) bottom right,
 		linear-gradient(45deg,  transparent 5px, $white 0) bottom left;
+	background-size: 52% 52%;
+	background-repeat: no-repeat;
+}
+input[type="submit"].chamfered-button-gray, .chamfered-button-gray {
+	color: $black;
+	background:
+		linear-gradient(135deg, transparent 5px, $gray-1 0) top left,
+		linear-gradient(225deg, transparent 5px, $gray-1 0) top right,
+		linear-gradient(315deg, transparent 5px, $gray-1 0) bottom right,
+		linear-gradient(45deg,  transparent 5px, $gray-1 0) bottom left;
 	background-size: 52% 52%;
 	background-repeat: no-repeat;
 }

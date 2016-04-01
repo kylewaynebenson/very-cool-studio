@@ -531,6 +531,205 @@ Cart Styles
 			.col-2 {
 				float: right;
 			}
+			.checkout-extra-buttons {
+				float: right;
+				width: span(16);
+				&:last-of-type {
+					width: span(7);
+					margin-right: span(1);
+				}
+			}
+			.login {
+				.form-row {
+					float: left;
+					width: 47.5%;
+					&.form-row-first {
+						padding-right: 5%;
+					}
+				}
+			}
+		}
+		.login {
+			padding-top: 20px;
+			p:first-of-type {
+				margin-bottom: 10px;
+			}
+			.form-row {
+				margin-top: 15px;
+				label.inline {
+					margin-left: 15px;
+					color: $gray-2;
+				}
+			}
+			.lost_password {
+				margin-top: 15px;
+				color: $gray-2;
+			}
+		}
+		.checkout_coupon {
+			padding-top: 20px;
+			input {
+				float: left;
+				height: 34px;
+				&:last-of-type {
+					width: 30%;
+				}
+			}
+			#coupon_code {
+				width: 70%;
+			}
+		}
+		#billing_first_name_field, #shipping_first_name_field {
+			float: left;
+			width: 40%;
+			margin-right: 5%;
+		}
+		#billing_last_name_field, #shipping_last_name_field {
+			float: left;
+			width: 55%;
+		}
+		#billing_state_field, #shipping_state_field {
+			float: left;
+			width: 55%;
+			margin-right: 5%;
+		}
+		#billing_postcode_field, #shipping_postcode_field {
+			float: left;
+			width: 40%;
+		}
+		.create-account {
+			background: $gray-1;
+			padding: 10px 20px;
+			margin-top: 10px;
+		}
+	}
+}
+#payment {
+	.payment_methods {
+		list-style-type: none;
+		margin: 0px;
+		padding-left: 0px;
+		margin-bottom: 10px;
+		.payment_method_s4wc {
+			img {
+				display: none;
+			}
+			#s4wc-cc-form {
+				outline: none;
+				border: 3px solid $gray-1;
+				border-radius: 20px;
+				padding: 20px;
+				position: relative;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				min-height: 200px;
+				padding-top: 55px;
+				.form-row-first, .form-row-last {
+					display: block;
+					float: left;
+					margin-right: 10px;
+					width: 105px;
+				}
+				#s4wc_save_card_field {
+					width: 110px;
+					float: right;
+					margin-top: 25px;
+					line-height: 1.1;
+					label {
+						color: $gray-2;
+					}
+				}
+			}
+		}
+		.payment_method_paypal {
+			&.payment_box, a, img {
+				display: none !important;
+			}
+			&.wc_payment_method {
+				&:after {
+					content: "(pls no)";
+					text-transform: uppercase;
+					font-size: 16px;
+					color: $gray-2;
+					font-weight: 300;
+					font-family: $type-subhead;
+				}
+			}
+		}
+	}
+	#place_order.button {
+		text-align: center;
+		padding: 15px 30px;
+		@media (max-width: 600px) {
+			display: block;
+			width: 100%;
+		}
+		@media (min-width: 900px) {
+			float: right;
+		}
+	}
+	@media (min-width: 900px) {
+		width: span(12);
+		float: right;
+		padding-left: 20px;
+	}
+	@media (min-width: 1000px) {
+		width: span(11);
+	}
+
+}
+.woocommerce-checkout-review-order-table {
+	@media (min-width: 900px) {
+		width: span(12);
+		float: left;
+	}
+	@media (min-width: 1000px) {
+		width: span(13);
+	}
+	tr {
+		td {
+			&:last-of-type {
+				text-align: right;
+			}
+			strong.product-quantity {
+				font-size: 16px;
+				color: $gray-2;
+				font-weight: 600;
+			}
+		}
+		th.product-total {
+			text-align: right;
+		}
+	}
+	.cart-subtotal, .shipping {
+		color: $gray-2;
+		font-size: 16px;
+		color: $gray-2;
+		font-weight: 300;
+	}
+	@media (min-width: 769px) {
+		.cart-subtotal {
+			td, th {
+				padding-bottom: 0px;
+				padding-top: 5px;
+			}			
+		}
+		.shipping {
+			td, th {
+				padding-bottom: 20px;
+				padding-top: 0px;
+			}
+		}
+	}
+	.order-total {
+		@media (min-width: 769px) {
+			td, th {
+				background: $black;
+				color: $yellow;
+				strong {
+					font-weight: 300;
+				}
+			}
 		}
 	}
 }
@@ -1318,4 +1517,13 @@ footer.footer {
 		}	
 	}
 	
+}
+/*--------------------------------------------------------------
+# Error Styles
+--------------------------------------------------------------*/
+.woocommerce-error {
+	background: $yellow;
+	padding: 5px 10px; 
+	list-style-type: none;
+	margin: 10px 0px;
 }

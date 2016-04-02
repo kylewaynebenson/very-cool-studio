@@ -4,6 +4,9 @@ h1, h2, h3, h4, h5, h6 {
 h1, .h1 {
 	font-family: $type-headline;
 	font-weight: 300;
+	&.cardinal-grotesque { font-family: "Clayton Neue"; }
+	&.kansas-casual { font-family: "Kansas Casual"; }
+	&.business-script { font-family: "Business Script"; }
 }
 h1.huge-h1 {
 	font-family: $type-headline-cond;

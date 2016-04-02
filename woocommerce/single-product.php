@@ -20,8 +20,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header( 'shop' ); ?>
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
 
 	<?php
 		/**
@@ -62,7 +60,5 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_sidebar' );
 	?>
-	</main><!-- #main -->
-	</div><!-- #primary -->
 </div><!-- #white-box -->
 <?php get_footer( 'shop' ); ?>

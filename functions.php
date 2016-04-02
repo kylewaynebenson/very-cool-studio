@@ -272,3 +272,11 @@ function theme_styles()
     get_template_directory_uri() . '/css/webfonts.css', array(), '20130227', 'all' );
 }
 add_action('wp_enqueue_scripts', 'theme_styles');
+/**
+ * Remove colon
+ */
+function mam_filter_the_meta_key( $list_item, $meta_key='', $meta_value='' ) {
+   $new_list_item = str_replace( ':</span>', '</span>', $list_item );
+   return $new_list_item;
+}
+add_filter( 'the_meta_key', 'mam_filter_the_meta_key' );

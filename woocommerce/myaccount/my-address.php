@@ -37,11 +37,7 @@ if ( ! wc_ship_to_billing_address_only() && get_option( 'woocommerce_calc_shippi
 $col = 1;
 ?>
 
-<h2><?php echo $page_title; ?></h2>
-
-<p class="myaccount_address">
-	<?php echo apply_filters( 'woocommerce_my_account_my_address_description', __( 'The following addresses will be used on the checkout page by default.', 'woocommerce' ) ); ?>
-</p>
+<h3><?php echo $page_title; ?></h3>
 
 <?php if ( ! wc_ship_to_billing_address_only() && get_option( 'woocommerce_calc_shipping' ) !== 'no' ) echo '<div class="col2-set addresses">'; ?>
 
@@ -49,7 +45,7 @@ $col = 1;
 
 	<div class="col-<?php echo ( ( $col = $col * -1 ) < 0 ) ? 1 : 2; ?> address">
 		<header class="title">
-			<h3><?php echo $title; ?></h3>
+			<h5><?php echo $title; ?></h5>
 			<a href="<?php echo wc_get_endpoint_url( 'edit-address', $name ); ?>" class="edit"><?php _e( 'Edit', 'woocommerce' ); ?></a>
 		</header>
 		<address>

@@ -208,7 +208,32 @@ $('#type-tester-editable').focus(function() {
 });
 </script>
 <?php do_action( 'woocommerce_after_single_product' ); ?>
-<div class="yellow-section">
-	
+<div class="clear"></div>
+<div class="specimen-gallery">
+	<h5>Specimen Gallery</h5>
+	<?php
+	  global $product;
+	 $attachment_ids = $product->get_gallery_attachment_ids();
+
+	foreach( $attachment_ids as $attachment_id ) 
+	{
+	  $image_link = wp_get_attachment_url( $attachment_id );
+	  echo "<img class='gallery-images' src=" . $image_link . " />";
+	}
+	?>
+</div>
+</div>
+</div>
+</div>
+<div class="yellow-page">
+	<h1 class="footer-title <?php echo $post->post_name;?>"><?php the_title(); ?></h1>
+	<h4 class="price h4"><?php global $product; echo $product->get_price_html(); ?>
+	<meta itemprop="price" content="<?php echo esc_attr( $product->get_price() ); ?>" />
+	<meta itemprop="priceCurrency" content="<?php echo esc_attr( get_woocommerce_currency() ); ?>" /></h4>
+	<form class="cart" method="post" enctype='multipart/form-data'>
+	 	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
+	 	<button type="submit" class="button chamfered-button"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+	 	<a href="<?php echo esc_url( home_url( '/' ) ); ?>terms" class="squiggle squiggle-black">View License</a>
+	</form>
 </div>
 <?php wp_enqueue_style( 'webfonts' ); ?>

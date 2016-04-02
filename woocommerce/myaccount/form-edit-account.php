@@ -21,6 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <?php wc_print_notices(); ?>
+<h3>Basic details<span><a class="button chamfered-button chamfered-button-gray" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">Back to My Account</a></span></h3>
 
 <form class="edit-account" action="" method="post">
 
@@ -40,30 +41,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<label for="account_email"><?php _e( 'Email address', 'woocommerce' ); ?> <span class="required">*</span></label>
 		<input type="email" class="input-text" name="account_email" id="account_email" value="<?php echo esc_attr( $user->user_email ); ?>" />
 	</p>
-
-	<fieldset>
-		<legend><?php _e( 'Password Change', 'woocommerce' ); ?></legend>
-
-		<p class="form-row form-row-wide">
-			<label for="password_current"><?php _e( 'Current Password (leave blank to leave unchanged)', 'woocommerce' ); ?></label>
-			<input type="password" class="input-text" name="password_current" id="password_current" />
-		</p>
-		<p class="form-row form-row-wide">
-			<label for="password_1"><?php _e( 'New Password (leave blank to leave unchanged)', 'woocommerce' ); ?></label>
-			<input type="password" class="input-text" name="password_1" id="password_1" />
-		</p>
-		<p class="form-row form-row-wide">
-			<label for="password_2"><?php _e( 'Confirm New Password', 'woocommerce' ); ?></label>
-			<input type="password" class="input-text" name="password_2" id="password_2" />
-		</p>
-	</fieldset>
+<h3>Password Change</h3>
+	<p class="form-row form-row-wide">
+		<label for="password_current"><?php _e( 'Current Password', 'woocommerce' ); ?></label>
+		<input type="password" class="input-text" name="password_current" id="password_current" />
+	</p>
+	<p class="form-row form-row-new first-new">
+		<label for="password_1"><?php _e( 'New Password', 'woocommerce' ); ?></label>
+		<input type="password" class="input-text" name="password_1" id="password_1" />
+	</p>
+	<p class="form-row form-row-new">
+		<label for="password_2"><?php _e( 'Confirm New Password', 'woocommerce' ); ?></label>
+		<input type="password" class="input-text" name="password_2" id="password_2" />
+	</p>
 	<div class="clear"></div>
 
 	<?php do_action( 'woocommerce_edit_account_form' ); ?>
 
 	<p>
 		<?php wp_nonce_field( 'save_account_details' ); ?>
-		<input type="submit" class="button" name="save_account_details" value="<?php esc_attr_e( 'Save changes', 'woocommerce' ); ?>" />
+		<input type="submit" class="button chamfered-button" id="save_account_details" name="save_account_details" value="<?php esc_attr_e( 'Save changes', 'woocommerce' ); ?>" />
 		<input type="hidden" name="action" value="save_account_details" />
 	</p>
 

@@ -146,15 +146,6 @@ $susy: (
 @import "media/media";
 
 /*--------------------------------------------------------------
-# Woocommerce
---------------------------------------------------------------*/
-.woocommerce-message {
-	display: block;
-	background: $yellow;
-	padding: 20px;
-}
-
-/*--------------------------------------------------------------
 # Link Styles
 --------------------------------------------------------------*/
 a.no-style {
@@ -173,18 +164,15 @@ a.squiggle {
 	display: inline-block;
 	padding-bottom: 7px;
 	color: $yellow;
-	text-decoration: none;
-	font-family: $type-subhead;
-	font-weight: 500;
-	font-size: 1.3em;
-	letter-spacing: .05em;
-	display: inline-block;
 	padding-bottom: 7px;
-	color: $yellow;
 	background-image: url(img/squiggle-yellow.png);
 	background-repeat: repeat-x;
 	background-position: 0px 100%;
 	background-size: 14px 9px;
+}
+a.squiggle-black {
+	background-image: url(img/squiggle-black.png);
+	color: $black;
 }
 .cat-links {
 	a {
@@ -519,6 +507,80 @@ a.squiggle {
 	}
 }
 /*--------------------------------------------------------------
+Account Details
+--------------------------------------------------------------*/
+.woocommerce-account {
+	.entry-content {
+		margin-top: 0px;
+		> h3:first-of-type {
+			margin-top: 0px;
+			span {
+				float: right;
+			}
+		}
+		.woocommerce {
+			> h3:first-of-type, > p:first-of-type {
+				margin-top: 0px;
+				span {
+					float: right;
+				}
+			}
+			.addresses {
+				@media (min-width: 650px) {
+					.address {
+						float: left;
+						width: span(11.5);
+						&.col-2 {
+							float: right;
+						}
+					}
+				}
+				address {
+					font-style: normal !important;
+					color: $gray-2;
+				}
+			}
+			#save_account_details.button {
+				text-align: center;
+				margin-top: 20px;
+				@media (max-width: 600px) {
+					display: block;
+					padding: 15px 30px;
+					width: 100%;
+				}
+				@media (min-width: 900px) {
+				}
+			}
+
+		}
+	}
+	.form-row-new {
+		float: left;
+		width: 47.5%;
+		&.first-new {
+			margin-right: 5%;
+		}
+	}
+	#billing_first_name_field, #shipping_first_name_field, .form-row-first {
+		float: left;
+		width: 40%;
+		margin-right: 5%;
+	}
+	#billing_last_name_field, #shipping_last_name_field, .form-row-last {
+		float: left;
+		width: 55%;
+	}
+	#billing_state_field, #shipping_state_field {
+		float: left;
+		width: 55%;
+		margin-right: 5%;
+	}
+	#billing_postcode_field, #shipping_postcode_field {
+		float: left;
+		width: 40%;
+	}
+}
+/*--------------------------------------------------------------
 Cart Styles
 --------------------------------------------------------------*/
 .woocommerce-checkout {
@@ -533,6 +595,7 @@ Cart Styles
 			}
 			.checkout-extra-buttons {
 				float: right;
+				@include clearfix;
 				width: span(16);
 				&:last-of-type {
 					width: span(7);
@@ -577,6 +640,7 @@ Cart Styles
 			}
 			#coupon_code {
 				width: 70%;
+				border-right: 0px;
 			}
 		}
 		#billing_first_name_field, #shipping_first_name_field {
@@ -622,8 +686,6 @@ Cart Styles
 				position: relative;
 				margin-top: 10px;
 				margin-bottom: 10px;
-				min-height: 200px;
-				padding-top: 55px;
 				.form-row-first, .form-row-last {
 					display: block;
 					float: left;
@@ -631,12 +693,13 @@ Cart Styles
 					width: 105px;
 				}
 				#s4wc_save_card_field {
-					width: 110px;
+					max-width: 80px;
 					float: right;
 					margin-top: 25px;
 					line-height: 1.1;
 					label {
 						color: $gray-2;
+						font-size: 12px;
 					}
 				}
 			}
@@ -833,6 +896,39 @@ Product Styles
 		}
 	}
 }
+.single-product {
+	.specimen-gallery {
+		padding-top: 20px;
+		@media (min-width: 768px) {
+			width: span(16);
+			margin: 0 auto;
+		}
+	}
+	.yellow-page {
+		h1.footer-title {
+			margin: 0px;
+			font-size: 3em;
+			line-height: 1;
+		}
+		> h5:first-of-type {
+			margin-top: 0px;
+			margin-bottom: 5px;
+		}
+		.price {
+			margin: 0px;
+			margin-top: 5px;
+			margin-bottom: 12px;
+		}
+		a.squiggle {
+			vertical-align: 4px;
+			margin-left: 10px;
+		}
+		text-align: center;
+		@media (min-width: 768px) {
+			form.cart {}
+		}
+	}
+}
 .type-tester {
 	display: block;
 	border: 3px solid $gray-1;
@@ -846,6 +942,7 @@ Product Styles
 	@media (min-width: 1101px) {
 		width: span(38.5);
 		margin-left: span(-14.5);
+		margin-top: 15px;
 
 	}
 	&:before, &:after {
@@ -898,13 +995,16 @@ Product Styles
 		}
 		&.cardinal-grotesque { font-family: 'Clayton Neue'; line-height: 1; &.semiboldcondensed, &.lightcondensed { font-family: 'Clayton Neue Cond';}}
 		&.business-script { font-family: 'Business Script'; line-height: 1;}
+		&.kansas-casual { font-family: 'Kansas Casual'; line-height: 1;}
 	}
 	.fontweight.extralight { font-weight: 100;}
 	.fontweight.light { font-weight: 200;}
 	.fontweight.regular { font-weight: 300;}
+	.fontweight.medium { font-weight: 400;}
 	.fontweight.semibold { font-weight: 500;}
 	.fontweight.bold { font-weight: 600;}
 	.fontweight.extrabold { font-weight: 700;}
+	.fontweight.black { font-weight: 900;}
 
 	.type-tester-title {
 		display: none;
@@ -920,7 +1020,7 @@ Product Styles
 			margin-bottom: 0px;
 		}
 		.entry-title {
-			margin: -5px 0px 4px 0px;
+			margin: 0px 0px 4px 0px;
 			font-family: $type-subhead;
 			font-weight: 300;
 			font-size: 1.6em;
@@ -1094,7 +1194,8 @@ Product Styles
 .single {
 	.entry-header {
 		h1 {
-			margin-top: 0px;
+			margin-top: 2px;
+			line-height: 1.25;
 		}
 		ul.post-meta {
 			padding-left: 0px;
@@ -1114,7 +1215,7 @@ Product Styles
 					letter-spacing: .17em;
 					font-size: 15px;
 					display: inline-block;
-					width: 80px;
+					width: 86px;
 				}
 				&:last-of-type {
 					margin-top: 20px;
@@ -1224,6 +1325,9 @@ Product Styles
 			width: span(16);
 			float: right;
 			min-height: 400px;
+			> p:first-of-type {
+				margin-top: 3px;
+			}
 		}
 
 	}
@@ -1246,22 +1350,6 @@ Product Styles
 	#page {
 		background: $black;
 		header.site-header {
-			.site-branding {
-				a {
-					display: block;
-				}
-				.icon-logo:before {
-					content: " ";
-					display: block;
-					width: 310px;
-					height: 50px;
-					background: url("img/stencil-logo.jpg");
-					background-size: 100% auto;
-					background-repeat: no-repeat;
-					margin-top: -13px;
-					margin-bottom: -4px;
-				}
-			}
 		}
 	}
 	footer.footer {
@@ -1274,16 +1362,37 @@ Product Styles
 	@media (min-width: 480px) {
 		padding: 25px;
 	}
+	.entry-content {
+		> h5:first-of-type {
+			margin-top: 0px;
+		}
+	}
 	.page-title {
 		margin-top: 0px;
 	}
 	header.site-header {
-		.site-branding:after {
-			font-family: $type-script-subhead;
-			font-weight: 300;
-			font-size: 1.2em;
-			line-height: 0;
-			margin-left: 15px;
+		.site-branding {
+			a {
+				display: block;
+			}
+			.icon-logo:before {
+				content: " ";
+				display: block;
+				width: 310px;
+				height: 50px;
+				background: url("img/stencil-logo.jpg");
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				margin-top: -13px;
+				margin-bottom: -4px;
+			}
+			&:after {
+				font-family: $type-script-subhead;
+				font-weight: 300;
+				font-size: 1.2em;
+				line-height: 0;
+				margin-left: 15px;
+			}
 		}
 	}
 }
@@ -1519,11 +1628,18 @@ footer.footer {
 	
 }
 /*--------------------------------------------------------------
-# Error Styles
+# Alert/Error Styles
 --------------------------------------------------------------*/
-.woocommerce-error {
+.woocommerce-message, .woocommerce-error {
+	display: block;
 	background: $yellow;
-	padding: 5px 10px; 
-	list-style-type: none;
+	padding: 20px;
 	margin: 10px 0px;
+}
+.woocommerce-error {
+	list-style-type: none;
+	@include clearfix;
+}
+.edit-link {
+	display: none;
 }

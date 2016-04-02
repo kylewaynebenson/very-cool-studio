@@ -26,21 +26,21 @@ textarea {
 		background: $white;
 	}
 }
-.woocommerce-checkout .woocommerce input[type="text"],
-.woocommerce-checkout .woocommerce input[type="email"],
-.woocommerce-checkout .woocommerce input[type="url"],
-.woocommerce-checkout .woocommerce input[type="password"],
-.woocommerce-checkout .woocommerce input[type="search"],
-.woocommerce-checkout .woocommerce input[type="number"],
-.woocommerce-checkout .woocommerce input[type="tel"],
-.woocommerce-checkout .woocommerce input[type="date"],
-.woocommerce-checkout .woocommerce input[type="month"],
-.woocommerce-checkout .woocommerce input[type="week"],
-.woocommerce-checkout .woocommerce input[type="time"],
-.woocommerce-checkout .woocommerce input[type="datetime"],
-.woocommerce-checkout .woocommerce input[type="datetime-local"],
-.woocommerce-checkout .woocommerce input[type="color"],
-.woocommerce-checkout .woocommerce textarea,
+.woocommerce input[type="text"],
+.woocommerce input[type="email"],
+.woocommerce input[type="url"],
+.woocommerce input[type="password"],
+.woocommerce input[type="search"],
+.woocommerce input[type="number"],
+.woocommerce input[type="tel"],
+.woocommerce input[type="date"],
+.woocommerce input[type="month"],
+.woocommerce input[type="week"],
+.woocommerce input[type="time"],
+.woocommerce input[type="datetime"],
+.woocommerce input[type="datetime-local"],
+.woocommerce input[type="color"],
+.woocommerce textarea,
 input[type="text"].input-white,
 input[type="email"].input-white,
 input[type="url"].input-white,
@@ -69,6 +69,7 @@ textarea.input-white {
 	&:focus {
 		background: $white;
 		color: $black;
+		border: 3px solid $black;
 	}
 }
 select {

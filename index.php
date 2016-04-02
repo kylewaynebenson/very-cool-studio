@@ -71,7 +71,12 @@ get_header(); ?>
 		</article>
         <?php endwhile; ?>
         <?php wp_reset_query(); ?>
-</section><!-- /recent -->
+</section><!-- #type-section -->
+<!--<section>
+	<div class="big-yellow-arrow">
+		<h1 class="h1 huge-h1">Painted Signs &amp; other Miscelaneous Work</h1>
+	</div>
+</section>-->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div><!-- #white-box -->

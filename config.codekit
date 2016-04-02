@@ -83,6 +83,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/squiggle-black.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1220,
+		"inputAbbreviatedPath": "\/img\/squiggle-black.png",
+		"outputAbbreviatedPath": "\/img\/squiggle-black.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/squiggle-yellow.png": {
 		"fileType": 32768,
 		"ignore": 0,

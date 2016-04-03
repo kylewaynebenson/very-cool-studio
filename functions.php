@@ -194,7 +194,6 @@ require get_template_directory() . '/inc/jetpack.php';
 /**
  * Excerpt allow shortcodes
  */
-add_filter( 'the_excerpt', 'shortcode_unautop');
 add_filter( 'the_excerpt', 'do_shortcode');
 /**
  * Price Shortcode
@@ -215,13 +214,6 @@ function so_30165014_price_shortcode_callback( $atts ) {
 }
 add_shortcode( 'woocommerce_price', 'so_30165014_price_shortcode_callback' );
 
-//* Make Font Awesome available
-add_action( 'wp_enqueue_scripts', 'enqueue_font_awesome' );
-function enqueue_font_awesome() {
-
-	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' );
-
-}
 
 /**
  * Place a cart icon with number of items and total cost in the menu bar.

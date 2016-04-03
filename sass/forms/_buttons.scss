@@ -23,7 +23,7 @@ input[type="submit"] {
 	float: right;
 	margin-top: -2px;
 }
-.chamfered-button, input[type="submit"].chamfered-button, .woocommerce-message a.button, .wc-forward.button, #place_order.button {
+.chamfered-button, input[type="submit"].chamfered-button, .woocommerce-message a, .wc-forward.button, #place_order.button {
 	color: $white;
 	text-decoration: none;
 	border: 0px;
@@ -40,8 +40,11 @@ input[type="submit"] {
 	text-transform: uppercase;
 	padding: 5px 20px;
 	letter-spacing: 1px;
+	&:visited {
+		color: $white;
+	}
 }
-input[type="submit"].chamfered-button-yellow, .chamfered-button-yellow, .wc-forward.button, #place_order.button {
+input[type="submit"].chamfered-button-yellow, .chamfered-button-yellow, .wc-forward.button.checkout-button, #place_order.button {
 	color: $black;
 	background:
 		linear-gradient(135deg, transparent 5px, $yellow 0) top left,
@@ -50,6 +53,9 @@ input[type="submit"].chamfered-button-yellow, .chamfered-button-yellow, .wc-forw
 		linear-gradient(45deg,  transparent 5px, $yellow 0) bottom left;
 	background-size: 52% 52%;
 	background-repeat: no-repeat;
+	&:visited {
+		color: $black;
+	}
 }
 input[type="submit"].chamfered-button-white, .chamfered-button-white {
 	color: $black;
@@ -60,6 +66,9 @@ input[type="submit"].chamfered-button-white, .chamfered-button-white {
 		linear-gradient(45deg,  transparent 5px, $white 0) bottom left;
 	background-size: 52% 52%;
 	background-repeat: no-repeat;
+	&:visited {
+		color: $black;
+	}
 }
 input[type="submit"].chamfered-button-gray, .chamfered-button-gray {
 	color: $black;

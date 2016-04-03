@@ -429,7 +429,9 @@ a.squiggle-black {
 				}
 			}
 			div.cat-links {
-				padding-left: 25px;
+				position: absolute;
+				left: 44px;
+				bottom: 14px;
 			}
 			p:not(.add_to_cart_inline) {
 				display: none;
@@ -459,6 +461,32 @@ a.squiggle-black {
 			}
 			.entry-footer {
 				border: 3px solid $gray-1;
+				border-top: 0px;
+				@media (max-width: 920px) {
+					&:before, &:after {
+						display:block;
+						width: 19px;
+						height: 17px;
+						position: absolute;
+						background: $white;
+						z-index: 1;
+						bottom: -3px;
+						color: $gray-1;
+						font-family: 'Very Cool Icons';
+						font-style: normal;
+						font-size: 27px;
+						font-weight: 400;
+						line-height: .45;
+						content: "\E008";
+					}
+					&:before {
+						left: -3px;
+					}
+					&:after {
+						right: -3px;
+						transform: scale(-1, 1);
+					}
+				}
 			}
 			h5, .h5 {
 				display: none;
@@ -500,20 +528,20 @@ a.squiggle-black {
 				.entry-header {
 					float: left;
 					background: $white;
-					width: span(17);
+					width: span(16);
 				}
 				.entry-footer {
 					float: left;
-					width: span(7);
+					width: span(8);
 					border: 0px;
 					height: 100%;
 				}
 				@media (min-width: 1080px) {
 					.entry-header {
-						width: span(17.5);
+						width: span(17);
 					}
 					.entry-footer {
-						width: span(6.5);
+						width: span(7);
 						padding-top: 25px;
 					}
 				}
@@ -1378,12 +1406,10 @@ Product Styles
 --------------------------------------------------------------*/
 .page-template-page-studio {
 	#page {
-		background: $black;
 		header.site-header {
 		}
 	}
 	footer.footer {
-		background: $black;
 	}
 }
 #page {

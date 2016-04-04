@@ -36,7 +36,13 @@
 	<footer class="entry-footer">
 		<?php
 			if ( is_single() ) {
-				verycool_entry_footer();
+				echo '<div class="cat-links">';
+				$sep = '';
+				foreach((get_the_category()) as $cat) {
+					echo $sep . '<a href="' . get_category_link($cat->term_id) . '"  class="cat-' . $cat->slug . '" title="View all posts in '. esc_attr($cat->name) . '">' . $cat->cat_name . '</a>';
+					$sep = ' ';
+				}
+				echo '</div>';
 				the_post_navigation();
 			} else {
 				the_title( '<h5 class="sub-label">Project</h5><h4 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h4>' );

@@ -291,6 +291,7 @@ a.squiggle-black {
 				content: "\2714";
 				font-size: 14px;
 				padding: 3px 5px;
+				line-height: 1;
 				color: $yellow;
 			}
 		}
@@ -418,6 +419,9 @@ a.squiggle-black {
 						color: $yellow;
 					}
 				}
+				.add_to_cart_button + .added_to_cart.wc-forward {
+					display: none;
+				}
 			}
 			div.cat-links, h4.entry-title {
 				display: block;
@@ -507,6 +511,52 @@ a.squiggle-black {
 			&:not(.category-type) {
 				width: span(11);
 				margin-bottom: span(1);
+			}
+			&:nth-of-type(3):not(.category-type) {
+				position: relative;
+				&:before, &:after {
+					display: block;
+					position: absolute;
+					text-align: center;
+					left: span(26);
+					height: 50%;
+					width: span(24);
+				}
+				&:before {
+					color: $yellow;
+					font-family: 'Very Cool Icons';
+					font-size: 12em;
+					padding-top: 20px;
+					font-weight: 400;
+					line-height: 1;
+					top: 0px;
+					content: "\E003";
+					background:
+						linear-gradient(135deg, transparent 15px, $gray-1 0) top left,
+						linear-gradient(225deg, transparent 15px, $gray-1 0) top right,
+						linear-gradient(315deg, transparent 0px, $gray-1 0) bottom right,
+						linear-gradient(45deg,  transparent 0px, $gray-1 0) bottom left;
+					background-size: 52% 52%;
+					background-repeat: no-repeat;
+				}
+				&:after {
+					color: $black;
+					font-family: $type-headline-cond;
+					font-weight: 600;
+					font-size: 4.3em;
+					line-height: .85;
+					letter-spacing: .02em; 
+					padding: 0px 10px;
+					top: 50%;
+					content: "Very Cool Studio: Established This Morning";
+					background:
+						linear-gradient(135deg, transparent 0px, $gray-1 0) top left,
+						linear-gradient(225deg, transparent 0px, $gray-1 0) top right,
+						linear-gradient(315deg, transparent 15px, $gray-1 0) bottom right,
+						linear-gradient(45deg,  transparent 15px, $gray-1 0) bottom left;
+					background-size: 52% 52%;
+					background-repeat: no-repeat;
+				}
 			}
 		}
 		@media (min-width: 920px) {
@@ -855,7 +905,7 @@ Cart Styles
 	}
 }
 .woocommerce-cart {
-	.wc-forward.button {
+	.wc-forward.button.checkout-button {
 		text-align: center;
 		padding: 15px 30px;
 		@media (max-width: 500px) {
@@ -1001,7 +1051,6 @@ Product Styles
 		width: span(38.5);
 		margin-left: span(-14.5);
 		margin-top: 15px;
-
 	}
 	&:before, &:after {
 		display:block;
@@ -1250,6 +1299,59 @@ Product Styles
 # Post Styles
 --------------------------------------------------------------*/
 .single {
+	#content {
+		.hentry {
+			margin: 0px;
+		}
+		p:last-of-type.product.woocommerce.add_to_cart_inline {
+			border: 0px !important;
+			background: $yellow;
+			text-align: center;
+			a {
+				vertical-align: 25px;
+				margin-left: 20px;
+				&:first-of-type {
+					display: none;
+					&:only-of-type {
+						display: inline-block;
+					}
+				}
+			}
+			.amount {
+				font-family: $type-headline-cond;
+				display: inline-block;
+				font-weight: 600;
+				font-size: 6em;
+				color: $black;
+				display: inline;
+				margin: 0px;
+				line-height: .8;
+				margin-bottom: -4px;
+				// &:before {
+				// 	font-family: 'Very Cool Icons';
+				// 	font-style: normal;
+				// 	font-size: inherit;
+				// 	margin-right: -1px;
+				// 	margin-left: -8px;
+				// 	font-weight: 400;
+				// 	padding: 3px 6px;
+				// 	line-height: inherit;
+				// 	content: "$";
+				// }
+			}
+			@media (min-width: 768px) {
+				width: span(36);
+				margin-left: span(-12);
+			}
+			@media (min-width: 1101px) {
+				width: 175.333333333333333%;
+				margin-left: -67.6666666666666%;
+				margin-top: 15px;
+				margin-bottom: -35px;
+				padding: 35px 50px !important;
+			}
+		}
+	}
 	.entry-header {
 		h1 {
 			margin-top: 2px;
@@ -1259,9 +1361,13 @@ Product Styles
 			padding-left: 0px;
 			margin-left: 0px;
 			list-style-type: none;
+			@media (max-width: 1000px) {
+				margin-top: -5px !important;
+			}
 			li {
 				&:not(:last-of-type) {
 					font-family: $type-subhead;
+					height: 34px;
 					font-weight: 300;
 					font-size: 25px;
 					letter-spacing: .02em;
@@ -1276,7 +1382,11 @@ Product Styles
 					width: 86px;
 				}
 				&:last-of-type {
-					margin-top: 20px;
+					margin-top: 18px;
+					@media (min-width: 1000px) {
+						margin-top: 26px;
+						margin-bottom: 10px;
+					}
 					.post-meta-key {
 						display: none;
 					}
@@ -1305,6 +1415,9 @@ Product Styles
 				display: inline-block;
 				text-decoration: none;
 				margin-bottom: 20px;
+				&.cat-for-sale {
+					display: none;
+				}
 			}
 		}
 		.post-navigation {
@@ -1382,7 +1495,6 @@ Product Styles
 		.post-content {
 			width: span(16);
 			float: right;
-			min-height: 400px;
 			> p:first-of-type {
 				margin-top: 3px;
 			}
@@ -1434,13 +1546,26 @@ Product Styles
 			.icon-logo:before {
 				content: " ";
 				display: block;
-				width: 310px;
-				height: 50px;
+				width: 320px;
+				height: 45px;
 				background: url("img/stencil-logo.jpg");
 				background-size: 100% auto;
 				background-repeat: no-repeat;
-				margin-top: -13px;
+				margin-top: -11px;
+				margin-right: -2px;
 				margin-bottom: -4px;
+				@media (min-width: 700px) and (max-width: 828px)  {
+					width: 190px;
+					background: url("img/stencil-logo-medium.jpg");
+					background-size: 100% auto;
+					background-repeat: no-repeat;
+				}
+				@media (max-width: 420px) {
+					width: 190px;
+					background: url("img/stencil-logo-medium.jpg");
+					background-size: 100% auto;
+					background-repeat: no-repeat;
+				}
 			}
 			&:after {
 				font-family: $type-script-subhead;
@@ -1462,6 +1587,7 @@ Product Styles
 		header.site-header {
 			.site-branding:after {
 				content: "a Type Foundry";
+				margin-right: -40px;
 			}
 		}
 	}
@@ -1469,6 +1595,7 @@ Product Styles
 		header.site-header {
 			.site-branding:after {
 				content: "a guy in Utah";
+				margin-right: -45px;
 			}
 		}
 	}
@@ -1476,6 +1603,7 @@ Product Styles
 		header.site-header {
 			.site-branding:after {
 				content: "a Design Studio";
+				margin-right: -40px;
 			}
 		}	
 	}
@@ -1495,6 +1623,9 @@ Product Styles
 	padding: 15px;
 	.summary.entry-summary {
 		margin-top: 0px;
+	}
+	@media (min-width: 768px) {
+		padding: 20px 24px;
 	}
 	@media (min-width: 920px) {
 		padding: 35px 50px;
@@ -1603,7 +1734,13 @@ Product Styles
 --------------------------------------------------------------*/
 header.site-header {
 	padding-top: 10px;
-	margin-bottom: 18px;
+	margin-bottom: 2px;
+	@media (min-width: 600px) {
+		margin-bottom: 10px;
+	}
+	@media (min-width: 1000px) {
+		margin-bottom: 18px;
+	}
 }
 footer.footer {
 	background: $gray-1;

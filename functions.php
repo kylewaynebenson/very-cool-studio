@@ -195,6 +195,7 @@ require get_template_directory() . '/inc/jetpack.php';
  * Excerpt allow shortcodes
  */
 add_filter( 'the_excerpt', 'do_shortcode');
+add_filter( 'the_excerpt', 'shortcode_unautop');
 /**
  * Price Shortcode
  */

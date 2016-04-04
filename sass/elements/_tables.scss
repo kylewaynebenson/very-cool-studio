@@ -10,7 +10,6 @@ table {
 		color: $white;
 		text-transform: uppercase;
 		text-align: left;
-		font-family: "Andale Mono", AndaleMono, "Consolas", "Lucida Console", monospace;
 		padding: 5px 10px;
 	}
 	th {
@@ -77,6 +76,9 @@ table.list-box {
 			tr {
 				&:nth-of-type(even) {
 					background: $gray-1;
+				}
+				&:last-of-type {
+					background: $white;
 				}
 			}
 		}

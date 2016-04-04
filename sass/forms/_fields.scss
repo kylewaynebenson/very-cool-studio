@@ -240,3 +240,34 @@ input[type=range]:focus::-ms-fill-upper {
 		}
 	}
 }
+
+/* Footer Effects */
+
+
+.input-label-group {
+	position: relative;
+	margin-bottom: 40px;
+	.input {
+		background: transparent;
+		position: relative;
+		z-index: 1;
+		&:focus {
+			background: transparent !important;
+			border: 3px solid $white;
+		}
+	}
+	label {
+		text-align: left;
+		position: relative;
+		left: 15px;
+		top: -45px;
+		background: $gray-1;
+		transition: border 0.3s, top 0.3s;
+		line-height: 0;
+		padding: 0px 20px;
+	}
+	.input:focus ~ label, .input:valid ~ label {
+		top: -76px;
+		z-index: 2;
+	}
+}

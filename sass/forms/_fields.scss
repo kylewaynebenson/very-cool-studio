@@ -15,6 +15,7 @@ input[type="color"],
 textarea {
 	color: $black;
 	border: 3px solid $black;
+	padding: 3px 5px;
 	border-radius: 0px;
 	background: transparent;
 	width: 100%;
@@ -26,21 +27,21 @@ textarea {
 		background: $white;
 	}
 }
-.woocommerce #white-page input[type="text"],
-.woocommerce #white-page input[type="email"],
-.woocommerce #white-page input[type="url"],
-.woocommerce #white-page input[type="password"],
-.woocommerce #white-page input[type="search"],
-.woocommerce #white-page input[type="number"],
-.woocommerce #white-page input[type="tel"],
-.woocommerce #white-page input[type="date"],
-.woocommerce #white-page input[type="month"],
-.woocommerce #white-page input[type="week"],
-.woocommerce #white-page input[type="time"],
-.woocommerce #white-page input[type="datetime"],
-.woocommerce #white-page input[type="datetime-local"],
-.woocommerce #white-page input[type="color"],
-.woocommerce #white-page textarea,
+#white-page input[type="text"],
+#white-page input[type="email"],
+#white-page input[type="url"],
+#white-page input[type="password"],
+#white-page input[type="search"],
+#white-page input[type="number"],
+#white-page input[type="tel"],
+#white-page input[type="date"],
+#white-page input[type="month"],
+#white-page input[type="week"],
+#white-page input[type="time"],
+#white-page input[type="datetime"],
+#white-page input[type="datetime-local"],
+#white-page input[type="color"],
+#white-page textarea,
 input[type="text"].input-white,
 input[type="email"].input-white,
 input[type="url"].input-white,
@@ -66,6 +67,7 @@ textarea.input-white {
 	padding: 1px 10px 2px 10px;
 	letter-spacing: .02em;
 	outline: none;
+	transition: border 0.3s;
 	&:focus {
 		background: $white;
 		color: $black;

@@ -20,7 +20,7 @@
 			the_meta();
 			} else {
 				echo '<a href="' . get_the_permalink() . '">';
-				the_post_thumbnail(); 
+				the_post_thumbnail('large'); 
 				echo '</a>';
 		}
 			?>

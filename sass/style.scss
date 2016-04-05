@@ -511,51 +511,51 @@ a.squiggle-black {
 			&:not(.category-type) {
 				width: span(11);
 				margin-bottom: span(1);
-			}
-			&:nth-of-type(3):not(.category-type) {
-				position: relative;
-				&:before, &:after {
-					display: block;
-					position: absolute;
-					text-align: center;
-					left: span(26);
-					height: 50%;
-					width: span(24);
-				}
-				&:before {
-					color: $yellow;
-					font-family: 'Very Cool Icons';
-					font-size: 12em;
-					padding-top: 20px;
-					font-weight: 400;
-					line-height: 1;
-					top: 0px;
-					content: "\E003";
-					background:
-						linear-gradient(135deg, transparent 15px, $gray-1 0) top left,
-						linear-gradient(225deg, transparent 15px, $gray-1 0) top right,
-						linear-gradient(315deg, transparent 0px, $gray-1 0) bottom right,
-						linear-gradient(45deg,  transparent 0px, $gray-1 0) bottom left;
-					background-size: 52% 52%;
-					background-repeat: no-repeat;
-				}
-				&:after {
-					color: $black;
-					font-family: $type-headline-cond;
-					font-weight: 600;
-					font-size: 4.3em;
-					line-height: .85;
-					letter-spacing: .02em; 
-					padding: 0px 10px;
-					top: 50%;
-					content: "Very Cool Studio: Established This Morning";
-					background:
-						linear-gradient(135deg, transparent 0px, $gray-1 0) top left,
-						linear-gradient(225deg, transparent 0px, $gray-1 0) top right,
-						linear-gradient(315deg, transparent 15px, $gray-1 0) bottom right,
-						linear-gradient(45deg,  transparent 15px, $gray-1 0) bottom left;
-					background-size: 52% 52%;
-					background-repeat: no-repeat;
+				&:nth-of-type(3) {
+					position: relative;
+					&:before, &:after {
+						display: block;
+						position: absolute;
+						text-align: center;
+						left: span(26);
+						height: 50%;
+						width: span(24);
+					}
+					&:before {
+						color: $yellow;
+						font-family: 'Very Cool Icons';
+						font-size: 12em;
+						padding-top: 20px;
+						font-weight: 400;
+						line-height: 1;
+						top: 0px;
+						content: "\E003";
+						background:
+							linear-gradient(135deg, transparent 15px, $gray-1 0) top left,
+							linear-gradient(225deg, transparent 15px, $gray-1 0) top right,
+							linear-gradient(315deg, transparent 0px, $gray-1 0) bottom right,
+							linear-gradient(45deg,  transparent 0px, $gray-1 0) bottom left;
+						background-size: 52% 52%;
+						background-repeat: no-repeat;
+					}
+					&:after {
+						color: $black;
+						font-family: $type-headline-cond;
+						font-weight: 600;
+						font-size: 4.3em;
+						line-height: .85;
+						letter-spacing: .02em; 
+						padding: 0px 10px;
+						top: 50%;
+						content: "Very Cool Studio: Established This Morning";
+						background:
+							linear-gradient(135deg, transparent 0px, $gray-1 0) top left,
+							linear-gradient(225deg, transparent 0px, $gray-1 0) top right,
+							linear-gradient(315deg, transparent 15px, $gray-1 0) bottom right,
+							linear-gradient(45deg,  transparent 15px, $gray-1 0) bottom left;
+						background-size: 52% 52%;
+						background-repeat: no-repeat;
+					}
 				}
 			}
 		}
@@ -812,6 +812,10 @@ Cart Styles
 				}
 			}
 		}
+		label[for=payment_method_s4wc], label[for=payment_method_paypal] {
+			vertical-align: 8px;
+			padding-left: 10px;
+		}
 		.payment_method_paypal {
 			&.payment_box, a, img {
 				display: none !important;
@@ -824,6 +828,7 @@ Cart Styles
 					color: $gray-2;
 					font-weight: 300;
 					font-family: $type-subhead;
+					vertical-align: 8px;
 				}
 			}
 		}
@@ -1328,28 +1333,16 @@ Product Styles
 				margin: 0px;
 				line-height: .8;
 				margin-bottom: -4px;
-				// &:before {
-				// 	font-family: 'Very Cool Icons';
-				// 	font-style: normal;
-				// 	font-size: inherit;
-				// 	margin-right: -1px;
-				// 	margin-left: -8px;
-				// 	font-weight: 400;
-				// 	padding: 3px 6px;
-				// 	line-height: inherit;
-				// 	content: "$";
-				// }
 			}
-			@media (min-width: 768px) {
-				width: span(36);
-				margin-left: span(-12);
-			}
-			@media (min-width: 1101px) {
-				width: 175.333333333333333%;
-				margin-left: -67.6666666666666%;
+			@media (min-width: 1099px) {
+				width: 177%;
+				margin-left: -68.5%;
 				margin-top: 15px;
 				margin-bottom: -35px;
-				padding: 35px 50px !important;
+			}
+			@media (min-width: 1148px) {
+				width: 175.333333333333333%;
+				margin-left: -67.6666666666666%;
 			}
 		}
 	}
@@ -1725,8 +1718,19 @@ Product Styles
 		}
 	}
 	@media (min-width: 768px) {
+		padding: 20px 24px;
+	}
+	@media (min-width: 920px) {
+		padding: 25px 30px;
+		margin: 0 auto;
+	}
+	@media (min-width: 1000px) {
 		padding: 35px 50px;
-		}
+		margin: 0 auto;
+	}
+	@media (min-width: 1048px) {
+		width: 1048px;
+	}
 	@media (min-width: 1148px) {
 		margin: 0 auto;
 		width: 1148px;

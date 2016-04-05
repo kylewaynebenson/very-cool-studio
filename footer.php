@@ -30,8 +30,6 @@
 				<div class="contact-form">
 					<?php
 
-  function deliver_mail() {
-
 	// if the submit button is clicked, send the email
 	if ( isset( $_POST['submitted'] ) ) {
 		$human = $_POST['message_human'];
@@ -53,7 +51,9 @@
 				echo '<style> .footer-contact-form { display: none;}</style>';
 
 			} else {
+				echo '<div class="error">';
 				echo 'An unexpected error occurred';
+				echo '</div>';
 			}
 		} else {
 			echo '<div class="error">';
@@ -61,7 +61,6 @@
 			echo '</div>';
 		}
 	}
-}
 ?>
 				  <form action="<?php esc_url( $_SERVER['REQUEST_URI'] ) ?>" method="post" class="footer-contact-form">
 				    <div class="input-label-group">
@@ -83,13 +82,7 @@
 				    </div>
 				    <p><input type="submit" name="submitted" value="send"></p>
 				  </form>
-				  <?php 	
-					ob_start();
-					deliver_mail();
-					html_form_code();
-					return ob_get_clean();
-					?>
-				</div>
+				</div><!-- .contact-form -->
 			</div><!-- .footer-contact -->
 			<div class="footer-available">
 				<img src="<?php bloginfo('template_directory'); ?>/img/now-available.svg"/>
@@ -100,11 +93,11 @@
 					<li><a class="squiggle" href="http://www.twitter.com/verycoolstudio">Twitter</a></li>
 				</ul>
 			</div>
+
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
 </body>
 </html>

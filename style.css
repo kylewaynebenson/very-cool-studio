@@ -970,7 +970,7 @@ input[type=radio]:checked ~ .icon {
     position: absolute;
     left: 19px;
     top: 33px;
-    height: 8px;
+    height: 10px;
     background: #f0f0f0;
     border-left: 3px solid #f0f0f0;
     -webkit-transition: border 0.3s, top 0.3s;

@@ -231,6 +231,12 @@ th {
   /* IE9 Compat Modes */
   src: url("./type/BusinessScript-Regular.eot?#iefix") format("embedded-opentype"), url("./type/BusinessScript-Regular.woff2") format("woff2"), url("./type/BusinessScript-Regular.woff") format("woff"); }
 @font-face {
+  font-family: 'Cornbread';
+  font-weight: 300;
+  src: url("./type/Cornbread-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("./type/Cornbread-Regular.eot?#iefix") format("embedded-opentype"), url("./type/Cornbread-Regular.woff2") format("woff2"), url("./type/Cornbread-Regular.woff") format("woff"); }
+@font-face {
   font-family: 'Clayton Neue';
   font-weight: 300;
   src: url("./type/ClaytonNeue-Regular.eot");
@@ -310,6 +316,7 @@ input,
 select,
 textarea {
   color: #404040;
+  font-weight: 300;
   font-family: "Cornbread";
   font-size: 16px;
   font-size: 1rem;
@@ -720,21 +727,21 @@ textarea {
   textarea:focus {
     background: #ffffff; }
 
-.woocommerce input[type="text"],
-.woocommerce input[type="email"],
-.woocommerce input[type="url"],
-.woocommerce input[type="password"],
-.woocommerce input[type="search"],
-.woocommerce input[type="number"],
-.woocommerce input[type="tel"],
-.woocommerce input[type="date"],
-.woocommerce input[type="month"],
-.woocommerce input[type="week"],
-.woocommerce input[type="time"],
-.woocommerce input[type="datetime"],
-.woocommerce input[type="datetime-local"],
-.woocommerce input[type="color"],
-.woocommerce textarea,
+.woocommerce #white-page input[type="text"],
+.woocommerce #white-page input[type="email"],
+.woocommerce #white-page input[type="url"],
+.woocommerce #white-page input[type="password"],
+.woocommerce #white-page input[type="search"],
+.woocommerce #white-page input[type="number"],
+.woocommerce #white-page input[type="tel"],
+.woocommerce #white-page input[type="date"],
+.woocommerce #white-page input[type="month"],
+.woocommerce #white-page input[type="week"],
+.woocommerce #white-page input[type="time"],
+.woocommerce #white-page input[type="datetime"],
+.woocommerce #white-page input[type="datetime-local"],
+.woocommerce #white-page input[type="color"],
+.woocommerce #white-page textarea,
 input[type="text"].input-white,
 input[type="email"].input-white,
 input[type="url"].input-white,
@@ -760,21 +767,21 @@ textarea.input-white {
   padding: 1px 10px 2px 10px;
   letter-spacing: .02em;
   outline: none; }
-  .woocommerce input[type="text"]:focus,
-  .woocommerce input[type="email"]:focus,
-  .woocommerce input[type="url"]:focus,
-  .woocommerce input[type="password"]:focus,
-  .woocommerce input[type="search"]:focus,
-  .woocommerce input[type="number"]:focus,
-  .woocommerce input[type="tel"]:focus,
-  .woocommerce input[type="date"]:focus,
-  .woocommerce input[type="month"]:focus,
-  .woocommerce input[type="week"]:focus,
-  .woocommerce input[type="time"]:focus,
-  .woocommerce input[type="datetime"]:focus,
-  .woocommerce input[type="datetime-local"]:focus,
-  .woocommerce input[type="color"]:focus,
-  .woocommerce textarea:focus,
+  .woocommerce #white-page input[type="text"]:focus,
+  .woocommerce #white-page input[type="email"]:focus,
+  .woocommerce #white-page input[type="url"]:focus,
+  .woocommerce #white-page input[type="password"]:focus,
+  .woocommerce #white-page input[type="search"]:focus,
+  .woocommerce #white-page input[type="number"]:focus,
+  .woocommerce #white-page input[type="tel"]:focus,
+  .woocommerce #white-page input[type="date"]:focus,
+  .woocommerce #white-page input[type="month"]:focus,
+  .woocommerce #white-page input[type="week"]:focus,
+  .woocommerce #white-page input[type="time"]:focus,
+  .woocommerce #white-page input[type="datetime"]:focus,
+  .woocommerce #white-page input[type="datetime-local"]:focus,
+  .woocommerce #white-page input[type="color"]:focus,
+  .woocommerce #white-page textarea:focus,
   input[type="text"].input-white:focus,
   input[type="email"].input-white:focus,
   input[type="url"].input-white:focus,

@@ -7,6 +7,14 @@
        url('./type/BusinessScript-Regular.woff') format('woff'), /* Pretty Modern Browsers */
 }
 @font-face {
+  font-family: 'Cornbread';
+  font-weight: 300;
+  src: url('./type/Cornbread-Regular.eot'); /* IE9 Compat Modes */
+  src: url('./type/Cornbread-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./type/Cornbread-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./type/Cornbread-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+}
+@font-face {
   font-family: 'Clayton Neue';
   font-weight: 300;
   src: url('./type/ClaytonNeue-Regular.eot'); /* IE9 Compat Modes */
@@ -100,6 +108,7 @@ input,
 select,
 textarea {
   color: $color__text-main;
+  font-weight: 300;
   font-family: $type-text;
   @include font-size(1);
   line-height: 1.6;

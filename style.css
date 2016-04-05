@@ -2069,6 +2069,9 @@ Product Styles
     .type-tester .fontselect.kansas-casual {
       font-family: 'Kansas Casual';
       line-height: 1; }
+    .type-tester .fontselect.cornbread {
+      font-family: 'Cornbread';
+      line-height: 1; }
   .type-tester .fontweight.extralight {
     font-weight: 100; }
   .type-tester .fontweight.light {

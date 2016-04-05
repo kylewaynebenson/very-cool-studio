@@ -35,7 +35,7 @@
 	// if the submit button is clicked, send the email
 	if ( isset( $_POST['submitted'] ) ) {
 		$human = $_POST['message_human'];
-		if(!$human == 2){
+		if($human == 2){
 			// sanitize form values
 			$email   = sanitize_email( $_POST["message_email"] );
 			$subject = "Message from $email";
@@ -48,7 +48,7 @@
 			// If email has been process for sending, display a success message
 			if ( wp_mail( $to, $subject, $message, $headers ) ) {
 				echo '<div>';
-				echo '<p>Thanks for contacting me, expect a response soon.</p>';
+				echo '<p>Thanks for contacting me, if you picked pizza expect a response soon!</p>';
 				echo '</div>';
 				echo '<style> .footer-contact-form { display: none;}</style>';
 
@@ -63,7 +63,6 @@
 	}
 }
 ?>
-
 				  <form action="<?php esc_url( $_SERVER['REQUEST_URI'] ) ?>" method="post" class="footer-contact-form">
 				    <div class="input-label-group">
 				    	<input class="input" type="text" name="message_email" required>
@@ -89,8 +88,7 @@
 					deliver_mail();
 					html_form_code();
 					return ob_get_clean();
-
-				?>
+					?>
 				</div>
 			</div><!-- .footer-contact -->
 			<div class="footer-available">

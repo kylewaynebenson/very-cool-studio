@@ -28,23 +28,69 @@
 				</div>
 				<div class="clear"></div>
 				<div class="contact-form">
-				  <?php echo $response; ?>
-				  <form action="<?php the_permalink(); ?>" method="post" class="footer-contact-form">
+					<?php
+
+  function deliver_mail() {
+
+	// if the submit button is clicked, send the email
+	if ( isset( $_POST['submitted'] ) ) {
+		$human = $_POST['message_human'];
+		if(!$human == 2){
+			// sanitize form values
+			$email   = sanitize_email( $_POST["message_email"] );
+			$subject = "Message from $email";
+			$message = esc_textarea( $_POST["message_text"] );
+
+			// get the blog administrator's email address
+			$to = get_option( 'admin_email' );
+			$headers = "From: $email" . "\r\n";
+
+			// If email has been process for sending, display a success message
+			if ( wp_mail( $to, $subject, $message, $headers ) ) {
+				echo '<div>';
+				echo '<p>Thanks for contacting me, expect a response soon.</p>';
+				echo '</div>';
+				echo '<style> .footer-contact-form { display: none;}</style>';
+
+			} else {
+				echo 'An unexpected error occurred';
+			}
+		} else {
+			echo '<div class="error">';
+			echo 'You got the math problem wrong you person! Please try again, or just email me at <a href="mailto:hello@verycoolstudio.com">hello@verycoolstudio.com</a>.';
+			echo '</div>';
+		}
+	}
+}
+?>
+
+				  <form action="<?php esc_url( $_SERVER['REQUEST_URI'] ) ?>" method="post" class="footer-contact-form">
 				    <div class="input-label-group">
 				    	<input class="input" type="text" name="message_email" required>
 				    	<label for="message_email">Email</label>
 				    </div>
-				    <div class="input-label-group">
-				    	<input class="input" type="text" class="human" name="message_human" required> + 3 = 5
-				    	<label for="message_human">Human?</label>
+				    <div class="input-label-group input-label-group-human">
+				    	<input class="input human" type="text" name="message_human">
+				    	<label for="message_human" class="hidden">Human?</label>
+				    	<span class="math">+ 3 = 5</span>
+				    </div>
+				    <div class="input-label-group input-label-group-pizza">
+				    	<input class="input pizza" type="radio" name="foodz" value="pizza"><i class="icon icon-pizza"></i>
+				    	<input class="input burger" type="radio" name="foodz" value="burger"><i class="icon icon-burger"></i>
 				    </div>
 				    <div class="input-label-group">
 				    	<textarea class="input" type="text" name="message_text" required><?php echo esc_textarea($_POST['message_text']); ?></textarea>
 				    	<label for="message_text">Message</label>
 				    </div>
-				    <input type="hidden" name="submitted" value="1">
-				    <p><input type="submit" value="send"></p>
+				    <p><input type="submit" name="submitted" value="send"></p>
 				  </form>
+				  <?php 	
+					ob_start();
+					deliver_mail();
+					html_form_code();
+					return ob_get_clean();
+
+				?>
 				</div>
 			</div><!-- .footer-contact -->
 			<div class="footer-available">

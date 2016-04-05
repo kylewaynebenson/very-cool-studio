@@ -1628,6 +1628,10 @@ Product Styles
 		padding: 20px 24px;
 	}
 	@media (min-width: 920px) {
+		padding: 25px 30px;
+		margin: 0 auto;
+	}
+	@media (min-width: 1000px) {
 		padding: 35px 50px;
 		margin: 0 auto;
 	}
@@ -1752,7 +1756,7 @@ footer.footer {
 	}
 	@include clearfix;
 	.footer-contact {
-		input {
+		input:not([type=radio]), textarea {
 			padding: 8px 25px 12px 25px;
 			font-size: 1.6em;
 		}
@@ -1781,26 +1785,42 @@ footer.footer {
 			margin-top: 0px;
 		}
 		.footer-contact-form {
-			.human {
-				width: span(4);
-				display: inline-block;
-				text-align: center;
-				padding-left: 5px;
-				padding-right: 5px;
+			.input-label-group-pizza {
+				width: span(12.5);
+				display:inline-block;
+				.icon {
+					font-size: 1.75em;
+					line-height: 1;
+					vertical-align: -14px;
+					padding-left: 15px;
+					&:first-of-type {
+						padding-right: 17px;
+						padding-left: 10px;
+					}
+				}
+			}
+			.input-label-group-human {
+				width: span(9);
+				display:inline-block;
+				.human {
+					text-align: center;
+					width: 75px;
+					padding-left: 5px;
+					padding-right: 5px;
+				}
+				.math {
+					display: inline-block;
+					font-family: $type-subhead;
+					font-weight: 300;
+					font-size: 16px;
+				}
 			}
 			textarea {
-				height: 66px;
-				color: $color__text-main;
-				font-family: $type-text;
-				@include font-size(1);
-				line-height: 1.6;
-				width: span(19);
-				float: left;
-			}
-			input[type="submit"] {
-				width: span(5);
-				height: 66px;
-				float: right;
+				font-size: 16px;
+				line-height: 1;
+				padding: 16px 25px;
+				min-height: 120px;
+				resize: vertical;
 			}
 
 		}
@@ -1823,7 +1843,15 @@ footer.footer {
 /*--------------------------------------------------------------
 # Alert/Error Styles
 --------------------------------------------------------------*/
-.woocommerce-message, .woocommerce-error {
+.error {
+	display: block;
+	background: $yellow;
+	@media (max-width: 500px) {
+		padding: 14px 15px;
+	}
+	padding: 17px 20px;	
+}
+.woocommerce-message, .woocommerce-error  {
 	display: block;
 	background: $yellow;
 	@media (max-width: 500px) {

@@ -692,7 +692,12 @@ Account Details
 Cart Styles
 --------------------------------------------------------------*/
 .woocommerce-checkout {
-	.woocommerce {
+	.woocommerce { 
+		@media (max-width: 649px) {
+			.checkout-extra-buttons:first-of-type {
+				margin-bottom: 10px;
+			}
+		}
 		@media (min-width: 650px) {
 			.col-1, .col-2 {
 				width: span(11);
@@ -769,10 +774,11 @@ Cart Styles
 			float: left;
 			width: 40%;
 		}
-		.create-account {
+		.create-account, #ss_wc_mailchimp_opt_in_field {
 			background: $gray-1;
 			padding: 10px 20px;
 			margin-top: 10px;
+			line-height: 1.2;
 		}
 	}
 }

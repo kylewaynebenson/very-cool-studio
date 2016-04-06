@@ -192,6 +192,9 @@ h1.huge-h1 { font-family: "Clayton Neue Cond"; font-weight: 600; font-size: 6em;
 h2, .h2 { font-family: "Business Script"; font-weight: 300; font-size: 2.25em; }
 
 h3, .h3 { font-family: "Clayton Neue"; font-weight: 300; font-size: 1.6em; letter-spacing: .02em; }
+@media (max-width: 768px) { h3, .h3 { margin: .4em 0em; } }
+@media (min-width: 769px) { h3, .h3 { margin: .8em 0em; } }
+@media (min-width: 940px) { h3, .h3 { margin: 1em 0em; } }
 
 h4, .h4 { font-family: "Business Script"; font-weight: 300; font-size: 1.3em; }
 
@@ -631,6 +634,7 @@ Account Details
 /*--------------------------------------------------------------
 Cart Styles
 --------------------------------------------------------------*/
+@media (max-width: 649px) { .woocommerce-checkout .woocommerce .checkout-extra-buttons:first-of-type { margin-bottom: 10px; } }
 @media (min-width: 650px) { .woocommerce-checkout .woocommerce .col-1, .woocommerce-checkout .woocommerce .col-2 { width: 45.8333333333%; float: left; }
   .woocommerce-checkout .woocommerce .col-2 { float: right; }
   .woocommerce-checkout .woocommerce .checkout-extra-buttons { float: right; width: 66.6666666667%; }
@@ -651,7 +655,7 @@ Cart Styles
 .woocommerce-checkout .woocommerce #billing_last_name_field, .woocommerce-checkout .woocommerce #shipping_last_name_field { float: left; width: 55%; }
 .woocommerce-checkout .woocommerce #billing_state_field, .woocommerce-checkout .woocommerce #shipping_state_field { float: left; width: 55%; margin-right: 5%; }
 .woocommerce-checkout .woocommerce #billing_postcode_field, .woocommerce-checkout .woocommerce #shipping_postcode_field { float: left; width: 40%; }
-.woocommerce-checkout .woocommerce .create-account { background: #f0f0f0; padding: 10px 20px; margin-top: 10px; }
+.woocommerce-checkout .woocommerce .create-account, .woocommerce-checkout .woocommerce #ss_wc_mailchimp_opt_in_field { background: #f0f0f0; padding: 10px 20px; margin-top: 10px; line-height: 1.2; }
 
 #payment .payment_methods { list-style-type: none; margin: 0px; padding-left: 0px; margin-bottom: 10px; }
 #payment .payment_methods .payment_method_s4wc img { display: none; }

@@ -892,6 +892,8 @@ footer.footer .footer-contact .footer-contact-form .input-label-group-human { wi
 footer.footer .footer-contact .footer-contact-form .input-label-group-human .human { text-align: center; width: 75px; padding-left: 5px; padding-right: 5px; }
 footer.footer .footer-contact .footer-contact-form .input-label-group-human .math { display: inline-block; font-family: "Clayton Neue"; font-weight: 300; font-size: 16px; }
 footer.footer .footer-contact .footer-contact-form textarea { font-size: 16px; line-height: 1; padding: 16px 25px; min-height: 120px; resize: vertical; }
+@media (max-width: 767px) { footer.footer .footer-contact .footer-contact-form input[type="submit"] { width: 100%; margin-top: -5px; margin-bottom: 8px; text-align: center; } }
+@media (max-width: 767px) { footer.footer .footer-available { text-align: center; background: #ffffff; padding: 2em 3em .4em 3em; margin-top: 15px; } }
 @media (min-width: 768px) { footer.footer .footer-available { float: left; margin-left: 8.3333333333%; width: 33.3333333333%; } }
 footer.footer .footer-available img { max-width: 326px; }
 footer.footer .footer-available .h3 { line-height: 1.2; }

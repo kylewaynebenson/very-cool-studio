@@ -182,21 +182,21 @@ h1, h2, h3, h4, h5, h6 { clear: both; }
 h1, .h1 { font-family: "Cornbread"; font-weight: 300; }
 h1.cardinal-grotesque, .h1.cardinal-grotesque { font-family: "Clayton Neue"; }
 h1.kansas-casual, .h1.kansas-casual { font-family: "Kansas Casual"; }
-h1.business-script, .h1.business-script { font-family: "Business Script"; }
+h1.business-script, .h1.business-script { font-family: "Business Script"; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; }
 @media (max-width: 768px) { h1, .h1 { margin-bottom: 5px; } }
 @media (max-width: 939px) { h1, .h1 { margin-bottom: 10px; } }
 @media (min-width: 940px) { h1, .h1 { font-size: 2.5em; margin-bottom: 14px; } }
 
 h1.huge-h1 { font-family: "Clayton Neue Cond"; font-weight: 600; font-size: 6em; }
 
-h2, .h2 { font-family: "Business Script"; font-weight: 300; font-size: 2.25em; }
+h2, .h2 { font-family: "Business Script"; font-weight: 300; font-size: 2.25em; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; }
 
 h3, .h3 { font-family: "Clayton Neue"; font-weight: 300; font-size: 1.6em; letter-spacing: .02em; }
 @media (max-width: 768px) { h3, .h3 { margin: .4em 0em; } }
 @media (min-width: 769px) { h3, .h3 { margin: .8em 0em; } }
 @media (min-width: 940px) { h3, .h3 { margin: 1em 0em; } }
 
-h4, .h4 { font-family: "Business Script"; font-weight: 300; font-size: 1.3em; }
+h4, .h4 { font-family: "Business Script"; font-weight: 300; font-size: 1.3em; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; }
 
 h5, .h5 { font-family: "Clayton Neue"; font-weight: 600; text-transform: uppercase; letter-spacing: .17em; font-size: .8em; }
 
@@ -825,7 +825,7 @@ Product Styles
 #page header.site-header .site-branding .icon-logo:before { content: " "; display: block; width: 320px; height: 45px; background: url("img/stencil-logo.jpg"); background-size: 100% auto; background-repeat: no-repeat; margin-top: -11px; margin-right: -2px; margin-bottom: -4px; }
 @media (min-width: 700px) and (max-width: 828px) { #page header.site-header .site-branding .icon-logo:before { width: 190px; background: url("img/stencil-logo-medium.jpg"); background-size: 100% auto; background-repeat: no-repeat; } }
 @media (max-width: 420px) { #page header.site-header .site-branding .icon-logo:before { width: 190px; background: url("img/stencil-logo-medium.jpg"); background-size: 100% auto; background-repeat: no-repeat; } }
-#page header.site-header .site-branding:after { font-family: "Business Script"; font-weight: 300; font-size: 1.2em; line-height: 0; margin-left: 15px; }
+#page header.site-header .site-branding:after { font-family: "Business Script"; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; font-weight: 300; font-size: 1.2em; line-height: 0; margin-left: 15px; }
 
 .single-product .woocommerce-breadcrumb { display: none; }
 

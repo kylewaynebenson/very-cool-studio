@@ -6,7 +6,7 @@ h1, .h1 {
 	font-weight: 300;
 	&.cardinal-grotesque { font-family: "Clayton Neue"; }
 	&.kansas-casual { font-family: "Kansas Casual"; }
-	&.business-script { font-family: "Business Script"; }
+	&.business-script { font-family: "Business Script"; font-feature-settings: "liga" 1; }
 	@media (max-width: 768px) {
 		margin-bottom: 5px;
 	}
@@ -28,6 +28,7 @@ h2, .h2 {
 	font-family: $type-script-subhead;
 	font-weight: 300;
 	font-size: 2.25em;
+	font-feature-settings: "liga" 1;
 }
 h3, .h3 {
 	font-family: $type-subhead;
@@ -48,6 +49,7 @@ h4, .h4 {
 	font-family: $type-script-subhead;
 	font-weight: 300;
 	font-size: 1.3em;
+	font-feature-settings: "liga" 1;
 }
 h5, .h5 {
 	font-family: $type-subhead;

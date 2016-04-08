@@ -133,7 +133,7 @@ get_header( 'shop' ); ?>
 			<img src="<?php bloginfo('template_directory'); ?>/img/type-sample-beef-sans.png"/>
 		<footer>
 			<ul class="list-inline">
-				<li><a class="squiggle" href="<a href="<?php echo esc_url( home_url( '/' ) ); ?>jdawgs">See it in use</a></li>
+				<li><a class="squiggle" href="<?php echo esc_url( home_url( '/' ) ); ?>jdawgs">See it in use</a></li>
 			</ul>
 		</footer>
 	</section>

@@ -32,6 +32,7 @@ get_header(); ?>
 <div class="gray-page">
 	<h2>Projects</h2>
 	<ul class="list-box">
+		<li><a href="http://skl.sh/1CuoDpS">Designing a Display Face</a><span class="year">2015</span></li>
 		<li><a href="http://www.oremisverycool.com/">Orem is Very Cool</a><span class="year">2016</span></li>
 		<li><a href="http://www.verycoolstudio.com/passion/">The Passionately Project</a><span class="year">2013-2014</span></li>
 		<li><a href="http://www.cupmunicate.com/">Cupmunicate</a><span class="year">2012</span></li>

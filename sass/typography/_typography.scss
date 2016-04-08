@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Business Script';
   font-weight: 300;
+  font-feature-settings: "liga" 1;
   src: url('./type/BusinessScript-Regular.eot'); /* IE9 Compat Modes */
   src: url('./type/BusinessScript-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('./type/BusinessScript-Regular.woff2') format('woff2'), /* Super Modern Browsers */

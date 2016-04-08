@@ -108,8 +108,8 @@ get_header( 'shop' ); ?>
 	<div class="very-cool-flag">
 		<img src="<?php bloginfo('template_directory'); ?>/img/very-cool-flag.svg"/>
 	</div>
-	<h2 class="h2">Very Cool Custom Type</h2>
-	<p class="intro-text">There are thousands of typefaces on the market — of every kind, of every character. Sometimes that perfect typeface simply doesn’t exist. In addition to our retail fonts, we also develop custom typefaces tailored to suit our clients’ needs. A commission might entail a completely new design or modification of a retail typeface. Other services include lettering, typeface consulting, screen optimizations and education.</p>
+	<h2 class="h2" id="custom">Very Cool Custom Type</h2>
+	<p class="intro-text">Typefaces are a big part (like 55%) of having a unique and relevant brand. Even though there are thousands of them, there are really only a few good ones and most of those get overused. So let Very Cool make you a totally custom one already! They're so fun to make and you'll totally love it. A custom commission could be a completely new design or a modification of one here on the site. Other services include lettering, typeface consulting, screen optimizations and type education.</p>
 	<section class="box">
 		<header>
 			<h3>Qualtrics</h3>
@@ -119,7 +119,7 @@ get_header( 'shop' ); ?>
 			<img src="<?php bloginfo('template_directory'); ?>/img/type-sample-qualtrics-grotesque.png"/>
 		<footer>
 			<ul class="list-inline">
-				<li><a class="squiggle" href="http://www.dribbble.com/kylewaynebenson">Read More</a></li>
+				<li><a class="squiggle" href="<?php echo esc_url( home_url( '/' ) ); ?>qualtrics-grotesque">Read More</a></li>
 				<li><a class="squiggle" href="http://www.Qualtrics.com/">Qualtrics.com</a></li>
 			</ul>
 		</footer>
@@ -133,7 +133,7 @@ get_header( 'shop' ); ?>
 			<img src="<?php bloginfo('template_directory'); ?>/img/type-sample-beef-sans.png"/>
 		<footer>
 			<ul class="list-inline">
-				<li><a class="squiggle" href="http://www.dribbble.com/kylewaynebenson">Read More</a></li>
+				<li><a class="squiggle" href="<a href="<?php echo esc_url( home_url( '/' ) ); ?>jdawgs">See it in use</a></li>
 			</ul>
 		</footer>
 	</section>
@@ -146,7 +146,7 @@ get_header( 'shop' ); ?>
 			<img src="<?php bloginfo('template_directory'); ?>/img/type-sample-bluehost-sans.png"/>
 		<footer>
 			<ul class="list-inline">
-				<li><a class="squiggle" href="http://www.dribbble.com/kylewaynebenson">Read More</a></li>
+				<li><a class="squiggle" href="<?php echo esc_url( home_url( '/' ) ); ?>bluehost-sans">Read More</a></li>
 			</ul>
 		</footer>
 	</section>

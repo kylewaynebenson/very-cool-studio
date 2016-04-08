@@ -129,7 +129,7 @@ td, th { padding: 0; }
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-@font-face { font-family: 'Business Script'; font-weight: 300; src: url("./type/BusinessScript-Regular.eot");
+@font-face { font-family: 'Business Script'; font-weight: 300; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; src: url("./type/BusinessScript-Regular.eot");
   /* IE9 Compat Modes */
 src: url("./type/BusinessScript-Regular.eot?#iefix") format("embedded-opentype"), url("./type/BusinessScript-Regular.woff2") format("woff2"), url("./type/BusinessScript-Regular.woff") format("woff"); }
 @font-face { font-family: 'Cornbread'; font-weight: 300; src: url("./type/Cornbread-Regular.eot");

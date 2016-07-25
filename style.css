@@ -135,18 +135,21 @@ src: url("./type/BusinessScript-Regular.eot?#iefix") format("embedded-opentype")
 @font-face { font-family: 'Cornbread'; font-weight: 300; src: url("./type/Cornbread-Regular.eot");
   /* IE9 Compat Modes */
 src: url("./type/Cornbread-Regular.eot?#iefix") format("embedded-opentype"), url("./type/Cornbread-Regular.woff2") format("woff2"), url("./type/Cornbread-Regular.woff") format("woff"); }
-@font-face { font-family: 'Clayton Neue'; font-weight: 300; src: url("./type/ClaytonNeue-Regular.eot");
+@font-face { font-family: 'Cardinal Grotesque'; font-weight: 300; src: url("./type/CardinalGrotesque-Regular.eot");
   /* IE9 Compat Modes */
-src: url("./type/ClaytonNeue-Regular.eot?#iefix") format("embedded-opentype"), url("./type/ClaytonNeue-Regular.woff2") format("woff2"), url("./type/ClaytonNeue-Regular.woff") format("woff"); }
-@font-face { font-family: 'Clayton Neue'; font-weight: 600; src: url("./type/ClaytonNeue-Bold.eot");
+src: url("./type/CardinalGrotesque-Regular.eot?#iefix") format("embedded-opentype"), url("./type/CardinalGrotesque-Regular.woff2") format("woff2"), url("./type/CardinalGrotesque-Regular.woff") format("woff"); }
+@font-face { font-family: 'Cardinal Grotesque'; font-weight: 500; src: url("./type/CardinalGrotesque-SemiBold.eot");
   /* IE9 Compat Modes */
-src: url("./type/ClaytonNeue-Bold.eot?#iefix") format("embedded-opentype"), url("./type/ClaytonNeue-Bold.woff2") format("woff2"), url("./type/ClaytonNeue-Bold.woff") format("woff"); }
+src: url("./type/CardinalGrotesque-SemiBold.eot?#iefix") format("embedded-opentype"), url("./type/CardinalGrotesque-SemiBold.woff2") format("woff2"), url("./type/CardinalGrotesque-SemiBold.woff") format("woff"); }
+@font-face { font-family: 'Cardinal Grotesque'; font-weight: 600; src: url("./type/CardinalGrotesque-Bold.eot");
+  /* IE9 Compat Modes */
+src: url("./type/CardinalGrotesque-Bold.eot?#iefix") format("embedded-opentype"), url("./type/CardinalGrotesque-Bold.woff2") format("woff2"), url("./type/CardinalGrotesque-Bold.woff") format("woff"); }
 @font-face { font-family: 'Very Cool Icons'; src: url("./type/verycoolicons-Regular.eot");
   /* IE9 Compat Modes */
 src: url("./type/verycoolicons-Regular.eot?#iefix") format("embedded-opentype"), url("./type/verycoolicons-Regular.woff2") format("woff2"), url("./type/verycoolicons-Regular.woff") format("woff"); }
-@font-face { font-family: 'Clayton Neue Cond'; font-weight: 600; src: url("./type/ClaytonNeue-SemiBoldCondensed.eot");
+@font-face { font-family: 'Cardinal Grotesque Cond'; font-weight: 600; src: url("./type/CardinalGrotesque-SemiBoldCondensed.eot");
   /* IE9 Compat Modes */
-src: url("./type/ClaytonNeue-SemiBoldCondensed.eot?#iefix") format("embedded-opentype"), url("./type/ClaytonNeue-SemiBoldCondensed.woff2") format("woff2"), url("./type/ClaytonNeue-SemiBoldCondensed.woff") format("woff"); }
+src: url("./type/CardinalGrotesque-SemiBoldCondensed.eot?#iefix") format("embedded-opentype"), url("./type/CardinalGrotesque-SemiBoldCondensed.woff2") format("woff2"), url("./type/CardinalGrotesque-SemiBoldCondensed.woff") format("woff"); }
 .icon:before { display: inline-block; font-family: 'Very Cool Icons'; font-style: normal; font-weight: 400; font-size: 2.6em; line-height: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 .icon-2x:before { font-size: 4em; }
@@ -180,25 +183,25 @@ body, button, input, select, textarea { color: #404040; font-weight: 300; font-f
 h1, h2, h3, h4, h5, h6 { clear: both; }
 
 h1, .h1 { font-family: "Cornbread"; font-weight: 300; }
-h1.cardinal-grotesque, .h1.cardinal-grotesque { font-family: "Clayton Neue"; }
+h1.cardinal-grotesque, .h1.cardinal-grotesque { font-family: "Cardinal Grotesque"; }
 h1.kansas-casual, .h1.kansas-casual { font-family: "Kansas Casual"; }
 h1.business-script, .h1.business-script { font-family: "Business Script"; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; }
 @media (max-width: 768px) { h1, .h1 { margin-bottom: 5px; } }
 @media (max-width: 939px) { h1, .h1 { margin-bottom: 10px; } }
 @media (min-width: 940px) { h1, .h1 { font-size: 2.5em; margin-bottom: 14px; } }
 
-h1.huge-h1 { font-family: "Clayton Neue Cond"; font-weight: 600; font-size: 6em; }
+h1.huge-h1 { font-family: "Cardinal Grotesque Cond"; font-weight: 600; font-size: 6em; }
 
 h2, .h2 { font-family: "Business Script"; font-weight: 300; font-size: 2.25em; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; }
 
-h3, .h3 { font-family: "Clayton Neue"; font-weight: 300; font-size: 1.6em; letter-spacing: .02em; }
+h3, .h3 { font-family: "Cardinal Grotesque"; font-weight: 500; font-size: 1.6em; letter-spacing: .02em; }
 @media (max-width: 768px) { h3, .h3 { margin: .4em 0em; } }
 @media (min-width: 769px) { h3, .h3 { margin: .8em 0em; } }
 @media (min-width: 940px) { h3, .h3 { margin: 1em 0em; } }
 
-h4, .h4 { font-family: "Business Script"; font-weight: 300; font-size: 1.3em; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; }
+h4, .h4 { font-family: "Business Script"; font-weight: 500; font-size: 1.3em; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; }
 
-h5, .h5 { font-family: "Clayton Neue"; font-weight: 600; text-transform: uppercase; letter-spacing: .17em; font-size: .8em; }
+h5, .h5 { font-family: "Cardinal Grotesque"; font-weight: 600; text-transform: uppercase; letter-spacing: .17em; font-size: .8em; }
 
 h6, .h6 { font-size: 1.3em; letter-spacing: .1em; }
 
@@ -254,7 +257,7 @@ dt { font-weight: bold; }
 
 dd { margin: 0 1.5em 1.5em; }
 
-.list-box { list-style-type: none; margin-left: 0px; padding-left: 0px; font-family: "Clayton Neue"; font-weight: 300; font-size: 1.6em; letter-spacing: .02em; }
+.list-box { list-style-type: none; margin-left: 0px; padding-left: 0px; font-family: "Cardinal Grotesque"; font-weight: 300; font-size: 1.6em; letter-spacing: .02em; }
 .list-box li { padding: 3px 19px 8px 19px; }
 .list-box li a { text-decoration: none; line-height: 1; }
 .list-box li .year { float: right; font-weight: 600; text-transform: uppercase; letter-spacing: .17em; padding-top: 10px; font-size: .5em; }
@@ -262,9 +265,9 @@ dd { margin: 0 1.5em 1.5em; }
 
 img { height: auto; /* Make sure images are scaled correctly. */ max-width: 100%; /* Adhere to container width. */ }
 
-table { margin: 0 0 1.5em; width: 100%; font-family: "Clayton Neue"; font-weight: 300; font-size: 1.6em; letter-spacing: .02em; }
+table { margin: 0 0 1.5em; width: 100%; font-family: "Cardinal Grotesque"; font-weight: 300; font-size: 1.6em; letter-spacing: .02em; }
 table caption { background: #231f20; color: #ffffff; text-transform: uppercase; text-align: left; padding: 5px 10px; }
-table th { text-transform: uppercase; font-size: 16px; text-align: left; font-weight: 300; }
+table th { text-transform: uppercase; font-size: 16px; text-align: left; font-weight: 500; }
 @media (max-width: 500px) { table { font-size: 1.2em; line-height: 1.2; } }
 @media (max-width: 768px) { table thead th { padding: 5px 0px 0px 0px; }
   table tr td, table caption { padding: 5px 0px; border-bottom: 3px solid #f0f0f0; }
@@ -285,19 +288,19 @@ table.list-box tr img { max-height: 30px; width: auto; }
 table.list-box tr a { text-decoration: none; line-height: 1; }
 table.list-box tr td.product-price, table.list-box tr td.product-quantity, table.list-box tr td.product-quantity input { font-family: "Business Script"; font-weight: 300; font-size: 0.7em; }
 table.list-box tr td.product-price input, table.list-box tr td.product-quantity input, table.list-box tr td.product-quantity input input { border: 0px; width: 50px; }
-table.list-box tr .product-subtotal { text-align: right; }
+table.list-box tr .product-subtotal { text-align: right; font-weight: 500; }
 
 .squiggle-divider-full:after { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; text-indent: 6px; display: block; width: 100%; max-width: 100%; display: block; font-family: 'Very Cool Icons'; font-style: normal; font-weight: 400; font-size: 1.65em; overflow: hidden; line-height: 1.1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-overflow: clip; content: "\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002"; }
 
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-button, input[type="button"], input[type="reset"], input[type="submit"] { font-family: "Clayton Neue"; font-weight: 500; font-size: .8em; text-transform: uppercase; letter-spacing: 1px; border: 3px solid #231f20; background: #231f20; color: #ffd138; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { font-family: "Cardinal Grotesque"; font-weight: 500; font-size: .8em; text-transform: uppercase; letter-spacing: 1px; border: 3px solid #231f20; background: #231f20; color: #ffd138; }
 button:active, button:focus, input[type="button"]:active, input[type="button"]:focus, input[type="reset"]:active, input[type="reset"]:focus, input[type="submit"]:active, input[type="submit"]:focus { outline: none; }
 
 .woocommerce-message a.button { float: right; margin-top: -2px; }
 
-.chamfered-button, input[type="submit"].chamfered-button, .wc-backward.button, .woocommerce-message a, .wc-forward.button, #place_order.button, p:last-of-type.product.woocommerce.add_to_cart_inline a { color: #ffffff; text-decoration: none; border: 0px; background: -webkit-linear-gradient(315deg, transparent 5px, #231f20 0) top left, -webkit-linear-gradient(225deg, transparent 5px, #231f20 0) top right, -webkit-linear-gradient(135deg, transparent 5px, #231f20 0) bottom right, -webkit-linear-gradient(45deg, transparent 5px, #231f20 0) bottom left; background: linear-gradient(135deg, transparent 5px, #231f20 0) top left, linear-gradient(225deg, transparent 5px, #231f20 0) top right, linear-gradient(315deg, transparent 5px, #231f20 0) bottom right, linear-gradient(45deg, transparent 5px, #231f20 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; font-family: "Clayton Neue"; font-weight: 500; font-size: 16px; text-transform: uppercase; padding: 5px 20px; letter-spacing: 1px; }
+.chamfered-button, input[type="submit"].chamfered-button, .wc-backward.button, .woocommerce-message a, .wc-forward.button, #place_order.button, p:last-of-type.product.woocommerce.add_to_cart_inline a { color: #ffffff; text-decoration: none; border: 0px; background: -webkit-linear-gradient(315deg, transparent 5px, #231f20 0) top left, -webkit-linear-gradient(225deg, transparent 5px, #231f20 0) top right, -webkit-linear-gradient(135deg, transparent 5px, #231f20 0) bottom right, -webkit-linear-gradient(45deg, transparent 5px, #231f20 0) bottom left; background: linear-gradient(135deg, transparent 5px, #231f20 0) top left, linear-gradient(225deg, transparent 5px, #231f20 0) top right, linear-gradient(315deg, transparent 5px, #231f20 0) bottom right, linear-gradient(45deg, transparent 5px, #231f20 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; font-family: "Cardinal Grotesque"; font-weight: 500; font-size: 16px; text-transform: uppercase; padding: 5px 20px; letter-spacing: 1px; }
 .chamfered-button:visited, input[type="submit"].chamfered-button:visited, .wc-backward.button:visited, .woocommerce-message a:visited, .wc-forward.button:visited, #place_order.button:visited, p:last-of-type.product.woocommerce.add_to_cart_inline a:visited { color: #ffffff; }
 
 input[type="submit"].chamfered-button-yellow, .chamfered-button-yellow, .wc-forward.button.checkout-button, #place_order.button { color: #231f20; background: -webkit-linear-gradient(315deg, transparent 5px, #ffd138 0) top left, -webkit-linear-gradient(225deg, transparent 5px, #ffd138 0) top right, -webkit-linear-gradient(135deg, transparent 5px, #ffd138 0) bottom right, -webkit-linear-gradient(45deg, transparent 5px, #ffd138 0) bottom left; background: linear-gradient(135deg, transparent 5px, #ffd138 0) top left, linear-gradient(225deg, transparent 5px, #ffd138 0) top right, linear-gradient(315deg, transparent 5px, #ffd138 0) bottom right, linear-gradient(45deg, transparent 5px, #ffd138 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; }
@@ -309,17 +312,17 @@ input[type="submit"].chamfered-button-white:visited, .chamfered-button-white:vis
 input[type="submit"].chamfered-button-gray, .chamfered-button-gray, .wc-backward.button { color: #231f20; background: -webkit-linear-gradient(315deg, transparent 5px, #f0f0f0 0) top left, -webkit-linear-gradient(225deg, transparent 5px, #f0f0f0 0) top right, -webkit-linear-gradient(135deg, transparent 5px, #f0f0f0 0) bottom right, -webkit-linear-gradient(45deg, transparent 5px, #f0f0f0 0) bottom left; background: linear-gradient(135deg, transparent 5px, #f0f0f0 0) top left, linear-gradient(225deg, transparent 5px, #f0f0f0 0) top right, linear-gradient(315deg, transparent 5px, #f0f0f0 0) bottom right, linear-gradient(45deg, transparent 5px, #f0f0f0 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; }
 input[type="submit"].chamfered-button-gray:visited, .chamfered-button-gray:visited, .wc-backward.button:visited { color: #231f20; }
 
-input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea { color: #231f20; border: 3px solid #231f20; padding: 3px 5px; border-radius: 0px; background: transparent; width: 100%; font-family: "Clayton Neue"; font-weight: 300; letter-spacing: .02em; outline: none; }
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea { color: #231f20; border: 3px solid #231f20; padding: 3px 5px; border-radius: 0px; background: transparent; width: 100%; font-family: "Cardinal Grotesque"; font-weight: 300; letter-spacing: .02em; outline: none; }
 input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, textarea:focus { background: #ffffff; }
 
-#white-page input[type="text"], #white-page input[type="email"], #white-page input[type="url"], #white-page input[type="password"], #white-page input[type="search"], #white-page input[type="number"], #white-page input[type="tel"], #white-page input[type="date"], #white-page input[type="month"], #white-page input[type="week"], #white-page input[type="time"], #white-page input[type="datetime"], #white-page input[type="datetime-local"], #white-page input[type="color"], #white-page textarea, input[type="text"].input-white, input[type="email"].input-white, input[type="url"].input-white, input[type="password"].input-white, input[type="search"].input-white, input[type="number"].input-white, input[type="tel"].input-white, input[type="date"].input-white, input[type="month"].input-white, input[type="week"].input-white, input[type="time"].input-white, input[type="datetime"].input-white, input[type="datetime-local"].input-white, input[type="color"].input-white, textarea.input-white { color: #e0e0e0; border: 3px solid #f0f0f0; border-radius: 0px; background: #ffffff; width: 100%; font-family: "Clayton Neue"; font-weight: 300; padding: 1px 10px 2px 10px; letter-spacing: .02em; outline: none; -webkit-transition: border 0.3s; transition: border 0.3s; }
+#white-page input[type="text"], #white-page input[type="email"], #white-page input[type="url"], #white-page input[type="password"], #white-page input[type="search"], #white-page input[type="number"], #white-page input[type="tel"], #white-page input[type="date"], #white-page input[type="month"], #white-page input[type="week"], #white-page input[type="time"], #white-page input[type="datetime"], #white-page input[type="datetime-local"], #white-page input[type="color"], #white-page textarea, input[type="text"].input-white, input[type="email"].input-white, input[type="url"].input-white, input[type="password"].input-white, input[type="search"].input-white, input[type="number"].input-white, input[type="tel"].input-white, input[type="date"].input-white, input[type="month"].input-white, input[type="week"].input-white, input[type="time"].input-white, input[type="datetime"].input-white, input[type="datetime-local"].input-white, input[type="color"].input-white, textarea.input-white { color: #e0e0e0; border: 3px solid #f0f0f0; border-radius: 0px; background: #ffffff; width: 100%; font-family: "Cardinal Grotesque"; font-weight: 300; padding: 1px 10px 2px 10px; letter-spacing: .02em; outline: none; -webkit-transition: border 0.3s; transition: border 0.3s; }
 #white-page input[type="text"]:focus, #white-page input[type="email"]:focus, #white-page input[type="url"]:focus, #white-page input[type="password"]:focus, #white-page input[type="search"]:focus, #white-page input[type="number"]:focus, #white-page input[type="tel"]:focus, #white-page input[type="date"]:focus, #white-page input[type="month"]:focus, #white-page input[type="week"]:focus, #white-page input[type="time"]:focus, #white-page input[type="datetime"]:focus, #white-page input[type="datetime-local"]:focus, #white-page input[type="color"]:focus, #white-page textarea:focus, input[type="text"].input-white:focus, input[type="email"].input-white:focus, input[type="url"].input-white:focus, input[type="password"].input-white:focus, input[type="search"].input-white:focus, input[type="number"].input-white:focus, input[type="tel"].input-white:focus, input[type="date"].input-white:focus, input[type="month"].input-white:focus, input[type="week"].input-white:focus, input[type="time"].input-white:focus, input[type="datetime"].input-white:focus, input[type="datetime-local"].input-white:focus, input[type="color"].input-white:focus, textarea.input-white:focus { background: #ffffff; color: #231f20; border: 3px solid #231f20; }
 
 textarea { width: 100%; }
 
 label.hidden { display: none; }
 
-label { text-transform: uppercase; font-size: 16px; color: #231f20; font-weight: 300; font-family: "Clayton Neue"; }
+label { text-transform: uppercase; font-size: 16px; color: #231f20; font-weight: 300; font-family: "Cardinal Grotesque"; }
 
 form p { margin: 0px; }
 form.cart { margin: 0px; padding: 0px; }
@@ -399,7 +402,7 @@ a:hover, a:active { outline: 0; }
 .main-navigation li.right .wcmenucart-contents { position: relative; }
 .main-navigation li.right .wcmenucart-contents .icon-shopping-cart:before { font-size: 25px; }
 .main-navigation li.right .wcmenucart-contents .amount { color: #e0e0e0; font-size: .5em; font-family: "Business Script"; font-weight: 300; position: absolute; right: 0px; bottom: -5px; }
-.main-navigation a { display: inline-block; text-decoration: none; font-family: "Clayton Neue"; font-weight: 300; font-size: 1.6em; line-height: 1; padding-bottom: 10px; letter-spacing: .02em; }
+.main-navigation a { display: inline-block; text-decoration: none; font-family: "Cardinal Grotesque"; font-weight: 500; font-size: 1.6em; line-height: 1; padding-bottom: 10px; letter-spacing: .02em; }
 .main-navigation .current_page_item > a, .main-navigation .current-menu-item > a, .main-navigation .current_page_ancestor > a, .main-navigation .current-menu-ancestor > a { color: #f0f0f0; cursor: default; }
 
 /* Small menu. */
@@ -528,11 +531,11 @@ embed, iframe, object { max-width: 100%; }
 a.no-style { text-decoration: none; color: inherit; }
 a.no-style:hover { color: inherit; }
 
-a.squiggle { text-decoration: none; font-family: "Clayton Neue"; font-weight: 500; font-size: 1.3em; letter-spacing: .05em; display: inline-block; padding-bottom: 7px; color: #ffd138; padding-bottom: 7px; background-image: url(img/squiggle-yellow.png); background-repeat: repeat-x; background-position: 0px 100%; background-size: 14px 9px; }
+a.squiggle { text-decoration: none; font-family: "Cardinal Grotesque"; font-weight: 500; font-size: 1.3em; letter-spacing: .05em; display: inline-block; padding-bottom: 7px; color: #ffd138; padding-bottom: 7px; background-image: url(img/squiggle-yellow.png); background-repeat: repeat-x; background-position: 0px 100%; background-size: 14px 9px; }
 
 a.squiggle-black { background-image: url(img/squiggle-black.png); color: #231f20; }
 
-.cat-links a { margin-right: 3px; background: #231f20; color: #ffffff; font-family: "Clayton Neue"; letter-spacing: .08em; font-size: 12px; line-height: 1; padding: 2px 8px 3px 8px; font-weight: 500; text-transform: uppercase; }
+.cat-links a { margin-right: 3px; background: #231f20; color: #ffffff; font-family: "Cardinal Grotesque"; letter-spacing: .08em; font-size: 12px; line-height: 1; padding: 2px 8px 3px 8px; font-weight: 500; text-transform: uppercase; }
 .cat-links .cat-for-sale { display: none; }
 
 /*--------------------------------------------------------------
@@ -553,7 +556,7 @@ a.squiggle-black { background-image: url(img/squiggle-black.png); color: #231f20
 .blog article.product-cat-type .entry-footer .cat-links a, .home article.product-cat-type .entry-footer .cat-links a, .archive article.product-cat-type .entry-footer .cat-links a, .category article.product-cat-type .entry-footer .cat-links a { background: #ffd138; color: #231f20; }
 .blog article.product-cat-type h5, .blog article.product-cat-type .h5, .home article.product-cat-type h5, .home article.product-cat-type .h5, .archive article.product-cat-type h5, .archive article.product-cat-type .h5, .category article.product-cat-type h5, .category article.product-cat-type .h5 { margin-top: 0px; margin-bottom: 0px; }
 .blog article.product-cat-type a, .home article.product-cat-type a, .archive article.product-cat-type a, .category article.product-cat-type a { text-decoration: none; }
-.blog article.product-cat-type .entry-title, .home article.product-cat-type .entry-title, .archive article.product-cat-type .entry-title, .category article.product-cat-type .entry-title { margin: -5px 0px 4px 0px; font-family: "Clayton Neue"; font-weight: 300; font-size: 1.6em; line-height: 1; letter-spacing: .02em; }
+.blog article.product-cat-type .entry-title, .home article.product-cat-type .entry-title, .archive article.product-cat-type .entry-title, .category article.product-cat-type .entry-title { margin: -5px 0px 4px 0px; font-family: "Cardinal Grotesque"; font-weight: 500; font-size: 1.6em; line-height: 1; letter-spacing: .02em; }
 .blog article.product-cat-type .add_to_cart_button, .home article.product-cat-type .add_to_cart_button, .archive article.product-cat-type .add_to_cart_button, .category article.product-cat-type .add_to_cart_button { color: transparent; position: absolute; left: 10px; bottom: 10px; font-size: 0px; border-radius: 0px; background: transparent; }
 .blog article.product-cat-type .add_to_cart_button:before, .home article.product-cat-type .add_to_cart_button:before, .archive article.product-cat-type .add_to_cart_button:before, .category article.product-cat-type .add_to_cart_button:before { display: inline-block; color: #231f20; font-family: 'Very Cool Icons'; font-style: normal; font-size: 17px; font-weight: 400; padding: 3px 6px; line-height: 1; content: "\E009"; }
 .blog article.product-cat-type .add_to_cart_button.added:before, .home article.product-cat-type .add_to_cart_button.added:before, .archive article.product-cat-type .add_to_cart_button.added:before, .category article.product-cat-type .add_to_cart_button.added:before { content: "\2714"; font-size: 14px; padding: 3px 5px; line-height: 1; color: #ffd138; }
@@ -599,7 +602,7 @@ a.squiggle-black { background-image: url(img/squiggle-black.png); color: #231f20
   .blog article.post:not(.category-type):nth-of-type(3), .blog article.product:not(.product-cat-type):not(.category-type):nth-of-type(3), .home article.post:not(.category-type):nth-of-type(3), .home article.product:not(.product-cat-type):not(.category-type):nth-of-type(3), .archive article.post:not(.category-type):nth-of-type(3), .archive article.product:not(.product-cat-type):not(.category-type):nth-of-type(3), .category article.post:not(.category-type):nth-of-type(3), .category article.product:not(.product-cat-type):not(.category-type):nth-of-type(3) { position: relative; }
   .blog article.post:not(.category-type):nth-of-type(3):before, .blog article.post:not(.category-type):nth-of-type(3):after, .blog article.product:not(.product-cat-type):not(.category-type):nth-of-type(3):before, .blog article.product:not(.product-cat-type):not(.category-type):nth-of-type(3):after, .home article.post:not(.category-type):nth-of-type(3):before, .home article.post:not(.category-type):nth-of-type(3):after, .home article.product:not(.product-cat-type):not(.category-type):nth-of-type(3):before, .home article.product:not(.product-cat-type):not(.category-type):nth-of-type(3):after, .archive article.post:not(.category-type):nth-of-type(3):before, .archive article.post:not(.category-type):nth-of-type(3):after, .archive article.product:not(.product-cat-type):not(.category-type):nth-of-type(3):before, .archive article.product:not(.product-cat-type):not(.category-type):nth-of-type(3):after, .category article.post:not(.category-type):nth-of-type(3):before, .category article.post:not(.category-type):nth-of-type(3):after, .category article.product:not(.product-cat-type):not(.category-type):nth-of-type(3):before, .category article.product:not(.product-cat-type):not(.category-type):nth-of-type(3):after { display: block; position: absolute; text-align: center; left: 108.3333333333%; height: 50%; width: 100%; }
   .blog article.post:not(.category-type):nth-of-type(3):before, .blog article.product:not(.product-cat-type):not(.category-type):nth-of-type(3):before, .home article.post:not(.category-type):nth-of-type(3):before, .home article.product:not(.product-cat-type):not(.category-type):nth-of-type(3):before, .archive article.post:not(.category-type):nth-of-type(3):before, .archive article.product:not(.product-cat-type):not(.category-type):nth-of-type(3):before, .category article.post:not(.category-type):nth-of-type(3):before, .category article.product:not(.product-cat-type):not(.category-type):nth-of-type(3):before { color: #ffd138; font-family: 'Very Cool Icons'; font-size: 12em; padding-top: 20px; font-weight: 400; line-height: 1; top: 0px; content: "\E003"; background: -webkit-linear-gradient(315deg, transparent 15px, #f0f0f0 0) top left, -webkit-linear-gradient(225deg, transparent 15px, #f0f0f0 0) top right, -webkit-linear-gradient(135deg, transparent 0px, #f0f0f0 0) bottom right, -webkit-linear-gradient(45deg, transparent 0px, #f0f0f0 0) bottom left; background: linear-gradient(135deg, transparent 15px, #f0f0f0 0) top left, linear-gradient(225deg, transparent 15px, #f0f0f0 0) top right, linear-gradient(315deg, transparent 0px, #f0f0f0 0) bottom right, linear-gradient(45deg, transparent 0px, #f0f0f0 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; }
-  .blog article.post:not(.category-type):nth-of-type(3):after, .blog article.product:not(.product-cat-type):not(.category-type):nth-of-type(3):after, .home article.post:not(.category-type):nth-of-type(3):after, .home article.product:not(.product-cat-type):not(.category-type):nth-of-type(3):after, .archive article.post:not(.category-type):nth-of-type(3):after, .archive article.product:not(.product-cat-type):not(.category-type):nth-of-type(3):after, .category article.post:not(.category-type):nth-of-type(3):after, .category article.product:not(.product-cat-type):not(.category-type):nth-of-type(3):after { color: #231f20; font-family: "Clayton Neue Cond"; font-weight: 600; font-size: 4.3em; line-height: .85; letter-spacing: .02em; padding: 0px 10px; top: 50%; content: "Very Cool Studio: Established This Morning"; background: -webkit-linear-gradient(315deg, transparent 0px, #f0f0f0 0) top left, -webkit-linear-gradient(225deg, transparent 0px, #f0f0f0 0) top right, -webkit-linear-gradient(135deg, transparent 15px, #f0f0f0 0) bottom right, -webkit-linear-gradient(45deg, transparent 15px, #f0f0f0 0) bottom left; background: linear-gradient(135deg, transparent 0px, #f0f0f0 0) top left, linear-gradient(225deg, transparent 0px, #f0f0f0 0) top right, linear-gradient(315deg, transparent 15px, #f0f0f0 0) bottom right, linear-gradient(45deg, transparent 15px, #f0f0f0 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; } }
+  .blog article.post:not(.category-type):nth-of-type(3):after, .blog article.product:not(.product-cat-type):not(.category-type):nth-of-type(3):after, .home article.post:not(.category-type):nth-of-type(3):after, .home article.product:not(.product-cat-type):not(.category-type):nth-of-type(3):after, .archive article.post:not(.category-type):nth-of-type(3):after, .archive article.product:not(.product-cat-type):not(.category-type):nth-of-type(3):after, .category article.post:not(.category-type):nth-of-type(3):after, .category article.product:not(.product-cat-type):not(.category-type):nth-of-type(3):after { color: #231f20; font-family: "Cardinal Grotesque Cond"; font-weight: 600; font-size: 4.3em; line-height: .85; letter-spacing: .02em; padding: 0px 10px; top: 50%; content: "Very Cool Studio: Established This Morning"; background: -webkit-linear-gradient(315deg, transparent 0px, #f0f0f0 0) top left, -webkit-linear-gradient(225deg, transparent 0px, #f0f0f0 0) top right, -webkit-linear-gradient(135deg, transparent 15px, #f0f0f0 0) bottom right, -webkit-linear-gradient(45deg, transparent 15px, #f0f0f0 0) bottom left; background: linear-gradient(135deg, transparent 0px, #f0f0f0 0) top left, linear-gradient(225deg, transparent 0px, #f0f0f0 0) top right, linear-gradient(315deg, transparent 15px, #f0f0f0 0) bottom right, linear-gradient(45deg, transparent 15px, #f0f0f0 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; } }
 @media (min-width: 920px) { .blog article.post, .blog article.product:not(.product-cat-type), .home article.post, .home article.product:not(.product-cat-type), .archive article.post, .archive article.product:not(.product-cat-type), .category article.post, .category article.product:not(.product-cat-type) { float: left; width: 29.1666666667%; margin-left: 4.1666666667%; margin-bottom: 4.1666666667%; }
   .blog article.post.category-for-sale.category-type, .blog article.product:not(.product-cat-type).category-for-sale.category-type, .home article.post.category-for-sale.category-type, .home article.product:not(.product-cat-type).category-for-sale.category-type, .archive article.post.category-for-sale.category-type, .archive article.product:not(.product-cat-type).category-for-sale.category-type, .category article.post.category-for-sale.category-type, .category article.product:not(.product-cat-type).category-for-sale.category-type { width: 95.8333333333%; margin-right: 0px; color: #f0f0f0; background: -webkit-linear-gradient(315deg, transparent 0px, #f0f0f0 0) top left, -webkit-linear-gradient(225deg, transparent 15px, #f0f0f0 0) top right, -webkit-linear-gradient(135deg, transparent 15px, #f0f0f0 0) bottom right, -webkit-linear-gradient(45deg, transparent 0px, #f0f0f0 0) bottom left; background: linear-gradient(135deg, transparent 0px, #f0f0f0 0) top left, linear-gradient(225deg, transparent 15px, #f0f0f0 0) top right, linear-gradient(315deg, transparent 15px, #f0f0f0 0) bottom right, linear-gradient(45deg, transparent 0px, #f0f0f0 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; }
   .blog article.post.category-for-sale.category-type .entry-header, .blog article.product:not(.product-cat-type).category-for-sale.category-type .entry-header, .home article.post.category-for-sale.category-type .entry-header, .home article.product:not(.product-cat-type).category-for-sale.category-type .entry-header, .archive article.post.category-for-sale.category-type .entry-header, .archive article.product:not(.product-cat-type).category-for-sale.category-type .entry-header, .category article.post.category-for-sale.category-type .entry-header, .category article.product:not(.product-cat-type).category-for-sale.category-type .entry-header { float: left; background: #ffffff; width: 66.6666666667%; }
@@ -665,7 +668,7 @@ Cart Styles
 #payment .payment_methods .payment_method_s4wc #s4wc-cc-form #s4wc_save_card_field label { color: #e0e0e0; font-size: 12px; }
 #payment .payment_methods label[for=payment_method_s4wc], #payment .payment_methods label[for=payment_method_paypal] { vertical-align: 8px; padding-left: 10px; }
 #payment .payment_methods .payment_method_paypal.payment_box, #payment .payment_methods .payment_method_paypal a, #payment .payment_methods .payment_method_paypal img { display: none !important; }
-#payment .payment_methods .payment_method_paypal.wc_payment_method:after { content: "(pls no)"; text-transform: uppercase; font-size: 16px; color: #e0e0e0; font-weight: 300; font-family: "Clayton Neue"; vertical-align: 8px; }
+#payment .payment_methods .payment_method_paypal.wc_payment_method:after { content: "(pls no)"; text-transform: uppercase; font-size: 16px; color: #e0e0e0; font-weight: 500; font-family: "Cardinal Grotesque"; vertical-align: 8px; }
 #payment #place_order.button { text-align: center; padding: 15px 30px; }
 @media (max-width: 600px) { #payment #place_order.button { display: block; width: 100%; } }
 @media (min-width: 900px) { #payment #place_order.button { float: right; } }
@@ -697,7 +700,7 @@ Cart Styles
 .woocommerce-cart table.cart-totals .amount { font-weight: 300; }
 .woocommerce-cart table.cart-totals .shipping td { color: transparent; }
 .woocommerce-cart table.cart-totals .shipping td span.amount { color: #231f20; }
-.woocommerce-cart table.cart-totals .order-total td { font-family: "Clayton Neue Cond"; font-weight: 600; font-size: 3em; line-height: 1; }
+.woocommerce-cart table.cart-totals .order-total td { font-family: "Cardinal Grotesque Cond"; font-weight: 600; font-size: 3em; line-height: 1; }
 .woocommerce-cart table.cart-totals .order-total td, .woocommerce-cart table.cart-totals .order-total th { padding-bottom: 10px; }
 .woocommerce-cart .cart #coupon_code { width: 25%; }
 .woocommerce-cart .cart #coupon_code, .woocommerce-cart .cart input.chamfered-button { float: left; margin-top: 8px; margin-bottom: 8px; }
@@ -729,24 +732,24 @@ Product Styles
 .type-tester .fontselect.alts { -webkit-font-feature-settings: "ss01" 1; font-feature-settings: "ss01" 1; }
 .type-tester .fontselect.swsh { -webkit-font-feature-settings: "swsh" 1; font-feature-settings: "swsh" 1; }
 .type-tester .fontselect.smcp { -webkit-font-feature-settings: "smcp" 1; font-feature-settings: "smcp" 1; }
-.type-tester .fontselect.cardinal-grotesque { font-family: 'Clayton Neue'; line-height: 1; }
-.type-tester .fontselect.cardinal-grotesque.semiboldcondensed, .type-tester .fontselect.cardinal-grotesque.lightcondensed { font-family: 'Clayton Neue Cond'; }
+.type-tester .fontselect.cardinal-grotesque { font-family: 'Cardinal Grotesque'; line-height: 1; }
+.type-tester .fontselect.cardinal-grotesque.semiboldcondensed, .type-tester .fontselect.cardinal-grotesque.lightcondensed, .type-tester .fontselect.cardinal-grotesque.extralightcondensed, .type-tester .fontselect.cardinal-grotesque.thincondensed, .type-tester .fontselect.cardinal-grotesque.regularcondensed, .type-tester .fontselect.cardinal-grotesque.boldcondensed, .type-tester .fontselect.cardinal-grotesque.extraboldcondensed { font-family: 'Cardinal Grotesque Cond'; }
 .type-tester .fontselect.business-script { font-family: 'Business Script'; line-height: 1; }
 .type-tester .fontselect.kansas-casual { font-family: 'Kansas Casual'; line-height: 1; }
 .type-tester .fontselect.cornbread { font-family: 'Cornbread'; line-height: 1; }
-.type-tester .fontweight.extralight { font-weight: 100; }
-.type-tester .fontweight.light { font-weight: 200; }
-.type-tester .fontweight.regular { font-weight: 300; }
-.type-tester .fontweight.medium { font-weight: 400; }
-.type-tester .fontweight.semibold { font-weight: 500; }
-.type-tester .fontweight.bold { font-weight: 600; }
-.type-tester .fontweight.extrabold { font-weight: 700; }
-.type-tester .fontweight.black { font-weight: 900; }
+.type-tester .fontweight.extralight, .type-tester .fontweight.extralightcondensed { font-weight: 100; }
+.type-tester .fontweight.light, .type-tester .fontweight.lightcondensed { font-weight: 200; }
+.type-tester .fontweight.regular, .type-tester .fontweight.regularcondensed { font-weight: 300; }
+.type-tester .fontweight.medium, .type-tester .fontweight.mediumcondensed { font-weight: 400; }
+.type-tester .fontweight.semibold, .type-tester .fontweight.semiboldcondensed { font-weight: 500; }
+.type-tester .fontweight.bold, .type-tester .fontweight.boldcondensed { font-weight: 600; }
+.type-tester .fontweight.extrabold, .type-tester .fontweight.extraboldcondensed { font-weight: 700; }
+.type-tester .fontweight.black, .type-tester .fontweight.blackcondensed { font-weight: 900; }
 .type-tester .type-tester-title { display: none; }
 @media only screen and (min-width: 965px) { .type-tester .type-tester-title { padding: 14px 20px; width: 29.1666666667%; text-align: center; display: block; float: left; } }
 .type-tester .type-tester-title h5, .type-tester .type-tester-title .h5 { margin-top: 0px; margin-bottom: 0px; }
-.type-tester .type-tester-title .entry-title { margin: 0px 0px 4px 0px; font-family: "Clayton Neue"; font-weight: 300; font-size: 1.6em; line-height: 1; letter-spacing: .02em; }
-.type-tester .type-tester-header { border-bottom: 3px solid #f0f0f0; font-family: "Clayton Neue"; font-weight: 300 !important; font-size: 20px; }
+.type-tester .type-tester-title .entry-title { margin: 0px 0px 4px 0px; font-family: "Cardinal Grotesque"; font-weight: 500; font-size: 1.6em; line-height: 1; letter-spacing: .02em; }
+.type-tester .type-tester-header { border-bottom: 3px solid #f0f0f0; font-family: "Cardinal Grotesque"; font-weight: 500 !important; font-size: 20px; }
 @media only screen and (min-width: 965px) { .type-tester .type-tester-header { width: 70.8333333333%; float: right; border-left: 3px solid #f0f0f0; } }
 .type-tester .type-tester-header:after { content: ""; display: table; clear: both; }
 .type-tester .type-tester-header .select { position: relative; float: left; border-right: 3px solid #f0f0f0; padding: 0px 0px 4px 10px; }
@@ -761,7 +764,7 @@ Product Styles
 @media only screen and (max-width: 660px) { .type-tester .type-tester-header .type-tester-checkbox:last-of-type { display: none; } }
 .type-tester .type-tester-header .type-tester-checkbox input[type="checkbox"] { cursor: pointer; border: 3px solid #e0e0e0; width: 14px; height: 14px; margin-right: 5px; border-radius: 0px; -webkit-appearance: none; outline: none; }
 .type-tester .type-tester-header .type-tester-checkbox input[type="checkbox"]:checked, .type-tester .type-tester-header .type-tester-checkbox input[type="checkbox"].checked { border: 0px; background: #ffd138; }
-.type-tester .type-tester-header #font-size-slider { font-family: "Clayton Neue"; font-weight: 300 !important; font-size: 20px; width: 30%; color: #e0e0e0; float: left; padding: 0px 10px 4px 10px; border-right: 3px solid #f0f0f0; }
+.type-tester .type-tester-header #font-size-slider { font-family: "Cardinal Grotesque"; font-weight: 500 !important; font-size: 20px; width: 30%; color: #e0e0e0; float: left; padding: 0px 10px 4px 10px; border-right: 3px solid #f0f0f0; }
 .type-tester .type-tester-header #font-size-slider:before { content: "S"; margin-right: 5px; }
 .type-tester .type-tester-header #font-size-slider:after { content: "LG"; margin-left: 5px; }
 .type-tester .type-tester-footer { padding: 4px; }
@@ -782,14 +785,14 @@ Product Styles
 .single #content p:last-of-type.product.woocommerce.add_to_cart_inline a { vertical-align: 25px; margin-left: 20px; }
 .single #content p:last-of-type.product.woocommerce.add_to_cart_inline a:first-of-type { display: none; }
 .single #content p:last-of-type.product.woocommerce.add_to_cart_inline a:first-of-type:only-of-type { display: inline-block; }
-.single #content p:last-of-type.product.woocommerce.add_to_cart_inline .amount { font-family: "Clayton Neue Cond"; display: inline-block; font-weight: 600; font-size: 6em; color: #231f20; display: inline; margin: 0px; line-height: .8; margin-bottom: -4px; }
+.single #content p:last-of-type.product.woocommerce.add_to_cart_inline .amount { font-family: "Cardinal Grotesque Cond"; display: inline-block; font-weight: 600; font-size: 6em; color: #231f20; display: inline; margin: 0px; line-height: .8; margin-bottom: -4px; }
 @media (min-width: 1099px) { .single #content p:last-of-type.product.woocommerce.add_to_cart_inline { width: 177%; margin-left: -68.5%; margin-top: 15px; margin-bottom: -35px; } }
 @media (min-width: 1148px) { .single #content p:last-of-type.product.woocommerce.add_to_cart_inline { width: 175.333333333333333%; margin-left: -67.6666666666666%; } }
 .single .entry-header h1 { margin-top: 2px; line-height: 1.25; }
 .single .entry-header ul.post-meta { padding-left: 0px; margin-left: 0px; list-style-type: none; }
 @media (max-width: 1000px) { .single .entry-header ul.post-meta { margin-top: -5px !important; } }
-.single .entry-header ul.post-meta li:not(:last-of-type) { font-family: "Clayton Neue"; height: 34px; font-weight: 300; font-size: 25px; letter-spacing: .02em; }
-.single .entry-header ul.post-meta li .post-meta-key { font-family: "Clayton Neue"; font-weight: 600; text-transform: uppercase; letter-spacing: .17em; font-size: 15px; display: inline-block; width: 86px; }
+.single .entry-header ul.post-meta li:not(:last-of-type) { font-family: "Cardinal Grotesque"; height: 34px; font-weight: 500; font-size: 25px; letter-spacing: .02em; }
+.single .entry-header ul.post-meta li .post-meta-key { font-family: "Cardinal Grotesque"; font-weight: 600; text-transform: uppercase; letter-spacing: .17em; font-size: 15px; display: inline-block; width: 86px; }
 .single .entry-header ul.post-meta li:last-of-type { margin-top: 18px; }
 @media (min-width: 1000px) { .single .entry-header ul.post-meta li:last-of-type { margin-top: 26px; margin-bottom: 10px; } }
 .single .entry-header ul.post-meta li:last-of-type .post-meta-key { display: none; }
@@ -797,7 +800,7 @@ Product Styles
 @media only screen and (max-width: 767px) { .single .entry-footer .cat-links { display: block; margin: 0 auto; text-align: center; } }
 .single .entry-footer .cat-links a { background: #f0f0f0; color: #231f20; display: inline-block; text-decoration: none; margin-bottom: 20px; }
 .single .entry-footer .cat-links a.cat-for-sale { display: none; }
-.single .entry-footer .post-navigation { font-family: "Clayton Neue"; font-weight: 600; text-transform: uppercase; letter-spacing: .17em; font-size: .8em; }
+.single .entry-footer .post-navigation { font-family: "Cardinal Grotesque"; font-weight: 600; text-transform: uppercase; letter-spacing: .17em; font-size: .8em; }
 .single .entry-footer .post-navigation .nav-next { text-align: right; }
 .single .entry-footer .post-navigation .nav-previous, .single .entry-footer .post-navigation .nav-next { width: 50%; float: left; }
 .single .entry-footer .post-navigation .nav-previous a, .single .entry-footer .post-navigation .nav-next a { color: #ffffff; background: #231f20; text-decoration: none; padding: 1px 5px 2px 5px; position: relative; text-align: center; z-index: 1; display: inline-block; max-width: 120px; text-overflow: hidden; white-space: nowrap; overflow: hidden; vertical-align: .2em; }
@@ -890,7 +893,7 @@ footer.footer .footer-contact .footer-contact-form .input-label-group-pizza .ico
 footer.footer .footer-contact .footer-contact-form .input-label-group-pizza .icon:first-of-type { padding-right: 17px; padding-left: 10px; }
 footer.footer .footer-contact .footer-contact-form .input-label-group-human { width: 37.5%; display: inline-block; }
 footer.footer .footer-contact .footer-contact-form .input-label-group-human .human { text-align: center; width: 75px; padding-left: 5px; padding-right: 5px; }
-footer.footer .footer-contact .footer-contact-form .input-label-group-human .math { display: inline-block; font-family: "Clayton Neue"; font-weight: 300; font-size: 16px; }
+footer.footer .footer-contact .footer-contact-form .input-label-group-human .math { display: inline-block; font-family: "Cardinal Grotesque"; font-weight: 500; font-size: 16px; }
 footer.footer .footer-contact .footer-contact-form textarea { font-size: 16px; line-height: 1; padding: 16px 25px; min-height: 120px; resize: vertical; }
 @media (max-width: 767px) { footer.footer .footer-contact .footer-contact-form input[type="submit"] { width: 100%; margin-top: -5px; margin-bottom: 8px; text-align: center; } }
 @media (max-width: 767px) { footer.footer .footer-available { text-align: center; background: #ffffff; padding: 2em 3em .4em 3em; margin-top: 15px; } }

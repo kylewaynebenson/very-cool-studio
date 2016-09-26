@@ -24,7 +24,7 @@
 					</p>
 				</div>
 				<div class="contact-address">
-					<p class="h5">195 E 1600 S<br/> Orem, UT 84058</p>
+					<p class="h5">Santa Clara<br/> CA 95051</p>
 				</div>
 				<div class="clear"></div>
 				<div class="contact-form">

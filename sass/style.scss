@@ -218,6 +218,11 @@ a.squiggle-black {
 		}
 	}
 	article.product-cat-type {
+		&.outofstock {
+			.price, a.button {
+				display: none;
+			}
+		}
 		background: $white;
 		position: relative;
 		max-width: 500px;
@@ -335,7 +340,7 @@ a.squiggle-black {
 			margin-top: -8px;
 			margin-bottom: 2px;
 		}
-		&.category-for-sale {
+		&.product-cat-objects {
 			background: $white;
 			&:not(.category-type) {
 				.entry-footer {
@@ -459,7 +464,7 @@ a.squiggle-black {
 				}
 			}
 		}
-		&.category-for-sale.category-type {
+		&.category-for-sale {
 			.entry-header {
 				border: 3px solid $gray-1;
 			}
@@ -1014,6 +1019,14 @@ Product Styles
 			}
 		}
 	}
+	&.outofstock {
+		.cart button[type="submit"] {
+			display: none;
+		}
+		.type-tester-title .amount {
+			display: none;	
+		}
+	}
 }
 .single-product {
 	.specimen-gallery {
@@ -1426,64 +1439,56 @@ Product Styles
 			text-transform: uppercase;
 			letter-spacing: .17em;
 			font-size: .8em;
+			line-height: 1.15;
 			.nav-next {
 				text-align: right;
 			}
 			.nav-previous, .nav-next  {
-				width: 50%;
+				width: 40%;
 				float: left;
+				position: relative;
 				a {
-					color: $white;
-					background: $black;
-					text-decoration: none;
-					padding: 1px 5px 2px 5px;
-					position: relative;
-					text-align: center;
-					z-index: 1;
-					display: inline-block;
-					max-width: 120px;
-					text-overflow: hidden;
-					white-space: nowrap;
+					color: $black;
+					background: $yellow;
 					overflow: hidden;
-					vertical-align: .2em;
+					white-space: nowrap;
+  					text-overflow: ellipsis;
+					display: block;
+					text-decoration: none;
+					padding: 5px 5px 5px 5px;
+					height: 24px;
+					text-align: center;
 					@media only screen and (min-width: 768px) and (max-width: 1160px) {
-						width: 25px;
-						letter-spacing: -10px;
-						color: transparent;
 						user-select: none; 
-						text-align: center;
 					}
 				}
 
 			}
-			.nav-previous:before, .nav-previous:after, .nav-next:before, .nav-next:after  {
-				display: inline-block;
-				color: $black;
-				background: $white;
-				font-family: 'Very Cool Icons';
-				font-style: normal;
-				font-weight: 400;
-				font-size: 2.55em;
-				line-height: 1;
+			.nav-previous {
+				margin-left: 10px;
+			}
+			.nav-next {
+				margin-right: 10px;	
+			}
+			.nav-previous:before, .nav-next:before  {
+				display: block;
+				position: absolute;
+				content: " ";
+				background-color: $yellow;
+				width: 24px; 
+				height: 24px; 
+				border-top: 12px solid white;
+				border-bottom: 12px solid white;
 			}
 			.nav-previous:before {
-				content: "\E006";
-				margin-right: -17px;
+				border-right: 12px solid $yellow; 
+				border-left: 12px solid white;
+				left: -22px;
 			}
-			.nav-next:after {
-				content: "\E006";
-				margin-left: -17px;
-			}
-			.nav-previous:after  {
-				content: "\E007";
-				margin-left: -11px;
-			}
-			.nav-next:before  {
-				content: "\E007";
-				margin-right: -11px;
-			}
-			.nav-next:before, .nav-next:after {
-				transform: rotate(180deg);
+			.nav-next:before {
+				border-left:12px solid $yellow; 
+				border-right:12px solid white;
+				right: -22px;
 			}
 		}
 	}
@@ -1522,6 +1527,41 @@ Product Styles
 		}
 	}
 	footer.footer {
+	}
+	.white-page {
+		h1 {
+			line-height: 1.25;
+		}
+		position: relative;
+		margin-top: -40px;
+		@media (min-width: 1000px) {
+			padding: 0px;
+			.kyle-gif {
+				display: none;
+			}
+			.kyle-photo {
+				margin-bottom: -20px;
+			}
+			.bio {
+				position: absolute;
+				top: 20px;
+				left: 45px;
+				width: 40%;
+			}
+		}
+		@media (max-width: 999px) {
+			.kyle-photo {
+				display: none;
+			}
+			.kyle-gif {
+				max-width: 250px;
+				float: left;
+			}
+			.bio {
+				float: left;
+			}
+			@include clearfix;
+		}
 	}
 }
 #page {
@@ -1595,7 +1635,7 @@ Product Styles
 	.page-template-page-studio {
 		header.site-header {
 			.site-branding:after {
-				content: "a guy in Utah";
+				content: "a guy with a Laptop";
 				margin-right: -45px;
 			}
 		}
@@ -1715,7 +1755,7 @@ Product Styles
 		}
 	}
 }
-.gray-page {
+.gray-page, .white-page {
 	background: $gray-1;
 	padding: 15px;
 	h2, .h2 {
@@ -1744,6 +1784,9 @@ Product Styles
 		margin-bottom: 2.5em;
 		padding: 80px 115px;
 	}
+}
+.white-page {
+	background: $white;
 }
 /*--------------------------------------------------------------
 # Footer Styles

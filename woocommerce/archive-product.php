@@ -103,7 +103,7 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_sidebar' );
 	?>
-
+<?php if ( is_product_category('type') ) : ?>
 <div id="custom-type" class="yellow-page">
 	<div class="very-cool-flag">
 		<img src="<?php bloginfo('template_directory'); ?>/img/very-cool-flag.svg"/>
@@ -151,5 +151,6 @@ get_header( 'shop' ); ?>
 		</footer>
 	</section>
 </div>
+<?php endif; ?>
 
 <?php get_footer( 'shop' ); ?>

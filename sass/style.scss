@@ -249,8 +249,11 @@ a.squiggle-black {
 			border-top: 0px;
 			padding: 4px;
 			padding-top: 20px;
-			padding-bottom: 10px;
+			padding-bottom: 10px;		
 			text-align: center;
+			@media only screen and (min-width: 768px) {
+				min-height: 102px;
+			}	
 			.cat-links {
 				a {
 					background: $yellow;
@@ -785,6 +788,7 @@ Cart Styles
 					label {
 						color: $gray-2;
 						font-size: 12px;
+						font-weight: 500;
 					}
 				}
 			}
@@ -1565,7 +1569,7 @@ Product Styles
 				margin-top: -11px;
 				margin-right: -2px;
 				margin-bottom: -4px;
-				@media (min-width: 700px) and (max-width: 828px)  {
+				@media (min-width: 680px) and (max-width: 860px)  {
 					width: 190px;
 					background: url("img/stencil-logo-medium.jpg");
 					background-size: 100% auto;
@@ -1606,7 +1610,7 @@ Product Styles
 	.page-template-page-studio {
 		header.site-header {
 			.site-branding:after {
-				content: "a guy with a Laptop";
+				content: "a guy";
 				margin-right: -45px;
 			}
 		}

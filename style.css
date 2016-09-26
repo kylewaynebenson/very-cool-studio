@@ -312,17 +312,17 @@ input[type="submit"].chamfered-button-white:visited, .chamfered-button-white:vis
 input[type="submit"].chamfered-button-gray, .chamfered-button-gray, .wc-backward.button { color: #231f20; background: -webkit-linear-gradient(315deg, transparent 5px, #f0f0f0 0) top left, -webkit-linear-gradient(225deg, transparent 5px, #f0f0f0 0) top right, -webkit-linear-gradient(135deg, transparent 5px, #f0f0f0 0) bottom right, -webkit-linear-gradient(45deg, transparent 5px, #f0f0f0 0) bottom left; background: linear-gradient(135deg, transparent 5px, #f0f0f0 0) top left, linear-gradient(225deg, transparent 5px, #f0f0f0 0) top right, linear-gradient(315deg, transparent 5px, #f0f0f0 0) bottom right, linear-gradient(45deg, transparent 5px, #f0f0f0 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; }
 input[type="submit"].chamfered-button-gray:visited, .chamfered-button-gray:visited, .wc-backward.button:visited { color: #231f20; }
 
-input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea { color: #231f20; border: 3px solid #231f20; padding: 3px 5px; border-radius: 0px; background: transparent; width: 100%; font-family: "Cardinal Grotesque"; font-weight: 300; letter-spacing: .02em; outline: none; }
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea { color: #231f20; border: 3px solid #231f20; padding: 3px 5px; border-radius: 0px; background: transparent; width: 100%; font-family: "Cardinal Grotesque"; font-weight: 500; letter-spacing: .02em; outline: none; }
 input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, textarea:focus { background: #ffffff; }
 
-#white-page input[type="text"], #white-page input[type="email"], #white-page input[type="url"], #white-page input[type="password"], #white-page input[type="search"], #white-page input[type="number"], #white-page input[type="tel"], #white-page input[type="date"], #white-page input[type="month"], #white-page input[type="week"], #white-page input[type="time"], #white-page input[type="datetime"], #white-page input[type="datetime-local"], #white-page input[type="color"], #white-page textarea, input[type="text"].input-white, input[type="email"].input-white, input[type="url"].input-white, input[type="password"].input-white, input[type="search"].input-white, input[type="number"].input-white, input[type="tel"].input-white, input[type="date"].input-white, input[type="month"].input-white, input[type="week"].input-white, input[type="time"].input-white, input[type="datetime"].input-white, input[type="datetime-local"].input-white, input[type="color"].input-white, textarea.input-white { color: #e0e0e0; border: 3px solid #f0f0f0; border-radius: 0px; background: #ffffff; width: 100%; font-family: "Cardinal Grotesque"; font-weight: 300; padding: 1px 10px 2px 10px; letter-spacing: .02em; outline: none; -webkit-transition: border 0.3s; transition: border 0.3s; }
+#white-page input[type="text"], #white-page input[type="email"], #white-page input[type="url"], #white-page input[type="password"], #white-page input[type="search"], #white-page input[type="number"], #white-page input[type="tel"], #white-page input[type="date"], #white-page input[type="month"], #white-page input[type="week"], #white-page input[type="time"], #white-page input[type="datetime"], #white-page input[type="datetime-local"], #white-page input[type="color"], #white-page textarea, input[type="text"].input-white, input[type="email"].input-white, input[type="url"].input-white, input[type="password"].input-white, input[type="search"].input-white, input[type="number"].input-white, input[type="tel"].input-white, input[type="date"].input-white, input[type="month"].input-white, input[type="week"].input-white, input[type="time"].input-white, input[type="datetime"].input-white, input[type="datetime-local"].input-white, input[type="color"].input-white, textarea.input-white { color: #e0e0e0; border: 3px solid #f0f0f0; border-radius: 0px; background: #ffffff; width: 100%; font-family: "Cardinal Grotesque"; font-weight: 500; padding: 1px 10px 2px 10px; letter-spacing: .02em; outline: none; -webkit-transition: border 0.3s; transition: border 0.3s; }
 #white-page input[type="text"]:focus, #white-page input[type="email"]:focus, #white-page input[type="url"]:focus, #white-page input[type="password"]:focus, #white-page input[type="search"]:focus, #white-page input[type="number"]:focus, #white-page input[type="tel"]:focus, #white-page input[type="date"]:focus, #white-page input[type="month"]:focus, #white-page input[type="week"]:focus, #white-page input[type="time"]:focus, #white-page input[type="datetime"]:focus, #white-page input[type="datetime-local"]:focus, #white-page input[type="color"]:focus, #white-page textarea:focus, input[type="text"].input-white:focus, input[type="email"].input-white:focus, input[type="url"].input-white:focus, input[type="password"].input-white:focus, input[type="search"].input-white:focus, input[type="number"].input-white:focus, input[type="tel"].input-white:focus, input[type="date"].input-white:focus, input[type="month"].input-white:focus, input[type="week"].input-white:focus, input[type="time"].input-white:focus, input[type="datetime"].input-white:focus, input[type="datetime-local"].input-white:focus, input[type="color"].input-white:focus, textarea.input-white:focus { background: #ffffff; color: #231f20; border: 3px solid #231f20; }
 
 textarea { width: 100%; }
 
 label.hidden { display: none; }
 
-label { text-transform: uppercase; font-size: 16px; color: #231f20; font-weight: 300; font-family: "Cardinal Grotesque"; }
+label { text-transform: uppercase; font-size: 16px; color: #231f20; font-weight: 500; font-family: "Cardinal Grotesque"; }
 
 form p { margin: 0px; }
 form.cart { margin: 0px; padding: 0px; }
@@ -336,7 +336,7 @@ input[type=range]:focus { outline: none; }
 
 input[type=range]::-webkit-slider-runnable-track { width: 100%; height: 3px; cursor: pointer; background: #f0f0f0; }
 
-input[type=range]::-webkit-slider-thumb { height: 14px; width: 14px; border-radius: 37px; background: #ffd138; cursor: pointer; -webkit-appearance: none; margin-top: -5px; }
+input[type=range]::-webkit-slider-thumb { height: 14px; width: 14px; border-radius: 37px; background: #ffd138; cursor: pointer; -webkit-appearance: none; margin-top: -6px; }
 
 input[type=range]:focus::-webkit-slider-runnable-track { background: #f0f0f0; }
 
@@ -360,8 +360,8 @@ input[type=range]:focus::-ms-fill-upper { background: #f0f0f0; }
 .select { position: relative; display: inline-block; }
 .select select { outline: none; -webkit-appearance: none; display: block; margin: 0; border: 0px; background: #fff; color: #e0e0e0; line-height: normal; font-family: inherit; font-size: inherit; line-height: inherit; }
 .select .arr { background: #fff; bottom: 5px; position: absolute; right: 5px; top: 5px; width: 50px; pointer-events: none; }
-.select .arr:before { content: ' '; position: absolute; z-index: 1; top: 50%; right: 24px; margin-top: -5px; pointer-events: none; border-top: 10px solid #e0e0e0; border-left: 10px solid transparent; border-right: 10px solid transparent; }
-.select .arr:after { content: ' '; position: absolute; z-index: 1; top: 50%; right: 28px; margin-top: -5px; pointer-events: none; border-top: 6px solid #fff; border-left: 6px solid transparent; border-right: 6px solid transparent; }
+.select .arr:before { content: ' '; position: absolute; z-index: 1; top: 50%; right: 24px; margin-top: -6px; pointer-events: none; border-top: 10px solid #e0e0e0; border-left: 10px solid transparent; border-right: 10px solid transparent; }
+.select .arr:after { content: ' '; position: absolute; z-index: 1; top: 50%; right: 28px; margin-top: -6px; pointer-events: none; border-top: 6px solid #fff; border-left: 6px solid transparent; border-right: 6px solid transparent; }
 
 /* Checkbox styles */
 input[type=radio] { -webkit-appearance: none; border: 3px solid #231f20; border-radius: 50%; padding: 10px; outline: none; }
@@ -554,6 +554,7 @@ a.squiggle-black { background-image: url(img/squiggle-black.png); color: #231f20
 .blog article.product-cat-type .entry-header, .home article.product-cat-type .entry-header, .archive article.product-cat-type .entry-header, .category article.product-cat-type .entry-header { border: 3px solid #f0f0f0; height: 165px; background: #ffffff; overflow-x: hidden; text-align: center; }
 .blog article.product-cat-type .entry-header img, .home article.product-cat-type .entry-header img, .archive article.product-cat-type .entry-header img, .category article.product-cat-type .entry-header img { max-height: 100%; position: relative; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 .blog article.product-cat-type .entry-footer, .home article.product-cat-type .entry-footer, .archive article.product-cat-type .entry-footer, .category article.product-cat-type .entry-footer { border: 3px solid #f0f0f0; border-top: 0px; padding: 4px; padding-top: 20px; padding-bottom: 10px; text-align: center; }
+@media only screen and (min-width: 768px) { .blog article.product-cat-type .entry-footer, .home article.product-cat-type .entry-footer, .archive article.product-cat-type .entry-footer, .category article.product-cat-type .entry-footer { min-height: 102px; } }
 .blog article.product-cat-type .entry-footer .cat-links a, .home article.product-cat-type .entry-footer .cat-links a, .archive article.product-cat-type .entry-footer .cat-links a, .category article.product-cat-type .entry-footer .cat-links a { background: #ffd138; color: #231f20; }
 .blog article.product-cat-type h5, .blog article.product-cat-type .h5, .home article.product-cat-type h5, .home article.product-cat-type .h5, .archive article.product-cat-type h5, .archive article.product-cat-type .h5, .category article.product-cat-type h5, .category article.product-cat-type .h5 { margin-top: 0px; margin-bottom: 0px; }
 .blog article.product-cat-type a, .home article.product-cat-type a, .archive article.product-cat-type a, .category article.product-cat-type a { text-decoration: none; }
@@ -654,7 +655,7 @@ Cart Styles
 #payment .payment_methods .payment_method_s4wc #s4wc-cc-form { outline: none; border: 3px solid #f0f0f0; border-radius: 20px; padding: 20px; position: relative; margin-top: 10px; margin-bottom: 10px; }
 #payment .payment_methods .payment_method_s4wc #s4wc-cc-form .form-row-first, #payment .payment_methods .payment_method_s4wc #s4wc-cc-form .form-row-last { display: block; float: left; margin-right: 10px; width: 105px; }
 #payment .payment_methods .payment_method_s4wc #s4wc-cc-form #s4wc_save_card_field { max-width: 80px; float: right; margin-top: 25px; line-height: 1.1; }
-#payment .payment_methods .payment_method_s4wc #s4wc-cc-form #s4wc_save_card_field label { color: #e0e0e0; font-size: 12px; }
+#payment .payment_methods .payment_method_s4wc #s4wc-cc-form #s4wc_save_card_field label { color: #e0e0e0; font-size: 12px; font-weight: 500; }
 #payment .payment_methods label[for=payment_method_s4wc], #payment .payment_methods label[for=payment_method_paypal] { vertical-align: 8px; padding-left: 10px; }
 #payment .payment_methods .payment_method_paypal.payment_box, #payment .payment_methods .payment_method_paypal a, #payment .payment_methods .payment_method_paypal img { display: none !important; }
 #payment .payment_methods .payment_method_paypal.wc_payment_method:after { content: "(pls no)"; text-transform: uppercase; font-size: 16px; color: #e0e0e0; font-weight: 500; font-family: "Cardinal Grotesque"; vertical-align: 8px; }
@@ -828,14 +829,14 @@ Product Styles
 #page .page-title { margin-top: 0px; }
 #page header.site-header .site-branding a { display: block; }
 #page header.site-header .site-branding .icon-logo:before { content: " "; display: block; width: 320px; height: 45px; background: url("img/stencil-logo.jpg"); background-size: 100% auto; background-repeat: no-repeat; margin-top: -11px; margin-right: -2px; margin-bottom: -4px; }
-@media (min-width: 700px) and (max-width: 828px) { #page header.site-header .site-branding .icon-logo:before { width: 190px; background: url("img/stencil-logo-medium.jpg"); background-size: 100% auto; background-repeat: no-repeat; } }
+@media (min-width: 680px) and (max-width: 860px) { #page header.site-header .site-branding .icon-logo:before { width: 190px; background: url("img/stencil-logo-medium.jpg"); background-size: 100% auto; background-repeat: no-repeat; } }
 @media (max-width: 420px) { #page header.site-header .site-branding .icon-logo:before { width: 190px; background: url("img/stencil-logo-medium.jpg"); background-size: 100% auto; background-repeat: no-repeat; } }
 #page header.site-header .site-branding:after { font-family: "Business Script"; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; font-weight: 300; font-size: 1.2em; line-height: 0; margin-left: 15px; }
 
 .single-product .woocommerce-breadcrumb { display: none; }
 
 @media (min-width: 1048px) { .single-product header.site-header .site-branding:after, .post-type-archive-product header.site-header .site-branding:after { content: "a Type Foundry"; margin-right: -40px; }
-  .page-template-page-studio header.site-header .site-branding:after { content: "a guy with a Laptop"; margin-right: -45px; }
+  .page-template-page-studio header.site-header .site-branding:after { content: "a guy"; margin-right: -45px; }
   .home header.site-header .site-branding:after { content: "a Design Studio"; margin-right: -40px; }
   .woocommerce-cart .page-title { display: none; }
   .woocommerce-cart header.site-header .site-branding:after { content: "Cart"; } }

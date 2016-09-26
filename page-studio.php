@@ -24,10 +24,10 @@ get_header(); ?>
 	<img class="kyle-photo" src="<?php bloginfo('template_directory'); ?>/img/best-selfie-available-of-kyle.png"/>
 	<img class="kyle-gif" src="<?php bloginfo('template_directory'); ?>/img/kyle-gif.gif"/>
 	<div class="bio">
-		<h1>Kyle Benson is equal parts designer, milquetoast, and jelly bean.</h1>
-		<p>He began his career in 2016 by stealing this bio from Matt Lehman. It was there that he once laid out packaging for a cassette.</p>
-		<p>In 2007, he joined CMT / MTV Networks focusing on show identities and the network rebrand in 2009. During his tenure there, he worked on the visuals for a NASCAR DVD and two Toby Keith movies. He has skeletons in his closet just like everyone else.</p>
-		<p>In 2010 he formed Matt Lehman Studio working for brands such as ESPN, Delta, PepsiCo, The Atlantic, Esquire, Nickelodeon and NASA to name a few.</p>
+		<h1>Very Cool is the Studio of Kyle Wayne Benson.</h1>
+		<p>Kyle began his career in 2008 as a web developer for some e-commerce dudes. Since that time, he has worked for increasingly less shady clients.</p>
+		<p>In 2015 Cooper Union gave him a Type Design certificate. Kyle formed Very Cool Studio in 2016, an entire year after buying the domain.</p>
+		<p>He has designed several kinds of fonts and kinds of cards—Christmas, playing, you name it. His best tweet has 57 “faves”, which is 5-10 times Kyle’s average number of “faves” per tweet.</p>
 	</div>
 </div>
 

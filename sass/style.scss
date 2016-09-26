@@ -335,7 +335,8 @@ a.squiggle-black {
 		}
 		h4, .h4 {
 			margin: -5px 0px 7px 0px;
-			overflow: hidden;
+			padding: 3px 1px 0px 2px;
+			overflow-x: hidden;
 			white-space: nowrap;
 			text-overflow: ellipsis;
 		}
@@ -1399,6 +1400,9 @@ Product Styles
 			}
 		}
 		.post-navigation {
+			@media only screen and (max-width: 767px) {
+				margin-left: 8%;
+			}
 			font-family: $type-subhead;
 			font-weight: 600;
 			text-transform: uppercase;
@@ -1409,9 +1413,10 @@ Product Styles
 				text-align: right;
 			}
 			.nav-previous, .nav-next  {
-				width: 40%;
+				width: 42%;
 				float: left;
 				position: relative;
+				cursor: pointer;
 				a {
 					color: $black;
 					background: $yellow;
@@ -1431,9 +1436,10 @@ Product Styles
 			}
 			.nav-previous {
 				margin-left: 10px;
+				float: left;
 			}
 			.nav-next {
-				margin-right: 10px;	
+				margin-right: 10px;
 			}
 			.nav-previous:before, .nav-next:before  {
 				display: block;

@@ -34,50 +34,46 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 	return;
 	 }
 ?>
-
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php
-		/**
-		 * woocommerce_before_single_product_summary hook.
-		 *
-		 * @hooked woocommerce_show_product_sale_flash - 10
-		 * @hooked woocommerce_show_product_images - 20
-		 */
-		do_action( 'woocommerce_before_single_product_summary' );
-	?>
-	<div class="summary entry-summary">
-
-		<?php
-			/**
-			 * woocommerce_single_product_summary hook.
-			 *
-			 * @hooked woocommerce_template_single_title - 5
-			 * @hooked woocommerce_template_single_rating - 10
-			 * @hooked woocommerce_template_single_price - 10
-			 * @hooked woocommerce_template_single_excerpt - 20
-			 * @hooked woocommerce_template_single_add_to_cart - 30
-			 * @hooked woocommerce_template_single_meta - 40
-			 * @hooked woocommerce_template_single_sharing - 50
-			 */
-			do_action( 'woocommerce_single_product_summary' );
-		?>
-
-	</div><!-- .summary -->
-
-	<?php
-		/**
-		 * woocommerce_after_single_product_summary hook.
-		 *
-		 * @hooked woocommerce_output_product_data_tabs - 10
-		 * @hooked woocommerce_upsell_display - 15
-		 * @hooked woocommerce_output_related_products - 20
-		 */
-		do_action( 'woocommerce_after_single_product_summary' );
-	?>
-
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="entry-header">
+		<?php 
+			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_meta();
+			?>
+	</header><!-- .entry-header -->
+	<div class="post-content">
+		<?php the_content(); ?>
+		<div class="specimen-gallery">
+	 </div>
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
+	</div>
+	<footer class="entry-footer">
+		<?php
+				verycool_entry_footer();
+				the_post_navigation();
 
+		if ( 'post' === get_post_type() ) : ?>
+		<?php
+		endif; ?>
+	</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
 </div><!-- #product-<?php the_ID(); ?> -->
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<div class="yellow-page">
+	<h1 class="footer-title <?php echo $post->post_name;?>"><?php the_title(); ?></h1>
+	<h4 class="price h4"><?php global $product; echo $product->get_price_html(); ?>
+	<meta itemprop="price" content="<?php echo esc_attr( $product->get_price() ); ?>" />
+	<meta itemprop="priceCurrency" content="<?php echo esc_attr( get_woocommerce_currency() ); ?>" /></h4>
+	<form class="cart" method="post" enctype='multipart/form-data'>
+	 	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
+	 	<button type="submit" class="button chamfered-button"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+	</form>
+</div>
+<?php wp_enqueue_style( 'webfonts' ); ?>

@@ -151,6 +151,14 @@ get_header( 'shop' ); ?>
 		</footer>
 	</section>
 </div>
+<?php elseif ( is_product_category('object') || is_product_category('objects') ) : ?>
+<div id="custom-type" class="yellow-page">
+	<div class="very-cool-flag">
+		<img src="<?php bloginfo('template_directory'); ?>/img/very-cool-shirt.svg"/>
+	</div>
+	<h2 class="h2" id="custom">Very Cool Objects</h2>
+	<p class="intro-text">We know the wish to possess an object is great, and the desire to consume has never made more sense than it does here. We're glad to marry your drive for culture and status to our daughters of products. Feast your eyes on the affordable and exciting offerings above.</p>
+</div>
 <?php endif; ?>
 
 <?php get_footer( 'shop' ); ?>

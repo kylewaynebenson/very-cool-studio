@@ -217,10 +217,38 @@ a.squiggle-black {
 			margin-left: span(-1);
 		}
 	}
-	article.product-cat-type {
+	article.product-cat-type, article.product-cat-objects {
 		&.outofstock {
-			.price, a.button {
+			a.button {
 				display: none;
+			}
+			.price {
+				font-size: 0px;
+				&:after {
+					color: darken($gray-1,8%);
+					content: "SOON";
+					font-feature-settings: "case" 1;
+					font-weight: 600;
+					font-size: 16px !important;
+					margin-top: 2px;
+					margin-bottom: 0px;
+					margin-left: -4px;
+					letter-spacing: 0.05em;
+				}
+			}
+			.entry-title, h5, .h5 {
+				color: darken($gray-1,8%);
+			}
+			.entry-header {
+				img {
+					opacity: 0.15;
+				}
+			}
+			.entry-footer {
+				.h5:before {
+					display: block;
+					content: "Not Available";
+				}
 			}
 		}
 		background: $white;
@@ -238,7 +266,6 @@ a.squiggle-black {
 			overflow-x: hidden;
 			text-align: center;
 			img {
-				max-height: 100%;
 				position: relative;
 				top: 50%;
 				transform: translateY(-50%);
@@ -251,7 +278,7 @@ a.squiggle-black {
 			padding-top: 20px;
 			padding-bottom: 10px;		
 			text-align: center;
-			@media only screen and (min-width: 768px) {
+			@media only screen and (min-width: 700px) {
 				min-height: 102px;
 			}	
 			.cat-links {
@@ -309,9 +336,17 @@ a.squiggle-black {
 
 		.price {
 			color: $yellow;
+			font-weight: 600;
+			font-size: 6em;
 			font-size: 1em;
 			margin-top: 0px;
 			margin-bottom: 0px;
+		}
+		@media only screen and (min-width: 481px) and (max-width: 699px) {
+			display: block;
+			width: 370px;
+			margin: 0 auto;
+			margin-bottom: span(1);
 		}
 		@media only screen and (min-width: 768px) {
 			float: left;
@@ -320,11 +355,17 @@ a.squiggle-black {
 			margin-left: span(1);
 			margin-bottom: span(1);
 		}
+		@media only screen and (min-width: 700px) and (max-width: 919px) {
+			float: left;
+			margin-left: span(1);
+			width: span(11);
+			margin-bottom: span(1);
+		}
 		@media (min-width: 1048px) {
 			width: span(5);
 		}
 	}
-	article.post, article.product:not(.product-cat-type) {
+	article.post:not(.type-product) {
 		color: $white;
 		background:
 			linear-gradient(135deg, transparent 0px, $black 0) top left,
@@ -1098,15 +1139,16 @@ Product Styles
 		&.business-script { font-family: 'Business Script'; line-height: 1;}
 		&.kansas-casual { font-family: 'Kansas Casual'; line-height: 1;}
 		&.cornbread { font-family: 'Cornbread'; line-height: 1;}
+		&.ready-script { font-family: 'Ready Script'; line-height: 1;}
 	}
-	.fontweight.extralight, .fontweight.extralightcondensed { font-weight: 100;}
-	.fontweight.light, .fontweight.lightcondensed { font-weight: 200;}
-	.fontweight.regular, .fontweight.regularcondensed { font-weight: 300;}
-	.fontweight.medium, .fontweight.mediumcondensed { font-weight: 400;}
-	.fontweight.semibold, .fontweight.semiboldcondensed { font-weight: 500;}
-	.fontweight.bold, .fontweight.boldcondensed { font-weight: 600;}
-	.fontweight.extrabold, .fontweight.extraboldcondensed { font-weight: 700;}
-	.fontweight.black, .fontweight.blackcondensed { font-weight: 900;}
+	.fontweight.extralight, .fontweight.extralightcondensed, .fontweight.extralightnarrow { font-weight: 100;}
+	.fontweight.light, .fontweight.lightcondensed, .fontweight.lightnarrow { font-weight: 200;}
+	.fontweight.regular, .fontweight.regularcondensed, .fontweight.regularnarrow { font-weight: 300;}
+	.fontweight.medium, .fontweight.mediumcondensed, .fontweight.mediumnarrow { font-weight: 400;}
+	.fontweight.semibold, .fontweight.semiboldcondensed, .fontweight.semiboldnarrow { font-weight: 500;}
+	.fontweight.bold, .fontweight.boldcondensed, .fontweight.boldnarrow { font-weight: 600;}
+	.fontweight.extrabold, .fontweight.extraboldcondensed, .fontweight.extraboldnarrow { font-weight: 700;}
+	.fontweight.black, .fontweight.blackcondensed, .fontweight.blacknarrow { font-weight: 900;}
 
 	.type-tester-title {
 		display: none;
@@ -1282,7 +1324,6 @@ Product Styles
 			margin: 10px 20px;
 		}
 	}
-
 	.price {
 		color: $yellow;
 		font-size: 1em;
@@ -1508,8 +1549,10 @@ Product Styles
 			line-height: 1.25;
 		}
 		position: relative;
-		margin-top: -40px;
-		@media (min-width: 1000px) {
+		@media (min-width: 700px) {
+			margin-top: -30px;
+		}
+		@media (min-width: 961px) {
 			padding: 0px;
 			.kyle-gif {
 				display: none;
@@ -1520,20 +1563,28 @@ Product Styles
 			.bio {
 				position: absolute;
 				top: 20px;
-				left: 45px;
+				left: 50px;
 				width: 40%;
 			}
+			h1 {
+				margin-bottom: 30px;
+			}
 		}
-		@media (max-width: 999px) {
+		@media (max-width: 960px) {
+			text-align: center;
 			.kyle-photo {
 				display: none;
 			}
 			.kyle-gif {
+				width: 40%;
 				max-width: 250px;
-				float: left;
+				border-radius: 50%;
+				display: inline-block;
 			}
 			.bio {
-				float: left;
+				width: 84%;
+				max-width: 600px;
+				display: inline-block;
 			}
 			@include clearfix;
 		}
@@ -1585,7 +1636,7 @@ Product Styles
 			&:after {
 				font-family: $type-script-subhead;
 				font-feature-settings: "liga" 1;
-				font-weight: 300;
+				font-weight: 500;
 				font-size: 1.2em;
 				line-height: 0;
 				margin-left: 15px;
@@ -1672,6 +1723,9 @@ Product Styles
 		width: 210px;
 		display: block;
 		margin: 0 auto;
+		@media (max-width: 768px) {
+			margin-top: 4%;
+		}
 	}
 	.intro-text {
 		&:first-letter { 
@@ -1701,6 +1755,19 @@ Product Styles
 		width: 1148px;
 		margin-bottom: 2.5em;
 		padding: 80px 115px;
+	}
+	@media (min-width: 920px) {
+		margin: 0 auto;
+	}
+	@media (min-width: 1000px) {
+		margin: 0 auto;
+	}
+	@media (min-width: 1048px) {
+		width: 1048px;
+	}
+	@media (min-width: 1148px) {
+		margin: 0 auto;
+		width: 1148px;
 	}
 	.box {
 		background: $white;
@@ -1780,6 +1847,10 @@ footer.footer {
 	background: $gray-1;
 	padding-top: 1.2em;
 	padding-bottom: 1.2em;
+	@media (max-width: 600px) {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
 	@media (min-width: 900px) {
 		padding-top: 2.6em;
 		padding-bottom: 2.6em;
@@ -1865,6 +1936,7 @@ footer.footer {
 	}
 	.footer-available {
 		@media (max-width: 767px) {
+			display: none;
 			text-align: center;
 			background: $white;
 			padding: 2em 3em .4em 3em;

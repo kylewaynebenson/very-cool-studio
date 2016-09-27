@@ -36,6 +36,8 @@ get_header( 'shop' ); ?>
 			<?php
 			if ( has_term( 'type', 'product_cat') ) {
 				wc_get_template_part( 'content', 'single-product-type' ); 
+			} else if ( has_term( 'object', 'product_cat') || has_term( 'objects', 'product_cat') )  {
+				wc_get_template_part( 'content', 'single-product-object' ); 
 			} else {
 				wc_get_template_part( 'content', 'single-product' ); 
 			}

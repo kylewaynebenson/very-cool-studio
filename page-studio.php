@@ -22,7 +22,7 @@ get_header(); ?>
 </div><!--  #white-box -->
 <div class="white-page">
 	<img class="kyle-photo" src="<?php bloginfo('template_directory'); ?>/img/best-selfie-available-of-kyle.png"/>
-	<img class="kyle-gif" src="<?php bloginfo('template_directory'); ?>/img/kyle-gif.gif"/>
+	<img class="kyle-gif" src="<?php bloginfo('template_directory'); ?>/img/kyle-gif-square.gif"/>
 	<div class="bio">
 		<h1>Very Cool is the Studio of Kyle Wayne Benson.</h1>
 		<p>Kyle began his career in 2008 as a web developer for some e-commerce dudes. Since that time, he has worked for increasingly less shady clients.</p>

@@ -261,7 +261,11 @@ dd { margin: 0 1.5em 1.5em; }
 .list-box li { padding: 3px 19px 8px 19px; }
 .list-box li a { text-decoration: none; line-height: 1; }
 .list-box li .year { float: right; font-weight: 600; text-transform: uppercase; letter-spacing: .17em; padding-top: 10px; font-size: .5em; }
-.list-box li:nth-of-type(odd) { background: #ffffff; }
+
+.gray-page li:nth-of-type(odd) { background: #ffffff; }
+
+.yellow-page li:nth-of-type(odd) { border-bottom: 3px solid #231f20; }
+.yellow-page li:last-of-type { border-bottom: 0px; }
 
 img { height: auto; /* Make sure images are scaled correctly. */ max-width: 100%; /* Adhere to container width. */ }
 
@@ -300,7 +304,10 @@ button:active, button:focus, input[type="button"]:active, input[type="button"]:f
 
 .woocommerce-message a.button { float: right; margin-top: -2px; }
 
-.chamfered-button, input[type="submit"].chamfered-button, .wc-backward.button, .woocommerce-message a, .wc-forward.button, #place_order.button, p:last-of-type.product.woocommerce.add_to_cart_inline a { color: #ffffff; text-decoration: none; border: 0px; background: -webkit-linear-gradient(315deg, transparent 5px, #231f20 0) top left, -webkit-linear-gradient(225deg, transparent 5px, #231f20 0) top right, -webkit-linear-gradient(135deg, transparent 5px, #231f20 0) bottom right, -webkit-linear-gradient(45deg, transparent 5px, #231f20 0) bottom left; background: linear-gradient(135deg, transparent 5px, #231f20 0) top left, linear-gradient(225deg, transparent 5px, #231f20 0) top right, linear-gradient(315deg, transparent 5px, #231f20 0) bottom right, linear-gradient(45deg, transparent 5px, #231f20 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; font-family: "Cardinal Grotesque"; font-weight: 500; font-size: 16px; text-transform: uppercase; padding: 5px 20px; letter-spacing: 1px; }
+.woocommerce-error a.button + a.button { margin-right: 10px; }
+@media (max-width: 930px) { .woocommerce-error a.button + a.button { display: none; } }
+
+.chamfered-button, input[type="submit"].chamfered-button, .wc-backward.button, .woocommerce-message a, .wc-forward.button, #place_order.button, p:last-of-type.product.woocommerce.add_to_cart_inline a { cursor: pointer; color: #ffffff; text-decoration: none; border: 0px; background: -webkit-linear-gradient(315deg, transparent 5px, #231f20 0) top left, -webkit-linear-gradient(225deg, transparent 5px, #231f20 0) top right, -webkit-linear-gradient(135deg, transparent 5px, #231f20 0) bottom right, -webkit-linear-gradient(45deg, transparent 5px, #231f20 0) bottom left; background: linear-gradient(135deg, transparent 5px, #231f20 0) top left, linear-gradient(225deg, transparent 5px, #231f20 0) top right, linear-gradient(315deg, transparent 5px, #231f20 0) bottom right, linear-gradient(45deg, transparent 5px, #231f20 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; font-family: "Cardinal Grotesque"; font-weight: 500; font-size: 16px; text-transform: uppercase; padding: 5px 20px; letter-spacing: 1px; }
 .chamfered-button:visited, input[type="submit"].chamfered-button:visited, .wc-backward.button:visited, .woocommerce-message a:visited, .wc-forward.button:visited, #place_order.button:visited, p:last-of-type.product.woocommerce.add_to_cart_inline a:visited { color: #ffffff; }
 
 input[type="submit"].chamfered-button-yellow, .chamfered-button-yellow, .wc-forward.button.checkout-button, #place_order.button { color: #231f20; background: -webkit-linear-gradient(315deg, transparent 5px, #ffd138 0) top left, -webkit-linear-gradient(225deg, transparent 5px, #ffd138 0) top right, -webkit-linear-gradient(135deg, transparent 5px, #ffd138 0) bottom right, -webkit-linear-gradient(45deg, transparent 5px, #ffd138 0) bottom left; background: linear-gradient(135deg, transparent 5px, #ffd138 0) top left, linear-gradient(225deg, transparent 5px, #ffd138 0) top right, linear-gradient(315deg, transparent 5px, #ffd138 0) bottom right, linear-gradient(45deg, transparent 5px, #ffd138 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; }
@@ -611,10 +618,14 @@ a.squiggle-black { background-image: url(img/squiggle-black.png); color: #231f20
 .blog article.post:not(.type-product) .entry-footer, .home article.post:not(.type-product) .entry-footer, .archive article.post:not(.type-product) .entry-footer, .category article.post:not(.type-product) .entry-footer { padding: 20px; }
 .blog article.post:not(.type-product) .entry-footer .cat-links a, .home article.post:not(.type-product) .entry-footer .cat-links a, .archive article.post:not(.type-product) .entry-footer .cat-links a, .category article.post:not(.type-product) .entry-footer .cat-links a { background: #ffd138; color: #231f20; }
 
+.category .page-header { margin-left: 4.1666666667%; }
+.category .page-header .page-title { text-align: center; }
+
 /*--------------------------------------------------------------
 Account Details
 --------------------------------------------------------------*/
-.woocommerce-account .entry-content { margin-top: 0px; }
+.woocommerce-page .entry-content { margin-top: 0px; }
+
 .woocommerce-account .entry-content > h3:first-of-type { margin-top: 0px; }
 .woocommerce-account .entry-content > h3:first-of-type span { float: right; }
 .woocommerce-account .entry-content .woocommerce > h3:first-of-type, .woocommerce-account .entry-content .woocommerce > p:first-of-type { margin-top: 0px; }
@@ -822,10 +833,10 @@ Product Styles
 --------------------------------------------------------------*/
 .page-template-page-studio .white-page { position: relative; }
 .page-template-page-studio .white-page h1 { line-height: 1.25; }
-@media (min-width: 700px) { .page-template-page-studio .white-page { margin-top: -30px; } }
-@media (min-width: 960px) { .page-template-page-studio .white-page { padding: 0px; }
+@media (min-width: 700px) { .page-template-page-studio .white-page { margin-top: -20px; } }
+@media (min-width: 961px) { .page-template-page-studio .white-page { padding: 0px; margin-bottom: 0px; }
   .page-template-page-studio .white-page .kyle-gif { display: none; }
-  .page-template-page-studio .white-page .kyle-photo { margin-bottom: -20px; }
+  .page-template-page-studio .white-page .kyle-photo { margin-bottom: -7px; }
   .page-template-page-studio .white-page .bio { position: absolute; top: 20px; left: 50px; width: 40%; }
   .page-template-page-studio .white-page h1 { margin-bottom: 30px; } }
 @media (max-width: 960px) { .page-template-page-studio .white-page { text-align: center; }
@@ -833,6 +844,13 @@ Product Styles
   .page-template-page-studio .white-page .kyle-gif { width: 40%; max-width: 250px; border-radius: 50%; display: inline-block; }
   .page-template-page-studio .white-page .bio { width: 84%; max-width: 600px; display: inline-block; }
   .page-template-page-studio .white-page:after { content: ""; display: table; clear: both; } }
+@media (min-width: 960px) { .page-template-page-studio .yellow-page .friends-enemies { float: left; width: 47.9166666667%; }
+  .page-template-page-studio .yellow-page .friends-enemies:nth-of-type(even) { margin-left: 4.1666666667%; } }
+@media (min-width: 960px) { .page-template-page-studio .yellow-page { margin-bottom: 30px; }
+  .page-template-page-studio .yellow-page:after { content: ""; display: table; clear: both; } }
+.page-template-page-studio .gray-page { border-left: 3px solid #ffffff; border-right: 3px solid #ffffff; }
+@media (max-width: 960px) { .page-template-page-studio .gray-page { padding-top: 50px; } }
+@media (min-width: 960px) { .page-template-page-studio .gray-page { margin-bottom: 0px; } }
 
 #page { color: #231f20; background: #f0f0f0; }
 @media (min-width: 480px) { #page { padding: 25px; } }
@@ -844,7 +862,7 @@ Product Styles
 @media (max-width: 420px) { #page header.site-header .site-branding .icon-logo:before { width: 190px; background: url("img/stencil-logo-medium.jpg"); background-size: 100% auto; background-repeat: no-repeat; } }
 #page header.site-header .site-branding:after { font-family: "Business Script"; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; font-weight: 500; font-size: 1.2em; line-height: 0; margin-left: 15px; }
 
-.single-product .woocommerce-breadcrumb { display: none; }
+.single-product .woocommerce-breadcrumb { display: none; height: 0px; }
 
 @media (min-width: 1048px) { .single-product header.site-header .site-branding:after, .post-type-archive-product header.site-header .site-branding:after { content: "a Type Foundry"; margin-right: -40px; }
   .page-template-page-studio header.site-header .site-branding:after { content: "a guy"; margin-right: -45px; }
@@ -854,12 +872,13 @@ Product Styles
 #white-page.white-page { background: #ffffff; padding: 15px; }
 #white-page.white-page .summary.entry-summary { margin-top: 0px; }
 @media (min-width: 768px) { #white-page.white-page { padding: 20px 24px; } }
-@media (min-width: 920px) { #white-page.white-page { padding: 25px 30px; margin: 0 auto; } }
-@media (min-width: 1000px) { #white-page.white-page { padding: 35px 50px; margin: 0 auto; } }
+@media (min-width: 920px) { #white-page.white-page { padding: 25px 30px; padding-bottom: 5px; margin: 0 auto; } }
+@media (min-width: 1000px) { #white-page.white-page { padding: 35px 50px; padding-bottom: 10px; margin: 0 auto; } }
 @media (min-width: 1048px) { #white-page.white-page { width: 1048px; } }
 @media (min-width: 1148px) { #white-page.white-page { margin: 0 auto; width: 1148px; } }
 
 .yellow-page { color: #231f20; background: #ffd138; margin-bottom: 1.2em; margin-top: 0px; padding: 15px; }
+.yellow-page a:hover { font-weight: 400; color: #231f20; }
 .yellow-page .very-cool-flag { width: 210px; display: block; margin: 0 auto; }
 .yellow-page .very-cool-flag img { max-width: 100%; }
 @media (max-width: 768px) { .yellow-page .very-cool-flag { margin-top: 4%; } }
@@ -897,6 +916,7 @@ Product Styles
 --------------------------------------------------------------*/
 header.site-header { padding-top: 10px; margin-bottom: 2px; }
 @media (min-width: 600px) { header.site-header { margin-bottom: 10px; } }
+@media (min-width: 800px) { header.site-header { margin-bottom: 15px; } }
 @media (min-width: 1000px) { header.site-header { margin-bottom: 18px; } }
 
 footer.footer { background: #f0f0f0; padding-top: 1.2em; padding-bottom: 1.2em; }
@@ -926,13 +946,13 @@ footer.footer .footer-available .h3 { line-height: 1.2; }
 /*--------------------------------------------------------------
 # Alert/Error Styles
 --------------------------------------------------------------*/
-.error { display: block; background: #ffd138; padding: 17px 20px; }
-@media (max-width: 500px) { .error { padding: 14px 15px; } }
+.woocommerce-message, .woocommerce-error, .error { display: block; background: #ffd138; padding: 17px 20px; }
+@media (max-width: 500px) { .woocommerce-message, .woocommerce-error, .error { padding: 14px 13px; text-align: center; line-height: 1.2; } }
 
-.woocommerce-message, .woocommerce-error { display: block; background: #ffd138; padding: 17px 20px; margin: 10px 0px; }
-@media (max-width: 500px) { .woocommerce-message, .woocommerce-error { padding: 14px 15px; } }
+.woocommerce-message, .woocommerce-error { margin: 10px 0px; }
 .woocommerce-message a, .woocommerce-error a { text-align: center; float: right; margin-bottom: -5px; margin-top: -5px; }
 @media (max-width: 500px) { .woocommerce-message a, .woocommerce-error a { display: block; width: 100%; margin-bottom: 14px; } }
+@media (min-width: 500px) { .woocommerce-message, .woocommerce-error { margin-top: -5px; } }
 
 .woocommerce-error { list-style-type: none; }
 .woocommerce-error:after { content: ""; display: table; clear: both; }

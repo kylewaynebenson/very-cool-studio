@@ -24,8 +24,26 @@ if ( ! $messages ){
 }
 
 ?>
-<ul class="woocommerce-error">
+<ul class="woocommerce-error" id="error">
 	<?php foreach ( $messages as $message ) : ?>
-		<li><?php echo wp_kses_post( $message ); ?></li>
+		<li><?php echo wp_kses_post( $message ); ?><a id="wc-close" class="button wc-close chamfered-button chamfered-button-white">K THX</a></li>
 	<?php endforeach; ?>
 </ul>
+<style>
+	#error {
+		display: block;
+	}
+	article.product {
+		transition: 1s; 
+	}
+	#error.fade {
+		display: none;
+	}
+</style>
+<script type="text/javascript">
+	var error = document.getElementById('error');
+
+	document.getElementById('wc-close').onclick = function(){
+	    error.classList.toggle('fade');
+	}
+</script>

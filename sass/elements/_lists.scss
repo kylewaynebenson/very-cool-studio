@@ -66,8 +66,22 @@ dd {
 			padding-top: 10px;
 			font-size: .5em;
 		}
+	}
+}
+.gray-page {
+	li {
 		&:nth-of-type(odd) {
 			background: $white;
+		}
+	}
+}
+.yellow-page {
+	li {
+		&:nth-of-type(odd) {
+			border-bottom: 3px solid $black;
+		}
+		&:last-of-type {
+			border-bottom: 0px;
 		}
 	}
 }

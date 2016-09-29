@@ -24,10 +24,9 @@ get_header(); ?>
 	<img class="kyle-photo" src="<?php bloginfo('template_directory'); ?>/img/best-selfie-available-of-kyle.png"/>
 	<img class="kyle-gif" src="<?php bloginfo('template_directory'); ?>/img/kyle-gif-square.gif"/>
 	<div class="bio">
-		<h1>Very Cool is the Studio of Kyle Wayne Benson.</h1>
-		<p>Kyle began his career in 2008 as a web developer for some e-commerce dudes. Since that time, he has worked for increasingly less shady clients.</p>
-		<p>In 2015 Cooper Union gave him a Type Design certificate. Kyle formed Very Cool Studio in 2016, an entire year after buying the domain.</p>
-		<p>He has designed several kinds of fonts and kinds of cards—Christmas, playing, you name it. His best tweet has 57 “faves”, which is 5-10 times Kyle’s average number of “faves” per tweet.</p>
+		<h1>Very Cool is the Studio of Kyle Wayne Benson</h1>
+		<p>Kyle got started in 2008 as a web developer for Internet Enterprises. In 2015 he received a Type Design Certificate from Cooper Union. He formed Very Cool Studio in 2016, an entire year after buying the domain.</p>
+		<p>His type has been used by <a href="https://fontsinuse.com/uses/10127/apple-music-billboard-ad-berlin">Apple</a>, <a href="https://www.bluehost.com/">BlueHost</a>, <a href="https://www.qualtrics.com/">Qualtrics</a> and on posters in his mom's classroom. His best tweet has 57 “faves”, which is 5-10 times Kyle’s average number of “faves” per tweet.</p>
 	</div>
 </div>
 
@@ -46,7 +45,22 @@ get_header(); ?>
 		<li><a href="http://oneminutewith.com/kyle-wayne-benson">One Minute With</a><span class="year">2014</span></li>
 	</ul>
 </div>
-
+<div class="yellow-page">
+	<div class="friends-enemies">
+		<h2>❤️ Friends ❤️</h2>
+		<ul class="list-box">
+			<li><a href="https://www.instagram.com/trevorchristensen/">Trevor Christensen</a><span class="year">PHOTO</span></li>
+			<li><a href="https://fortfoundry.com/">Mattox Schuler</a><span class="year">TYPE</span></li>
+		</ul>
+	</div>
+	<div class="friends-enemies">
+		<h2>&#x1f480; Enemies &#x1f480;</h2>
+		<ul class="list-box">
+			<li>The California DMV<span class="year">PLACE</span></li>
+			<li><a href="https://www.instagram.com/trevorchristensen/">Trevor Christensen</a><span class="year">PHOTO</span></li>
+		</ul>
+	</div>
+</div>
 
 <?php
 get_footer();

@@ -23,7 +23,16 @@ input[type="submit"] {
 	float: right;
 	margin-top: -2px;
 }
+.woocommerce-error {
+	a.button + a.button {
+		margin-right: 10px;
+		@media (max-width: 930px) {
+			display: none;
+		}
+	}
+}
 .chamfered-button, input[type="submit"].chamfered-button, .wc-backward.button, .woocommerce-message a, .wc-forward.button, #place_order.button, p:last-of-type.product.woocommerce.add_to_cart_inline a {
+	cursor: pointer;
 	color: $white;
 	text-decoration: none;
 	border: 0px;

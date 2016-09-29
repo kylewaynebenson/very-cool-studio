@@ -189,10 +189,12 @@ h1.business-script, .h1.business-script { font-family: "Business Script"; -webki
 @media (max-width: 768px) { h1, .h1 { margin-bottom: 5px; } }
 @media (max-width: 939px) { h1, .h1 { margin-bottom: 10px; } }
 @media (min-width: 940px) { h1, .h1 { font-size: 2.5em; margin-bottom: 14px; } }
+@media (min-width: 500px) { h1, .h1 { font-size: 2.0em; } }
 
 h1.huge-h1 { font-family: "Cardinal Grotesque Cond"; font-weight: 600; font-size: 6em; }
 
-h2, .h2 { font-family: "Business Script"; font-weight: 300; font-size: 2.25em; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; }
+h2, .h2 { font-family: "Business Script"; font-weight: 300; font-size: 2.25em; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; line-height: 1.25; }
+@media (max-width: 500px) { h2, .h2 { font-size: 1.8em; line-height: 1.15; } }
 
 h3, .h3 { font-family: "Cardinal Grotesque"; font-weight: 500; font-size: 1.6em; letter-spacing: .02em; }
 @media (max-width: 768px) { h3, .h3 { margin: .4em 0em; } }
@@ -264,7 +266,7 @@ dd { margin: 0 1.5em 1.5em; }
 
 .gray-page li:nth-of-type(odd) { background: #ffffff; }
 
-.yellow-page li:nth-of-type(odd) { border-bottom: 3px solid #231f20; }
+.yellow-page li { border-bottom: 3px solid #231f20; }
 .yellow-page li:last-of-type { border-bottom: 0px; }
 
 img { height: auto; /* Make sure images are scaled correctly. */ max-width: 100%; /* Adhere to container width. */ }
@@ -792,13 +794,13 @@ Product Styles
 # Post Styles
 --------------------------------------------------------------*/
 .single #content .hentry { margin: 0px; }
-.single #content p:last-of-type.product.woocommerce.add_to_cart_inline { border: 0px !important; background: #ffd138; text-align: center; }
+.single #content p:last-of-type.product.woocommerce.add_to_cart_inline { border: 0px !important; border-top: 3px solid #231f20 !important; text-align: center; }
 .single #content p:last-of-type.product.woocommerce.add_to_cart_inline a { vertical-align: 25px; margin-left: 20px; }
 .single #content p:last-of-type.product.woocommerce.add_to_cart_inline a:first-of-type { display: none; }
 .single #content p:last-of-type.product.woocommerce.add_to_cart_inline a:first-of-type:only-of-type { display: inline-block; }
 .single #content p:last-of-type.product.woocommerce.add_to_cart_inline .amount { font-family: "Cardinal Grotesque Cond"; display: inline-block; font-weight: 600; font-size: 6em; color: #231f20; display: inline; margin: 0px; line-height: .8; margin-bottom: -4px; }
-@media (min-width: 1099px) { .single #content p:last-of-type.product.woocommerce.add_to_cart_inline { width: 177%; margin-left: -68.5%; margin-top: 15px; margin-bottom: -35px; } }
-@media (min-width: 1148px) { .single #content p:last-of-type.product.woocommerce.add_to_cart_inline { width: 175.333333333333333%; margin-left: -67.6666666666666%; } }
+@media (max-width: 1098px) { .single #content p:last-of-type.product.woocommerce.add_to_cart_inline { padding-top: 25px !important; padding-bottom: 0px !important; margin-top: 10px; } }
+@media (min-width: 1099px) { .single #content p:last-of-type.product.woocommerce.add_to_cart_inline { padding-top: 25px !important; padding-bottom: 5px !important; margin-top: 20px; } }
 .single .entry-header h1 { margin-top: 2px; line-height: 1.25; }
 .single .entry-header ul.post-meta { padding-left: 0px; margin-left: 0px; list-style-type: none; }
 @media (max-width: 1000px) { .single .entry-header ul.post-meta { margin-top: -5px !important; } }
@@ -844,13 +846,17 @@ Product Styles
   .page-template-page-studio .white-page .kyle-gif { width: 40%; max-width: 250px; border-radius: 50%; display: inline-block; }
   .page-template-page-studio .white-page .bio { width: 84%; max-width: 600px; display: inline-block; }
   .page-template-page-studio .white-page:after { content: ""; display: table; clear: both; } }
+.page-template-page-studio .gray-page { border-left: 3px solid #ffffff; border-right: 3px solid #ffffff; }
+@media (max-width: 1250px) { .page-template-page-studio .gray-page { padding-top: 50px; } }
+@media (min-width: 960px) { .page-template-page-studio .gray-page { margin-bottom: 0px; } }
+.page-template-page-studio .yellow-page { background: #ffffff; }
 @media (min-width: 960px) { .page-template-page-studio .yellow-page .friends-enemies { float: left; width: 47.9166666667%; }
   .page-template-page-studio .yellow-page .friends-enemies:nth-of-type(even) { margin-left: 4.1666666667%; } }
+.page-template-page-studio .yellow-page .friends-enemies h2 { text-align: center !important; }
 @media (min-width: 960px) { .page-template-page-studio .yellow-page { margin-bottom: 30px; }
   .page-template-page-studio .yellow-page:after { content: ""; display: table; clear: both; } }
-.page-template-page-studio .gray-page { border-left: 3px solid #ffffff; border-right: 3px solid #ffffff; }
-@media (max-width: 960px) { .page-template-page-studio .gray-page { padding-top: 50px; } }
-@media (min-width: 960px) { .page-template-page-studio .gray-page { margin-bottom: 0px; } }
+
+body { background: #f0f0f0; }
 
 #page { color: #231f20; background: #f0f0f0; }
 @media (min-width: 480px) { #page { padding: 25px; } }

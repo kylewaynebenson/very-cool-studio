@@ -77,9 +77,7 @@ dd {
 }
 .yellow-page {
 	li {
-		&:nth-of-type(odd) {
-			border-bottom: 3px solid $black;
-		}
+		border-bottom: 3px solid $black;
 		&:last-of-type {
 			border-bottom: 0px;
 		}

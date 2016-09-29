@@ -17,6 +17,9 @@ h1, .h1 {
 		font-size: 2.5em;
 		margin-bottom: 14px;
 	}
+	@media (min-width: 500px) {
+		font-size: 2.0em;
+	}
 
 }
 h1.huge-h1 {
@@ -29,6 +32,11 @@ h2, .h2 {
 	font-weight: 300;
 	font-size: 2.25em;
 	font-feature-settings: "liga" 1;
+	line-height: 1.25;
+	@media (max-width:500px) {
+		font-size: 1.8em;
+		line-height: 1.15;
+	}
 }
 h3, .h3 {
 	font-family: $type-subhead;

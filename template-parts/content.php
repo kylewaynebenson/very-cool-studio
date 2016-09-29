@@ -14,17 +14,19 @@
 			if ($thumbnail) (string)$thumbnail = $thumbnail[0];
 		} ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
 		<?php  if ( is_single() ) {
+			echo '<header class="entry-header">';
 			the_title( '<h1 class="entry-title">', '</h1>' );
 			the_meta();
+			echo '</header><!-- .entry-header -->';
 			} else {
 				echo '<a href="' . get_the_permalink() . '">';
+				echo '<header class="entry-header">';
 				the_post_thumbnail('large'); 
+				echo '</header><!-- .entry-header -->';
 				echo '</a>';
 		}
 			?>
-	</header><!-- .entry-header -->
 	<div class="post-content">
 	<?php
 			if ( is_single() ) {
@@ -53,7 +55,6 @@
 					$sep = ' ';
 				}
 				echo '</div>';
-				the_excerpt();
 			}
 
 		if ( 'post' === get_post_type() ) : ?>
@@ -61,3 +62,9 @@
 		endif; ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
+		<?php
+			if ( is_single() ) {
+				echo '<div class="clear"></div>';
+				the_excerpt();
+			} else {
+			} ?>

@@ -1354,7 +1354,7 @@ Product Styles
 		}
 		p:last-of-type.product.woocommerce.add_to_cart_inline {
 			border: 0px !important;
-			background: $yellow;
+			border-top: 3px solid $black !important;
 			text-align: center;
 			a {
 				vertical-align: 25px;
@@ -1377,15 +1377,17 @@ Product Styles
 				line-height: .8;
 				margin-bottom: -4px;
 			}
+			@media (max-width:1098px) {
+				padding-top: 25px !important;
+				padding-bottom: 0px !important;
+				margin-top: 10px;
+			}
 			@media (min-width: 1099px) {
-				width: 177%;
-				margin-left: -68.5%;
-				margin-top: 15px;
-				margin-bottom: -35px;
+				padding-top: 25px !important;
+				padding-bottom: 5px !important;
+				margin-top: 20px;
 			}
 			@media (min-width: 1148px) {
-				width: 175.333333333333333%;
-				margin-left: -67.6666666666666%;
 			}
 		}
 	}
@@ -1603,7 +1605,18 @@ Product Styles
 			@include clearfix;
 		}
 	}
+	.gray-page {
+		border-left: 3px solid $white;
+		border-right: 3px solid $white;
+		@media (max-width: 1250px) {
+			padding-top: 50px;
+		}
+		@media (min-width: 960px) {
+			margin-bottom: 0px;
+		}
+	}
 	.yellow-page {
+		background: $white;
 		.friends-enemies {
 			@media (min-width: 960px) {
 				float: left;
@@ -1611,7 +1624,9 @@ Product Styles
 				&:nth-of-type(even) {
 					margin-left: span(1);
 				}
-
+			}
+			h2 {
+				text-align: center !important;
 			}
 		}
 		@media (min-width: 960px) {
@@ -1619,16 +1634,9 @@ Product Styles
 			margin-bottom: 30px;
 		}
 	}
-	.gray-page {
-		border-left: 3px solid $white;
-		border-right: 3px solid $white;
-		@media (max-width: 960px) {
-			padding-top: 50px;
-		}
-		@media (min-width: 960px) {
-			margin-bottom: 0px;
-		}
-	}
+}
+body {
+	background: $gray-1;
 }
 #page {
 	color: $black;

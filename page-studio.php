@@ -47,7 +47,7 @@ get_header(); ?>
 </div>
 <div class="yellow-page">
 	<div class="friends-enemies">
-		<h2>&#x2764;️ Good &#x2764;</h2>
+		<h2>&#x2764;️ Friends &#x2764;</h2>
 		<ul class="list-box">
 			<li><a href="https://www.instagram.com/trevorchristensen/">Trevor Christensen</a><span class="year">PHOTO</span></li>
 			<li><a href="https://fortfoundry.com/">Mattox Schuler</a><span class="year">TYPE</span></li>
@@ -64,11 +64,11 @@ get_header(); ?>
 		</ul>
 	</div>
 	<div class="friends-enemies">
-		<h2>&#x1f480; Bad &#x1f480;</h2>
+		<h2>&#x1f480; Enemies &#x1f480;</h2>
 		<ul class="list-box">
 			<li>The California DMV<span class="year">PLACE</span></li>
 			<li><a href="https://www.instagram.com/trevorchristensen/">Trevor Christensen</a><span class="year">PHOTO</span></li>
-			<li>First impressions<span class="year">THE WORST</span></li>
+			<li>Dudes who love Batman<span class="year">THE WORST</span></li>
 			<li>Poverty<span class="year">YET WORSE</span></li>
 		</ul>
 	</div>

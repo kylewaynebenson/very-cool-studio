@@ -227,7 +227,10 @@ a.squiggle-black {
 				&:after {
 					color: darken($gray-1,8%);
 					content: "SOON";
-					font-feature-settings: "case" 1;
+					-webkit-font-feature-settings: "case" 1;
+					-moz-font-feature-settings:    "case" 1;
+					-ms-font-feature-settings:     "case" 1;
+					font-feature-settings:         "case" 1;
 					font-weight: 600;
 					font-size: 16px !important;
 					margin-top: 2px;
@@ -258,12 +261,11 @@ a.squiggle-black {
 		display: block;
 		margin: 0 auto;
 		margin-bottom: span(1);
-
 		.entry-header {
 			border: 3px solid $gray-1;
 			height: 165px;
 			background: $white;
-			overflow-x: hidden;
+			overflow: hidden;
 			text-align: center;
 			img {
 				position: relative;
@@ -1560,6 +1562,7 @@ Product Styles
 	footer.footer {
 	}
 	.white-page {
+		min-height: auto !important;
 		h1 {
 			line-height: 1.25;
 		}
@@ -1737,6 +1740,7 @@ body {
 #white-page.white-page {
 	background: $white;
 	padding: 15px;
+	min-height: 300px;
 	.summary.entry-summary {
 		margin-top: 0px;
 	}
@@ -1747,6 +1751,7 @@ body {
 		padding: 25px 30px;
 		padding-bottom: 5px;
 		margin: 0 auto;
+		min-height: 500px;
 	}
 	@media (min-width: 1000px) {
 		padding: 35px 50px;
@@ -1959,6 +1964,10 @@ footer.footer {
 						padding-left: 10px;
 					}
 				}
+				@media (max-width: 500px) {
+					width: span(22);
+					padding-top: 8px;
+				}
 			}
 			.input-label-group-human {
 				width: span(9);
@@ -1974,6 +1983,12 @@ footer.footer {
 					font-family: $type-subhead;
 					font-weight: 500;
 					font-size: 16px;
+				}
+				@media (max-width: 500px) {
+					width: span(22);
+					.human {
+						width: 100px;
+					}
 				}
 			}
 			textarea {

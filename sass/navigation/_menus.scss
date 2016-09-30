@@ -80,7 +80,7 @@
 	.current-menu-item > a,
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
-		color: $gray-1;
+		color: darken($gray-1,8%);
 		cursor: default;
 	}
 }
@@ -88,7 +88,6 @@
 /* Small menu. */
 .main-navigation {
 	button.menu-toggle {
-
 	float: right;
 	font-family: 'Very Cool Icons';
 	font-style: normal;
@@ -126,7 +125,14 @@
 		float: right;
 	}
 }
-
+@media (max-width: 699px) {
+	.main-navigation {
+		button.menu-toggle {
+			line-height: .8;
+			margin-top: -15px;
+		}
+	}
+}
 .comment-navigation,
 .posts-navigation,
 .post-navigation {

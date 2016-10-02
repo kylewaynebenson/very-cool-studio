@@ -273,3 +273,12 @@ function mam_filter_the_meta_key( $list_item, $meta_key='', $meta_value='' ) {
    return $new_list_item;
 }
 add_filter( 'the_meta_key', 'mam_filter_the_meta_key' );
+
+/**
+* Remove p tag around images
+**/
+function filter_ptags_on_images($content)
+{
+    return preg_replace('/<p>(\s*)(<img .* \/>)(\s*)<\/p>/iU', '\2', $content);
+}
+add_filter('the_content', 'filter_ptags_on_images');

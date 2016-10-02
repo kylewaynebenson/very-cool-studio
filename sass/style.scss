@@ -93,6 +93,16 @@ $susy: (
 		content: "\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002";
 	}
 }
+.single:not(.woocommerce) {
+	.squiggle-divider-full {
+		&:after {
+			@media (min-width: 1460px) {
+				content: "\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002";
+				letter-spacing: .002em;
+			}
+		}
+	}
+}
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -1097,7 +1107,7 @@ Product Styles
 		width: span(36);
 		margin-left: span(-12);
 	}
-	@media (min-width: 1101px) {
+	@media (min-width: 1000px) {
 		width: span(38.5);
 		margin-left: span(-14.5);
 		margin-top: 15px;
@@ -1539,7 +1549,7 @@ Product Styles
 		}
 
 	}
-	@media (min-width: 1101px) {
+	@media (min-width: 1000px) {
 		.entry-header, .entry-footer {
 			width: span(8);
 			float: left;
@@ -1548,7 +1558,22 @@ Product Styles
 			width: span(15);
 			float: right;
 		}
-
+	}
+}
+.single:not(.woocommerce) {
+	@media (min-width: 1460px) {
+		.entry-header, .entry-footer {
+			width: span(5.5);
+			float: left;
+		}
+		.post-content {
+			width: span(18);
+			float: right;
+			p {
+				max-width: 600px;
+				margin: 0 auto;
+			}
+		}
 	}
 }
 /*--------------------------------------------------------------
@@ -1765,6 +1790,12 @@ body {
 		margin: 0 auto;
 		width: 1148px;
 	}
+}
+.single:not(.woocommerce) #white-page.white-page, .single:not(.woocommerce) .yellow-page {
+	@media (min-width: 1460px) {
+		margin: 0 auto;
+		width: 1400px;
+	}	
 }
 .yellow-page {
 	color: $black;

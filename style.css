@@ -203,7 +203,7 @@ h3, .h3 { font-family: "Cardinal Grotesque"; font-weight: 500; font-size: 1.6em;
 
 h4, .h4 { font-family: "Business Script"; font-weight: 500; font-size: 1.3em; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; }
 
-h5, .h5 { font-family: "Cardinal Grotesque"; font-weight: 600; text-transform: uppercase; letter-spacing: .17em; font-size: .8em; }
+h5, .h5 { font-family: "Cardinal Grotesque"; font-weight: 600; text-transform: uppercase; letter-spacing: .17em; font-size: .8em; -webkit-font-feature-settings: "case" 1; -ms-font-feature-settings: "case" 1; font-feature-settings: "case" 1; }
 
 h6, .h6 { font-size: 1.3em; letter-spacing: .1em; }
 
@@ -297,6 +297,8 @@ table.list-box tr td.product-price input, table.list-box tr td.product-quantity 
 table.list-box tr .product-subtotal { text-align: right; font-weight: 500; }
 
 .squiggle-divider-full:after { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; text-indent: 6px; display: block; width: 100%; max-width: 100%; display: block; font-family: 'Very Cool Icons'; font-style: normal; font-weight: 400; font-size: 1.65em; overflow: hidden; line-height: 1.1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-overflow: clip; content: "\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002"; }
+
+@media (min-width: 1460px) { .single:not(.woocommerce) .squiggle-divider-full:after { content: "\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002"; letter-spacing: .002em; } }
 
 /*--------------------------------------------------------------
 # Forms
@@ -735,7 +737,7 @@ Product Styles
 
 .type-tester { display: block; border: 3px solid #f0f0f0; width: 100%; float: left; position: relative; }
 @media (min-width: 768px) { .type-tester { width: 150%; margin-left: -50%; } }
-@media (min-width: 1101px) { .type-tester { width: 160.4166666667%; margin-left: -60.4166666667%; margin-top: 15px; } }
+@media (min-width: 1000px) { .type-tester { width: 160.4166666667%; margin-left: -60.4166666667%; margin-top: 15px; } }
 .type-tester:before, .type-tester:after { display: block; width: 19px; height: 17px; position: absolute; background: #ffffff; z-index: 1; bottom: -3px; color: #f0f0f0; font-family: 'Very Cool Icons'; font-style: normal; font-size: 27px; font-weight: 400; line-height: .45; content: "\E008"; }
 .type-tester:before { left: -3px; }
 .type-tester:after { right: -3px; -webkit-transform: scale(-1, 1); transform: scale(-1, 1); }
@@ -828,8 +830,12 @@ Product Styles
 @media (min-width: 768px) { .single .entry-header, .single .entry-footer { width: 29.1666666667%; float: left; }
   .single .post-content { width: 66.6666666667%; float: right; }
   .single .post-content > p:first-of-type { margin-top: 3px; } }
-@media (min-width: 1101px) { .single .entry-header, .single .entry-footer { width: 33.3333333333%; float: left; }
+@media (min-width: 1000px) { .single .entry-header, .single .entry-footer { width: 33.3333333333%; float: left; }
   .single .post-content { width: 62.5%; float: right; } }
+
+@media (min-width: 1460px) { .single:not(.woocommerce) .entry-header, .single:not(.woocommerce) .entry-footer { width: 22.9166666667%; float: left; }
+  .single:not(.woocommerce) .post-content { width: 75%; float: right; }
+  .single:not(.woocommerce) .post-content p { max-width: 600px; margin: 0 auto; } }
 
 /*--------------------------------------------------------------
 # Page Styles
@@ -883,6 +889,8 @@ body { background: #f0f0f0; }
 @media (min-width: 1000px) { #white-page.white-page { padding: 35px 50px; padding-bottom: 10px; margin: 0 auto; } }
 @media (min-width: 1048px) { #white-page.white-page { width: 1048px; } }
 @media (min-width: 1148px) { #white-page.white-page { margin: 0 auto; width: 1148px; } }
+
+@media (min-width: 1460px) { .single:not(.woocommerce) #white-page.white-page, .single:not(.woocommerce) .yellow-page { margin: 0 auto; width: 1400px; } }
 
 .yellow-page { color: #231f20; background: #ffd138; margin-bottom: 1.2em; margin-top: 0px; padding: 15px; }
 .yellow-page a:hover { font-weight: 400; color: #231f20; }

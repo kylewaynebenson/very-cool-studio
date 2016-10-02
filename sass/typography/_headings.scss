@@ -65,6 +65,10 @@ h5, .h5 {
 	text-transform: uppercase;
 	letter-spacing: .17em;
 	font-size: .8em;
+	-webkit-font-feature-settings: "case" 1;
+	-moz-font-feature-settings:    "case" 1;
+	-ms-font-feature-settings:     "case" 1;
+	font-feature-settings:         "case" 1;
 }
 h6, .h6 {
 	font-size: 1.3em;

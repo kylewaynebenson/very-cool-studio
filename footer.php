@@ -73,8 +73,8 @@
 				    	<span class="math">+ 3 = 5</span>
 				    </div>
 				    <div class="input-label-group input-label-group-pizza">
-				    	<input id="pizza" class="input input-radio pizza" type="radio" name="foodz" value="pizza"><i class="icon icon-pizza"></i>
-				    	<input id="burger" class="input input-radio burger" type="radio" name="foodz" value="burger"><i class="icon icon-burger"></i>
+				    	<input id="pizza" class="input input-radio pizza" type="radio" name="foodz" value="pizza"/><i class="icon icon-pizza" for="pizza"></i>
+				    	<input id="burger" class="input input-radio burger" type="radio" name="foodz" value="burger"/><i class="icon icon-burger" for="burger"></i>
 				    </div>
 				    <div class="input-label-group">
 				    	<textarea class="input" type="text" name="message_text" required><?php echo esc_textarea($_POST['message_text']); ?></textarea>

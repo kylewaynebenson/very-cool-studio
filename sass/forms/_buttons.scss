@@ -49,6 +49,24 @@ input[type="submit"] {
 	text-transform: uppercase;
 	padding: 5px 20px;
 	letter-spacing: 1px;
+	&:hover {
+	background:
+		linear-gradient(135deg, transparent 5px, lighten($black,5%) 0) top left,
+		linear-gradient(225deg, transparent 5px, lighten($black,5%) 0) top right,
+		linear-gradient(315deg, transparent 5px, lighten($black,5%) 0) bottom right,
+		linear-gradient(45deg,  transparent 5px, lighten($black,5%) 0) bottom left;
+		background-size: 52% 52%;
+		background-repeat: no-repeat;
+	}
+	&:active {
+	background:
+		linear-gradient(135deg, transparent 5px, darken($black,5%) 0) top left,
+		linear-gradient(225deg, transparent 5px, darken($black,5%) 0) top right,
+		linear-gradient(315deg, transparent 5px, darken($black,5%) 0) bottom right,
+		linear-gradient(45deg,  transparent 5px, darken($black,5%) 0) bottom left;
+		background-size: 52% 52%;
+		background-repeat: no-repeat;
+	}
 	&:visited {
 		color: $white;
 	}
@@ -62,6 +80,24 @@ input[type="submit"].chamfered-button-yellow, .chamfered-button-yellow, .wc-forw
 		linear-gradient(45deg,  transparent 5px, $yellow 0) bottom left;
 	background-size: 52% 52%;
 	background-repeat: no-repeat;
+	&:hover {
+	background:
+		linear-gradient(135deg, transparent 5px, lighten($yellow,5%) 0) top left,
+		linear-gradient(225deg, transparent 5px, lighten($yellow,5%) 0) top right,
+		linear-gradient(315deg, transparent 5px, lighten($yellow,5%) 0) bottom right,
+		linear-gradient(45deg,  transparent 5px, lighten($yellow,5%) 0) bottom left;
+		background-size: 52% 52%;
+		background-repeat: no-repeat;
+	}
+	&:active {
+	background:
+		linear-gradient(135deg, transparent 5px, darken($yellow,5%) 0) top left,
+		linear-gradient(225deg, transparent 5px, darken($yellow,5%) 0) top right,
+		linear-gradient(315deg, transparent 5px, darken($yellow,5%) 0) bottom right,
+		linear-gradient(45deg,  transparent 5px, darken($yellow,5%) 0) bottom left;
+		background-size: 52% 52%;
+		background-repeat: no-repeat;
+	}
 	&:visited {
 		color: $black;
 	}
@@ -75,6 +111,24 @@ input[type="submit"].chamfered-button-white, .chamfered-button-white, p:last-of-
 		linear-gradient(45deg,  transparent 5px, $white 0) bottom left;
 	background-size: 52% 52%;
 	background-repeat: no-repeat;
+	&:hover {
+	background:
+		linear-gradient(135deg, transparent 5px, lighten($white,5%) 0) top left,
+		linear-gradient(225deg, transparent 5px, lighten($white,5%) 0) top right,
+		linear-gradient(315deg, transparent 5px, lighten($white,5%) 0) bottom right,
+		linear-gradient(45deg,  transparent 5px, lighten($white,5%) 0) bottom left;
+		background-size: 52% 52%;
+		background-repeat: no-repeat;
+	}
+	&:active {
+	background:
+		linear-gradient(135deg, transparent 5px, darken($white,5%) 0) top left,
+		linear-gradient(225deg, transparent 5px, darken($white,5%) 0) top right,
+		linear-gradient(315deg, transparent 5px, darken($white,5%) 0) bottom right,
+		linear-gradient(45deg,  transparent 5px, darken($white,5%) 0) bottom left;
+		background-size: 52% 52%;
+		background-repeat: no-repeat;
+	}
 	&:visited {
 		color: $black;
 	}
@@ -88,6 +142,24 @@ input[type="submit"].chamfered-button-gray, .chamfered-button-gray, .wc-backward
 		linear-gradient(45deg,  transparent 5px, $gray-1 0) bottom left;
 	background-size: 52% 52%;
 	background-repeat: no-repeat;
+	&:hover {
+	background:
+		linear-gradient(135deg, transparent 5px, lighten($gray-1,5%) 0) top left,
+		linear-gradient(225deg, transparent 5px, lighten($gray-1,5%) 0) top right,
+		linear-gradient(315deg, transparent 5px, lighten($gray-1,5%) 0) bottom right,
+		linear-gradient(45deg,  transparent 5px, lighten($gray-1,5%) 0) bottom left;
+		background-size: 52% 52%;
+		background-repeat: no-repeat;
+	}
+	&:active {
+	background:
+		linear-gradient(135deg, transparent 5px, darken($gray-1,5%) 0) top left,
+		linear-gradient(225deg, transparent 5px, darken($gray-1,5%) 0) top right,
+		linear-gradient(315deg, transparent 5px, darken($gray-1,5%) 0) bottom right,
+		linear-gradient(45deg,  transparent 5px, darken($gray-1,5%) 0) bottom left;
+		background-size: 52% 52%;
+		background-repeat: no-repeat;
+	}
 	&:visited {
 		color: $black;
 	}

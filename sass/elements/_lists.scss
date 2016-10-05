@@ -76,10 +76,12 @@ dd {
 	}
 }
 .yellow-page {
-	li {
-		border-bottom: 3px solid $black;
-		&:last-of-type {
-			border-bottom: 0px;
+	.list-box {
+		li {
+			border-bottom: 3px solid $black;
+			&:last-of-type {
+				border-bottom: 0px;
+			}
 		}
 	}
 }

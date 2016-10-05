@@ -33,6 +33,8 @@ h2, .h2 {
 	font-size: 2.25em;
 	font-feature-settings: "liga" 1;
 	line-height: 1.25;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	@media (max-width:500px) {
 		font-size: 1.8em;
 		line-height: 1.15;

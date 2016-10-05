@@ -30,6 +30,20 @@ get_header(); ?>
 	</div><!-- #primary -->
 	</div><!-- content -->
 </div><!-- #white-box -->
+<div class="return-to-top white-page">
+	<a class="button chamfered-button chamfered-button-gray" href="#page" onclick="scrollToTop();return false">Return to Top</a>
+	<?php the_post_navigation(); ?>
+	<script>
+	var timeOut;
+		function scrollToTop() {
+			if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
+				window.scrollBy(0,-100);
+				timeOut=setTimeout('scrollToTop()',10);
+			}
+			else clearTimeout(timeOut);
+		}
+	</script>
+</div>
 
 <?php
 get_footer();

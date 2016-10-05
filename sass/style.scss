@@ -179,10 +179,18 @@ a.squiggle {
 	background-repeat: repeat-x;
 	background-position: 0px 100%;
 	background-size: 14px 9px;
+	transition: background 0.3s;
+	&:hover {
+		background-position: 15px 100%;
+	}
 }
 a.squiggle-black {
 	background-image: url(img/squiggle-black.png);
 	color: $black;
+	transition: background 0.3s;
+	&:hover {
+		background-position: 15px 100%;
+	}
 }
 .cat-links {
 	a {
@@ -196,6 +204,13 @@ a.squiggle-black {
 		padding: 2px 8px 3px 8px;
 		font-weight: 500;
 		text-transform: uppercase;
+		transition: background 0.3s;
+		&:hover {
+			background: lighten($black,8%);
+		}
+		&:active {
+			background: darken($black,8%);
+		}
 
 	}
 	.cat-for-sale {
@@ -264,6 +279,31 @@ a.squiggle-black {
 				}
 			}
 		}
+		&.product-cat-new {
+			position: relative;
+			&:before {
+				content: "NEW";
+				font-family: $type-headline-cond;
+				position: absolute;
+				display: block;
+				padding: 8px 7px 9px 8px;
+				color: $black;
+				font-style: normal;
+				left: 7%;
+				top: 0px;
+				font-weight: 400;
+				line-height: 1;
+				font-size: 30px;
+				text-align: center;
+				background:
+					linear-gradient(135deg, $gray-1 6px, $gray-1 0) top left,
+					linear-gradient(225deg, $gray-1 6px, $gray-1 0) top right,
+					linear-gradient(315deg, transparent 6px, $gray-1 0) bottom right,
+					linear-gradient(45deg,  transparent 6px, $gray-1 0) bottom left;
+				background-size: 52% 52%;
+				background-repeat: no-repeat;
+			}
+		}
 		background: $white;
 		position: relative;
 		max-width: 500px;
@@ -277,10 +317,17 @@ a.squiggle-black {
 			background: $white;
 			overflow: hidden;
 			text-align: center;
+			transition: background 0.05s;
 			img {
 				position: relative;
 				top: 50%;
 				transform: translateY(-50%);
+			}
+			&:hover {
+				background: $gray-1;
+			}
+			&:active {
+				background: $gray-2;
 			}
 		}
 		.entry-footer {
@@ -1478,7 +1525,7 @@ Product Styles
 			font-family: $type-subhead;
 			font-weight: 600;
 			text-transform: uppercase;
-			letter-spacing: .17em;
+			letter-spacing: .12em;
 			font-size: .8em;
 			line-height: 1.15;
 			.nav-next {
@@ -1502,6 +1549,12 @@ Product Styles
 					text-align: center;
 					@media only screen and (min-width: 768px) and (max-width: 1160px) {
 						user-select: none; 
+					}
+					&:hover {
+						background: lighten($yellow,5%);
+					}
+					&:active {
+						background: darken($yellow,8%);
 					}
 				}
 
@@ -1557,6 +1610,9 @@ Product Styles
 		.post-content {
 			width: span(15);
 			float: right;
+			p:last-of-type {
+				margin-bottom: 0px;
+			}
 		}
 	}
 }
@@ -1780,18 +1836,14 @@ body {
 	}
 	@media (min-width: 1000px) {
 		padding: 35px 50px;
-		padding-bottom: 10px;
 		margin: 0 auto;
-	}
-	@media (min-width: 1048px) {
-		width: 1048px;
 	}
 	@media (min-width: 1148px) {
 		margin: 0 auto;
 		width: 1148px;
 	}
 }
-.single:not(.woocommerce) #white-page.white-page, .single:not(.woocommerce) .yellow-page {
+.single:not(.woocommerce) #white-page.white-page, .single:not(.woocommerce) .return-to-top.white-page, .single:not(.woocommerce) .yellow-page {
 	@media (min-width: 1460px) {
 		margin: 0 auto;
 		width: 1400px;
@@ -1855,9 +1907,6 @@ body {
 	@media (min-width: 1000px) {
 		margin: 0 auto;
 	}
-	@media (min-width: 1048px) {
-		width: 1048px;
-	}
 	@media (min-width: 1148px) {
 		margin: 0 auto;
 		width: 1148px;
@@ -1890,7 +1939,7 @@ body {
 		}
 	}
 }
-.gray-page, .white-page {
+.gray-page, .white-page, .black-page {
 	background: $gray-1;
 	padding: 15px;
 	h2, .h2 {
@@ -1910,9 +1959,6 @@ body {
 		padding: 35px 50px;
 		margin: 0 auto;
 	}
-	@media (min-width: 1048px) {
-		width: 1048px;
-	}
 	@media (min-width: 1148px) {
 		margin: 0 auto;
 		width: 1148px;
@@ -1922,6 +1968,81 @@ body {
 }
 .white-page {
 	background: $white;
+}
+.black-page {
+	background: $black;
+}
+.return-to-top {
+	text-align: center;
+	@media only screen and (max-width: 767px) {
+		display: none;
+	}
+	@media (min-width: 1000px) {
+		padding-top: 25px;
+	}
+	@media (min-width: 1148px) {
+		padding-top: 40px;
+	}
+	.post-navigation {
+		font-family: $type-subhead;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: .12em;
+		font-size: .8em;
+		line-height: 1.15;
+		.nav-previous, .nav-next  {
+			min-width: 25%;
+			float: left;
+			position: relative;
+			margin-top: -25px;
+			cursor: pointer;
+			a {
+				color: $black;
+				background: $yellow;
+				overflow: hidden;
+				white-space: nowrap;
+					text-overflow: ellipsis;
+				display: block;
+				text-decoration: none;
+				padding: 5px 5px 5px 5px;
+				height: 24px;
+				text-align: center;
+				@media only screen and (min-width: 768px) and (max-width: 1160px) {
+					user-select: none; 
+				}
+				&:hover {
+					background: lighten($yellow,5%);
+				}
+				&:active {
+					background: darken($yellow,8%);
+				}
+			}
+
+		}
+		.nav-next {
+			float: right;
+		}
+		.nav-previous:before, .nav-next:before  {
+			display: block;
+			position: absolute;
+			content: " ";
+			background-color: $yellow;
+			width: 24px; 
+			height: 24px; 
+			border-top: 12px solid white;
+			border-bottom: 12px solid white;
+		}
+		.nav-previous:before {
+			border-right: 12px solid $yellow; 
+			border-left: 12px solid white;
+			left: -22px;
+		}
+		.nav-next:before {
+			border-left:12px solid $yellow; 
+			border-right:12px solid white;
+			right: -22px;
+		}
+	}
 }
 /*--------------------------------------------------------------
 # Footer Styles
@@ -1985,14 +2106,17 @@ footer.footer {
 			.input-label-group-pizza {
 				width: span(12.5);
 				display:inline-block;
+				input[type=radio] {
+
+				}
 				.icon {
 					font-size: 1.75em;
+					display: inline;
 					line-height: 1;
-					vertical-align: -14px;
-					padding-left: 15px;
-					&:first-of-type {
-						padding-right: 17px;
-						padding-left: 10px;
+					margin-left: 10px;
+					vertical-align: -10px;
+					&:nth-of-type(1) {
+						margin-right: 20px;
 					}
 				}
 				@media (max-width: 500px) {

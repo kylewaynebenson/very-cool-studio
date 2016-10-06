@@ -250,8 +250,9 @@ input[type=radio] {
   padding: 10px;
   outline: none;
 } 
-input[type=radio]:checked {
+input[type=radio]:checked, .input-label-group input[type=radio].input:focus {
 	background: $black !important;
+	border: 3px solid $black;
 }
 input[type=radio]:checked + .icon {
   color: #f00;

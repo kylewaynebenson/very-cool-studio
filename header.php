@@ -21,11 +21,12 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<!-- Takin a peep at the source? Nice. Observe liberally, I guess. Unless you're here to steal my embedded fonts. Don't steal my embedded fonts please. Here, I get it, you don't want to pay. Use this discount code to motivate you to just be honest and pay for a license: HONESTDECENTCODER-->
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'verycool' ); ?></a>
 	<div id="white-page" class="white-page">
 		<header id="masthead" class="site-header" role="banner">
-			<div class="site-branding">
+			<div class="site-branding" id="site-branding">
 				<?php
 				if ( is_front_page() && is_home() ) : ?>
 					<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><i class='icon icon-logo'></i></a></span>
@@ -47,5 +48,4 @@
 			</nav><!-- #site-navigation -->
 			<div class="squiggle-divider-full"></div>
 		</header><!-- #masthead -->
-
 		<div id="content" class="site-content">

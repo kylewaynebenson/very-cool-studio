@@ -475,7 +475,7 @@ a.squiggle-black {
 				}
 			}
 			h4, .h4 {
-				font-weight: 300;
+				font-weight: 400;
 				color: $black;
 				line-height: 1.15;
 			}
@@ -997,7 +997,7 @@ Cart Styles
 				background: $black;
 				color: $yellow;
 				strong {
-					font-weight: 300;
+					font-weight: 400;
 				}
 			}
 		}
@@ -1050,7 +1050,7 @@ Cart Styles
 			line-height: 1;
 		}
 		.amount {
-			font-weight: 300;
+			font-weight: 400;
 		}
 		.shipping td {
 			color: transparent;
@@ -1814,6 +1814,10 @@ body {
 		header.site-header {
 			.site-branding:after {
 				content: "Cart";
+			}
+			.site-branding.discount-time:after {
+				content: "Code: woahyeah";
+				margin-right: -40px;
 			}
 		}
 	}

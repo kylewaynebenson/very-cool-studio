@@ -99,5 +99,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</div>
 
 	<?php do_action( 'woocommerce_after_cart_totals' ); ?>
+		<script>
+		var siteBranding = document.getElementById("site-branding");
+
+		var timer,          // timer required to reset
+		    timeout = 200;  // timer reset in ms
+
+		window.addEventListener("dblclick", function (evt) {
+		    timer = setTimeout(function () {
+		        timer = null;
+		    }, timeout);
+		});
+		window.addEventListener("click", function (evt) {
+		    if (timer) {
+		    console.log("triple");
+		        siteBranding.classList.add('discount-time');
+		        clearTimeout(timer);
+		        timer = null;
+		        executeTripleClickFunction();
+		    }
+		});
+		</script>
 
 </div>

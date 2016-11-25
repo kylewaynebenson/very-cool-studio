@@ -41,7 +41,7 @@ get_header(); ?>
 	</ul>
 	<h2>Interviews</h2>
 	<ul class="list-box">
-		<li><a href="http://www.thebalance.cc/home/2014/21-kyle-claire-benson">The Balance Podcast</a><span class="year">2016</span></li>
+		<li><a href="http://www.thebalance.cc/home/2014/21-kyle-claire-benson">The Balance Podcast</a><span class="year">2014</span></li>
 		<li><a href="http://oneminutewith.com/kyle-wayne-benson">One Minute With</a><span class="year">2014</span></li>
 	</ul>
 </div>

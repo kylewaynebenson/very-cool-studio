@@ -447,6 +447,10 @@ a:hover, a:active { outline: 0; }
 /* Do not show the outline on the skip link target. */
 #content[tabindex="-1"]:focus { outline: 0; }
 
+::-moz-selection { /* Code for Firefox */ color: #231f20; background: #ffd138; }
+
+::selection { color: #231f20; background: #ffd138; }
+
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
@@ -455,6 +459,8 @@ a:hover, a:active { outline: 0; }
 .alignright { display: inline; float: right; margin-left: 1.5em; }
 
 .aligncenter { clear: both; display: block; margin-left: auto; margin-right: auto; }
+
+.text-center { text-align: center; }
 
 .list-inline { list-style-type: none; margin-left: 0px; padding-left: 0px; }
 .list-inline li { display: inline-block; padding-right: 20px; }
@@ -805,7 +811,7 @@ Product Styles
 .type-tester .type-tester-footer .cart { display: inline; }
 .type-tester .type-tester-footer .cart button { display: inline-block; margin: 10px 20px 9px 12px; }
 @media only screen and (min-width: 965px) { .type-tester .type-tester-footer .cart button { margin-left: -3px; } }
-.type-tester .type-tester-footer .type-tester-notice { line-height: 1.2; letter-spacing: .05em; float: right; text-align: right; font-weight: 300; color: #e0e0e0; margin: 10px 20px; }
+.type-tester .type-tester-footer .type-tester-notice { line-height: 1.2; letter-spacing: .05em; float: right; text-align: right; font-weight: 400; color: #e0e0e0; margin: 10px 20px; }
 @media only screen and (max-width: 600px) { .type-tester .type-tester-footer .type-tester-notice { display: none; } }
 .type-tester .price { color: #ffd138; font-size: 1em; margin-top: 0px; margin-bottom: 0px; }
 
@@ -901,7 +907,7 @@ body { background: #f0f0f0; }
   .home header.site-header .site-branding:after { content: "a Design Studio"; margin-right: -40px; }
   .woocommerce-cart .page-title { display: none; }
   .woocommerce-cart header.site-header .site-branding:after { content: "Cart"; }
-  .woocommerce-cart header.site-header .site-branding.discount-time:after { content: "Code: woahyeah"; margin-right: -40px; } }
+  .woocommerce-cart header.site-header .site-branding.discount-time:after { content: "Code: whoayeah"; margin-right: -40px; } }
 #white-page.white-page { background: #ffffff; padding: 15px; min-height: 300px; }
 #white-page.white-page .summary.entry-summary { margin-top: 0px; }
 @media (min-width: 768px) { #white-page.white-page { padding: 20px 24px; } }

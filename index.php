@@ -18,7 +18,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		<section id="type-section">
 		        <?php
-		            $args = array( 'post_type' => 'product', 'product_cat' => 'type', 'stock' => 1, 'posts_per_page' => 4, 'orderby' =>'date','order' => 'DESC' );
+		            $args = array( 'post_type' => 'product', 'product_cat' => 'type', 'stock' => 1, 'posts_per_page' => 4, 'orderby' =>'rand','order' => 'DESC' );
 		            $loop = new WP_Query( $args );
 		            while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
 

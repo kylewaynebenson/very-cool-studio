@@ -118,6 +118,16 @@ $susy: (
 --------------------------------------------------------------*/
 @import "modules/accessibility";
 
+::-moz-selection { /* Code for Firefox */
+    color: $black;
+    background: $yellow;
+}
+
+::selection {
+    color: $black; 
+    background: $yellow;
+}
+
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
@@ -1391,7 +1401,7 @@ Product Styles
 			}
 			float: right;
 			text-align: right;
-			font-weight: 300;
+			font-weight: 400;
 			color: $gray-2;
 			margin: 10px 20px;
 		}
@@ -1816,7 +1826,7 @@ body {
 				content: "Cart";
 			}
 			.site-branding.discount-time:after {
-				content: "Code: woahyeah";
+				content: "Code: whoayeah";
 				margin-right: -40px;
 			}
 		}

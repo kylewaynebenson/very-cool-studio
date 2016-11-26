@@ -7,6 +7,26 @@
  * @package verycoolstudio
  */
 
+/** page specific stylesheets **/
+add_action( 'wp_enqueue_scripts', 'enqueue_custom_styles_or_scripts' );
+
+function enqueue_custom_styles_or_scripts() {
+
+    // If it's not the front page, stop executing code, ie. return
+	if ( is_page('Maritime Champion') ) {
+		wp_enqueue_style( 'webfonts-maritime-champion', get_stylesheet_directory_uri() . '/webfonts-maritime-champion.css' );
+	} elseif ( is_page('Ready Script') ) {
+		wp_enqueue_style( 'webfonts-ready-script', get_stylesheet_directory_uri() . '/webfonts-ready-script.css' );
+	} elseif ( is_page('Cardinal Grotesque') ) {
+		wp_enqueue_style( 'webfonts-cardinal-grotesque', get_stylesheet_directory_uri() . '/webfonts-cardinal-grotesque.css' );
+	} elseif ( is_page('Kansas Casual') ) {
+		wp_enqueue_style( 'webfonts-kansas-casual', get_stylesheet_directory_uri() . '/webfonts-kansas-casual.css' );
+	} elseif ( is_page('Cornbread') ) {
+		wp_enqueue_style( 'webfonts-cornbread', get_stylesheet_directory_uri() . '/webfonts-cornbread.css' );
+	}
+
+}
+
 if ( ! function_exists( 'verycool_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -282,3 +302,18 @@ function filter_ptags_on_images($content)
     return preg_replace('/<p>(\s*)(<img .* \/>)(\s*)<\/p>/iU', '\2', $content);
 }
 add_filter('the_content', 'filter_ptags_on_images');
+
+add_filter( 'the_meta_key' , 'disallowed_custom_fields', 10, 3);
+
+/**
+* Remove total sales field
+**/
+function disallowed_custom_fields($string, $key, $value){
+
+    $disallowed_keys = array(
+        'total_sales'
+    );
+    if(!in_array(strtolower($key), $disallowed_keys)){
+        return $string;
+    }
+}

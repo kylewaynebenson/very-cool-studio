@@ -236,4 +236,3 @@ $('#type-tester-editable').focus(function() {
 	 	<a href="<?php echo esc_url( home_url( '/' ) ); ?>terms" class="squiggle squiggle-black">View License</a>
 	</form>
 </div>
-<?php wp_enqueue_style( 'webfonts' ); ?>

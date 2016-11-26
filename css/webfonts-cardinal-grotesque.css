@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'Cardinal Grotesque';
+  font-weight: 100;
+  src: url("../type/CardinalGrotesque-ExtraLight.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/CardinalGrotesque-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../type/CardinalGrotesque-ExtraLight.woff2") format("woff2"), url("../type/CardinalGrotesque-ExtraLight.woff") format("woff"); }
+@font-face {
+  font-family: 'Cardinal Grotesque';
+  font-weight: 200;
+  src: url("../type/CardinalGrotesque-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/CardinalGrotesque-Light.eot?#iefix") format("embedded-opentype"), url("../type/CardinalGrotesque-Light.woff2") format("woff2"), url("../type/CardinalGrotesque-Light.woff") format("woff"); }
+@font-face {
+  font-family: 'Cardinal Grotesque';
+  font-weight: 300;
+  src: url("../type/CardinalGrotesque-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/CardinalGrotesque-Regular.eot?#iefix") format("embedded-opentype"), url("../type/CardinalGrotesque-Regular.woff2") format("woff2"), url("../type/CardinalGrotesque-Regular.woff") format("woff"); }
+@font-face {
+  font-family: 'Cardinal Grotesque';
+  font-weight: 500;
+  src: url("../type/CardinalGrotesque-SemiBold.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/CardinalGrotesque-SemiBold.eot?#iefix") format("embedded-opentype"), url("../type/CardinalGrotesque-SemiBold.woff2") format("woff2"), url("../type/CardinalGrotesque-SemiBold.woff") format("woff"); }
+@font-face {
+  font-family: 'Cardinal Grotesque';
+  font-weight: 600;
+  src: url("../type/CardinalGrotesque-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/CardinalGrotesque-Bold.eot?#iefix") format("embedded-opentype"), url("../type/CardinalGrotesque-Bold.woff2") format("woff2"), url("../type/CardinalGrotesque-Bold.woff") format("woff"); }
+@font-face {
+  font-family: 'Cardinal Grotesque';
+  font-weight: 700;
+  src: url("../type/CardinalGrotesque-ExtraBold.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/CardinalGrotesque-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../type/CardinalGrotesque-ExtraBold.woff2") format("woff2"), url("../type/CardinalGrotesque-ExtraBold.woff") format("woff"); }
+@font-face {
+  font-family: 'Cardinal Grotesque Cond';
+  font-weight: 100;
+  src: url("../type/CardinalGrotesque-ExtraLightCondensed.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/CardinalGrotesque-ExtraLightCondensed.eot?#iefix") format("embedded-opentype"), url("../type/CardinalGrotesque-ExtraLightCondensed.woff2") format("woff2"), url("../type/CardinalGrotesque-ExtraLightCondensed.woff") format("woff"); }
+@font-face {
+  font-family: 'Cardinal Grotesque Cond';
+  font-weight: 200;
+  src: url("../type/CardinalGrotesque-LightCondensed.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/CardinalGrotesque-LightCondensed.eot?#iefix") format("embedded-opentype"), url("../type/CardinalGrotesque-LightCondensed.woff2") format("woff2"), url("../type/CardinalGrotesque-LightCondensed.woff") format("woff"); }
+@font-face {
+  font-family: 'Cardinal Grotesque Cond';
+  font-weight: 300;
+  src: url("../type/CardinalGrotesque-RegularCondensed.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/CardinalGrotesque-RegularCondensed.eot?#iefix") format("embedded-opentype"), url("../type/CardinalGrotesque-RegularCondensed.woff2") format("woff2"), url("../type/CardinalGrotesque-RegularCondensed.woff") format("woff"); }
+@font-face {
+  font-family: 'Cardinal Grotesque Cond';
+  font-weight: 500;
+  src: url("../type/CardinalGrotesque-SemiBoldCondensed.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/CardinalGrotesque-SemiBoldCondensed.eot?#iefix") format("embedded-opentype"), url("../type/CardinalGrotesque-SemiBoldCondensed.woff2") format("woff2"), url("../type/CardinalGrotesque-SemiBoldCondensed.woff") format("woff"); }
+@font-face {
+  font-family: 'Cardinal Grotesque Cond';
+  font-weight: 600;
+  src: url("../type/CardinalGrotesque-BoldCondensed.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/CardinalGrotesque-BoldCondensed.eot?#iefix") format("embedded-opentype"), url("../type/CardinalGrotesque-BoldCondensed.woff2") format("woff2"), url("../type/CardinalGrotesque-BoldCondensed.woff") format("woff"); }
+@font-face {
+  font-family: 'Cardinal Grotesque Cond';
+  font-weight: 700;
+  src: url("../type/CardinalGrotesque-ExtraBoldCondensed.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/CardinalGrotesque-ExtraBoldCondensed.eot?#iefix") format("embedded-opentype"), url("../type/CardinalGrotesque-ExtraBoldCondensed.woff2") format("woff2"), url("../type/CardinalGrotesque-ExtraBoldCondensed.woff") format("woff"); }

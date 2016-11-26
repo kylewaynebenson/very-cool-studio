@@ -581,8 +581,8 @@ a.squiggle-black:hover { background-position: 15px 100%; }
 @media only screen and (min-width: 700px) { .blog #content, .home #content, .archive #content, .category #content { margin-left: -4.1666666667%; } }
 .blog article.product-cat-type, .blog article.product-cat-objects, .home article.product-cat-type, .home article.product-cat-objects, .archive article.product-cat-type, .archive article.product-cat-objects, .category article.product-cat-type, .category article.product-cat-objects { background: #ffffff; position: relative; max-width: 500px; width: 100%; display: block; margin: 0 auto; margin-bottom: 4.1666666667%; }
 .blog article.product-cat-type.outofstock a.button, .blog article.product-cat-objects.outofstock a.button, .home article.product-cat-type.outofstock a.button, .home article.product-cat-objects.outofstock a.button, .archive article.product-cat-type.outofstock a.button, .archive article.product-cat-objects.outofstock a.button, .category article.product-cat-type.outofstock a.button, .category article.product-cat-objects.outofstock a.button { display: none; }
-.blog article.product-cat-type.outofstock .price, .blog article.product-cat-objects.outofstock .price, .home article.product-cat-type.outofstock .price, .home article.product-cat-objects.outofstock .price, .archive article.product-cat-type.outofstock .price, .archive article.product-cat-objects.outofstock .price, .category article.product-cat-type.outofstock .price, .category article.product-cat-objects.outofstock .price { font-size: 0px; }
-.blog article.product-cat-type.outofstock .price:after, .blog article.product-cat-objects.outofstock .price:after, .home article.product-cat-type.outofstock .price:after, .home article.product-cat-objects.outofstock .price:after, .archive article.product-cat-type.outofstock .price:after, .archive article.product-cat-objects.outofstock .price:after, .category article.product-cat-type.outofstock .price:after, .category article.product-cat-objects.outofstock .price:after { color: gainsboro; content: "SOON"; -webkit-font-feature-settings: "case" 1; -ms-font-feature-settings: "case" 1; font-feature-settings: "case" 1; font-weight: 600; font-size: 16px !important; margin-top: 2px; margin-bottom: 0px; margin-left: -4px; letter-spacing: 0.05em; }
+.blog article.product-cat-type.outofstock .price, .blog article.product-cat-objects.outofstock .price, .home article.product-cat-type.outofstock .price, .home article.product-cat-objects.outofstock .price, .archive article.product-cat-type.outofstock .price, .archive article.product-cat-objects.outofstock .price, .category article.product-cat-type.outofstock .price, .category article.product-cat-objects.outofstock .price { visibility: hidden; position: relative; }
+.blog article.product-cat-type.outofstock .price:after, .blog article.product-cat-objects.outofstock .price:after, .home article.product-cat-type.outofstock .price:after, .home article.product-cat-objects.outofstock .price:after, .archive article.product-cat-type.outofstock .price:after, .archive article.product-cat-objects.outofstock .price:after, .category article.product-cat-type.outofstock .price:after, .category article.product-cat-objects.outofstock .price:after { color: gainsboro; visibility: visible; content: "SOON"; -webkit-font-feature-settings: "case" 1; -ms-font-feature-settings: "case" 1; font-feature-settings: "case" 1; font-weight: 600; font-size: 16px !important; position: absolute; top: 2px; left: 0px; right: 0px; margin-left: -3px; letter-spacing: 0.05em; }
 .blog article.product-cat-type.outofstock .entry-title, .blog article.product-cat-type.outofstock h5, .blog article.product-cat-type.outofstock .h5, .blog article.product-cat-objects.outofstock .entry-title, .blog article.product-cat-objects.outofstock h5, .blog article.product-cat-objects.outofstock .h5, .home article.product-cat-type.outofstock .entry-title, .home article.product-cat-type.outofstock h5, .home article.product-cat-type.outofstock .h5, .home article.product-cat-objects.outofstock .entry-title, .home article.product-cat-objects.outofstock h5, .home article.product-cat-objects.outofstock .h5, .archive article.product-cat-type.outofstock .entry-title, .archive article.product-cat-type.outofstock h5, .archive article.product-cat-type.outofstock .h5, .archive article.product-cat-objects.outofstock .entry-title, .archive article.product-cat-objects.outofstock h5, .archive article.product-cat-objects.outofstock .h5, .category article.product-cat-type.outofstock .entry-title, .category article.product-cat-type.outofstock h5, .category article.product-cat-type.outofstock .h5, .category article.product-cat-objects.outofstock .entry-title, .category article.product-cat-objects.outofstock h5, .category article.product-cat-objects.outofstock .h5 { color: gainsboro; }
 .blog article.product-cat-type.outofstock .entry-header img, .blog article.product-cat-objects.outofstock .entry-header img, .home article.product-cat-type.outofstock .entry-header img, .home article.product-cat-objects.outofstock .entry-header img, .archive article.product-cat-type.outofstock .entry-header img, .archive article.product-cat-objects.outofstock .entry-header img, .category article.product-cat-type.outofstock .entry-header img, .category article.product-cat-objects.outofstock .entry-header img { opacity: 0.15; }
 .blog article.product-cat-type.outofstock .entry-footer .h5:before, .blog article.product-cat-objects.outofstock .entry-footer .h5:before, .home article.product-cat-type.outofstock .entry-footer .h5:before, .home article.product-cat-objects.outofstock .entry-footer .h5:before, .archive article.product-cat-type.outofstock .entry-footer .h5:before, .archive article.product-cat-objects.outofstock .entry-footer .h5:before, .category article.product-cat-type.outofstock .entry-footer .h5:before, .category article.product-cat-objects.outofstock .entry-footer .h5:before { display: block; content: "Not Available"; }
@@ -745,7 +745,9 @@ Cart Styles
 /*--------------------------------------------------------------
 Product Styles
 --------------------------------------------------------------*/
-.product .entry-header ul.post-meta li:last-of-type { display: none; }
+.product.product_cat-type .entry-header ul.post-meta li:last-of-type { font-family: "Cardinal Grotesque"; height: 34px; font-weight: 500; font-size: 25px; letter-spacing: .02em; margin-top: 0px; }
+@media (min-width: 1000px) { .product.product_cat-type .entry-header ul.post-meta li:last-of-type { margin-top: 0px; margin-bottom: 0px; } }
+.product.product_cat-type .entry-header ul.post-meta li:last-of-type .post-meta-key { font-family: "Cardinal Grotesque"; font-weight: 600; text-transform: uppercase; letter-spacing: .17em; font-size: 15px; display: inline-block; width: 86px; }
 .product.outofstock .cart button[type="submit"] { display: none; }
 .product.outofstock .type-tester-title .amount { display: none; }
 
@@ -773,6 +775,7 @@ Product Styles
 .type-tester .fontselect.cardinal-grotesque.semiboldcondensed, .type-tester .fontselect.cardinal-grotesque.lightcondensed, .type-tester .fontselect.cardinal-grotesque.extralightcondensed, .type-tester .fontselect.cardinal-grotesque.thincondensed, .type-tester .fontselect.cardinal-grotesque.regularcondensed, .type-tester .fontselect.cardinal-grotesque.boldcondensed, .type-tester .fontselect.cardinal-grotesque.extraboldcondensed { font-family: 'Cardinal Grotesque Cond'; }
 .type-tester .fontselect.business-script { font-family: 'Business Script'; line-height: 1; }
 .type-tester .fontselect.kansas-casual { font-family: 'Kansas Casual'; line-height: 1; }
+.type-tester .fontselect.maritime-champion { font-family: 'Maritime Champion'; line-height: 1; }
 .type-tester .fontselect.cornbread { font-family: 'Cornbread'; line-height: 1; }
 .type-tester .fontselect.ready-script { font-family: 'Ready Script'; line-height: 1; }
 .type-tester .fontweight.extralight, .type-tester .fontweight.extralightcondensed, .type-tester .fontweight.extralightnarrow { font-weight: 100; }
@@ -904,16 +907,18 @@ body { background: #f0f0f0; }
 
 @media (min-width: 1048px) { .single-product header.site-header .site-branding:after, .post-type-archive-product header.site-header .site-branding:after { content: "a Type Foundry"; margin-right: -40px; }
   .page-template-page-studio header.site-header .site-branding:after { content: "a guy"; margin-right: -45px; }
-  .home header.site-header .site-branding:after { content: "a Design Studio"; margin-right: -40px; }
+  .home header.site-header .site-branding:after { content: "a Design Studio"; margin-right: -45px; }
   .woocommerce-cart .page-title { display: none; }
   .woocommerce-cart header.site-header .site-branding:after { content: "Cart"; }
   .woocommerce-cart header.site-header .site-branding.discount-time:after { content: "Code: whoayeah"; margin-right: -40px; } }
-#white-page.white-page { background: #ffffff; padding: 15px; min-height: 300px; }
-#white-page.white-page .summary.entry-summary { margin-top: 0px; }
-@media (min-width: 768px) { #white-page.white-page { padding: 20px 24px; } }
-@media (min-width: 920px) { #white-page.white-page { padding: 25px 30px; padding-bottom: 5px; margin: 0 auto; min-height: 500px; } }
-@media (min-width: 1000px) { #white-page.white-page { padding: 35px 50px; margin: 0 auto; } }
-@media (min-width: 1148px) { #white-page.white-page { margin: 0 auto; width: 1148px; } }
+body #white-page.white-page { background: #ffffff; padding: 15px; }
+body #white-page.white-page .summary.entry-summary { margin-top: 0px; }
+@media (min-width: 768px) { body #white-page.white-page { padding: 20px 24px; } }
+@media (min-width: 920px) { body #white-page.white-page { padding: 25px 30px; padding-bottom: 5px; margin: 0 auto; } }
+@media (min-width: 1000px) { body #white-page.white-page { padding: 35px 50px; margin: 0 auto; } }
+@media (min-width: 1148px) { body #white-page.white-page { margin: 0 auto; width: 1148px; } }
+body:not(.page-template-page-studio) #white-page.white-page { min-height: 300px; }
+@media (min-width: 920px) { body:not(.page-template-page-studio) #white-page.white-page { min-height: 500px; } }
 
 @media (min-width: 1460px) { .single:not(.woocommerce) #white-page.white-page, .single:not(.woocommerce) .return-to-top.white-page, .single:not(.woocommerce) .yellow-page { margin: 0 auto; width: 1400px; } }
 

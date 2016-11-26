@@ -258,9 +258,11 @@ a.squiggle-black {
 				display: none;
 			}
 			.price {
-				font-size: 0px;
+				visibility: hidden;
+				position: relative;
 				&:after {
 					color: darken($gray-1,8%);
+					visibility: visible;
 					content: "SOON";
 					-webkit-font-feature-settings: "case" 1;
 					-moz-font-feature-settings:    "case" 1;
@@ -268,9 +270,11 @@ a.squiggle-black {
 					font-feature-settings:         "case" 1;
 					font-weight: 600;
 					font-size: 16px !important;
-					margin-top: 2px;
-					margin-bottom: 0px;
-					margin-left: -4px;
+					position: absolute;
+					top: 2px;
+					left: 0px;
+					right: 0px;
+					margin-left: -3px;
 					letter-spacing: 0.05em;
 				}
 			}
@@ -1103,11 +1107,31 @@ Cart Styles
 Product Styles
 --------------------------------------------------------------*/
 .product {
-	.entry-header {
-		ul.post-meta {
-			li {
-				&:last-of-type {
-					display: none;
+	&.product_cat-type {
+		.entry-header {
+			ul.post-meta {
+				li {
+					&:last-of-type {
+						font-family: $type-subhead;
+						height: 34px;
+						font-weight: 500;
+						font-size: 25px;
+						letter-spacing: .02em;
+						margin-top: 0px;
+						@media (min-width: 1000px) {
+							margin-top: 0px;
+							margin-bottom: 0px;
+						}
+						.post-meta-key {
+							font-family: $type-subhead;
+							font-weight: 600;
+							text-transform: uppercase;
+							letter-spacing: .17em;
+							font-size: 15px;
+							display: inline-block;
+							width: 86px;
+						}
+					}
 				}
 			}
 		}
@@ -1220,6 +1244,7 @@ Product Styles
 		&.cardinal-grotesque { font-family: 'Cardinal Grotesque'; line-height: 1; &.semiboldcondensed, &.lightcondensed, &.extralightcondensed, &.thincondensed, &.regularcondensed, &.boldcondensed, &.extraboldcondensed { font-family: 'Cardinal Grotesque Cond';}}
 		&.business-script { font-family: 'Business Script'; line-height: 1;}
 		&.kansas-casual { font-family: 'Kansas Casual'; line-height: 1;}
+		&.maritime-champion { font-family: 'Maritime Champion'; line-height: 1;}
 		&.cornbread { font-family: 'Cornbread'; line-height: 1;}
 		&.ready-script { font-family: 'Ready Script'; line-height: 1;}
 	}
@@ -1813,7 +1838,7 @@ body {
 		header.site-header {
 			.site-branding:after {
 				content: "a Design Studio";
-				margin-right: -40px;
+				margin-right: -45px;
 			}
 		}	
 	}
@@ -1832,29 +1857,37 @@ body {
 		}
 	}
 }
-#white-page.white-page {
-	background: $white;
-	padding: 15px;
-	min-height: 300px;
-	.summary.entry-summary {
-		margin-top: 0px;
+body {
+	#white-page.white-page {
+		background: $white;
+		padding: 15px;
+		.summary.entry-summary {
+			margin-top: 0px;
+		}
+		@media (min-width: 768px) {
+			padding: 20px 24px;
+		}
+		@media (min-width: 920px) {
+			padding: 25px 30px;
+			padding-bottom: 5px;
+			margin: 0 auto;
+		}
+		@media (min-width: 1000px) {
+			padding: 35px 50px;
+			margin: 0 auto;
+		}
+		@media (min-width: 1148px) {
+			margin: 0 auto;
+			width: 1148px;
+		}
 	}
-	@media (min-width: 768px) {
-		padding: 20px 24px;
-	}
-	@media (min-width: 920px) {
-		padding: 25px 30px;
-		padding-bottom: 5px;
-		margin: 0 auto;
-		min-height: 500px;
-	}
-	@media (min-width: 1000px) {
-		padding: 35px 50px;
-		margin: 0 auto;
-	}
-	@media (min-width: 1148px) {
-		margin: 0 auto;
-		width: 1148px;
+	&:not(.page-template-page-studio) {
+		#white-page.white-page {
+			min-height: 300px;
+			@media (min-width: 920px) {
+				min-height: 500px;
+			}
+		}
 	}
 }
 .single:not(.woocommerce) #white-page.white-page, .single:not(.woocommerce) .return-to-top.white-page, .single:not(.woocommerce) .yellow-page {

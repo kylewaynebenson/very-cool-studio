@@ -12,18 +12,13 @@ add_action( 'wp_enqueue_scripts', 'enqueue_custom_styles_or_scripts' );
 
 function enqueue_custom_styles_or_scripts() {
 
-    // If it's not the front page, stop executing code, ie. return
-	if ( is_page(192) ) {
-		wp_enqueue_style( 'webfonts-maritime-champion', get_stylesheet_directory_uri() . '/css/webfonts-maritime-champion.css' );
-	} elseif ( is_page(130) ) {
-		wp_enqueue_style( 'webfonts-ready-script', get_stylesheet_directory_uri() . '/css/webfonts-ready-script.css' );
-	} elseif ( is_page(37) ) {
-		wp_enqueue_style( 'webfonts-cardinal-grotesque', get_stylesheet_directory_uri() . '/css/webfonts-cardinal-grotesque.css' );
-	} elseif ( is_page(71) ) {
-		wp_enqueue_style( 'webfonts-kansas-casual', get_stylesheet_directory_uri() . '/css/webfonts-kansas-casual.css' );
-	} elseif ( is_page(41) ) {
-		wp_enqueue_style( 'webfonts-cornbread', get_stylesheet_directory_uri() . '/css/webfonts-cornbread.css' );
-	}
+	if ( is_product() ) {
+			wp_enqueue_style( 'webfonts-kansas-casual', get_stylesheet_directory_uri() . '/css/webfonts-kansas-casual.css' );
+			wp_enqueue_style( 'webfonts-ready-script', get_stylesheet_directory_uri() . '/css/webfonts-ready-script.css' );
+			wp_enqueue_style( 'webfonts-cardinal-grotesque', get_stylesheet_directory_uri() . '/css/webfonts-cardinal-grotesque.css' );
+			wp_enqueue_style( 'webfonts-maritime-champion', get_stylesheet_directory_uri() . '/css/webfonts-maritime-champion.css' );
+			wp_enqueue_style( 'webfonts-cornbread', get_stylesheet_directory_uri() . '/css/webfonts-cornbread.css' );
+		}
 
 }
 

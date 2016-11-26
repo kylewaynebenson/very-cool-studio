@@ -44,7 +44,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 			?>
 	</header><!-- .entry-header -->
 	<div class="post-content">
-		<?php the_content(); ?>
+		<div class="post-description">
+			<?php the_content(); ?>
+		</div>
 			<div class="type-tester"> 
 		<span contenteditable="true" id="type-tester-editable" class="fontselect fontsize fontweight de 64 textfield <?php echo $post->post_name;?>">Click here to try it!</span> 
 		<div class="type-tester-title">

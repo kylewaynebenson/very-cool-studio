@@ -1244,16 +1244,16 @@ Product Styles
 		&.cardinal-grotesque { font-family: 'Cardinal Grotesque'; line-height: 1; &.semiboldcondensed, &.lightcondensed, &.extralightcondensed, &.thincondensed, &.regularcondensed, &.boldcondensed, &.extraboldcondensed { font-family: 'Cardinal Grotesque Cond';}}
 		&.business-script { font-family: 'Business Script'; line-height: 1;}
 		&.kansas-casual { font-family: 'Kansas Casual'; line-height: 1;}
-		&.maritime-champion { font-family: 'Maritime Champion'; line-height: 1;}
+		&.maritime-champion { font-family: 'Maritime Champion'; line-height: 1; &.mediumst, &.lightst, &.regularst, &.boldst { font-family: 'Maritime Champion ST';} &.mediumsl, &.lightsl, &.regularsl, &.boldsl { font-family: 'Maritime Champion SL';}}
 		&.cornbread { font-family: 'Cornbread'; line-height: 1;}
 		&.ready-script { font-family: 'Ready Script'; line-height: 1;}
 	}
 	.fontweight.extralight, .fontweight.extralightcondensed, .fontweight.extralightnarrow { font-weight: 100;}
-	.fontweight.light, .fontweight.lightcondensed, .fontweight.lightnarrow { font-weight: 200;}
-	.fontweight.regular, .fontweight.regularcondensed, .fontweight.regularnarrow { font-weight: 300;}
-	.fontweight.medium, .fontweight.mediumcondensed, .fontweight.mediumnarrow { font-weight: 400;}
+	.fontweight.light, .fontweight.lightcondensed, .fontweight.lightnarrow, .fontweight.lightst, .fontweight.lightsl { font-weight: 200;}
+	.fontweight.regular, .fontweight.regularcondensed, .fontweight.regularnarrow, .fontweight.regularst, .fontweight.regularsl { font-weight: 300;}
+	.fontweight.medium, .fontweight.mediumcondensed, .fontweight.mediumnarrow, .fontweight.mediumst, .fontweight.mediumsl { font-weight: 400;}
 	.fontweight.semibold, .fontweight.semiboldcondensed, .fontweight.semiboldnarrow { font-weight: 500;}
-	.fontweight.bold, .fontweight.boldcondensed, .fontweight.boldnarrow { font-weight: 600;}
+	.fontweight.bold, .fontweight.boldcondensed, .fontweight.boldnarrow, .fontweight.boldst, .fontweight.boldsl { font-weight: 600;}
 	.fontweight.extrabold, .fontweight.extraboldcondensed, .fontweight.extraboldnarrow { font-weight: 700;}
 	.fontweight.black, .fontweight.blackcondensed, .fontweight.blacknarrow { font-weight: 900;}
 
@@ -1633,6 +1633,9 @@ Product Styles
 			float: right;
 			> p:first-of-type {
 				margin-top: 3px;
+			}
+			.post-description {
+				min-height: 310px;
 			}
 		}
 

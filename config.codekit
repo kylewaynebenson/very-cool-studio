@@ -56,11 +56,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/css\/webfonts-martime-champion.css": {
+	"\/css\/webfonts-maritime-champion.css": {
 		"fileType": 16,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/webfonts-martime-champion.css",
+		"inputAbbreviatedPath": "\/css\/webfonts-maritime-champion.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1795,7 +1795,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/typography\/webfonts-martime-champion.scss",
-		"outputAbbreviatedPath": "\/css\/webfonts-martime-champion.css",
+		"outputAbbreviatedPath": "\/css\/webfonts-maritime-champion.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,

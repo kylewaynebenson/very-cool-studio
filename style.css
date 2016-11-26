@@ -776,14 +776,16 @@ Product Styles
 .type-tester .fontselect.business-script { font-family: 'Business Script'; line-height: 1; }
 .type-tester .fontselect.kansas-casual { font-family: 'Kansas Casual'; line-height: 1; }
 .type-tester .fontselect.maritime-champion { font-family: 'Maritime Champion'; line-height: 1; }
+.type-tester .fontselect.maritime-champion.mediumst, .type-tester .fontselect.maritime-champion.lightst, .type-tester .fontselect.maritime-champion.regularst, .type-tester .fontselect.maritime-champion.boldst { font-family: 'Maritime Champion ST'; }
+.type-tester .fontselect.maritime-champion.mediumsl, .type-tester .fontselect.maritime-champion.lightsl, .type-tester .fontselect.maritime-champion.regularsl, .type-tester .fontselect.maritime-champion.boldsl { font-family: 'Maritime Champion SL'; }
 .type-tester .fontselect.cornbread { font-family: 'Cornbread'; line-height: 1; }
 .type-tester .fontselect.ready-script { font-family: 'Ready Script'; line-height: 1; }
 .type-tester .fontweight.extralight, .type-tester .fontweight.extralightcondensed, .type-tester .fontweight.extralightnarrow { font-weight: 100; }
-.type-tester .fontweight.light, .type-tester .fontweight.lightcondensed, .type-tester .fontweight.lightnarrow { font-weight: 200; }
-.type-tester .fontweight.regular, .type-tester .fontweight.regularcondensed, .type-tester .fontweight.regularnarrow { font-weight: 300; }
-.type-tester .fontweight.medium, .type-tester .fontweight.mediumcondensed, .type-tester .fontweight.mediumnarrow { font-weight: 400; }
+.type-tester .fontweight.light, .type-tester .fontweight.lightcondensed, .type-tester .fontweight.lightnarrow, .type-tester .fontweight.lightst, .type-tester .fontweight.lightsl { font-weight: 200; }
+.type-tester .fontweight.regular, .type-tester .fontweight.regularcondensed, .type-tester .fontweight.regularnarrow, .type-tester .fontweight.regularst, .type-tester .fontweight.regularsl { font-weight: 300; }
+.type-tester .fontweight.medium, .type-tester .fontweight.mediumcondensed, .type-tester .fontweight.mediumnarrow, .type-tester .fontweight.mediumst, .type-tester .fontweight.mediumsl { font-weight: 400; }
 .type-tester .fontweight.semibold, .type-tester .fontweight.semiboldcondensed, .type-tester .fontweight.semiboldnarrow { font-weight: 500; }
-.type-tester .fontweight.bold, .type-tester .fontweight.boldcondensed, .type-tester .fontweight.boldnarrow { font-weight: 600; }
+.type-tester .fontweight.bold, .type-tester .fontweight.boldcondensed, .type-tester .fontweight.boldnarrow, .type-tester .fontweight.boldst, .type-tester .fontweight.boldsl { font-weight: 600; }
 .type-tester .fontweight.extrabold, .type-tester .fontweight.extraboldcondensed, .type-tester .fontweight.extraboldnarrow { font-weight: 700; }
 .type-tester .fontweight.black, .type-tester .fontweight.blackcondensed, .type-tester .fontweight.blacknarrow { font-weight: 900; }
 .type-tester .type-tester-title { display: none; }
@@ -856,7 +858,8 @@ Product Styles
 .single .entry-footer .post-navigation .nav-next:before { border-left: 12px solid #ffd138; border-right: 12px solid white; right: -22px; }
 @media (min-width: 768px) { .single .entry-header, .single .entry-footer { width: 29.1666666667%; float: left; }
   .single .post-content { width: 66.6666666667%; float: right; }
-  .single .post-content > p:first-of-type { margin-top: 3px; } }
+  .single .post-content > p:first-of-type { margin-top: 3px; }
+  .single .post-content .post-description { min-height: 310px; } }
 @media (min-width: 1000px) { .single .entry-header, .single .entry-footer { width: 33.3333333333%; float: left; }
   .single .post-content { width: 62.5%; float: right; }
   .single .post-content p:last-of-type { margin-bottom: 0px; } }

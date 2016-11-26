@@ -859,7 +859,7 @@ Product Styles
 @media (min-width: 768px) { .single .entry-header, .single .entry-footer { width: 29.1666666667%; float: left; }
   .single .post-content { width: 66.6666666667%; float: right; }
   .single .post-content > p:first-of-type { margin-top: 3px; }
-  .single .post-content .post-description { min-height: 310px; } }
+  .single .post-content .post-description { min-height: 300px; } }
 @media (min-width: 1000px) { .single .entry-header, .single .entry-footer { width: 33.3333333333%; float: left; }
   .single .post-content { width: 62.5%; float: right; }
   .single .post-content p:last-of-type { margin-bottom: 0px; } }

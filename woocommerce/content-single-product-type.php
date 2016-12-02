@@ -48,7 +48,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<?php the_content(); ?>
 		</div>
 			<div class="type-tester"> 
-		<span contenteditable="true" id="type-tester-editable" class="fontselect fontsize fontweight de 64 textfield <?php echo $post->post_name;?>">Click here to try it!</span> 
+		<span contenteditable="true" id="type-tester-editable" class="fontselect fontsize fontweight de 64 textfield <?php echo $post->post_name;?>"><?php the_title(); ?></span> 
 		<div class="type-tester-title">
 			<h4 class="entry-title"><?php the_title(); ?></h4>
 			<h5><?php echo get_the_excerpt(); ?></h5>
@@ -68,10 +68,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 				$tags = get_the_terms( $post->ID, 'product_tag' );
 
 				$html = '<select class="" data-native-menu="false" id="font-weight-select" name="weight">';
+				$default = 'Regular';
 				foreach ( $tags as $tag ) {
-				    $tag_link = get_tag_link( $tag->term_id );
-				    $html .= "<option value='{$tag->slug}'>";
-				    $html .= "{$tag->name}</option> ";
+					if ($tag->name == $default) {
+					    $tag_link = get_tag_link( $tag->term_id );
+					    $html .= "<option value='{$tag->slug}' selected>";
+					    $html .= "{$tag->name}</option> ";
+					} else {
+					    $tag_link = get_tag_link( $tag->term_id );
+					    $html .= "<option value='{$tag->slug}'>";
+					    $html .= "{$tag->name}</option> ";
+					}
 				}
 				$html .= '</select>';
 				echo $html;
@@ -82,7 +89,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 				Liga
 				<script>
 				/* ligatures */
-
 				var btn = document.querySelector(".type-tester-ligatures"),
 				    typetester = document.querySelector("span.fontselect"),
 				    activeClassliga = "liga",
@@ -99,8 +105,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<input id="font-alts" type="checkbox" name="alts" value="salt">
 				Alts
 				<script>
-				/* ligatures */
-
+				/* alts */
 				var btnalt = document.querySelector(".type-tester-alts"),
 				    typetester = document.querySelector("span.fontselect"),
 				    activeClassalts = "alts",
@@ -117,8 +122,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<input id="font-swsh" type="checkbox" name="swsh" value="salt">
 				Swsh
 				<script>
-				/* ligatures */
-
+				/* swsh */
 				var btnalt = document.querySelector(".type-tester-swsh"),
 				    typetester = document.querySelector("span.fontselect"),
 				    activeClassswsh = "swsh",
@@ -137,7 +141,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			 	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
 			 	<button type="submit" class="chamfered-button chamfered-button-yellow"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
 			</form>
-			<h5 class="type-tester-notice">Opentype features listed above may not work in<br /> this demo because of limited browser support.</h5>
+			<h5 class="type-tester-notice">Type tester does not demonstrate actual scope or<br> function of typeface because of limited browser and web support.</h5>
 		</div>
 	 </div>
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
@@ -187,27 +191,6 @@ $('#font-alts').on('change', function () {
     var x = this.checked ? 'ss01' : ' ';
     $('div.type-tester span.fontselect').css('font-feature-settings', x )
 });
-/* clear text */
-$('#type-tester-editable').on('activate', function() {
-    $(this).empty();
-    var range, sel;
-    if ( (sel = document.selection) && document.body.createTextRange) {
-        range = document.body.createTextRange();
-        range.moveToElementText(this);
-        range.select();
-    }
-});
-
-$('#type-tester-editable').focus(function() {
-    if (this.hasChildNodes() && document.createRange && window.getSelection) {
-        $(this).empty();
-        var range = document.createRange();
-        range.selectNodeContents(this);
-        var sel = window.getSelection();
-        sel.removeAllRanges();
-        sel.addRange(range);
-    }
-});
 </script>
 <?php do_action( 'woocommerce_after_single_product' ); ?>
 <div class="clear"></div>
@@ -227,7 +210,7 @@ $('#type-tester-editable').focus(function() {
 </div>
 </div>
 </div>
-<div class="yellow-page">
+<div class="yellow-page product-footer">
 	<h1 class="footer-title <?php echo $post->post_name;?>"><?php the_title(); ?></h1>
 	<h4 class="price h4"><?php global $product; echo $product->get_price_html(); ?>
 	<meta itemprop="price" content="<?php echo esc_attr( $product->get_price() ); ?>" />

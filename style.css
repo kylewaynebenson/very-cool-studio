@@ -178,7 +178,7 @@ src: url("./type/CardinalGrotesque-SemiBoldCondensed.eot?#iefix") format("embedd
 
 .icon-corner-right:before { content: "\E008"; -webkit-transform: scale(-1, 1); transform: scale(-1, 1); }
 
-body, button, input, select, textarea { color: #404040; font-weight: 300; font-family: "Cornbread"; font-size: 16px; font-size: 1rem; line-height: 1.6; }
+body { color: #404040; font-weight: 300; font-family: "Cornbread"; font-size: 16px; font-size: 1rem; line-height: 1.6; }
 
 h1, h2, h3, h4, h5, h6 { clear: both; }
 
@@ -773,6 +773,7 @@ Product Styles
 .type-tester .fontselect.smcp { -webkit-font-feature-settings: "smcp" 1; font-feature-settings: "smcp" 1; }
 .type-tester .fontselect.cardinal-grotesque { font-family: 'Cardinal Grotesque'; line-height: 1; }
 .type-tester .fontselect.cardinal-grotesque.semiboldcondensed, .type-tester .fontselect.cardinal-grotesque.lightcondensed, .type-tester .fontselect.cardinal-grotesque.extralightcondensed, .type-tester .fontselect.cardinal-grotesque.thincondensed, .type-tester .fontselect.cardinal-grotesque.regularcondensed, .type-tester .fontselect.cardinal-grotesque.boldcondensed, .type-tester .fontselect.cardinal-grotesque.extraboldcondensed { font-family: 'Cardinal Grotesque Cond'; }
+.type-tester .fontselect.cardinal-grotesque.semiboldnarrow, .type-tester .fontselect.cardinal-grotesque.lightnarrow, .type-tester .fontselect.cardinal-grotesque.extralightnarrow, .type-tester .fontselect.cardinal-grotesque.thinnarrow, .type-tester .fontselect.cardinal-grotesque.regularnarrow, .type-tester .fontselect.cardinal-grotesque.boldnarrow, .type-tester .fontselect.cardinal-grotesque.extraboldnarrow { font-family: 'Cardinal Grotesque Narrow'; }
 .type-tester .fontselect.business-script { font-family: 'Business Script'; line-height: 1; }
 .type-tester .fontselect.kansas-casual { font-family: 'Kansas Casual'; line-height: 1; }
 .type-tester .fontselect.maritime-champion { font-family: 'Maritime Champion'; line-height: 1; }
@@ -807,7 +808,7 @@ Product Styles
 @media only screen and (max-width: 660px) { .type-tester .type-tester-header .type-tester-checkbox:last-of-type { display: none; } }
 .type-tester .type-tester-header .type-tester-checkbox input[type="checkbox"] { cursor: pointer; border: 3px solid #e0e0e0; width: 14px; height: 14px; margin-right: 5px; border-radius: 0px; -webkit-appearance: none; outline: none; }
 .type-tester .type-tester-header .type-tester-checkbox input[type="checkbox"]:checked, .type-tester .type-tester-header .type-tester-checkbox input[type="checkbox"].checked { border: 0px; background: #ffd138; }
-.type-tester .type-tester-header #font-size-slider { font-family: "Cardinal Grotesque"; font-weight: 500 !important; font-size: 20px; width: 30%; color: #e0e0e0; float: left; padding: 0px 10px 4px 10px; border-right: 3px solid #f0f0f0; }
+.type-tester .type-tester-header #font-size-slider { font-family: "Cardinal Grotesque"; font-weight: 500 !important; font-size: 20px; width: 30%; color: #e0e0e0; float: left; padding: 5px 10px 7px 10px; border-right: 3px solid #f0f0f0; }
 .type-tester .type-tester-header #font-size-slider:before { content: "S"; margin-right: 5px; }
 .type-tester .type-tester-header #font-size-slider:after { content: "LG"; margin-left: 5px; }
 .type-tester .type-tester-footer { padding: 4px; }
@@ -834,7 +835,7 @@ Product Styles
 .single .entry-header h1 { margin-top: 2px; line-height: 1.25; }
 .single .entry-header ul.post-meta { padding-left: 0px; margin-left: 0px; list-style-type: none; }
 @media (max-width: 1000px) { .single .entry-header ul.post-meta { margin-top: -5px !important; } }
-.single .entry-header ul.post-meta li:not(:last-of-type) { font-family: "Cardinal Grotesque"; height: 34px; font-weight: 500; font-size: 25px; letter-spacing: .02em; }
+.single .entry-header ul.post-meta li:not(:last-of-type) { font-family: "Cardinal Grotesque"; height: 34px; font-weight: 500; overflow-x: hidden; white-space: nowrap; font-size: 25px; letter-spacing: .02em; }
 .single .entry-header ul.post-meta li .post-meta-key { font-family: "Cardinal Grotesque"; font-weight: 600; text-transform: uppercase; letter-spacing: .17em; font-size: 15px; display: inline-block; width: 86px; }
 .single .entry-header ul.post-meta li:last-of-type { margin-top: 18px; }
 @media (min-width: 1000px) { .single .entry-header ul.post-meta li:last-of-type { margin-top: 26px; margin-bottom: 10px; } }
@@ -856,6 +857,8 @@ Product Styles
 .single .entry-footer .post-navigation .nav-previous:before, .single .entry-footer .post-navigation .nav-next:before { display: block; position: absolute; content: " "; background-color: #ffd138; width: 24px; height: 24px; border-top: 12px solid white; border-bottom: 12px solid white; }
 .single .entry-footer .post-navigation .nav-previous:before { border-right: 12px solid #ffd138; border-left: 12px solid white; left: -22px; }
 .single .entry-footer .post-navigation .nav-next:before { border-left: 12px solid #ffd138; border-right: 12px solid white; right: -22px; }
+.single .post-content a:not(.button) { text-decoration: none; box-shadow: inset 0 0px 0px 0px white, inset 0 -2px 0px 0px #e0e0e0; text-shadow: 1px 1px #ffffff; -webkit-transition: box-shadow 0.3s ease-in-out; transition: box-shadow 0.3s ease-in-out; padding-bottom: 1px; }
+.single .post-content a:not(.button):hover { box-shadow: inset 0 0px 0px 0px white, inset 0 -2px 0px 0px #ffd138; }
 @media (min-width: 768px) { .single .entry-header, .single .entry-footer { width: 29.1666666667%; float: left; }
   .single .post-content { width: 66.6666666667%; float: right; }
   .single .post-content > p:first-of-type { margin-top: 3px; }

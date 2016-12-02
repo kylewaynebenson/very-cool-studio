@@ -22,3 +22,11 @@
        url('../type/Cornbread-Bold.woff2') format('woff2'), /* Super Modern Browsers */
        url('../type/Cornbread-Bold.woff') format('woff'), /* Pretty Modern Browsers */
 }
+@font-face {
+  font-family: 'Cornbread';
+  font-weight: 900;
+  src: url('../type/Cornbread-Black.eot'); /* IE9 Compat Modes */
+  src: url('../type/Cornbread-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../type/Cornbread-Black.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../type/Cornbread-Black.woff') format('woff'), /* Pretty Modern Browsers */
+}

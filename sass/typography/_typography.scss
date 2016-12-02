@@ -111,11 +111,7 @@ $type-headline-cond: "Cardinal Grotesque Cond";
 $type-subhead: "Cardinal Grotesque";
 $type-script-subhead: "Business Script";
 
-body,
-button,
-input,
-select,
-textarea {
+body {
   color: $color__text-main;
   font-weight: 300;
   font-family: $type-text;

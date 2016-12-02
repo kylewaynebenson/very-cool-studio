@@ -1241,7 +1241,7 @@ Product Styles
 		&.smcp {
 			font-feature-settings: "smcp" 1;
 		}
-		&.cardinal-grotesque { font-family: 'Cardinal Grotesque'; line-height: 1; &.semiboldcondensed, &.lightcondensed, &.extralightcondensed, &.thincondensed, &.regularcondensed, &.boldcondensed, &.extraboldcondensed { font-family: 'Cardinal Grotesque Cond';}}
+		&.cardinal-grotesque { font-family: 'Cardinal Grotesque'; line-height: 1; &.semiboldcondensed, &.lightcondensed, &.extralightcondensed, &.thincondensed, &.regularcondensed, &.boldcondensed, &.extraboldcondensed { font-family: 'Cardinal Grotesque Cond';} &.semiboldnarrow, &.lightnarrow, &.extralightnarrow, &.thinnarrow, &.regularnarrow, &.boldnarrow, &.extraboldnarrow { font-family: 'Cardinal Grotesque Narrow';}}
 		&.business-script { font-family: 'Business Script'; line-height: 1;}
 		&.kansas-casual { font-family: 'Kansas Casual'; line-height: 1;}
 		&.maritime-champion { font-family: 'Maritime Champion'; line-height: 1; &.mediumst, &.lightst, &.regularst, &.boldst { font-family: 'Maritime Champion ST';} &.mediumsl, &.lightsl, &.regularsl, &.boldsl { font-family: 'Maritime Champion SL';}}
@@ -1386,7 +1386,7 @@ Product Styles
 			width: 30%;
 			color: $gray-2;
 			float: left;
-			padding: 0px 10px 4px 10px;
+			padding: 5px 10px 7px 10px;
 			border-right: 3px solid $gray-1;
 			&:before {
 				content: "S";
@@ -1502,6 +1502,8 @@ Product Styles
 					font-family: $type-subhead;
 					height: 34px;
 					font-weight: 500;
+					overflow-x: hidden;
+					white-space: nowrap;
 					font-size: 25px;
 					letter-spacing: .02em;
 				}
@@ -1620,6 +1622,18 @@ Product Styles
 				border-left:12px solid $yellow; 
 				border-right:12px solid white;
 				right: -22px;
+			}
+		}
+	}
+	.post-content {
+		a:not(.button) {
+			text-decoration: none;
+			box-shadow: inset 0 0px 0px 0px rgba(255, 255, 255, 1), inset 0 -2px 0px 0px $gray-2;
+			text-shadow: 1px 1px $white;
+			transition: box-shadow 0.3s ease-in-out;
+			padding-bottom: 1px;
+			&:hover {
+				box-shadow: inset 0 0px 0px 0px rgba(255, 255, 255, 1), inset 0 -2px 0px 0px $yellow;
 			}
 		}
 	}

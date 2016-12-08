@@ -12,11 +12,15 @@ add_action( 'wp_enqueue_scripts', 'enqueue_custom_styles_or_scripts' );
 
 function enqueue_custom_styles_or_scripts() {
 
-	if ( is_product() ) {
+	if ( is_single('kansas-casual') ) {
 			wp_enqueue_style( 'webfonts-kansas-casual', get_stylesheet_directory_uri() . '/css/webfonts-kansas-casual.css' );
+	} else if ( is_single('ready-script') ) {
 			wp_enqueue_style( 'webfonts-ready-script', get_stylesheet_directory_uri() . '/css/webfonts-ready-script.css' );
+	} else if ( is_single('cardinal-grotesque') ) {
 			wp_enqueue_style( 'webfonts-cardinal-grotesque', get_stylesheet_directory_uri() . '/css/webfonts-cardinal-grotesque.css' );
+	} else if ( is_single('maritime-champion') ) {
 			wp_enqueue_style( 'webfonts-maritime-champion', get_stylesheet_directory_uri() . '/css/webfonts-maritime-champion.css' );
+	} else if ( is_single('cornbread') ) {
 			wp_enqueue_style( 'webfonts-cornbread', get_stylesheet_directory_uri() . '/css/webfonts-cornbread.css' );
 		}
 
@@ -312,3 +316,13 @@ function disallowed_custom_fields($string, $key, $value){
         return $string;
     }
 }
+/**
+* Change undo button placement
+**/
+// function my_cart_messages($message) {
+// 	$newmessage = 'Cool. Product has been removed';
+// 	$replacemessage= '<a$1class="button">' . $newmessage . '</a>';
+// 	$message = preg_replace('#<a(.*?)class="button">(.*?)</a>#', $replacemessage, $message);
+// 	return $message;
+// }
+// add filter( 'woocommerce_add_to_cart_message', 'my_cart_messages', 109);

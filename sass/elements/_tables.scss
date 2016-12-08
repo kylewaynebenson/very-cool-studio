@@ -96,6 +96,9 @@ table.list-box {
 			text-decoration: none;
 			line-height: 1;
 		}
+		td {
+			vertical-align: bottom;
+		}
 		td.product-price, td.product-quantity, td.product-quantity input {
 			font-family: $type-script-subhead;
 			font-weight: 300;

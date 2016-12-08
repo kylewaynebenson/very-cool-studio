@@ -16,12 +16,11 @@
 	
 	li {
 		@media screen and (max-width: 699px) {
-			width: 60%;
+			width: 100%;
 			display: block;
-			text-align: center;
+			text-align: left;
 			float: left;
 			padding-top: 4px;
-			max-width: 320px;
 			&.menu-item {
 				border-bottom: 3px solid $gray-1;
 				&:nth-of-type(1) {
@@ -32,16 +31,23 @@
 				}
 			}
 			&.right {
-				width: 40%;
 				border-bottom: 0px;
-				margin-top: -50px;
-				text-align: right;
+				border-top: 3px solid $gray-1;
+				a {
+					display: inline-block;
+					width: 100%;
+					padding-bottom: 5px;
+				}
 			}
 		}
 		@media screen and (min-width: 700px) {
 			float: left;
 			position: relative;
 			padding-left: 30px;
+			a {
+				padding-top: 5px;
+				padding-bottom: 0px;
+			}
 		}
 		&:hover > a,
 		&.focus > a {
@@ -53,13 +59,15 @@
 					font-size: 25px;
 				}
 				.amount {
-					color: $gray-2;
+					@media screen and (min-width: 700px) {
+						color: $gray-2;
+						position: absolute;
+						right: 0px;
+						bottom: -17px;
+					}
 					font-size: .5em;
 					font-family: $type-script-subhead;
 					font-weight: 300;
-					position: absolute;
-					right: 0px;
-					bottom: -5px;
 				}
 			}
 		}
@@ -88,16 +96,18 @@
 /* Small menu. */
 .main-navigation {
 	button.menu-toggle {
-	float: right;
-	font-family: 'Very Cool Icons';
-	font-style: normal;
-	font-weight: 400;
-	background: transparent;
-	border: 0px;
-	font-size: 3em;
-	line-height: 0;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+		float: right;
+		font-family: 'Very Cool Icons';
+		font-style: normal;
+		font-weight: 400;
+		background: transparent;
+		border: 3px solid transparent;
+		width: 44px;
+		height: 15px;
+		font-size: 3.45em;
+		line-height: 0;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 	}
 	&.toggled {
 		ul {
@@ -118,7 +128,7 @@
 		font-size: 1.02em;
 	}
 	.menu-toggle {
-		display: none;
+		display: none !important;
 	}
 	.main-navigation ul {
 		display: block;
@@ -126,12 +136,7 @@
 	}
 }
 @media (max-width: 699px) {
-	.main-navigation {
-		button.menu-toggle {
-			line-height: .8;
-			margin-top: -15px;
-		}
-	}
+
 }
 .comment-navigation,
 .posts-navigation,

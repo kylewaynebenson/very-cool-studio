@@ -320,7 +320,7 @@ a.squiggle-black {
 		}
 		background: $white;
 		position: relative;
-		max-width: 500px;
+		max-width: 499px;
 		width: 100%;
 		display: block;
 		margin: 0 auto;
@@ -928,17 +928,17 @@ Cart Styles
 			&.payment_box, a, img {
 				display: none !important;
 			}
-			&.wc_payment_method {
-				&:after {
-					content: "(pls no)";
-					text-transform: uppercase;
-					font-size: 16px;
-					color: $gray-2;
-					font-weight: 500;
-					font-family: $type-subhead;
-					vertical-align: 8px;
-				}
-			}
+			// &.wc_payment_method {
+			// 	&:after {
+			// 		content: "(if you must)";
+			// 		text-transform: uppercase;
+			// 		font-size: 16px;
+			// 		color: $gray-2;
+			// 		font-weight: 500;
+			// 		font-family: $type-subhead;
+			// 		vertical-align: 8px;
+			// 	}
+			// }
 		}
 	}
 	#place_order.button {
@@ -993,10 +993,16 @@ Cart Styles
 	}
 	@media (min-width: 769px) {
 		.cart-subtotal {
-			td, th {
+			th.product-total, th.product-name {
 				padding-bottom: 0px;
 				padding-top: 5px;
-			}			
+			}
+		}
+		.cart_item {
+			td.product-total, td.product-name, td.product-quantity, td.product-price {
+				padding-bottom: 0px;
+				padding-top: 0px;
+			}
 		}
 		.shipping {
 			td, th {
@@ -1021,7 +1027,7 @@ Cart Styles
 	.wc-forward.button.checkout-button {
 		text-align: center;
 		padding: 15px 30px;
-		@media (max-width: 500px) {
+		@media (max-width: 499px) {
 			display: block;
 			width: 100%;
 		}
@@ -1079,8 +1085,9 @@ Cart Styles
 				font-weight: 600;
 				font-size: 3em;
 				line-height: 1;
+				padding-bottom: 4px;
 			}
-			td, th {
+			th {
 				padding-bottom: 10px;
 			}
 		}
@@ -1584,6 +1591,17 @@ Product Styles
 					padding: 5px 5px 5px 5px;
 					height: 24px;
 					text-align: center;
+					&:before  {
+						display: block;
+						position: absolute;
+						content: " ";
+						background: $yellow;
+						width: 24px; 
+						height: 24px;
+						top: 0px; 
+						border-top: 12px solid white;
+						border-bottom: 12px solid white;
+					}
 					@media only screen and (min-width: 768px) and (max-width: 1160px) {
 						user-select: none; 
 					}
@@ -1596,32 +1614,46 @@ Product Styles
 				}
 
 			}
+			.nav-previous a {
+				&:before {
+					border-right: 12px solid $yellow; 
+					border-left: 12px solid white;
+					left: -22px;
+				}
+				&:hover {
+					&:before {
+						border-right: 12px solid lighten($yellow,5%); 
+					}
+				}
+				&:active {
+					&:before {
+						border-right: 12px solid darken($yellow,8%); 
+					}
+				}
+			}
+			.nav-next a {
+				&:before {
+					border-left:12px solid $yellow; 
+					border-right:12px solid white;
+					right: -22px;
+				}
+				&:hover {
+					&:before {
+						border-left: 12px solid lighten($yellow,5%); 
+					}
+				}
+				&:active {
+					&:before {
+						border-left: 12px solid darken($yellow,8%); 
+					}
+				}
+			}
 			.nav-previous {
 				margin-left: 10px;
 				float: left;
 			}
 			.nav-next {
 				margin-right: 10px;
-			}
-			.nav-previous:before, .nav-next:before  {
-				display: block;
-				position: absolute;
-				content: " ";
-				background-color: $yellow;
-				width: 24px; 
-				height: 24px; 
-				border-top: 12px solid white;
-				border-bottom: 12px solid white;
-			}
-			.nav-previous:before {
-				border-right: 12px solid $yellow; 
-				border-left: 12px solid white;
-				left: -22px;
-			}
-			.nav-next:before {
-				border-left:12px solid $yellow; 
-				border-right:12px solid white;
-				right: -22px;
 			}
 		}
 	}
@@ -1700,9 +1732,6 @@ Product Styles
 			line-height: 1.25;
 		}
 		position: relative;
-		@media (min-width: 700px) {
-			margin-top: -20px;
-		}
 		@media (min-width: 961px) {
 			padding: 0px;
 			margin-bottom: 0px;
@@ -1791,52 +1820,64 @@ body {
 	header.site-header {
 		.site-branding {
 			.svg-logo {
+				display: block;
+				width: 320px;
+				margin-top: -9px;
+				.logo-peace {
+					opacity: 0;
+				}
 				@media (min-width: 861px)  {
-					width: 320px;
-					display: block;
 					padding-bottom: 8px;
-					margin-top: -9px;
 				}
 				@media (min-width: 421px) and (max-width: 679px)  {
-					width: 320px;
-					display: block;
 					padding-bottom: 0px;
-					margin-top: -9px;
 				}
 				@media (min-width: 680px) and (max-width: 860px)  {
-					display: none;
+					margin-left: -132px;
+					.logo-very {
+						opacity: 0;
+					}
+					.logo-peace {
+						opacity: 1;
+					}
 				}
 				@media (max-width: 420px)  {
-					display: none;
+					margin-left: -132px;
+					.logo-very {
+						opacity: 0;
+					}
+					.logo-peace {
+						opacity: 1;
+					}
 				}
 			}
 			.icon-logo {
-				@media (min-width: 861px)  {
-					display: none;
-				}
-				@media (min-width: 421px) and (max-width: 679px) {
-					display: none;
-				}
-				&:before {
-					margin-top: -11px;
-					margin-right: -2px;
-					margin-bottom: -10px;
-					content: " ";
-					height: 45px;
-					@media (min-width: 680px) and (max-width: 860px)  {
-						width: 190px;
-						background: url("img/stencil-logo-medium.jpg");
-						background-size: 100% auto;
-						background-repeat: no-repeat;
+				// @media (min-width: 861px)  {
+				// 	display: none;
+				// }
+				// @media (min-width: 421px) and (max-width: 679px) {
+				// 	display: none;
+				// }
+				// &:before {
+				// 	margin-top: -11px;
+				// 	margin-right: -2px;
+				// 	margin-bottom: -10px;
+				// 	content: " ";
+				// 	height: 45px;
+				// 	@media (min-width: 680px) and (max-width: 860px)  {
+				// 		width: 190px;
+				// 		background: url("img/stencil-logo-medium.jpg");
+				// 		background-size: 100% auto;
+				// 		background-repeat: no-repeat;
 
-					}
-					@media (max-width: 420px) {
-						width: 190px;
-						background: url("img/stencil-logo-medium.jpg");
-						background-size: 100% auto;
-						background-repeat: no-repeat;
-					}
-				}
+				// 	}
+				// 	@media (max-width: 420px) {
+				// 		width: 190px;
+				// 		background: url("img/stencil-logo-medium.jpg");
+				// 		background-size: 100% auto;
+				// 		background-repeat: no-repeat;
+				// 	}
+				// }
 			}
 			&:after {
 				font-family: $type-script-subhead;
@@ -2206,7 +2247,7 @@ footer.footer {
 						margin-right: 20px;
 					}
 				}
-				@media (max-width: 500px) {
+				@media (max-width: 499px) {
 					width: span(22);
 					padding-top: 8px;
 				}
@@ -2226,7 +2267,7 @@ footer.footer {
 					font-weight: 500;
 					font-size: 16px;
 				}
-				@media (max-width: 500px) {
+				@media (max-width: 499px) {
 					width: span(22);
 					.human {
 						width: 100px;
@@ -2279,25 +2320,35 @@ footer.footer {
 .woocommerce-message, .woocommerce-error, .error {
 	display: block;
 	background: $yellow;
-	@media (max-width: 500px) {
+	@media (max-width: 499px) {
 		padding: 14px 13px;
 		text-align: center;
 		line-height: 1.2;
 	}
-	padding: 17px 20px;	
+	padding: 17px 20px;
+	@media (min-width: 500px) {	
+		padding-right: 128px;
+		position: relative;
+	}
 }
 .woocommerce-message, .woocommerce-error  {
 	margin: 10px 0px;
 	a {
 		text-align: center;
-		@media (max-width: 500px) {
+		@media (max-width: 499px) {
 			display: block;
 			width: 100%;
-			margin-bottom: 14px;
+			margin-top: 0px;
+			margin-bottom: 12px;
 		}
-		float: right;
-		margin-bottom: -5px;
-		margin-top: -5px;
+		@media (min-width: 500px) {
+			position: absolute; 
+			right: 17px;
+			top: 50%;
+			transform: translateY(-50%);
+			transform-style: preserve-3d;
+
+		}
 	}
 	@media (min-width: 500px) {
 		margin-top: -5px;

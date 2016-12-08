@@ -26,7 +26,7 @@ if ( ! $messages ){
 ?>
 <ul class="woocommerce-error" id="error">
 	<?php foreach ( $messages as $message ) : ?>
-		<li><?php echo wp_kses_post( $message ); ?><a id="wc-close" class="button wc-close chamfered-button chamfered-button-white">K THX</a></li>
+		<li><a id="wc-close" class="button wc-close chamfered-button chamfered-button-white">K THX</a><?php echo wp_kses_post( $message ); ?></li>
 	<?php endforeach; ?>
 </ul>
 <style>

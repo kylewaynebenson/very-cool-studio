@@ -188,6 +188,11 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
   background: $gray-1;
 }
+.input-text {
+	font-size: 16px;
+	line-height: 23px;
+	font-weight: 300 !important;	
+}
 /* Select styles */
 .select {
 	position: relative;
@@ -273,7 +278,7 @@ input[type=radio]:checked + .icon {
 		text-align: left;
 		position: absolute;
 		left: 19px;
-		top: 33px;
+		top: 27px;
 		height: 10px;
 		background: $gray-1;
 		border-left: 3px solid $gray-1;

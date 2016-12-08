@@ -42,6 +42,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+.logo-black { fill: #231f20; }
+
+.logo-yellow { fill: #ffd138; }
+
+.logo-red { fill: #ff6633; }
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -903,11 +909,16 @@ body { background: #f0f0f0; }
 @media (min-width: 480px) { #page { padding: 25px; } }
 #page .entry-content > h5:first-of-type { margin-top: 0px; }
 #page .page-title { margin-top: 0px; }
-#page header.site-header .site-branding a { display: block; }
-#page header.site-header .site-branding .icon-logo:before { content: " "; display: block; width: 320px; height: 45px; background: url("img/stencil-logo.jpg"); background-size: 100% auto; background-repeat: no-repeat; margin-top: -11px; margin-right: -2px; margin-bottom: -4px; }
+@media (min-width: 861px) { #page header.site-header .site-branding .svg-logo { width: 320px; display: block; padding-bottom: 8px; margin-top: -9px; } }
+@media (min-width: 421px) and (max-width: 679px) { #page header.site-header .site-branding .svg-logo { width: 320px; display: block; padding-bottom: 0px; margin-top: -9px; } }
+@media (min-width: 680px) and (max-width: 860px) { #page header.site-header .site-branding .svg-logo { display: none; } }
+@media (max-width: 420px) { #page header.site-header .site-branding .svg-logo { display: none; } }
+@media (min-width: 861px) { #page header.site-header .site-branding .icon-logo { display: none; } }
+@media (min-width: 421px) and (max-width: 679px) { #page header.site-header .site-branding .icon-logo { display: none; } }
+#page header.site-header .site-branding .icon-logo:before { margin-top: -11px; margin-right: -2px; margin-bottom: -10px; content: " "; height: 45px; }
 @media (min-width: 680px) and (max-width: 860px) { #page header.site-header .site-branding .icon-logo:before { width: 190px; background: url("img/stencil-logo-medium.jpg"); background-size: 100% auto; background-repeat: no-repeat; } }
 @media (max-width: 420px) { #page header.site-header .site-branding .icon-logo:before { width: 190px; background: url("img/stencil-logo-medium.jpg"); background-size: 100% auto; background-repeat: no-repeat; } }
-#page header.site-header .site-branding:after { font-family: "Business Script"; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; font-weight: 500; font-size: 1.2em; line-height: 0; margin-left: 15px; }
+#page header.site-header .site-branding:after { font-family: "Business Script"; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; font-weight: 500; font-size: 1.1em; display: inline-block; padding-top: 18px; line-height: 0; margin-left: 15px; }
 
 .single-product .woocommerce-breadcrumb { display: none; height: 0px; }
 

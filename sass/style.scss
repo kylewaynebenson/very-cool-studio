@@ -1790,38 +1790,61 @@ body {
 	}
 	header.site-header {
 		.site-branding {
-			a {
-				display: block;
-			}
-			.icon-logo:before {
-				content: " ";
-				display: block;
-				width: 320px;
-				height: 45px;
-				background: url("img/stencil-logo.jpg");
-				background-size: 100% auto;
-				background-repeat: no-repeat;
-				margin-top: -11px;
-				margin-right: -2px;
-				margin-bottom: -4px;
-				@media (min-width: 680px) and (max-width: 860px)  {
-					width: 190px;
-					background: url("img/stencil-logo-medium.jpg");
-					background-size: 100% auto;
-					background-repeat: no-repeat;
+			.svg-logo {
+				@media (min-width: 861px)  {
+					width: 320px;
+					display: block;
+					padding-bottom: 8px;
+					margin-top: -9px;
 				}
-				@media (max-width: 420px) {
-					width: 190px;
-					background: url("img/stencil-logo-medium.jpg");
-					background-size: 100% auto;
-					background-repeat: no-repeat;
+				@media (min-width: 421px) and (max-width: 679px)  {
+					width: 320px;
+					display: block;
+					padding-bottom: 0px;
+					margin-top: -9px;
+				}
+				@media (min-width: 680px) and (max-width: 860px)  {
+					display: none;
+				}
+				@media (max-width: 420px)  {
+					display: none;
+				}
+			}
+			.icon-logo {
+				@media (min-width: 861px)  {
+					display: none;
+				}
+				@media (min-width: 421px) and (max-width: 679px) {
+					display: none;
+				}
+				&:before {
+					margin-top: -11px;
+					margin-right: -2px;
+					margin-bottom: -10px;
+					content: " ";
+					height: 45px;
+					@media (min-width: 680px) and (max-width: 860px)  {
+						width: 190px;
+						background: url("img/stencil-logo-medium.jpg");
+						background-size: 100% auto;
+						background-repeat: no-repeat;
+
+					}
+					@media (max-width: 420px) {
+						width: 190px;
+						background: url("img/stencil-logo-medium.jpg");
+						background-size: 100% auto;
+						background-repeat: no-repeat;
+					}
 				}
 			}
 			&:after {
 				font-family: $type-script-subhead;
 				font-feature-settings: "liga" 1;
 				font-weight: 500;
-				font-size: 1.2em;
+				font-size: 1.1em;
+				display: inline-block;
+				padding-top: 18px;
 				line-height: 0;
 				margin-left: 15px;
 			}

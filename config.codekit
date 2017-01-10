@@ -29,6 +29,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/style.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/webfonts-cardinal-grotesque.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -303,12 +312,34 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/jquery.navigate.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/jquery.navigate.js",
+		"outputAbbreviatedPath": "\/js\/min\/jquery.navigate-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/min\/classie-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/min\/classie-min.js",
 		"outputAbbreviatedPath": "\/js\/min\/min\/classie-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/min\/jquery.navigate-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/jquery.navigate-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/jquery.navigate-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -1787,14 +1818,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/sass\/typography\/webfonts-martime-champion.scss": {
+	"\/sass\/typography\/webfonts-maritime-champion.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/typography\/webfonts-martime-champion.scss",
+		"inputAbbreviatedPath": "\/sass\/typography\/webfonts-maritime-champion.scss",
 		"outputAbbreviatedPath": "\/css\/webfonts-maritime-champion.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,

@@ -207,12 +207,12 @@ a.squiggle-black {
 		margin-right: 3px;
 		background: $black;
 		color: $white;
-		font-family: $type-subhead;
+		font-family: $type-subhead-expanded;
 		letter-spacing: .08em;
-		font-size: 12px;
+		font-size: 11px;
 		line-height: 1;
 		padding: 2px 8px 3px 8px;
-		font-weight: 500;
+		font-weight: 600;
 		text-transform: uppercase;
 		transition: background 0.3s;
 		&:hover {
@@ -690,6 +690,10 @@ a.squiggle-black {
 			padding: 18px 19px;
 			padding-bottom: 15px;
 			border: 3px solid $black;
+			.wp-post-image {
+				min-width: 100%;
+				min-height: 180px;
+			}
 		}
 		.entry-footer {
 			padding: 20px;
@@ -881,6 +885,21 @@ Cart Styles
 			margin-top: 10px;
 			line-height: 1.2;
 		}
+		.create-account {
+			p {
+				padding: 10px 0px;
+				&:last-of-type {
+					padding-top: 0px;
+				}
+			}
+			.woocommerce-password-strength {
+				text-transform: uppercase;
+				font-family: $type-subhead-expanded;
+				font-size: 12px;
+				letter-spacing: .08em;
+				padding: 10px 0px 2px 0px;
+			}
+		}
 	}
 }
 #payment {
@@ -905,10 +924,10 @@ Cart Styles
 					display: block;
 					float: left;
 					margin-right: 10px;
-					width: 105px;
+					width: 115px;
 				}
 				#s4wc_save_card_field {
-					max-width: 80px;
+					max-width: 115px;
 					float: right;
 					margin-top: 25px;
 					line-height: 1.1;
@@ -986,10 +1005,18 @@ Cart Styles
 		}
 	}
 	.cart-subtotal, .shipping {
+		font-family: $type-subhead-expanded;
+		font-size: 13px;
 		color: $gray-2;
-		font-size: 16px;
-		color: $gray-2;
-		font-weight: 300;
+		font-weight: 500;
+	}
+	.cart-subtotal {
+		th, td {
+			padding: 0px;
+			line-height: 1;
+		}
+		opacity: 0;
+		padding: 0px;
 	}
 	@media (min-width: 769px) {
 		.cart-subtotal {
@@ -1012,6 +1039,9 @@ Cart Styles
 		}
 	}
 	.order-total {
+		th {
+			font-family: $type-subhead;
+		}
 		@media (min-width: 769px) {
 			td, th {
 				background: $black;
@@ -1049,6 +1079,13 @@ Cart Styles
 				border: 0px;
 				text-align: right;
 			}
+			[data-title="Subtotal"] {
+				font-family: $type-subhead-expanded;
+				font-weight: 600;
+				.amount {
+					font-weight: 600;
+				}
+			}
 		}
 		caption {
 			padding-left: 20px;
@@ -1065,7 +1102,8 @@ Cart Styles
 			vertical-align: bottom;
 		}
 		td, th {
-			font-size: 16px;
+			font-size: 13px;
+			font-weight: 600;
 			text-transform: uppercase;
 			line-height: 1;
 		}
@@ -1130,13 +1168,13 @@ Product Styles
 							margin-bottom: 0px;
 						}
 						.post-meta-key {
-							font-family: $type-subhead;
+							font-family: $type-subhead-expanded;
 							font-weight: 600;
 							text-transform: uppercase;
-							letter-spacing: .17em;
-							font-size: 15px;
+							letter-spacing: .12em;
+							font-size: 12px;
 							display: inline-block;
-							width: 86px;
+							width: 82px;
 						}
 					}
 				}
@@ -1248,21 +1286,21 @@ Product Styles
 		&.smcp {
 			font-feature-settings: "smcp" 1;
 		}
-		&.cardinal-grotesque { font-family: 'Cardinal Grotesque'; line-height: 1; &.semiboldcondensed, &.lightcondensed, &.extralightcondensed, &.thincondensed, &.regularcondensed, &.boldcondensed, &.extraboldcondensed { font-family: 'Cardinal Grotesque Cond';} &.semiboldnarrow, &.lightnarrow, &.extralightnarrow, &.thinnarrow, &.regularnarrow, &.boldnarrow, &.extraboldnarrow { font-family: 'Cardinal Grotesque Narrow';}}
+		&.cardinal-grotesque { font-family: 'Cardinal Grotesque'; line-height: 1; &.condensed { font-family: 'Cardinal Grotesque Cond';} &.narrow { font-family: 'Cardinal Grotesque Narrow';} &.expanded { font-family: 'Cardinal Grotesque Expanded';} &.compressed { font-family: 'Cardinal Grotesque Compressed';} &.extracondensed { font-family: 'Cardinal Grotesque Extracondensed';}}
 		&.business-script { font-family: 'Business Script'; line-height: 1;}
 		&.kansas-casual { font-family: 'Kansas Casual'; line-height: 1;}
-		&.maritime-champion { font-family: 'Maritime Champion'; line-height: 1; &.mediumst, &.lightst, &.regularst, &.boldst { font-family: 'Maritime Champion ST';} &.mediumsl, &.lightsl, &.regularsl, &.boldsl { font-family: 'Maritime Champion SL';}}
+		&.maritime-champion { font-family: 'Maritime Champion'; line-height: 1; &.st { font-family: 'Maritime Champion ST';} &.sl { font-family: 'Maritime Champion SL';}}
 		&.cornbread { font-family: 'Cornbread'; line-height: 1;}
 		&.ready-script { font-family: 'Ready Script'; line-height: 1;}
 	}
-	.fontweight.extralight, .fontweight.extralightcondensed, .fontweight.extralightnarrow { font-weight: 100;}
-	.fontweight.light, .fontweight.lightcondensed, .fontweight.lightnarrow, .fontweight.lightst, .fontweight.lightsl { font-weight: 200;}
-	.fontweight.regular, .fontweight.regularcondensed, .fontweight.regularnarrow, .fontweight.regularst, .fontweight.regularsl { font-weight: 300;}
-	.fontweight.medium, .fontweight.mediumcondensed, .fontweight.mediumnarrow, .fontweight.mediumst, .fontweight.mediumsl { font-weight: 400;}
-	.fontweight.semibold, .fontweight.semiboldcondensed, .fontweight.semiboldnarrow { font-weight: 500;}
-	.fontweight.bold, .fontweight.boldcondensed, .fontweight.boldnarrow, .fontweight.boldst, .fontweight.boldsl { font-weight: 600;}
-	.fontweight.extrabold, .fontweight.extraboldcondensed, .fontweight.extraboldnarrow { font-weight: 700;}
-	.fontweight.black, .fontweight.blackcondensed, .fontweight.blacknarrow { font-weight: 900;}
+	.fontweight.extralight { font-weight: 100;}
+	.fontweight.light { font-weight: 200;}
+	.fontweight.regular { font-weight: 300;}
+	.fontweight.medium { font-weight: 400;}
+	.fontweight.semibold { font-weight: 500;}
+	.fontweight.bold { font-weight: 600;}
+	.fontweight.extrabold { font-weight: 700;}
+	.fontweight.black { font-weight: 900;}
 
 	.type-tester-title {
 		display: none;
@@ -1509,19 +1547,19 @@ Product Styles
 					font-family: $type-subhead;
 					height: 34px;
 					font-weight: 500;
-					overflow-x: hidden;
+					overflow: hidden;
 					white-space: nowrap;
 					font-size: 25px;
 					letter-spacing: .02em;
 				}
 				.post-meta-key {
-					font-family: $type-subhead;
+					font-family: $type-subhead-expanded;
 					font-weight: 600;
 					text-transform: uppercase;
-					letter-spacing: .17em;
-					font-size: 15px;
+					letter-spacing: .12em;
+					font-size: 12px;
 					display: inline-block;
-					width: 86px;
+					width: 82px;
 				}
 				&:last-of-type {
 					margin-top: 18px;
@@ -1566,17 +1604,20 @@ Product Styles
 			@media only screen and (max-width: 767px) {
 				margin-left: 8%;
 			}
-			font-family: $type-subhead;
+			font-family: $type-subhead-expanded;
 			font-weight: 600;
 			text-transform: uppercase;
-			letter-spacing: .12em;
-			font-size: .8em;
+			letter-spacing: .1em;
+			font-size: .75em;
 			line-height: 1.15;
 			.nav-next {
 				text-align: right;
 			}
 			.nav-previous, .nav-next  {
-				width: 42%;
+				width: 49.5%;
+				&:only-of-type {
+					width: 100%;
+				}
 				float: left;
 				position: relative;
 				cursor: pointer;
@@ -1618,7 +1659,7 @@ Product Styles
 				&:before {
 					border-right: 12px solid $yellow; 
 					border-left: 12px solid white;
-					left: -22px;
+					left: -12px;
 				}
 				&:hover {
 					&:before {
@@ -1635,7 +1676,7 @@ Product Styles
 				&:before {
 					border-left:12px solid $yellow; 
 					border-right:12px solid white;
-					right: -22px;
+					right: -12px;
 				}
 				&:hover {
 					&:before {
@@ -1649,11 +1690,11 @@ Product Styles
 				}
 			}
 			.nav-previous {
-				margin-left: 10px;
+				padding-left: 10px;
 				float: left;
 			}
 			.nav-next {
-				margin-right: 10px;
+				padding-right: 10px;
 			}
 		}
 	}
@@ -2112,11 +2153,11 @@ body {
 		padding-top: 40px;
 	}
 	.post-navigation {
-		font-family: $type-subhead;
+		font-family: $type-subhead-expanded;
 		font-weight: 600;
 		text-transform: uppercase;
-		letter-spacing: .12em;
-		font-size: .8em;
+		letter-spacing: .1em;
+		font-size: .75em;
 		line-height: 1.15;
 		.nav-previous, .nav-next  {
 			min-width: 25%;
@@ -2214,17 +2255,14 @@ footer.footer {
 				margin-bottom: 0px;
 			}
 			.contact-phone, .contact-address {
-				@include span(11);
+				@include span(18);
 				text-align: right;
 				line-height: 1.2;
 			}
-			.contact-address {
-				@include span(7);
-			}
 		}
 		@media (min-width: 1048px) {
-			.contact-phone, .contact-address, .contact-title {
-				@include span(8);	
+			.contact-phone, .contact-title {
+				@include span(12);	
 			}
 		}
 		.contact-title {
@@ -2275,8 +2313,8 @@ footer.footer {
 				}
 			}
 			textarea {
-				font-size: 16px;
-				line-height: 1;
+				font-size: 1.6em;
+				line-height: 1.15;
 				padding: 16px 25px;
 				min-height: 120px;
 				resize: vertical;

@@ -25,7 +25,30 @@ textarea {
 	outline: none;
 	&:focus {
 		background: $white;
+		color: $black;
 	}
+	&::placeholder {
+		color: $gray-2;
+	}
+}
+.select2-results {
+	font-family: $type-subhead;
+	font-weight: 500;
+	letter-spacing: .02em;
+	.select2-result-label {
+		padding: 1px 10px;
+	}
+}
+.select2-container {
+	color: $black;
+	background: transparent;
+	font-family: $type-subhead;
+	font-weight: 500;
+	letter-spacing: .02em;
+	outline: none;
+}
+input[type="text"].select2-input {
+	border: 0px;
 }
 #white-page input[type="text"],
 #white-page input[type="email"],
@@ -73,6 +96,9 @@ textarea.input-white {
 		color: $black;
 		border: 3px solid $black;
 	}
+	&::placeholder {
+		color: $gray-2;
+	}
 }
 
 input[type="text"],
@@ -101,10 +127,11 @@ label.hidden {
 }
 label {
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 11px;
+	letter-spacing: .08em;
 	color: $black;
-	font-weight: 500;
-	font-family: $type-subhead;
+	font-weight: 600;
+	font-family: $type-subhead-expanded;
 }
 form {
 	p {
@@ -191,7 +218,7 @@ input[type=range]:focus::-ms-fill-upper {
 .input-text {
 	font-size: 16px;
 	line-height: 23px;
-	font-weight: 300 !important;	
+	font-weight: 500;
 }
 /* Select styles */
 .select {

@@ -135,27 +135,33 @@ td, th { padding: 0; }
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-@font-face { font-family: 'Business Script'; font-weight: 300; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; src: url("./type/BusinessScript-Regular.eot");
+@font-face { font-family: 'Business Script'; font-weight: 300; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; src: url("./type/business-script/BusinessScript-Regular.eot");
   /* IE9 Compat Modes */
-src: url("./type/BusinessScript-Regular.eot?#iefix") format("embedded-opentype"), url("./type/BusinessScript-Regular.woff2") format("woff2"), url("./type/BusinessScript-Regular.woff") format("woff"); }
-@font-face { font-family: 'Cornbread'; font-weight: 300; src: url("./type/Cornbread-Regular.eot");
+src: url("./type/business-script/BusinessScript-Regular.eot?#iefix") format("embedded-opentype"), url("./type/business-script/BusinessScript-Regular.woff2") format("woff2"), url("./type/business-script/BusinessScript-Regular.woff") format("woff"); }
+@font-face { font-family: 'Cornbread'; font-weight: 300; src: url("./type/cornbread/Cornbread-Regular.eot");
   /* IE9 Compat Modes */
-src: url("./type/Cornbread-Regular.eot?#iefix") format("embedded-opentype"), url("./type/Cornbread-Regular.woff2") format("woff2"), url("./type/Cornbread-Regular.woff") format("woff"); }
-@font-face { font-family: 'Cardinal Grotesque'; font-weight: 400; src: url("./type/CardinalGrotesque-Medium.eot");
+src: url("./type/cornbread/Cornbread-Regular.eot?#iefix") format("embedded-opentype"), url("./type/cornbread/Cornbread-Regular.woff2") format("woff2"), url("./type/cornbread/Cornbread-Regular.woff") format("woff"); }
+@font-face { font-family: 'Cardinal Grotesque'; font-weight: 400; src: url("./type/cardinal-grotesque/CardinalGrotesque-Medium.eot");
   /* IE9 Compat Modes */
-src: url("./type/CardinalGrotesque-Medium.eot?#iefix") format("embedded-opentype"), url("./type/CardinalGrotesque-Medium.woff2") format("woff2"), url("./type/CardinalGrotesque-Medium.woff") format("woff"); }
-@font-face { font-family: 'Cardinal Grotesque'; font-weight: 500; src: url("./type/CardinalGrotesque-SemiBold.eot");
+src: url("./type/cardinal-grotesque/CardinalGrotesque-Medium.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesque-Medium.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesque-Medium.woff") format("woff"); }
+@font-face { font-family: 'Cardinal Grotesque'; font-weight: 500; src: url("./type/cardinal-grotesque/CardinalGrotesque-SemiBold.eot");
   /* IE9 Compat Modes */
-src: url("./type/CardinalGrotesque-SemiBold.eot?#iefix") format("embedded-opentype"), url("./type/CardinalGrotesque-SemiBold.woff2") format("woff2"), url("./type/CardinalGrotesque-SemiBold.woff") format("woff"); }
-@font-face { font-family: 'Cardinal Grotesque'; font-weight: 600; src: url("./type/CardinalGrotesque-Bold.eot");
+src: url("./type/cardinal-grotesque/CardinalGrotesque-SemiBold.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesque-SemiBold.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesque-SemiBold.woff") format("woff"); }
+@font-face { font-family: 'Cardinal Grotesque'; font-weight: 600; src: url("./type/cardinal-grotesque/CardinalGrotesque-Bold.eot");
   /* IE9 Compat Modes */
-src: url("./type/CardinalGrotesque-Bold.eot?#iefix") format("embedded-opentype"), url("./type/CardinalGrotesque-Bold.woff2") format("woff2"), url("./type/CardinalGrotesque-Bold.woff") format("woff"); }
+src: url("./type/cardinal-grotesque/CardinalGrotesque-Bold.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesque-Bold.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesque-Bold.woff") format("woff"); }
 @font-face { font-family: 'Very Cool Icons'; src: url("./type/verycoolicons-Regular.eot");
   /* IE9 Compat Modes */
 src: url("./type/verycoolicons-Regular.eot?#iefix") format("embedded-opentype"), url("./type/verycoolicons-Regular.woff2") format("woff2"), url("./type/verycoolicons-Regular.woff") format("woff"); }
-@font-face { font-family: 'Cardinal Grotesque Cond'; font-weight: 600; src: url("./type/CardinalGrotesque-SemiBoldCondensed.eot");
+@font-face { font-family: 'Cardinal Grotesque Cond'; font-weight: 600; src: url("./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.eot");
   /* IE9 Compat Modes */
-src: url("./type/CardinalGrotesque-SemiBoldCondensed.eot?#iefix") format("embedded-opentype"), url("./type/CardinalGrotesque-SemiBoldCondensed.woff2") format("woff2"), url("./type/CardinalGrotesque-SemiBoldCondensed.woff") format("woff"); }
+src: url("./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.woff") format("woff"); }
+@font-face { font-family: 'Cardinal Grotesque Expanded'; font-weight: 500; src: url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Semibold.eot");
+  /* IE9 Compat Modes */
+src: url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Semibold.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Semibold.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Semibold.woff") format("woff"); }
+@font-face { font-family: 'Cardinal Grotesque Expanded'; font-weight: 600; src: url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.eot");
+  /* IE9 Compat Modes */
+src: url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.woff") format("woff"); }
 .icon:before { display: inline-block; font-family: 'Very Cool Icons'; font-style: normal; font-weight: 400; font-size: 2.6em; line-height: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 .icon-2x:before { font-size: 4em; }
@@ -209,7 +215,7 @@ h3, .h3 { font-family: "Cardinal Grotesque"; font-weight: 500; font-size: 1.6em;
 
 h4, .h4 { font-family: "Business Script"; font-weight: 500; font-size: 1.3em; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; }
 
-h5, .h5 { font-family: "Cardinal Grotesque"; font-weight: 600; text-transform: uppercase; letter-spacing: .17em; font-size: .8em; -webkit-font-feature-settings: "case" 1; -ms-font-feature-settings: "case" 1; font-feature-settings: "case" 1; }
+h5, .h5 { font-family: "Cardinal Grotesque Expanded"; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; font-size: .8em; -webkit-font-feature-settings: "case" 1; -ms-font-feature-settings: "case" 1; font-feature-settings: "case" 1; }
 
 h6, .h6 { font-size: 1.3em; letter-spacing: .1em; }
 
@@ -279,7 +285,7 @@ img { height: auto; /* Make sure images are scaled correctly. */ max-width: 100%
 
 table { margin: 0 0 1.5em; width: 100%; font-family: "Cardinal Grotesque"; font-weight: 300; font-size: 1.6em; letter-spacing: .02em; }
 table caption { background: #231f20; color: #ffffff; text-transform: uppercase; text-align: left; padding: 5px 10px; }
-table th { text-transform: uppercase; font-size: 16px; text-align: left; font-weight: 500; }
+table th { text-transform: uppercase; font-family: "Cardinal Grotesque Expanded"; letter-spacing: .1em; text-align: left; font-weight: 500; }
 @media (max-width: 500px) { table { font-size: 1.2em; line-height: 1.2; } }
 @media (max-width: 768px) { table thead th { padding: 5px 0px 0px 0px; }
   table tr td, table caption { padding: 5px 0px; border-bottom: 3px solid #f0f0f0; }
@@ -295,7 +301,7 @@ table.list-box { box-sizing: border-box; list-style-type: none; margin-left: 0px
   table.list-box tfoot th { padding: 0px 20px; }
   table.list-box tbody tr:nth-of-type(even) { background: #f0f0f0; }
   table.list-box tbody tr:last-of-type { background: #ffffff; } }
-table.list-box thead { font-size: 16px; text-align: left; }
+table.list-box thead { text-transform: uppercase; font-family: "Cardinal Grotesque Expanded"; letter-spacing: .1em; text-align: left; font-weight: 500; font-size: 13px; }
 table.list-box tr img { max-height: 30px; width: auto; }
 table.list-box tr a { text-decoration: none; line-height: 1; }
 table.list-box tr td { vertical-align: bottom; }
@@ -310,7 +316,7 @@ table.list-box tr .product-subtotal { text-align: right; font-weight: 500; }
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-button, input[type="button"], input[type="reset"], input[type="submit"] { font-family: "Cardinal Grotesque"; font-weight: 500; font-size: .8em; text-transform: uppercase; letter-spacing: 1px; border: 3px solid #231f20; background: #231f20; color: #ffd138; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { font-family: "Cardinal Grotesque"; font-weight: 500; font-size: .75em; text-transform: uppercase; letter-spacing: 1px; border: 3px solid #231f20; background: #231f20; color: #ffd138; }
 button:active, button:focus, input[type="button"]:active, input[type="button"]:focus, input[type="reset"]:active, input[type="reset"]:focus, input[type="submit"]:active, input[type="submit"]:focus { outline: none; }
 
 .woocommerce-message a.button { float: right; margin-top: -2px; }
@@ -339,16 +345,31 @@ input[type="submit"].chamfered-button-gray:active, .chamfered-button-gray:active
 input[type="submit"].chamfered-button-gray:visited, .chamfered-button-gray:visited, .wc-backward.button:visited { color: #231f20; }
 
 input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea { color: #231f20; border: 3px solid #231f20; padding: 3px 5px; border-radius: 0px; background: transparent; width: 100%; font-family: "Cardinal Grotesque"; font-weight: 500; letter-spacing: .02em; outline: none; }
-input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, textarea:focus { background: #ffffff; }
+input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, textarea:focus { background: #ffffff; color: #231f20; }
+input[type="text"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="number"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="date"]::-webkit-input-placeholder, input[type="month"]::-webkit-input-placeholder, input[type="week"]::-webkit-input-placeholder, input[type="time"]::-webkit-input-placeholder, input[type="datetime"]::-webkit-input-placeholder, input[type="datetime-local"]::-webkit-input-placeholder, input[type="color"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #e0e0e0; }
+input[type="text"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="url"]::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="number"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="date"]::-moz-placeholder, input[type="month"]::-moz-placeholder, input[type="week"]::-moz-placeholder, input[type="time"]::-moz-placeholder, input[type="datetime"]::-moz-placeholder, input[type="datetime-local"]::-moz-placeholder, input[type="color"]::-moz-placeholder, textarea::-moz-placeholder { color: #e0e0e0; }
+input[type="text"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="number"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="date"]:-ms-input-placeholder, input[type="month"]:-ms-input-placeholder, input[type="week"]:-ms-input-placeholder, input[type="time"]:-ms-input-placeholder, input[type="datetime"]:-ms-input-placeholder, input[type="datetime-local"]:-ms-input-placeholder, input[type="color"]:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #e0e0e0; }
+input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="url"]::placeholder, input[type="password"]::placeholder, input[type="search"]::placeholder, input[type="number"]::placeholder, input[type="tel"]::placeholder, input[type="date"]::placeholder, input[type="month"]::placeholder, input[type="week"]::placeholder, input[type="time"]::placeholder, input[type="datetime"]::placeholder, input[type="datetime-local"]::placeholder, input[type="color"]::placeholder, textarea::placeholder { color: #e0e0e0; }
+
+.select2-results { font-family: "Cardinal Grotesque"; font-weight: 500; letter-spacing: .02em; }
+.select2-results .select2-result-label { padding: 1px 10px; }
+
+.select2-container { color: #231f20; background: transparent; font-family: "Cardinal Grotesque"; font-weight: 500; letter-spacing: .02em; outline: none; }
+
+input[type="text"].select2-input { border: 0px; }
 
 #white-page input[type="text"], #white-page input[type="email"], #white-page input[type="url"], #white-page input[type="password"], #white-page input[type="search"], #white-page input[type="number"], #white-page input[type="tel"], #white-page input[type="date"], #white-page input[type="month"], #white-page input[type="week"], #white-page input[type="time"], #white-page input[type="datetime"], #white-page input[type="datetime-local"], #white-page input[type="color"], #white-page textarea, input[type="text"].input-white, input[type="email"].input-white, input[type="url"].input-white, input[type="password"].input-white, input[type="search"].input-white, input[type="number"].input-white, input[type="tel"].input-white, input[type="date"].input-white, input[type="month"].input-white, input[type="week"].input-white, input[type="time"].input-white, input[type="datetime"].input-white, input[type="datetime-local"].input-white, input[type="color"].input-white, textarea.input-white { color: #e0e0e0; border: 3px solid #f0f0f0; border-radius: 0px; background: #ffffff; width: 100%; font-family: "Cardinal Grotesque"; font-weight: 500; padding: 1px 10px 2px 10px; letter-spacing: .02em; outline: none; -webkit-transition: border 0.3s; transition: border 0.3s; }
 #white-page input[type="text"]:focus, #white-page input[type="email"]:focus, #white-page input[type="url"]:focus, #white-page input[type="password"]:focus, #white-page input[type="search"]:focus, #white-page input[type="number"]:focus, #white-page input[type="tel"]:focus, #white-page input[type="date"]:focus, #white-page input[type="month"]:focus, #white-page input[type="week"]:focus, #white-page input[type="time"]:focus, #white-page input[type="datetime"]:focus, #white-page input[type="datetime-local"]:focus, #white-page input[type="color"]:focus, #white-page textarea:focus, input[type="text"].input-white:focus, input[type="email"].input-white:focus, input[type="url"].input-white:focus, input[type="password"].input-white:focus, input[type="search"].input-white:focus, input[type="number"].input-white:focus, input[type="tel"].input-white:focus, input[type="date"].input-white:focus, input[type="month"].input-white:focus, input[type="week"].input-white:focus, input[type="time"].input-white:focus, input[type="datetime"].input-white:focus, input[type="datetime-local"].input-white:focus, input[type="color"].input-white:focus, textarea.input-white:focus { background: #ffffff; color: #231f20; border: 3px solid #231f20; }
+#white-page input[type="text"]::-webkit-input-placeholder, #white-page input[type="email"]::-webkit-input-placeholder, #white-page input[type="url"]::-webkit-input-placeholder, #white-page input[type="password"]::-webkit-input-placeholder, #white-page input[type="search"]::-webkit-input-placeholder, #white-page input[type="number"]::-webkit-input-placeholder, #white-page input[type="tel"]::-webkit-input-placeholder, #white-page input[type="date"]::-webkit-input-placeholder, #white-page input[type="month"]::-webkit-input-placeholder, #white-page input[type="week"]::-webkit-input-placeholder, #white-page input[type="time"]::-webkit-input-placeholder, #white-page input[type="datetime"]::-webkit-input-placeholder, #white-page input[type="datetime-local"]::-webkit-input-placeholder, #white-page input[type="color"]::-webkit-input-placeholder, #white-page textarea::-webkit-input-placeholder, input[type="text"].input-white::-webkit-input-placeholder, input[type="email"].input-white::-webkit-input-placeholder, input[type="url"].input-white::-webkit-input-placeholder, input[type="password"].input-white::-webkit-input-placeholder, input[type="search"].input-white::-webkit-input-placeholder, input[type="number"].input-white::-webkit-input-placeholder, input[type="tel"].input-white::-webkit-input-placeholder, input[type="date"].input-white::-webkit-input-placeholder, input[type="month"].input-white::-webkit-input-placeholder, input[type="week"].input-white::-webkit-input-placeholder, input[type="time"].input-white::-webkit-input-placeholder, input[type="datetime"].input-white::-webkit-input-placeholder, input[type="datetime-local"].input-white::-webkit-input-placeholder, input[type="color"].input-white::-webkit-input-placeholder, textarea.input-white::-webkit-input-placeholder { color: #e0e0e0; }
+#white-page input[type="text"]::-moz-placeholder, #white-page input[type="email"]::-moz-placeholder, #white-page input[type="url"]::-moz-placeholder, #white-page input[type="password"]::-moz-placeholder, #white-page input[type="search"]::-moz-placeholder, #white-page input[type="number"]::-moz-placeholder, #white-page input[type="tel"]::-moz-placeholder, #white-page input[type="date"]::-moz-placeholder, #white-page input[type="month"]::-moz-placeholder, #white-page input[type="week"]::-moz-placeholder, #white-page input[type="time"]::-moz-placeholder, #white-page input[type="datetime"]::-moz-placeholder, #white-page input[type="datetime-local"]::-moz-placeholder, #white-page input[type="color"]::-moz-placeholder, #white-page textarea::-moz-placeholder, input[type="text"].input-white::-moz-placeholder, input[type="email"].input-white::-moz-placeholder, input[type="url"].input-white::-moz-placeholder, input[type="password"].input-white::-moz-placeholder, input[type="search"].input-white::-moz-placeholder, input[type="number"].input-white::-moz-placeholder, input[type="tel"].input-white::-moz-placeholder, input[type="date"].input-white::-moz-placeholder, input[type="month"].input-white::-moz-placeholder, input[type="week"].input-white::-moz-placeholder, input[type="time"].input-white::-moz-placeholder, input[type="datetime"].input-white::-moz-placeholder, input[type="datetime-local"].input-white::-moz-placeholder, input[type="color"].input-white::-moz-placeholder, textarea.input-white::-moz-placeholder { color: #e0e0e0; }
+#white-page input[type="text"]:-ms-input-placeholder, #white-page input[type="email"]:-ms-input-placeholder, #white-page input[type="url"]:-ms-input-placeholder, #white-page input[type="password"]:-ms-input-placeholder, #white-page input[type="search"]:-ms-input-placeholder, #white-page input[type="number"]:-ms-input-placeholder, #white-page input[type="tel"]:-ms-input-placeholder, #white-page input[type="date"]:-ms-input-placeholder, #white-page input[type="month"]:-ms-input-placeholder, #white-page input[type="week"]:-ms-input-placeholder, #white-page input[type="time"]:-ms-input-placeholder, #white-page input[type="datetime"]:-ms-input-placeholder, #white-page input[type="datetime-local"]:-ms-input-placeholder, #white-page input[type="color"]:-ms-input-placeholder, #white-page textarea:-ms-input-placeholder, input[type="text"].input-white:-ms-input-placeholder, input[type="email"].input-white:-ms-input-placeholder, input[type="url"].input-white:-ms-input-placeholder, input[type="password"].input-white:-ms-input-placeholder, input[type="search"].input-white:-ms-input-placeholder, input[type="number"].input-white:-ms-input-placeholder, input[type="tel"].input-white:-ms-input-placeholder, input[type="date"].input-white:-ms-input-placeholder, input[type="month"].input-white:-ms-input-placeholder, input[type="week"].input-white:-ms-input-placeholder, input[type="time"].input-white:-ms-input-placeholder, input[type="datetime"].input-white:-ms-input-placeholder, input[type="datetime-local"].input-white:-ms-input-placeholder, input[type="color"].input-white:-ms-input-placeholder, textarea.input-white:-ms-input-placeholder { color: #e0e0e0; }
+#white-page input[type="text"]::placeholder, #white-page input[type="email"]::placeholder, #white-page input[type="url"]::placeholder, #white-page input[type="password"]::placeholder, #white-page input[type="search"]::placeholder, #white-page input[type="number"]::placeholder, #white-page input[type="tel"]::placeholder, #white-page input[type="date"]::placeholder, #white-page input[type="month"]::placeholder, #white-page input[type="week"]::placeholder, #white-page input[type="time"]::placeholder, #white-page input[type="datetime"]::placeholder, #white-page input[type="datetime-local"]::placeholder, #white-page input[type="color"]::placeholder, #white-page textarea::placeholder, input[type="text"].input-white::placeholder, input[type="email"].input-white::placeholder, input[type="url"].input-white::placeholder, input[type="password"].input-white::placeholder, input[type="search"].input-white::placeholder, input[type="number"].input-white::placeholder, input[type="tel"].input-white::placeholder, input[type="date"].input-white::placeholder, input[type="month"].input-white::placeholder, input[type="week"].input-white::placeholder, input[type="time"].input-white::placeholder, input[type="datetime"].input-white::placeholder, input[type="datetime-local"].input-white::placeholder, input[type="color"].input-white::placeholder, textarea.input-white::placeholder { color: #e0e0e0; }
 
 textarea { width: 100%; }
 
 label.hidden { display: none; }
 
-label { text-transform: uppercase; font-size: 16px; color: #231f20; font-weight: 500; font-family: "Cardinal Grotesque"; }
+label { text-transform: uppercase; font-size: 11px; letter-spacing: .08em; color: #231f20; font-weight: 600; font-family: "Cardinal Grotesque Expanded"; }
 
 form p { margin: 0px; }
 form.cart { margin: 0px; padding: 0px; }
@@ -382,7 +403,7 @@ input[type=range]:focus::-ms-fill-lower { background: #f0f0f0; }
 
 input[type=range]:focus::-ms-fill-upper { background: #f0f0f0; }
 
-.input-text { font-size: 16px; line-height: 23px; font-weight: 300 !important; }
+.input-text { font-size: 16px; line-height: 23px; font-weight: 500; }
 
 /* Select styles */
 .select { position: relative; display: inline-block; }
@@ -418,6 +439,13 @@ a:hover, a:active { outline: 0; }
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+@media screen and (max-width: 1539px) { .keyboard-navigation { display: none; } }
+@media screen and (min-width: 1540px) { .keyboard-navigation .key { display: block; position: fixed; top: 50%; margin-top: -50px; border: 3px solid #e0e0e0; line-height: 48px; width: 54px; height: 54px; text-align: center; color: #e0e0e0; border-radius: 4px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; cursor: default; }
+  .keyboard-navigation .key.key-left { left: 15px; }
+  .keyboard-navigation .key.key-left:hover:after { text-align: left; left: 66px; padding-top: 5px; content: "Use keyboard to navigate."; position: absolute; width: 110px; color: #dbdbdb; letter-spacing: .03em; font-weight: 500; font-family: "Cardinal Grotesque Expanded"; line-height: 1.2; }
+  .keyboard-navigation .key.key-right { right: 15px; }
+  .keyboard-navigation .key.key-right:hover:after { text-align: right; right: 66px; padding-top: 5px; content: "Use keyboard to navigate."; position: absolute; width: 110px; color: #dbdbdb; letter-spacing: .03em; font-weight: 500; font-family: "Cardinal Grotesque Expanded"; line-height: 1.2; } }
+
 @media screen and (max-width: 699px) { .main-navigation { width: 100%; } }
 .main-navigation ul { list-style: none; margin: 0; padding-left: 0; margin-top: -9px; margin-bottom: 5px; }
 @media screen and (max-width: 699px) { .main-navigation ul { display: none; } }
@@ -574,7 +602,7 @@ a.squiggle:hover { background-position: 15px 100%; }
 a.squiggle-black { background-image: url(img/squiggle-black.png); color: #231f20; -webkit-transition: background 0.3s; transition: background 0.3s; }
 a.squiggle-black:hover { background-position: 15px 100%; }
 
-.cat-links a { margin-right: 3px; background: #231f20; color: #ffffff; font-family: "Cardinal Grotesque"; letter-spacing: .08em; font-size: 12px; line-height: 1; padding: 2px 8px 3px 8px; font-weight: 500; text-transform: uppercase; -webkit-transition: background 0.3s; transition: background 0.3s; }
+.cat-links a { margin-right: 3px; background: #231f20; color: #ffffff; font-family: "Cardinal Grotesque Expanded"; letter-spacing: .08em; font-size: 11px; line-height: 1; padding: 2px 8px 3px 8px; font-weight: 600; text-transform: uppercase; -webkit-transition: background 0.3s; transition: background 0.3s; }
 .cat-links a:hover { background: #393234; }
 .cat-links a:active { background: #0d0c0c; }
 .cat-links .cat-for-sale { display: none; }
@@ -653,6 +681,7 @@ a.squiggle-black:hover { background-position: 15px 100%; }
 @media only screen and (min-width: 700px) and (max-width: 919px) { .blog article.post:not(.type-product), .home article.post:not(.type-product), .archive article.post:not(.type-product), .category article.post:not(.type-product) { float: left; margin-left: 4.1666666667%; width: 45.8333333333%; margin-bottom: 4.1666666667%; } }
 @media (min-width: 920px) { .blog article.post:not(.type-product), .home article.post:not(.type-product), .archive article.post:not(.type-product), .category article.post:not(.type-product) { float: left; width: 29.1666666667%; margin-left: 4.1666666667%; margin-bottom: 4.1666666667%; } }
 .blog article.post:not(.type-product) .entry-header, .home article.post:not(.type-product) .entry-header, .archive article.post:not(.type-product) .entry-header, .category article.post:not(.type-product) .entry-header { background: #ffffff; padding: 18px 19px; padding-bottom: 15px; border: 3px solid #231f20; }
+.blog article.post:not(.type-product) .entry-header .wp-post-image, .home article.post:not(.type-product) .entry-header .wp-post-image, .archive article.post:not(.type-product) .entry-header .wp-post-image, .category article.post:not(.type-product) .entry-header .wp-post-image { min-width: 100%; min-height: 180px; }
 .blog article.post:not(.type-product) .entry-footer, .home article.post:not(.type-product) .entry-footer, .archive article.post:not(.type-product) .entry-footer, .category article.post:not(.type-product) .entry-footer { padding: 20px; }
 .blog article.post:not(.type-product) .entry-footer .cat-links a, .home article.post:not(.type-product) .entry-footer .cat-links a, .archive article.post:not(.type-product) .entry-footer .cat-links a, .category article.post:not(.type-product) .entry-footer .cat-links a { background: #ffd138; color: #231f20; }
 
@@ -705,12 +734,15 @@ Cart Styles
 .woocommerce-checkout .woocommerce #billing_state_field, .woocommerce-checkout .woocommerce #shipping_state_field { float: left; width: 55%; margin-right: 5%; }
 .woocommerce-checkout .woocommerce #billing_postcode_field, .woocommerce-checkout .woocommerce #shipping_postcode_field { float: left; width: 40%; }
 .woocommerce-checkout .woocommerce .create-account, .woocommerce-checkout .woocommerce #ss_wc_mailchimp_opt_in_field { background: #f0f0f0; padding: 10px 20px; margin-top: 10px; line-height: 1.2; }
+.woocommerce-checkout .woocommerce .create-account p { padding: 10px 0px; }
+.woocommerce-checkout .woocommerce .create-account p:last-of-type { padding-top: 0px; }
+.woocommerce-checkout .woocommerce .create-account .woocommerce-password-strength { text-transform: uppercase; font-family: "Cardinal Grotesque Expanded"; font-size: 12px; letter-spacing: .08em; padding: 10px 0px 2px 0px; }
 
 #payment .payment_methods { list-style-type: none; margin: 0px; padding-left: 0px; margin-bottom: 10px; }
 #payment .payment_methods .payment_method_s4wc img { display: none; }
 #payment .payment_methods .payment_method_s4wc #s4wc-cc-form { outline: none; border: 3px solid #f0f0f0; border-radius: 20px; padding: 20px; position: relative; margin-top: 10px; margin-bottom: 10px; }
-#payment .payment_methods .payment_method_s4wc #s4wc-cc-form .form-row-first, #payment .payment_methods .payment_method_s4wc #s4wc-cc-form .form-row-last { display: block; float: left; margin-right: 10px; width: 105px; }
-#payment .payment_methods .payment_method_s4wc #s4wc-cc-form #s4wc_save_card_field { max-width: 80px; float: right; margin-top: 25px; line-height: 1.1; }
+#payment .payment_methods .payment_method_s4wc #s4wc-cc-form .form-row-first, #payment .payment_methods .payment_method_s4wc #s4wc-cc-form .form-row-last { display: block; float: left; margin-right: 10px; width: 115px; }
+#payment .payment_methods .payment_method_s4wc #s4wc-cc-form #s4wc_save_card_field { max-width: 115px; float: right; margin-top: 25px; line-height: 1.1; }
 #payment .payment_methods .payment_method_s4wc #s4wc-cc-form #s4wc_save_card_field label { color: #e0e0e0; font-size: 12px; font-weight: 500; }
 #payment .payment_methods label[for=payment_method_s4wc], #payment .payment_methods label[for=payment_method_paypal] { vertical-align: 8px; padding-left: 10px; }
 #payment .payment_methods .payment_method_paypal.payment_box, #payment .payment_methods .payment_method_paypal a, #payment .payment_methods .payment_method_paypal img { display: none !important; }
@@ -725,10 +757,13 @@ Cart Styles
 .woocommerce-checkout-review-order-table tr td:last-of-type { text-align: right; }
 .woocommerce-checkout-review-order-table tr td strong.product-quantity { font-size: 16px; color: #e0e0e0; font-weight: 600; }
 .woocommerce-checkout-review-order-table tr th.product-total { text-align: right; }
-.woocommerce-checkout-review-order-table .cart-subtotal, .woocommerce-checkout-review-order-table .shipping { color: #e0e0e0; font-size: 16px; color: #e0e0e0; font-weight: 300; }
+.woocommerce-checkout-review-order-table .cart-subtotal, .woocommerce-checkout-review-order-table .shipping { font-family: "Cardinal Grotesque Expanded"; font-size: 13px; color: #e0e0e0; font-weight: 500; }
+.woocommerce-checkout-review-order-table .cart-subtotal { opacity: 0; padding: 0px; }
+.woocommerce-checkout-review-order-table .cart-subtotal th, .woocommerce-checkout-review-order-table .cart-subtotal td { padding: 0px; line-height: 1; }
 @media (min-width: 769px) { .woocommerce-checkout-review-order-table .cart-subtotal th.product-total, .woocommerce-checkout-review-order-table .cart-subtotal th.product-name { padding-bottom: 0px; padding-top: 5px; }
   .woocommerce-checkout-review-order-table .cart_item td.product-total, .woocommerce-checkout-review-order-table .cart_item td.product-name, .woocommerce-checkout-review-order-table .cart_item td.product-quantity, .woocommerce-checkout-review-order-table .cart_item td.product-price { padding-bottom: 0px; padding-top: 0px; }
   .woocommerce-checkout-review-order-table .shipping td, .woocommerce-checkout-review-order-table .shipping th { padding-bottom: 20px; padding-top: 0px; } }
+.woocommerce-checkout-review-order-table .order-total th { font-family: "Cardinal Grotesque"; }
 @media (min-width: 769px) { .woocommerce-checkout-review-order-table .order-total td, .woocommerce-checkout-review-order-table .order-total th { background: #231f20; color: #ffd138; }
   .woocommerce-checkout-review-order-table .order-total td strong, .woocommerce-checkout-review-order-table .order-total th strong { font-weight: 400; } }
 
@@ -738,11 +773,13 @@ Cart Styles
 .woocommerce-cart table.cart-totals { background: #f0f0f0; border-collapse: collapse; min-width: 300px; }
 .woocommerce-cart table.cart-totals tbody { border-right: 20px solid transparent; border-left: 20px solid transparent; border-top: 15px solid transparent; border-bottom: 12px solid transparent; }
 .woocommerce-cart table.cart-totals tbody td { padding-top: 0px; border: 0px; text-align: right; }
+.woocommerce-cart table.cart-totals tbody [data-title="Subtotal"] { font-family: "Cardinal Grotesque Expanded"; font-weight: 600; }
+.woocommerce-cart table.cart-totals tbody [data-title="Subtotal"] .amount { font-weight: 600; }
 .woocommerce-cart table.cart-totals caption { padding-left: 20px; }
 @media (min-width: 650px) { .woocommerce-cart table.cart-totals { width: 41.6666666667%; float: left; } }
 @media (min-width: 960px) { .woocommerce-cart table.cart-totals { width: 33.3333333333%; float: left; } }
 .woocommerce-cart table.cart-totals th { vertical-align: bottom; }
-.woocommerce-cart table.cart-totals td, .woocommerce-cart table.cart-totals th { font-size: 16px; text-transform: uppercase; line-height: 1; }
+.woocommerce-cart table.cart-totals td, .woocommerce-cart table.cart-totals th { font-size: 13px; font-weight: 600; text-transform: uppercase; line-height: 1; }
 .woocommerce-cart table.cart-totals .amount { font-weight: 400; }
 .woocommerce-cart table.cart-totals .shipping td { color: transparent; }
 .woocommerce-cart table.cart-totals .shipping td span.amount { color: #231f20; }
@@ -758,7 +795,7 @@ Product Styles
 --------------------------------------------------------------*/
 .product.product_cat-type .entry-header ul.post-meta li:last-of-type { font-family: "Cardinal Grotesque"; height: 34px; font-weight: 500; font-size: 25px; letter-spacing: .02em; margin-top: 0px; }
 @media (min-width: 1000px) { .product.product_cat-type .entry-header ul.post-meta li:last-of-type { margin-top: 0px; margin-bottom: 0px; } }
-.product.product_cat-type .entry-header ul.post-meta li:last-of-type .post-meta-key { font-family: "Cardinal Grotesque"; font-weight: 600; text-transform: uppercase; letter-spacing: .17em; font-size: 15px; display: inline-block; width: 86px; }
+.product.product_cat-type .entry-header ul.post-meta li:last-of-type .post-meta-key { font-family: "Cardinal Grotesque Expanded"; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; font-size: 12px; display: inline-block; width: 82px; }
 .product.outofstock .cart button[type="submit"] { display: none; }
 .product.outofstock .type-tester-title .amount { display: none; }
 
@@ -783,23 +820,26 @@ Product Styles
 .type-tester .fontselect.swsh { -webkit-font-feature-settings: "swsh" 1; font-feature-settings: "swsh" 1; }
 .type-tester .fontselect.smcp { -webkit-font-feature-settings: "smcp" 1; font-feature-settings: "smcp" 1; }
 .type-tester .fontselect.cardinal-grotesque { font-family: 'Cardinal Grotesque'; line-height: 1; }
-.type-tester .fontselect.cardinal-grotesque.semiboldcondensed, .type-tester .fontselect.cardinal-grotesque.lightcondensed, .type-tester .fontselect.cardinal-grotesque.extralightcondensed, .type-tester .fontselect.cardinal-grotesque.thincondensed, .type-tester .fontselect.cardinal-grotesque.regularcondensed, .type-tester .fontselect.cardinal-grotesque.boldcondensed, .type-tester .fontselect.cardinal-grotesque.extraboldcondensed { font-family: 'Cardinal Grotesque Cond'; }
-.type-tester .fontselect.cardinal-grotesque.semiboldnarrow, .type-tester .fontselect.cardinal-grotesque.lightnarrow, .type-tester .fontselect.cardinal-grotesque.extralightnarrow, .type-tester .fontselect.cardinal-grotesque.thinnarrow, .type-tester .fontselect.cardinal-grotesque.regularnarrow, .type-tester .fontselect.cardinal-grotesque.boldnarrow, .type-tester .fontselect.cardinal-grotesque.extraboldnarrow { font-family: 'Cardinal Grotesque Narrow'; }
+.type-tester .fontselect.cardinal-grotesque.condensed { font-family: 'Cardinal Grotesque Cond'; }
+.type-tester .fontselect.cardinal-grotesque.narrow { font-family: 'Cardinal Grotesque Narrow'; }
+.type-tester .fontselect.cardinal-grotesque.expanded { font-family: 'Cardinal Grotesque Expanded'; }
+.type-tester .fontselect.cardinal-grotesque.compressed { font-family: 'Cardinal Grotesque Compressed'; }
+.type-tester .fontselect.cardinal-grotesque.extracondensed { font-family: 'Cardinal Grotesque Extracondensed'; }
 .type-tester .fontselect.business-script { font-family: 'Business Script'; line-height: 1; }
 .type-tester .fontselect.kansas-casual { font-family: 'Kansas Casual'; line-height: 1; }
 .type-tester .fontselect.maritime-champion { font-family: 'Maritime Champion'; line-height: 1; }
-.type-tester .fontselect.maritime-champion.mediumst, .type-tester .fontselect.maritime-champion.lightst, .type-tester .fontselect.maritime-champion.regularst, .type-tester .fontselect.maritime-champion.boldst { font-family: 'Maritime Champion ST'; }
-.type-tester .fontselect.maritime-champion.mediumsl, .type-tester .fontselect.maritime-champion.lightsl, .type-tester .fontselect.maritime-champion.regularsl, .type-tester .fontselect.maritime-champion.boldsl { font-family: 'Maritime Champion SL'; }
+.type-tester .fontselect.maritime-champion.st { font-family: 'Maritime Champion ST'; }
+.type-tester .fontselect.maritime-champion.sl { font-family: 'Maritime Champion SL'; }
 .type-tester .fontselect.cornbread { font-family: 'Cornbread'; line-height: 1; }
 .type-tester .fontselect.ready-script { font-family: 'Ready Script'; line-height: 1; }
-.type-tester .fontweight.extralight, .type-tester .fontweight.extralightcondensed, .type-tester .fontweight.extralightnarrow { font-weight: 100; }
-.type-tester .fontweight.light, .type-tester .fontweight.lightcondensed, .type-tester .fontweight.lightnarrow, .type-tester .fontweight.lightst, .type-tester .fontweight.lightsl { font-weight: 200; }
-.type-tester .fontweight.regular, .type-tester .fontweight.regularcondensed, .type-tester .fontweight.regularnarrow, .type-tester .fontweight.regularst, .type-tester .fontweight.regularsl { font-weight: 300; }
-.type-tester .fontweight.medium, .type-tester .fontweight.mediumcondensed, .type-tester .fontweight.mediumnarrow, .type-tester .fontweight.mediumst, .type-tester .fontweight.mediumsl { font-weight: 400; }
-.type-tester .fontweight.semibold, .type-tester .fontweight.semiboldcondensed, .type-tester .fontweight.semiboldnarrow { font-weight: 500; }
-.type-tester .fontweight.bold, .type-tester .fontweight.boldcondensed, .type-tester .fontweight.boldnarrow, .type-tester .fontweight.boldst, .type-tester .fontweight.boldsl { font-weight: 600; }
-.type-tester .fontweight.extrabold, .type-tester .fontweight.extraboldcondensed, .type-tester .fontweight.extraboldnarrow { font-weight: 700; }
-.type-tester .fontweight.black, .type-tester .fontweight.blackcondensed, .type-tester .fontweight.blacknarrow { font-weight: 900; }
+.type-tester .fontweight.extralight { font-weight: 100; }
+.type-tester .fontweight.light { font-weight: 200; }
+.type-tester .fontweight.regular { font-weight: 300; }
+.type-tester .fontweight.medium { font-weight: 400; }
+.type-tester .fontweight.semibold { font-weight: 500; }
+.type-tester .fontweight.bold { font-weight: 600; }
+.type-tester .fontweight.extrabold { font-weight: 700; }
+.type-tester .fontweight.black { font-weight: 900; }
 .type-tester .type-tester-title { display: none; }
 @media only screen and (min-width: 965px) { .type-tester .type-tester-title { padding: 14px 20px; width: 29.1666666667%; text-align: center; display: block; float: left; } }
 .type-tester .type-tester-title h5, .type-tester .type-tester-title .h5 { margin-top: 0px; margin-bottom: 0px; }
@@ -846,8 +886,8 @@ Product Styles
 .single .entry-header h1 { margin-top: 2px; line-height: 1.25; }
 .single .entry-header ul.post-meta { padding-left: 0px; margin-left: 0px; list-style-type: none; }
 @media (max-width: 1000px) { .single .entry-header ul.post-meta { margin-top: -5px !important; } }
-.single .entry-header ul.post-meta li:not(:last-of-type) { font-family: "Cardinal Grotesque"; height: 34px; font-weight: 500; overflow-x: hidden; white-space: nowrap; font-size: 25px; letter-spacing: .02em; }
-.single .entry-header ul.post-meta li .post-meta-key { font-family: "Cardinal Grotesque"; font-weight: 600; text-transform: uppercase; letter-spacing: .17em; font-size: 15px; display: inline-block; width: 86px; }
+.single .entry-header ul.post-meta li:not(:last-of-type) { font-family: "Cardinal Grotesque"; height: 34px; font-weight: 500; overflow: hidden; white-space: nowrap; font-size: 25px; letter-spacing: .02em; }
+.single .entry-header ul.post-meta li .post-meta-key { font-family: "Cardinal Grotesque Expanded"; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; font-size: 12px; display: inline-block; width: 82px; }
 .single .entry-header ul.post-meta li:last-of-type { margin-top: 18px; }
 @media (min-width: 1000px) { .single .entry-header ul.post-meta li:last-of-type { margin-top: 26px; margin-bottom: 10px; } }
 .single .entry-header ul.post-meta li:last-of-type .post-meta-key { display: none; }
@@ -855,23 +895,24 @@ Product Styles
 @media only screen and (max-width: 767px) { .single .entry-footer .cat-links { display: block; margin: 0 auto; text-align: center; } }
 .single .entry-footer .cat-links a { background: #f0f0f0; color: #231f20; display: inline-block; text-decoration: none; margin-bottom: 20px; }
 .single .entry-footer .cat-links a.cat-for-sale { display: none; }
-.single .entry-footer .post-navigation { font-family: "Cardinal Grotesque"; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; font-size: .8em; line-height: 1.15; }
+.single .entry-footer .post-navigation { font-family: "Cardinal Grotesque Expanded"; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; font-size: .75em; line-height: 1.15; }
 @media only screen and (max-width: 767px) { .single .entry-footer .post-navigation { margin-left: 8%; } }
 .single .entry-footer .post-navigation .nav-next { text-align: right; }
-.single .entry-footer .post-navigation .nav-previous, .single .entry-footer .post-navigation .nav-next { width: 42%; float: left; position: relative; cursor: pointer; }
+.single .entry-footer .post-navigation .nav-previous, .single .entry-footer .post-navigation .nav-next { width: 49.5%; float: left; position: relative; cursor: pointer; }
+.single .entry-footer .post-navigation .nav-previous:only-of-type, .single .entry-footer .post-navigation .nav-next:only-of-type { width: 100%; }
 .single .entry-footer .post-navigation .nav-previous a, .single .entry-footer .post-navigation .nav-next a { color: #231f20; background: #ffd138; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; display: block; text-decoration: none; padding: 5px 5px 5px 5px; height: 24px; text-align: center; }
 .single .entry-footer .post-navigation .nav-previous a:before, .single .entry-footer .post-navigation .nav-next a:before { display: block; position: absolute; content: " "; background: #ffd138; width: 24px; height: 24px; top: 0px; border-top: 12px solid white; border-bottom: 12px solid white; }
 @media only screen and (min-width: 768px) and (max-width: 1160px) { .single .entry-footer .post-navigation .nav-previous a, .single .entry-footer .post-navigation .nav-next a { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; } }
 .single .entry-footer .post-navigation .nav-previous a:hover, .single .entry-footer .post-navigation .nav-next a:hover { background: #ffd752; }
 .single .entry-footer .post-navigation .nav-previous a:active, .single .entry-footer .post-navigation .nav-next a:active { background: #ffc80f; }
-.single .entry-footer .post-navigation .nav-previous a:before { border-right: 12px solid #ffd138; border-left: 12px solid white; left: -22px; }
+.single .entry-footer .post-navigation .nav-previous a:before { border-right: 12px solid #ffd138; border-left: 12px solid white; left: -12px; }
 .single .entry-footer .post-navigation .nav-previous a:hover:before { border-right: 12px solid #ffd752; }
 .single .entry-footer .post-navigation .nav-previous a:active:before { border-right: 12px solid #ffc80f; }
-.single .entry-footer .post-navigation .nav-next a:before { border-left: 12px solid #ffd138; border-right: 12px solid white; right: -22px; }
+.single .entry-footer .post-navigation .nav-next a:before { border-left: 12px solid #ffd138; border-right: 12px solid white; right: -12px; }
 .single .entry-footer .post-navigation .nav-next a:hover:before { border-left: 12px solid #ffd752; }
 .single .entry-footer .post-navigation .nav-next a:active:before { border-left: 12px solid #ffc80f; }
-.single .entry-footer .post-navigation .nav-previous { margin-left: 10px; float: left; }
-.single .entry-footer .post-navigation .nav-next { margin-right: 10px; }
+.single .entry-footer .post-navigation .nav-previous { padding-left: 10px; float: left; }
+.single .entry-footer .post-navigation .nav-next { padding-right: 10px; }
 .single .post-content a:not(.button) { text-decoration: none; box-shadow: inset 0 0px 0px 0px white, inset 0 -2px 0px 0px #e0e0e0; text-shadow: 1px 1px #ffffff; -webkit-transition: box-shadow 0.3s ease-in-out; transition: box-shadow 0.3s ease-in-out; padding-bottom: 1px; }
 .single .post-content a:not(.button):hover { box-shadow: inset 0 0px 0px 0px white, inset 0 -2px 0px 0px #ffd138; }
 @media (min-width: 768px) { .single .entry-header, .single .entry-footer { width: 29.1666666667%; float: left; }
@@ -986,7 +1027,7 @@ body:not(.page-template-page-studio) #white-page.white-page { min-height: 300px;
 @media only screen and (max-width: 767px) { .return-to-top { display: none; } }
 @media (min-width: 1000px) { .return-to-top { padding-top: 25px; } }
 @media (min-width: 1148px) { .return-to-top { padding-top: 40px; } }
-.return-to-top .post-navigation { font-family: "Cardinal Grotesque"; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; font-size: .8em; line-height: 1.15; }
+.return-to-top .post-navigation { font-family: "Cardinal Grotesque Expanded"; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; font-size: .75em; line-height: 1.15; }
 .return-to-top .post-navigation .nav-previous, .return-to-top .post-navigation .nav-next { min-width: 25%; float: left; position: relative; margin-top: -25px; cursor: pointer; }
 .return-to-top .post-navigation .nav-previous a, .return-to-top .post-navigation .nav-next a { color: #231f20; background: #ffd138; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; display: block; text-decoration: none; padding: 5px 5px 5px 5px; height: 24px; text-align: center; }
 @media only screen and (min-width: 768px) and (max-width: 1160px) { .return-to-top .post-navigation .nav-previous a, .return-to-top .post-navigation .nav-next a { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; } }
@@ -1012,9 +1053,8 @@ footer.footer:after { content: ""; display: table; clear: both; }
 footer.footer .footer-contact input:not([type=radio]), footer.footer .footer-contact textarea { padding: 8px 25px 12px 25px; font-size: 1.6em; }
 @media (min-width: 768px) { footer.footer .footer-contact { float: left; width: 58.3333333333%; }
   footer.footer .footer-contact .contact-title { box-sizing: border-box; width: 25%; float: left; padding-left: 0.6944444444%; padding-right: 0.6944444444%; margin-bottom: 0px; }
-  footer.footer .footer-contact .contact-phone, footer.footer .footer-contact .contact-address { box-sizing: border-box; width: 45.8333333333%; float: left; padding-left: 0.6944444444%; padding-right: 0.6944444444%; text-align: right; line-height: 1.2; }
-  footer.footer .footer-contact .contact-address { box-sizing: border-box; width: 29.1666666667%; float: left; padding-left: 0.6944444444%; padding-right: 0.6944444444%; } }
-@media (min-width: 1048px) { footer.footer .footer-contact .contact-phone, footer.footer .footer-contact .contact-address, footer.footer .footer-contact .contact-title { box-sizing: border-box; width: 33.3333333333%; float: left; padding-left: 0.6944444444%; padding-right: 0.6944444444%; } }
+  footer.footer .footer-contact .contact-phone, footer.footer .footer-contact .contact-address { box-sizing: border-box; width: 75%; float: left; padding-left: 0.6944444444%; padding-right: 0.6944444444%; text-align: right; line-height: 1.2; } }
+@media (min-width: 1048px) { footer.footer .footer-contact .contact-phone, footer.footer .footer-contact .contact-title { box-sizing: border-box; width: 50%; float: left; padding-left: 0.6944444444%; padding-right: 0.6944444444%; } }
 footer.footer .footer-contact .contact-title { margin-top: 0px; }
 footer.footer .footer-contact .footer-contact-form .input-label-group-pizza { width: 52.0833333333%; display: inline-block; }
 footer.footer .footer-contact .footer-contact-form .input-label-group-pizza .icon { font-size: 1.75em; display: inline; line-height: 1; margin-left: 10px; vertical-align: -10px; }
@@ -1025,7 +1065,7 @@ footer.footer .footer-contact .footer-contact-form .input-label-group-human .hum
 footer.footer .footer-contact .footer-contact-form .input-label-group-human .math { display: inline-block; font-family: "Cardinal Grotesque"; font-weight: 500; font-size: 16px; }
 @media (max-width: 499px) { footer.footer .footer-contact .footer-contact-form .input-label-group-human { width: 91.6666666667%; }
   footer.footer .footer-contact .footer-contact-form .input-label-group-human .human { width: 100px; } }
-footer.footer .footer-contact .footer-contact-form textarea { font-size: 16px; line-height: 1; padding: 16px 25px; min-height: 120px; resize: vertical; }
+footer.footer .footer-contact .footer-contact-form textarea { font-size: 1.6em; line-height: 1.15; padding: 16px 25px; min-height: 120px; resize: vertical; }
 @media (max-width: 767px) { footer.footer .footer-contact .footer-contact-form input[type="submit"] { width: 100%; margin-top: -5px; margin-bottom: 8px; text-align: center; } }
 @media (max-width: 767px) { footer.footer .footer-available { display: none; text-align: center; background: #ffffff; padding: 2em 3em .4em 3em; margin-top: 15px; } }
 @media (min-width: 768px) { footer.footer .footer-available { float: left; margin-left: 8.3333333333%; width: 33.3333333333%; } }

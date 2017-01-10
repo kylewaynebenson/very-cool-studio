@@ -1,24 +1,24 @@
 @font-face {
   font-family: 'Cornbread';
   font-weight: 300;
-  src: url("../type/Cornbread-Regular.eot");
+  src: url("../type/cornbread/Cornbread-Regular.eot");
   /* IE9 Compat Modes */
-  src: url("../type/Cornbread-Regular.eot?#iefix") format("embedded-opentype"), url("../type/Cornbread-Regular.woff2") format("woff2"), url("../type/Cornbread-Regular.woff") format("woff"); }
+  src: url("../type/cornbread/Cornbread-Regular.eot?#iefix") format("embedded-opentype"), url("../type/cornbread/Cornbread-Regular.woff2") format("woff2"), url("../type/cornbread/Cornbread-Regular.woff") format("woff"); }
 @font-face {
   font-family: 'Cornbread';
   font-weight: 500;
-  src: url("../type/Cornbread-SemiBold.eot");
+  src: url("../type/cornbread/Cornbread-SemiBold.eot");
   /* IE9 Compat Modes */
-  src: url("../type/Cornbread-SemiBold.eot?#iefix") format("embedded-opentype"), url("../type/Cornbread-SemiBold.woff2") format("woff2"), url("../type/Cornbread-SemiBold.woff") format("woff"); }
+  src: url("../type/cornbread/Cornbread-SemiBold.eot?#iefix") format("embedded-opentype"), url("../type/cornbread/Cornbread-SemiBold.woff2") format("woff2"), url("../type/cornbread/Cornbread-SemiBold.woff") format("woff"); }
 @font-face {
   font-family: 'Cornbread';
   font-weight: 600;
-  src: url("../type/Cornbread-Bold.eot");
+  src: url("../type/cornbread/Cornbread-Bold.eot");
   /* IE9 Compat Modes */
-  src: url("../type/Cornbread-Bold.eot?#iefix") format("embedded-opentype"), url("../type/Cornbread-Bold.woff2") format("woff2"), url("../type/Cornbread-Bold.woff") format("woff"); }
+  src: url("../type/cornbread/Cornbread-Bold.eot?#iefix") format("embedded-opentype"), url("../type/cornbread/Cornbread-Bold.woff2") format("woff2"), url("../type/cornbread/Cornbread-Bold.woff") format("woff"); }
 @font-face {
   font-family: 'Cornbread';
   font-weight: 900;
-  src: url("../type/Cornbread-Black.eot");
+  src: url("../type/cornbread/Cornbread-Black.eot");
   /* IE9 Compat Modes */
-  src: url("../type/Cornbread-Black.eot?#iefix") format("embedded-opentype"), url("../type/Cornbread-Black.woff2") format("woff2"), url("../type/Cornbread-Black.woff") format("woff"); }
+  src: url("../type/cornbread/Cornbread-Black.eot?#iefix") format("embedded-opentype"), url("../type/cornbread/Cornbread-Black.woff2") format("woff2"), url("../type/cornbread/Cornbread-Black.woff") format("woff"); }

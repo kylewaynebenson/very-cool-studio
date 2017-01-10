@@ -23,9 +23,6 @@
 						<a class="email no-style" href="mailto:hello@verycoolstudio.com">hello@verycoolstudio.com</a>
 					</p>
 				</div>
-				<div class="contact-address">
-					<p class="h5">Santa Clara<br/> CA 95051</p>
-				</div>
 				<div class="clear"></div>
 				<div class="contact-form">
 					<?php

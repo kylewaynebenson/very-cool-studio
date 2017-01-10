@@ -10,6 +10,27 @@
  */
 
 ?><!DOCTYPE html>
+	<!-- 
+	 _  _  ____  ____  _  _   
+	( \/ )( ___)(  _ \( \/ )  
+	 \  /  )__)  )   / \  /   
+	  ___ (_____(______(___   
+	 / __)(  _  )(  _  )(  )  
+	( (__  )(_)(  )(_)(  )(__ 
+	 \___)(_____)(_____)(____)
+
+	Takin a peep at the source? 
+	Nice. 
+
+	You're not here to steal my embedded fonts, right? 
+	Don't steal my embedded fonts please. 
+
+	I get it, you don't want to pay. 
+
+	Here, take this discount code and pay for a license: HONESTDECENTCODER
+
+	We good?
+	-->
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -20,7 +41,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<!-- Takin a peep at the source? Nice. Observe liberally, I guess. Unless you're here to steal my embedded fonts. Don't steal my embedded fonts please. Here, I get it, you don't want to pay. Use this discount code to motivate you to just be honest and pay for a license: HONESTDECENTCODER-->
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'verycool' ); ?></a>
 	<div id="white-page" class="white-page">
@@ -44,7 +64,7 @@
 							<path class="logo-black logo-very" d="M145.4,50.4c-11.5,0-17.6-6-17.6-17.3v-4.7h6.3c5.6,0,9.5,1.2,12,3.8s3.8,6.6,3.7,12.2l-0.1,6L145.4,50.4L145.4,50.4z"/>
 							<path class="logo-black logo-very" d="M183.4,49.8l-0.1-17.2H183l0.2-0.5L168.7,2.3h-20.5l18.4,36v11.5H183.4z"/>
 							<path class="logo-yellow logo-very" d="M201.9,11.2c0,7-4.2,11.2-11.2,11.2s-11.2-4.2-11.2-11.2S183.7,0,190.7,0S201.9,4.2,201.9,11.2"/>
-							<path class="logo-red logo-peace" d="M200.5,23.2L200.5,23.2c1.2,4,1.7,8,1.7,12.5c0,2-0.4,4-1.3,5.9c-0.9,1.8-2,3.5-3.5,4.9c-3,3-6.9,4.7-10.6,4.7
+							<path class="logo-black logo-peace" d="M200.5,23.2L200.5,23.2c1.2,4,1.7,8,1.7,12.5c0,2-0.4,4-1.3,5.9c-0.9,1.8-2,3.5-3.5,4.9c-3,3-6.9,4.7-10.6,4.7
 								c-3.6,0-6.4-1-8.3-3c-1.6-1.7-2.5-4-2.8-6.9c0.1-1.1,0.3-2.1,0.5-3c-1.1-0.5-2-1.5-2.7-2.8l-4.5-7.3l3.2-4.3
 								c0.8-0.5,1.5-0.8,2.2-0.8h0.1l-0.8-1.3l4.5-4.7l1.5-0.6l-2.2-5c-1.1-1.9-1.2-3.5-0.1-5.6l5-4.4c0.8-0.7,1.7-1.1,2.8-1.1
 								c2,0,3.4,1.3,3.9,3.2l1.6,6.9l0.7-6.8l5.8-3.8l1.1,0.4c4,1.5,5.4,4.8,4.4,9.7L200.5,23.2z M178,32.5c0.5,0.7,1.3,1.1,2.5,1.1
@@ -81,6 +101,12 @@
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'verycool' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
+			<?php if ( is_single() || is_product() ) { ?>
+				<div class="keyboard-navigation">
+					<div class="key key-left">◀</div>
+					<div class="key key-right">▶</div>
+				</div>
+			<?php }; ?>
 			<div class="squiggle-divider-full"></div>
 		</header><!-- #masthead -->
 		<div id="content" class="site-content">

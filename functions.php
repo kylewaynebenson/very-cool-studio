@@ -23,6 +23,10 @@ function enqueue_custom_styles_or_scripts() {
 	} else if ( is_single('cornbread') ) {
 			wp_enqueue_style( 'webfonts-cornbread', get_stylesheet_directory_uri() . '/css/webfonts-cornbread.css' );
 		}
+	if ( is_single() || is_product() ) {
+		$path = get_stylesheet_directory_uri() .'/js/';
+		wp_enqueue_script('post-navigation', $path.'jquery.navigate.js', array('jquery'));
+	}
 
 }
 

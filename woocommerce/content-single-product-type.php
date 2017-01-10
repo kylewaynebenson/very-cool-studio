@@ -64,25 +64,38 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<input id="font-size-slider" type="range" min="10" max="100" value="48">
 			<div class="select">
 				<span class="arr"></span>
+				<select class="" data-native-menu="false" id="font-weight-select" name="weight">
 				<?php
-				$tags = get_the_terms( $post->ID, 'product_tag' );
-
-				$html = '<select class="" data-native-menu="false" id="font-weight-select" name="weight">';
-				$default = 'Regular';
-				foreach ( $tags as $tag ) {
-					if ($tag->name == $default) {
-					    $tag_link = get_tag_link( $tag->term_id );
-					    $html .= "<option value='{$tag->slug}' selected>";
-					    $html .= "{$tag->name}</option> ";
-					} else {
-					    $tag_link = get_tag_link( $tag->term_id );
-					    $html .= "<option value='{$tag->slug}'>";
-					    $html .= "{$tag->name}</option> ";
+					$title = get_the_title();
+					$title = str_replace(" ", "", $title);
+					global $post;
+	    				$post_slug=$post->post_name;
+					$directory = './wp-content/themes/very-cool-studio/type/';
+					$directory .= $post_slug.'/';
+					$path = $directory;
+					$path .= '*.woff';
+					$files = array_diff(glob($path), array('.', '..'));
+					$default = 'Regular';
+					$html = '';
+					foreach ($files as &$value) {
+						$value = str_replace($directory.$title, "", $value);
+						$value = ltrim($value, '-');
+						$value = str_replace(".woff", "", $value);
+						$valueslug = strtolower(str_replace("-", " ", $value));
+						$value = str_replace("-", " ", $value);
+						
+						echo "<a href='http://localhost/".$value."' target='_black' >".$value."</a><br/>";
+						if ($value == $default) {
+						    $html .= "<option value='{$valueslug}' selected>";
+						    $html .= "{$value}</option> ";
+						} else {
+						    $html .= "<option value='{$valueslug}'>";
+						    $html .= "{$value}</option> ";
+						}
 					}
-				}
-				$html .= '</select>';
-				echo $html;
+					echo $html;
 				?>
+				</select>
 			</div>
 			<div class="type-tester-ligatures type-tester-checkbox">
 				<input id="font-ligatures" type="checkbox" name="ligatures" value="liga">

@@ -1196,13 +1196,6 @@ Product Styles
 	}
 }
 .single-product {
-	.specimen-gallery {
-		padding-top: 20px;
-		@media (min-width: 768px) {
-			width: span(16);
-			margin: 0 auto;
-		}
-	}
 	.yellow-page {
 		h1.footer-title {
 			margin: 0px;
@@ -1278,7 +1271,10 @@ body {
 	}
 	.tabs {
 		border-bottom: 3px solid $gray-1;
-		margin: 60px 0px 35px 0px;
+		margin: 25px 0px 15px 0px;
+		@media (min-width: 768px) {
+			margin: 60px 0px 35px 0px;
+		}
 		.tab {
 			position: relative;
 			bottom: -3px;
@@ -1423,15 +1419,19 @@ body {
 			position: relative;
 			float: left;
 			border-right: 3px solid $gray-1;
+			@media only screen and (max-width: 660px) {
+				border-right: 0px;
+				width: 50%;
+			}
+			@media only screen and (min-width: 661px) {
+				width: auto;
+				max-width: 170px;
+			}
 			padding: 0px 0px 4px 10px;
 			select {
 				cursor: pointer;
 				outline: none;
-				min-width: 130px;
-				max-width: 150px;
-				@media only screen and (min-width: 965px) {
-					max-width: auto;
-				}
+				width: 100%;
 				-webkit-appearance: none;
 				letter-spacing: .02em;
 				display: block;
@@ -1448,7 +1448,7 @@ body {
 				background: transparent;
 				bottom: 5px;
 				position: absolute;
-				right: 20px;
+				right: 15px;
 				top: 5px;
 				width: 20px;
 				pointer-events: none;
@@ -1479,7 +1479,7 @@ body {
 			}
 		}
 		.type-tester-checkbox {
-			@media only screen and (max-width: 600px) {
+			@media only screen and (max-width: 661px) {
 				display: none;
 			}
 			cursor: pointer;
@@ -1512,6 +1512,9 @@ body {
 			font-family: $type-subhead;
 			font-weight: 600 !important; //maybe should be 450
 			font-size: 20px;
+			@media only screen and (max-width: 660px) {
+				width: 50%;
+			}
 			width: 30%;
 			color: $gray-2;
 			float: left;
@@ -1533,7 +1536,7 @@ body {
 			width: span(17);
 			float: right;
 		}
-		@media only screen and (max-width: 600px) {
+		@media only screen and (max-width: 660px) {
 			text-align: center;
 		}
 		padding: 4px;
@@ -1550,14 +1553,14 @@ body {
 		.type-tester-notice {
 			line-height: 1.2;
 			letter-spacing: .05em;
-			@media only screen and (max-width: 600px) {
+			@media only screen and (max-width: 660px) {
 				display: none;
 			}
 			float: right;
 			text-align: right;
 			font-weight: 500;
 			color: $gray-2;
-			margin: 10px 20px;
+			margin: 10px 20px 10px -5px;
 		}
 	}
 	.price {
@@ -2331,6 +2334,24 @@ footer.footer {
 			padding: 8px 25px 12px 25px;
 			font-size: 1.6em;
 		}
+		@media (max-width: 767px) {
+			a.phone {
+				&:before {
+					content: "CALL ME ";
+					color: darken($gray-2,6%);
+				}
+			}
+			a.email {
+				&:after {
+					content: " OR USE THIS FORM";
+					color: darken($gray-2,6%);
+				}
+				&:before {
+					content: "OR EMAIL ME ";
+					color: darken($gray-2,6%);
+				}
+			}
+		}
 		@media (min-width: 768px) {
 			float: left;
 			width: span(14);
@@ -2407,8 +2428,18 @@ footer.footer {
 				input[type="submit"] {
 					width: 100%;
 					margin-top: -5px;
-					margin-bottom: 8px;
+					margin-bottom: 15px;
 					text-align: center;
+				}
+				.alignright {
+					float: none;
+					margin-left: 0px;
+				}
+				a.chamfered-button-white {
+					width: 100%;
+					display: block;
+					text-align: center;
+					margin-bottom: 8px;
 				}
 			}
 

@@ -42,7 +42,7 @@ h2, .h2 {
 }
 h3, .h3 {
 	font-family: $type-subhead;
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 1.6em;
 	letter-spacing: .02em;
 	@media (max-width: 768px) {
@@ -63,7 +63,7 @@ h4, .h4 {
 }
 h5, .h5 {
 	font-family: $type-subhead-expanded;
-	font-weight: 600;
+	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: .12em;
 	font-size: .8em;

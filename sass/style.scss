@@ -83,7 +83,7 @@ $susy: (
 		display: block;
 		font-family: 'Very Cool Icons';
 		font-style: normal;
-		font-weight: 400;
+		font-weight: 500;
 		font-size: 1.65em;
 		overflow: hidden;
 		line-height: 1.1;
@@ -178,7 +178,7 @@ a.no-style {
 a.squiggle {
 	text-decoration: none;
 	font-family: $type-subhead;
-	font-weight: 500;
+	font-weight: 600; //maybe should be 450
 	font-size: 1.3em;
 	letter-spacing: .05em;
 	display: inline-block;
@@ -192,15 +192,20 @@ a.squiggle {
 	transition: background 0.3s;
 	&:hover {
 		background-position: 15px 100%;
+		color: $yellow;
+		font-weight: 600 !important; //maybe should be 450
+	}
+	&.squiggle-black {
+		background-image: url(img/squiggle-black.png);
+		color: $black;
+		transition: background 0.3s;
+		&:hover {
+			background-position: 15px 100%;
+		}
 	}
 }
 a.squiggle-black {
-	background-image: url(img/squiggle-black.png);
-	color: $black;
-	transition: background 0.3s;
-	&:hover {
-		background-position: 15px 100%;
-	}
+
 }
 .cat-links {
 	a {
@@ -212,7 +217,7 @@ a.squiggle-black {
 		font-size: 11px;
 		line-height: 1;
 		padding: 2px 8px 3px 8px;
-		font-weight: 600;
+		font-weight: 700;
 		text-transform: uppercase;
 		transition: background 0.3s;
 		&:hover {
@@ -268,7 +273,7 @@ a.squiggle-black {
 					-moz-font-feature-settings:    "case" 1;
 					-ms-font-feature-settings:     "case" 1;
 					font-feature-settings:         "case" 1;
-					font-weight: 600;
+					font-weight: 700;
 					font-size: 16px !important;
 					position: absolute;
 					top: 2px;
@@ -305,7 +310,7 @@ a.squiggle-black {
 				font-style: normal;
 				left: 7%;
 				top: 0px;
-				font-weight: 400;
+				font-weight: 600;
 				line-height: 1;
 				font-size: 30px;
 				text-align: center;
@@ -371,7 +376,7 @@ a.squiggle-black {
 		.entry-title {
 			margin: -5px 0px 4px 0px;
 			font-family: $type-subhead;
-			font-weight: 500;
+			font-weight: 600; //maybe should be 450
 			font-size: 1.6em;
 			line-height: 1;
 			letter-spacing: .02em;
@@ -390,7 +395,7 @@ a.squiggle-black {
 				font-family: 'Very Cool Icons';
 				font-style: normal;
 				font-size: 17px;
-				font-weight: 400;
+				font-weight: 500;
 				padding: 3px 6px;
 				line-height: 1;
 				content: "\E009";
@@ -409,7 +414,7 @@ a.squiggle-black {
 
 		.price {
 			color: $yellow;
-			font-weight: 600;
+			font-weight: 700;
 			font-size: 6em;
 			font-size: 1em;
 			margin-top: 0px;
@@ -476,7 +481,7 @@ a.squiggle-black {
 					font-family: 'Very Cool Icons';
 					font-style: normal;
 					font-size: 27px;
-					font-weight: 400;
+					font-weight: 500;
 					line-height: .45;
 					content: "\E008";
 				}
@@ -489,7 +494,7 @@ a.squiggle-black {
 				}
 			}
 			h4, .h4 {
-				font-weight: 400;
+				font-weight: 500;
 				color: $black;
 				line-height: 1.15;
 			}
@@ -531,7 +536,7 @@ a.squiggle-black {
 						font-family: 'Very Cool Icons';
 						font-style: normal;
 						font-size: 17px;
-						font-weight: 400;
+						font-weight: 500;
 						padding: 3px 6px;
 						line-height: 1;
 						content: "\E009";
@@ -576,7 +581,7 @@ a.squiggle-black {
 					font-size: inherit;
 					margin-right: -1px;
 					margin-left: -8px;
-					font-weight: 400;
+					font-weight: 500;
 					padding: 3px 6px;
 					line-height: inherit;
 					content: "$";
@@ -603,7 +608,7 @@ a.squiggle-black {
 						font-family: 'Very Cool Icons';
 						font-style: normal;
 						font-size: 27px;
-						font-weight: 400;
+						font-weight: 500;
 						line-height: .45;
 						content: "\E008";
 					}
@@ -646,7 +651,7 @@ a.squiggle-black {
 			// 		font-family: 'Very Cool Icons';
 			// 		font-size: 12em;
 			// 		padding-top: 20px;
-			// 		font-weight: 400;
+			// 		font-weight: 500;
 			// 		line-height: 1;
 			// 		top: 0px;
 			// 		content: "\E003";
@@ -661,7 +666,7 @@ a.squiggle-black {
 			// 	&:after {
 			// 		color: $black;
 			// 		font-family: $type-headline-cond;
-			// 		font-weight: 600;
+			// 		font-weight: 700;
 			// 		font-size: 4.3em;
 			// 		line-height: .85;
 			// 		letter-spacing: .02em; 
@@ -934,7 +939,7 @@ Cart Styles
 					label {
 						color: $gray-2;
 						font-size: 12px;
-						font-weight: 500;
+						font-weight: 600;
 					}
 				}
 			}
@@ -953,7 +958,7 @@ Cart Styles
 			// 		text-transform: uppercase;
 			// 		font-size: 16px;
 			// 		color: $gray-2;
-			// 		font-weight: 500;
+			// 		font-weight: 600;
 			// 		font-family: $type-subhead;
 			// 		vertical-align: 8px;
 			// 	}
@@ -997,7 +1002,7 @@ Cart Styles
 			strong.product-quantity {
 				font-size: 16px;
 				color: $gray-2;
-				font-weight: 600;
+				font-weight: 700;
 			}
 		}
 		th.product-total {
@@ -1008,7 +1013,7 @@ Cart Styles
 		font-family: $type-subhead-expanded;
 		font-size: 13px;
 		color: $gray-2;
-		font-weight: 500;
+		font-weight: 600;
 	}
 	.cart-subtotal {
 		th, td {
@@ -1047,7 +1052,7 @@ Cart Styles
 				background: $black;
 				color: $yellow;
 				strong {
-					font-weight: 400;
+					font-weight: 500;
 				}
 			}
 		}
@@ -1081,9 +1086,9 @@ Cart Styles
 			}
 			[data-title="Subtotal"] {
 				font-family: $type-subhead-expanded;
-				font-weight: 600;
+				font-weight: 700;
 				.amount {
-					font-weight: 600;
+					font-weight: 700;
 				}
 			}
 		}
@@ -1103,12 +1108,12 @@ Cart Styles
 		}
 		td, th {
 			font-size: 13px;
-			font-weight: 600;
+			font-weight: 700;
 			text-transform: uppercase;
 			line-height: 1;
 		}
 		.amount {
-			font-weight: 400;
+			font-weight: 500;
 		}
 		.shipping td {
 			color: transparent;
@@ -1159,7 +1164,7 @@ Product Styles
 					&:last-of-type {
 						font-family: $type-subhead;
 						height: 34px;
-						font-weight: 500;
+						font-weight: 600; //maybe should be 450
 						font-size: 25px;
 						letter-spacing: .02em;
 						margin-top: 0px;
@@ -1169,7 +1174,7 @@ Product Styles
 						}
 						.post-meta-key {
 							font-family: $type-subhead-expanded;
-							font-weight: 600;
+							font-weight: 700;
 							text-transform: uppercase;
 							letter-spacing: .12em;
 							font-size: 12px;
@@ -1223,6 +1228,112 @@ Product Styles
 		}
 	}
 }
+.fontselect {
+	width: 100%;
+	display: block;
+	font-size: 60px;
+	&.liga {
+		font-feature-settings: "liga" 1;
+	}
+	&.alts {
+		font-feature-settings: "ss01" 1;
+	}
+	&.swsh {
+		font-feature-settings: "swsh" 1;
+	}
+	&.smcp {
+		font-feature-settings: "smcp" 1;
+	}
+	&.cardinal-grotesque { font-family: 'Cardinal Grotesque'; line-height: 1; &.condensed { font-family: 'Cardinal Grotesque Cond';} &.narrow { font-family: 'Cardinal Grotesque Narrow';} &.expanded { font-family: 'Cardinal Grotesque Expanded';} &.compressed { font-family: 'Cardinal Grotesque Compressed';} &.extracondensed { font-family: 'Cardinal Grotesque Extracondensed';}}
+	&.business-script { font-family: 'Business Script'; line-height: 1;}
+	&.kansas-casual { font-family: 'Kansas Casual'; line-height: 1;}
+	&.maritime-champion { font-family: 'Maritime Champion'; line-height: 1; &.st { font-family: 'Maritime Champion ST';} &.sl { font-family: 'Maritime Champion SL';}}
+	&.cornbread { font-family: 'Cornbread'; line-height: 1;}
+	&.ready-script { font-family: 'Ready Script'; line-height: 1;}
+	&.thin { font-weight: 100;}
+	&.extralight { font-weight: 200;}
+	&.light { font-weight: 300;}
+	&.regular { font-weight: 400;}
+	&.medium { font-weight: 500;}
+	&.semibold { font-weight: 600;}
+	&.bold { font-weight: 700;}
+	&.extrabold { font-weight: 800;}
+	&.black, &.heavy { font-weight: 900;}
+}
+@keyframes fake {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+body {        
+    animation: fake 1s infinite;
+}
+.radio-tabs {
+	.state {
+	    position: absolute;
+	    left: -10000px;
+	}
+	.tabs {
+		border-bottom: 3px solid $gray-1;
+		margin: 60px 0px 35px 0px;
+		.tab {
+			position: relative;
+			bottom: -3px;
+			display: inline-block;
+			padding: 7px 18px 4px 18px;
+			vertical-align: top;
+			background-color: $gray-1;
+			border: 3px solid $gray-1;
+			border-bottom: 0px;
+			cursor: hand;
+			cursor: pointer;
+		}
+	}
+	.panels {
+		.panel {
+			display: none;
+		}
+	}
+	#specimen:focus ~ .tabs #specimen-tab,
+	#gallery:focus ~ .tabs #gallery-tab {
+
+	}
+	#specimen:checked ~ .tabs #specimen-tab,
+	#gallery:checked ~ .tabs #gallery-tab {
+		padding: 7px 18px;
+		background-color: $white;
+		cursor: default;
+	}
+	#specimen:checked ~ .panels #specimen-panel,
+	#gallery:checked ~ .panels #gallery-panel {
+	    display: block;
+	}
+	#gallery-panel {
+		margin-bottom: 20px;
+		.fontselect {
+			overflow-y: visible;
+			overflow-x: hidden;
+			word-break: keep-all;
+	    		white-space: nowrap;
+	    		line-height: 1;
+	    		height: 70px;
+	    		outline: none;
+	    		position: relative;
+		}
+		h5 {
+			margin: 7px 0px 2px 0px;
+		}
+		@media (min-width: 768px) {
+			margin-bottom: 35px;
+			h5 {
+				margin: 14px 0px 4px 0px;
+			}
+		}
+	}
+}
 .type-tester {
 	display: block;
 	border: 3px solid $gray-1;
@@ -1250,7 +1361,7 @@ Product Styles
 		font-family: 'Very Cool Icons';
 		font-style: normal;
 		font-size: 27px;
-		font-weight: 400;
+		font-weight: 500;
 		line-height: .45;
 		content: "\E008";
 	}
@@ -1274,34 +1385,7 @@ Product Styles
 		min-height: 100px;
 		font-size: 70px;
 		transition: font 0.3s ease;
-		&.liga {
-			font-feature-settings: "liga" 1;
-		}
-		&.alts {
-			font-feature-settings: "ss01" 1;
-		}
-		&.swsh {
-			font-feature-settings: "swsh" 1;
-		}
-		&.smcp {
-			font-feature-settings: "smcp" 1;
-		}
-		&.cardinal-grotesque { font-family: 'Cardinal Grotesque'; line-height: 1; &.condensed { font-family: 'Cardinal Grotesque Cond';} &.narrow { font-family: 'Cardinal Grotesque Narrow';} &.expanded { font-family: 'Cardinal Grotesque Expanded';} &.compressed { font-family: 'Cardinal Grotesque Compressed';} &.extracondensed { font-family: 'Cardinal Grotesque Extracondensed';}}
-		&.business-script { font-family: 'Business Script'; line-height: 1;}
-		&.kansas-casual { font-family: 'Kansas Casual'; line-height: 1;}
-		&.maritime-champion { font-family: 'Maritime Champion'; line-height: 1; &.st { font-family: 'Maritime Champion ST';} &.sl { font-family: 'Maritime Champion SL';}}
-		&.cornbread { font-family: 'Cornbread'; line-height: 1;}
-		&.ready-script { font-family: 'Ready Script'; line-height: 1;}
 	}
-	.fontweight.extralight { font-weight: 100;}
-	.fontweight.light { font-weight: 200;}
-	.fontweight.regular { font-weight: 300;}
-	.fontweight.medium { font-weight: 400;}
-	.fontweight.semibold { font-weight: 500;}
-	.fontweight.bold { font-weight: 600;}
-	.fontweight.extrabold { font-weight: 700;}
-	.fontweight.black { font-weight: 900;}
-
 	.type-tester-title {
 		display: none;
 		@media only screen and (min-width: 965px) {
@@ -1318,7 +1402,7 @@ Product Styles
 		.entry-title {
 			margin: 0px 0px 4px 0px;
 			font-family: $type-subhead;
-			font-weight: 500;
+			font-weight: 600; //maybe should be 450
 			font-size: 1.6em;
 			line-height: 1;
 			letter-spacing: .02em;
@@ -1332,7 +1416,7 @@ Product Styles
 		}
 		border-bottom: 3px solid $gray-1;
 		font-family: $type-subhead;
-		font-weight: 500 !important;
+		font-weight: 600 !important; //maybe should be 450
 		font-size: 20px;
 		@include clearfix;
 		.select {
@@ -1426,7 +1510,7 @@ Product Styles
 		}
 		#font-size-slider {
 			font-family: $type-subhead;
-			font-weight: 500 !important;
+			font-weight: 600 !important; //maybe should be 450
 			font-size: 20px;
 			width: 30%;
 			color: $gray-2;
@@ -1471,7 +1555,7 @@ Product Styles
 			}
 			float: right;
 			text-align: right;
-			font-weight: 400;
+			font-weight: 500;
 			color: $gray-2;
 			margin: 10px 20px;
 		}
@@ -1546,7 +1630,7 @@ Product Styles
 				&:not(:last-of-type) {
 					font-family: $type-subhead;
 					height: 34px;
-					font-weight: 500;
+					font-weight: 600; //maybe should be 450
 					overflow: hidden;
 					white-space: nowrap;
 					font-size: 25px;
@@ -1554,7 +1638,7 @@ Product Styles
 				}
 				.post-meta-key {
 					font-family: $type-subhead-expanded;
-					font-weight: 600;
+					font-weight: 700;
 					text-transform: uppercase;
 					letter-spacing: .12em;
 					font-size: 12px;
@@ -1605,7 +1689,7 @@ Product Styles
 				margin-left: 8%;
 			}
 			font-family: $type-subhead-expanded;
-			font-weight: 600;
+			font-weight: 700;
 			text-transform: uppercase;
 			letter-spacing: .1em;
 			font-size: .75em;
@@ -1923,7 +2007,7 @@ body {
 			&:after {
 				font-family: $type-script-subhead;
 				font-feature-settings: "liga" 1;
-				font-weight: 500;
+				font-weight: 600;
 				font-size: 1.1em;
 				display: inline-block;
 				padding-top: 18px;
@@ -2026,7 +2110,7 @@ body {
 	padding: 15px;
 	a {
 		&:hover {
-			font-weight: 400;
+			font-weight: 500;
 			color: $black;
 		}
 	}
@@ -2154,7 +2238,7 @@ body {
 	}
 	.post-navigation {
 		font-family: $type-subhead-expanded;
-		font-weight: 600;
+		font-weight: 700;
 		text-transform: uppercase;
 		letter-spacing: .1em;
 		font-size: .75em;
@@ -2302,7 +2386,7 @@ footer.footer {
 				.math {
 					display: inline-block;
 					font-family: $type-subhead;
-					font-weight: 500;
+					font-weight: 600; //maybe should be 450
 					font-size: 16px;
 				}
 				@media (max-width: 499px) {

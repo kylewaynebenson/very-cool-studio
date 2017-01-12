@@ -51,16 +51,13 @@ get_header(); ?>
 		<ul class="list-box">
 			<li><a href="https://www.instagram.com/trevorchristensen/">Trevor Christensen</a><span class="year">PHOTO</span></li>
 			<li><a href="https://fortfoundry.com/">Mattox Schuler</a><span class="year">TYPE</span></li>
-			<li><a href="https://www.instagram.com/davidwolske/">David Wolske</a><span class="year">LETTERPRESS</span></li>
 			<li><a href="http://beeteeth.com/">Dan Christofferson</a><span class="year">ILLUSTRATION</span></li>
 			<li>Dogs<span class="year">COOL</span></li>
 			<li><a href="https://www.instagram.com/kendrickkidd/">Kendrick Kidd</a><span class="year">DESIGN</span></li>
-			<li><a href="https://www.instagram.com/andrewcolinbeck/">Andrew Colin Beck</a><span class="year">DESIGN</span></li>
-			<li>Soda<span class="year">YEAH</span></li>
-			<li><a href="https://www.instagram.com/beccaclason/">Becca Clason</a><span class="year">LETTERING</span></li>
+			<li><a href="https://www.instagram.com/andrewcolinbeck/">Andrew Colin Beck</a><span class="year">ILLUSTRATION</span></li>
+			<li>Carbonated Water<span class="year">YEAH</span></li>
 			<li><a href="https://jonathanballdesign.com/">Jonathan Ball</a><span class="year">TYPE</span></li>
-			<li>Sunflower Seeds<span class="year">UH HU</span></li>
-
+			<li>Soft Pretzels from Whole Foods<span class="year">UH HU</span></li>
 		</ul>
 	</div>
 	<div class="friends-enemies">

@@ -48,7 +48,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<?php the_content(); ?>
 		</div>
 			<div class="type-tester"> 
-		<span contenteditable="true" id="type-tester-editable" class="fontselect fontsize fontweight de 64 textfield <?php echo $post->post_name;?>"><?php the_title(); ?></span> 
+		<span contenteditable="true" id="type-tester-editable" class="fontselect fontsize fontweight de 64 textfield <?php echo $post->post_name;?>">Try <?php the_title(); ?></span> 
 		<div class="type-tester-title">
 			<h4 class="entry-title"><?php the_title(); ?></h4>
 			<h5><?php echo get_the_excerpt(); ?></h5>
@@ -66,6 +66,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<span class="arr"></span>
 				<select class="" data-native-menu="false" id="font-weight-select" name="weight">
 				<?php
+					// This section pulls all the webfont names from the directory, then sorts them
 					$title = get_the_title();
 					$title = str_replace(" ", "", $title);
 					global $post;
@@ -75,17 +76,51 @@ if ( ! defined( 'ABSPATH' ) ) {
 					$path = $directory;
 					$path .= '*.woff';
 					$files = array_diff(glob($path), array('.', '..'));
-					$default = 'Regular';
+					$newfiles = str_replace($directory.$title, "", $files);
+					$newfiles = str_replace(".woff", "", $newfiles);
+					$newfiles = str_replace("-", " ", $newfiles);
+					$arr = $newfiles;
+					// 3 items need 2 bits to be represented ( 0 => 00 => "Expanded", 1 => 01 => "Standard", 2 => 10 => "Condensed" )
+					$crit1 = ["Expanded", "Standard", "Condensed", "ExtraCondensed", "Compressed", "SL", "ST"];
+					// 9 items need 4 bits to be represented ( 0 => 0000 => "Black", 1 => 0001 => "ExtraBold", ... 7 => 0111 => "Thin", 8 => 1000 => "ExtraLight" )
+					$crit2 = ["Black", "Heavy", "ExtraBold", "Bold", "SemiBold", "Medium", "Regular", "Light", "ExtraLight", "Thin", "ExtraThin"];
+					// if you join all the bits, each item of your array can be represented with a 6 bits number: ( 0 => 000000 => "Expanded Black" ... 40 => 101000 => "Condensed ExtraLight" )
+
+					$crit2 = array_flip($crit2);
+
+					$result = [];
+
+					foreach ($arr as $item) {
+					    if (false !== strpos($item, "Expanded"))
+					        $key = 0;  // 000000
+					    elseif (false !== strpos($item, "ExtraCondensed"))
+					        $key = 48; // 100000
+					    elseif (false !== strpos($item, "Condensed"))
+					        $key = 32; // 100000
+					    elseif (false !== strpos($item, "Compressed"))
+					        $key = 60; // 100000
+					    elseif (false !== strpos($item, "SL"))
+					        $key = 76; // 100000
+					    elseif (false !== strpos($item, "ST"))
+					        $key = 92; // 100000
+					    else
+					        $key = 16; // 010000
+
+					    $parts = explode(' ', $item);
+					    $weight = isset($parts[1]) ? $parts[1] : $parts[0];
+					    $key += $crit2[$weight];
+
+					    $result[$key] = $item;
+					}
+
+					ksort($result, SORT_NUMERIC);
+				?>
+				<?php
+					$newfiles = $result;
 					$html = '';
-					foreach ($files as &$value) {
-						$value = str_replace($directory.$title, "", $value);
-						$value = ltrim($value, '-');
-						$value = str_replace(".woff", "", $value);
-						$valueslug = strtolower(str_replace("-", " ", $value));
-						$value = str_replace("-", " ", $value);
-						
-						echo "<a href='http://localhost/".$value."' target='_black' >".$value."</a><br/>";
-						if ($value == $default) {
+					foreach ($newfiles as &$value) {
+						$valueslug = strtolower($value);
+						if ($value == ' Regular' | $value == 'Regular') {
 						    $html .= "<option value='{$valueslug}' selected>";
 						    $html .= "{$value}</option> ";
 						} else {
@@ -154,7 +189,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			 	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
 			 	<button type="submit" class="chamfered-button chamfered-button-yellow"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
 			</form>
-			<h5 class="type-tester-notice">Type tester does not demonstrate actual scope or<br> function of typeface because of limited browser and web support.</h5>
+			<h5 class="type-tester-notice">Type tester does not demonstrate actual scope or<br> function of typeface thanks to browser limitations.</h5>
 		</div>
 	 </div>
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
@@ -207,18 +242,53 @@ $('#font-alts').on('change', function () {
 </script>
 <?php do_action( 'woocommerce_after_single_product' ); ?>
 <div class="clear"></div>
-<div class="specimen-gallery">
-	<h5>Specimen Gallery</h5>
-	<?php
-	  global $product;
-	 $attachment_ids = $product->get_gallery_attachment_ids();
+<div class="radio-tabs">
+	<input class="state" type="radio" title="Specimen" name="houses-state" id="specimen" checked />
+	<input class="state" type="radio" title="Gallery" name="houses-state" id="gallery" />
 
-	foreach( $attachment_ids as $attachment_id ) 
-	{
-	  $image_link = wp_get_attachment_url( $attachment_id );
-	  echo "<img class='gallery-images' src=" . $image_link . " />";
-	}
-	?>
+	<div class="tabs">
+		<label for="specimen" id="specimen-tab" class="tab">Specimen</label>
+		<label for="gallery" id="gallery-tab" class="tab">Gallery</label>
+	</div>
+	<div class="panels">
+		<div id="specimen-panel" class="panel active">
+			<?php
+			  global $product;
+			 $attachment_ids = $product->get_gallery_attachment_ids();
+
+			foreach( $attachment_ids as $attachment_id ) 
+			{
+			  $image_link = wp_get_attachment_url( $attachment_id );
+			  echo "<img class='gallery-images' src=" . $image_link . " />";
+			}
+			?>
+		</div>
+		<div id="gallery-panel" class="panel">
+			<?php
+			$adjectives = array("fast ", "slow ", "meaningless ", "pathetic ", "gassy ",  "long-winded ", "defeated ", "grumpy ", "ticklish ", "overwhelmed ", "tacky ", "miffed ", "tiring ", "dangerous ", "decent ", "careful ", "flustered ", "noble ", "tasteful ", "doubting ", "unnecessary ", "surly ", "spaceage", "limited ", "shameless ", "zealous ",);
+			$description = array("brown ", "yellow ", "red ", "orange ", "durable ", "fleshy ", "bristling ", "crosseyed ", "pigeontoed ", "bubbling ", "salacious ", "bushy ", "flimsy ", "prickly ", "musty ", "swirly ", "lumpy ", "snarly ", "fuzzy ", "quiet ", "foamy ",);
+			$nouns = array("turtle ", "horse ", "dog ", "pig ", "zebra ", "hedgehog ", "rabbit ", "cat ", "ant ", "gorilla ", "fox ", "coyote ", "goat ", "lion ", "house cat ", "hamster ", "pigeon ", "parrot ");
+			$verbs = array("jumped ", "farted ", "ate ", "tiptoed ", "sank ", "quibbled ", "squeezed ", "squirmed ", "littered ", "fumed ", "burped ", "waffled ", "played ping pong ", "hit a wiffle ball ", "wailed ", "bobbed for apples ", "picked her nose ", "did the frug ", "sniffed ", "collapsed ", "swerved ", "slurped a Coke ", "barfed ", "lurched ", "rolled ", "rumbled ", "gurgled ", "slipped ", "gagged ");
+			$prepositions = array("over ", "under ", "behind the back of ", "after ", "beside ", "thanks to ", "in the face of ");
+			$articles = array("the ", "that ", "a ", "my ", "your ", "their ");
+			$rand_adjectives = array_rand($adjectives, 4);
+			$rand_description = array_rand($description, 4);
+			$rand_nouns = array_rand($nouns, 4);
+			$rand_verbs = array_rand($verbs, 3);
+			$rand_prepositions = array_rand($prepositions, 3);
+			$rand_articles = array_rand($articles, 4);
+			foreach ($newfiles as &$value) {
+				$eachfont = "";
+				$typehtml = ucwords($articles[$rand_articles[0]] . $adjectives[$rand_adjectives[0]] . $description[$rand_description[0]] . $nouns[$rand_nouns[0]] . $verbs[$rand_verbs[0]] . $prepositions[$rand_prepositions[0]] . $articles[$rand_articles[1]] . $adjectives[$rand_adjectives[1]] . $description[$rand_description[1]] . trim($nouns[$rand_nouns[1]]) . ". " . $articles[$rand_articles[2]] . $adjectives[$rand_adjectives[2]] . $nouns[$rand_nouns[2]] . $verbs[$rand_verbs[2]] . $prepositions[$rand_prepositions[1]] . $articles[$rand_articles[3]] . $adjectives[$rand_adjectives[3]] . $description[$rand_description[3]] . trim($nouns[$rand_nouns[3]]) . "! ");
+				$valueslug = strtolower($value);
+				$eachfont .= "<h5>{$value}</h5><div contenteditable='true' class='fontselect {$post->post_name} {$valueslug}'>";
+				$eachfont .= $typehtml;
+				$eachfont .= "</div>";
+				print $eachfont;
+			}
+			?>
+		</div>
+	</div>
 </div>
 </div>
 </div>

@@ -77,7 +77,7 @@
 				    	<textarea class="input" type="text" name="message_text" required><?php echo esc_textarea($_POST['message_text']); ?></textarea>
 				    	<label for="message_text">Message</label>
 				    </div>
-				    <p><input type="submit" name="submitted" value="send"></p>
+				    <p><input class="button chamfered-button chamfered-button-black" type="submit" name="submitted" value="send"> <span class="alignright"><a href="http://eepurl.com/CvOvL" class="button chamfered-button chamfered-button-white">Join a Very Cool Newsletter</a></span></p>
 				  </form>
 				</div><!-- .contact-form -->
 			</div><!-- .footer-contact -->

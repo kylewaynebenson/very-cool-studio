@@ -141,25 +141,25 @@ src: url("./type/business-script/BusinessScript-Regular.eot?#iefix") format("emb
 @font-face { font-family: 'Cornbread'; font-weight: 300; src: url("./type/cornbread/Cornbread-Regular.eot");
   /* IE9 Compat Modes */
 src: url("./type/cornbread/Cornbread-Regular.eot?#iefix") format("embedded-opentype"), url("./type/cornbread/Cornbread-Regular.woff2") format("woff2"), url("./type/cornbread/Cornbread-Regular.woff") format("woff"); }
-@font-face { font-family: 'Cardinal Grotesque'; font-weight: 400; src: url("./type/cardinal-grotesque/CardinalGrotesque-Medium.eot");
+@font-face { font-family: 'Cardinal Grotesque'; font-weight: 500; src: url("./type/cardinal-grotesque/CardinalGrotesque-Medium.eot");
   /* IE9 Compat Modes */
 src: url("./type/cardinal-grotesque/CardinalGrotesque-Medium.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesque-Medium.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesque-Medium.woff") format("woff"); }
-@font-face { font-family: 'Cardinal Grotesque'; font-weight: 500; src: url("./type/cardinal-grotesque/CardinalGrotesque-SemiBold.eot");
+@font-face { font-family: 'Cardinal Grotesque'; font-weight: 600; src: url("./type/cardinal-grotesque/CardinalGrotesque-SemiBold.eot");
   /* IE9 Compat Modes */
 src: url("./type/cardinal-grotesque/CardinalGrotesque-SemiBold.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesque-SemiBold.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesque-SemiBold.woff") format("woff"); }
-@font-face { font-family: 'Cardinal Grotesque'; font-weight: 600; src: url("./type/cardinal-grotesque/CardinalGrotesque-Bold.eot");
+@font-face { font-family: 'Cardinal Grotesque'; font-weight: 700; src: url("./type/cardinal-grotesque/CardinalGrotesque-Bold.eot");
   /* IE9 Compat Modes */
 src: url("./type/cardinal-grotesque/CardinalGrotesque-Bold.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesque-Bold.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesque-Bold.woff") format("woff"); }
 @font-face { font-family: 'Very Cool Icons'; src: url("./type/verycoolicons-Regular.eot");
   /* IE9 Compat Modes */
 src: url("./type/verycoolicons-Regular.eot?#iefix") format("embedded-opentype"), url("./type/verycoolicons-Regular.woff2") format("woff2"), url("./type/verycoolicons-Regular.woff") format("woff"); }
-@font-face { font-family: 'Cardinal Grotesque Cond'; font-weight: 600; src: url("./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.eot");
+@font-face { font-family: 'Cardinal Grotesque ExtraCondensed'; font-weight: 600; src: url("./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.eot");
   /* IE9 Compat Modes */
 src: url("./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.woff") format("woff"); }
-@font-face { font-family: 'Cardinal Grotesque Expanded'; font-weight: 500; src: url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Semibold.eot");
+@font-face { font-family: 'Cardinal Grotesque Expanded'; font-weight: 600; src: url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Semibold.eot");
   /* IE9 Compat Modes */
 src: url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Semibold.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Semibold.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Semibold.woff") format("woff"); }
-@font-face { font-family: 'Cardinal Grotesque Expanded'; font-weight: 600; src: url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.eot");
+@font-face { font-family: 'Cardinal Grotesque Expanded'; font-weight: 700; src: url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.eot");
   /* IE9 Compat Modes */
 src: url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.woff") format("woff"); }
 .icon:before { display: inline-block; font-family: 'Very Cool Icons'; font-style: normal; font-weight: 400; font-size: 2.6em; line-height: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
@@ -203,7 +203,7 @@ h1.business-script, .h1.business-script { font-family: "Business Script"; -webki
 @media (min-width: 940px) { h1, .h1 { font-size: 2.5em; margin-bottom: 14px; } }
 @media (max-width: 939px) { h1, .h1 { font-size: 2.0em; } }
 
-h1.huge-h1 { font-family: "Cardinal Grotesque Cond"; font-weight: 600; font-size: 6em; }
+h1.huge-h1 { font-family: "Cardinal Grotesque ExtraCondensed"; font-weight: 600; font-size: 6em; }
 
 h2, .h2 { font-family: "Business Script"; font-weight: 300; font-size: 2.25em; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; line-height: 1.25; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 @media (max-width: 500px) { h2, .h2 { font-size: 1.8em; line-height: 1.15; } }
@@ -309,14 +309,14 @@ table.list-box tr td.product-price, table.list-box tr td.product-quantity, table
 table.list-box tr td.product-price input, table.list-box tr td.product-quantity input, table.list-box tr td.product-quantity input input { border: 0px; width: 50px; }
 table.list-box tr .product-subtotal { text-align: right; font-weight: 500; }
 
-.squiggle-divider-full:after { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; text-indent: 6px; display: block; width: 100%; max-width: 100%; display: block; font-family: 'Very Cool Icons'; font-style: normal; font-weight: 400; font-size: 1.65em; overflow: hidden; line-height: 1.1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-overflow: clip; content: "\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002"; }
+.squiggle-divider-full:after { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; text-indent: 6px; display: block; width: 100%; max-width: 100%; display: block; font-family: 'Very Cool Icons'; font-style: normal; font-weight: 500; font-size: 1.65em; overflow: hidden; line-height: 1.1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-overflow: clip; content: "\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002"; }
 
 @media (min-width: 1460px) { .single:not(.woocommerce) .squiggle-divider-full:after { content: "\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002"; letter-spacing: .002em; } }
 
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-button, input[type="button"], input[type="reset"], input[type="submit"] { font-family: "Cardinal Grotesque"; font-weight: 500; font-size: .75em; text-transform: uppercase; letter-spacing: 1px; border: 3px solid #231f20; background: #231f20; color: #ffd138; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { font-family: "Cardinal Grotesque"; font-weight: 600; font-size: .75em; text-transform: uppercase; letter-spacing: 1px; border: 3px solid #231f20; background: #231f20; color: #ffd138; }
 button:active, button:focus, input[type="button"]:active, input[type="button"]:focus, input[type="reset"]:active, input[type="reset"]:focus, input[type="submit"]:active, input[type="submit"]:focus { outline: none; }
 
 .woocommerce-message a.button { float: right; margin-top: -2px; }
@@ -324,7 +324,7 @@ button:active, button:focus, input[type="button"]:active, input[type="button"]:f
 .woocommerce-error a.button + a.button { margin-right: 10px; }
 @media (max-width: 930px) { .woocommerce-error a.button + a.button { display: none; } }
 
-.chamfered-button, input[type="submit"].chamfered-button, .wc-backward.button, .woocommerce-message a, .wc-forward.button, #place_order.button, p:last-of-type.product.woocommerce.add_to_cart_inline a { cursor: pointer; color: #ffffff; text-decoration: none; border: 0px; background: -webkit-linear-gradient(315deg, transparent 5px, #231f20 0) top left, -webkit-linear-gradient(225deg, transparent 5px, #231f20 0) top right, -webkit-linear-gradient(135deg, transparent 5px, #231f20 0) bottom right, -webkit-linear-gradient(45deg, transparent 5px, #231f20 0) bottom left; background: linear-gradient(135deg, transparent 5px, #231f20 0) top left, linear-gradient(225deg, transparent 5px, #231f20 0) top right, linear-gradient(315deg, transparent 5px, #231f20 0) bottom right, linear-gradient(45deg, transparent 5px, #231f20 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; font-family: "Cardinal Grotesque"; font-weight: 500; font-size: 16px; text-transform: uppercase; padding: 5px 20px; letter-spacing: 1px; }
+.chamfered-button, input[type="submit"].chamfered-button, .wc-backward.button, .woocommerce-message a, .wc-forward.button, #place_order.button, p:last-of-type.product.woocommerce.add_to_cart_inline a { cursor: pointer; color: #ffffff; text-decoration: none; border: 0px; background: -webkit-linear-gradient(315deg, transparent 5px, #231f20 0) top left, -webkit-linear-gradient(225deg, transparent 5px, #231f20 0) top right, -webkit-linear-gradient(135deg, transparent 5px, #231f20 0) bottom right, -webkit-linear-gradient(45deg, transparent 5px, #231f20 0) bottom left; background: linear-gradient(135deg, transparent 5px, #231f20 0) top left, linear-gradient(225deg, transparent 5px, #231f20 0) top right, linear-gradient(315deg, transparent 5px, #231f20 0) bottom right, linear-gradient(45deg, transparent 5px, #231f20 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; font-family: "Cardinal Grotesque"; font-weight: 600; font-size: 16px; text-transform: uppercase; padding: 5px 20px; letter-spacing: 1px; }
 .chamfered-button:hover, input[type="submit"].chamfered-button:hover, .wc-backward.button:hover, .woocommerce-message a:hover, .wc-forward.button:hover, #place_order.button:hover, p:last-of-type.product.woocommerce.add_to_cart_inline a:hover { background: -webkit-linear-gradient(315deg, transparent 5px, #312b2c 0) top left, -webkit-linear-gradient(225deg, transparent 5px, #312b2c 0) top right, -webkit-linear-gradient(135deg, transparent 5px, #312b2c 0) bottom right, -webkit-linear-gradient(45deg, transparent 5px, #312b2c 0) bottom left; background: linear-gradient(135deg, transparent 5px, #312b2c 0) top left, linear-gradient(225deg, transparent 5px, #312b2c 0) top right, linear-gradient(315deg, transparent 5px, #312b2c 0) bottom right, linear-gradient(45deg, transparent 5px, #312b2c 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; }
 .chamfered-button:active, input[type="submit"].chamfered-button:active, .wc-backward.button:active, .woocommerce-message a:active, .wc-forward.button:active, #place_order.button:active, p:last-of-type.product.woocommerce.add_to_cart_inline a:active { background: -webkit-linear-gradient(315deg, transparent 5px, #151314 0) top left, -webkit-linear-gradient(225deg, transparent 5px, #151314 0) top right, -webkit-linear-gradient(135deg, transparent 5px, #151314 0) bottom right, -webkit-linear-gradient(45deg, transparent 5px, #151314 0) bottom left; background: linear-gradient(135deg, transparent 5px, #151314 0) top left, linear-gradient(225deg, transparent 5px, #151314 0) top right, linear-gradient(315deg, transparent 5px, #151314 0) bottom right, linear-gradient(45deg, transparent 5px, #151314 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; }
 .chamfered-button:visited, input[type="submit"].chamfered-button:visited, .wc-backward.button:visited, .woocommerce-message a:visited, .wc-forward.button:visited, #place_order.button:visited, p:last-of-type.product.woocommerce.add_to_cart_inline a:visited { color: #ffffff; }
@@ -442,9 +442,9 @@ a:hover, a:active { outline: 0; }
 @media screen and (max-width: 1539px) { .keyboard-navigation { display: none; } }
 @media screen and (min-width: 1540px) { .keyboard-navigation .key { display: block; position: fixed; top: 50%; margin-top: -50px; border: 3px solid #e0e0e0; line-height: 48px; width: 54px; height: 54px; text-align: center; color: #e0e0e0; border-radius: 4px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; cursor: default; }
   .keyboard-navigation .key.key-left { left: 15px; }
-  .keyboard-navigation .key.key-left:hover:after { text-align: left; left: 66px; padding-top: 5px; content: "Use keyboard to navigate."; position: absolute; width: 110px; color: #dbdbdb; letter-spacing: .03em; font-weight: 500; font-family: "Cardinal Grotesque Expanded"; line-height: 1.2; }
+  .keyboard-navigation .key.key-left:hover:after { text-align: left; left: 66px; padding-top: 5px; content: "Use keyboard to navigate."; position: absolute; width: 110px; color: #dbdbdb; letter-spacing: .03em; font-weight: 600; font-family: "Cardinal Grotesque Expanded"; line-height: 1.2; }
   .keyboard-navigation .key.key-right { right: 15px; }
-  .keyboard-navigation .key.key-right:hover:after { text-align: right; right: 66px; padding-top: 5px; content: "Use keyboard to navigate."; position: absolute; width: 110px; color: #dbdbdb; letter-spacing: .03em; font-weight: 500; font-family: "Cardinal Grotesque Expanded"; line-height: 1.2; } }
+  .keyboard-navigation .key.key-right:hover:after { text-align: right; right: 66px; padding-top: 5px; content: "Use keyboard to navigate."; position: absolute; width: 110px; color: #dbdbdb; letter-spacing: .03em; font-weight: 600; font-family: "Cardinal Grotesque Expanded"; line-height: 1.2; } }
 
 @media screen and (max-width: 699px) { .main-navigation { width: 100%; } }
 .main-navigation ul { list-style: none; margin: 0; padding-left: 0; margin-top: -9px; margin-bottom: 5px; }
@@ -461,7 +461,7 @@ a:hover, a:active { outline: 0; }
 .main-navigation li.right .wcmenucart-contents .icon-shopping-cart:before { font-size: 25px; }
 .main-navigation li.right .wcmenucart-contents .amount { font-size: .5em; font-family: "Business Script"; font-weight: 300; }
 @media screen and (min-width: 700px) { .main-navigation li.right .wcmenucart-contents .amount { color: #e0e0e0; position: absolute; right: 0px; bottom: -17px; } }
-.main-navigation a { display: inline-block; text-decoration: none; font-family: "Cardinal Grotesque"; font-weight: 500; font-size: 1.6em; line-height: 1; padding-bottom: 10px; letter-spacing: .02em; }
+.main-navigation a { display: inline-block; text-decoration: none; font-family: "Cardinal Grotesque"; font-weight: 600; font-size: 1.6em; line-height: 1; padding-bottom: 10px; letter-spacing: .02em; }
 .main-navigation .current_page_item > a, .main-navigation .current-menu-item > a, .main-navigation .current_page_ancestor > a, .main-navigation .current-menu-ancestor > a { color: gainsboro; cursor: default; }
 
 /* Small menu. */
@@ -596,13 +596,12 @@ embed, iframe, object { max-width: 100%; }
 a.no-style { text-decoration: none; color: inherit; }
 a.no-style:hover { color: inherit; }
 
-a.squiggle { text-decoration: none; font-family: "Cardinal Grotesque"; font-weight: 500; font-size: 1.3em; letter-spacing: .05em; display: inline-block; padding-bottom: 7px; color: #ffd138; padding-bottom: 7px; background-image: url(img/squiggle-yellow.png); background-repeat: repeat-x; background-position: 0px 100%; background-size: 14px 9px; -webkit-transition: background 0.3s; transition: background 0.3s; }
-a.squiggle:hover { background-position: 15px 100%; }
+a.squiggle { text-decoration: none; font-family: "Cardinal Grotesque"; font-weight: 600; font-size: 1.3em; letter-spacing: .05em; display: inline-block; padding-bottom: 7px; color: #ffd138; padding-bottom: 7px; background-image: url(img/squiggle-yellow.png); background-repeat: repeat-x; background-position: 0px 100%; background-size: 14px 9px; -webkit-transition: background 0.3s; transition: background 0.3s; }
+a.squiggle:hover { background-position: 15px 100%; color: #ffd138; font-weight: 600 !important; }
+a.squiggle.squiggle-black { background-image: url(img/squiggle-black.png); color: #231f20; -webkit-transition: background 0.3s; transition: background 0.3s; }
+a.squiggle.squiggle-black:hover { background-position: 15px 100%; }
 
-a.squiggle-black { background-image: url(img/squiggle-black.png); color: #231f20; -webkit-transition: background 0.3s; transition: background 0.3s; }
-a.squiggle-black:hover { background-position: 15px 100%; }
-
-.cat-links a { margin-right: 3px; background: #231f20; color: #ffffff; font-family: "Cardinal Grotesque Expanded"; letter-spacing: .08em; font-size: 11px; line-height: 1; padding: 2px 8px 3px 8px; font-weight: 600; text-transform: uppercase; -webkit-transition: background 0.3s; transition: background 0.3s; }
+.cat-links a { margin-right: 3px; background: #231f20; color: #ffffff; font-family: "Cardinal Grotesque Expanded"; letter-spacing: .08em; font-size: 11px; line-height: 1; padding: 2px 8px 3px 8px; font-weight: 700; text-transform: uppercase; -webkit-transition: background 0.3s; transition: background 0.3s; }
 .cat-links a:hover { background: #393234; }
 .cat-links a:active { background: #0d0c0c; }
 .cat-links .cat-for-sale { display: none; }
@@ -621,12 +620,12 @@ a.squiggle-black:hover { background-position: 15px 100%; }
 .blog article.product-cat-type, .blog article.product-cat-objects, .home article.product-cat-type, .home article.product-cat-objects, .archive article.product-cat-type, .archive article.product-cat-objects, .category article.product-cat-type, .category article.product-cat-objects { background: #ffffff; position: relative; max-width: 499px; width: 100%; display: block; margin: 0 auto; margin-bottom: 4.1666666667%; }
 .blog article.product-cat-type.outofstock a.button, .blog article.product-cat-objects.outofstock a.button, .home article.product-cat-type.outofstock a.button, .home article.product-cat-objects.outofstock a.button, .archive article.product-cat-type.outofstock a.button, .archive article.product-cat-objects.outofstock a.button, .category article.product-cat-type.outofstock a.button, .category article.product-cat-objects.outofstock a.button { display: none; }
 .blog article.product-cat-type.outofstock .price, .blog article.product-cat-objects.outofstock .price, .home article.product-cat-type.outofstock .price, .home article.product-cat-objects.outofstock .price, .archive article.product-cat-type.outofstock .price, .archive article.product-cat-objects.outofstock .price, .category article.product-cat-type.outofstock .price, .category article.product-cat-objects.outofstock .price { visibility: hidden; position: relative; }
-.blog article.product-cat-type.outofstock .price:after, .blog article.product-cat-objects.outofstock .price:after, .home article.product-cat-type.outofstock .price:after, .home article.product-cat-objects.outofstock .price:after, .archive article.product-cat-type.outofstock .price:after, .archive article.product-cat-objects.outofstock .price:after, .category article.product-cat-type.outofstock .price:after, .category article.product-cat-objects.outofstock .price:after { color: gainsboro; visibility: visible; content: "SOON"; -webkit-font-feature-settings: "case" 1; -ms-font-feature-settings: "case" 1; font-feature-settings: "case" 1; font-weight: 600; font-size: 16px !important; position: absolute; top: 2px; left: 0px; right: 0px; margin-left: -3px; letter-spacing: 0.05em; }
+.blog article.product-cat-type.outofstock .price:after, .blog article.product-cat-objects.outofstock .price:after, .home article.product-cat-type.outofstock .price:after, .home article.product-cat-objects.outofstock .price:after, .archive article.product-cat-type.outofstock .price:after, .archive article.product-cat-objects.outofstock .price:after, .category article.product-cat-type.outofstock .price:after, .category article.product-cat-objects.outofstock .price:after { color: gainsboro; visibility: visible; content: "SOON"; -webkit-font-feature-settings: "case" 1; -ms-font-feature-settings: "case" 1; font-feature-settings: "case" 1; font-weight: 700; font-size: 16px !important; position: absolute; top: 2px; left: 0px; right: 0px; margin-left: -3px; letter-spacing: 0.05em; }
 .blog article.product-cat-type.outofstock .entry-title, .blog article.product-cat-type.outofstock h5, .blog article.product-cat-type.outofstock .h5, .blog article.product-cat-objects.outofstock .entry-title, .blog article.product-cat-objects.outofstock h5, .blog article.product-cat-objects.outofstock .h5, .home article.product-cat-type.outofstock .entry-title, .home article.product-cat-type.outofstock h5, .home article.product-cat-type.outofstock .h5, .home article.product-cat-objects.outofstock .entry-title, .home article.product-cat-objects.outofstock h5, .home article.product-cat-objects.outofstock .h5, .archive article.product-cat-type.outofstock .entry-title, .archive article.product-cat-type.outofstock h5, .archive article.product-cat-type.outofstock .h5, .archive article.product-cat-objects.outofstock .entry-title, .archive article.product-cat-objects.outofstock h5, .archive article.product-cat-objects.outofstock .h5, .category article.product-cat-type.outofstock .entry-title, .category article.product-cat-type.outofstock h5, .category article.product-cat-type.outofstock .h5, .category article.product-cat-objects.outofstock .entry-title, .category article.product-cat-objects.outofstock h5, .category article.product-cat-objects.outofstock .h5 { color: gainsboro; }
 .blog article.product-cat-type.outofstock .entry-header img, .blog article.product-cat-objects.outofstock .entry-header img, .home article.product-cat-type.outofstock .entry-header img, .home article.product-cat-objects.outofstock .entry-header img, .archive article.product-cat-type.outofstock .entry-header img, .archive article.product-cat-objects.outofstock .entry-header img, .category article.product-cat-type.outofstock .entry-header img, .category article.product-cat-objects.outofstock .entry-header img { opacity: 0.15; }
 .blog article.product-cat-type.outofstock .entry-footer .h5:before, .blog article.product-cat-objects.outofstock .entry-footer .h5:before, .home article.product-cat-type.outofstock .entry-footer .h5:before, .home article.product-cat-objects.outofstock .entry-footer .h5:before, .archive article.product-cat-type.outofstock .entry-footer .h5:before, .archive article.product-cat-objects.outofstock .entry-footer .h5:before, .category article.product-cat-type.outofstock .entry-footer .h5:before, .category article.product-cat-objects.outofstock .entry-footer .h5:before { display: block; content: "Not Available"; }
 .blog article.product-cat-type.product-cat-new, .blog article.product-cat-objects.product-cat-new, .home article.product-cat-type.product-cat-new, .home article.product-cat-objects.product-cat-new, .archive article.product-cat-type.product-cat-new, .archive article.product-cat-objects.product-cat-new, .category article.product-cat-type.product-cat-new, .category article.product-cat-objects.product-cat-new { position: relative; }
-.blog article.product-cat-type.product-cat-new:before, .blog article.product-cat-objects.product-cat-new:before, .home article.product-cat-type.product-cat-new:before, .home article.product-cat-objects.product-cat-new:before, .archive article.product-cat-type.product-cat-new:before, .archive article.product-cat-objects.product-cat-new:before, .category article.product-cat-type.product-cat-new:before, .category article.product-cat-objects.product-cat-new:before { content: "NEW"; font-family: "Cardinal Grotesque Cond"; position: absolute; display: block; padding: 8px 7px 9px 8px; color: #231f20; font-style: normal; left: 7%; top: 0px; font-weight: 400; line-height: 1; font-size: 30px; text-align: center; background: -webkit-linear-gradient(315deg, #f0f0f0 6px, #f0f0f0 0) top left, -webkit-linear-gradient(225deg, #f0f0f0 6px, #f0f0f0 0) top right, -webkit-linear-gradient(135deg, transparent 6px, #f0f0f0 0) bottom right, -webkit-linear-gradient(45deg, transparent 6px, #f0f0f0 0) bottom left; background: linear-gradient(135deg, #f0f0f0 6px, #f0f0f0 0) top left, linear-gradient(225deg, #f0f0f0 6px, #f0f0f0 0) top right, linear-gradient(315deg, transparent 6px, #f0f0f0 0) bottom right, linear-gradient(45deg, transparent 6px, #f0f0f0 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; }
+.blog article.product-cat-type.product-cat-new:before, .blog article.product-cat-objects.product-cat-new:before, .home article.product-cat-type.product-cat-new:before, .home article.product-cat-objects.product-cat-new:before, .archive article.product-cat-type.product-cat-new:before, .archive article.product-cat-objects.product-cat-new:before, .category article.product-cat-type.product-cat-new:before, .category article.product-cat-objects.product-cat-new:before { content: "NEW"; font-family: "Cardinal Grotesque ExtraCondensed"; position: absolute; display: block; padding: 8px 7px 9px 8px; color: #231f20; font-style: normal; left: 7%; top: 0px; font-weight: 600; line-height: 1; font-size: 30px; text-align: center; background: -webkit-linear-gradient(315deg, #f0f0f0 6px, #f0f0f0 0) top left, -webkit-linear-gradient(225deg, #f0f0f0 6px, #f0f0f0 0) top right, -webkit-linear-gradient(135deg, transparent 6px, #f0f0f0 0) bottom right, -webkit-linear-gradient(45deg, transparent 6px, #f0f0f0 0) bottom left; background: linear-gradient(135deg, #f0f0f0 6px, #f0f0f0 0) top left, linear-gradient(225deg, #f0f0f0 6px, #f0f0f0 0) top right, linear-gradient(315deg, transparent 6px, #f0f0f0 0) bottom right, linear-gradient(45deg, transparent 6px, #f0f0f0 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; }
 .blog article.product-cat-type .entry-header, .blog article.product-cat-objects .entry-header, .home article.product-cat-type .entry-header, .home article.product-cat-objects .entry-header, .archive article.product-cat-type .entry-header, .archive article.product-cat-objects .entry-header, .category article.product-cat-type .entry-header, .category article.product-cat-objects .entry-header { border: 3px solid #f0f0f0; height: 165px; background: #ffffff; overflow: hidden; text-align: center; -webkit-transition: background 0.05s; transition: background 0.05s; }
 .blog article.product-cat-type .entry-header img, .blog article.product-cat-objects .entry-header img, .home article.product-cat-type .entry-header img, .home article.product-cat-objects .entry-header img, .archive article.product-cat-type .entry-header img, .archive article.product-cat-objects .entry-header img, .category article.product-cat-type .entry-header img, .category article.product-cat-objects .entry-header img { position: relative; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 .blog article.product-cat-type .entry-header:hover, .blog article.product-cat-objects .entry-header:hover, .home article.product-cat-type .entry-header:hover, .home article.product-cat-objects .entry-header:hover, .archive article.product-cat-type .entry-header:hover, .archive article.product-cat-objects .entry-header:hover, .category article.product-cat-type .entry-header:hover, .category article.product-cat-objects .entry-header:hover { background: #f0f0f0; }
@@ -636,12 +635,12 @@ a.squiggle-black:hover { background-position: 15px 100%; }
 .blog article.product-cat-type .entry-footer .cat-links a, .blog article.product-cat-objects .entry-footer .cat-links a, .home article.product-cat-type .entry-footer .cat-links a, .home article.product-cat-objects .entry-footer .cat-links a, .archive article.product-cat-type .entry-footer .cat-links a, .archive article.product-cat-objects .entry-footer .cat-links a, .category article.product-cat-type .entry-footer .cat-links a, .category article.product-cat-objects .entry-footer .cat-links a { background: #ffd138; color: #231f20; }
 .blog article.product-cat-type h5, .blog article.product-cat-type .h5, .blog article.product-cat-objects h5, .blog article.product-cat-objects .h5, .home article.product-cat-type h5, .home article.product-cat-type .h5, .home article.product-cat-objects h5, .home article.product-cat-objects .h5, .archive article.product-cat-type h5, .archive article.product-cat-type .h5, .archive article.product-cat-objects h5, .archive article.product-cat-objects .h5, .category article.product-cat-type h5, .category article.product-cat-type .h5, .category article.product-cat-objects h5, .category article.product-cat-objects .h5 { margin-top: 0px; margin-bottom: 0px; }
 .blog article.product-cat-type a, .blog article.product-cat-objects a, .home article.product-cat-type a, .home article.product-cat-objects a, .archive article.product-cat-type a, .archive article.product-cat-objects a, .category article.product-cat-type a, .category article.product-cat-objects a { text-decoration: none; }
-.blog article.product-cat-type .entry-title, .blog article.product-cat-objects .entry-title, .home article.product-cat-type .entry-title, .home article.product-cat-objects .entry-title, .archive article.product-cat-type .entry-title, .archive article.product-cat-objects .entry-title, .category article.product-cat-type .entry-title, .category article.product-cat-objects .entry-title { margin: -5px 0px 4px 0px; font-family: "Cardinal Grotesque"; font-weight: 500; font-size: 1.6em; line-height: 1; letter-spacing: .02em; }
+.blog article.product-cat-type .entry-title, .blog article.product-cat-objects .entry-title, .home article.product-cat-type .entry-title, .home article.product-cat-objects .entry-title, .archive article.product-cat-type .entry-title, .archive article.product-cat-objects .entry-title, .category article.product-cat-type .entry-title, .category article.product-cat-objects .entry-title { margin: -5px 0px 4px 0px; font-family: "Cardinal Grotesque"; font-weight: 600; font-size: 1.6em; line-height: 1; letter-spacing: .02em; }
 .blog article.product-cat-type .add_to_cart_button, .blog article.product-cat-objects .add_to_cart_button, .home article.product-cat-type .add_to_cart_button, .home article.product-cat-objects .add_to_cart_button, .archive article.product-cat-type .add_to_cart_button, .archive article.product-cat-objects .add_to_cart_button, .category article.product-cat-type .add_to_cart_button, .category article.product-cat-objects .add_to_cart_button { color: transparent; position: absolute; left: 10px; bottom: 10px; font-size: 0px; border-radius: 0px; background: transparent; }
-.blog article.product-cat-type .add_to_cart_button:before, .blog article.product-cat-objects .add_to_cart_button:before, .home article.product-cat-type .add_to_cart_button:before, .home article.product-cat-objects .add_to_cart_button:before, .archive article.product-cat-type .add_to_cart_button:before, .archive article.product-cat-objects .add_to_cart_button:before, .category article.product-cat-type .add_to_cart_button:before, .category article.product-cat-objects .add_to_cart_button:before { display: inline-block; color: #231f20; font-family: 'Very Cool Icons'; font-style: normal; font-size: 17px; font-weight: 400; padding: 3px 6px; line-height: 1; content: "\E009"; }
+.blog article.product-cat-type .add_to_cart_button:before, .blog article.product-cat-objects .add_to_cart_button:before, .home article.product-cat-type .add_to_cart_button:before, .home article.product-cat-objects .add_to_cart_button:before, .archive article.product-cat-type .add_to_cart_button:before, .archive article.product-cat-objects .add_to_cart_button:before, .category article.product-cat-type .add_to_cart_button:before, .category article.product-cat-objects .add_to_cart_button:before { display: inline-block; color: #231f20; font-family: 'Very Cool Icons'; font-style: normal; font-size: 17px; font-weight: 500; padding: 3px 6px; line-height: 1; content: "\E009"; }
 .blog article.product-cat-type .add_to_cart_button.added:before, .blog article.product-cat-objects .add_to_cart_button.added:before, .home article.product-cat-type .add_to_cart_button.added:before, .home article.product-cat-objects .add_to_cart_button.added:before, .archive article.product-cat-type .add_to_cart_button.added:before, .archive article.product-cat-objects .add_to_cart_button.added:before, .category article.product-cat-type .add_to_cart_button.added:before, .category article.product-cat-objects .add_to_cart_button.added:before { content: "\2714"; font-size: 14px; padding: 3px 5px; line-height: 1; color: #ffd138; }
 .blog article.product-cat-type a.added_to_cart, .blog article.product-cat-objects a.added_to_cart, .home article.product-cat-type a.added_to_cart, .home article.product-cat-objects a.added_to_cart, .archive article.product-cat-type a.added_to_cart, .archive article.product-cat-objects a.added_to_cart, .category article.product-cat-type a.added_to_cart, .category article.product-cat-objects a.added_to_cart { display: none; }
-.blog article.product-cat-type .price, .blog article.product-cat-objects .price, .home article.product-cat-type .price, .home article.product-cat-objects .price, .archive article.product-cat-type .price, .archive article.product-cat-objects .price, .category article.product-cat-type .price, .category article.product-cat-objects .price { color: #ffd138; font-weight: 600; font-size: 6em; font-size: 1em; margin-top: 0px; margin-bottom: 0px; }
+.blog article.product-cat-type .price, .blog article.product-cat-objects .price, .home article.product-cat-type .price, .home article.product-cat-objects .price, .archive article.product-cat-type .price, .archive article.product-cat-objects .price, .category article.product-cat-type .price, .category article.product-cat-objects .price { color: #ffd138; font-weight: 700; font-size: 6em; font-size: 1em; margin-top: 0px; margin-bottom: 0px; }
 @media only screen and (min-width: 481px) and (max-width: 699px) { .blog article.product-cat-type, .blog article.product-cat-objects, .home article.product-cat-type, .home article.product-cat-objects, .archive article.product-cat-type, .archive article.product-cat-objects, .category article.product-cat-type, .category article.product-cat-objects { display: block; width: 370px; margin: 0 auto; margin-bottom: 4.1666666667%; } }
 @media only screen and (min-width: 768px) { .blog article.product-cat-type, .blog article.product-cat-objects, .home article.product-cat-type, .home article.product-cat-objects, .archive article.product-cat-type, .archive article.product-cat-objects, .category article.product-cat-type, .category article.product-cat-objects { float: left; display: block; width: 29.1666666667%; margin-left: 4.1666666667%; margin-bottom: 4.1666666667%; } }
 @media only screen and (min-width: 700px) and (max-width: 919px) { .blog article.product-cat-type, .blog article.product-cat-objects, .home article.product-cat-type, .home article.product-cat-objects, .archive article.product-cat-type, .archive article.product-cat-objects, .category article.product-cat-type, .category article.product-cat-objects { float: left; margin-left: 4.1666666667%; width: 45.8333333333%; margin-bottom: 4.1666666667%; } }
@@ -651,10 +650,10 @@ a.squiggle-black:hover { background-position: 15px 100%; }
 .blog article.post:not(.type-product) h4, .blog article.post:not(.type-product) .h4, .home article.post:not(.type-product) h4, .home article.post:not(.type-product) .h4, .archive article.post:not(.type-product) h4, .archive article.post:not(.type-product) .h4, .category article.post:not(.type-product) h4, .category article.post:not(.type-product) .h4 { margin: -5px 0px 7px 0px; padding: 3px 1px 0px 2px; overflow-x: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .blog article.post:not(.type-product) h5, .blog article.post:not(.type-product) .h5, .home article.post:not(.type-product) h5, .home article.post:not(.type-product) .h5, .archive article.post:not(.type-product) h5, .archive article.post:not(.type-product) .h5, .category article.post:not(.type-product) h5, .category article.post:not(.type-product) .h5 { margin-top: -8px; margin-bottom: 2px; }
 .blog article.post:not(.type-product).product-cat-objects, .home article.post:not(.type-product).product-cat-objects, .archive article.post:not(.type-product).product-cat-objects, .category article.post:not(.type-product).product-cat-objects { background: #ffffff; }
-.blog article.post:not(.type-product).product-cat-objects .entry-footer:before, .blog article.post:not(.type-product).product-cat-objects .entry-footer:after, .home article.post:not(.type-product).product-cat-objects .entry-footer:before, .home article.post:not(.type-product).product-cat-objects .entry-footer:after, .archive article.post:not(.type-product).product-cat-objects .entry-footer:before, .archive article.post:not(.type-product).product-cat-objects .entry-footer:after, .category article.post:not(.type-product).product-cat-objects .entry-footer:before, .category article.post:not(.type-product).product-cat-objects .entry-footer:after { display: block; width: 19px; height: 17px; position: absolute; background: #ffffff; z-index: 1; bottom: -3px; color: #ffd138; font-family: 'Very Cool Icons'; font-style: normal; font-size: 27px; font-weight: 400; line-height: .45; content: "\E008"; }
+.blog article.post:not(.type-product).product-cat-objects .entry-footer:before, .blog article.post:not(.type-product).product-cat-objects .entry-footer:after, .home article.post:not(.type-product).product-cat-objects .entry-footer:before, .home article.post:not(.type-product).product-cat-objects .entry-footer:after, .archive article.post:not(.type-product).product-cat-objects .entry-footer:before, .archive article.post:not(.type-product).product-cat-objects .entry-footer:after, .category article.post:not(.type-product).product-cat-objects .entry-footer:before, .category article.post:not(.type-product).product-cat-objects .entry-footer:after { display: block; width: 19px; height: 17px; position: absolute; background: #ffffff; z-index: 1; bottom: -3px; color: #ffd138; font-family: 'Very Cool Icons'; font-style: normal; font-size: 27px; font-weight: 500; line-height: .45; content: "\E008"; }
 .blog article.post:not(.type-product).product-cat-objects .entry-footer:before, .home article.post:not(.type-product).product-cat-objects .entry-footer:before, .archive article.post:not(.type-product).product-cat-objects .entry-footer:before, .category article.post:not(.type-product).product-cat-objects .entry-footer:before { left: -3px; }
 .blog article.post:not(.type-product).product-cat-objects .entry-footer:after, .home article.post:not(.type-product).product-cat-objects .entry-footer:after, .archive article.post:not(.type-product).product-cat-objects .entry-footer:after, .category article.post:not(.type-product).product-cat-objects .entry-footer:after { right: -3px; -webkit-transform: scale(-1, 1); transform: scale(-1, 1); }
-.blog article.post:not(.type-product).product-cat-objects h4, .blog article.post:not(.type-product).product-cat-objects .h4, .home article.post:not(.type-product).product-cat-objects h4, .home article.post:not(.type-product).product-cat-objects .h4, .archive article.post:not(.type-product).product-cat-objects h4, .archive article.post:not(.type-product).product-cat-objects .h4, .category article.post:not(.type-product).product-cat-objects h4, .category article.post:not(.type-product).product-cat-objects .h4 { font-weight: 400; color: #231f20; line-height: 1.15; }
+.blog article.post:not(.type-product).product-cat-objects h4, .blog article.post:not(.type-product).product-cat-objects .h4, .home article.post:not(.type-product).product-cat-objects h4, .home article.post:not(.type-product).product-cat-objects .h4, .archive article.post:not(.type-product).product-cat-objects h4, .archive article.post:not(.type-product).product-cat-objects .h4, .category article.post:not(.type-product).product-cat-objects h4, .category article.post:not(.type-product).product-cat-objects .h4 { font-weight: 500; color: #231f20; line-height: 1.15; }
 .blog article.post:not(.type-product).product-cat-objects .sub-label, .home article.post:not(.type-product).product-cat-objects .sub-label, .archive article.post:not(.type-product).product-cat-objects .sub-label, .category article.post:not(.type-product).product-cat-objects .sub-label { display: none; }
 .blog article.post:not(.type-product).product-cat-objects .entry-title, .home article.post:not(.type-product).product-cat-objects .entry-title, .archive article.post:not(.type-product).product-cat-objects .entry-title, .category article.post:not(.type-product).product-cat-objects .entry-title { width: 75%; }
 .blog article.post:not(.type-product).product-cat-objects .entry-header, .home article.post:not(.type-product).product-cat-objects .entry-header, .archive article.post:not(.type-product).product-cat-objects .entry-header, .category article.post:not(.type-product).product-cat-objects .entry-header { border: 3px solid #ffd138; }
@@ -662,7 +661,7 @@ a.squiggle-black:hover { background-position: 15px 100%; }
 .blog article.post:not(.type-product).product-cat-objects .add_to_cart_inline, .home article.post:not(.type-product).product-cat-objects .add_to_cart_inline, .archive article.post:not(.type-product).product-cat-objects .add_to_cart_inline, .category article.post:not(.type-product).product-cat-objects .add_to_cart_inline { border: 0px !important; padding: 0px !important; margin: 0px; }
 .blog article.post:not(.type-product).product-cat-objects .add_to_cart_inline .amount, .home article.post:not(.type-product).product-cat-objects .add_to_cart_inline .amount, .archive article.post:not(.type-product).product-cat-objects .add_to_cart_inline .amount, .category article.post:not(.type-product).product-cat-objects .add_to_cart_inline .amount { display: none !important; }
 .blog article.post:not(.type-product).product-cat-objects .add_to_cart_inline .add_to_cart_button, .home article.post:not(.type-product).product-cat-objects .add_to_cart_inline .add_to_cart_button, .archive article.post:not(.type-product).product-cat-objects .add_to_cart_inline .add_to_cart_button, .category article.post:not(.type-product).product-cat-objects .add_to_cart_inline .add_to_cart_button { color: transparent; position: absolute; left: 15px; bottom: 14px; font-size: 0px; border-radius: 0px; background: transparent; }
-.blog article.post:not(.type-product).product-cat-objects .add_to_cart_inline .add_to_cart_button:before, .home article.post:not(.type-product).product-cat-objects .add_to_cart_inline .add_to_cart_button:before, .archive article.post:not(.type-product).product-cat-objects .add_to_cart_inline .add_to_cart_button:before, .category article.post:not(.type-product).product-cat-objects .add_to_cart_inline .add_to_cart_button:before { display: inline-block; color: #231f20; font-family: 'Very Cool Icons'; font-style: normal; font-size: 17px; font-weight: 400; padding: 3px 6px; line-height: 1; content: "\E009"; }
+.blog article.post:not(.type-product).product-cat-objects .add_to_cart_inline .add_to_cart_button:before, .home article.post:not(.type-product).product-cat-objects .add_to_cart_inline .add_to_cart_button:before, .archive article.post:not(.type-product).product-cat-objects .add_to_cart_inline .add_to_cart_button:before, .category article.post:not(.type-product).product-cat-objects .add_to_cart_inline .add_to_cart_button:before { display: inline-block; color: #231f20; font-family: 'Very Cool Icons'; font-style: normal; font-size: 17px; font-weight: 500; padding: 3px 6px; line-height: 1; content: "\E009"; }
 .blog article.post:not(.type-product).product-cat-objects .add_to_cart_inline .add_to_cart_button.added:before, .home article.post:not(.type-product).product-cat-objects .add_to_cart_inline .add_to_cart_button.added:before, .archive article.post:not(.type-product).product-cat-objects .add_to_cart_inline .add_to_cart_button.added:before, .category article.post:not(.type-product).product-cat-objects .add_to_cart_inline .add_to_cart_button.added:before { content: "\2714"; font-size: 14px; padding: 3px 5px; color: #ffd138; }
 .blog article.post:not(.type-product).product-cat-objects .add_to_cart_inline .add_to_cart_button + .added_to_cart.wc-forward, .home article.post:not(.type-product).product-cat-objects .add_to_cart_inline .add_to_cart_button + .added_to_cart.wc-forward, .archive article.post:not(.type-product).product-cat-objects .add_to_cart_inline .add_to_cart_button + .added_to_cart.wc-forward, .category article.post:not(.type-product).product-cat-objects .add_to_cart_inline .add_to_cart_button + .added_to_cart.wc-forward { display: none; }
 .blog article.post:not(.type-product).product-cat-objects div.cat-links, .blog article.post:not(.type-product).product-cat-objects h4.entry-title, .home article.post:not(.type-product).product-cat-objects div.cat-links, .home article.post:not(.type-product).product-cat-objects h4.entry-title, .archive article.post:not(.type-product).product-cat-objects div.cat-links, .archive article.post:not(.type-product).product-cat-objects h4.entry-title, .category article.post:not(.type-product).product-cat-objects div.cat-links, .category article.post:not(.type-product).product-cat-objects h4.entry-title { display: block; float: left; text-align: left; width: 85%; }
@@ -670,10 +669,10 @@ a.squiggle-black:hover { background-position: 15px 100%; }
 .blog article.post:not(.type-product).product-cat-objects div.cat-links, .home article.post:not(.type-product).product-cat-objects div.cat-links, .archive article.post:not(.type-product).product-cat-objects div.cat-links, .category article.post:not(.type-product).product-cat-objects div.cat-links { position: absolute; left: 44px; bottom: 14px; }
 .blog article.post:not(.type-product).product-cat-objects p:not(.add_to_cart_inline), .home article.post:not(.type-product).product-cat-objects p:not(.add_to_cart_inline), .archive article.post:not(.type-product).product-cat-objects p:not(.add_to_cart_inline), .category article.post:not(.type-product).product-cat-objects p:not(.add_to_cart_inline) { display: none; }
 .blog article.post:not(.type-product).product-cat-objects .price, .home article.post:not(.type-product).product-cat-objects .price, .archive article.post:not(.type-product).product-cat-objects .price, .category article.post:not(.type-product).product-cat-objects .price { color: #231f20; display: inline; margin: 0px; line-height: .5; margin-bottom: -4px; }
-.blog article.post:not(.type-product).product-cat-objects .price:before, .home article.post:not(.type-product).product-cat-objects .price:before, .archive article.post:not(.type-product).product-cat-objects .price:before, .category article.post:not(.type-product).product-cat-objects .price:before { font-family: 'Very Cool Icons'; font-style: normal; font-size: inherit; margin-right: -1px; margin-left: -8px; font-weight: 400; padding: 3px 6px; line-height: inherit; content: "$"; }
+.blog article.post:not(.type-product).product-cat-objects .price:before, .home article.post:not(.type-product).product-cat-objects .price:before, .archive article.post:not(.type-product).product-cat-objects .price:before, .category article.post:not(.type-product).product-cat-objects .price:before { font-family: 'Very Cool Icons'; font-style: normal; font-size: inherit; margin-right: -1px; margin-left: -8px; font-weight: 500; padding: 3px 6px; line-height: inherit; content: "$"; }
 .blog article.post:not(.type-product).category-for-sale .entry-header, .home article.post:not(.type-product).category-for-sale .entry-header, .archive article.post:not(.type-product).category-for-sale .entry-header, .category article.post:not(.type-product).category-for-sale .entry-header { border: 3px solid #f0f0f0; }
 .blog article.post:not(.type-product).category-for-sale .entry-footer, .home article.post:not(.type-product).category-for-sale .entry-footer, .archive article.post:not(.type-product).category-for-sale .entry-footer, .category article.post:not(.type-product).category-for-sale .entry-footer { border: 3px solid #f0f0f0; border-top: 0px; }
-@media (max-width: 920px) { .blog article.post:not(.type-product).category-for-sale .entry-footer:before, .blog article.post:not(.type-product).category-for-sale .entry-footer:after, .home article.post:not(.type-product).category-for-sale .entry-footer:before, .home article.post:not(.type-product).category-for-sale .entry-footer:after, .archive article.post:not(.type-product).category-for-sale .entry-footer:before, .archive article.post:not(.type-product).category-for-sale .entry-footer:after, .category article.post:not(.type-product).category-for-sale .entry-footer:before, .category article.post:not(.type-product).category-for-sale .entry-footer:after { display: block; width: 19px; height: 17px; position: absolute; background: #ffffff; z-index: 1; bottom: -3px; color: #f0f0f0; font-family: 'Very Cool Icons'; font-style: normal; font-size: 27px; font-weight: 400; line-height: .45; content: "\E008"; }
+@media (max-width: 920px) { .blog article.post:not(.type-product).category-for-sale .entry-footer:before, .blog article.post:not(.type-product).category-for-sale .entry-footer:after, .home article.post:not(.type-product).category-for-sale .entry-footer:before, .home article.post:not(.type-product).category-for-sale .entry-footer:after, .archive article.post:not(.type-product).category-for-sale .entry-footer:before, .archive article.post:not(.type-product).category-for-sale .entry-footer:after, .category article.post:not(.type-product).category-for-sale .entry-footer:before, .category article.post:not(.type-product).category-for-sale .entry-footer:after { display: block; width: 19px; height: 17px; position: absolute; background: #ffffff; z-index: 1; bottom: -3px; color: #f0f0f0; font-family: 'Very Cool Icons'; font-style: normal; font-size: 27px; font-weight: 500; line-height: .45; content: "\E008"; }
   .blog article.post:not(.type-product).category-for-sale .entry-footer:before, .home article.post:not(.type-product).category-for-sale .entry-footer:before, .archive article.post:not(.type-product).category-for-sale .entry-footer:before, .category article.post:not(.type-product).category-for-sale .entry-footer:before { left: -3px; }
   .blog article.post:not(.type-product).category-for-sale .entry-footer:after, .home article.post:not(.type-product).category-for-sale .entry-footer:after, .archive article.post:not(.type-product).category-for-sale .entry-footer:after, .category article.post:not(.type-product).category-for-sale .entry-footer:after { right: -3px; -webkit-transform: scale(-1, 1); transform: scale(-1, 1); } }
 .blog article.post:not(.type-product).category-for-sale h5, .blog article.post:not(.type-product).category-for-sale .h5, .home article.post:not(.type-product).category-for-sale h5, .home article.post:not(.type-product).category-for-sale .h5, .archive article.post:not(.type-product).category-for-sale h5, .archive article.post:not(.type-product).category-for-sale .h5, .category article.post:not(.type-product).category-for-sale h5, .category article.post:not(.type-product).category-for-sale .h5 { display: none; }
@@ -743,7 +742,7 @@ Cart Styles
 #payment .payment_methods .payment_method_s4wc #s4wc-cc-form { outline: none; border: 3px solid #f0f0f0; border-radius: 20px; padding: 20px; position: relative; margin-top: 10px; margin-bottom: 10px; }
 #payment .payment_methods .payment_method_s4wc #s4wc-cc-form .form-row-first, #payment .payment_methods .payment_method_s4wc #s4wc-cc-form .form-row-last { display: block; float: left; margin-right: 10px; width: 115px; }
 #payment .payment_methods .payment_method_s4wc #s4wc-cc-form #s4wc_save_card_field { max-width: 115px; float: right; margin-top: 25px; line-height: 1.1; }
-#payment .payment_methods .payment_method_s4wc #s4wc-cc-form #s4wc_save_card_field label { color: #e0e0e0; font-size: 12px; font-weight: 500; }
+#payment .payment_methods .payment_method_s4wc #s4wc-cc-form #s4wc_save_card_field label { color: #e0e0e0; font-size: 12px; font-weight: 600; }
 #payment .payment_methods label[for=payment_method_s4wc], #payment .payment_methods label[for=payment_method_paypal] { vertical-align: 8px; padding-left: 10px; }
 #payment .payment_methods .payment_method_paypal.payment_box, #payment .payment_methods .payment_method_paypal a, #payment .payment_methods .payment_method_paypal img { display: none !important; }
 #payment #place_order.button { text-align: center; padding: 15px 30px; }
@@ -755,9 +754,9 @@ Cart Styles
 @media (min-width: 900px) { .woocommerce-checkout-review-order-table { width: 50%; float: left; } }
 @media (min-width: 1000px) { .woocommerce-checkout-review-order-table { width: 54.1666666667%; } }
 .woocommerce-checkout-review-order-table tr td:last-of-type { text-align: right; }
-.woocommerce-checkout-review-order-table tr td strong.product-quantity { font-size: 16px; color: #e0e0e0; font-weight: 600; }
+.woocommerce-checkout-review-order-table tr td strong.product-quantity { font-size: 16px; color: #e0e0e0; font-weight: 700; }
 .woocommerce-checkout-review-order-table tr th.product-total { text-align: right; }
-.woocommerce-checkout-review-order-table .cart-subtotal, .woocommerce-checkout-review-order-table .shipping { font-family: "Cardinal Grotesque Expanded"; font-size: 13px; color: #e0e0e0; font-weight: 500; }
+.woocommerce-checkout-review-order-table .cart-subtotal, .woocommerce-checkout-review-order-table .shipping { font-family: "Cardinal Grotesque Expanded"; font-size: 13px; color: #e0e0e0; font-weight: 600; }
 .woocommerce-checkout-review-order-table .cart-subtotal { opacity: 0; padding: 0px; }
 .woocommerce-checkout-review-order-table .cart-subtotal th, .woocommerce-checkout-review-order-table .cart-subtotal td { padding: 0px; line-height: 1; }
 @media (min-width: 769px) { .woocommerce-checkout-review-order-table .cart-subtotal th.product-total, .woocommerce-checkout-review-order-table .cart-subtotal th.product-name { padding-bottom: 0px; padding-top: 5px; }
@@ -765,7 +764,7 @@ Cart Styles
   .woocommerce-checkout-review-order-table .shipping td, .woocommerce-checkout-review-order-table .shipping th { padding-bottom: 20px; padding-top: 0px; } }
 .woocommerce-checkout-review-order-table .order-total th { font-family: "Cardinal Grotesque"; }
 @media (min-width: 769px) { .woocommerce-checkout-review-order-table .order-total td, .woocommerce-checkout-review-order-table .order-total th { background: #231f20; color: #ffd138; }
-  .woocommerce-checkout-review-order-table .order-total td strong, .woocommerce-checkout-review-order-table .order-total th strong { font-weight: 400; } }
+  .woocommerce-checkout-review-order-table .order-total td strong, .woocommerce-checkout-review-order-table .order-total th strong { font-weight: 500; } }
 
 .woocommerce-cart .wc-forward.button.checkout-button { text-align: center; padding: 15px 30px; }
 @media (max-width: 499px) { .woocommerce-cart .wc-forward.button.checkout-button { display: block; width: 100%; } }
@@ -773,17 +772,17 @@ Cart Styles
 .woocommerce-cart table.cart-totals { background: #f0f0f0; border-collapse: collapse; min-width: 300px; }
 .woocommerce-cart table.cart-totals tbody { border-right: 20px solid transparent; border-left: 20px solid transparent; border-top: 15px solid transparent; border-bottom: 12px solid transparent; }
 .woocommerce-cart table.cart-totals tbody td { padding-top: 0px; border: 0px; text-align: right; }
-.woocommerce-cart table.cart-totals tbody [data-title="Subtotal"] { font-family: "Cardinal Grotesque Expanded"; font-weight: 600; }
-.woocommerce-cart table.cart-totals tbody [data-title="Subtotal"] .amount { font-weight: 600; }
+.woocommerce-cart table.cart-totals tbody [data-title="Subtotal"] { font-family: "Cardinal Grotesque Expanded"; font-weight: 700; }
+.woocommerce-cart table.cart-totals tbody [data-title="Subtotal"] .amount { font-weight: 700; }
 .woocommerce-cart table.cart-totals caption { padding-left: 20px; }
 @media (min-width: 650px) { .woocommerce-cart table.cart-totals { width: 41.6666666667%; float: left; } }
 @media (min-width: 960px) { .woocommerce-cart table.cart-totals { width: 33.3333333333%; float: left; } }
 .woocommerce-cart table.cart-totals th { vertical-align: bottom; }
-.woocommerce-cart table.cart-totals td, .woocommerce-cart table.cart-totals th { font-size: 13px; font-weight: 600; text-transform: uppercase; line-height: 1; }
-.woocommerce-cart table.cart-totals .amount { font-weight: 400; }
+.woocommerce-cart table.cart-totals td, .woocommerce-cart table.cart-totals th { font-size: 13px; font-weight: 700; text-transform: uppercase; line-height: 1; }
+.woocommerce-cart table.cart-totals .amount { font-weight: 500; }
 .woocommerce-cart table.cart-totals .shipping td { color: transparent; }
 .woocommerce-cart table.cart-totals .shipping td span.amount { color: #231f20; }
-.woocommerce-cart table.cart-totals .order-total td { font-family: "Cardinal Grotesque Cond"; font-weight: 600; font-size: 3em; line-height: 1; padding-bottom: 4px; }
+.woocommerce-cart table.cart-totals .order-total td { font-family: "Cardinal Grotesque ExtraCondensed"; font-weight: 600; font-size: 3em; line-height: 1; padding-bottom: 4px; }
 .woocommerce-cart table.cart-totals .order-total th { padding-bottom: 10px; }
 .woocommerce-cart .cart #coupon_code { width: 25%; }
 .woocommerce-cart .cart #coupon_code, .woocommerce-cart .cart input.chamfered-button { float: left; margin-top: 8px; margin-bottom: 8px; }
@@ -793,9 +792,9 @@ Cart Styles
 /*--------------------------------------------------------------
 Product Styles
 --------------------------------------------------------------*/
-.product.product_cat-type .entry-header ul.post-meta li:last-of-type { font-family: "Cardinal Grotesque"; height: 34px; font-weight: 500; font-size: 25px; letter-spacing: .02em; margin-top: 0px; }
+.product.product_cat-type .entry-header ul.post-meta li:last-of-type { font-family: "Cardinal Grotesque"; height: 34px; font-weight: 600; font-size: 25px; letter-spacing: .02em; margin-top: 0px; }
 @media (min-width: 1000px) { .product.product_cat-type .entry-header ul.post-meta li:last-of-type { margin-top: 0px; margin-bottom: 0px; } }
-.product.product_cat-type .entry-header ul.post-meta li:last-of-type .post-meta-key { font-family: "Cardinal Grotesque Expanded"; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; font-size: 12px; display: inline-block; width: 82px; }
+.product.product_cat-type .entry-header ul.post-meta li:last-of-type .post-meta-key { font-family: "Cardinal Grotesque Expanded"; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; font-size: 12px; display: inline-block; width: 82px; }
 .product.outofstock .cart button[type="submit"] { display: none; }
 .product.outofstock .type-tester-title .amount { display: none; }
 
@@ -807,44 +806,66 @@ Product Styles
 .single-product .yellow-page .price { margin: 0px; margin-top: 5px; margin-bottom: 12px; }
 .single-product .yellow-page a.squiggle { vertical-align: 4px; margin-left: 10px; }
 
+.fontselect { width: 100%; display: block; font-size: 60px; }
+.fontselect.liga { -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; }
+.fontselect.alts { -webkit-font-feature-settings: "ss01" 1; font-feature-settings: "ss01" 1; }
+.fontselect.swsh { -webkit-font-feature-settings: "swsh" 1; font-feature-settings: "swsh" 1; }
+.fontselect.smcp { -webkit-font-feature-settings: "smcp" 1; font-feature-settings: "smcp" 1; }
+.fontselect.cardinal-grotesque { font-family: 'Cardinal Grotesque'; line-height: 1; }
+.fontselect.cardinal-grotesque.condensed { font-family: 'Cardinal Grotesque Cond'; }
+.fontselect.cardinal-grotesque.narrow { font-family: 'Cardinal Grotesque Narrow'; }
+.fontselect.cardinal-grotesque.expanded { font-family: 'Cardinal Grotesque Expanded'; }
+.fontselect.cardinal-grotesque.compressed { font-family: 'Cardinal Grotesque Compressed'; }
+.fontselect.cardinal-grotesque.extracondensed { font-family: 'Cardinal Grotesque Extracondensed'; }
+.fontselect.business-script { font-family: 'Business Script'; line-height: 1; }
+.fontselect.kansas-casual { font-family: 'Kansas Casual'; line-height: 1; }
+.fontselect.maritime-champion { font-family: 'Maritime Champion'; line-height: 1; }
+.fontselect.maritime-champion.st { font-family: 'Maritime Champion ST'; }
+.fontselect.maritime-champion.sl { font-family: 'Maritime Champion SL'; }
+.fontselect.cornbread { font-family: 'Cornbread'; line-height: 1; }
+.fontselect.ready-script { font-family: 'Ready Script'; line-height: 1; }
+.fontselect.thin { font-weight: 100; }
+.fontselect.extralight { font-weight: 200; }
+.fontselect.light { font-weight: 300; }
+.fontselect.regular { font-weight: 400; }
+.fontselect.medium { font-weight: 500; }
+.fontselect.semibold { font-weight: 600; }
+.fontselect.bold { font-weight: 700; }
+.fontselect.extrabold { font-weight: 800; }
+.fontselect.black, .fontselect.heavy { font-weight: 900; }
+
+@-webkit-keyframes fake { from { opacity: 1; }
+  to { opacity: 1; } }
+
+@keyframes fake { from { opacity: 1; }
+  to { opacity: 1; } }
+body { -webkit-animation: fake 1s infinite; animation: fake 1s infinite; }
+
+.radio-tabs .state { position: absolute; left: -10000px; }
+.radio-tabs .tabs { border-bottom: 3px solid #f0f0f0; margin: 60px 0px 35px 0px; }
+.radio-tabs .tabs .tab { position: relative; bottom: -3px; display: inline-block; padding: 7px 18px 4px 18px; vertical-align: top; background-color: #f0f0f0; border: 3px solid #f0f0f0; border-bottom: 0px; cursor: hand; cursor: pointer; }
+.radio-tabs .panels .panel { display: none; }
+.radio-tabs #specimen:checked ~ .tabs #specimen-tab, .radio-tabs #gallery:checked ~ .tabs #gallery-tab { padding: 7px 18px; background-color: #ffffff; cursor: default; }
+.radio-tabs #specimen:checked ~ .panels #specimen-panel, .radio-tabs #gallery:checked ~ .panels #gallery-panel { display: block; }
+.radio-tabs #gallery-panel { margin-bottom: 20px; }
+.radio-tabs #gallery-panel .fontselect { overflow-y: visible; overflow-x: hidden; word-break: keep-all; white-space: nowrap; line-height: 1; height: 70px; outline: none; position: relative; }
+.radio-tabs #gallery-panel h5 { margin: 7px 0px 2px 0px; }
+@media (min-width: 768px) { .radio-tabs #gallery-panel { margin-bottom: 35px; }
+  .radio-tabs #gallery-panel h5 { margin: 14px 0px 4px 0px; } }
+
 .type-tester { display: block; border: 3px solid #f0f0f0; width: 100%; float: left; position: relative; }
 @media (min-width: 768px) { .type-tester { width: 150%; margin-left: -50%; } }
 @media (min-width: 1000px) { .type-tester { width: 160.4166666667%; margin-left: -60.4166666667%; margin-top: 15px; } }
-.type-tester:before, .type-tester:after { display: block; width: 19px; height: 17px; position: absolute; background: #ffffff; z-index: 1; bottom: -3px; color: #f0f0f0; font-family: 'Very Cool Icons'; font-style: normal; font-size: 27px; font-weight: 400; line-height: .45; content: "\E008"; }
+.type-tester:before, .type-tester:after { display: block; width: 19px; height: 17px; position: absolute; background: #ffffff; z-index: 1; bottom: -3px; color: #f0f0f0; font-family: 'Very Cool Icons'; font-style: normal; font-size: 27px; font-weight: 500; line-height: .45; content: "\E008"; }
 .type-tester:before { left: -3px; }
 .type-tester:after { right: -3px; -webkit-transform: scale(-1, 1); transform: scale(-1, 1); }
 .type-tester span { outline: none; }
 .type-tester .fontselect { width: 100%; display: block; text-align: center; line-height: 1.1; padding: 30px; border-bottom: 3px solid #f0f0f0; min-height: 100px; font-size: 70px; -webkit-transition: font 0.3s ease; transition: font 0.3s ease; }
-.type-tester .fontselect.liga { -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; }
-.type-tester .fontselect.alts { -webkit-font-feature-settings: "ss01" 1; font-feature-settings: "ss01" 1; }
-.type-tester .fontselect.swsh { -webkit-font-feature-settings: "swsh" 1; font-feature-settings: "swsh" 1; }
-.type-tester .fontselect.smcp { -webkit-font-feature-settings: "smcp" 1; font-feature-settings: "smcp" 1; }
-.type-tester .fontselect.cardinal-grotesque { font-family: 'Cardinal Grotesque'; line-height: 1; }
-.type-tester .fontselect.cardinal-grotesque.condensed { font-family: 'Cardinal Grotesque Cond'; }
-.type-tester .fontselect.cardinal-grotesque.narrow { font-family: 'Cardinal Grotesque Narrow'; }
-.type-tester .fontselect.cardinal-grotesque.expanded { font-family: 'Cardinal Grotesque Expanded'; }
-.type-tester .fontselect.cardinal-grotesque.compressed { font-family: 'Cardinal Grotesque Compressed'; }
-.type-tester .fontselect.cardinal-grotesque.extracondensed { font-family: 'Cardinal Grotesque Extracondensed'; }
-.type-tester .fontselect.business-script { font-family: 'Business Script'; line-height: 1; }
-.type-tester .fontselect.kansas-casual { font-family: 'Kansas Casual'; line-height: 1; }
-.type-tester .fontselect.maritime-champion { font-family: 'Maritime Champion'; line-height: 1; }
-.type-tester .fontselect.maritime-champion.st { font-family: 'Maritime Champion ST'; }
-.type-tester .fontselect.maritime-champion.sl { font-family: 'Maritime Champion SL'; }
-.type-tester .fontselect.cornbread { font-family: 'Cornbread'; line-height: 1; }
-.type-tester .fontselect.ready-script { font-family: 'Ready Script'; line-height: 1; }
-.type-tester .fontweight.extralight { font-weight: 100; }
-.type-tester .fontweight.light { font-weight: 200; }
-.type-tester .fontweight.regular { font-weight: 300; }
-.type-tester .fontweight.medium { font-weight: 400; }
-.type-tester .fontweight.semibold { font-weight: 500; }
-.type-tester .fontweight.bold { font-weight: 600; }
-.type-tester .fontweight.extrabold { font-weight: 700; }
-.type-tester .fontweight.black { font-weight: 900; }
 .type-tester .type-tester-title { display: none; }
 @media only screen and (min-width: 965px) { .type-tester .type-tester-title { padding: 14px 20px; width: 29.1666666667%; text-align: center; display: block; float: left; } }
 .type-tester .type-tester-title h5, .type-tester .type-tester-title .h5 { margin-top: 0px; margin-bottom: 0px; }
-.type-tester .type-tester-title .entry-title { margin: 0px 0px 4px 0px; font-family: "Cardinal Grotesque"; font-weight: 500; font-size: 1.6em; line-height: 1; letter-spacing: .02em; }
-.type-tester .type-tester-header { border-bottom: 3px solid #f0f0f0; font-family: "Cardinal Grotesque"; font-weight: 500 !important; font-size: 20px; }
+.type-tester .type-tester-title .entry-title { margin: 0px 0px 4px 0px; font-family: "Cardinal Grotesque"; font-weight: 600; font-size: 1.6em; line-height: 1; letter-spacing: .02em; }
+.type-tester .type-tester-header { border-bottom: 3px solid #f0f0f0; font-family: "Cardinal Grotesque"; font-weight: 600 !important; font-size: 20px; }
 @media only screen and (min-width: 965px) { .type-tester .type-tester-header { width: 70.8333333333%; float: right; border-left: 3px solid #f0f0f0; } }
 .type-tester .type-tester-header:after { content: ""; display: table; clear: both; }
 .type-tester .type-tester-header .select { position: relative; float: left; border-right: 3px solid #f0f0f0; padding: 0px 0px 4px 10px; }
@@ -859,7 +880,7 @@ Product Styles
 @media only screen and (max-width: 660px) { .type-tester .type-tester-header .type-tester-checkbox:last-of-type { display: none; } }
 .type-tester .type-tester-header .type-tester-checkbox input[type="checkbox"] { cursor: pointer; border: 3px solid #e0e0e0; width: 14px; height: 14px; margin-right: 5px; border-radius: 0px; -webkit-appearance: none; outline: none; }
 .type-tester .type-tester-header .type-tester-checkbox input[type="checkbox"]:checked, .type-tester .type-tester-header .type-tester-checkbox input[type="checkbox"].checked { border: 0px; background: #ffd138; }
-.type-tester .type-tester-header #font-size-slider { font-family: "Cardinal Grotesque"; font-weight: 500 !important; font-size: 20px; width: 30%; color: #e0e0e0; float: left; padding: 5px 10px 7px 10px; border-right: 3px solid #f0f0f0; }
+.type-tester .type-tester-header #font-size-slider { font-family: "Cardinal Grotesque"; font-weight: 600 !important; font-size: 20px; width: 30%; color: #e0e0e0; float: left; padding: 5px 10px 7px 10px; border-right: 3px solid #f0f0f0; }
 .type-tester .type-tester-header #font-size-slider:before { content: "S"; margin-right: 5px; }
 .type-tester .type-tester-header #font-size-slider:after { content: "LG"; margin-left: 5px; }
 .type-tester .type-tester-footer { padding: 4px; }
@@ -868,7 +889,7 @@ Product Styles
 .type-tester .type-tester-footer .cart { display: inline; }
 .type-tester .type-tester-footer .cart button { display: inline-block; margin: 10px 20px 9px 12px; }
 @media only screen and (min-width: 965px) { .type-tester .type-tester-footer .cart button { margin-left: -3px; } }
-.type-tester .type-tester-footer .type-tester-notice { line-height: 1.2; letter-spacing: .05em; float: right; text-align: right; font-weight: 400; color: #e0e0e0; margin: 10px 20px; }
+.type-tester .type-tester-footer .type-tester-notice { line-height: 1.2; letter-spacing: .05em; float: right; text-align: right; font-weight: 500; color: #e0e0e0; margin: 10px 20px; }
 @media only screen and (max-width: 600px) { .type-tester .type-tester-footer .type-tester-notice { display: none; } }
 .type-tester .price { color: #ffd138; font-size: 1em; margin-top: 0px; margin-bottom: 0px; }
 
@@ -880,14 +901,14 @@ Product Styles
 .single #content p:last-of-type.product.woocommerce.add_to_cart_inline a { vertical-align: 25px; margin-left: 20px; }
 .single #content p:last-of-type.product.woocommerce.add_to_cart_inline a:first-of-type { display: none; }
 .single #content p:last-of-type.product.woocommerce.add_to_cart_inline a:first-of-type:only-of-type { display: inline-block; }
-.single #content p:last-of-type.product.woocommerce.add_to_cart_inline .amount { font-family: "Cardinal Grotesque Cond"; display: inline-block; font-weight: 600; font-size: 6em; color: #231f20; display: inline; margin: 0px; line-height: .8; margin-bottom: -4px; }
+.single #content p:last-of-type.product.woocommerce.add_to_cart_inline .amount { font-family: "Cardinal Grotesque ExtraCondensed"; display: inline-block; font-weight: 600; font-size: 6em; color: #231f20; display: inline; margin: 0px; line-height: .8; margin-bottom: -4px; }
 @media (max-width: 1098px) { .single #content p:last-of-type.product.woocommerce.add_to_cart_inline { padding-top: 25px !important; padding-bottom: 0px !important; margin-top: 10px; } }
 @media (min-width: 1099px) { .single #content p:last-of-type.product.woocommerce.add_to_cart_inline { padding-top: 25px !important; padding-bottom: 5px !important; margin-top: 20px; } }
 .single .entry-header h1 { margin-top: 2px; line-height: 1.25; }
 .single .entry-header ul.post-meta { padding-left: 0px; margin-left: 0px; list-style-type: none; }
 @media (max-width: 1000px) { .single .entry-header ul.post-meta { margin-top: -5px !important; } }
-.single .entry-header ul.post-meta li:not(:last-of-type) { font-family: "Cardinal Grotesque"; height: 34px; font-weight: 500; overflow: hidden; white-space: nowrap; font-size: 25px; letter-spacing: .02em; }
-.single .entry-header ul.post-meta li .post-meta-key { font-family: "Cardinal Grotesque Expanded"; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; font-size: 12px; display: inline-block; width: 82px; }
+.single .entry-header ul.post-meta li:not(:last-of-type) { font-family: "Cardinal Grotesque"; height: 34px; font-weight: 600; overflow: hidden; white-space: nowrap; font-size: 25px; letter-spacing: .02em; }
+.single .entry-header ul.post-meta li .post-meta-key { font-family: "Cardinal Grotesque Expanded"; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; font-size: 12px; display: inline-block; width: 82px; }
 .single .entry-header ul.post-meta li:last-of-type { margin-top: 18px; }
 @media (min-width: 1000px) { .single .entry-header ul.post-meta li:last-of-type { margin-top: 26px; margin-bottom: 10px; } }
 .single .entry-header ul.post-meta li:last-of-type .post-meta-key { display: none; }
@@ -895,7 +916,7 @@ Product Styles
 @media only screen and (max-width: 767px) { .single .entry-footer .cat-links { display: block; margin: 0 auto; text-align: center; } }
 .single .entry-footer .cat-links a { background: #f0f0f0; color: #231f20; display: inline-block; text-decoration: none; margin-bottom: 20px; }
 .single .entry-footer .cat-links a.cat-for-sale { display: none; }
-.single .entry-footer .post-navigation { font-family: "Cardinal Grotesque Expanded"; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; font-size: .75em; line-height: 1.15; }
+.single .entry-footer .post-navigation { font-family: "Cardinal Grotesque Expanded"; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; font-size: .75em; line-height: 1.15; }
 @media only screen and (max-width: 767px) { .single .entry-footer .post-navigation { margin-left: 8%; } }
 .single .entry-footer .post-navigation .nav-next { text-align: right; }
 .single .entry-footer .post-navigation .nav-previous, .single .entry-footer .post-navigation .nav-next { width: 49.5%; float: left; position: relative; cursor: pointer; }
@@ -968,7 +989,7 @@ body { background: #f0f0f0; }
 @media (max-width: 420px) { #page header.site-header .site-branding .svg-logo { margin-left: -132px; }
   #page header.site-header .site-branding .svg-logo .logo-very { opacity: 0; }
   #page header.site-header .site-branding .svg-logo .logo-peace { opacity: 1; } }
-#page header.site-header .site-branding:after { font-family: "Business Script"; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; font-weight: 500; font-size: 1.1em; display: inline-block; padding-top: 18px; line-height: 0; margin-left: 15px; }
+#page header.site-header .site-branding:after { font-family: "Business Script"; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; font-weight: 600; font-size: 1.1em; display: inline-block; padding-top: 18px; line-height: 0; margin-left: 15px; }
 
 .single-product .woocommerce-breadcrumb { display: none; height: 0px; }
 
@@ -990,7 +1011,7 @@ body:not(.page-template-page-studio) #white-page.white-page { min-height: 300px;
 @media (min-width: 1460px) { .single:not(.woocommerce) #white-page.white-page, .single:not(.woocommerce) .return-to-top.white-page, .single:not(.woocommerce) .yellow-page { margin: 0 auto; width: 1400px; } }
 
 .yellow-page { color: #231f20; background: #ffd138; margin-bottom: 1.2em; margin-top: 0px; padding: 15px; }
-.yellow-page a:hover { font-weight: 400; color: #231f20; }
+.yellow-page a:hover { font-weight: 500; color: #231f20; }
 .yellow-page .very-cool-flag { width: 210px; display: block; margin: 0 auto; }
 .yellow-page .very-cool-flag img { max-width: 100%; }
 @media (max-width: 768px) { .yellow-page .very-cool-flag { margin-top: 4%; } }
@@ -1027,7 +1048,7 @@ body:not(.page-template-page-studio) #white-page.white-page { min-height: 300px;
 @media only screen and (max-width: 767px) { .return-to-top { display: none; } }
 @media (min-width: 1000px) { .return-to-top { padding-top: 25px; } }
 @media (min-width: 1148px) { .return-to-top { padding-top: 40px; } }
-.return-to-top .post-navigation { font-family: "Cardinal Grotesque Expanded"; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; font-size: .75em; line-height: 1.15; }
+.return-to-top .post-navigation { font-family: "Cardinal Grotesque Expanded"; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; font-size: .75em; line-height: 1.15; }
 .return-to-top .post-navigation .nav-previous, .return-to-top .post-navigation .nav-next { min-width: 25%; float: left; position: relative; margin-top: -25px; cursor: pointer; }
 .return-to-top .post-navigation .nav-previous a, .return-to-top .post-navigation .nav-next a { color: #231f20; background: #ffd138; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; display: block; text-decoration: none; padding: 5px 5px 5px 5px; height: 24px; text-align: center; }
 @media only screen and (min-width: 768px) and (max-width: 1160px) { .return-to-top .post-navigation .nav-previous a, .return-to-top .post-navigation .nav-next a { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; } }
@@ -1062,7 +1083,7 @@ footer.footer .footer-contact .footer-contact-form .input-label-group-pizza .ico
 @media (max-width: 499px) { footer.footer .footer-contact .footer-contact-form .input-label-group-pizza { width: 91.6666666667%; padding-top: 8px; } }
 footer.footer .footer-contact .footer-contact-form .input-label-group-human { width: 37.5%; display: inline-block; }
 footer.footer .footer-contact .footer-contact-form .input-label-group-human .human { text-align: center; width: 75px; padding-left: 5px; padding-right: 5px; }
-footer.footer .footer-contact .footer-contact-form .input-label-group-human .math { display: inline-block; font-family: "Cardinal Grotesque"; font-weight: 500; font-size: 16px; }
+footer.footer .footer-contact .footer-contact-form .input-label-group-human .math { display: inline-block; font-family: "Cardinal Grotesque"; font-weight: 600; font-size: 16px; }
 @media (max-width: 499px) { footer.footer .footer-contact .footer-contact-form .input-label-group-human { width: 91.6666666667%; }
   footer.footer .footer-contact .footer-contact-form .input-label-group-human .human { width: 100px; } }
 footer.footer .footer-contact .footer-contact-form textarea { font-size: 1.6em; line-height: 1.15; padding: 16px 25px; min-height: 120px; resize: vertical; }

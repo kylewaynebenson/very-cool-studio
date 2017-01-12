@@ -17,7 +17,7 @@
 }
 @font-face {
   font-family: 'Cardinal Grotesque';
-  font-weight: 400;
+  font-weight: 500;
   src: url('./type/cardinal-grotesque/CardinalGrotesque-Medium.eot'); /* IE9 Compat Modes */
   src: url('./type/cardinal-grotesque/CardinalGrotesque-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('./type/cardinal-grotesque/CardinalGrotesque-Medium.woff2') format('woff2'), /* Super Modern Browsers */
@@ -25,7 +25,7 @@
 }
 @font-face {
   font-family: 'Cardinal Grotesque';
-  font-weight: 500;
+  font-weight: 600;
   src: url('./type/cardinal-grotesque/CardinalGrotesque-SemiBold.eot'); /* IE9 Compat Modes */
   src: url('./type/cardinal-grotesque/CardinalGrotesque-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('./type/cardinal-grotesque/CardinalGrotesque-SemiBold.woff2') format('woff2'), /* Super Modern Browsers */
@@ -33,7 +33,7 @@
 }
 @font-face {
   font-family: 'Cardinal Grotesque';
-  font-weight: 600;
+  font-weight: 700;
   src: url('./type/cardinal-grotesque/CardinalGrotesque-Bold.eot'); /* IE9 Compat Modes */
   src: url('./type/cardinal-grotesque/CardinalGrotesque-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('./type/cardinal-grotesque/CardinalGrotesque-Bold.woff2') format('woff2'), /* Super Modern Browsers */
@@ -47,7 +47,7 @@
        url('./type/verycoolicons-Regular.woff') format('woff'), /* Pretty Modern Browsers */
 }
 @font-face {
-  font-family: 'Cardinal Grotesque Cond';
+  font-family: 'Cardinal Grotesque ExtraCondensed';
   font-weight: 600;
   src: url('./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.eot'); /* IE9 Compat Modes */
   src: url('./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -56,7 +56,7 @@
 }
 @font-face {
   font-family: 'Cardinal Grotesque Expanded';
-  font-weight: 500;
+  font-weight: 600;
   src: url('./type/cardinal-grotesque/CardinalGrotesqueExpanded-Semibold.eot'); /* IE9 Compat Modes */
   src: url('./type/cardinal-grotesque/CardinalGrotesqueExpanded-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('./type/cardinal-grotesque/CardinalGrotesqueExpanded-Semibold.woff2') format('woff2'), /* Super Modern Browsers */
@@ -64,7 +64,7 @@
 }
 @font-face {
   font-family: 'Cardinal Grotesque Expanded';
-  font-weight: 600;
+  font-weight: 700;
   src: url('./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.eot'); /* IE9 Compat Modes */
   src: url('./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.woff2') format('woff2'), /* Super Modern Browsers */
@@ -123,7 +123,7 @@
 
 $type-text: "Cornbread";
 $type-headline: "Cornbread";
-$type-headline-cond: "Cardinal Grotesque Cond";
+$type-headline-cond: "Cardinal Grotesque ExtraCondensed";
 $type-subhead: "Cardinal Grotesque";
 $type-subhead-expanded: "Cardinal Grotesque Expanded";
 $type-script-subhead: "Business Script";

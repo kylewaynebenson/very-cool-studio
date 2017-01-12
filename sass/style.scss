@@ -1244,13 +1244,13 @@ Product Styles
 	&.cornbread { font-family: 'Cornbread'; line-height: 1;}
 	&.ready-script { font-family: 'Ready Script'; line-height: 1;}
 	&.thin { font-weight: 100;}
-	&.extralight { font-weight: 200;}
+	&.extralight, &.ultralight { font-weight: 200;}
 	&.light { font-weight: 300;}
 	&.regular { font-weight: 400;}
 	&.medium { font-weight: 500;}
 	&.semibold { font-weight: 600;}
 	&.bold { font-weight: 700;}
-	&.extrabold { font-weight: 800;}
+	&.extrabold, &.ultrabold { font-weight: 800;}
 	&.black, &.heavy { font-weight: 900;}
 }
 @keyframes fake {

@@ -31,9 +31,9 @@
 @font-face {
   font-family: 'Ready Script';
   font-weight: 800;
-  src: url("../type/ready-script/ReadyScript-ExtraBold.eot");
+  src: url("../type/ready-script/ReadyScript-UltraBold.eot");
   /* IE9 Compat Modes */
-  src: url("../type/ready-script/ReadyScript-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../type/ready-script/ReadyScript-ExtraBold.woff2") format("woff2"), url("../type/ready-script/ReadyScript-ExtraBold.woff") format("woff"); }
+  src: url("../type/ready-script/ReadyScript-UltraBold.eot?#iefix") format("embedded-opentype"), url("../type/ready-script/ReadyScript-UltraBold.woff2") format("woff2"), url("../type/ready-script/ReadyScript-UltraBold.woff") format("woff"); }
 @font-face {
   font-family: 'Ready Script';
   font-weight: 900;

@@ -823,13 +823,13 @@ Product Styles
 .fontselect.cornbread { font-family: 'Cornbread'; line-height: 1; }
 .fontselect.ready-script { font-family: 'Ready Script'; line-height: 1; }
 .fontselect.thin { font-weight: 100; }
-.fontselect.extralight { font-weight: 200; }
+.fontselect.extralight, .fontselect.ultralight { font-weight: 200; }
 .fontselect.light { font-weight: 300; }
 .fontselect.regular { font-weight: 400; }
 .fontselect.medium { font-weight: 500; }
 .fontselect.semibold { font-weight: 600; }
 .fontselect.bold { font-weight: 700; }
-.fontselect.extrabold { font-weight: 800; }
+.fontselect.extrabold, .fontselect.ultrabold { font-weight: 800; }
 .fontselect.black, .fontselect.heavy { font-weight: 900; }
 
 @-webkit-keyframes fake { from { opacity: 1; }

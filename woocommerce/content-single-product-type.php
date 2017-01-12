@@ -83,7 +83,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					// 3 items need 2 bits to be represented ( 0 => 00 => "Expanded", 1 => 01 => "Standard", 2 => 10 => "Condensed" )
 					$crit1 = ["Expanded", "Standard", "Condensed", "ExtraCondensed", "Compressed", "SL", "ST"];
 					// 9 items need 4 bits to be represented ( 0 => 0000 => "Black", 1 => 0001 => "ExtraBold", ... 7 => 0111 => "Thin", 8 => 1000 => "ExtraLight" )
-					$crit2 = ["Black", "Heavy", "ExtraBold", "Bold", "SemiBold", "Medium", "Regular", "Light", "ExtraLight", "Thin", "ExtraThin"];
+					$crit2 = ["Black", "Heavy", "ExtraBold", "UltraBold", "Bold", "SemiBold", "Medium", "Regular", "Light", "ExtraLight", "Ultralight", "Thin", "ExtraThin"];
 					// if you join all the bits, each item of your array can be represented with a 6 bits number: ( 0 => 000000 => "Expanded Black" ... 40 => 101000 => "Condensed ExtraLight" )
 
 					$crit2 = array_flip($crit2);
@@ -294,7 +294,7 @@ $('#font-alts').on('change', function () {
 </div>
 </div>
 <div class="yellow-page product-footer">
-	<h1 class="footer-title <?php echo $post->post_name;?>"><?php the_title(); ?></h1>
+	<h1 class="footer-title"><?php the_title(); ?></h1>
 	<h4 class="price h4"><?php global $product; echo $product->get_price_html(); ?>
 	<meta itemprop="price" content="<?php echo esc_attr( $product->get_price() ); ?>" />
 	<meta itemprop="priceCurrency" content="<?php echo esc_attr( get_woocommerce_currency() ); ?>" /></h4>

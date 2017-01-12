@@ -156,9 +156,9 @@ src: url("./type/verycoolicons-Regular.eot?#iefix") format("embedded-opentype"),
 @font-face { font-family: 'Cardinal Grotesque ExtraCondensed'; font-weight: 600; src: url("./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.eot");
   /* IE9 Compat Modes */
 src: url("./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.woff") format("woff"); }
-@font-face { font-family: 'Cardinal Grotesque Expanded'; font-weight: 600; src: url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Semibold.eot");
+@font-face { font-family: 'Cardinal Grotesque Expanded'; font-weight: 600; src: url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-SemiBold.eot");
   /* IE9 Compat Modes */
-src: url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Semibold.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Semibold.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Semibold.woff") format("woff"); }
+src: url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-SemiBold.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-SemiBold.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-SemiBold.woff") format("woff"); }
 @font-face { font-family: 'Cardinal Grotesque Expanded'; font-weight: 700; src: url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.eot");
   /* IE9 Compat Modes */
 src: url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.woff") format("woff"); }

@@ -19,9 +19,9 @@
 @font-face {
   font-family: 'Ready Script';
   font-weight: 600;
-  src: url("../type/ready-script/ReadyScript-Semibold.eot");
+  src: url("../type/ready-script/ReadyScript-SemiBold.eot");
   /* IE9 Compat Modes */
-  src: url("../type/ready-script/ReadyScript-Semibold.eot?#iefix") format("embedded-opentype"), url("../type/ready-script/ReadyScript-Semibold.woff2") format("woff2"), url("../type/ready-script/ReadyScript-Semibold.woff") format("woff"); }
+  src: url("../type/ready-script/ReadyScript-SemiBold.eot?#iefix") format("embedded-opentype"), url("../type/ready-script/ReadyScript-SemiBold.woff2") format("woff2"), url("../type/ready-script/ReadyScript-SemiBold.woff") format("woff"); }
 @font-face {
   font-family: 'Ready Script';
   font-weight: 700;

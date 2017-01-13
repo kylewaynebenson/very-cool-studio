@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Business Script';
-  font-weight: 300;
+  font-weight: 400;
   font-feature-settings: "liga" 1;
   src: url('./type/business-script/BusinessScript-Regular.eot'); /* IE9 Compat Modes */
   src: url('./type/business-script/BusinessScript-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -9,7 +9,7 @@
 }
 @font-face {
   font-family: 'Cornbread';
-  font-weight: 300;
+  font-weight: 400;
   src: url('./type/cornbread/Cornbread-Regular.eot'); /* IE9 Compat Modes */
   src: url('./type/cornbread/Cornbread-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('./type/cornbread/Cornbread-Regular.woff2') format('woff2'), /* Super Modern Browsers */
@@ -130,7 +130,7 @@ $type-script-subhead: "Business Script";
 
 body {
   color: $color__text-main;
-  font-weight: 300;
+  font-weight: 400;
   font-family: $type-text;
   @include font-size(1);
   line-height: 1.6;

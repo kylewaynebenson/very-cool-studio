@@ -1,21 +1,33 @@
 @font-face {
   font-family: 'Cornbread';
   font-weight: 300;
+  src: url("../type/cornbread/Cornbread-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/cornbread/Cornbread-Light.eot?#iefix") format("embedded-opentype"), url("../type/cornbread/Cornbread-Light.woff2") format("woff2"), url("../type/cornbread/Cornbread-Light.woff") format("woff"); }
+@font-face {
+  font-family: 'Cornbread';
+  font-weight: 400;
   src: url("../type/cornbread/Cornbread-Regular.eot");
   /* IE9 Compat Modes */
   src: url("../type/cornbread/Cornbread-Regular.eot?#iefix") format("embedded-opentype"), url("../type/cornbread/Cornbread-Regular.woff2") format("woff2"), url("../type/cornbread/Cornbread-Regular.woff") format("woff"); }
 @font-face {
   font-family: 'Cornbread';
-  font-weight: 500;
+  font-weight: 600;
   src: url("../type/cornbread/Cornbread-SemiBold.eot");
   /* IE9 Compat Modes */
   src: url("../type/cornbread/Cornbread-SemiBold.eot?#iefix") format("embedded-opentype"), url("../type/cornbread/Cornbread-SemiBold.woff2") format("woff2"), url("../type/cornbread/Cornbread-SemiBold.woff") format("woff"); }
 @font-face {
   font-family: 'Cornbread';
-  font-weight: 600;
+  font-weight: 700;
   src: url("../type/cornbread/Cornbread-Bold.eot");
   /* IE9 Compat Modes */
   src: url("../type/cornbread/Cornbread-Bold.eot?#iefix") format("embedded-opentype"), url("../type/cornbread/Cornbread-Bold.woff2") format("woff2"), url("../type/cornbread/Cornbread-Bold.woff") format("woff"); }
+@font-face {
+  font-family: 'Cornbread';
+  font-weight: 800;
+  src: url("../type/cornbread/Cornbread-Extrabold.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/cornbread/Cornbread-Extrabold.eot?#iefix") format("embedded-opentype"), url("../type/cornbread/Cornbread-Extrabold.woff2") format("woff2"), url("../type/cornbread/Cornbread-Extrabold.woff") format("woff"); }
 @font-face {
   font-family: 'Cornbread';
   font-weight: 900;

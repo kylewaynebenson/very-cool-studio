@@ -48,7 +48,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<?php the_content(); ?>
 		</div>
 			<div class="type-tester"> 
-		<span contenteditable="true" id="type-tester-editable" class="fontselect fontsize fontweight de 64 textfield <?php echo $post->post_name;?>">Try <?php the_title(); ?></span> 
+			<?php
+				// This section lets you set the default typetester font if there is one
+				$tags = get_the_terms( $post->ID, 'product_tag' );
+				foreach ( $tags as $tag ) {
+				    $typetesterdefault = $tag->slug;
+				}
+				if (empty($typetesterdefault)){
+					$typetesterdefault = "Regular";
+				}
+			?>
+		<span contenteditable="true" id="type-tester-editable" class="fontselect fontsize fontweight de 64 textfield <?php echo $post->post_name;?> <?php echo $typetesterdefault; ?>">Try <?php the_title(); ?></span> 
 		<div class="type-tester-title">
 			<h4 class="entry-title"><?php the_title(); ?></h4>
 			<h5><?php echo get_the_excerpt(); ?></h5>
@@ -65,6 +75,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="select">
 				<span class="arr"></span>
 				<select class="" data-native-menu="false" id="font-weight-select" name="weight">
+
 				<?php
 					// This section pulls all the webfont names from the directory, then sorts them
 					$title = get_the_title();
@@ -114,13 +125,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 					}
 
 					ksort($result, SORT_NUMERIC);
-				?>
-				<?php
+					// This section prints out the select for the type tester
 					$newfiles = $result;
 					$html = '';
 					foreach ($newfiles as &$value) {
-						$valueslug = strtolower($value);
-						if ($value == ' Regular' | $value == 'Regular') {
+						$valueslug = trim(strtolower($value));
+						$value = trim($value);
+						if ($value == $typetesterdefault | strtolower($value) == strtolower($typetesterdefault)) {
 						    $html .= "<option value='{$valueslug}' selected>";
 						    $html .= "{$value}</option> ";
 						} else {
@@ -265,21 +276,24 @@ $('#font-alts').on('change', function () {
 		</div>
 		<div id="gallery-panel" class="panel">
 			<?php
-			$adjectives = array("fast ", "slow ", "meaningless ", "pathetic ", "gassy ",  "long-winded ", "defeated ", "grumpy ", "ticklish ", "overwhelmed ", "tacky ", "miffed ", "tiring ", "dangerous ", "decent ", "careful ", "flustered ", "noble ", "tasteful ", "doubting ", "unnecessary ", "surly ", "spaceage", "limited ", "shameless ", "zealous ",);
-			$description = array("brown ", "yellow ", "red ", "orange ", "durable ", "fleshy ", "bristling ", "crosseyed ", "pigeontoed ", "bubbling ", "salacious ", "bushy ", "flimsy ", "prickly ", "musty ", "swirly ", "lumpy ", "snarly ", "fuzzy ", "quiet ", "foamy ",);
-			$nouns = array("turtle ", "horse ", "dog ", "pig ", "zebra ", "hedgehog ", "rabbit ", "cat ", "ant ", "gorilla ", "fox ", "coyote ", "goat ", "lion ", "house cat ", "hamster ", "pigeon ", "parrot ");
-			$verbs = array("jumped ", "farted ", "ate ", "tiptoed ", "sank ", "quibbled ", "squeezed ", "squirmed ", "littered ", "fumed ", "burped ", "waffled ", "played ping pong ", "hit a wiffle ball ", "wailed ", "bobbed for apples ", "picked her nose ", "did the frug ", "sniffed ", "collapsed ", "swerved ", "slurped a Coke ", "barfed ", "lurched ", "rolled ", "rumbled ", "gurgled ", "slipped ", "gagged ");
-			$prepositions = array("over ", "under ", "behind the back of ", "after ", "beside ", "thanks to ", "in the face of ");
-			$articles = array("the ", "that ", "a ", "my ", "your ", "their ");
+			$adjectives = array("embattled ", "feisty ", "gregarious ", "meaningless ", "pathetic ", "gassy ",  "long-winded ", "defeated ", "grumpy ", "ticklish ", "overwhelmed ", "tacky ", "miffed ", "dangerous ", "decent ", "careful ", "flustered ", "noble ", "tasteful ", "doubting ", "unnecessary ", "surly ", "spaceage ", "shameless ", "zealous ",);
+			$description = array("brown ", "yellow ", "five-year-old ", "never-to-be-forgotten " ,"red ", "orange ", "kindhearted ", "(yet durable) ", "bristling ", "crosseyed ", "pigeontoed ", "bumbling ", "flimsy ", "prickly ", "musty ", "lumpy ", "snarly ", "fuzzy ", "quiet ",);
+			$nouns = array("turtle ", "horse ", "dog ", "(good) dog ", "pig ", "zebra ", "hedgehog ", "rabbit ", "gorilla ", "fox ", "coyote ", "goat ", "lion ", "house cat ", "hamster ", "pigeon ", "parrot ");
+			$verbs = array("jumped ", "farted ", "doted ", "tiptoed ", "sank into euphoria ", "quibbled ", "littered ", "fumed ", "burped ", "played ping pong ", "hit a wiffle ball ", "wailed ", "bobbed for apples ", "picked her nose ", "did the frug ", "sniffed ", "collapsed ", "slurped a Coke ", "barfed ", "lurched " );
+			$prepositions = array("over ", "behind the back of ", "after ", "beside ", "thanks to ", "in the face of ");
+			$articles = array("the ", "that ", "my ", "your ", "their ", "our ");
+			$sentencestart = array("I’ll have you know ", "all because ", "This, after ", "And ", "As ");
 			$rand_adjectives = array_rand($adjectives, 4);
 			$rand_description = array_rand($description, 4);
 			$rand_nouns = array_rand($nouns, 4);
 			$rand_verbs = array_rand($verbs, 3);
 			$rand_prepositions = array_rand($prepositions, 3);
 			$rand_articles = array_rand($articles, 4);
+			$rand_sentencestart = array_rand($sentencestart, 2);
 			foreach ($newfiles as &$value) {
+				$value = trim($value);
 				$eachfont = "";
-				$typehtml = ucwords($articles[$rand_articles[0]] . $adjectives[$rand_adjectives[0]] . $description[$rand_description[0]] . $nouns[$rand_nouns[0]] . $verbs[$rand_verbs[0]] . $prepositions[$rand_prepositions[0]] . $articles[$rand_articles[1]] . $adjectives[$rand_adjectives[1]] . $description[$rand_description[1]] . trim($nouns[$rand_nouns[1]]) . ". " . $articles[$rand_articles[2]] . $adjectives[$rand_adjectives[2]] . $nouns[$rand_nouns[2]] . $verbs[$rand_verbs[2]] . $prepositions[$rand_prepositions[1]] . $articles[$rand_articles[3]] . $adjectives[$rand_adjectives[3]] . $description[$rand_description[3]] . trim($nouns[$rand_nouns[3]]) . "! ");
+				$typehtml = ucwords($articles[$rand_articles[0]] . $adjectives[$rand_adjectives[0]] . $description[$rand_description[0]] . $nouns[$rand_nouns[0]] . $verbs[$rand_verbs[0]] . $prepositions[$rand_prepositions[0]] . $articles[$rand_articles[1]] . $description[$rand_description[1]] . trim($nouns[$rand_nouns[1]]) . ". " . $sentencestart[$rand_sentencestart[0]] . $articles[$rand_articles[2]] . $adjectives[$rand_adjectives[2]] . $nouns[$rand_nouns[2]] . $verbs[$rand_verbs[2]] . $prepositions[$rand_prepositions[1]] . $articles[$rand_articles[3]] . $adjectives[$rand_adjectives[3]] . trim($nouns[$rand_nouns[3]]) . "! ");
 				$valueslug = strtolower($value);
 				$eachfont .= "<h5>{$value}</h5><div contenteditable='true' class='fontselect {$post->post_name} {$valueslug}'>";
 				$eachfont .= $typehtml;

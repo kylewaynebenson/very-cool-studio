@@ -135,10 +135,10 @@ td, th { padding: 0; }
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-@font-face { font-family: 'Business Script'; font-weight: 300; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; src: url("./type/business-script/BusinessScript-Regular.eot");
+@font-face { font-family: 'Business Script'; font-weight: 400; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; src: url("./type/business-script/BusinessScript-Regular.eot");
   /* IE9 Compat Modes */
 src: url("./type/business-script/BusinessScript-Regular.eot?#iefix") format("embedded-opentype"), url("./type/business-script/BusinessScript-Regular.woff2") format("woff2"), url("./type/business-script/BusinessScript-Regular.woff") format("woff"); }
-@font-face { font-family: 'Cornbread'; font-weight: 300; src: url("./type/cornbread/Cornbread-Regular.eot");
+@font-face { font-family: 'Cornbread'; font-weight: 400; src: url("./type/cornbread/Cornbread-Regular.eot");
   /* IE9 Compat Modes */
 src: url("./type/cornbread/Cornbread-Regular.eot?#iefix") format("embedded-opentype"), url("./type/cornbread/Cornbread-Regular.woff2") format("woff2"), url("./type/cornbread/Cornbread-Regular.woff") format("woff"); }
 @font-face { font-family: 'Cardinal Grotesque'; font-weight: 500; src: url("./type/cardinal-grotesque/CardinalGrotesque-Medium.eot");
@@ -190,11 +190,11 @@ src: url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.eot?#iefix") 
 
 .icon-corner-right:before { content: "\E008"; -webkit-transform: scale(-1, 1); transform: scale(-1, 1); }
 
-body { color: #404040; font-weight: 300; font-family: "Cornbread"; font-size: 16px; font-size: 1rem; line-height: 1.6; }
+body { color: #404040; font-weight: 400; font-family: "Cornbread"; font-size: 16px; font-size: 1rem; line-height: 1.6; }
 
 h1, h2, h3, h4, h5, h6 { clear: both; }
 
-h1, .h1 { font-family: "Cornbread"; font-weight: 300; }
+h1, .h1 { font-family: "Cornbread"; font-weight: 400; }
 h1.cardinal-grotesque, .h1.cardinal-grotesque { font-family: "Cardinal Grotesque"; }
 h1.kansas-casual, .h1.kansas-casual { font-family: "Kansas Casual"; }
 h1.business-script, .h1.business-script { font-family: "Business Script"; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; }
@@ -205,7 +205,7 @@ h1.business-script, .h1.business-script { font-family: "Business Script"; -webki
 
 h1.huge-h1 { font-family: "Cardinal Grotesque ExtraCondensed"; font-weight: 600; font-size: 6em; }
 
-h2, .h2 { font-family: "Business Script"; font-weight: 300; font-size: 2.25em; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; line-height: 1.25; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+h2, .h2 { font-family: "Business Script"; font-weight: 400; font-size: 2.25em; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; line-height: 1.25; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 @media (max-width: 500px) { h2, .h2 { font-size: 1.8em; line-height: 1.15; } }
 
 h3, .h3 { font-family: "Cardinal Grotesque"; font-weight: 600; font-size: 1.6em; letter-spacing: .02em; }

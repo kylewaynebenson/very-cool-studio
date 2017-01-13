@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1, .h1 {
 	font-family: $type-headline;
-	font-weight: 300;
+	font-weight: 400;
 	&.cardinal-grotesque { font-family: "Cardinal Grotesque"; }
 	&.kansas-casual { font-family: "Kansas Casual"; }
 	&.business-script { font-family: "Business Script"; font-feature-settings: "liga" 1; }
@@ -29,7 +29,7 @@ h1.huge-h1 {
 }
 h2, .h2 {
 	font-family: $type-script-subhead;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 2.25em;
 	font-feature-settings: "liga" 1;
 	line-height: 1.25;

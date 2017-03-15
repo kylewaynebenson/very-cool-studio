@@ -31,7 +31,7 @@ input[type="submit"] {
 		}
 	}
 }
-.chamfered-button, input[type="submit"].chamfered-button, .wc-backward.button, .woocommerce-message a, .wc-forward.button, #place_order.button, p:last-of-type.product.woocommerce.add_to_cart_inline a {
+.chamfered-button, input[type="submit"].chamfered-button, .wc-backward.button, .woocommerce-message a, .wc-forward.button, #place_order.button, p:last-of-type.product.woocommerce.add_to_cart_inline a, .button-round {
 	cursor: pointer;
 	color: $white;
 	text-decoration: none;
@@ -73,6 +73,7 @@ input[type="submit"] {
 }
 input[type="submit"].chamfered-button-yellow, .chamfered-button-yellow, .wc-forward.button.checkout-button, #place_order.button {
 	color: $black;
+	border: 0px;
 	background:
 		linear-gradient(135deg, transparent 5px, $yellow 0) top left,
 		linear-gradient(225deg, transparent 5px, $yellow 0) top right,
@@ -133,7 +134,7 @@ input[type="submit"].chamfered-button-white, .chamfered-button-white, p:last-of-
 		color: $black;
 	}
 }
-input[type="submit"].chamfered-button-gray, .chamfered-button-gray, .wc-backward.button {
+input[type="submit"].chamfered-button-gray, .chamfered-button-gray, .wc-backward.button, .button-round {
 	color: $black;
 	background:
 		linear-gradient(135deg, transparent 5px, $gray-1 0) top left,
@@ -144,10 +145,10 @@ input[type="submit"].chamfered-button-gray, .chamfered-button-gray, .wc-backward
 	background-repeat: no-repeat;
 	&:hover {
 	background:
-		linear-gradient(135deg, transparent 5px, lighten($gray-1,5%) 0) top left,
-		linear-gradient(225deg, transparent 5px, lighten($gray-1,5%) 0) top right,
-		linear-gradient(315deg, transparent 5px, lighten($gray-1,5%) 0) bottom right,
-		linear-gradient(45deg,  transparent 5px, lighten($gray-1,5%) 0) bottom left;
+		linear-gradient(135deg, transparent 5px, lighten($gray-1,2%) 0) top left,
+		linear-gradient(225deg, transparent 5px, lighten($gray-1,2%) 0) top right,
+		linear-gradient(315deg, transparent 5px, lighten($gray-1,2%) 0) bottom right,
+		linear-gradient(45deg,  transparent 5px, lighten($gray-1,2%) 0) bottom left;
 		background-size: 52% 52%;
 		background-repeat: no-repeat;
 	}

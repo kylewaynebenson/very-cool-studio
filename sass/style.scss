@@ -1084,7 +1084,7 @@ Cart Styles
 				border: 0px;
 				text-align: right;
 			}
-			[data-title="Subtotal"] {
+			&:not([data-title="Total"]) {
 				font-family: $type-subhead-expanded;
 				font-weight: 700;
 				.amount {
@@ -1540,14 +1540,11 @@ body {
 			text-align: center;
 		}
 		padding: 4px;
-		.cart {
-			display: inline;
-			button {
-				display: inline-block;
-				margin: 10px 20px 9px 12px;
-				@media only screen and (min-width: 965px) {
-					margin-left: -3px;
-				}
+		a.button {
+			display: inline-block;
+			margin: 10px 20px 9px 12px;
+			@media only screen and (min-width: 965px) {
+				margin-left: -3px;
 			}
 		}
 		.type-tester-notice {

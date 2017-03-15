@@ -330,3 +330,12 @@ function disallowed_custom_fields($string, $key, $value){
 // 	return $message;
 // }
 // add filter( 'woocommerce_add_to_cart_message', 'my_cart_messages', 109);
+
+/**
+* Variable Pricing add class
+**/
+add_action( 'vartable_table_class', 'my_vartable_table_class');
+function my_vartable_table_class($class) {
+  $class = ' list-box ';
+  return ($class);
+}

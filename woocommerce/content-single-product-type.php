@@ -196,10 +196,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</div>
 		</div>
 		<div class="type-tester-footer">
-			<form class="cart" method="post" enctype='multipart/form-data'>
-			 	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
-			 	<button type="submit" class="chamfered-button chamfered-button-yellow"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
-			</form>
+			 <a href="#pricing" type="submit" class="button chamfered-button chamfered-button-gray">See Pricing</a>
 			<h5 class="type-tester-notice">Type tester does not demonstrate actual scope or<br> function of typeface thanks to browser limitations.</h5>
 		</div>
 	 </div>
@@ -307,14 +304,21 @@ $('#font-alts').on('change', function () {
 </div>
 </div>
 </div>
-<div class="yellow-page product-footer">
+<div id="pricing" class="yellow-page product-footer">
 	<h1 class="footer-title"><?php the_title(); ?></h1>
 	<h4 class="price h4"><?php global $product; echo $product->get_price_html(); ?>
 	<meta itemprop="price" content="<?php echo esc_attr( $product->get_price() ); ?>" />
 	<meta itemprop="priceCurrency" content="<?php echo esc_attr( get_woocommerce_currency() ); ?>" /></h4>
-	<form class="cart" method="post" enctype='multipart/form-data'>
-	 	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
-	 	<button type="submit" class="button chamfered-button"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
-	 	<a href="<?php echo esc_url( home_url( '/' ) ); ?>terms" class="squiggle squiggle-black">View License</a>
-	</form>
+	<?php if ( $product->is_type( 'variable' ) ) {?>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>terms" class="squiggle squiggle-black">View License</a>
+		<section class="box">
+			<?php echo do_shortcode("[vartable]"); ?>
+		</section>
+		<?php } else {?>
+		<form class="cart" method="post" enctype='multipart/form-data'>
+		 	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
+		 	<button type="submit" class="button chamfered-button"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+		 	 	<a href="<?php echo esc_url( home_url( '/' ) ); ?>terms" class="squiggle squiggle-black">View License</a>
+		</form>
+		<?php } ?>
 </div>

@@ -19,9 +19,9 @@
 @font-face {
   font-family: 'Kansas Casual';
   font-weight: 600;
-  src: url("../type/kansas-casual/KansasCasual-Semibold.eot");
+  src: url("../type/kansas-casual/KansasCasual-SemiBold.eot");
   /* IE9 Compat Modes */
-  src: url("../type/kansas-casual/KansasCasual-Semibold.eot?#iefix") format("embedded-opentype"), url("../type/kansas-casual/KansasCasual-Semibold.woff2") format("woff2"), url("../type/kansas-casual/KansasCasual-Semibold.woff") format("woff"); }
+  src: url("../type/kansas-casual/KansasCasual-SemiBold.eot?#iefix") format("embedded-opentype"), url("../type/kansas-casual/KansasCasual-SemiBold.woff2") format("woff2"), url("../type/kansas-casual/KansasCasual-SemiBold.woff") format("woff"); }
 @font-face {
   font-family: 'Kansas Casual';
   font-weight: 700;

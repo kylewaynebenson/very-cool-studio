@@ -3,7 +3,6 @@ table {
 	width: 100%;
 	font-family: $type-subhead;
 	font-weight: 300;
-	font-size: 1.6em;
 	letter-spacing: .02em;
 	caption {
 		background: $black;
@@ -20,7 +19,6 @@ table {
 		font-weight: 500;
 	}
 	@media (max-width: 500px) {
-		font-size: 1.2em;
 		line-height: 1.2;
 	}
 	@media (max-width: 768px) {
@@ -36,6 +34,66 @@ table {
 			padding: 5px 10px;
 		}
 	}
+}
+table.vartable {
+	tr {
+		text-align: left;
+		td.pricecol {
+			font-family: $type-script-subhead;
+		}
+		td {
+			input.qty {
+				max-width: 45px;
+			}
+			&.optionscol {
+				font-size: 1.6em;
+			}
+			&.cartcol {
+				text-align: right;
+				max-width: 70px;
+			}
+			&.qtycol {
+				input {
+					border: 3px solid $gray-1;
+					color: darken($gray-1, 8%);
+				}
+			}
+		}
+		td[data-sort-value="Complete Family"], td[data-sort-value="Complete Family"] + td {
+			color: $yellow;
+		}
+		td[data-sort-value="Complete Family"] + td + td + td button {
+			background:
+				linear-gradient(135deg, transparent 5px, $yellow 0) top left,
+				linear-gradient(225deg, transparent 5px, $yellow 0) top right,
+				linear-gradient(315deg, transparent 5px, $yellow 0) bottom right,
+				linear-gradient(45deg,  transparent 5px, $yellow 0) bottom left;
+			background-size: 52% 52%;
+			background-repeat: no-repeat;
+			&:hover {
+			background:
+				linear-gradient(135deg, transparent 5px, lighten($yellow,5%) 0) top left,
+				linear-gradient(225deg, transparent 5px, lighten($yellow,5%) 0) top right,
+				linear-gradient(315deg, transparent 5px, lighten($yellow,5%) 0) bottom right,
+				linear-gradient(45deg,  transparent 5px, lighten($yellow,5%) 0) bottom left;
+				background-size: 52% 52%;
+				background-repeat: no-repeat;
+			}
+			&:active {
+			background:
+				linear-gradient(135deg, transparent 5px, darken($yellow,5%) 0) top left,
+				linear-gradient(225deg, transparent 5px, darken($yellow,5%) 0) top right,
+				linear-gradient(315deg, transparent 5px, darken($yellow,5%) 0) bottom right,
+				linear-gradient(45deg,  transparent 5px, darken($yellow,5%) 0) bottom left;
+				background-size: 52% 52%;
+				background-repeat: no-repeat;
+			}
+			&:visited {
+				color: $black;
+			}
+		}
+	}
+
 }
 table.list-box {
 	box-sizing: border-box;
@@ -103,11 +161,32 @@ table.list-box {
 		}
 		td {
 			vertical-align: bottom;
+			dl.variation {
+				display: inline;
+				margin: 0px;
+				dt, dd {
+					font-family: $type-subhead-expanded;
+					font-size: 11px;
+					text-transform: uppercase;
+					font-weight: 600;
+					display: inline;
+					margin: 0px;
+				}
+				dt {
+					color: $gray-2;
+					display: none;
+				}
+				dd p {
+					display: inline;
+				}
+			}
 		}
-		td.product-price, td.product-quantity, td.product-quantity input {
+		td.product-price {
 			font-family: $type-script-subhead;
+			font-size: .6em;
+		}
+		td.product-quantity, td.product-quantity input {
 			font-weight: 300;
-			font-size: 0.7em;
 			input {
 				border: 0px;
 				width: 50px;

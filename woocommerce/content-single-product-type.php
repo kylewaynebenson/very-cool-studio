@@ -40,8 +40,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<header class="entry-header">
 		<?php 
 			the_title( '<h1 class="entry-title">', '</h1>' );
-			the_meta();
 			?>
+			<ul class="post-meta">
+				<li><span class="post-meta-key">Char set</span> <?php echo get_post_meta($post->ID, 'Char Set', true); ?></li>
+				<li><span class="post-meta-key">Released</span> <?php echo get_post_meta($post->ID, 'Released', true); ?></li>
+				<li><span class="post-meta-key">Fonts</span> <?php echo get_post_meta($post->ID, 'Fonts', true); ?></li>
+			</ul>
+			
 	</header><!-- .entry-header -->
 	<div class="post-content">
 		<div class="post-description">

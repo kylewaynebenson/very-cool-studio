@@ -987,13 +987,6 @@ Cart Styles
 
 }
 .woocommerce-checkout-review-order-table {
-	@media (min-width: 900px) {
-		width: span(12);
-		float: left;
-	}
-	@media (min-width: 1000px) {
-		width: span(13);
-	}
 	tr {
 		td {
 			&:last-of-type {
@@ -1024,6 +1017,7 @@ Cart Styles
 		padding: 0px;
 	}
 	@media (min-width: 769px) {
+
 		.cart-subtotal {
 			th.product-total, th.product-name {
 				padding-bottom: 0px;
@@ -1042,6 +1036,13 @@ Cart Styles
 				padding-top: 0px;
 			}
 		}
+	}
+	@media (min-width: 900px) {
+		width: span(12);
+		float: left;
+	}
+	@media (min-width: 1000px) {
+		width: span(13);
 	}
 	.order-total {
 		th {

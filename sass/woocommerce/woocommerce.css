@@ -969,7 +969,7 @@ p.demo_store {
   .woocommerce td.product-name p.backorder_notification {
     font-size: 0.83em; }
   .woocommerce td.product-quantity {
-    min-width: 80px; }
+    max-width: 40px; }
   .woocommerce ul.cart_list,
   .woocommerce ul.product_list_widget {
     list-style: none outside;

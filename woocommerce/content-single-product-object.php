@@ -40,8 +40,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<header class="entry-header">
 		<?php 
 			the_title( '<h1 class="entry-title">', '</h1>' );
-			the_meta();
 			?>
+		<ul class="post-meta">
+			<li><span class="post-meta-key">Dim</span> <?php echo get_post_meta($post->ID, 'Dim', true); echo get_post_meta($post->ID, 'Dimensions', true); ?></li>
+			<?php $my_post_meta = get_post_meta($post->ID, 'Quantity', true); ?>
+			    <?php if ( ! empty ( $my_post_meta ) ) { ?>
+			        <li><span class="post-meta-key">Quantity</span> <?php echo get_post_meta($post->ID, 'Quantity', true); ?></li>
+			    <?php } ?>
+			<?php $my_post_meta = get_post_meta($post->ID, 'Iron On', true); ?>
+			    <?php if ( ! empty ( $my_post_meta ) ) { ?>
+			        <li><span class="post-meta-key">Iron On</span> <?php echo get_post_meta($post->ID, 'Iron On', true); ?></li>
+			    <?php } ?>
+			<li><span class="post-meta-key">Summary</span> <?php echo get_post_meta($post->ID, 'Summary', true); ?></li>
+		</ul>
 	</header><!-- .entry-header -->
 	<div class="post-content">
 		<?php the_content(); ?>
@@ -55,8 +66,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				the_post_navigation();
 
 		if ( 'post' === get_post_type() ) : ?>
-		<?php
-		endif; ?>
+		<?php endif; ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 </div><!-- #product-<?php the_ID(); ?> -->

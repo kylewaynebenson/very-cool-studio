@@ -39,6 +39,13 @@ get_header(); ?>
 		<li><a href="http://www.bensonsclass.com/">Mr. Benson's Class</a><span class="year">2012</span></li>
 		<!-- Good job checking <li><a href="http://www.cupmunicate.com/">Cupmunicate</a><span class="year">2012</span></li> -->
 	</ul>
+	<h2>Online</h2>
+	<ul class="list-box">
+		<li><a href="https://instagram.com/verycoolstudio">Instagram</a></li>
+		<li><a href="https://twitter.com/kylewaynebenson">Twitter</a></li>
+		<li><a href="https://github.com/kylewaynebenson/Glyphs-Scripts">Github</a><span class="year">Glyphs Scripts</span></li>
+		<li><a href="https://dribbble.com/kylewaynebenson">Dribbble</a></li>
+	</ul>
 	<h2>Interviews</h2>
 	<ul class="list-box">
 		<li><a href="http://www.thebalance.cc/home/2014/21-kyle-claire-benson">The Balance Podcast</a><span class="year">2014</span></li>

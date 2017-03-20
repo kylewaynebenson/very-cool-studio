@@ -42,9 +42,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 			the_title( '<h1 class="entry-title">', '</h1>' );
 			?>
 			<ul class="post-meta">
-				<li><span class="post-meta-key">Char set</span> <?php echo get_post_meta($post->ID, 'Char Set', true); ?></li>
+				<li><span class="post-meta-key">Char set</span> <?php echo get_post_meta($post->ID, 'Char Set', true); echo get_post_meta($post->ID, 'Char set', true); ?></li>
 				<li><span class="post-meta-key">Released</span> <?php echo get_post_meta($post->ID, 'Released', true); ?></li>
 				<li><span class="post-meta-key">Fonts</span> <?php echo get_post_meta($post->ID, 'Fonts', true); ?></li>
+			<?php $my_post_meta = get_post_meta($post->ID, 'Widths', true); ?>
+			    <?php if ( ! empty ( $my_post_meta ) ) { ?>
+			        <li><span class="post-meta-key">Widths</span> <?php echo get_post_meta($post->ID, 'Widths', true); ?></li>
+			    <?php } ?>
 			</ul>
 			
 	</header><!-- .entry-header -->
@@ -258,10 +262,12 @@ $('#font-alts').on('change', function () {
 <div class="radio-tabs">
 	<input class="state" type="radio" title="Specimen" name="houses-state" id="specimen" checked />
 	<input class="state" type="radio" title="Gallery" name="houses-state" id="gallery" />
+	<!-- <input class="state" type="radio" title="Process" name="houses-state" id="process" /> -->
 
 	<div class="tabs">
 		<label for="specimen" id="specimen-tab" class="tab">Specimen</label>
 		<label for="gallery" id="gallery-tab" class="tab">Gallery</label>
+		<!-- <label for="process" id="process-tab" class="tab">Process</label> -->
 	</div>
 	<div class="panels">
 		<div id="specimen-panel" class="panel active">
@@ -304,6 +310,9 @@ $('#font-alts').on('change', function () {
 			}
 			?>
 		</div>
+<!-- 		<div id="process-panel" class="panel">
+			<p>Hello I am a dog</p>
+		</div> -->
 	</div>
 </div>
 </div>

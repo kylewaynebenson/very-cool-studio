@@ -154,17 +154,19 @@
 
 /* Small menu. */
 .main-navigation {
+	position: relative;
 	button.menu-toggle {
-		float: right;
+		position: absolute;
+		right: -10px;
+		top: -14px;
 		font-family: 'Very Cool Icons';
 		font-style: normal;
 		font-weight: 400;
 		background: transparent;
 		border: 3px solid transparent;
-		width: 44px;
-		height: 15px;
-		font-size: 3.45em;
-		line-height: 0;
+		font-size: 56px;
+		line-height: 0px;
+		height: 50px;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	}
@@ -173,7 +175,7 @@
 			display: block;
 		}
 		button.menu-toggle {
-			display: block;
+			top: -10px;
 		}
 	}
 }

@@ -291,17 +291,35 @@ table th { text-transform: uppercase; font-family: "Cardinal Grotesque Expanded"
   table tr td, table caption { padding: 5px 0px; border-bottom: 3px solid #f0f0f0; }
   table caption { padding: 5px 10px; } }
 
-table.vartable tr { text-align: left; }
-table.vartable tr td.pricecol { font-family: "Business Script"; }
+#pricing { outline: none; }
+
+table.vartable { margin-bottom: 10px; width: 100%; }
+table.vartable tr td { border-bottom: 0px; }
+table.vartable tr td:before { display: none; }
 table.vartable tr td input.qty { max-width: 45px; }
-table.vartable tr td.optionscol { font-size: 1.6em; }
-table.vartable tr td.cartcol { text-align: right; max-width: 70px; }
 table.vartable tr td.qtycol input { border: 3px solid #f0f0f0; color: gainsboro; }
 table.vartable tr td[data-sort-value="Complete Family"], table.vartable tr td[data-sort-value="Complete Family"] + td { color: #ffd138; }
 table.vartable tr td[data-sort-value="Complete Family"] + td + td + td button { background: -webkit-linear-gradient(315deg, transparent 5px, #ffd138 0) top left, -webkit-linear-gradient(225deg, transparent 5px, #ffd138 0) top right, -webkit-linear-gradient(135deg, transparent 5px, #ffd138 0) bottom right, -webkit-linear-gradient(45deg, transparent 5px, #ffd138 0) bottom left; background: linear-gradient(135deg, transparent 5px, #ffd138 0) top left, linear-gradient(225deg, transparent 5px, #ffd138 0) top right, linear-gradient(315deg, transparent 5px, #ffd138 0) bottom right, linear-gradient(45deg, transparent 5px, #ffd138 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; }
 table.vartable tr td[data-sort-value="Complete Family"] + td + td + td button:hover { background: -webkit-linear-gradient(315deg, transparent 5px, #ffd752 0) top left, -webkit-linear-gradient(225deg, transparent 5px, #ffd752 0) top right, -webkit-linear-gradient(135deg, transparent 5px, #ffd752 0) bottom right, -webkit-linear-gradient(45deg, transparent 5px, #ffd752 0) bottom left; background: linear-gradient(135deg, transparent 5px, #ffd752 0) top left, linear-gradient(225deg, transparent 5px, #ffd752 0) top right, linear-gradient(315deg, transparent 5px, #ffd752 0) bottom right, linear-gradient(45deg, transparent 5px, #ffd752 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; }
 table.vartable tr td[data-sort-value="Complete Family"] + td + td + td button:active { background: -webkit-linear-gradient(315deg, transparent 5px, #ffcb1f 0) top left, -webkit-linear-gradient(225deg, transparent 5px, #ffcb1f 0) top right, -webkit-linear-gradient(135deg, transparent 5px, #ffcb1f 0) bottom right, -webkit-linear-gradient(45deg, transparent 5px, #ffcb1f 0) bottom left; background: linear-gradient(135deg, transparent 5px, #ffcb1f 0) top left, linear-gradient(225deg, transparent 5px, #ffcb1f 0) top right, linear-gradient(315deg, transparent 5px, #ffcb1f 0) bottom right, linear-gradient(45deg, transparent 5px, #ffcb1f 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; }
 table.vartable tr td[data-sort-value="Complete Family"] + td + td + td button:visited { color: #231f20; }
+@media screen and (max-width: 767px) { table.vartable tr { border-bottom: 0px !important; content: ""; display: table; table-layout: fixed; }
+  table.vartable tr td.pricecol { font-family: "Business Script"; }
+  table.vartable tr td { display: inline-block; width: 19%; clear: none; text-align: left; font-size: 14px; vertical-align: bottom; line-height: 1; }
+  table.vartable tr td input.qty { max-width: 25px; }
+  table.vartable tr td input.qty { padding: 2px; max-height: 20px; border: 0px; }
+  table.vartable tr td.qtycol { width: 8%; }
+  table.vartable tr td.cartcol { width: 30%; text-align: right; }
+  table.vartable tr td.cartcol button { padding: 5px 9px 6px 9px; line-height: 1; font-size: 14px; margin-bottom: -3px; }
+  table.vartable tr td[data-label="Font"] { width: 40%; font-size: 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; } }
+@media screen and (min-width: 768px) { table.vartable tr { text-align: left; }
+  table.vartable tr td.pricecol { font-family: "Business Script"; }
+  table.vartable tr td { padding: 0px; }
+  table.vartable tr td input.qty { max-width: 45px; }
+  table.vartable tr td.optionscol { font-size: 1.6em; }
+  table.vartable tr td.cartcol { text-align: right; max-width: 82px; } }
+@media screen and (min-width: 900px) { table.vartable tr td, table.vartable tr th { padding: 3px; }
+  table.vartable tr td[data-label="Font"] { width: 50%; } }
 
 table.list-box { box-sizing: border-box; list-style-type: none; margin-left: 0px; padding-left: 0px; }
 @media (max-width: 500px) { table.list-box th.product-quantity { font-size: 0px; color: #ffffff; }
@@ -489,9 +507,10 @@ a:hover, a:active { outline: 0; }
 .main-navigation .current_page_item > a, .main-navigation .current-menu-item > a, .main-navigation .current_page_ancestor > a, .main-navigation .current-menu-ancestor > a { color: gainsboro; cursor: default; }
 
 /* Small menu. */
-.main-navigation button.menu-toggle { float: right; font-family: 'Very Cool Icons'; font-style: normal; font-weight: 400; background: transparent; border: 3px solid transparent; width: 44px; height: 15px; font-size: 3.45em; line-height: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.main-navigation { position: relative; }
+.main-navigation button.menu-toggle { position: absolute; right: -10px; top: -14px; font-family: 'Very Cool Icons'; font-style: normal; font-weight: 400; background: transparent; border: 3px solid transparent; font-size: 56px; line-height: 0px; height: 50px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 .main-navigation.toggled ul { display: block; }
-.main-navigation.toggled button.menu-toggle { display: block; }
+.main-navigation.toggled button.menu-toggle { top: -10px; }
 
 .site-branding, .site-title { display: block; float: left; }
 
@@ -1017,12 +1036,12 @@ body { background: #f0f0f0; }
 
 .single-product .woocommerce-breadcrumb { display: none; height: 0px; }
 
-@media (min-width: 1048px) { .single-product header.site-header .site-branding:after, .post-type-archive-product header.site-header .site-branding:after { content: "a Type Foundry"; margin-right: -40px; }
-  .page-template-page-studio header.site-header .site-branding:after { content: "a guy"; margin-right: -45px; }
-  .home header.site-header .site-branding:after { content: "a Design Studio"; margin-right: -45px; }
+@media (min-width: 1048px) { .single-product header.site-header .site-branding:after, .post-type-archive-product header.site-header .site-branding:after { content: "a Type Foundry"; margin-right: -40px; letter-spacing: 0px; }
+  .page-template-page-studio header.site-header .site-branding:after { content: "a guy"; margin-right: -45px; letter-spacing: 0px; }
+  .home header.site-header .site-branding:after { content: "a Design Studio"; margin-right: -45px; letter-spacing: -.01em !important; }
   .woocommerce-cart .page-title { display: none; }
-  .woocommerce-cart header.site-header .site-branding:after { content: "Cart"; }
-  .woocommerce-cart header.site-header .site-branding.discount-time:after { content: "Code: whoayeah"; margin-right: -40px; } }
+  .woocommerce-cart header.site-header .site-branding:after { content: "Cart"; letter-spacing: 0px; }
+  .woocommerce-cart header.site-header .site-branding.discount-time:after { content: "Code: whoayeah"; margin-right: -40px; letter-spacing: 0px; } }
 body #white-page.white-page { background: #ffffff; padding: 15px; }
 body #white-page.white-page .summary.entry-summary { margin-top: 0px; }
 @media (min-width: 768px) { body #white-page.white-page { padding: 20px 24px; } }
@@ -1053,6 +1072,7 @@ body:not(.page-template-page-studio) #white-page.white-page { min-height: 300px;
 .yellow-page .box h3 { margin-top: 0px; margin-right: 8px; }
 .yellow-page .box h5.year { float: right; }
 .yellow-page .box ul.list-inline { margin-bottom: .85em; }
+@media (max-width: 600px) { .yellow-page .box { padding: .3em .35em; } }
 .yellow-page .box + .box { margin-top: 1.2em; }
 @media (min-width: 768px) { .yellow-page .box + .box { margin-top: 2.5em; } }
 

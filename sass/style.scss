@@ -2030,6 +2030,7 @@ body {
 			.site-branding:after {
 				content: "a Type Foundry";
 				margin-right: -40px;
+				letter-spacing: 0px;
 			}
 		}
 	}
@@ -2038,6 +2039,7 @@ body {
 			.site-branding:after {
 				content: "a guy";
 				margin-right: -45px;
+				letter-spacing: 0px;
 			}
 		}
 	}
@@ -2046,6 +2048,7 @@ body {
 			.site-branding:after {
 				content: "a Design Studio";
 				margin-right: -45px;
+				letter-spacing: -.01em !important;
 			}
 		}	
 	}
@@ -2056,10 +2059,12 @@ body {
 		header.site-header {
 			.site-branding:after {
 				content: "Cart";
+				letter-spacing: 0px;
 			}
 			.site-branding.discount-time:after {
 				content: "Code: whoayeah";
 				margin-right: -40px;
+				letter-spacing: 0px;
 			}
 		}
 	}
@@ -2185,12 +2190,16 @@ body {
 		ul.list-inline {
 			margin-bottom: .85em;
 		}
+		@media (max-width: 600px) {
+			padding: .3em .35em;
+		}
 	}
 	.box + .box {
 		margin-top: 1.2em;
 		@media (min-width: 768px) {
 			margin-top: 2.5em;
 		}
+
 	}
 }
 .gray-page, .white-page, .black-page {

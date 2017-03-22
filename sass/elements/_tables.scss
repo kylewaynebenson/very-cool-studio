@@ -35,22 +35,20 @@ table {
 		}
 	}
 }
+#pricing {
+	outline: none;
+}
 table.vartable {
+	margin-bottom: 10px;
+	width: 100%;
 	tr {
-		text-align: left;
-		td.pricecol {
-			font-family: $type-script-subhead;
-		}
 		td {
+			&:before {
+				display: none;
+			}
+			border-bottom: 0px;
 			input.qty {
 				max-width: 45px;
-			}
-			&.optionscol {
-				font-size: 1.6em;
-			}
-			&.cartcol {
-				text-align: right;
-				max-width: 70px;
 			}
 			&.qtycol {
 				input {
@@ -90,6 +88,84 @@ table.vartable {
 			}
 			&:visited {
 				color: $black;
+			}
+		}
+	}
+	@media screen and (max-width: 767px) {
+		tr {
+			border-bottom: 0px !important;
+			td.pricecol {
+				font-family: $type-script-subhead;
+			}
+			td {
+				display: inline-block;
+				width: 19%;
+				clear: none;
+				text-align: left;
+				font-size: 14px;
+				vertical-align: bottom;
+				line-height: 1;
+				input.qty {
+					max-width: 25px;
+				}
+				input.qty {
+					padding: 2px;
+					max-height: 20px;
+					border: 0px;
+				}
+				&.qtycol {
+					width: 8%;
+				}
+				&.cartcol {
+					width: 30%;
+					text-align: right;
+					button {
+						padding: 5px 9px 6px 9px;
+						line-height: 1;
+						font-size: 14px;
+						margin-bottom: -3px;
+					}
+				}
+			}
+			td[data-label="Font"] {
+				width: 40%;
+				font-size: 20px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+			@include clearfix;
+		}
+
+	}
+	@media screen and (min-width: 768px) {
+		tr {
+			text-align: left;
+			td.pricecol {
+				font-family: $type-script-subhead;
+			}
+			td {
+				padding: 0px;
+				input.qty {
+					max-width: 45px;
+				}
+				&.optionscol {
+					font-size: 1.6em;
+				}
+				&.cartcol {
+					text-align: right;
+					max-width: 82px;
+				}
+			}
+		}
+	}
+	@media screen and (min-width: 900px) {
+		tr {
+			td, th {
+				padding: 3px;
+			}
+			td[data-label="Font"] {
+				width: 50%;
 			}
 		}
 	}

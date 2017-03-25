@@ -18,6 +18,11 @@
 			echo '<header class="entry-header">';
 			the_title( '<h1 class="entry-title">', '</h1>' );
 			the_meta();
+			if ( 'articles' == get_post_type() ) {
+				echo '<h5>';
+				echo the_date();
+				echo '</h5>';
+			}
 			echo '</header><!-- .entry-header -->';
 			} else {
 				echo '<a href="' . get_the_permalink() . '">';
@@ -31,8 +36,7 @@
 	<?php
 			if ( is_single() ) {
 				the_content();
-			} else {
-			}
+			} else {}
 			 ?>
 	</div>
 	<footer class="entry-footer">
@@ -45,7 +49,9 @@
 					$sep = ' ';
 				}
 				echo '</div>';
-				the_post_navigation();
+				if ( ! 'articles' == get_post_type() ) {
+					the_post_navigation();
+				}
 			} else {
 				the_title( '<h5 class="sub-label">Project</h5><h4 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h4>' );
 				echo '<div class="cat-links">';
@@ -65,6 +71,8 @@
 		<?php
 			if ( is_single() ) {
 				echo '<div class="clear"></div>';
-				the_excerpt();
+				if ( ! is_single() ) {
+					the_excerpt();
+				}
 			} else {
 			} ?>

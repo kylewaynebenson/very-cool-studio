@@ -80,6 +80,7 @@ $text_lighter_20 = wc_hex_lighter( $text, 20 );
 
 #body_content table td {
     padding: 48px;
+    padding-top: 24px;
 }
 
 #body_content table td td {
@@ -124,7 +125,7 @@ $text_lighter_20 = wc_hex_lighter( $text, 20 );
 h1 {
     color: <?php echo esc_attr( $base ); ?>;
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     line-height: 130%;
     margin: 0;

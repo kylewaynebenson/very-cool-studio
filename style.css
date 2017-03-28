@@ -799,6 +799,8 @@ a.squiggle.squiggle-black:hover { background-position: 15px 100%; }
 
 .blog article.product-cat-type.outofstock .entry-footer .h5:before, .blog article.product-cat-objects.outofstock .entry-footer .h5:before, .home article.product-cat-type.outofstock .entry-footer .h5:before, .home article.product-cat-objects.outofstock .entry-footer .h5:before, .archive article.product-cat-type.outofstock .entry-footer .h5:before, .archive article.product-cat-objects.outofstock .entry-footer .h5:before, .category article.product-cat-type.outofstock .entry-footer .h5:before, .category article.product-cat-objects.outofstock .entry-footer .h5:before { display: block; content: "Not Available"; }
 
+.blog article.product-cat-type.outofstock #pricing, .blog article.product-cat-objects.outofstock #pricing, .home article.product-cat-type.outofstock #pricing, .home article.product-cat-objects.outofstock #pricing, .archive article.product-cat-type.outofstock #pricing, .archive article.product-cat-objects.outofstock #pricing, .category article.product-cat-type.outofstock #pricing, .category article.product-cat-objects.outofstock #pricing { display: none; }
+
 .blog article.product-cat-type.product-cat-new, .blog article.product-cat-objects.product-cat-new, .home article.product-cat-type.product-cat-new, .home article.product-cat-objects.product-cat-new, .archive article.product-cat-type.product-cat-new, .archive article.product-cat-objects.product-cat-new, .category article.product-cat-type.product-cat-new, .category article.product-cat-objects.product-cat-new { position: relative; }
 
 .blog article.product-cat-type.product-cat-new:before, .blog article.product-cat-objects.product-cat-new:before, .home article.product-cat-type.product-cat-new:before, .home article.product-cat-objects.product-cat-new:before, .archive article.product-cat-type.product-cat-new:before, .archive article.product-cat-objects.product-cat-new:before, .category article.product-cat-type.product-cat-new:before, .category article.product-cat-objects.product-cat-new:before { content: "NEW"; font-family: "Cardinal Grotesque ExtraCondensed"; position: absolute; display: block; padding: 8px 7px 9px 8px; color: #231f20; font-style: normal; left: 7%; top: 0px; font-weight: 600; line-height: 1; font-size: 30px; text-align: center; background: -webkit-linear-gradient(315deg, #f0f0f0 6px, #f0f0f0 0) top left, -webkit-linear-gradient(225deg, #f0f0f0 6px, #f0f0f0 0) top right, -webkit-linear-gradient(135deg, transparent 6px, #f0f0f0 0) bottom right, -webkit-linear-gradient(45deg, transparent 6px, #f0f0f0 0) bottom left; background: linear-gradient(135deg, #f0f0f0 6px, #f0f0f0 0) top left, linear-gradient(225deg, #f0f0f0 6px, #f0f0f0 0) top right, linear-gradient(315deg, transparent 6px, #f0f0f0 0) bottom right, linear-gradient(45deg, transparent 6px, #f0f0f0 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; }
@@ -1382,6 +1384,7 @@ body { -webkit-animation: fake 1s infinite; animation: fake 1s infinite; }
 
 @media (min-width: 768px) { .single .entry-header, .single .entry-footer { width: 29.1666666667%; float: left; }
   .single .post-content { width: 66.6666666667%; float: right; }
+  .single .post-content p { margin-bottom: 1.25em; }
   .single .post-content > p:first-of-type { margin-top: 3px; }
   .single .post-content .post-description { min-height: 300px; } }
 
@@ -1389,9 +1392,9 @@ body { -webkit-animation: fake 1s infinite; animation: fake 1s infinite; }
   .single .post-content { width: 62.5%; float: right; }
   .single .post-content p:last-of-type { margin-bottom: 0px; } }
 
-@media (min-width: 1460px) { .single:not(.woocommerce) .entry-header, .single:not(.woocommerce) .entry-footer { width: 22.9166666667%; float: left; }
-  .single:not(.woocommerce) .post-content { width: 75%; float: right; }
-  .single:not(.woocommerce) .post-content p { max-width: 600px; margin: 0 auto; } }
+@media (min-width: 1460px) { .single:not(.woocommerce) .entry-header, .single:not(.woocommerce) .entry-footer { width: 22.9166666667%; float: left; padding: 20px 0px; }
+  .single:not(.woocommerce) .post-content { width: 75%; padding: 25px 0px; float: right; }
+  .single:not(.woocommerce) .post-content p { max-width: 600px; margin: 0 auto; margin-bottom: 1.25em; } }
 
 /*--------------------------------------------------------------
 # Page Styles

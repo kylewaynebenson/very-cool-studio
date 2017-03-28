@@ -152,6 +152,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 				?>
 				</select>
 			</div>
+			<?php if ( is_single('kansas-casual') or is_single('maritime-champion') ) { ?>
+			<?php } else { ?>
 			<div class="type-tester-ligatures type-tester-checkbox">
 				<input id="font-ligatures" type="checkbox" name="ligatures" value="liga">
 				Liga
@@ -186,8 +188,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 				});
 				</script>
 			</div>
+			<?php } ?>
+			<?php if ( is_single('business-script') ) { ?>
 			<div class="type-tester-swsh type-tester-checkbox">
-				<input id="font-swsh" type="checkbox" name="swsh" value="salt">
+				<input id="font-swsh" type="checkbox" name="swsh" value="swsh">
 				Swsh
 				<script>
 				/* swsh */
@@ -203,9 +207,29 @@ if ( ! defined( 'ABSPATH' ) ) {
 				});
 				</script>
 			</div>
+			<?php } else if ( is_single('ready-script') or is_single('cardinal-grotesque') ) { ?>
+			<div class="type-tester-case type-tester-checkbox">
+				<input id="font-case" type="checkbox" name="case" value="case">
+				Case
+				<script>
+				/* case */
+				var btnalt = document.querySelector(".type-tester-case"),
+				    typetester = document.querySelector("span.fontselect"),
+				    activeClasscase = "case",
+				    inputcase = document.querySelector("#font-case");
+
+				btnalt.addEventListener("click", function(e){
+				  e.preventDefault();
+				  typetester.classList.toggle(activeClasscase);
+				  inputcase.classList.toggle('checked');
+				});
+				</script>
+			</div>
+		<?php } ?>
+
 		</div>
 		<div class="type-tester-footer">
-			 <a href="#pricing" type="submit" class="button chamfered-button chamfered-button-gray">See Pricing</a>
+			 <?php if($product->price){ ?><a href="#pricing" type="submit" class="button chamfered-button chamfered-button-gray">See Pricing</a><?php } else { }; ?>
 			<h5 class="type-tester-notice">Type tester does not demonstrate actual scope or<br> function of typeface thanks to browser limitations.</h5>
 		</div>
 	 </div>
@@ -259,6 +283,9 @@ $('#font-alts').on('change', function () {
 </script>
 <?php do_action( 'woocommerce_after_single_product' ); ?>
 <div class="clear"></div>
+<?php if (strpos($post->post_content,'[gallery') === false){ ?>
+	<br/>
+<?php }else{ ?>
 <div class="radio-tabs">
 	<input class="state" type="radio" title="Specimen" name="houses-state" id="specimen" checked />
 	<input class="state" type="radio" title="Gallery" name="houses-state" id="gallery" />
@@ -314,25 +341,30 @@ $('#font-alts').on('change', function () {
 			<p>Hello I am a dog</p>
 		</div> -->
 	</div>
+</div><!-- Radio tabs -->
+<?php } ?>
 </div>
 </div>
 </div>
-</div>
-<div id="pricing" class="yellow-page product-footer">
-	<h1 class="footer-title"><?php the_title(); ?></h1>
-	<h4 class="price h4"><?php global $product; echo $product->get_price_html(); ?>
-	<meta itemprop="price" content="<?php echo esc_attr( $product->get_price() ); ?>" />
-	<meta itemprop="priceCurrency" content="<?php echo esc_attr( get_woocommerce_currency() ); ?>" /></h4>
-	<?php if ( $product->is_type( 'variable' ) ) {?>
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>terms" class="squiggle squiggle-black">View License</a>
-		<section class="box">
-			<?php echo do_shortcode("[vartable]"); ?>
-		</section>
-		<?php } else {?>
-		<form class="cart" method="post" enctype='multipart/form-data'>
-		 	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
-		 	<button type="submit" class="button chamfered-button"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
-		 	 	<a href="<?php echo esc_url( home_url( '/' ) ); ?>terms" class="squiggle squiggle-black">View License</a>
-		</form>
-		<?php } ?>
-</div>
+<?php if($product->price){ ?>
+	<div id="pricing" class="yellow-page product-footer">
+		<h1 class="footer-title"><?php the_title(); ?></h1>
+		<h4 class="price h4"><?php global $product; echo $product->get_price_html(); ?>
+		<meta itemprop="price" content="<?php echo esc_attr( $product->get_price() ); ?>" />
+		<meta itemprop="priceCurrency" content="<?php echo esc_attr( get_woocommerce_currency() ); ?>" /></h4>
+		<?php if ( $product->is_type( 'variable' ) ) {?>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>terms" class="squiggle squiggle-black">View License</a>
+			<section class="box">
+				<?php echo do_shortcode("[vartable]"); ?>
+			</section>
+			<?php } else {?>
+			<form class="cart" method="post" enctype='multipart/form-data'>
+			 	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
+			 	<button type="submit" class="button chamfered-button"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+			 	 	<a href="<?php echo esc_url( home_url( '/' ) ); ?>terms" class="squiggle squiggle-black">View License</a>
+			</form>
+			<?php } ?>
+	</div>
+<?php } else {?>
+
+<?php } ?>

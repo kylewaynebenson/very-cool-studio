@@ -347,6 +347,9 @@ a.squiggle-black {
 					content: "Not Available";
 				}
 			}
+			#pricing {
+				display: none;
+			}
 		}
 		&.product-cat-new {
 			position: relative;
@@ -1890,6 +1893,9 @@ body {
 		.post-content {
 			width: span(16);
 			float: right;
+			p {
+				margin-bottom: 1.25em;
+			}
 			> p:first-of-type {
 				margin-top: 3px;
 			}
@@ -1918,13 +1924,16 @@ body {
 		.entry-header, .entry-footer {
 			width: span(5.5);
 			float: left;
+			padding: 20px 0px;
 		}
 		.post-content {
 			width: span(18);
+			padding: 25px 0px;
 			float: right;
 			p {
 				max-width: 600px;
 				margin: 0 auto;
+				margin-bottom: 1.25em;
 			}
 		}
 	}

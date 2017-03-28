@@ -283,7 +283,7 @@ $('#font-alts').on('change', function () {
 </script>
 <?php do_action( 'woocommerce_after_single_product' ); ?>
 <div class="clear"></div>
-<?php if (strpos($post->post_content,'[gallery') === false){ ?>
+<?php if (!$product->get_gallery_attachment_ids()){ ?>
 	<br/>
 <?php }else{ ?>
 <div class="radio-tabs">

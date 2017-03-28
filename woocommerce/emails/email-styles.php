@@ -41,14 +41,11 @@ $text_lighter_20 = wc_hex_lighter( $text, 20 );
 }
 
 #template_container {
-    box-shadow: 0 1px 4px rgba(0,0,0,0.1) !important;
     background-color: <?php echo esc_attr( $body ); ?>;
-    border: 1px solid <?php echo esc_attr( $bg_darker_10 ); ?>;
-    border-radius: 3px !important;
 }
 
 #template_header {
-    background-color: <?php echo esc_attr( $base ); ?>;
+    background-color: <?php echo esc_attr( $body ); ?>;
     border-radius: 3px 3px 0 0 !important;
     color: <?php echo esc_attr( $base_text ); ?>;
     border-bottom: 0;
@@ -120,19 +117,18 @@ $text_lighter_20 = wc_hex_lighter( $text, 20 );
 }
 
 #header_wrapper {
-    padding: 36px 48px;
+    padding: 40px 48px 0px 48px;
     display: block;
 }
 
 h1 {
     color: <?php echo esc_attr( $base ); ?>;
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    font-size: 30px;
-    font-weight: 300;
-    line-height: 150%;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 130%;
     margin: 0;
     text-align: <?php echo is_rtl() ? 'right' : 'left'; ?>;
-    text-shadow: 0 1px 0 <?php echo esc_attr( $base_lighter_20 ); ?>;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -142,7 +138,7 @@ h2 {
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
-    line-height: 130%;
+    line-height: 125%;
     margin: 16px 0 8px;
     text-align: <?php echo is_rtl() ? 'right' : 'left'; ?>;
 }

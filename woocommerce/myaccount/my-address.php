@@ -48,7 +48,7 @@ $col = 1;
 			<h5><?php echo $title; ?></h5>
 			<a href="<?php echo wc_get_endpoint_url( 'edit-address', $name ); ?>" class="edit"><?php _e( 'Edit', 'woocommerce' ); ?></a>
 		</header>
-		<address>
+		<address style="font-style:normal;">
 			<?php
 				$address = apply_filters( 'woocommerce_my_account_my_address_formatted_address', array(
 					'first_name'  => get_user_meta( $customer_id, $name . '_first_name', true ),

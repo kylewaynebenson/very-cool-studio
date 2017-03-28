@@ -39,14 +39,14 @@ $customer_orders = get_posts( apply_filters( 'woocommerce_my_account_my_orders_q
 
 if ( $customer_orders ) : ?>
 
-	<h2><?php echo apply_filters( 'woocommerce_my_account_my_orders_title', __( 'Recent Orders', 'woocommerce' ) ); ?></h2>
+	<h3><?php echo apply_filters( 'woocommerce_my_account_my_orders_title', __( 'Recent Orders', 'woocommerce' ) ); ?></h3>
 
 	<table class="shop_table shop_table_responsive my_account_orders">
 
 		<thead>
 			<tr>
 				<?php foreach ( $my_orders_columns as $column_id => $column_name ) : ?>
-					<th class="<?php echo esc_attr( $column_id ); ?>"><span class="nobr"><?php echo esc_html( $column_name ); ?></span></th>
+					<th class="<?php echo esc_attr( $column_id ); ?>"><h5 class="nobr"><?php echo esc_html( $column_name ); ?></h5></th>
 				<?php endforeach; ?>
 			</tr>
 		</thead>

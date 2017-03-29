@@ -1291,7 +1291,7 @@ Product Styles
 	&.smcp {
 		font-feature-settings: "smcp" 1;
 	}
-	&.cardinal-grotesque { font-family: 'Cardinal Grotesque'; line-height: 1; &.condensed { font-family: 'Cardinal Grotesque Cond';} &.narrow { font-family: 'Cardinal Grotesque Narrow';} &.expanded { font-family: 'Cardinal Grotesque Expanded';} &.compressed { font-family: 'Cardinal Grotesque Compressed';} &.extracondensed { font-family: 'Cardinal Grotesque Extracondensed';}}
+	&.cardinal-grotesque { font-family: 'Cardinal Grotesque'; line-height: 1; &.condensed { font-family: 'Cardinal Grotesque Condensed';} &.extracondensed { font-family: 'Cardinal Grotesque ExtraCondensed';} &.wide { font-family: 'Cardinal Grotesque Wide';} &.semicondensed { font-family: 'Cardinal Grotesque SemiCondensed';} }
 	&.business-script { font-family: 'Business Script'; line-height: 1;}
 	&.kansas-casual { font-family: 'Kansas Casual'; line-height: 1;}
 	&.maritime-champion { font-family: 'Maritime Champion'; line-height: 1; &.st { font-family: 'Maritime Champion ST';} &.sl { font-family: 'Maritime Champion SL';}}

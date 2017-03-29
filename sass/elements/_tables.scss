@@ -130,6 +130,7 @@ table.vartable {
 			td[data-label="Font"] {
 				width: 40%;
 				font-size: 20px;
+				font-weight: 500;
 				overflow: hidden;
 				white-space: nowrap;
 				text-overflow: ellipsis;
@@ -166,6 +167,7 @@ table.vartable {
 			}
 			td[data-label="Font"] {
 				width: 50%;
+				font-weight: 500;
 			}
 		}
 	}

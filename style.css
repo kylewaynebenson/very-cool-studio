@@ -126,11 +126,11 @@ td, th { padding: 0; }
 
 @font-face { font-family: 'Very Cool Icons'; src: url("./type/verycoolicons-Regular.eot"); /* IE9 Compat Modes */ src: url("./type/verycoolicons-Regular.eot?#iefix") format("embedded-opentype"), url("./type/verycoolicons-Regular.woff2") format("woff2"), url("./type/verycoolicons-Regular.woff") format("woff"); }
 
-@font-face { font-family: 'Cardinal Grotesque ExtraCondensed'; font-weight: 600; src: url("./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.eot"); /* IE9 Compat Modes */ src: url("./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.woff") format("woff"); }
+@font-face { font-family: 'Cardinal Grotesque Condensed'; font-weight: 600; src: url("./type/cardinal-grotesque/CardinalGrotesqueCondensed-SemiBold.eot"); /* IE9 Compat Modes */ src: url("./type/cardinal-grotesque/CardinalGrotesqueCondensed-SemiBold.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesqueCondensed-SemiBold.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesqueCondensed-SemiBold.woff") format("woff"); }
 
-@font-face { font-family: 'Cardinal Grotesque Expanded'; font-weight: 600; src: url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-SemiBold.eot"); /* IE9 Compat Modes */ src: url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-SemiBold.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-SemiBold.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-SemiBold.woff") format("woff"); }
+@font-face { font-family: 'Cardinal Grotesque Wide'; font-weight: 600; src: url("./type/cardinal-grotesque/CardinalGrotesqueWide-SemiBold.eot"); /* IE9 Compat Modes */ src: url("./type/cardinal-grotesque/CardinalGrotesqueWide-SemiBold.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesqueWide-SemiBold.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesqueWide-SemiBold.woff") format("woff"); }
 
-@font-face { font-family: 'Cardinal Grotesque Expanded'; font-weight: 700; src: url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.eot"); /* IE9 Compat Modes */ src: url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.woff") format("woff"); }
+@font-face { font-family: 'Cardinal Grotesque Wide'; font-weight: 700; src: url("./type/cardinal-grotesque/CardinalGrotesqueWide-Bold.eot"); /* IE9 Compat Modes */ src: url("./type/cardinal-grotesque/CardinalGrotesqueWide-Bold.eot?#iefix") format("embedded-opentype"), url("./type/cardinal-grotesque/CardinalGrotesqueWide-Bold.woff2") format("woff2"), url("./type/cardinal-grotesque/CardinalGrotesqueWide-Bold.woff") format("woff"); }
 
 .icon:before { display: inline-block; font-family: 'Very Cool Icons'; font-style: normal; font-weight: 400; font-size: 2.6em; line-height: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
@@ -180,7 +180,7 @@ h1.business-script, .h1.business-script { font-family: "Business Script"; -webki
 
 @media (max-width: 939px) { h1, .h1 { font-size: 2.0em; } }
 
-h1.huge-h1 { font-family: "Cardinal Grotesque ExtraCondensed"; font-weight: 600; font-size: 6em; }
+h1.huge-h1 { font-family: "Cardinal Grotesque Condensed"; font-weight: 600; font-size: 6em; }
 
 h2, .h2 { font-family: "Business Script"; font-weight: 400; font-size: 2.25em; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; line-height: 1.25; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
@@ -196,7 +196,7 @@ h3, .h3 { font-family: "Cardinal Grotesque"; font-weight: 600; font-size: 1.6em;
 
 h4, .h4 { font-family: "Business Script"; font-weight: 500; font-size: 1.3em; -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; }
 
-h5, .h5 { font-family: "Cardinal Grotesque Expanded"; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; font-size: .8em; -webkit-font-feature-settings: "case" 1; -ms-font-feature-settings: "case" 1; font-feature-settings: "case" 1; }
+h5, .h5 { font-family: "Cardinal Grotesque Wide"; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; font-size: .8em; -webkit-font-feature-settings: "case" 1; -ms-font-feature-settings: "case" 1; font-feature-settings: "case" 1; }
 
 h6, .h6 { font-size: 1.3em; letter-spacing: .1em; }
 
@@ -281,7 +281,7 @@ table { margin: 0 0 1.5em; width: 100%; font-family: "Cardinal Grotesque"; font-
 
 table caption { background: #231f20; color: #ffffff; text-transform: uppercase; text-align: left; padding: 5px 10px; }
 
-table th { text-transform: uppercase; font-family: "Cardinal Grotesque Expanded"; letter-spacing: .1em; text-align: left; font-weight: 500; }
+table th { text-transform: uppercase; font-family: "Cardinal Grotesque Wide"; letter-spacing: .1em; text-align: left; font-weight: 500; }
 
 @media (max-width: 500px) { table { line-height: 1.2; } }
 
@@ -319,7 +319,7 @@ table.vartable tr td[data-sort-value="Complete Family"] + td + td + td button:vi
   table.vartable tr td.qtycol { width: 8%; }
   table.vartable tr td.cartcol { width: 30%; text-align: right; }
   table.vartable tr td.cartcol button { padding: 5px 9px 6px 9px; line-height: 1; font-size: 14px; margin-bottom: -3px; }
-  table.vartable tr td[data-label="Font"] { width: 40%; font-size: 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; } }
+  table.vartable tr td[data-label="Font"] { width: 40%; font-size: 20px; font-weight: 500; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; } }
 
 @media screen and (min-width: 768px) { table.vartable tr { text-align: left; }
   table.vartable tr td.pricecol { font-family: "Business Script"; }
@@ -329,7 +329,7 @@ table.vartable tr td[data-sort-value="Complete Family"] + td + td + td button:vi
   table.vartable tr td.cartcol { text-align: right; max-width: 82px; } }
 
 @media screen and (min-width: 900px) { table.vartable tr td, table.vartable tr th { padding: 3px; }
-  table.vartable tr td[data-label="Font"] { width: 50%; } }
+  table.vartable tr td[data-label="Font"] { width: 50%; font-weight: 500; } }
 
 table.list-box { box-sizing: border-box; list-style-type: none; margin-left: 0px; padding-left: 0px; }
 
@@ -347,7 +347,7 @@ table.list-box { box-sizing: border-box; list-style-type: none; margin-left: 0px
   table.list-box tbody tr:nth-of-type(even) { background: #f0f0f0; }
   table.list-box tbody tr:last-of-type { background: #ffffff; } }
 
-table.list-box thead { text-transform: uppercase; font-family: "Cardinal Grotesque Expanded"; letter-spacing: .1em; text-align: left; font-weight: 500; font-size: 13px; }
+table.list-box thead { text-transform: uppercase; font-family: "Cardinal Grotesque Wide"; letter-spacing: .1em; text-align: left; font-weight: 500; font-size: 13px; }
 
 table.list-box thead .product-quantity { padding-right: 0px !important; padding-left: 0px !important; }
 
@@ -361,7 +361,7 @@ table.list-box tr td { vertical-align: bottom; }
 
 table.list-box tr td dl.variation { display: inline; margin: 0px; }
 
-table.list-box tr td dl.variation dt, table.list-box tr td dl.variation dd { font-family: "Cardinal Grotesque Expanded"; font-size: 11px; text-transform: uppercase; font-weight: 600; display: inline; margin: 0px; }
+table.list-box tr td dl.variation dt, table.list-box tr td dl.variation dd { font-family: "Cardinal Grotesque Wide"; font-size: 11px; text-transform: uppercase; font-weight: 600; display: inline; margin: 0px; }
 
 table.list-box tr td dl.variation dt { color: #e0e0e0; display: none; }
 
@@ -466,7 +466,7 @@ textarea { width: 100%; }
 
 label.hidden { display: none; }
 
-label { text-transform: uppercase; font-size: 11px; letter-spacing: .08em; color: #231f20; font-weight: 600; font-family: "Cardinal Grotesque Expanded"; }
+label { text-transform: uppercase; font-size: 11px; letter-spacing: .08em; color: #231f20; font-weight: 600; font-family: "Cardinal Grotesque Wide"; }
 
 form p { margin: 0px; }
 
@@ -552,9 +552,9 @@ a:hover, a:active { outline: 0; }
 
 @media screen and (min-width: 1540px) { .keyboard-navigation .key { display: block; position: fixed; top: 50%; margin-top: -50px; border: 3px solid #e0e0e0; line-height: 48px; width: 54px; height: 54px; text-align: center; color: #e0e0e0; border-radius: 4px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; cursor: default; }
   .keyboard-navigation .key.key-left { left: 15px; }
-  .keyboard-navigation .key.key-left:hover:after { text-align: left; left: 66px; padding-top: 5px; content: "Use keyboard to navigate."; position: absolute; width: 110px; color: #dbdbdb; letter-spacing: .03em; font-weight: 600; font-family: "Cardinal Grotesque Expanded"; line-height: 1.2; }
+  .keyboard-navigation .key.key-left:hover:after { text-align: left; left: 66px; padding-top: 5px; content: "Use keyboard to navigate."; position: absolute; width: 110px; color: #dbdbdb; letter-spacing: .03em; font-weight: 600; font-family: "Cardinal Grotesque Wide"; line-height: 1.2; }
   .keyboard-navigation .key.key-right { right: 15px; }
-  .keyboard-navigation .key.key-right:hover:after { text-align: right; right: 66px; padding-top: 5px; content: "Use keyboard to navigate."; position: absolute; width: 110px; color: #dbdbdb; letter-spacing: .03em; font-weight: 600; font-family: "Cardinal Grotesque Expanded"; line-height: 1.2; } }
+  .keyboard-navigation .key.key-right:hover:after { text-align: right; right: 66px; padding-top: 5px; content: "Use keyboard to navigate."; position: absolute; width: 110px; color: #dbdbdb; letter-spacing: .03em; font-weight: 600; font-family: "Cardinal Grotesque Wide"; line-height: 1.2; } }
 
 @media screen and (max-width: 699px) { .main-navigation { width: 100%; } }
 
@@ -743,7 +743,7 @@ a.squiggle.squiggle-black { background-image: url(img/squiggle-black.png); color
 
 a.squiggle.squiggle-black:hover { background-position: 15px 100%; }
 
-.cat-links a { margin-right: 3px; background: #231f20; color: #ffffff; font-family: "Cardinal Grotesque Expanded"; letter-spacing: .08em; font-size: 11px; line-height: 1; padding: 2px 8px 3px 8px; font-weight: 700; text-transform: uppercase; -webkit-transition: background 0.3s; transition: background 0.3s; }
+.cat-links a { margin-right: 3px; background: #231f20; color: #ffffff; font-family: "Cardinal Grotesque Wide"; letter-spacing: .08em; font-size: 11px; line-height: 1; padding: 2px 8px 3px 8px; font-weight: 700; text-transform: uppercase; -webkit-transition: background 0.3s; transition: background 0.3s; }
 
 .cat-links a:hover { background: #393234; }
 
@@ -803,7 +803,7 @@ a.squiggle.squiggle-black:hover { background-position: 15px 100%; }
 
 .blog article.product-cat-type.product-cat-new, .blog article.product-cat-objects.product-cat-new, .home article.product-cat-type.product-cat-new, .home article.product-cat-objects.product-cat-new, .archive article.product-cat-type.product-cat-new, .archive article.product-cat-objects.product-cat-new, .category article.product-cat-type.product-cat-new, .category article.product-cat-objects.product-cat-new { position: relative; }
 
-.blog article.product-cat-type.product-cat-new:before, .blog article.product-cat-objects.product-cat-new:before, .home article.product-cat-type.product-cat-new:before, .home article.product-cat-objects.product-cat-new:before, .archive article.product-cat-type.product-cat-new:before, .archive article.product-cat-objects.product-cat-new:before, .category article.product-cat-type.product-cat-new:before, .category article.product-cat-objects.product-cat-new:before { content: "NEW"; font-family: "Cardinal Grotesque ExtraCondensed"; position: absolute; display: block; padding: 8px 7px 9px 8px; color: #231f20; font-style: normal; left: 7%; top: 0px; font-weight: 600; line-height: 1; font-size: 30px; text-align: center; background: -webkit-linear-gradient(315deg, #f0f0f0 6px, #f0f0f0 0) top left, -webkit-linear-gradient(225deg, #f0f0f0 6px, #f0f0f0 0) top right, -webkit-linear-gradient(135deg, transparent 6px, #f0f0f0 0) bottom right, -webkit-linear-gradient(45deg, transparent 6px, #f0f0f0 0) bottom left; background: linear-gradient(135deg, #f0f0f0 6px, #f0f0f0 0) top left, linear-gradient(225deg, #f0f0f0 6px, #f0f0f0 0) top right, linear-gradient(315deg, transparent 6px, #f0f0f0 0) bottom right, linear-gradient(45deg, transparent 6px, #f0f0f0 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; }
+.blog article.product-cat-type.product-cat-new:before, .blog article.product-cat-objects.product-cat-new:before, .home article.product-cat-type.product-cat-new:before, .home article.product-cat-objects.product-cat-new:before, .archive article.product-cat-type.product-cat-new:before, .archive article.product-cat-objects.product-cat-new:before, .category article.product-cat-type.product-cat-new:before, .category article.product-cat-objects.product-cat-new:before { content: "NEW"; font-family: "Cardinal Grotesque Condensed"; position: absolute; display: block; padding: 8px 7px 9px 8px; color: #231f20; font-style: normal; left: 7%; top: 0px; font-weight: 600; line-height: 1; font-size: 30px; text-align: center; background: -webkit-linear-gradient(315deg, #f0f0f0 6px, #f0f0f0 0) top left, -webkit-linear-gradient(225deg, #f0f0f0 6px, #f0f0f0 0) top right, -webkit-linear-gradient(135deg, transparent 6px, #f0f0f0 0) bottom right, -webkit-linear-gradient(45deg, transparent 6px, #f0f0f0 0) bottom left; background: linear-gradient(135deg, #f0f0f0 6px, #f0f0f0 0) top left, linear-gradient(225deg, #f0f0f0 6px, #f0f0f0 0) top right, linear-gradient(315deg, transparent 6px, #f0f0f0 0) bottom right, linear-gradient(45deg, transparent 6px, #f0f0f0 0) bottom left; background-size: 52% 52%; background-repeat: no-repeat; }
 
 .blog article.product-cat-type .entry-header, .blog article.product-cat-objects .entry-header, .home article.product-cat-type .entry-header, .home article.product-cat-objects .entry-header, .archive article.product-cat-type .entry-header, .archive article.product-cat-objects .entry-header, .category article.product-cat-type .entry-header, .category article.product-cat-objects .entry-header { border: 3px solid #f0f0f0; height: 165px; background: #ffffff; overflow: hidden; text-align: center; -webkit-transition: background 0.05s; transition: background 0.05s; }
 
@@ -1000,7 +1000,7 @@ Cart Styles
 
 .woocommerce-checkout .woocommerce .create-account p:last-of-type { padding-top: 0px; }
 
-.woocommerce-checkout .woocommerce .create-account .woocommerce-password-strength { text-transform: uppercase; font-family: "Cardinal Grotesque Expanded"; font-size: 12px; letter-spacing: .08em; padding: 10px 0px 2px 0px; }
+.woocommerce-checkout .woocommerce .create-account .woocommerce-password-strength { text-transform: uppercase; font-family: "Cardinal Grotesque Wide"; font-size: 12px; letter-spacing: .08em; padding: 10px 0px 2px 0px; }
 
 #payment .payment_methods { list-style-type: none; margin: 0px; padding-left: 0px; margin-bottom: 10px; }
 
@@ -1034,7 +1034,7 @@ Cart Styles
 
 .woocommerce-checkout-review-order-table tr th.product-total { text-align: right; }
 
-.woocommerce-checkout-review-order-table .cart-subtotal, .woocommerce-checkout-review-order-table .shipping { font-family: "Cardinal Grotesque Expanded"; font-size: 13px; color: #e0e0e0; font-weight: 600; }
+.woocommerce-checkout-review-order-table .cart-subtotal, .woocommerce-checkout-review-order-table .shipping { font-family: "Cardinal Grotesque Wide"; font-size: 13px; color: #e0e0e0; font-weight: 600; }
 
 .woocommerce-checkout-review-order-table .cart-subtotal { opacity: 0; padding: 0px; }
 
@@ -1065,7 +1065,7 @@ Cart Styles
 
 .woocommerce-cart table.cart-totals tbody td { padding-top: 0px; border: 0px; text-align: right; }
 
-.woocommerce-cart table.cart-totals tbody:not([data-title="Total"]) { font-family: "Cardinal Grotesque Expanded"; font-weight: 700; }
+.woocommerce-cart table.cart-totals tbody:not([data-title="Total"]) { font-family: "Cardinal Grotesque Wide"; font-weight: 700; }
 
 .woocommerce-cart table.cart-totals tbody:not([data-title="Total"]) .amount { font-weight: 700; }
 
@@ -1085,7 +1085,7 @@ Cart Styles
 
 .woocommerce-cart table.cart-totals .shipping td span.amount { color: #231f20; }
 
-.woocommerce-cart table.cart-totals .order-total td { font-family: "Cardinal Grotesque ExtraCondensed"; font-weight: 600; font-size: 3em; line-height: 1; padding-bottom: 4px; }
+.woocommerce-cart table.cart-totals .order-total td { font-family: "Cardinal Grotesque Condensed"; font-weight: 600; font-size: 3em; line-height: 1; padding-bottom: 4px; }
 
 .woocommerce-cart table.cart-totals .order-total th { padding-bottom: 10px; }
 
@@ -1104,7 +1104,7 @@ Product Styles
 
 @media (min-width: 1000px) { .product.product_cat-type .entry-header ul.post-meta li:last-of-type { margin-top: 0px; margin-bottom: 0px; } }
 
-.product.product_cat-type .entry-header ul.post-meta li:last-of-type .post-meta-key { font-family: "Cardinal Grotesque Expanded"; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; font-size: 12px; display: inline-block; width: 82px; }
+.product.product_cat-type .entry-header ul.post-meta li:last-of-type .post-meta-key { font-family: "Cardinal Grotesque Wide"; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; font-size: 12px; display: inline-block; width: 82px; }
 
 .product.outofstock .cart button[type="submit"] { display: none; }
 
@@ -1132,15 +1132,13 @@ Product Styles
 
 .fontselect.cardinal-grotesque { font-family: 'Cardinal Grotesque'; line-height: 1; }
 
-.fontselect.cardinal-grotesque.condensed { font-family: 'Cardinal Grotesque Cond'; }
+.fontselect.cardinal-grotesque.condensed { font-family: 'Cardinal Grotesque Condensed'; }
 
-.fontselect.cardinal-grotesque.narrow { font-family: 'Cardinal Grotesque Narrow'; }
+.fontselect.cardinal-grotesque.extracondensed { font-family: 'Cardinal Grotesque ExtraCondensed'; }
 
-.fontselect.cardinal-grotesque.expanded { font-family: 'Cardinal Grotesque Expanded'; }
+.fontselect.cardinal-grotesque.wide { font-family: 'Cardinal Grotesque Wide'; }
 
-.fontselect.cardinal-grotesque.compressed { font-family: 'Cardinal Grotesque Compressed'; }
-
-.fontselect.cardinal-grotesque.extracondensed { font-family: 'Cardinal Grotesque Extracondensed'; }
+.fontselect.cardinal-grotesque.semicondensed { font-family: 'Cardinal Grotesque SemiCondensed'; }
 
 .fontselect.business-script { font-family: 'Business Script'; line-height: 1; }
 
@@ -1298,7 +1296,7 @@ body { -webkit-animation: fake 1s infinite; animation: fake 1s infinite; }
 
 .single #content p:last-of-type.product.woocommerce.add_to_cart_inline a:first-of-type:only-of-type { display: inline-block; }
 
-.single #content p:last-of-type.product.woocommerce.add_to_cart_inline .amount { font-family: "Cardinal Grotesque ExtraCondensed"; display: inline-block; font-weight: 600; font-size: 6em; color: #231f20; display: inline; margin: 0px; line-height: .8; margin-bottom: -4px; }
+.single #content p:last-of-type.product.woocommerce.add_to_cart_inline .amount { font-family: "Cardinal Grotesque Condensed"; display: inline-block; font-weight: 600; font-size: 6em; color: #231f20; display: inline; margin: 0px; line-height: .8; margin-bottom: -4px; }
 
 @media (max-width: 1098px) { .single #content p:last-of-type.product.woocommerce.add_to_cart_inline { padding-top: 25px !important; padding-bottom: 0px !important; margin-top: 10px; } }
 
@@ -1312,7 +1310,7 @@ body { -webkit-animation: fake 1s infinite; animation: fake 1s infinite; }
 
 .single .entry-header ul.post-meta li:not(:last-of-type) { font-family: "Cardinal Grotesque"; height: 34px; font-weight: 600; overflow: hidden; white-space: nowrap; font-size: 25px; letter-spacing: .02em; }
 
-.single .entry-header ul.post-meta li .post-meta-key { font-family: "Cardinal Grotesque Expanded"; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; font-size: 12px; display: inline-block; width: 82px; }
+.single .entry-header ul.post-meta li .post-meta-key { font-family: "Cardinal Grotesque Wide"; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; font-size: 12px; display: inline-block; width: 82px; }
 
 .single .entry-header ul.post-meta li:last-of-type { margin-top: 18px; }
 
@@ -1328,7 +1326,7 @@ body { -webkit-animation: fake 1s infinite; animation: fake 1s infinite; }
 
 .single .entry-footer .cat-links a.cat-for-sale { display: none; }
 
-.single .entry-footer .post-navigation { font-family: "Cardinal Grotesque Expanded"; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; font-size: .75em; line-height: 1.15; }
+.single .entry-footer .post-navigation { font-family: "Cardinal Grotesque Wide"; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; font-size: .75em; line-height: 1.15; }
 
 @media only screen and (max-width: 767px) { .single .entry-footer .post-navigation { margin-left: 8%; } }
 
@@ -1554,7 +1552,7 @@ body:not(.page-template-page-studio) #white-page.white-page { min-height: 300px;
 
 @media (min-width: 1148px) { .return-to-top { padding-top: 40px; } }
 
-.return-to-top .post-navigation { font-family: "Cardinal Grotesque Expanded"; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; font-size: .75em; line-height: 1.15; }
+.return-to-top .post-navigation { font-family: "Cardinal Grotesque Wide"; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; font-size: .75em; line-height: 1.15; }
 
 .return-to-top .post-navigation .nav-previous, .return-to-top .post-navigation .nav-next { min-width: 25%; float: left; position: relative; margin-top: -25px; cursor: pointer; }
 

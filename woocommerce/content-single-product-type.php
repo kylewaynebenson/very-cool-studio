@@ -80,7 +80,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<option value="<?php echo $post->post_name;?>"><?php the_title(); ?></option> 
 		</select> */ ?> 
 		<div class="type-tester-header">
-			<input id="font-size-slider" type="range" min="10" max="100" value="48">
+			<input id="font-size-slider" type="range" min="10" max="160" value="48">
 			<div class="select">
 				<span class="arr"></span>
 				<select class="" data-native-menu="false" id="font-weight-select" name="weight">
@@ -101,7 +101,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					$newfiles = str_replace("-", " ", $newfiles);
 					$arr = $newfiles;
 					// 3 items need 2 bits to be represented ( 0 => 00 => "Expanded", 1 => 01 => "Standard", 2 => 10 => "Condensed" )
-					$crit1 = ["Expanded", "Standard", "Condensed", "ExtraCondensed", "Compressed", "SL", "ST"];
+					$crit1 = ["Wide", "Standard", "SemiCondensed", "Condensed", "ExtraCondensed", "SL", "ST"];
 					// 9 items need 4 bits to be represented ( 0 => 0000 => "Black", 1 => 0001 => "ExtraBold", ... 7 => 0111 => "Thin", 8 => 1000 => "ExtraLight" )
 					$crit2 = ["Black", "Heavy", "ExtraBold", "UltraBold", "Bold", "SemiBold", "Medium", "Regular", "Light", "ExtraLight", "Ultralight", "Thin", "ExtraThin"];
 					// if you join all the bits, each item of your array can be represented with a 6 bits number: ( 0 => 000000 => "Expanded Black" ... 40 => 101000 => "Condensed ExtraLight" )
@@ -111,14 +111,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 					$result = [];
 
 					foreach ($arr as $item) {
-					    if (false !== strpos($item, "Expanded"))
+					    if (false !== strpos($item, "Wide"))
 					        $key = 0;  // 000000
-					    elseif (false !== strpos($item, "ExtraCondensed"))
-					        $key = 48; // 100000
-					    elseif (false !== strpos($item, "Condensed"))
+					    elseif (false !== strpos($item, "SemiCondensed"))
 					        $key = 32; // 100000
-					    elseif (false !== strpos($item, "Compressed"))
+					    elseif (false !== strpos($item, "ExtraCondensed"))
 					        $key = 60; // 100000
+					    elseif (false !== strpos($item, "Condensed"))
+					        $key = 48; // 100000
 					    elseif (false !== strpos($item, "SL"))
 					        $key = 76; // 100000
 					    elseif (false !== strpos($item, "ST"))
@@ -278,6 +278,14 @@ $('#font-size-slider').on('change', function () {
 /* ligatures */
 $('#font-alts').on('change', function () {
     var x = this.checked ? 'ss01' : ' ';
+    $('div.type-tester span.fontselect').css('font-feature-settings', x )
+});
+$('#font-liga').on('change', function () {
+    var x = this.checked ? 'liga' : ' ';
+    $('div.type-tester span.fontselect').css('font-feature-settings', x )
+});
+$('#font-case').on('change', function () {
+    var x = this.checked ? 'case' : ' ';
     $('div.type-tester span.fontselect').css('font-feature-settings', x )
 });
 </script>

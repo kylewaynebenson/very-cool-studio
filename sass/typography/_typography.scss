@@ -47,28 +47,28 @@
        url('./type/verycoolicons-Regular.woff') format('woff'), /* Pretty Modern Browsers */
 }
 @font-face {
-  font-family: 'Cardinal Grotesque ExtraCondensed';
+  font-family: 'Cardinal Grotesque Condensed';
   font-weight: 600;
-  src: url('./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.eot'); /* IE9 Compat Modes */
-  src: url('./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('./type/cardinal-grotesque/CardinalGrotesqueExtraCondensed-SemiBold.woff') format('woff'), /* Pretty Modern Browsers */
+  src: url('./type/cardinal-grotesque/CardinalGrotesqueCondensed-SemiBold.eot'); /* IE9 Compat Modes */
+  src: url('./type/cardinal-grotesque/CardinalGrotesqueCondensed-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./type/cardinal-grotesque/CardinalGrotesqueCondensed-SemiBold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./type/cardinal-grotesque/CardinalGrotesqueCondensed-SemiBold.woff') format('woff'), /* Pretty Modern Browsers */
 }
 @font-face {
-  font-family: 'Cardinal Grotesque Expanded';
+  font-family: 'Cardinal Grotesque Wide';
   font-weight: 600;
-  src: url('./type/cardinal-grotesque/CardinalGrotesqueExpanded-SemiBold.eot'); /* IE9 Compat Modes */
-  src: url('./type/cardinal-grotesque/CardinalGrotesqueExpanded-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./type/cardinal-grotesque/CardinalGrotesqueExpanded-SemiBold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('./type/cardinal-grotesque/CardinalGrotesqueExpanded-SemiBold.woff') format('woff'), /* Pretty Modern Browsers */
+  src: url('./type/cardinal-grotesque/CardinalGrotesqueWide-SemiBold.eot'); /* IE9 Compat Modes */
+  src: url('./type/cardinal-grotesque/CardinalGrotesqueWide-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./type/cardinal-grotesque/CardinalGrotesqueWide-SemiBold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./type/cardinal-grotesque/CardinalGrotesqueWide-SemiBold.woff') format('woff'), /* Pretty Modern Browsers */
 }
 @font-face {
-  font-family: 'Cardinal Grotesque Expanded';
+  font-family: 'Cardinal Grotesque Wide';
   font-weight: 700;
-  src: url('./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.eot'); /* IE9 Compat Modes */
-  src: url('./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('./type/cardinal-grotesque/CardinalGrotesqueExpanded-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+  src: url('./type/cardinal-grotesque/CardinalGrotesqueWide-Bold.eot'); /* IE9 Compat Modes */
+  src: url('./type/cardinal-grotesque/CardinalGrotesqueWide-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./type/cardinal-grotesque/CardinalGrotesqueWide-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./type/cardinal-grotesque/CardinalGrotesqueWide-Bold.woff') format('woff'), /* Pretty Modern Browsers */
 }
 .icon:before {
     display: inline-block;
@@ -123,9 +123,9 @@
 
 $type-text: "Cornbread";
 $type-headline: "Cornbread";
-$type-headline-cond: "Cardinal Grotesque ExtraCondensed";
+$type-headline-cond: "Cardinal Grotesque Condensed";
 $type-subhead: "Cardinal Grotesque";
-$type-subhead-expanded: "Cardinal Grotesque Expanded";
+$type-subhead-expanded: "Cardinal Grotesque Wide";
 $type-script-subhead: "Business Script";
 
 body {

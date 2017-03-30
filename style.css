@@ -1124,7 +1124,35 @@ Product Styles
 
 .fontselect.liga { -webkit-font-feature-settings: "liga" 1; font-feature-settings: "liga" 1; }
 
-.fontselect.alts { -webkit-font-feature-settings: "ss01" 1; font-feature-settings: "ss01" 1; }
+.fontselect.liga.case { -webkit-font-feature-settings: "liga" 1, "case" 1; font-feature-settings: "liga" 1, "case" 1; }
+
+.fontselect.case { -webkit-font-feature-settings: "case" 1; font-feature-settings: "case" 1; }
+
+.fontselect.case.ss01 { -webkit-font-feature-settings: "case" 1, "ss01" 1; font-feature-settings: "case" 1, "ss01" 1; }
+
+.fontselect.case.ss04 { -webkit-font-feature-settings: "case" 1, "ss04" 1; font-feature-settings: "case" 1, "ss04" 1; }
+
+.fontselect.case.ss01.ss04 { -webkit-font-feature-settings: "case" 1, "ss04" 1, "ss01" 1; font-feature-settings: "case" 1, "ss04" 1, "ss01" 1; }
+
+.fontselect.alts, .fontselect.ss01 { -webkit-font-feature-settings: "ss01" 1; font-feature-settings: "ss01" 1; }
+
+.fontselect.alts.ss07, .fontselect.ss01.ss07 { -webkit-font-feature-settings: "ss01" 1, "ss07" 1; font-feature-settings: "ss01" 1, "ss07" 1; }
+
+.fontselect.alts.ss07.ss04, .fontselect.ss01.ss07.ss04 { -webkit-font-feature-settings: "ss04" 1, "ss07" 1, "ss01"; font-feature-settings: "ss04" 1, "ss07" 1, "ss01"; }
+
+.fontselect.ss02 { -webkit-font-feature-settings: "ss02" 1; font-feature-settings: "ss02" 1; }
+
+.fontselect.ss03 { -webkit-font-feature-settings: "ss03" 1; font-feature-settings: "ss03" 1; }
+
+.fontselect.ss04 { -webkit-font-feature-settings: "ss04" 1; font-feature-settings: "ss04" 1; }
+
+.fontselect.ss04.ss07 { -webkit-font-feature-settings: "ss04" 1, "ss07" 1; font-feature-settings: "ss04" 1, "ss07" 1; }
+
+.fontselect.ss05 { -webkit-font-feature-settings: "ss05" 1; font-feature-settings: "ss05" 1; }
+
+.fontselect.ss06 { -webkit-font-feature-settings: "ss06" 1; font-feature-settings: "ss06" 1; }
+
+.fontselect.ss07 { -webkit-font-feature-settings: "ss07" 1; font-feature-settings: "ss07" 1; }
 
 .fontselect.swsh { -webkit-font-feature-settings: "swsh" 1; font-feature-settings: "swsh" 1; }
 
@@ -1217,7 +1245,7 @@ body { -webkit-animation: fake 1s infinite; animation: fake 1s infinite; }
 
 .type-tester span { outline: none; }
 
-.type-tester .fontselect { width: 100%; display: block; text-align: center; line-height: 1.1; padding: 30px; border-bottom: 3px solid #f0f0f0; min-height: 100px; font-size: 70px; -webkit-transition: font 0.3s ease; transition: font 0.3s ease; }
+.type-tester .fontselect { width: 100%; display: block; text-align: center; line-height: 1.1; padding: 30px; border-bottom: 3px solid #f0f0f0; min-height: 100px; font-size: 70px; -webkit-transition: font 0.3s ease; transition: font 0.3s ease; margin-bottom: -3px; }
 
 .type-tester .type-tester-title { display: none; }
 
@@ -1233,7 +1261,7 @@ body { -webkit-animation: fake 1s infinite; animation: fake 1s infinite; }
 
 .type-tester .type-tester-header:after { content: ""; display: table; clear: both; }
 
-.type-tester .type-tester-header .select { position: relative; float: left; border-right: 3px solid #f0f0f0; padding: 0px 0px 4px 10px; }
+.type-tester .type-tester-header .select { position: relative; float: left; border: 3px solid #f0f0f0; border-left: 0px; margin-bottom: -3px; padding: 0px 0px 4px 10px; }
 
 @media only screen and (max-width: 660px) { .type-tester .type-tester-header .select { border-right: 0px; width: 50%; } }
 
@@ -1247,7 +1275,7 @@ body { -webkit-animation: fake 1s infinite; animation: fake 1s infinite; }
 
 .type-tester .type-tester-header .select .arr:after { content: ' '; position: absolute; z-index: 1; top: 50%; right: 0px; margin-top: -5px; pointer-events: none; border-top: 6px solid #fff; border-left: 6px solid transparent; border-right: 6px solid transparent; }
 
-.type-tester .type-tester-header .type-tester-checkbox { cursor: pointer; float: left; color: #e0e0e0; padding: 0px 10px 4px 10px; border-right: 3px solid #f0f0f0; }
+.type-tester .type-tester-header .type-tester-checkbox { cursor: pointer; float: left; color: #e0e0e0; padding: 0px 10px 4px 10px; border: 3px solid #f0f0f0; border-left: 0px; margin-bottom: -3px; }
 
 @media only screen and (max-width: 661px) { .type-tester .type-tester-header .type-tester-checkbox { display: none; } }
 
@@ -1259,7 +1287,7 @@ body { -webkit-animation: fake 1s infinite; animation: fake 1s infinite; }
 
 .type-tester .type-tester-header .type-tester-checkbox input[type="checkbox"]:checked, .type-tester .type-tester-header .type-tester-checkbox input[type="checkbox"].checked { border: 0px; background: #ffd138; }
 
-.type-tester .type-tester-header #font-size-slider { font-family: "Cardinal Grotesque"; font-weight: 600 !important; font-size: 20px; width: 30%; color: #e0e0e0; float: left; padding: 5px 10px 7px 10px; border-right: 3px solid #f0f0f0; }
+.type-tester .type-tester-header #font-size-slider { font-family: "Cardinal Grotesque"; font-weight: 600 !important; font-size: 20px; width: 30%; color: #e0e0e0; float: left; padding: 5px 10px 7px 10px; border: 3px solid #f0f0f0; border-left: 0px; margin-bottom: -3px; }
 
 @media only screen and (max-width: 660px) { .type-tester .type-tester-header #font-size-slider { width: 50%; } }
 

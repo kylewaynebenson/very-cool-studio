@@ -153,78 +153,130 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</select>
 			</div>
 			<?php if ( is_single('kansas-casual') or is_single('maritime-champion') ) { ?>
+			<?php } else if ( is_single('cardinal-grotesque') ) { ?>
+				<div class="type-tester-ss01 type-tester-checkbox">
+					<input id="font-ss01" type="checkbox" name="ss01" value="ss01">
+					ss01
+					<script>
+					/* ss01 */
+					var btnalt = document.querySelector(".type-tester-ss01"),
+					    typetester = document.querySelector("span.fontselect"),
+					    activeClassss01 = "ss01",
+					    inputss01 = document.querySelector("#font-ss01");
+
+					btnalt.addEventListener("click", function(e){
+					  e.preventDefault();
+					  typetester.classList.toggle(activeClassss01);
+					  inputss01.classList.toggle('checked');
+					});
+					</script>
+				</div>
+				<div class="type-tester-ss04 type-tester-checkbox">
+					<input id="font-ss04" type="checkbox" name="ss04" value="ss04">
+					ss04
+					<script>
+					/* ss04 */
+					var btnalt = document.querySelector(".type-tester-ss04"),
+					    typetester = document.querySelector("span.fontselect"),
+					    activeClassss04 = "ss04",
+					    inputss04 = document.querySelector("#font-ss04");
+
+					btnalt.addEventListener("click", function(e){
+					  e.preventDefault();
+					  typetester.classList.toggle(activeClassss04);
+					  inputss04.classList.toggle('checked');
+					});
+					</script>
+				</div>
+				<div class="type-tester-ss07 type-tester-checkbox">
+					<input id="font-ss07" type="checkbox" name="ss07" value="ss07">
+					ss07
+					<script>
+					/* ss07 */
+					var btnalt = document.querySelector(".type-tester-ss07"),
+					    typetester = document.querySelector("span.fontselect"),
+					    activeClassss07 = "ss07",
+					    inputss07 = document.querySelector("#font-ss07");
+
+					btnalt.addEventListener("click", function(e){
+					  e.preventDefault();
+					  typetester.classList.toggle(activeClassss07);
+					  inputss07.classList.toggle('checked');
+					});
+					</script>
+				</div>
 			<?php } else { ?>
-			<div class="type-tester-ligatures type-tester-checkbox">
-				<input id="font-ligatures" type="checkbox" name="ligatures" value="liga">
-				Liga
-				<script>
-				/* ligatures */
-				var btn = document.querySelector(".type-tester-ligatures"),
-				    typetester = document.querySelector("span.fontselect"),
-				    activeClassliga = "liga",
-				    inputliga = document.querySelector("#font-ligatures");
+				<div class="type-tester-ligatures type-tester-checkbox">
+					<input id="font-ligatures" type="checkbox" name="ligatures" value="liga">
+					Liga
+					<script>
+					/* ligatures */
+					var btn = document.querySelector(".type-tester-ligatures"),
+					    typetester = document.querySelector("span.fontselect"),
+					    activeClassliga = "liga",
+					    inputliga = document.querySelector("#font-ligatures");
 
-				btn.addEventListener("click", function(e){
-				  e.preventDefault();
-				  typetester.classList.toggle(activeClassliga);
-				  inputliga.classList.toggle('checked');
-				});
-				</script>
-			</div>
-			<div class="type-tester-alts type-tester-checkbox">
-				<input id="font-alts" type="checkbox" name="alts" value="salt">
-				Alts
-				<script>
-				/* alts */
-				var btnalt = document.querySelector(".type-tester-alts"),
-				    typetester = document.querySelector("span.fontselect"),
-				    activeClassalts = "alts",
-				    inputalts = document.querySelector("#font-alts");
+					btn.addEventListener("click", function(e){
+					  e.preventDefault();
+					  typetester.classList.toggle(activeClassliga);
+					  inputliga.classList.toggle('checked');
+					});
+					</script>
+				</div>
+				<div class="type-tester-alts type-tester-checkbox">
+					<input id="font-alts" type="checkbox" name="alts" value="salt">
+					Alts
+					<script>
+					/* alts */
+					var btnalt = document.querySelector(".type-tester-alts"),
+					    typetester = document.querySelector("span.fontselect"),
+					    activeClassalts = "alts",
+					    inputalts = document.querySelector("#font-alts");
 
-				btnalt.addEventListener("click", function(e){
-				  e.preventDefault();
-				  typetester.classList.toggle(activeClassalts);
-				  inputalts.classList.toggle('checked');
-				});
-				</script>
-			</div>
+					btnalt.addEventListener("click", function(e){
+					  e.preventDefault();
+					  typetester.classList.toggle(activeClassalts);
+					  inputalts.classList.toggle('checked');
+					});
+					</script>
+				</div>
 			<?php } ?>
 			<?php if ( is_single('business-script') ) { ?>
-			<div class="type-tester-swsh type-tester-checkbox">
-				<input id="font-swsh" type="checkbox" name="swsh" value="swsh">
-				Swsh
-				<script>
-				/* swsh */
-				var btnalt = document.querySelector(".type-tester-swsh"),
-				    typetester = document.querySelector("span.fontselect"),
-				    activeClassswsh = "swsh",
-				    inputswsh = document.querySelector("#font-swsh");
+				<div class="type-tester-swsh type-tester-checkbox">
+					<input id="font-swsh" type="checkbox" name="swsh" value="swsh">
+					Swsh
+					<script>
+					/* swsh */
+					var btnalt = document.querySelector(".type-tester-swsh"),
+					    typetester = document.querySelector("span.fontselect"),
+					    activeClassswsh = "swsh",
+					    inputswsh = document.querySelector("#font-swsh");
 
-				btnalt.addEventListener("click", function(e){
-				  e.preventDefault();
-				  typetester.classList.toggle(activeClassswsh);
-				  inputswsh.classList.toggle('checked');
-				});
-				</script>
-			</div>
+					btnalt.addEventListener("click", function(e){
+					  e.preventDefault();
+					  typetester.classList.toggle(activeClassswsh);
+					  inputswsh.classList.toggle('checked');
+					});
+					</script>
+				</div>
 			<?php } else if ( is_single('ready-script') or is_single('cardinal-grotesque') ) { ?>
-			<div class="type-tester-case type-tester-checkbox">
-				<input id="font-case" type="checkbox" name="case" value="case">
-				Case
-				<script>
-				/* case */
-				var btnalt = document.querySelector(".type-tester-case"),
-				    typetester = document.querySelector("span.fontselect"),
-				    activeClasscase = "case",
-				    inputcase = document.querySelector("#font-case");
+				<div class="type-tester-case type-tester-checkbox">
+					<input id="font-case" type="checkbox" name="case" value="case">
+					Case
+					<script>
+					/* case */
+					var btnalt = document.querySelector(".type-tester-case"),
+					    typetester = document.querySelector("span.fontselect"),
+					    activeClasscase = "case",
+					    inputcase = document.querySelector("#font-case");
 
-				btnalt.addEventListener("click", function(e){
-				  e.preventDefault();
-				  typetester.classList.toggle(activeClasscase);
-				  inputcase.classList.toggle('checked');
-				});
-				</script>
-			</div>
+					btnalt.addEventListener("click", function(e){
+					  e.preventDefault();
+					  typetester.classList.toggle(activeClasscase);
+					  inputcase.classList.toggle('checked');
+					});
+					</script>
+				</div>
 		<?php } ?>
 
 		</div>

@@ -25,7 +25,7 @@ get_header(); ?>
 	<img class="kyle-gif" src="<?php bloginfo('template_directory'); ?>/img/kyle-gif-square.gif"/>
 	<div class="bio">
 		<h1>Very Cool is the studio of no-award winning designer Kyle Wayne Benson</h1>
-		<p>Kyle got started in 2008 as a web developer for Internet Enterprises. In 2015 he received a Type Design Certificate from Cooper Union. He formed Very Cool Studio in 2016, an entire year after buying the domain.</p>
+		<p>Kyle got started in 2008 as a web developer for Internet Enterprises. In 2015 he received a Type Design Certificate from Cooper Union. He formed Very Cool Studio in March 2017, 20 months after buying the domain.</p>
 		<p>His type has been used by <a href="https://fontsinuse.com/uses/10127/apple-music-billboard-ad-berlin">Apple</a>, <a href="https://www.bluehost.com/">BlueHost</a>, <a href="https://www.qualtrics.com/">Qualtrics</a> and on posters in his mom's classroom. His best tweet has 57 “faves”, which is 5-10 times Kyle’s average number of “faves” per tweet.</p>
 	</div>
 </div>

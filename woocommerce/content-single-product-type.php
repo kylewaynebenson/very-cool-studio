@@ -154,6 +154,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</div>
 			<?php if ( is_single('kansas-casual') or is_single('maritime-champion') ) { ?>
 			<?php } else if ( is_single('cardinal-grotesque') ) { ?>
+				<div class="type-tester-frac type-tester-checkbox">
+					<input id="font-frac" type="checkbox" name="frac" value="frac">
+					Fractions
+					<script>
+					/* frac */
+					var btnalt = document.querySelector(".type-tester-frac"),
+					    typetester = document.querySelector("span.fontselect"),
+					    activeClassfrac = "frac",
+					    inputfrac = document.querySelector("#font-frac");
+
+					btnalt.addEventListener("click", function(e){
+					  e.preventDefault();
+					  typetester.classList.toggle(activeClassfrac);
+					  inputfrac.classList.toggle('checked');
+					});
+					</script>
+				</div>
 				<div class="type-tester-ss01 type-tester-checkbox">
 					<input id="font-ss01" type="checkbox" name="ss01" value="ss01">
 					ss01

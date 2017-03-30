@@ -1285,6 +1285,21 @@ Product Styles
 			font-feature-settings: "liga" 1, "case" 1;
 		}
 	}
+	&.frac {
+		font-feature-settings: "frac" 1;
+		&.case {
+			font-feature-settings: "frac" 1, "case" 1;
+		}
+		&.ss01 {
+			font-feature-settings: "frac" 1, "ss01" 1;
+		}
+		&.ss04 {
+			font-feature-settings: "frac" 1, "ss04" 1;
+		}
+		&.ss01.ss04 {
+			font-feature-settings: "frac" 1, "ss04" 1, "ss01" 1;
+		}
+	}
 	&.case {
 		font-feature-settings: "case" 1;
 		&.ss01 {
@@ -1579,15 +1594,26 @@ body {
 		}
 		.type-tester-checkbox {
 			@media only screen and (max-width: 661px) {
-				display: none;
+				margin-bottom: 3px;
+				margin-top: 3px;
 			}
 			cursor: pointer;
 			float: left;
 			color: $gray-2;
-			padding: 0px 10px 4px 10px;
-			border: 3px solid $gray-1;
+			padding: 5px 6px 4px 6px;
+			border: 3px solid transparent;
 			border-left: 0px;
-			margin-bottom: -3px;
+			margin-bottom: -8px;
+			font-family: $type-subhead-expanded;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: .12em;
+			line-height: .4;
+			font-size: 11px;
+			-webkit-font-feature-settings: "case" 1;
+			-moz-font-feature-settings:    "case" 1;
+			-ms-font-feature-settings:     "case" 1;
+			font-feature-settings:         "case" 1;
 			&:last-of-type {
 				border-right: 0px;
 				@media only screen and (max-width: 660px) {
@@ -1596,9 +1622,10 @@ body {
 			}
 			input[type="checkbox"] {
 				cursor: pointer;
-				border: 3px solid $gray-2;
-				width: 14px;
-				height: 14px;
+				border: 0px solid $gray-2;
+				background: $gray-1;
+				width: 10px;
+				height: 10px;
 				margin-right: 5px;
 				border-radius: 0px;
 				-webkit-appearance: none;

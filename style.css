@@ -1126,6 +1126,16 @@ Product Styles
 
 .fontselect.liga.case { -webkit-font-feature-settings: "liga" 1, "case" 1; font-feature-settings: "liga" 1, "case" 1; }
 
+.fontselect.frac { -webkit-font-feature-settings: "frac" 1; font-feature-settings: "frac" 1; }
+
+.fontselect.frac.case { -webkit-font-feature-settings: "frac" 1, "case" 1; font-feature-settings: "frac" 1, "case" 1; }
+
+.fontselect.frac.ss01 { -webkit-font-feature-settings: "frac" 1, "ss01" 1; font-feature-settings: "frac" 1, "ss01" 1; }
+
+.fontselect.frac.ss04 { -webkit-font-feature-settings: "frac" 1, "ss04" 1; font-feature-settings: "frac" 1, "ss04" 1; }
+
+.fontselect.frac.ss01.ss04 { -webkit-font-feature-settings: "frac" 1, "ss04" 1, "ss01" 1; font-feature-settings: "frac" 1, "ss04" 1, "ss01" 1; }
+
 .fontselect.case { -webkit-font-feature-settings: "case" 1; font-feature-settings: "case" 1; }
 
 .fontselect.case.ss01 { -webkit-font-feature-settings: "case" 1, "ss01" 1; font-feature-settings: "case" 1, "ss01" 1; }
@@ -1275,15 +1285,15 @@ body { -webkit-animation: fake 1s infinite; animation: fake 1s infinite; }
 
 .type-tester .type-tester-header .select .arr:after { content: ' '; position: absolute; z-index: 1; top: 50%; right: 0px; margin-top: -5px; pointer-events: none; border-top: 6px solid #fff; border-left: 6px solid transparent; border-right: 6px solid transparent; }
 
-.type-tester .type-tester-header .type-tester-checkbox { cursor: pointer; float: left; color: #e0e0e0; padding: 0px 10px 4px 10px; border: 3px solid #f0f0f0; border-left: 0px; margin-bottom: -3px; }
+.type-tester .type-tester-header .type-tester-checkbox { cursor: pointer; float: left; color: #e0e0e0; padding: 5px 6px 4px 6px; border: 3px solid transparent; border-left: 0px; margin-bottom: -8px; font-family: "Cardinal Grotesque Wide"; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; line-height: .4; font-size: 11px; -webkit-font-feature-settings: "case" 1; -ms-font-feature-settings: "case" 1; font-feature-settings: "case" 1; }
 
-@media only screen and (max-width: 661px) { .type-tester .type-tester-header .type-tester-checkbox { display: none; } }
+@media only screen and (max-width: 661px) { .type-tester .type-tester-header .type-tester-checkbox { margin-bottom: 3px; margin-top: 3px; } }
 
 .type-tester .type-tester-header .type-tester-checkbox:last-of-type { border-right: 0px; }
 
 @media only screen and (max-width: 660px) { .type-tester .type-tester-header .type-tester-checkbox:last-of-type { display: none; } }
 
-.type-tester .type-tester-header .type-tester-checkbox input[type="checkbox"] { cursor: pointer; border: 3px solid #e0e0e0; width: 14px; height: 14px; margin-right: 5px; border-radius: 0px; -webkit-appearance: none; outline: none; }
+.type-tester .type-tester-header .type-tester-checkbox input[type="checkbox"] { cursor: pointer; border: 0px solid #e0e0e0; background: #f0f0f0; width: 10px; height: 10px; margin-right: 5px; border-radius: 0px; -webkit-appearance: none; outline: none; }
 
 .type-tester .type-tester-header .type-tester-checkbox input[type="checkbox"]:checked, .type-tester .type-tester-header .type-tester-checkbox input[type="checkbox"].checked { border: 0px; background: #ffd138; }
 

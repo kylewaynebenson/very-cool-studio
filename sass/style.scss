@@ -1802,6 +1802,94 @@ body {
 				}
 			}
 		}
+		.summary-cart {
+			@media (min-width: 660px) {
+				margin-bottom: 25px;
+				a.button.product_type_simple.add_to_cart_button {
+					cursor: pointer;
+					text-decoration: none;
+					font-family: $type-subhead;
+					font-weight: 600;
+					font-size: 16px;
+					text-transform: uppercase;
+					padding: 5px 20px;
+					letter-spacing: 1px;
+					color: $black;
+					border: 0px;
+					background:
+						linear-gradient(135deg, transparent 5px, $yellow 0) top left,
+						linear-gradient(225deg, transparent 5px, $yellow 0) top right,
+						linear-gradient(315deg, transparent 5px, $yellow 0) bottom right,
+						linear-gradient(45deg,  transparent 5px, $yellow 0) bottom left;
+					background-size: 52% 52%;
+					background-repeat: no-repeat;
+					&:hover {
+					background:
+						linear-gradient(135deg, transparent 5px, lighten($yellow,5%) 0) top left,
+						linear-gradient(225deg, transparent 5px, lighten($yellow,5%) 0) top right,
+						linear-gradient(315deg, transparent 5px, lighten($yellow,5%) 0) bottom right,
+						linear-gradient(45deg,  transparent 5px, lighten($yellow,5%) 0) bottom left;
+						background-size: 52% 52%;
+						background-repeat: no-repeat;
+					}
+					&:active {
+					background:
+						linear-gradient(135deg, transparent 5px, darken($yellow,5%) 0) top left,
+						linear-gradient(225deg, transparent 5px, darken($yellow,5%) 0) top right,
+						linear-gradient(315deg, transparent 5px, darken($yellow,5%) 0) bottom right,
+						linear-gradient(45deg,  transparent 5px, darken($yellow,5%) 0) bottom left;
+						background-size: 52% 52%;
+						background-repeat: no-repeat;
+					}
+					&:visited {
+						color: $black;
+					}
+					&.added {
+						display: none;
+					}
+				}
+				a.added_to_cart.wc-forward {
+					cursor: pointer;
+					color: $white;
+					text-decoration: none;
+					border: 0px;
+					background:
+						linear-gradient(135deg, transparent 5px, $black 0) top left,
+						linear-gradient(225deg, transparent 5px, $black 0) top right,
+						linear-gradient(315deg, transparent 5px, $black 0) bottom right,
+						linear-gradient(45deg,  transparent 5px, $black 0) bottom left;
+					background-size: 52% 52%;
+					background-repeat: no-repeat;
+					font-family: $type-subhead;
+					font-weight: 600;
+					font-size: 16px;
+					text-transform: uppercase;
+					padding: 5px 20px;
+					letter-spacing: 1px;
+					&:hover {
+					background:
+						linear-gradient(135deg, transparent 5px, lighten($black,5%) 0) top left,
+						linear-gradient(225deg, transparent 5px, lighten($black,5%) 0) top right,
+						linear-gradient(315deg, transparent 5px, lighten($black,5%) 0) bottom right,
+						linear-gradient(45deg,  transparent 5px, lighten($black,5%) 0) bottom left;
+						background-size: 52% 52%;
+						background-repeat: no-repeat;
+					}
+					&:active {
+					background:
+						linear-gradient(135deg, transparent 5px, darken($black,5%) 0) top left,
+						linear-gradient(225deg, transparent 5px, darken($black,5%) 0) top right,
+						linear-gradient(315deg, transparent 5px, darken($black,5%) 0) bottom right,
+						linear-gradient(45deg,  transparent 5px, darken($black,5%) 0) bottom left;
+						background-size: 52% 52%;
+						background-repeat: no-repeat;
+					}
+					&:visited {
+						color: $white;
+					}
+				}
+			}
+		}
 	}
 	.entry-footer {
 		.cat-links {
@@ -1844,7 +1932,7 @@ body {
 				cursor: pointer;
 				a {
 					color: $black;
-					background: $yellow;
+					background: $gray-1;
 					overflow: hidden;
 					white-space: nowrap;
   					text-overflow: ellipsis;
@@ -1857,7 +1945,7 @@ body {
 						display: block;
 						position: absolute;
 						content: " ";
-						background: $yellow;
+						background: $gray-1;
 						width: 24px; 
 						height: 24px;
 						top: 0px; 
@@ -1868,45 +1956,45 @@ body {
 						user-select: none; 
 					}
 					&:hover {
-						background: lighten($yellow,5%);
+						background: lighten($gray-1,2%);
 					}
 					&:active {
-						background: darken($yellow,8%);
+						background: darken($gray-1,8%);
 					}
 				}
 
 			}
 			.nav-previous a {
 				&:before {
-					border-right: 12px solid $yellow; 
+					border-right: 12px solid $gray-1; 
 					border-left: 12px solid white;
 					left: -12px;
 				}
 				&:hover {
 					&:before {
-						border-right: 12px solid lighten($yellow,5%); 
+						border-right: 12px solid lighten($gray-1,2%); 
 					}
 				}
 				&:active {
 					&:before {
-						border-right: 12px solid darken($yellow,8%); 
+						border-right: 12px solid darken($gray-1,8%); 
 					}
 				}
 			}
 			.nav-next a {
 				&:before {
-					border-left:12px solid $yellow; 
+					border-left:12px solid $gray-1; 
 					border-right:12px solid white;
 					right: -12px;
 				}
 				&:hover {
 					&:before {
-						border-left: 12px solid lighten($yellow,5%); 
+						border-left: 12px solid lighten($gray-1,2%); 
 					}
 				}
 				&:active {
 					&:before {
-						border-left: 12px solid darken($yellow,8%); 
+						border-left: 12px solid darken($gray-1,8%); 
 					}
 				}
 			}
@@ -2434,7 +2522,7 @@ body {
 			cursor: pointer;
 			a {
 				color: $black;
-				background: $yellow;
+				background: $gray-1;
 				overflow: hidden;
 				white-space: nowrap;
 					text-overflow: ellipsis;
@@ -2447,10 +2535,10 @@ body {
 					user-select: none; 
 				}
 				&:hover {
-					background: lighten($yellow,5%);
+					background: lighten($gray-1,2%);
 				}
 				&:active {
-					background: darken($yellow,8%);
+					background: darken($gray-1,8%);
 				}
 			}
 
@@ -2462,19 +2550,19 @@ body {
 			display: block;
 			position: absolute;
 			content: " ";
-			background-color: $yellow;
+			background-color: $gray-1;
 			width: 24px; 
 			height: 24px; 
 			border-top: 12px solid white;
 			border-bottom: 12px solid white;
 		}
 		.nav-previous:before {
-			border-right: 12px solid $yellow; 
+			border-right: 12px solid $gray-1; 
 			border-left: 12px solid white;
 			left: -22px;
 		}
 		.nav-next:before {
-			border-left:12px solid $yellow; 
+			border-left:12px solid $gray-1; 
 			border-right:12px solid white;
 			right: -22px;
 		}

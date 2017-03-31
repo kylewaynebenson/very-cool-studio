@@ -53,6 +53,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 			    <?php } ?>
 			<li><span class="post-meta-key">Summary</span> <?php echo get_post_meta($post->ID, 'Summary', true); ?></li>
 		</ul>
+		<div class="summary-cart">
+			<?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?>
+		</div>
 	</header><!-- .entry-header -->
 	<div class="post-content">
 		<?php the_content(); ?>

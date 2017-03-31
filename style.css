@@ -1236,6 +1236,8 @@ body { -webkit-animation: fake 1s infinite; animation: fake 1s infinite; }
 
 .radio-tabs #gallery-panel .fontselect { overflow-y: visible; overflow-x: hidden; word-break: keep-all; white-space: nowrap; line-height: 1; height: 70px; outline: none; position: relative; }
 
+@media (max-width: 660px) { .radio-tabs #gallery-panel .fontselect { font-size: 40px; height: 48px; } }
+
 .radio-tabs #gallery-panel h5 { margin: 7px 0px 2px 0px; }
 
 @media (min-width: 768px) { .radio-tabs #gallery-panel { margin-bottom: 35px; }
@@ -1273,7 +1275,7 @@ body { -webkit-animation: fake 1s infinite; animation: fake 1s infinite; }
 
 .type-tester .type-tester-header .select { position: relative; float: left; border: 3px solid #f0f0f0; border-left: 0px; margin-bottom: -3px; padding: 0px 0px 4px 10px; }
 
-@media only screen and (max-width: 660px) { .type-tester .type-tester-header .select { border-right: 0px; width: 50%; } }
+@media only screen and (max-width: 660px) { .type-tester .type-tester-header .select { border-right: 0px; width: 50%; height: 41px; } }
 
 @media only screen and (min-width: 661px) { .type-tester .type-tester-header .select { width: auto; max-width: 170px; } }
 
@@ -1299,7 +1301,7 @@ body { -webkit-animation: fake 1s infinite; animation: fake 1s infinite; }
 
 .type-tester .type-tester-header #font-size-slider { font-family: "Cardinal Grotesque"; font-weight: 600 !important; font-size: 20px; width: 30%; color: #e0e0e0; float: left; padding: 5px 10px 7px 10px; border: 3px solid #f0f0f0; border-left: 0px; margin-bottom: -3px; }
 
-@media only screen and (max-width: 660px) { .type-tester .type-tester-header #font-size-slider { width: 50%; } }
+@media only screen and (max-width: 660px) { .type-tester .type-tester-header #font-size-slider { width: 50%; height: 41px; } }
 
 .type-tester .type-tester-header #font-size-slider:before { content: "S"; margin-right: 5px; }
 

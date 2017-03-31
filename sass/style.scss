@@ -1429,6 +1429,10 @@ body {
 	    		height: 70px;
 	    		outline: none;
 	    		position: relative;
+	    		@media (max-width: 660px) {
+	    			font-size: 40px;
+	    			height: 48px;
+	    		}
 		}
 		h5 {
 			margin: 7px 0px 2px 0px;
@@ -1536,6 +1540,7 @@ body {
 			@media only screen and (max-width: 660px) {
 				border-right: 0px;
 				width: 50%;
+				height: 41px;
 			}
 			@media only screen and (min-width: 661px) {
 				width: auto;
@@ -1642,6 +1647,7 @@ body {
 			font-size: 20px;
 			@media only screen and (max-width: 660px) {
 				width: 50%;
+				height: 41px;
 			}
 			width: 30%;
 			color: $gray-2;

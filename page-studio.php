@@ -74,6 +74,7 @@ get_header(); ?>
 			<li><a href="https://www.instagram.com/trevorchristensen/">Trevor Christensen</a><span class="year">PHOTO</span></li>
 			<li>Dudes who love Batman<span class="year">THE WORST</span></li>
 			<li>Poverty<span class="year">YET WORSE</span></li>
+			<li><a href="http://www.continentaltype.co">Continental Type Co</a><span class="year">Very Bad Ugly Work Don't Look</span></li>
 		</ul>
 	</div>
 </div>

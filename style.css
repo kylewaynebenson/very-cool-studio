@@ -1441,9 +1441,12 @@ body { -webkit-animation: fake 1s infinite; animation: fake 1s infinite; }
   .single .post-content { width: 62.5%; float: right; }
   .single .post-content p:last-of-type { margin-bottom: 0px; } }
 
+.single:not(.woocommerce) img + .caption { display: block; background: #f0f0f0; padding: 12px 18px; font-size: 13.5px; margin-bottom: 10px; margin-top: -10px; letter-spacing: .025em; position: relative; left: 0px; top: 0px; }
+
 @media (min-width: 1460px) { .single:not(.woocommerce) .entry-header, .single:not(.woocommerce) .entry-footer { width: 22.9166666667%; float: left; padding: 20px 0px; }
   .single:not(.woocommerce) .post-content { width: 75%; padding: 25px 0px; float: right; }
-  .single:not(.woocommerce) .post-content p { max-width: 600px; margin: 0 auto; margin-bottom: 1.25em; } }
+  .single:not(.woocommerce) .post-content p { max-width: 600px; margin: 0 auto; margin-bottom: 1.25em; }
+  .single:not(.woocommerce) .post-content img, .single:not(.woocommerce) .post-content img ~ .caption { max-width: 124%; margin-left: -12%; margin-right: -12%; } }
 
 /*--------------------------------------------------------------
 # Page Styles

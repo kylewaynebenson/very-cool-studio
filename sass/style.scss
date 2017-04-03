@@ -2090,6 +2090,19 @@ body {
 	}
 }
 .single:not(.woocommerce) {
+	img + .caption {
+		display: block;
+		background: $gray-1;
+		padding: 12px 18px;
+		font-size: 13.5px;
+		margin-bottom: 10px;
+		margin-top: -10px;
+		letter-spacing: .025em;
+		position: relative;
+		left: 0px;
+		top: 0px;
+		
+	}
 	@media (min-width: 1460px) {
 		.entry-header, .entry-footer {
 			width: span(5.5);
@@ -2104,6 +2117,11 @@ body {
 				max-width: 600px;
 				margin: 0 auto;
 				margin-bottom: 1.25em;
+			}
+			img, img ~ .caption {
+				max-width: 124%;
+				margin-left: -12%;
+				margin-right: -12%;
 			}
 		}
 	}

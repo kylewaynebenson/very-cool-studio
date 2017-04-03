@@ -300,6 +300,7 @@ table.list-box {
 		.product-subtotal {
 			text-align: right;
 			font-weight: 500;
+			font-feature-settings: "tnum" 1;
 		}
 	}
 }

@@ -379,7 +379,7 @@ table.list-box tr td.product-quantity, table.list-box tr td.product-quantity inp
 
 table.list-box tr td.product-quantity input, table.list-box tr td.product-quantity input input { border: 0px; width: 50px; }
 
-table.list-box tr .product-subtotal { text-align: right; font-weight: 500; }
+table.list-box tr .product-subtotal { text-align: right; font-weight: 500; -webkit-font-feature-settings: "tnum" 1; font-feature-settings: "tnum" 1; }
 
 .squiggle-divider-full:after { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; text-indent: 6px; display: block; width: 100%; max-width: 100%; display: block; font-family: 'Very Cool Icons'; font-style: normal; font-weight: 500; font-size: 1.65em; overflow: hidden; line-height: 1.1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-overflow: clip; content: "\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002"; }
 
@@ -1065,7 +1065,7 @@ Cart Styles
 
 .woocommerce-cart table.cart-totals tbody td { padding-top: 0px; border: 0px; text-align: right; }
 
-.woocommerce-cart table.cart-totals tbody:not([data-title="Total"]) { font-family: "Cardinal Grotesque Wide"; font-weight: 700; }
+.woocommerce-cart table.cart-totals tbody:not([data-title="Total"]) { font-family: "Cardinal Grotesque Wide"; font-weight: 700; -webkit-font-feature-settings: "tnum" 1; font-feature-settings: "tnum" 1; }
 
 .woocommerce-cart table.cart-totals tbody:not([data-title="Total"]) .amount { font-weight: 700; }
 
@@ -1445,8 +1445,10 @@ body { -webkit-animation: fake 1s infinite; animation: fake 1s infinite; }
 
 @media (min-width: 1460px) { .single:not(.woocommerce) .entry-header, .single:not(.woocommerce) .entry-footer { width: 22.9166666667%; float: left; padding: 20px 0px; }
   .single:not(.woocommerce) .post-content { width: 75%; padding: 25px 0px; float: right; }
-  .single:not(.woocommerce) .post-content p { max-width: 600px; margin: 0 auto; margin-bottom: 1.25em; }
-  .single:not(.woocommerce) .post-content img, .single:not(.woocommerce) .post-content img ~ .caption { max-width: 124%; margin-left: -12%; margin-right: -12%; } }
+  .single:not(.woocommerce) .post-content p, .single:not(.woocommerce) .post-content ul, .single:not(.woocommerce) .post-content ol, .single:not(.woocommerce) .post-content h2 { max-width: 600px; margin: 0 auto; margin-bottom: 1.25em; }
+  .single:not(.woocommerce) .post-content img.size-full, .single:not(.woocommerce) .post-content img.size-full + .caption { max-width: 126%; width: 126%; margin-left: -13%; margin-right: -13%; }
+  .single:not(.woocommerce) .post-content img.size-full { margin-top: 25px; }
+  .single:not(.woocommerce) .post-content img.size-full + .caption { margin-bottom: 25px; } }
 
 /*--------------------------------------------------------------
 # Page Styles

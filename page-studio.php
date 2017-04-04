@@ -48,6 +48,7 @@ get_header(); ?>
 	</ul>
 	<h2>Interviews</h2>
 	<ul class="list-box">
+		<li><a href="https://dribbble.com/stories/2017/03/29/timeout-kyle-wayne-benson">Dribble Timeout</a><span class="year">2017</span></li>
 		<li><a href="http://www.thebalance.cc/home/2014/21-kyle-claire-benson">The Balance Podcast</a><span class="year">2014</span></li>
 		<li><a href="http://oneminutewith.com/kyle-wayne-benson">One Minute With</a><span class="year">2014</span></li>
 	</ul>
@@ -59,7 +60,7 @@ get_header(); ?>
 			<li><a href="https://www.instagram.com/trevorchristensen/">Trevor Christensen</a><span class="year">PHOTO</span></li>
 			<li><a href="https://fortfoundry.com/">Mattox Schuler</a><span class="year">TYPE</span></li>
 			<li><a href="http://beeteeth.com/">Dan Christofferson</a><span class="year">ILLUSTRATION</span></li>
-			<li>Dogs<span class="year">COOL</span></li>
+			<li><a href="http://i.imgur.com/FPxZ8WK.gifv">Dogs</a><span class="year">COOL</span></li>
 			<li><a href="https://www.instagram.com/kendrickkidd/">Kendrick Kidd</a><span class="year">DESIGN</span></li>
 			<li><a href="https://www.instagram.com/andrewcolinbeck/">Andrew Colin Beck</a><span class="year">ILLUSTRATION</span></li>
 			<li>Carbonated Water<span class="year">YEAH</span></li>
@@ -74,7 +75,8 @@ get_header(); ?>
 			<li><a href="https://www.instagram.com/trevorchristensen/">Trevor Christensen</a><span class="year">PHOTO</span></li>
 			<li>Dudes who love Batman<span class="year">THE WORST</span></li>
 			<li>Poverty<span class="year">YET WORSE</span></li>
-			<li><a href="http://www.continentaltype.co">Continental Type Co</a><span class="year">Very Bad Ugly Work Don't Look</span></li>
+			<li><a href="http://www.continentaltype.co">Continental Type</a><span class="year">VILE</span></li>
+			<li>Memes<span class="year">disrespectful</span></li>
 		</ul>
 	</div>
 </div>

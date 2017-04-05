@@ -85,7 +85,7 @@
 				&:nth-of-type(1) {
 					margin-top: 14px;
 				}
-				&:nth-of-type(3) {
+				&:last-of-type {
 					border-bottom: 0px;
 				}
 			}
@@ -102,10 +102,20 @@
 		@media screen and (min-width: 700px) {
 			float: left;
 			position: relative;
-			padding-left: 30px;
+			padding-left: 20px;
 			a {
 				padding-top: 5px;
 				padding-bottom: 0px;
+			}
+		}
+		@media screen and (min-width: 900px) {
+			padding-left: 30px;
+		}
+		@media screen and (min-width: 864px) and (max-width:1100px) {
+			&.menu-item {
+				&:nth-of-type(1) {
+					display: none;
+				}
 			}
 		}
 		&:hover > a,

@@ -2119,14 +2119,20 @@ body {
 				margin: 0 auto;
 				margin-bottom: 1.25em;
 			}
-			img.size-full, img.size-full + .caption {
-				max-width: 126%;
-				width: 126%;
-				margin-left: -13%;
-				margin-right: -13%;
+			p {
+				img.size-full, img.size-full + .caption {
+					max-width: 126%;
+					width: 126%;
+					margin-left: -13%;
+					margin-right: -13%;
+				}
+				img.size-full + .caption {
+					margin-bottom: 10px;
+				}
 			}
 			img.size-full {
 				margin-top: 25px;
+				width: 100%;
 			}
 			img.size-full + .caption {
 				margin-bottom: 25px;

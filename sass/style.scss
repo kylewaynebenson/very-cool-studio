@@ -2114,7 +2114,7 @@ body {
 			width: span(18);
 			padding: 25px 0px;
 			float: right;
-			p, ul, ol, h2, .Embed, .EmbedExpanded {
+			p, ul, ol, h2, .blockquote, h3, .instagram-media {
 				max-width: 600px;
 				margin: 0 auto;
 				margin-bottom: 1.25em;
@@ -2132,7 +2132,9 @@ body {
 			}
 			img.size-full {
 				margin-top: 25px;
+				margin-bottom: 25px;
 				width: 100%;
+				height: auto;
 			}
 			img.size-full + .caption {
 				margin-bottom: 25px;

@@ -1449,10 +1449,10 @@ body { -webkit-animation: fake 1s infinite; animation: fake 1s infinite; }
 
 @media (min-width: 1460px) { .single:not(.woocommerce) .entry-header, .single:not(.woocommerce) .entry-footer { width: 22.9166666667%; float: left; padding: 20px 0px; }
   .single:not(.woocommerce) .post-content { width: 75%; padding: 25px 0px; float: right; }
-  .single:not(.woocommerce) .post-content p, .single:not(.woocommerce) .post-content ul, .single:not(.woocommerce) .post-content ol, .single:not(.woocommerce) .post-content h2, .single:not(.woocommerce) .post-content .Embed, .single:not(.woocommerce) .post-content .EmbedExpanded { max-width: 600px; margin: 0 auto; margin-bottom: 1.25em; }
+  .single:not(.woocommerce) .post-content p, .single:not(.woocommerce) .post-content ul, .single:not(.woocommerce) .post-content ol, .single:not(.woocommerce) .post-content h2, .single:not(.woocommerce) .post-content .blockquote, .single:not(.woocommerce) .post-content h3, .single:not(.woocommerce) .post-content .instagram-media { max-width: 600px; margin: 0 auto; margin-bottom: 1.25em; }
   .single:not(.woocommerce) .post-content p img.size-full, .single:not(.woocommerce) .post-content p img.size-full + .caption { max-width: 126%; width: 126%; margin-left: -13%; margin-right: -13%; }
   .single:not(.woocommerce) .post-content p img.size-full + .caption { margin-bottom: 10px; }
-  .single:not(.woocommerce) .post-content img.size-full { margin-top: 25px; width: 100%; }
+  .single:not(.woocommerce) .post-content img.size-full { margin-top: 25px; margin-bottom: 25px; width: 100%; height: auto; }
   .single:not(.woocommerce) .post-content img.size-full + .caption { margin-bottom: 25px; } }
 
 /*--------------------------------------------------------------

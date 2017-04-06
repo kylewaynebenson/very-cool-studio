@@ -30,6 +30,15 @@ get_header(); ?>
 		                </div>
 		                <div class="entry-footer">
 		                	<h5><?php echo the_date(); ?></h5>
+		                	<?php
+		                	// this tag thing is not working currently
+					if ($posttags) {
+					  foreach($posttags as $tag) {
+						echo $sep . '<a href="' . get_tag_link($tag->term_id) . '"  class="cat-' . $tag->slug . '" title="View all posts related to'. esc_attr($tag->name) . '">' . $tag->name . '</a>';
+						$sep = ' ';
+					  }
+					}
+					?>
 		                </div>
 		            </article>
 		        <?php endwhile;?>

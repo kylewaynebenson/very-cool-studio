@@ -43,9 +43,16 @@
 		<?php
 			if ( is_single() ) {
 				echo '<div class="cat-links">';
+				$posttags = get_the_tags();
 				$sep = '';
+				if ($posttags) {
+				  foreach($posttags as $tag) {
+					echo $sep . '<a href="' . home_url() . '/?s=' . $tag->name . '"  class="cat-' . $tag->slug . '" title="View all posts related to '. esc_attr($tag->name) . '">' . $tag->name . '</a>';
+					$sep = ' ';
+				  }
+				}
 				foreach((get_the_category()) as $cat) {
-					echo $sep . '<a href="' . get_category_link($cat->term_id) . '"  class="cat-' . $cat->slug . '" title="View all posts in '. esc_attr($cat->name) . '">' . $cat->cat_name . '</a>';
+					echo $sep . '<a href="' . get_category_link($cat->term_id) . '"  class="cat-' . $cat->slug . '" title="View all posts related to '. esc_attr($cat->name) . '">' . $cat->cat_name . '</a>';
 					$sep = ' ';
 				}
 				echo '</div>';
@@ -74,5 +81,8 @@
 				if ( ! is_single() ) {
 					the_excerpt();
 				}
+				
+				// comments_template();
+				
 			} else {
 			} ?>

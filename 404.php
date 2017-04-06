@@ -18,9 +18,6 @@ get_header(); ?>
 					<img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/very-cool-studio/img/four-oh-four.svg">
 					<p class="text-center">If you think a page should be here, <a href="mailto:hello@verycoolstudio.com">email me</a>.</p>
 				</header><!-- .page-header -->
-
-
-				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 
 		</main><!-- #main -->

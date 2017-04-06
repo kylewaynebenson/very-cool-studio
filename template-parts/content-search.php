@@ -10,21 +10,14 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php verycool_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-
-	<footer class="entry-footer">
-		<?php verycool_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+            <div class="entry-header">
+		<h1 class="huge-h1">
+			<a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a>
+		</h1>
+            </div>
+            <div class="entry-footer">
+		<div class="entry-summary">
+			<?php the_excerpt(); ?>
+		</div><!-- .entry-summary -->
+            </div>
 </article><!-- #post-## -->

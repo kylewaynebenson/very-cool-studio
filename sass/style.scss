@@ -262,8 +262,8 @@ a.squiggle-black {
     background-position: -1000px 100%;
   }
 }
-.page-template-archive-articles {
-	article.post.category-article {
+.page-template-archive-articles, .search-results {
+	article {
 		border-bottom: 3px solid $gray-1;
 		@media (min-width: 768px) {
 			padding: 5px 0px;
@@ -301,7 +301,7 @@ a.squiggle-black {
 		}
 	}
 }
-.blog, .home, .archive, .category {
+.blog, .home, .category {
 	#content {
 		@media only screen and (min-width: 700px) {
 			margin-left: span(-1);
@@ -2019,9 +2019,12 @@ body {
 				box-shadow: inset 0 0px 0px 0px rgba(255, 255, 255, 1), inset 0 -2px 0px 0px $yellow;
 			}
 		}
-		ul {
+		ol, ul {
 			margin-left: 0px;
-			padding-left: 0px;
+			padding-left: 20px;
+			@media (min-width: 768px) {
+				padding-left: 35px;
+			}
 			list-style-type: none;
 			strong {
 				text-transform: uppercase;
@@ -2046,6 +2049,29 @@ body {
 				&.good:before {
 					content:"💯";
 				}
+			}
+		}
+		ul {
+			li {
+				&:before {
+					content:"👉";
+
+				}
+			}
+		}
+		ol {
+			li {
+				&:nth-of-type(1):before { content:"1"; }
+				&:nth-of-type(2):before { content:"2"; }
+				&:nth-of-type(3):before { content:"3"; }
+				&:nth-of-type(4):before { content:"4"; }
+				&:nth-of-type(5):before { content:"5"; }
+				&:nth-of-type(6):before { content:"6"; }
+				&:nth-of-type(7):before { content:"7"; }
+				&:nth-of-type(8):before { content:"8"; }
+				&:nth-of-type(9):before { content:"9"; }
+				&:nth-of-type(10):before { content:"10"; }
+				&:nth-of-type(11):before { content:"11"; }
 			}
 		}
 		h2 {
@@ -2103,6 +2129,31 @@ body {
 		left: 0px;
 		top: 0px;
 		
+	}
+	article .post-content footer {
+		margin-bottom: 1.25em;
+		margin-top: 1.25em;
+		&:before {
+			user-select: none; 
+			text-indent: 6px;
+			display: block;
+			width: 100%;
+			color: $gray-1;
+			max-width: 100%;
+			display: block;
+			font-family: 'Very Cool Icons';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 1.65em;
+			overflow: hidden;
+			line-height: 1.1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			text-overflow: clip;
+			content: "\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002\E002";
+			margin-bottom: 1.25em;
+			margin-top: 1.25em;
+		}
 	}
 	@media (min-width: 1460px) {
 		.entry-header, .entry-footer {

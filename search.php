@@ -16,7 +16,7 @@ get_header(); ?>
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'verycool' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				<h5 class="text-center page-title"><?php printf( esc_html__( 'Search Results for: %s', 'verycool' ), '<span>' . get_search_query() . '</span>' ); ?></h5>
 			</header><!-- .page-header -->
 
 			<?php
@@ -42,7 +42,8 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</section><!-- #primary -->
+	</div><!-- content -->
+</div><!-- white-page -->
 
 <?php
-get_sidebar();
 get_footer();

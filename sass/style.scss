@@ -2177,9 +2177,6 @@ body {
 					margin-left: -13%;
 					margin-right: -13%;
 				}
-				img.size-full + .caption {
-					margin-bottom: 10px;
-				}
 			}
 			img.size-full {
 				margin-top: 25px;
@@ -2187,8 +2184,9 @@ body {
 				width: 100%;
 				height: auto;
 			}
-			img.size-full + .caption {
-				margin-bottom: 25px;
+			img.size-full + .caption, img + .caption {
+				margin-top: -32px;
+				margin-bottom: 35px;
 			}
 		}
 	}

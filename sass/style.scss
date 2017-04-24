@@ -302,14 +302,19 @@ a.squiggle-black {
 	}
 }
 /* Trial Font stuff*/
-#white-page article.product-trail-fonts {
+.blog #content, .home #content, .category #content, .term-type #content, .term-objects #content {
+	@media only screen and (min-width: 700px) {
+		article.product-trail-fonts {
+			margin-bottom: span(1);
+			margin-left: span(1);
+			margin-top: 0px;
+		}
+	}
+}
+article.product-trail-fonts {
 	margin-top: span(1);
 	margin-bottom: 0px;
 	margin-left: 0px;
-}
-article.product-trail-fonts {
-	margin-bottom: span(1);
-	margin-left: span(1);
 	.button, .terms-and-conditions {
 		margin-top: 10px;
 	}
@@ -1118,6 +1123,29 @@ Cart Styles
 		}
 		th.product-total {
 			text-align: right;
+		}
+		th {
+			font-size: 12px;
+		}
+		&.cart-discount {
+			th {
+				color: $gray-2;
+			}
+		}
+		ul#shipping_method {
+			margin-left: 0px;
+			padding-left: 0px;
+			li {
+				input[type=radio] {
+					padding: 3px;
+					float: left;
+					margin-right: 4px;
+				}
+				label {
+					font-size: 10px;
+					text-align: left;
+				}
+			}
 		}
 	}
 	.cart-subtotal, .shipping {

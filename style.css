@@ -792,6 +792,8 @@ a.squiggle.squiggle-black:hover { background-position: 15px 100%; }
 .page-template-archive-articles article:last-of-type, .search-results article:last-of-type { border-bottom: 0px; }
 
 /* Trial Font stuff*/
+#white-page article.product-trail-fonts { margin-top: 4.1666666667%; margin-bottom: 0px; margin-left: 0px; }
+
 article.product-trail-fonts { margin-bottom: 4.1666666667%; margin-left: 4.1666666667%; }
 
 article.product-trail-fonts .button, article.product-trail-fonts .terms-and-conditions { margin-top: 10px; }

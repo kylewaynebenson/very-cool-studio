@@ -301,6 +301,66 @@ a.squiggle-black {
 		}
 	}
 }
+/* Trial Font stuff*/
+article.product-trail-fonts {
+	margin-bottom: span(1);
+	margin-left: span(1);
+	.button, .terms-and-conditions {
+		margin-top: 10px;
+	}
+	.terms-and-conditions {
+		color: $gray-2;
+	}
+	.response {
+		background: $gray-1;
+		font-size: 80%;
+		margin-top: 10px;
+		margin-bottom: 5px;
+		padding: 10px 12px;
+		#mce-error-response {
+
+		}
+		&#mce-success-response {
+			background: $yellow;
+		}
+	}
+	@media only screen and (min-width: 700px) {
+		border: 3px solid $gray-1;
+		padding: span(1);
+		h5:first-of-type {
+			margin-top: 0px;
+		}
+	}
+	@media only screen and (min-width: 1000px) {
+		.trial-fonts-text {
+			float: left;
+			width: 56%;
+			p:last-of-type {
+				margin-bottom: 0px;
+			}
+		}
+		.trial-fonts-fields {
+			float: right;
+			width: 37%;
+			.form-row-last, .form-row-first {
+				display: block;
+				width: 48%;
+				float: left;
+			}
+			.form-row-last {
+				margin-left: 4%;
+				&:after {
+					content: " ";
+					display: inline-block;
+					height: 0px;
+					clear: both;
+				}
+			}
+		}
+		@include clearfix;
+	}
+
+}
 .blog, .home, .category, .term-type, .term-objects {
 	#content {
 		@media only screen and (min-width: 700px) {
@@ -1137,6 +1197,7 @@ Cart Styles
 				padding-top: 0px;
 				border: 0px;
 				text-align: right;
+				min-width: 120px;
 			}
 			&:not([data-title="Total"]) {
 				font-family: $type-subhead-expanded;
@@ -1144,6 +1205,26 @@ Cart Styles
 				font-feature-settings: "tnum" 1;
 				.amount {
 					font-weight: 700;
+				}
+			}
+			.cart-discount {
+				td, th {
+					color: darken($gray-2, 10%);
+				}
+			}
+			ul#shipping_method {
+				margin-left: 0px;
+				padding-left: 0px;
+				li {
+					input[type=radio] {
+						padding: 3px;
+						float: left;
+						margin-right: 4px;
+					}
+					label {
+						font-size: 10px;
+						text-align: left;
+					}
 				}
 			}
 		}
@@ -1159,6 +1240,11 @@ Cart Styles
 			float: left;
 		}
 		th {
+			vertical-align: middle;
+			line-height: 1.1;
+			padding-bottom: 5px;
+		}
+		.order-total th {
 			vertical-align: bottom;
 		}
 		td, th {

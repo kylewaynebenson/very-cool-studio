@@ -89,7 +89,7 @@ get_header( 'shop' ); ?>
 			<div class="clear"></div>
 			<article class="product product-trail-fonts type-product">
 				<div class="trial-fonts-text">
-					<h5>Free Trial Fonts</h5>
+					<h5 id="trial">Free Trial Fonts</h5>
 					<p>Here at Very Cool, we know how important it is to handle the merchandise before you buy. That’s why we’re offering you a free trial download of each font with a newsletter subscription. After submitting the form, you’ll receive a subscription confirmation email. After accepting that, you'll receive a final email with a zip folder chock full of (<small>limited-capability</small>) trial fonts. Then you can experiment your heart out with typefaces like Cardinal Grotesque and Maritime Champion! Happy trials!</p>
 				</div>
 				<form action="//verycoolstudio.us4.list-manage.com/subscribe/post?u=edc2737100be661c0fc9e2c5e&amp;id=1e6678ac80" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="trial-fonts-fields validate" target="_blank" novalidate>

@@ -20,6 +20,8 @@ function enqueue_custom_styles_or_scripts() {
 			wp_enqueue_style( 'webfonts-cardinal-grotesque', get_stylesheet_directory_uri() . '/css/webfonts-cardinal-grotesque.css' );
 	} else if ( is_single('maritime-champion') ) {
 			wp_enqueue_style( 'webfonts-maritime-champion', get_stylesheet_directory_uri() . '/css/webfonts-maritime-champion.css' );
+	} else if ( is_single('gooper') ) {
+			wp_enqueue_style( 'webfonts-gooper', get_stylesheet_directory_uri() . '/css/webfonts-gooper.css' );
 	} else if ( is_single('cornbread') ) {
 			wp_enqueue_style( 'webfonts-cornbread', get_stylesheet_directory_uri() . '/css/webfonts-cornbread.css' );
 		}

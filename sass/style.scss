@@ -1469,20 +1469,21 @@ Product Styles
 		font-feature-settings: "smcp" 1;
 	}
 	&.cardinal-grotesque { font-family: 'Cardinal Grotesque'; line-height: 1; &.condensed { font-family: 'Cardinal Grotesque Condensed';} &.extracondensed { font-family: 'Cardinal Grotesque ExtraCondensed';} &.wide { font-family: 'Cardinal Grotesque Wide';} &.semicondensed { font-family: 'Cardinal Grotesque SemiCondensed';} }
+	&.gooper { font-family: 'Gooper'; line-height: 1; &.italic { font-style: italic;} }
 	&.business-script { font-family: 'Business Script'; line-height: 1;}
 	&.kansas-casual { font-family: 'Kansas Casual'; line-height: 1;}
 	&.maritime-champion { font-family: 'Maritime Champion'; line-height: 1; &.st { font-family: 'Maritime Champion ST';} &.sl { font-family: 'Maritime Champion SL';}}
 	&.cornbread { font-family: 'Cornbread'; line-height: 1;}
 	&.ready-script { font-family: 'Ready Script'; line-height: 1;}
-	&.thin { font-weight: 100;}
-	&.extralight, &.ultralight { font-weight: 200;}
-	&.light { font-weight: 300;}
-	&.regular { font-weight: 400;}
-	&.medium { font-weight: 500;}
-	&.semibold { font-weight: 600;}
-	&.bold { font-weight: 700;}
-	&.extrabold, &.ultrabold { font-weight: 800;}
-	&.black, &.heavy { font-weight: 900;}
+	&.thin { font-weight: 100;} &.thinitalic { font-weight: 100; font-style: italic;}
+	&.extralight, &.ultralightitalic { font-weight: 200;} &.extralightitalic, &.ultralightitalic { font-weight: 200; font-style: italic;}
+	&.light { font-weight: 300;} &.lightitalic { font-weight: 300; font-style: italic;}
+	&.regular { font-weight: 400;} &.regularitalic { font-weight: 400; font-style: italic;}
+	&.medium { font-weight: 500;} &.mediumitalic { font-weight: 500; font-style: italic;}
+	&.semibold { font-weight: 600;} &.semibolditalic { font-weight: 600; font-style: italic;}
+	&.bold { font-weight: 700;} &.bolditalic { font-weight: 700; font-style: italic;}
+	&.extrabold, &.ultrabold { font-weight: 800;} &.extrabolditalic, &.ultrabolditalic { font-weight: 800; font-style: italic;}
+	&.black, &.heavy { font-weight: 900;} &.blackitalic, &.heavyitalic { font-weight: 900; font-style: italic;}
 }
 @keyframes fake {
     from {

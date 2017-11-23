@@ -103,12 +103,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 					// 3 items need 2 bits to be represented ( 0 => 00 => "Expanded", 1 => 01 => "Standard", 2 => 10 => "Condensed" )
 					$crit1 = ["Wide", "Standard", "SemiCondensed", "Condensed", "ExtraCondensed", "SL", "ST"];
 					// 9 items need 4 bits to be represented ( 0 => 0000 => "Black", 1 => 0001 => "ExtraBold", ... 7 => 0111 => "Thin", 8 => 1000 => "ExtraLight" )
-					$crit2 = ["Black", "Heavy", "ExtraBold", "UltraBold", "Bold", "SemiBold", "Medium", "Regular", "Light", "ExtraLight", "Ultralight", "Thin", "ExtraThin"];
+					$crit2 = ["Black", "BlackItalic", "Heavy", "HeavyItalic", "ExtraBold", "ExtraBoldItalic", "UltraBold", "UltraBoldItalic", "Bold", "BoldItalic", "SemiBold", "SemiBoldItalic", "Medium", "MediumItalic", "Regular", "RegularItalic", "Light", "LightItalic", "ExtraLight", "ExtraLightItalic", "Ultralight", "UltralightItalic", "Thin", "ThinItalic", "ExtraThin", "ExtraThinItalic"];
 					// if you join all the bits, each item of your array can be represented with a 6 bits number: ( 0 => 000000 => "Expanded Black" ... 40 => 101000 => "Condensed ExtraLight" )
 
 					$crit2 = array_flip($crit2);
 
 					$result = [];
+
 
 					foreach ($arr as $item) {
 					    if (false !== strpos($item, "Wide"))

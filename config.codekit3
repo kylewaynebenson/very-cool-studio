@@ -75,6 +75,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/css\/webfonts-gooper.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/webfonts-gooper-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/css\/webfonts-kansas-casual.css": {
 		"aP": 1,
 		"bl": 0,
@@ -4921,6 +4931,24 @@
 		"oAP": "\/type\/gooper\/Gooper-Black.woff2",
 		"oF": 0
 		},
+	"\/type\/gooper\/Gooper-BlackItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-BlackItalic.eot",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-BlackItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-BlackItalic.woff",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-BlackItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-BlackItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/gooper\/Gooper-Bold.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4937,6 +4965,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/gooper\/Gooper-Bold.woff2",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-BoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-BoldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-BoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-BoldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-BoldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-BoldItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/gooper\/Gooper-Regular.eot": {
@@ -4957,6 +5003,24 @@
 		"oAP": "\/type\/gooper\/Gooper-Regular.woff2",
 		"oF": 0
 		},
+	"\/type\/gooper\/Gooper-RegularItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-RegularItalic.eot",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-RegularItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-RegularItalic.woff",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-RegularItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-RegularItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/gooper\/Gooper-SemiBold.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4973,6 +5037,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/gooper\/Gooper-SemiBold.woff2",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-SemiBoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-SemiBoldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-SemiBoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-SemiBoldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-SemiBoldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-SemiBoldItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/gooper\/Gooper-Thin.eot": {
@@ -4993,94 +5075,22 @@
 		"oAP": "\/type\/gooper\/Gooper-Thin.woff2",
 		"oF": 0
 		},
-	"\/type\/gooper\/GooperItalic-Black.eot": {
+	"\/type\/gooper\/Gooper-ThinItalic.eot": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/type\/gooper\/GooperItalic-Black.eot",
+		"oAP": "\/type\/gooper\/Gooper-ThinItalic.eot",
 		"oF": 0
 		},
-	"\/type\/gooper\/GooperItalic-Black.woff": {
+	"\/type\/gooper\/Gooper-ThinItalic.woff": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/type\/gooper\/GooperItalic-Black.woff",
+		"oAP": "\/type\/gooper\/Gooper-ThinItalic.woff",
 		"oF": 0
 		},
-	"\/type\/gooper\/GooperItalic-Black.woff2": {
+	"\/type\/gooper\/Gooper-ThinItalic.woff2": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/type\/gooper\/GooperItalic-Black.woff2",
-		"oF": 0
-		},
-	"\/type\/gooper\/GooperItalic-Bold.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/gooper\/GooperItalic-Bold.eot",
-		"oF": 0
-		},
-	"\/type\/gooper\/GooperItalic-Bold.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/gooper\/GooperItalic-Bold.woff",
-		"oF": 0
-		},
-	"\/type\/gooper\/GooperItalic-Bold.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/gooper\/GooperItalic-Bold.woff2",
-		"oF": 0
-		},
-	"\/type\/gooper\/GooperItalic-Regular.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/gooper\/GooperItalic-Regular.eot",
-		"oF": 0
-		},
-	"\/type\/gooper\/GooperItalic-Regular.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/gooper\/GooperItalic-Regular.woff",
-		"oF": 0
-		},
-	"\/type\/gooper\/GooperItalic-Regular.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/gooper\/GooperItalic-Regular.woff2",
-		"oF": 0
-		},
-	"\/type\/gooper\/GooperItalic-SemiBold.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/gooper\/GooperItalic-SemiBold.eot",
-		"oF": 0
-		},
-	"\/type\/gooper\/GooperItalic-SemiBold.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/gooper\/GooperItalic-SemiBold.woff",
-		"oF": 0
-		},
-	"\/type\/gooper\/GooperItalic-SemiBold.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/gooper\/GooperItalic-SemiBold.woff2",
-		"oF": 0
-		},
-	"\/type\/gooper\/GooperItalic-Thin.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/gooper\/GooperItalic-Thin.eot",
-		"oF": 0
-		},
-	"\/type\/gooper\/GooperItalic-Thin.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/gooper\/GooperItalic-Thin.woff",
-		"oF": 0
-		},
-	"\/type\/gooper\/GooperItalic-Thin.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/gooper\/GooperItalic-Thin.woff2",
+		"oAP": "\/type\/gooper\/Gooper-ThinItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/kansas-casual\/KansasCasual-Black.eot": {

@@ -3027,6 +3027,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/typography\/webfonts-gooper.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/webfonts-gooper.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/typography\/webfonts-kansas-casual.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -4888,6 +4901,186 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cornbread\/Cornbread-SemiBold.woff2",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Black.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Black.eot",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Black.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Black.woff",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Black.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Black.woff2",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Bold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Bold.eot",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Bold.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Bold.woff",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Bold.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Bold.woff2",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Regular.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Regular.eot",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Regular.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Regular.woff",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Regular.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Regular.woff2",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-SemiBold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-SemiBold.eot",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-SemiBold.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-SemiBold.woff",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-SemiBold.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-SemiBold.woff2",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Thin.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Thin.eot",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Thin.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Thin.woff",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Thin.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Thin.woff2",
+		"oF": 0
+		},
+	"\/type\/gooper\/GooperItalic-Black.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/GooperItalic-Black.eot",
+		"oF": 0
+		},
+	"\/type\/gooper\/GooperItalic-Black.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/GooperItalic-Black.woff",
+		"oF": 0
+		},
+	"\/type\/gooper\/GooperItalic-Black.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/GooperItalic-Black.woff2",
+		"oF": 0
+		},
+	"\/type\/gooper\/GooperItalic-Bold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/GooperItalic-Bold.eot",
+		"oF": 0
+		},
+	"\/type\/gooper\/GooperItalic-Bold.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/GooperItalic-Bold.woff",
+		"oF": 0
+		},
+	"\/type\/gooper\/GooperItalic-Bold.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/GooperItalic-Bold.woff2",
+		"oF": 0
+		},
+	"\/type\/gooper\/GooperItalic-Regular.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/GooperItalic-Regular.eot",
+		"oF": 0
+		},
+	"\/type\/gooper\/GooperItalic-Regular.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/GooperItalic-Regular.woff",
+		"oF": 0
+		},
+	"\/type\/gooper\/GooperItalic-Regular.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/GooperItalic-Regular.woff2",
+		"oF": 0
+		},
+	"\/type\/gooper\/GooperItalic-SemiBold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/GooperItalic-SemiBold.eot",
+		"oF": 0
+		},
+	"\/type\/gooper\/GooperItalic-SemiBold.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/GooperItalic-SemiBold.woff",
+		"oF": 0
+		},
+	"\/type\/gooper\/GooperItalic-SemiBold.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/GooperItalic-SemiBold.woff2",
+		"oF": 0
+		},
+	"\/type\/gooper\/GooperItalic-Thin.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/GooperItalic-Thin.eot",
+		"oF": 0
+		},
+	"\/type\/gooper\/GooperItalic-Thin.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/GooperItalic-Thin.woff",
+		"oF": 0
+		},
+	"\/type\/gooper\/GooperItalic-Thin.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/GooperItalic-Thin.woff2",
 		"oF": 0
 		},
 	"\/type\/kansas-casual\/KansasCasual-Black.eot": {

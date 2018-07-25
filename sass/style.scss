@@ -232,6 +232,14 @@ a.squiggle-black {
 		display: none;
 	}
 }
+/*--------------------------------------------------------------
+# Code Styles
+--------------------------------------------------------------*/
+code {
+	background: $gray-1;
+	border-radius: 5px;
+	padding: 1px 5px;
+}
 
 /*--------------------------------------------------------------
 # Container Styles
@@ -2212,6 +2220,7 @@ body {
 			float: right;
 			p {
 				margin-bottom: 1.25em;
+				line-height: 1.7;
 			}
 			> p:first-of-type {
 				margin-top: 3px;

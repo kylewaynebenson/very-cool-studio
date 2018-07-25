@@ -1473,7 +1473,7 @@ Product Styles
 	&.business-script { font-family: 'Business Script'; line-height: 1;}
 	&.kansas-casual { font-family: 'Kansas Casual'; line-height: 1;}
 	&.maritime-champion { font-family: 'Maritime Champion'; line-height: 1; &.st { font-family: 'Maritime Champion ST';} &.sl { font-family: 'Maritime Champion SL';}}
-	&.cornbread { font-family: 'Cornbread'; line-height: 1;}
+	&.cornbread { font-family: 'Cornbread'; line-height: 1; &.italic { font-style: italic;} }
 	&.ready-script { font-family: 'Ready Script'; line-height: 1;}
 	&.thin { font-weight: 100;} &.thinitalic { font-weight: 100; font-style: italic;}
 	&.extralight, &.ultralightitalic { font-weight: 200;} &.extralightitalic, &.ultralightitalic { font-weight: 200; font-style: italic;}
@@ -2285,7 +2285,7 @@ body {
 			width: span(18);
 			padding: 25px 0px;
 			float: right;
-			p, ul, ol, h2, .blockquote, h3, .instagram-media {
+			p, ul, ol, h2, h5, .blockquote, h3, .instagram-media {
 				max-width: 600px;
 				margin: 0 auto;
 				margin-bottom: 1.25em;

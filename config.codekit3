@@ -4427,24 +4427,6 @@
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Light.woff2",
 		"oF": 0
 		},
-	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Medium.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Medium.eot",
-		"oF": 0
-		},
-	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Medium.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Medium.woff",
-		"oF": 0
-		},
-	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Medium.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Medium.woff2",
-		"oF": 0
-		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Regular.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4841,6 +4823,24 @@
 		"oAP": "\/type\/cornbread\/Cornbread-Bold.woff2",
 		"oF": 0
 		},
+	"\/type\/cornbread\/Cornbread-BoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-BoldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-BoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-BoldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-BoldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-BoldItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cornbread\/Cornbread-Extrabold.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4859,6 +4859,42 @@
 		"oAP": "\/type\/cornbread\/Cornbread-Extrabold.woff2",
 		"oF": 0
 		},
+	"\/type\/cornbread\/Cornbread-ExtraboldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-ExtraboldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-ExtraboldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-ExtraboldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-ExtraboldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-ExtraboldItalic.woff2",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-Italic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-Italic.eot",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-Italic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-Italic.woff",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-Italic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-Italic.woff2",
+		"oF": 0
+		},
 	"\/type\/cornbread\/Cornbread-Light.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4875,6 +4911,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cornbread\/Cornbread-Light.woff2",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-LightItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-LightItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-LightItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-LightItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-LightItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-LightItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cornbread\/Cornbread-Regular.eot": {
@@ -4913,22 +4967,22 @@
 		"oAP": "\/type\/cornbread\/Cornbread-SemiBold.woff2",
 		"oF": 0
 		},
-	"\/type\/gooper\/Gooper-Black.eot": {
+	"\/type\/cornbread\/Cornbread-SemiBoldItalic.eot": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/type\/gooper\/Gooper-Black.eot",
+		"oAP": "\/type\/cornbread\/Cornbread-SemiBoldItalic.eot",
 		"oF": 0
 		},
-	"\/type\/gooper\/Gooper-Black.woff": {
+	"\/type\/cornbread\/Cornbread-SemiBoldItalic.woff": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/type\/gooper\/Gooper-Black.woff",
+		"oAP": "\/type\/cornbread\/Cornbread-SemiBoldItalic.woff",
 		"oF": 0
 		},
-	"\/type\/gooper\/Gooper-Black.woff2": {
+	"\/type\/cornbread\/Cornbread-SemiBoldItalic.woff2": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/type\/gooper\/Gooper-Black.woff2",
+		"oAP": "\/type\/cornbread\/Cornbread-SemiBoldItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/gooper\/Gooper-BlackItalic.eot": {
@@ -4949,24 +5003,6 @@
 		"oAP": "\/type\/gooper\/Gooper-BlackItalic.woff2",
 		"oF": 0
 		},
-	"\/type\/gooper\/Gooper-Bold.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/gooper\/Gooper-Bold.eot",
-		"oF": 0
-		},
-	"\/type\/gooper\/Gooper-Bold.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/gooper\/Gooper-Bold.woff",
-		"oF": 0
-		},
-	"\/type\/gooper\/Gooper-Bold.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/gooper\/Gooper-Bold.woff2",
-		"oF": 0
-		},
 	"\/type\/gooper\/Gooper-BoldItalic.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4985,22 +5021,22 @@
 		"oAP": "\/type\/gooper\/Gooper-BoldItalic.woff2",
 		"oF": 0
 		},
-	"\/type\/gooper\/Gooper-Regular.eot": {
+	"\/type\/gooper\/Gooper-LightItalic.eot": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/type\/gooper\/Gooper-Regular.eot",
+		"oAP": "\/type\/gooper\/Gooper-LightItalic.eot",
 		"oF": 0
 		},
-	"\/type\/gooper\/Gooper-Regular.woff": {
+	"\/type\/gooper\/Gooper-LightItalic.woff": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/type\/gooper\/Gooper-Regular.woff",
+		"oAP": "\/type\/gooper\/Gooper-LightItalic.woff",
 		"oF": 0
 		},
-	"\/type\/gooper\/Gooper-Regular.woff2": {
+	"\/type\/gooper\/Gooper-LightItalic.woff2": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/type\/gooper\/Gooper-Regular.woff2",
+		"oAP": "\/type\/gooper\/Gooper-LightItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/gooper\/Gooper-RegularItalic.eot": {
@@ -5021,24 +5057,6 @@
 		"oAP": "\/type\/gooper\/Gooper-RegularItalic.woff2",
 		"oF": 0
 		},
-	"\/type\/gooper\/Gooper-SemiBold.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/gooper\/Gooper-SemiBold.eot",
-		"oF": 0
-		},
-	"\/type\/gooper\/Gooper-SemiBold.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/gooper\/Gooper-SemiBold.woff",
-		"oF": 0
-		},
-	"\/type\/gooper\/Gooper-SemiBold.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/gooper\/Gooper-SemiBold.woff2",
-		"oF": 0
-		},
 	"\/type\/gooper\/Gooper-SemiBoldItalic.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -5055,24 +5073,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/gooper\/Gooper-SemiBoldItalic.woff2",
-		"oF": 0
-		},
-	"\/type\/gooper\/Gooper-Thin.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/gooper\/Gooper-Thin.eot",
-		"oF": 0
-		},
-	"\/type\/gooper\/Gooper-Thin.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/gooper\/Gooper-Thin.woff",
-		"oF": 0
-		},
-	"\/type\/gooper\/Gooper-Thin.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/gooper\/Gooper-Thin.woff2",
 		"oF": 0
 		},
 	"\/type\/gooper\/Gooper-ThinItalic.eot": {

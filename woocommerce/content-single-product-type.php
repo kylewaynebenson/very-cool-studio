@@ -101,9 +101,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 					$newfiles = str_replace("-", " ", $newfiles);
 					$arr = $newfiles;
 					// 3 items need 2 bits to be represented ( 0 => 00 => "Expanded", 1 => 01 => "Standard", 2 => 10 => "Condensed" )
-					$crit1 = ["Wide", "Standard", "SemiCondensed", "Condensed", "ExtraCondensed", "SL", "ST"];
+					$crit1 = ["Wide", "SemiCondensed", "Condensed", "ExtraCondensed", "SL", "ST"];
 					// 9 items need 4 bits to be represented ( 0 => 0000 => "Black", 1 => 0001 => "ExtraBold", ... 7 => 0111 => "Thin", 8 => 1000 => "ExtraLight" )
-					$crit2 = ["Black", "BlackItalic", "Heavy", "HeavyItalic", "ExtraBold", "ExtraBoldItalic", "UltraBold", "UltraBoldItalic", "Bold", "BoldItalic", "SemiBold", "SemiBoldItalic", "Medium", "MediumItalic", "Regular", "RegularItalic", "Light", "LightItalic", "ExtraLight", "ExtraLightItalic", "Ultralight", "UltralightItalic", "Thin", "ThinItalic", "ExtraThin", "ExtraThinItalic"];
+					$crit2 = ["Black", "BlackItalic", "ExtraBold", "ExtraBoldItalic", "UltraBold", "UltraBoldItalic", "Bold", "BoldItalic", "SemiBold", "SemiBoldItalic", "Medium", "MediumItalic", "Regular", "RegularItalic", "Light", "LightItalic", "ExtraLight", "ExtraLightItalic", "Thin", "ThinItalic",];
 					// if you join all the bits, each item of your array can be represented with a 6 bits number: ( 0 => 000000 => "Expanded Black" ... 40 => 101000 => "Condensed ExtraLight" )
 
 					$crit2 = array_flip($crit2);
@@ -408,6 +408,7 @@ $('#font-case').on('change', function () {
 				$eachfont = "";
 				$typehtml = ucwords($articles[$rand_articles[0]] . $adjectives[$rand_adjectives[0]] . $description[$rand_description[0]] . $nouns[$rand_nouns[0]] . $verbs[$rand_verbs[0]] . $prepositions[$rand_prepositions[0]] . $articles[$rand_articles[1]] . $description[$rand_description[1]] . trim($nouns[$rand_nouns[1]]) . ". " . $sentencestart[$rand_sentencestart[0]] . $articles[$rand_articles[2]] . $adjectives[$rand_adjectives[2]] . $nouns[$rand_nouns[2]] . $verbs[$rand_verbs[2]] . $prepositions[$rand_prepositions[1]] . $articles[$rand_articles[3]] . $adjectives[$rand_adjectives[3]] . trim($nouns[$rand_nouns[3]]) . "! ");
 				$valueslug = strtolower($value);
+				$value = str_replace("Italic"," Italic",$value);
 				$eachfont .= "<h5>{$value}</h5><div contenteditable='true' class='fontselect {$post->post_name} {$valueslug}'>";
 				$eachfont .= $typehtml;
 				$eachfont .= "</div>";

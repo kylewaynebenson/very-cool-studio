@@ -16,6 +16,15 @@
        url('./type/cornbread/Cornbread-Regular.woff') format('woff'), /* Pretty Modern Browsers */
 }
 @font-face {
+  font-family: 'Cornbread';
+  font-weight: 400;
+  font-style: italic;
+  src: url('./type/cornbread/Cornbread-Italic.eot'); /* IE9 Compat Modes */
+  src: url('./type/cornbread/Cornbread-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./type/cornbread/Cornbread-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./type/cornbread/Cornbread-Italic.woff') format('woff'), /* Pretty Modern Browsers */
+}
+@font-face {
   font-family: 'Cardinal Grotesque';
   font-weight: 500;
   src: url('./type/cardinal-grotesque/CardinalGrotesque-Medium.eot'); /* IE9 Compat Modes */
@@ -132,6 +141,9 @@ body {
   color: $color__text-main;
   font-weight: 400;
   font-family: $type-text;
+  em, i {
+    font-style: italic;
+  } 
   @include font-size(1);
   line-height: 1.6;
 }

@@ -429,7 +429,7 @@ $('#font-case').on('change', function () {
 			$rand_prepositions = array_rand($prepositions, 3);
 			$rand_articles = array_rand($articles, 4);
 			$rand_sentencestart = array_rand($sentencestart, 2);
-			foreach ($newfiles as &$value) {
+			foreach ($fontlist as &$value) {
 				$value = trim($value);
 				$eachfont = "";
 				$typehtml = ucwords($articles[$rand_articles[0]] . $adjectives[$rand_adjectives[0]] . $description[$rand_description[0]] . $nouns[$rand_nouns[0]] . $verbs[$rand_verbs[0]] . $prepositions[$rand_prepositions[0]] . $articles[$rand_articles[1]] . $description[$rand_description[1]] . trim($nouns[$rand_nouns[1]]) . ". " . $sentencestart[$rand_sentencestart[0]] . $articles[$rand_articles[2]] . $adjectives[$rand_adjectives[2]] . $nouns[$rand_nouns[2]] . $verbs[$rand_verbs[2]] . $prepositions[$rand_prepositions[1]] . $articles[$rand_articles[3]] . $adjectives[$rand_adjectives[3]] . trim($nouns[$rand_nouns[3]]) . "! ");

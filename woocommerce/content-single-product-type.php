@@ -86,11 +86,69 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<select class="" data-native-menu="false" id="font-weight-select" name="weight">
 
 				<?php
-					// This section pulls all the webfont names from the directory, then sorts them
+					function multi_sort(&$array, $criteria, $defaults=array()){
+					    $cache = array();
+
+					    // prepare the criteria by sorting them from longest to shortest
+					    // maintaining the original key (index)
+					    foreach($criteria as &$c){
+						uasort($c, function($a,$b){
+						    return  strlen($b) - strlen($a);
+						});
+					    }
+
+					    // define a function for returning the index matching the given str
+					    // given: 'one' and ['zero', 'one', 'two'] returns 1
+					    $findIndex = function($str, $values){
+						foreach($values as $index=>$value){
+						    if( stripos($str, $value) !== FALSE ){
+							return $index;
+						    }
+						}
+						return NULL;
+					    };
+
+					    // define a function to calculate a weighted value based on the criteria
+					    // returns a value similar to: 2000-0000-3300 (one segment for each criteria)
+					    $calculateValue = function($str) use ($criteria, $findIndex, $defaults, $cache){
+						if( !isset($cache[$str]) ){
+						    $parts = array();
+						    foreach($criteria as $i=>$c){
+							$parts[$i] = $findIndex($str, $c);
+							if( $parts[$i] === NULL ){
+							    $parts[$i] = (isset($defaults[$i]) ? $defaults[$i] : 1000);
+							}
+							$parts[$i] = str_pad($parts[$i], 4, '0');
+						    }
+						    $cache[$str] = implode($parts, '-');
+						}
+						return $cache[$str];
+					    };
+
+					    // define our compare function
+					    $compare = function($a, $b) use ($calculateValue){
+						$av = $calculateValue($a);
+						$bv = $calculateValue($b);
+						return $av > $bv;
+					    };
+
+					    // sort the array`
+					    usort($array, $compare);
+					}
+
+					// create our sort criteria.
+					$sort_criteria = array(
+					    array("Wide", "", "SemiCondensed", "Condensed", "ExtraCondensed", "SL", "ST", "Style"),
+					    array("Black", "ExtraBold", "UltraBold", "Bold", "SemiBold", "Medium", "Regular", "Light", "ExtraLight", "Thin"),
+					    array(" ", "Italic"),
+					);
+					
 					$title = get_the_title();
 					$title = str_replace(" ", "", $title);
 					global $post;
 	    				$post_slug=$post->post_name;
+					
+					// This section pulls all the webfont names from the directory, then sorts them
 					$directory = './wp-content/themes/very-cool-studio/type/';
 					$directory .= $post_slug.'/';
 					$path = $directory;
@@ -98,47 +156,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 					$files = array_diff(glob($path), array('.', '..'));
 					$newfiles = str_replace($directory.$title, "", $files);
 					$newfiles = str_replace(".woff", "", $newfiles);
-					$newfiles = str_replace("-", " ", $newfiles);
-					$arr = $newfiles;
-					// 3 items need 2 bits to be represented ( 0 => 00 => "Expanded", 1 => 01 => "Standard", 2 => 10 => "Condensed" )
-					$crit1 = ["Wide", "SemiCondensed", "Condensed", "ExtraCondensed", "SL", "ST"];
-					// 9 items need 4 bits to be represented ( 0 => 0000 => "Black", 1 => 0001 => "ExtraBold", ... 7 => 0111 => "Thin", 8 => 1000 => "ExtraLight" )
-					$crit2 = ["Black", "BlackItalic", "ExtraBold", "ExtraBoldItalic", "UltraBold", "UltraBoldItalic", "Bold", "BoldItalic", "SemiBold", "SemiBoldItalic", "Medium", "MediumItalic", "Regular", "RegularItalic", "Light", "LightItalic", "ExtraLight", "ExtraLightItalic", "Thin", "ThinItalic",];
-					// if you join all the bits, each item of your array can be represented with a 6 bits number: ( 0 => 000000 => "Expanded Black" ... 40 => 101000 => "Condensed ExtraLight" )
+					$fontlist = str_replace("-", " ", $newfiles);
 
-					$crit2 = array_flip($crit2);
+					// sort our array; default for criteria 1 is 1 (i.e. Standard)
+					multi_sort($fontlist, $sort_criteria, array(1));
 
-					$result = [];
-
-
-					foreach ($arr as $item) {
-					    if (false !== strpos($item, "Wide"))
-					        $key = 0;  // 000000
-					    elseif (false !== strpos($item, "SemiCondensed"))
-					        $key = 32; // 100000
-					    elseif (false !== strpos($item, "ExtraCondensed"))
-					        $key = 60; // 100000
-					    elseif (false !== strpos($item, "Condensed"))
-					        $key = 48; // 100000
-					    elseif (false !== strpos($item, "SL"))
-					        $key = 76; // 100000
-					    elseif (false !== strpos($item, "ST"))
-					        $key = 92; // 100000
-					    else
-					        $key = 16; // 010000
-
-					    $parts = explode(' ', $item);
-					    $weight = isset($parts[1]) ? $parts[1] : $parts[0];
-					    $key += $crit2[$weight];
-
-					    $result[$key] = $item;
-					}
-
-					ksort($result, SORT_NUMERIC);
 					// This section prints out the select for the type tester
-					$newfiles = $result;
 					$html = '';
-					foreach ($newfiles as &$value) {
+					foreach ($fontlist as &$value) {
 						$valueslug = trim(strtolower($value));
 						$value = trim($value);
 						if ($value == $typetesterdefault | strtolower($value) == strtolower($typetesterdefault)) {
@@ -150,6 +175,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						}
 					}
 					echo $html;
+
 				?>
 				</select>
 			</div>

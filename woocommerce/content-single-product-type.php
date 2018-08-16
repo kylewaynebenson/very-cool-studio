@@ -79,16 +79,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php /*<select class="" data-native-menu="false" id="font-family-select" name="typeface"> 
 			<option value="<?php echo $post->post_name;?>"><?php the_title(); ?></option> 
 		</select> */ ?> 
-		<div class="type-tester-header">
+		  <div class="type-tester-header">
 			<input id="font-size-slider" type="range" min="10" max="160" value="48">
 			<div class="select">
 				<span class="arr"></span>
 				<select class="" data-native-menu="false" id="font-weight-select" name="weight">
-
 				<?php
 					function multi_sort(&$array, $criteria, $defaults=array()){
 					    $cache = array();
-
 					    // prepare the criteria by sorting them from longest to shortest
 					    // maintaining the original key (index)
 					    foreach($criteria as &$c){
@@ -96,7 +94,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 						    return  strlen($b) - strlen($a);
 						});
 					    }
-
 					    // define a function for returning the index matching the given str
 					    // given: 'one' and ['zero', 'one', 'two'] returns 1
 					    $findIndex = function($str, $values){
@@ -107,7 +104,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 						}
 						return NULL;
 					    };
-
 					    // define a function to calculate a weighted value based on the criteria
 					    // returns a value similar to: 2000-0000-3300 (one segment for each criteria)
 					    $calculateValue = function($str) use ($criteria, $findIndex, $defaults, $cache){
@@ -124,30 +120,27 @@ if ( ! defined( 'ABSPATH' ) ) {
 						}
 						return $cache[$str];
 					    };
-
 					    // define our compare function
 					    $compare = function($a, $b) use ($calculateValue){
 						$av = $calculateValue($a);
 						$bv = $calculateValue($b);
 						return $av > $bv;
 					    };
-
 					    // sort the array`
 					    usort($array, $compare);
 					}
-
 					// create our sort criteria.
 					$sort_criteria = array(
 					    array("Wide", "", "SemiCondensed", "Condensed", "ExtraCondensed", "SL", "ST", "Style"),
 					    array("Black", "ExtraBold", "UltraBold", "Bold", "SemiBold", "Medium", "Regular", "Light", "ExtraLight", "Thin"),
 					    array(" ", "Italic"),
 					);
-					
+
 					$title = get_the_title();
 					$title = str_replace(" ", "", $title);
 					global $post;
-	    				$post_slug=$post->post_name;
-					
+						$post_slug=$post->post_name;
+
 					// This section pulls all the webfont names from the directory, then sorts them
 					$directory = './wp-content/themes/very-cool-studio/type/';
 					$directory .= $post_slug.'/';
@@ -157,10 +150,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 					$newfiles = str_replace($directory.$title, "", $files);
 					$newfiles = str_replace(".woff", "", $newfiles);
 					$fontlist = str_replace("-", " ", $newfiles);
-
 					// sort our array; default for criteria 1 is 1 (i.e. Standard)
 					multi_sort($fontlist, $sort_criteria, array(1));
-
 					// This section prints out the select for the type tester
 					$html = '';
 					foreach ($fontlist as &$value) {
@@ -175,160 +166,75 @@ if ( ! defined( 'ABSPATH' ) ) {
 						}
 					}
 					echo $html;
-
 				?>
 				</select>
 			</div>
-			<?php if ( is_single('kansas-casual') or is_single('maritime-champion') ) { ?>
-			<?php } else if ( is_single('cardinal-grotesque') ) { ?>
-				<div class="type-tester-frac type-tester-checkbox">
-					<input id="font-frac" type="checkbox" name="frac" value="frac">
-					Fractions
-					<script>
-					/* frac */
-					var btnalt = document.querySelector(".type-tester-frac"),
-					    typetester = document.querySelector("span.fontselect"),
-					    activeClassfrac = "frac",
-					    inputfrac = document.querySelector("#font-frac");
+			<div id="font-feature-controls">
+			      <form id="font-feature-input-form">
+				    <h3>Kerning</h3>
+				    <div class="group">
+					  <label class="type-tester-checkbox"><input id="kern" type="checkbox" checked />Enabled (kern)</label>
+				    </div>
+				    <h3>Ligatures</h3>
+				    <div class="group">
+					  <label class="type-tester-checkbox"><input id="liga" type="checkbox" checked />Common (liga)</label>
+					  <label class="type-tester-checkbox"><input id="dlig" type="checkbox">Discretionary (dlig)</label>
+					  <label class="type-tester-checkbox"><input id="hlig" type="checkbox">Historical (hlig)</label>
+					  <label class="type-tester-checkbox"><input id="clig" type="checkbox">Contextual (clig)</label>
+				    </div>
+				    <h3>Letter Case</h3>
+				    <div class="group">
+				    <label><input name="smcp" checked="checked" type="radio">Off</label>
+					  <label class="type-tester-checkbox"><input id="smcp" name="smcp" type="radio">Small Caps (smcp)</label>
+					  <label class="type-tester-checkbox"><input id="c2sc" name="smcp" type="radio">Small Caps from Caps (c2sc)</label>
+				    </div>
+				    <h3>Number Case</h3>
+				    <div class="group">
+				    <label><input name="numsty" checked="checked" type="radio">Default</label>
+					  <label class="type-tester-checkbox"><input id="lnum" name="numsty" type="radio">Lining (lnum)</label>
+					  <label class="type-tester-checkbox"><input id="onum" name="numsty" type="radio">Old-Style (onum)</label>
+				    </div>
+				    <h3>Number Spacing</h3>
+				    <div class="group">
+				    <label><input name="numspc" checked="checked" type="radio">Default</label>
+					  <label class="type-tester-checkbox"><input id="pnum" name="numspc" type="radio">Proportional (pnum)</label>
+					  <label class="type-tester-checkbox"><input id="tnum" name="numspc" type="radio">Tabular (tnum)</label>
+				    </div>
+				    <h3>Fractions</h3>
+				    <div class="group">
+				    <label><input name="frac" checked="checked" type="radio">Off</label>
+					  <label class="type-tester-checkbox"><input id="frac" name="frac" type="radio">Normal (frac)</label>
+					  <label class="type-tester-checkbox"><input id="afrc" name="frac" type="radio">Alternate (afrc)</label>
+				    </div>
+				    <h3>Numeric Extras</h3>
+				    <div class="group">
+					  <label class="type-tester-checkbox"><input id="zero" type="checkbox">Slashed Zero (zero)</label>
+					  <label class="type-tester-checkbox"><input id="nalt" type="checkbox">Alt. Annotation (nalt)</label>
+				    </div>
+				    <h3>Character Alternatives</h3>
+				    <div class="group">
+					  <label class="type-tester-checkbox"><input id="swsh" type="checkbox">Swash (swsh)</label>
+					  <label class="type-tester-checkbox"><input id="calt" type="checkbox">Contextual (calt)</label>
+					  <label class="type-tester-checkbox"><input id="hist" type="checkbox">Historical (hist)</label>
+				    </div>
+				    <h3>Alternative Stylistic Sets</h3>
+				    <div class="group">
+					  <label class="type-tester-checkbox"><input id="ss01" type="checkbox">Set 1 (ss01)</label>
+					  <label class="type-tester-checkbox"><input id="ss02" type="checkbox">Set 2 (ss02)</label>
+					  <label class="type-tester-checkbox"><input id="ss03" type="checkbox">Set 3 (ss03)</label>
+					  <label class="type-tester-checkbox"><input id="ss04" type="checkbox">Set 4 (ss04)</label>
+					  <label class="type-tester-checkbox"><input id="ss05" type="checkbox">Set 5 (ss05)</label>
+				    </div>
 
-					btnalt.addEventListener("click", function(e){
-					  e.preventDefault();
-					  typetester.classList.toggle(activeClassfrac);
-					  inputfrac.classList.toggle('checked');
-					});
-					</script>
-				</div>
-				<div class="type-tester-ss01 type-tester-checkbox">
-					<input id="font-ss01" type="checkbox" name="ss01" value="ss01">
-					ss01
-					<script>
-					/* ss01 */
-					var btnalt = document.querySelector(".type-tester-ss01"),
-					    typetester = document.querySelector("span.fontselect"),
-					    activeClassss01 = "ss01",
-					    inputss01 = document.querySelector("#font-ss01");
+				    <label id="reset"><input type="reset" value="Defaults" /></label>
 
-					btnalt.addEventListener("click", function(e){
-					  e.preventDefault();
-					  typetester.classList.toggle(activeClassss01);
-					  inputss01.classList.toggle('checked');
-					});
-					</script>
-				</div>
-				<div class="type-tester-ss04 type-tester-checkbox">
-					<input id="font-ss04" type="checkbox" name="ss04" value="ss04">
-					ss04
-					<script>
-					/* ss04 */
-					var btnalt = document.querySelector(".type-tester-ss04"),
-					    typetester = document.querySelector("span.fontselect"),
-					    activeClassss04 = "ss04",
-					    inputss04 = document.querySelector("#font-ss04");
-
-					btnalt.addEventListener("click", function(e){
-					  e.preventDefault();
-					  typetester.classList.toggle(activeClassss04);
-					  inputss04.classList.toggle('checked');
-					});
-					</script>
-				</div>
-				<div class="type-tester-ss07 type-tester-checkbox">
-					<input id="font-ss07" type="checkbox" name="ss07" value="ss07">
-					ss07
-					<script>
-					/* ss07 */
-					var btnalt = document.querySelector(".type-tester-ss07"),
-					    typetester = document.querySelector("span.fontselect"),
-					    activeClassss07 = "ss07",
-					    inputss07 = document.querySelector("#font-ss07");
-
-					btnalt.addEventListener("click", function(e){
-					  e.preventDefault();
-					  typetester.classList.toggle(activeClassss07);
-					  inputss07.classList.toggle('checked');
-					});
-					</script>
-				</div>
-			<?php } else { ?>
-				<div class="type-tester-ligatures type-tester-checkbox">
-					<input id="font-ligatures" type="checkbox" name="ligatures" value="liga">
-					Liga
-					<script>
-					/* ligatures */
-					var btn = document.querySelector(".type-tester-ligatures"),
-					    typetester = document.querySelector("span.fontselect"),
-					    activeClassliga = "liga",
-					    inputliga = document.querySelector("#font-ligatures");
-
-					btn.addEventListener("click", function(e){
-					  e.preventDefault();
-					  typetester.classList.toggle(activeClassliga);
-					  inputliga.classList.toggle('checked');
-					});
-					</script>
-				</div>
-				<div class="type-tester-alts type-tester-checkbox">
-					<input id="font-alts" type="checkbox" name="alts" value="salt">
-					Alts
-					<script>
-					/* alts */
-					var btnalt = document.querySelector(".type-tester-alts"),
-					    typetester = document.querySelector("span.fontselect"),
-					    activeClassalts = "alts",
-					    inputalts = document.querySelector("#font-alts");
-
-					btnalt.addEventListener("click", function(e){
-					  e.preventDefault();
-					  typetester.classList.toggle(activeClassalts);
-					  inputalts.classList.toggle('checked');
-					});
-					</script>
-				</div>
-			<?php } ?>
-			<?php if ( is_single('business-script') ) { ?>
-				<div class="type-tester-swsh type-tester-checkbox">
-					<input id="font-swsh" type="checkbox" name="swsh" value="swsh">
-					Swsh
-					<script>
-					/* swsh */
-					var btnalt = document.querySelector(".type-tester-swsh"),
-					    typetester = document.querySelector("span.fontselect"),
-					    activeClassswsh = "swsh",
-					    inputswsh = document.querySelector("#font-swsh");
-
-					btnalt.addEventListener("click", function(e){
-					  e.preventDefault();
-					  typetester.classList.toggle(activeClassswsh);
-					  inputswsh.classList.toggle('checked');
-					});
-					</script>
-				</div>
-			<?php } else if ( is_single('ready-script') or is_single('cardinal-grotesque') ) { ?>
-				<div class="type-tester-case type-tester-checkbox">
-					<input id="font-case" type="checkbox" name="case" value="case">
-					Case
-					<script>
-					/* case */
-					var btnalt = document.querySelector(".type-tester-case"),
-					    typetester = document.querySelector("span.fontselect"),
-					    activeClasscase = "case",
-					    inputcase = document.querySelector("#font-case");
-
-					btnalt.addEventListener("click", function(e){
-					  e.preventDefault();
-					  typetester.classList.toggle(activeClasscase);
-					  inputcase.classList.toggle('checked');
-					});
-					</script>
-				</div>
-		<?php } ?>
-
-		</div>
-		<div class="type-tester-footer">
-			 <?php if($product->price){ ?><a href="#pricing" type="submit" class="button chamfered-button chamfered-button-gray">See Pricing</a><?php } else { }; ?>
-			<h5 class="type-tester-notice">Type tester does not demonstrate actual scope or<br> function of typeface thanks to browser limitations.</h5>
-		</div>
-	 </div>
+			      </form>
+			</div> <!-- /feature controls -->
+			<div class="type-tester-footer">
+				 <?php if($product->price){ ?><a href="#pricing" type="submit" class="button chamfered-button chamfered-button-gray">See Pricing</a><?php } else { }; ?>
+				<h5 class="type-tester-notice">Type tester doesn't always demonstrate full<br> scope or function of typeface.</h5>
+			</div>
+		   </div>
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
 	</div>
 	<footer class="entry-footer">

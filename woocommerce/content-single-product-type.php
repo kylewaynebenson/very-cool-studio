@@ -250,47 +250,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 </div><!-- #product-<?php the_ID(); ?> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script>
-$('#font-family-select').data('oldVal', $('#font-family-select').val());
-$('#font-family-select').change(function() {
-    var $this = $(this);
-    var newClass = $this.val();
-    var oldClass = $this.data('oldVal');
-    $this.data('oldVal', newClass);
-    
-    $('div.type-tester span.fontselect').removeClass(oldClass).addClass(newClass);
-/*==  $('div.type-tester span.ui-btn-text').text($this.find('option:selected').text()); ==*/
-   });
-
-$('#font-weight-select').data('oldVal', $('#font-weight-select').val());
-$('#font-weight-select').change(function() {
-    var $this = $(this);
-    var newClass = $this.val();
-    var oldClass = $this.data('oldVal');
-    $this.data('oldVal', newClass);
-    
-    $('div.type-tester span.fontweight').removeClass(oldClass).addClass(newClass);
-/*==     $('div.type-tester span.ui-btn-text').text($this.find('option:selected').text());==*/
-});
-/* slider */
-$('#font-size-slider').on('change', function () {
-    var v = $(this).val();
-    $('div.type-tester span.fontselect').css('font-size', v + 'px')
-});
-/* ligatures */
-$('#font-alts').on('change', function () {
-    var x = this.checked ? 'ss01' : ' ';
-    $('div.type-tester span.fontselect').css('font-feature-settings', x )
-});
-$('#font-liga').on('change', function () {
-    var x = this.checked ? 'liga' : ' ';
-    $('div.type-tester span.fontselect').css('font-feature-settings', x )
-});
-$('#font-case').on('change', function () {
-    var x = this.checked ? 'case' : ' ';
-    $('div.type-tester span.fontselect').css('font-feature-settings', x )
-});
-</script>
 <?php do_action( 'woocommerce_after_single_product' ); ?>
 <div class="clear"></div>
 <?php if (!$product->get_gallery_attachment_ids()){ ?>

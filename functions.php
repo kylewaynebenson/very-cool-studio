@@ -28,6 +28,9 @@ function enqueue_custom_styles_or_scripts() {
 	if ( is_single() || is_product() ) {
 		$path = get_stylesheet_directory_uri() .'/js/';
 		wp_enqueue_script('post-navigation', $path.'jquery.navigate.js', array('jquery'));
+	} else 	if ( is_product() ) {
+		$path = get_stylesheet_directory_uri() .'/js/';
+		wp_enqueue_script('font-feature-controls', $path.'font-feature-controls.js', array());
 	}
 
 }

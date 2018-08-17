@@ -1,6 +1,27 @@
 $(document).ready(
 function() {
+	$('#font-family-select').data('oldVal', $('#font-family-select').val());
+	$('#font-family-select').change(function() {
+	    var $this = $(this);
+	    var newClass = $this.val();
+	    var oldClass = $this.data('oldVal');
+	    $this.data('oldVal', newClass);
+	    $('div.type-tester span.fontselect').removeClass(oldClass).addClass(newClass);
+	   });
 
+	$('#font-weight-select').data('oldVal', $('#font-weight-select').val());
+	$('#font-weight-select').change(function() {
+	    var $this = $(this);
+	    var newClass = $this.val();
+	    var oldClass = $this.data('oldVal');
+	    $this.data('oldVal', newClass);
+	    $('div.type-tester span.fontweight').removeClass(oldClass).addClass(newClass);
+	});
+	// fontsize slider
+	$('#font-size-slider').on('change', function () {
+	    var v = $(this).val();
+	    $('div.type-tester span.fontselect').css('font-size', v + 'px')
+	});
 	// hide controls and set heading images to closed
 	$('.group').hide();
 	$('#font-feature-controls h3').addClass("closed");
@@ -93,3 +114,4 @@ function refreshSample() {
   sample.style.WebkitFontFeatureSettings = wfeatures;
   sample.style.FontFeatureSettings = wfeatures;
 };
+

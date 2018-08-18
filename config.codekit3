@@ -4085,6 +4085,24 @@
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-Bold.woff2",
 		"oF": 0
 		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-BoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-BoldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-BoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-BoldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-BoldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-BoldItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesque-ExtraBold.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4101,6 +4119,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-ExtraBold.woff2",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-ExtraBoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-ExtraBoldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-ExtraBoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-ExtraBoldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-ExtraBoldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-ExtraBoldItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesque-ExtraLight.eot": {
@@ -4121,6 +4157,24 @@
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-ExtraLight.woff2",
 		"oF": 0
 		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-ExtraLightItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-ExtraLightItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-ExtraLightItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-ExtraLightItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-ExtraLightItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-ExtraLightItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesque-Light.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4137,6 +4191,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-Light.woff2",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-LightItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-LightItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-LightItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-LightItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-LightItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-LightItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesque-Medium.eot": {
@@ -4157,6 +4229,24 @@
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-Medium.woff2",
 		"oF": 0
 		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-MediumItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-MediumItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-MediumItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-MediumItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-MediumItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-MediumItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesque-Regular.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4173,6 +4263,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-Regular.woff2",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-RegularItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-RegularItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-RegularItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-RegularItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-RegularItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-RegularItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesque-SemiBold.eot": {
@@ -4193,6 +4301,24 @@
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-SemiBold.woff2",
 		"oF": 0
 		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-SemiBoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-SemiBoldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-SemiBoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-SemiBoldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-SemiBoldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-SemiBoldItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesque-Thin.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4209,6 +4335,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-Thin.woff2",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-ThinItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-ThinItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-ThinItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-ThinItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesque-ThinItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesque-ThinItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-Bold.eot": {
@@ -4229,6 +4373,24 @@
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-Bold.woff2",
 		"oF": 0
 		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-BoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-BoldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-BoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-BoldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-BoldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-BoldItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ExtraBold.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4245,6 +4407,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ExtraBold.woff2",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ExtraBoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ExtraBoldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ExtraBoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ExtraBoldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ExtraBoldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ExtraBoldItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ExtraLight.eot": {
@@ -4265,6 +4445,24 @@
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ExtraLight.woff2",
 		"oF": 0
 		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ExtraLightItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ExtraLightItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ExtraLightItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ExtraLightItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ExtraLightItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ExtraLightItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-Light.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4281,6 +4479,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-Light.woff2",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-LightItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-LightItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-LightItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-LightItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-LightItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-LightItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-Medium.eot": {
@@ -4301,6 +4517,24 @@
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-Medium.woff2",
 		"oF": 0
 		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-MediumItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-MediumItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-MediumItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-MediumItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-MediumItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-MediumItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-Regular.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4317,6 +4551,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-Regular.woff2",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-RegularItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-RegularItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-RegularItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-RegularItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-RegularItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-RegularItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-SemiBold.eot": {
@@ -4337,6 +4589,24 @@
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-SemiBold.woff2",
 		"oF": 0
 		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-SemiBoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-SemiBoldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-SemiBoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-SemiBoldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-SemiBoldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-SemiBoldItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-Thin.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4353,6 +4623,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-Thin.woff2",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ThinItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ThinItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ThinItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ThinItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ThinItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueCondensed-ThinItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Bold.eot": {
@@ -4373,6 +4661,24 @@
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Bold.woff2",
 		"oF": 0
 		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-BoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-BoldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-BoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-BoldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-BoldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-BoldItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ExtraBold.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4389,6 +4695,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ExtraBold.woff2",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ExtraBoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ExtraBoldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ExtraBoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ExtraBoldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ExtraBoldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ExtraBoldItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ExtraLight.eot": {
@@ -4409,6 +4733,24 @@
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ExtraLight.woff2",
 		"oF": 0
 		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ExtraLightItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ExtraLightItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ExtraLightItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ExtraLightItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ExtraLightItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ExtraLightItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Light.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4425,6 +4767,42 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Light.woff2",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-LightItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-LightItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-LightItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-LightItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-LightItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-LightItalic.woff2",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Medium.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Medium.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Medium.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Medium.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Medium.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Medium.woff2",
 		"oF": 0
 		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Regular.eot": {
@@ -4445,6 +4823,24 @@
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Regular.woff2",
 		"oF": 0
 		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-RegularItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-RegularItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-RegularItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-RegularItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-RegularItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-RegularItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-SemiBold.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4461,6 +4857,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-SemiBold.woff2",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-SemiBoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-SemiBoldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-SemiBoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-SemiBoldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-SemiBoldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-SemiBoldItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Thin.eot": {
@@ -4481,6 +4895,24 @@
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-Thin.woff2",
 		"oF": 0
 		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ThinItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ThinItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ThinItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ThinItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ThinItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueExtraCondensed-ThinItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-Bold.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4497,6 +4929,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-Bold.woff2",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-BoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-BoldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-BoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-BoldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-BoldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-BoldItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ExtraBold.eot": {
@@ -4517,6 +4967,24 @@
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ExtraBold.woff2",
 		"oF": 0
 		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ExtraBoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ExtraBoldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ExtraBoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ExtraBoldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ExtraBoldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ExtraBoldItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ExtraLight.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4533,6 +5001,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ExtraLight.woff2",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ExtraLightItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ExtraLightItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ExtraLightItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ExtraLightItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ExtraLightItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ExtraLightItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-Light.eot": {
@@ -4553,6 +5039,24 @@
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-Light.woff2",
 		"oF": 0
 		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-LightItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-LightItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-LightItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-LightItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-LightItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-LightItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-Medium.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4569,6 +5073,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-Medium.woff2",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-MediumItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-MediumItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-MediumItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-MediumItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-MediumItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-MediumItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-Regular.eot": {
@@ -4589,6 +5111,24 @@
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-Regular.woff2",
 		"oF": 0
 		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-RegularItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-RegularItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-RegularItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-RegularItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-RegularItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-RegularItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-SemiBold.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4605,6 +5145,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-SemiBold.woff2",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-SemiBoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-SemiBoldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-SemiBoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-SemiBoldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-SemiBoldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-SemiBoldItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-Thin.eot": {
@@ -4625,6 +5183,24 @@
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-Thin.woff2",
 		"oF": 0
 		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ThinItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ThinItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ThinItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ThinItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ThinItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueSemiCondensed-ThinItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-Black.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4641,6 +5217,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-Black.woff2",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-BlackItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-BlackItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-BlackItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-BlackItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-BlackItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-BlackItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-Bold.eot": {
@@ -4661,6 +5255,24 @@
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-Bold.woff2",
 		"oF": 0
 		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-BoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-BoldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-BoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-BoldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-BoldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-BoldItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ExtraBold.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4677,6 +5289,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ExtraBold.woff2",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ExtraBoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ExtraBoldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ExtraBoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ExtraBoldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ExtraBoldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ExtraBoldItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ExtraLight.eot": {
@@ -4697,6 +5327,24 @@
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ExtraLight.woff2",
 		"oF": 0
 		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ExtraLightItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ExtraLightItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ExtraLightItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ExtraLightItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ExtraLightItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ExtraLightItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-Light.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4713,6 +5361,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-Light.woff2",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-LightItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-LightItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-LightItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-LightItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-LightItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-LightItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-Medium.eot": {
@@ -4733,6 +5399,24 @@
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-Medium.woff2",
 		"oF": 0
 		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-MediumItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-MediumItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-MediumItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-MediumItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-MediumItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-MediumItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-Regular.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4749,6 +5433,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-Regular.woff2",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-RegularItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-RegularItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-RegularItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-RegularItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-RegularItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-RegularItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-SemiBold.eot": {
@@ -4769,6 +5471,24 @@
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-SemiBold.woff2",
 		"oF": 0
 		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-SemiBoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-SemiBoldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-SemiBoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-SemiBoldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-SemiBoldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-SemiBoldItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-Thin.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4785,6 +5505,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-Thin.woff2",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ThinItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ThinItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ThinItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ThinItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ThinItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cardinal-grotesque\/CardinalGrotesqueWide-ThinItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cornbread\/Cornbread-Black.eot": {
@@ -4823,24 +5561,6 @@
 		"oAP": "\/type\/cornbread\/Cornbread-Bold.woff2",
 		"oF": 0
 		},
-	"\/type\/cornbread\/Cornbread-BoldItalic.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/cornbread\/Cornbread-BoldItalic.eot",
-		"oF": 0
-		},
-	"\/type\/cornbread\/Cornbread-BoldItalic.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/cornbread\/Cornbread-BoldItalic.woff",
-		"oF": 0
-		},
-	"\/type\/cornbread\/Cornbread-BoldItalic.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/cornbread\/Cornbread-BoldItalic.woff2",
-		"oF": 0
-		},
 	"\/type\/cornbread\/Cornbread-Extrabold.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4859,42 +5579,6 @@
 		"oAP": "\/type\/cornbread\/Cornbread-Extrabold.woff2",
 		"oF": 0
 		},
-	"\/type\/cornbread\/Cornbread-ExtraboldItalic.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/cornbread\/Cornbread-ExtraboldItalic.eot",
-		"oF": 0
-		},
-	"\/type\/cornbread\/Cornbread-ExtraboldItalic.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/cornbread\/Cornbread-ExtraboldItalic.woff",
-		"oF": 0
-		},
-	"\/type\/cornbread\/Cornbread-ExtraboldItalic.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/cornbread\/Cornbread-ExtraboldItalic.woff2",
-		"oF": 0
-		},
-	"\/type\/cornbread\/Cornbread-Italic.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/cornbread\/Cornbread-Italic.eot",
-		"oF": 0
-		},
-	"\/type\/cornbread\/Cornbread-Italic.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/cornbread\/Cornbread-Italic.woff",
-		"oF": 0
-		},
-	"\/type\/cornbread\/Cornbread-Italic.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/cornbread\/Cornbread-Italic.woff2",
-		"oF": 0
-		},
 	"\/type\/cornbread\/Cornbread-Light.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -4911,24 +5595,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cornbread\/Cornbread-Light.woff2",
-		"oF": 0
-		},
-	"\/type\/cornbread\/Cornbread-LightItalic.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/cornbread\/Cornbread-LightItalic.eot",
-		"oF": 0
-		},
-	"\/type\/cornbread\/Cornbread-LightItalic.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/cornbread\/Cornbread-LightItalic.woff",
-		"oF": 0
-		},
-	"\/type\/cornbread\/Cornbread-LightItalic.woff2": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/type\/cornbread\/Cornbread-LightItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cornbread\/Cornbread-Regular.eot": {
@@ -4967,22 +5633,22 @@
 		"oAP": "\/type\/cornbread\/Cornbread-SemiBold.woff2",
 		"oF": 0
 		},
-	"\/type\/cornbread\/Cornbread-SemiBoldItalic.eot": {
+	"\/type\/gooper\/Gooper-Black.eot": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/type\/cornbread\/Cornbread-SemiBoldItalic.eot",
+		"oAP": "\/type\/gooper\/Gooper-Black.eot",
 		"oF": 0
 		},
-	"\/type\/cornbread\/Cornbread-SemiBoldItalic.woff": {
+	"\/type\/gooper\/Gooper-Black.woff": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/type\/cornbread\/Cornbread-SemiBoldItalic.woff",
+		"oAP": "\/type\/gooper\/Gooper-Black.woff",
 		"oF": 0
 		},
-	"\/type\/cornbread\/Cornbread-SemiBoldItalic.woff2": {
+	"\/type\/gooper\/Gooper-Black.woff2": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/type\/cornbread\/Cornbread-SemiBoldItalic.woff2",
+		"oAP": "\/type\/gooper\/Gooper-Black.woff2",
 		"oF": 0
 		},
 	"\/type\/gooper\/Gooper-BlackItalic.eot": {
@@ -5003,6 +5669,24 @@
 		"oAP": "\/type\/gooper\/Gooper-BlackItalic.woff2",
 		"oF": 0
 		},
+	"\/type\/gooper\/Gooper-Bold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Bold.eot",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Bold.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Bold.woff",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Bold.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Bold.woff2",
+		"oF": 0
+		},
 	"\/type\/gooper\/Gooper-BoldItalic.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -5019,6 +5703,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/gooper\/Gooper-BoldItalic.woff2",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Light.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Light.eot",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Light.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Light.woff",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Light.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Light.woff2",
 		"oF": 0
 		},
 	"\/type\/gooper\/Gooper-LightItalic.eot": {
@@ -5039,6 +5741,24 @@
 		"oAP": "\/type\/gooper\/Gooper-LightItalic.woff2",
 		"oF": 0
 		},
+	"\/type\/gooper\/Gooper-Regular.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Regular.eot",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Regular.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Regular.woff",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Regular.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Regular.woff2",
+		"oF": 0
+		},
 	"\/type\/gooper\/Gooper-RegularItalic.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -5057,6 +5777,24 @@
 		"oAP": "\/type\/gooper\/Gooper-RegularItalic.woff2",
 		"oF": 0
 		},
+	"\/type\/gooper\/Gooper-SemiBold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-SemiBold.eot",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-SemiBold.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-SemiBold.woff",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-SemiBold.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-SemiBold.woff2",
+		"oF": 0
+		},
 	"\/type\/gooper\/Gooper-SemiBoldItalic.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -5073,6 +5811,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/gooper\/Gooper-SemiBoldItalic.woff2",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Thin.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Thin.eot",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Thin.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Thin.woff",
+		"oF": 0
+		},
+	"\/type\/gooper\/Gooper-Thin.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/gooper\/Gooper-Thin.woff2",
 		"oF": 0
 		},
 	"\/type\/gooper\/Gooper-ThinItalic.eot": {

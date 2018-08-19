@@ -383,6 +383,19 @@ article.product-trail-fonts {
 		}
 	}
 	article.product-cat-type, article.product-cat-objects {
+		position: relative;
+		max-width: 499px;
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: span(1);
+		border: 3px solid $gray-1;
+		&:hover {
+			background: $white;
+			border: 3px solid $gray-2;
+		}
+		&:active {
+			background: $gray-1;
+		}
 		&.outofstock {
 			a.button {
 				display: none;
@@ -451,17 +464,8 @@ article.product-trail-fonts {
 				background-repeat: no-repeat;
 			}
 		}
-		background: $white;
-		position: relative;
-		max-width: 499px;
-		width: 100%;
-		display: block;
-		margin: 0 auto;
-		margin-bottom: span(1);
 		.entry-header {
-			border: 3px solid $gray-1;
 			height: 165px;
-			background: $white;
 			overflow: hidden;
 			text-align: center;
 			transition: background 0.05s;
@@ -470,22 +474,16 @@ article.product-trail-fonts {
 				top: 50%;
 				transform: translateY(-50%);
 			}
-			&:hover {
-				background: $gray-1;
-			}
-			&:active {
-				background: $gray-2;
-			}
 		}
 		.entry-footer {
-			border: 3px solid $gray-1;
-			border-top: 0px;
 			padding: 4px;
-			padding-top: 20px;
-			padding-bottom: 10px;		
+			padding-bottom: 8px;		
 			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			@media only screen and (min-width: 700px) {
-				min-height: 102px;
+				min-height: 92px;
 			}	
 			.cat-links {
 				a {
@@ -497,6 +495,7 @@ article.product-trail-fonts {
 		h5, .h5 {
 			margin-top: 0px;
 			margin-bottom: 0px;
+			flex: 1 100%;
 		}
 		a {
 			text-decoration: none;
@@ -507,6 +506,7 @@ article.product-trail-fonts {
 			font-weight: 600; //maybe should be 450
 			font-size: 1.6em;
 			line-height: 1;
+			flex: 1 100%;
 			letter-spacing: .02em;
 		}
 		.add_to_cart_button {
@@ -543,6 +543,7 @@ article.product-trail-fonts {
 		.price {
 			color: $yellow;
 			font-weight: 700;
+			flex: 1 100%;
 			font-size: 6em;
 			font-size: 1em;
 			margin-top: 0px;
@@ -560,18 +561,18 @@ article.product-trail-fonts {
 			width: span(7);
 			margin-left: span(1);
 			margin-bottom: span(1);
-			height: 267px;
+			height: 257px;
 		}
 		@media only screen and (min-width: 700px) and (max-width: 919px) {
 			float: left;
 			margin-left: span(1);
 			width: span(11);
 			margin-bottom: span(1);
-			height: 267px;
+			height: 257px;
 		}
 		@media (min-width: 1048px) {
 			width: span(5);
-			height: 267px;
+			height: 257px;
 		}
 	}
 	article.post:not(.type-product) {
@@ -1411,6 +1412,9 @@ body {
 			text-decoration: none;
 			cursor: hand;
 			cursor: pointer;
+			white-space: nowrap; 
+			overflow: hidden;
+			text-overflow: ellipsis;
 			&:hover, &.active {
 				background-color: $white;
 			}
@@ -2287,6 +2291,10 @@ body {
 	}
 }
 body {
+	@media (max-width: 479px) {
+		box-sizing: border-box;
+		max-width: 100% !important;
+	}
 	#white-page.white-page {
 		background: $white;
 		padding: 15px;

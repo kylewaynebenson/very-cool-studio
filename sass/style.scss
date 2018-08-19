@@ -1407,75 +1407,6 @@ Product Styles
 	width: 100%;
 	display: block;
 	font-size: 60px;
-	&.liga {
-		font-feature-settings: "liga" 1;
-		&.case {
-			font-feature-settings: "liga" 1, "case" 1;
-		}
-	}
-	&.frac {
-		font-feature-settings: "frac" 1;
-		&.case {
-			font-feature-settings: "frac" 1, "case" 1;
-		}
-		&.ss01 {
-			font-feature-settings: "frac" 1, "ss01" 1;
-		}
-		&.ss04 {
-			font-feature-settings: "frac" 1, "ss04" 1;
-		}
-		&.ss01.ss04 {
-			font-feature-settings: "frac" 1, "ss04" 1, "ss01" 1;
-		}
-	}
-	&.case {
-		font-feature-settings: "case" 1;
-		&.ss01 {
-			font-feature-settings: "case" 1, "ss01" 1;
-		}
-		&.ss04 {
-			font-feature-settings: "case" 1, "ss04" 1;
-		}
-		&.ss01.ss04 {
-			font-feature-settings: "case" 1, "ss04" 1, "ss01" 1;
-		}
-	}
-	&.alts, &.ss01 {
-		font-feature-settings: "ss01" 1;
-		&.ss07 {
-			font-feature-settings: "ss01" 1, "ss07" 1;
-		}
-		&.ss07.ss04 {
-			font-feature-settings: "ss04" 1, "ss07" 1, "ss01";
-		}
-	}
-	&.ss02 {
-		font-feature-settings: "ss02" 1;
-	}
-	&.ss03 {
-		font-feature-settings: "ss03" 1;
-	}
-	&.ss04 {
-		font-feature-settings: "ss04" 1;
-		&.ss07 {
-			font-feature-settings: "ss04" 1, "ss07" 1;
-		}
-	}
-	&.ss05 {
-		font-feature-settings: "ss05" 1;
-	}
-	&.ss06 {
-		font-feature-settings: "ss06" 1;
-	}
-	&.ss07 {
-		font-feature-settings: "ss07" 1;
-	}
-	&.swsh {
-		font-feature-settings: "swsh" 1;
-	}
-	&.smcp {
-		font-feature-settings: "smcp" 1;
-	}
 	&.cardinal-grotesque { font-family: 'Cardinal Grotesque'; line-height: 1; &.condensed { font-family: 'Cardinal Grotesque Condensed';} &.extracondensed { font-family: 'Cardinal Grotesque ExtraCondensed';} &.wide { font-family: 'Cardinal Grotesque Wide';} &.semicondensed { font-family: 'Cardinal Grotesque SemiCondensed';} }
 	&.gooper { font-family: 'Gooper'; line-height: 1; &.italic { font-style: italic;} }
 	&.business-script { font-family: 'Business Script'; line-height: 1;}
@@ -1504,72 +1435,137 @@ Product Styles
 body {        
     animation: fake 1s infinite;
 }
-.radio-tabs {
-	.state {
-	    position: absolute;
-	    left: -10000px;
-	}
-	.tabs {
-		border-bottom: 3px solid $gray-1;
-		margin: 25px 0px 15px 0px;
-		@media (min-width: 768px) {
-			margin: 60px 0px 35px 0px;
+.tabs {
+	border-bottom: 3px solid $gray-1;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0px;
+	padding: 0px;
+	li.tab {
+		flex: 1;
+		list-style-type: none;
+		padding: 6px 6px 0px 0px;
+		&:last-child {
+			padding-right: 0px;
 		}
-		.tab {
-			position: relative;
-			bottom: -3px;
-			display: inline-block;
-			padding: 7px 18px 4px 18px;
-			vertical-align: top;
-			background-color: $gray-1;
+		a {
+			padding: 7px 0px 4px 0px;
+			text-align: center;
+			background: $gray-1;
 			border: 3px solid $gray-1;
+			margin-bottom: -3px;
 			border-bottom: 0px;
+			display: block;
+			width: 100%;
+			text-decoration: none;
 			cursor: hand;
 			cursor: pointer;
+			&:hover, &.active {
+				background-color: $white;
+			}
 		}
 	}
-	.panels {
-		.panel {
-			display: none;
-		}
+}
+#Waterfall {
+	margin-bottom: 20px;
+	.fontselect {
+		overflow-y: visible;
+		overflow-x: hidden;
+		word-break: keep-all;
+    		white-space: nowrap;
+    		line-height: 1;
+    		height: 70px;
+    		outline: none;
+    		position: relative;
+    		@media (max-width: 660px) {
+    			font-size: 40px;
+    			height: 48px;
+    		}
 	}
-	#specimen:focus ~ .tabs #specimen-tab,
-	#gallery:focus ~ .tabs #gallery-tab {
-
+	h5 {
+		margin: 7px 0px 2px 0px;
 	}
-	#specimen:checked ~ .tabs #specimen-tab,
-	#gallery:checked ~ .tabs #gallery-tab {
-		padding: 7px 18px;
-		background-color: $white;
-		cursor: default;
-	}
-	#specimen:checked ~ .panels #specimen-panel,
-	#gallery:checked ~ .panels #gallery-panel {
-	    display: block;
-	}
-	#gallery-panel {
-		margin-bottom: 20px;
-		.fontselect {
-			overflow-y: visible;
-			overflow-x: hidden;
-			word-break: keep-all;
-	    		white-space: nowrap;
-	    		line-height: 1;
-	    		height: 70px;
-	    		outline: none;
-	    		position: relative;
-	    		@media (max-width: 660px) {
-	    			font-size: 40px;
-	    			height: 48px;
-	    		}
-		}
+	@media (min-width: 768px) {
+		margin-bottom: 35px;
 		h5 {
-			margin: 7px 0px 2px 0px;
+			margin: 14px 0px 4px 0px;
 		}
-		@media (min-width: 768px) {
-			margin-bottom: 35px;
-			h5 {
-				margin: 14px 0px 4px 0px;
+	}
+}
+#font-feature-controls {
+	.tabgroup {
+		border: 3px solid $gray-1;
+		border-top: 0px;
+		border-bottom: 0px;
+	}
+	.tabgroup div {
+		width: 100%;
+		display: block;
+		min-height: 25px;
+		padding-top: 3px;
+		padding-left: 10px;
+	}
+	#type-tester-output {
+		display: none;
+	}
+	.hidden {
+		display: none;
+	}
+	.type-tester-radio  {
+		color: $gray-2;
+		padding: 5px 6px 4px 6px;
+		cursor: pointer;
+		font-family: $type-subhead-expanded;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: .12em;
+		line-height: .4;
+		font-size: 11px;
+		input[type="radio"] {
+			  -webkit-appearance: none;
+			  margin: 0px 0px -1px 0px;
+			  border-radius: 50%;
+			  border: 0px;
+			  background: $gray-2;
+			  padding: 5px;
+			  outline: none;
+			&:checked, &:focus {
+				background: $yellow !important;
+				border: 0px;
+			}
+		}
+	}
+	.type-tester-checkbox {
+		@media only screen and (max-width: 661px) {
+			margin-bottom: 3px;
+			margin-top: 3px;
+		}
+		cursor: pointer;
+		color: $gray-2;
+		padding: 5px 6px 4px 6px;
+		border: 3px solid transparent;
+		border-left: 0px;
+		font-family: $type-subhead-expanded;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: .12em;
+		line-height: .4;
+		font-size: 11px;
+		font-feature-settings: "case" 1;
+		input[type="checkbox"] {
+			margin: 0px 0px -1px 0px;
+			cursor: pointer;
+			border: 0px solid $gray-2;
+			background: $gray-1;
+			width: 9px;
+			height: 9px;
+			border-radius: 0px;
+			-webkit-appearance: none;
+			outline: none;
+			&:checked, &.checked {
+				border: 0px;
+				background: $yellow;
 			}
 		}
 	}
@@ -1577,104 +1573,33 @@ body {
 .type-tester {
 	display: block;
 	border: 3px solid $gray-1;
-	width: span(24);
-	float: left;
-	position: relative;
-	@media (min-width: 768px) {
-		width: span(36);
-		margin-left: span(-12);
-	}
-	@media (min-width: 1000px) {
-		width: span(38.5);
-		margin-left: span(-14.5);
-		margin-top: 15px;
-	}
-	&:before, &:after {
-		display:block;
-		width: 19px;
-		height: 17px;
-		position: absolute;
-		background: $white;
-		z-index: 1;
-		bottom: -3px;
-		color: $gray-1;
-		font-family: 'Very Cool Icons';
-		font-style: normal;
-		font-size: 27px;
-		font-weight: 500;
-		line-height: .45;
-		content: "\E008";
-	}
-	&:before {
-		left: -3px;
-	}
-	&:after {
-		right: -3px;
-		transform: scale(-1, 1);
-	}
-	span {
-		outline: none;
-	}
+	border-top: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-content: stretch;
+	flex-wrap: wrap;
 	.fontselect {
-		width: 100%;
+		flex: 1 100%;
+		outline: none;
 		display: block;
 		text-align: center;
 		line-height: 1.1;
 		padding: 30px;
-		border-bottom: 3px solid $gray-1;
 		min-height: 100px;
 		font-size: 70px;
 		transition: font 0.3s ease;
 		margin-bottom: -3px;
 	}
-	.type-tester-title {
-		display: none;
-		@media only screen and (min-width: 965px) {
-			padding: 14px 20px;
-			width: span(7);
-			text-align: center;
-			display: block;
-			float: left;
-		}
-		h5, .h5 {
-			margin-top: 0px;
-			margin-bottom: 0px;
-		}
-		.entry-title {
-			margin: 0px 0px 4px 0px;
-			font-family: $type-subhead;
-			font-weight: 600; //maybe should be 450
-			font-size: 1.6em;
-			line-height: 1;
-			letter-spacing: .02em;
-		}
-	}
 	.type-tester-header {
-		@media only screen and (min-width: 965px) {
-			width: span(17);
-			float: right;
-			border-left: 3px solid $gray-1;
-		}
-		border-bottom: 3px solid $gray-1;
 		font-family: $type-subhead;
 		font-weight: 600 !important; //maybe should be 450
 		font-size: 20px;
-		@include clearfix;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;		
 		.select {
-			position: relative;
-			float: left;
-			border: 3px solid $gray-1;
-			border-left: 0px;
-			margin-bottom: -3px;
-			@media only screen and (max-width: 660px) {
-				border-right: 0px;
-				width: 50%;
-				height: 41px;
-			}
-			@media only screen and (min-width: 661px) {
-				width: auto;
-				max-width: 170px;
-			}
+			height: 40px;
+			flex: 1;
 			padding: 0px 0px 4px 10px;
 			select {
 				cursor: pointer;
@@ -1692,99 +1617,14 @@ body {
 				font-size: inherit;
 				line-height: inherit;
 			}
-			.arr {
-				background: transparent;
-				bottom: 5px;
-				position: absolute;
-				right: 15px;
-				top: 5px;
-				width: 20px;
-				pointer-events: none;
-				&:before {
-					content: ' ';
-					position: absolute;
-					z-index: 1;
-					top: 50%;
-					right: -4px;
-					margin-top: -4px;
-					pointer-events: none;
-					border-top: 10px solid $gray-2;
-					border-left: 10px solid transparent;
-					border-right: 10px solid transparent;
-				}
-				&:after {
-					content: ' ';
-					position: absolute;
-					z-index: 1;
-					top: 50%;
-					right: 0px;
-					margin-top: -5px;
-					pointer-events: none;
-					border-top: 6px solid #fff;
-					border-left: 6px solid transparent;
-					border-right: 6px solid transparent;
-				}
-			}
-		}
-		.type-tester-checkbox {
-			@media only screen and (max-width: 661px) {
-				margin-bottom: 3px;
-				margin-top: 3px;
-			}
-			cursor: pointer;
-			float: left;
-			color: $gray-2;
-			padding: 5px 6px 4px 6px;
-			border: 3px solid transparent;
-			border-left: 0px;
-			margin-bottom: -8px;
-			font-family: $type-subhead-expanded;
-			font-weight: 700;
-			text-transform: uppercase;
-			letter-spacing: .12em;
-			line-height: .4;
-			font-size: 11px;
-			-webkit-font-feature-settings: "case" 1;
-			-moz-font-feature-settings:    "case" 1;
-			-ms-font-feature-settings:     "case" 1;
-			font-feature-settings:         "case" 1;
-			&:last-of-type {
-				border-right: 0px;
-				@media only screen and (max-width: 660px) {
-					display: none;
-				}
-			}
-			input[type="checkbox"] {
-				cursor: pointer;
-				border: 0px solid $gray-2;
-				background: $gray-1;
-				width: 10px;
-				height: 10px;
-				margin-right: 5px;
-				border-radius: 0px;
-				-webkit-appearance: none;
-				outline: none;
-				&:checked, &.checked {
-					border: 0px;
-					background: $yellow;
-				}
-			}
 		}
 		#font-size-slider {
 			font-family: $type-subhead;
 			font-weight: 600 !important; //maybe should be 450
-			font-size: 20px;
-			@media only screen and (max-width: 660px) {
-				width: 50%;
-				height: 41px;
-			}
-			width: 30%;
+			height: 40px;
+			flex: 1;
 			color: $gray-2;
-			float: left;
 			padding: 5px 10px 7px 10px;
-			border: 3px solid $gray-1;
-			border-left: 0px;
-			margin-bottom: -3px;
 			&:before {
 				content: "S";
 				margin-right: 5px;
@@ -1794,42 +1634,15 @@ body {
 				margin-left: 5px;
 			}
 		}
-
-	}
-	.type-tester-footer {
-		@media only screen and (min-width: 965px) {
-			width: span(17);
-			float: right;
-		}
-		@media only screen and (max-width: 660px) {
-			text-align: center;
-		}
-		padding: 4px;
-		a.button {
-			display: inline-block;
-			margin: 10px 20px 9px 12px;
-			@media only screen and (min-width: 965px) {
-				margin-left: -3px;
-			}
-		}
-		.type-tester-notice {
-			line-height: 1.2;
-			letter-spacing: .05em;
-			@media only screen and (max-width: 660px) {
-				display: none;
-			}
-			float: right;
-			text-align: right;
-			font-weight: 500;
-			color: $gray-2;
-			margin: 10px 20px 10px -5px;
-		}
 	}
 	.price {
-		color: $yellow;
 		font-size: 1em;
 		margin-top: 0px;
 		margin-bottom: 0px;
+		.h6 {
+			color: $gray-2;
+			text-decoration: none;
+		}
 	}
 }
 /*--------------------------------------------------------------
@@ -2324,10 +2137,6 @@ body {
 # Page Styles
 --------------------------------------------------------------*/
 .page-template-page-studio {
-	#page {
-		header.site-header {
-		}
-	}
 	footer.footer {
 	}
 	.white-page {
@@ -2410,8 +2219,17 @@ body {
 #page {
 	color: $black;
 	background: $gray-1;
-	@media (min-width: 480px) {
+	@media (min-width: 480px) and (max-width: 1147px) {
 		padding: 25px;
+		&+ .yellow-page.product-footer {
+			margin: -25px 25px 25px 25px;
+		}
+	}
+	@media (min-width: 1148px) {
+		padding: 25px;
+		&+ .yellow-page.product-footer {
+			margin-top: -25px;
+		}
 	}
 	.entry-content {
 		> h5:first-of-type {
@@ -2503,30 +2321,6 @@ body {
 	}
 }
 @media (min-width: 1048px) {
-	.single-product, .post-type-archive-product {
-		header.site-header {
-			.site-branding:after {
-				content: "a Type Foundry";
-				margin-right: -40px;
-			}
-		}
-	}
-	.page-template-page-studio {
-		header.site-header {
-			.site-branding:after {
-				content: "a guy";
-				margin-right: -45px;
-			}
-		}
-	}
-	.home {
-		header.site-header {
-			.site-branding:after {
-				content: "a Design Studio";
-				margin-right: -45px;
-			}
-		}	
-	}
 	.woocommerce-cart {
 		.page-title {
 			display: none;
@@ -2993,4 +2787,34 @@ footer.footer {
 }
 .edit-link {
 	display: none;
+}
+.mt-5 {
+  margin-top: .5vw;
+}
+.mt-10 {
+  margin-top: 1vw;
+}
+.mt-15 {
+  margin-top: 1.5vw;
+}
+.mt-20 {
+  margin-top: 2vw;
+}
+.mt-30 {
+  margin-top: 3vw;
+}
+.mb-5 {
+  margin-bottom: .5vw;
+}
+.mb-10 {
+  margin-bottom: 1vw;
+}
+.mb-15 {
+  margin-bottom: 1.5vw;
+}
+.mb-20 {
+  margin-bottom: 2vw;
+}
+.mb-30 {
+  margin-bottom: 3vw;
 }

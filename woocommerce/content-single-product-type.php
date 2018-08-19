@@ -50,39 +50,98 @@ if ( ! defined( 'ABSPATH' ) ) {
 			        <li><span class="post-meta-key">Widths</span> <?php echo get_post_meta($post->ID, 'Widths', true); ?></li>
 			    <?php } ?>
 			</ul>
-			
+			<div class="summary-cart">
+				<?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?>
+			</div>
+			<meta itemprop="url" content="<?php the_permalink(); ?>" />
 	</header><!-- .entry-header -->
 	<div class="post-content">
 		<div class="post-description">
 			<?php the_content(); ?>
 		</div>
-			<div class="type-tester"> 
-			<?php
-				// This section lets you set the default typetester font if there is one
-				$tags = get_the_terms( $post->ID, 'product_tag' );
-				foreach ( $tags as $tag ) {
-				    $typetesterdefault = $tag->slug;
-				}
-				if (empty($typetesterdefault)){
-					$typetesterdefault = "Regular";
-				}
-			?>
-		<span contenteditable="true" id="type-tester-editable" class="fontselect fontsize fontweight de 64 textfield <?php echo $post->post_name;?> <?php echo $typetesterdefault; ?>">Try <?php the_title(); ?></span> 
-		<div class="type-tester-title">
-			<h4 class="entry-title"><?php the_title(); ?></h4>
-			<h5><?php echo get_the_excerpt(); ?></h5>
-			<h4 class="price h4"><?php global $product; echo $product->get_price_html(); ?>
-			<meta itemprop="price" content="<?php echo esc_attr( $product->get_price() ); ?>" />
-			<meta itemprop="priceCurrency" content="<?php echo esc_attr( get_woocommerce_currency() ); ?>" /></h4>
+	</div>
+	<div class="clear"></div>
+	<div id="font-feature-controls">
+		<form id="font-feature-input-form">
+			<ul class="tabs" data-tabgroup="first-tab-group">
+				<li class="tab"><a class="h6 active" href="#Ligatures">Ligatures</a></li>
+				<li class="tab"><a class="h6" href="#LetterCase">Letter Case</a></li>
+				<li class="tab"><a class="h6" href="#NumberCase">Number Case</a></li>
+				<li class="tab"><a class="h6" href="#Number">Number Spacing</a></li>
+				<li class="tab"><a class="h6" href="#Fractions">Fractions</a></li>
+				<!-- <li class="tab"><a class="h6" href="#Alternates">Alternates</a></li> -->
+				<li class="tab"><a class="h6" href="#Stylistic">Stylistic Sets</a></li>
+			</ul>
+			<section id="first-tab-group" class="tabgroup">
+				<div class="active" id="Ligatures">
+					<label class="type-tester-checkbox"><input id="liga" type="checkbox" checked /> Common <span class="hidden">(liga)</span></label>
+					<label class="type-tester-checkbox"><input id="dlig" type="checkbox"> Discretionary <span class="hidden">(dlig)</span></label>
+					<label class="type-tester-checkbox"><input id="hlig" type="checkbox"> Historical <span class="hidden">(hlig)</span></label>
+					<label class="type-tester-checkbox"><input id="clig" type="checkbox"> Contextual <span class="hidden">(clig)</span></label>
+				</div>
+				<div id="LetterCase">
+					<label class="type-tester-radio"><input name="smcp" checked="checked" type="radio"> Off</label>
+					<label class="type-tester-radio"><input id="smcp" name="smcp" type="radio"> Small Caps <span class="hidden">(smcp)</span></label>
+					<label class="type-tester-radio"><input id="c2sc" name="smcp" type="radio"> Small Caps from Caps <span class="hidden">(c2sc)</span></label>
+				</div>
+				<div id="NumberCase">
+					<label class="type-tester-radio"><input name="numsty" checked="checked" type="radio"> Default</label>
+					<label class="type-tester-radio"><input id="lnum" name="numsty" type="radio"> Lining <span class="hidden">(lnum)</span></label>
+					<label class="type-tester-radio"><input id="onum" name="numsty" type="radio"> Old-Style <span class="hidden">(onum)</span></label>
+				</div>
+				<div id="Number">
+					<label class="type-tester-radio"><input name="numspc" checked="checked" type="radio"> Default</label>
+					<label class="type-tester-radio"><input id="pnum" name="numspc" type="radio"> Proportional <span class="hidden">(pnum)</span></label>
+					<label class="type-tester-radio"><input id="tnum" name="numspc" type="radio"> Tabular <span class="hidden">(tnum)</span></label>
+				</div>
+				<div id="Fractions">
+					<label class="type-tester-radio"><input name="frac" checked="checked" type="radio"> Off</label>
+					<label class="type-tester-radio"><input id="frac" name="frac" type="radio"> Normal <span class="hidden">(frac)</span></label>
+					<label class="type-tester-radio"><input id="afrc" name="frac" type="radio"> Alternate <span class="hidden">(afrc)</span></label>
+				</div>
+				<!-- <div id="Alternates">
+					<label class="type-tester-checkbox"><input id="swsh" type="checkbox"> Swash <span class="hidden">(swsh)</span></label>
+					<label class="type-tester-checkbox"><input id="calt" type="checkbox"> Contextual <span class="hidden">(calt)</span></label>
+					<label class="type-tester-checkbox"><input id="hist" type="checkbox"> Historical <span class="hidden">(hist)</span></label>
+				</div> -->
+				<div id="Stylistic">
+					<label class="type-tester-checkbox"><input id="ss01" type="checkbox"> Set 1 <span class="hidden">(ss01)</span></label>
+					<label class="type-tester-checkbox"><input id="ss02" type="checkbox"> Set 2 <span class="hidden">(ss02)</span></label>
+					<label class="type-tester-checkbox"><input id="ss03" type="checkbox"> Set 3 <span class="hidden">(ss03)</span></label>
+					<label class="type-tester-checkbox"><input id="ss04" type="checkbox"> Set 4 <span class="hidden">(ss04)</span></label>
+					<label class="type-tester-checkbox"><input id="ss05" type="checkbox"> Set 5 <span class="hidden">(ss05)</span></label>
+					<label class="type-tester-checkbox"><input id="ss06" type="checkbox"> Set 6 <span class="hidden">(ss06)</span></label>
+					<label class="type-tester-checkbox"><input id="ss07" type="checkbox"> Set 7 <span class="hidden">(ss07)</span></label>
+				</div>
+			</section>
+	        </form>
+		<div id="type-tester-output">
+			-moz-font-feature-settings:<span id="mozfeatures" contenteditable="" onkeyup="refreshSample()"></span>;
+			<br />
+			-ms-font-feature-settings:<span id="msfeatures" contenteditable="" onkeyup="refreshSample()"></span>;
+			<br />
+			-o-font-feature-settings:<span id="ofeatures" contenteditable="" onkeyup="refreshSample()"></span>;
+			<br />
+			-webkit-font-feature-settings:<span id="webkitfeatures" contenteditable="" onkeyup="refreshSample()"></span>;
+			<br />
+			font-feature-settings:<span id="w3cfeatures"></span>;
 		</div>
-		<!-- Selector for if I want to be able to change font family in the future -->
-		<?php /*<select class="" data-native-menu="false" id="font-family-select" name="typeface"> 
-			<option value="<?php echo $post->post_name;?>"><?php the_title(); ?></option> 
-		</select> */ ?> 
-		  <div class="type-tester-header">
+	</div><!-- /feature controls -->
+	<div class="type-tester">
+		<?php
+			// This section lets you set the default typetester font if there is one
+			$tags = get_the_terms( $post->ID, 'product_tag' );
+			foreach ( $tags as $tag ) {
+			    $typetesterdefault = $tag->slug;
+			}
+			if (empty($typetesterdefault)){
+				$typetesterdefault = "Regular";
+			}
+		?>
+		<div contenteditable="true" id="type-tester-editable" class="fontselect fontsize fontweight de 64 textfield <?php echo $post->post_name;?> <?php echo $typetesterdefault; ?>">Try <?php the_title(); ?></div> 
+		<div class="type-tester-header">
 			<input id="font-size-slider" type="range" min="10" max="160" value="48">
 			<div class="select">
-				<span class="arr"></span>
 				<select class="" data-native-menu="false" id="font-weight-select" name="weight">
 				<?php
 					function multi_sort(&$array, $criteria, $defaults=array()){
@@ -161,112 +220,42 @@ if ( ! defined( 'ABSPATH' ) ) {
 						    $html .= "<option value='{$valueslug}' selected>";
 						    $html .= "{$value}</option> ";
 						} else {
+							$newvalue = str_replace("Italic"," Italic",$value);
 						    $html .= "<option value='{$valueslug}'>";
-						    $html .= "{$value}</option> ";
+						    $html .= "{$newvalue}</option> ";
 						}
 					}
 					echo $html;
 				?>
 				</select>
+				<?php global $product ?>
+				<meta itemprop="price" content="<?php echo esc_attr( $product->get_price() ); ?>" />
+				<meta itemprop="priceCurrency" content="<?php echo esc_attr( get_woocommerce_currency() ); ?>" />
 			</div>
-			<div id="font-feature-controls">
-			      <form id="font-feature-input-form">
-				    <h3>Kerning</h3>
-				    <div class="group">
-					  <label class="type-tester-checkbox"><input id="kern" type="checkbox" checked />Enabled (kern)</label>
-				    </div>
-				    <h3>Ligatures</h3>
-				    <div class="group">
-					  <label class="type-tester-checkbox"><input id="liga" type="checkbox" checked />Common (liga)</label>
-					  <label class="type-tester-checkbox"><input id="dlig" type="checkbox">Discretionary (dlig)</label>
-					  <label class="type-tester-checkbox"><input id="hlig" type="checkbox">Historical (hlig)</label>
-					  <label class="type-tester-checkbox"><input id="clig" type="checkbox">Contextual (clig)</label>
-				    </div>
-				    <h3>Letter Case</h3>
-				    <div class="group">
-				    <label><input name="smcp" checked="checked" type="radio">Off</label>
-					  <label class="type-tester-checkbox"><input id="smcp" name="smcp" type="radio">Small Caps (smcp)</label>
-					  <label class="type-tester-checkbox"><input id="c2sc" name="smcp" type="radio">Small Caps from Caps (c2sc)</label>
-				    </div>
-				    <h3>Number Case</h3>
-				    <div class="group">
-				    <label><input name="numsty" checked="checked" type="radio">Default</label>
-					  <label class="type-tester-checkbox"><input id="lnum" name="numsty" type="radio">Lining (lnum)</label>
-					  <label class="type-tester-checkbox"><input id="onum" name="numsty" type="radio">Old-Style (onum)</label>
-				    </div>
-				    <h3>Number Spacing</h3>
-				    <div class="group">
-				    <label><input name="numspc" checked="checked" type="radio">Default</label>
-					  <label class="type-tester-checkbox"><input id="pnum" name="numspc" type="radio">Proportional (pnum)</label>
-					  <label class="type-tester-checkbox"><input id="tnum" name="numspc" type="radio">Tabular (tnum)</label>
-				    </div>
-				    <h3>Fractions</h3>
-				    <div class="group">
-				    <label><input name="frac" checked="checked" type="radio">Off</label>
-					  <label class="type-tester-checkbox"><input id="frac" name="frac" type="radio">Normal (frac)</label>
-					  <label class="type-tester-checkbox"><input id="afrc" name="frac" type="radio">Alternate (afrc)</label>
-				    </div>
-				    <h3>Numeric Extras</h3>
-				    <div class="group">
-					  <label class="type-tester-checkbox"><input id="zero" type="checkbox">Slashed Zero (zero)</label>
-					  <label class="type-tester-checkbox"><input id="nalt" type="checkbox">Alt. Annotation (nalt)</label>
-				    </div>
-				    <h3>Character Alternatives</h3>
-				    <div class="group">
-					  <label class="type-tester-checkbox"><input id="swsh" type="checkbox">Swash (swsh)</label>
-					  <label class="type-tester-checkbox"><input id="calt" type="checkbox">Contextual (calt)</label>
-					  <label class="type-tester-checkbox"><input id="hist" type="checkbox">Historical (hist)</label>
-				    </div>
-				    <h3>Alternative Stylistic Sets</h3>
-				    <div class="group">
-					  <label class="type-tester-checkbox"><input id="ss01" type="checkbox">Set 1 (ss01)</label>
-					  <label class="type-tester-checkbox"><input id="ss02" type="checkbox">Set 2 (ss02)</label>
-					  <label class="type-tester-checkbox"><input id="ss03" type="checkbox">Set 3 (ss03)</label>
-					  <label class="type-tester-checkbox"><input id="ss04" type="checkbox">Set 4 (ss04)</label>
-					  <label class="type-tester-checkbox"><input id="ss05" type="checkbox">Set 5 (ss05)</label>
-				    </div>
-
-				    <label id="reset"><input type="reset" value="Defaults" /></label>
-
-			      </form>
-			</div> <!-- /feature controls -->
-			<div class="type-tester-footer">
-				 <?php if($product->price){ ?><a href="#pricing" type="submit" class="button chamfered-button chamfered-button-gray">See Pricing</a><?php } else { }; ?>
-				<h5 class="type-tester-notice">Type tester doesn't always demonstrate full<br> scope or function of typeface.</h5>
-			</div>
-		   </div>
-	<meta itemprop="url" content="<?php the_permalink(); ?>" />
-	</div>
-	<footer class="entry-footer">
-		<?php
-				verycool_entry_footer();
-				the_post_navigation();
-
-		if ( 'post' === get_post_type() ) : ?>
-		<?php
-		endif; ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
-
+		</div>
+	 </div>
+	</article><!-- #post-## -->
 </div><!-- #product-<?php the_ID(); ?> -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <?php do_action( 'woocommerce_after_single_product' ); ?>
 <div class="clear"></div>
 <?php if (!$product->get_gallery_attachment_ids()){ ?>
 	<br/>
 <?php }else{ ?>
-<div class="radio-tabs">
-	<input class="state" type="radio" title="Specimen" name="houses-state" id="specimen" checked />
-	<input class="state" type="radio" title="Gallery" name="houses-state" id="gallery" />
-	<!-- <input class="state" type="radio" title="Process" name="houses-state" id="process" /> -->
-
-	<div class="tabs">
-		<label for="specimen" id="specimen-tab" class="tab">Specimen</label>
-		<label for="gallery" id="gallery-tab" class="tab">Gallery</label>
-		<!-- <label for="process" id="process-tab" class="tab">Process</label> -->
-	</div>
-	<div class="panels">
-		<div id="specimen-panel" class="panel active">
+	<ul class="tabs mt-30 mb-15" data-tabgroup="second-tab-group">
+		<li class="tab"><a class="h6 active" href="#Pricing">Pricing</a></li>
+		<li class="tab"><a class="h6" href="#Specimen">Specimen</a></li>
+		<li class="tab"><a class="h6" href="#Waterfall">Waterfall</a></li>
+	</ul>
+	<section id="second-tab-group" class="tabgroup">
+		<div id="Pricing" class="tab active">
+			<?php if ( $product->is_type( 'variable' ) ) {?>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>terms" class="squiggle squiggle-black">View License</a>
+			<section class="box">
+				<?php echo do_shortcode("[vartable]"); ?>
+			</section>
+			<?php } ?>
+		</div>
+		<div id="Specimen" class="tab">
 			<?php
 			  global $product;
 			 $attachment_ids = $product->get_gallery_attachment_ids();
@@ -278,7 +267,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			}
 			?>
 		</div>
-		<div id="gallery-panel" class="panel">
+		<div id="Waterfall" class="tab">
 			<?php
 			$adjectives = array("embattled ", "feisty ", "gregarious ", "meaningless ", "pathetic ", "gassy ",  "long-winded ", "defeated ", "grumpy ", "ticklish ", "overwhelmed ", "tacky ", "miffed ", "dangerous ", "decent ", "careful ", "flustered ", "noble ", "tasteful ", "doubting ", "unnecessary ", "surly ", "spaceage ", "shameless ", "zealous ",);
 			$description = array("brown ", "yellow ", "five-year-old ", "never-to-be-forgotten " ,"red ", "orange ", "kindhearted ", "(yet durable) ", "bristling ", "crosseyed ", "pigeontoed ", "bumbling ", "flimsy ", "prickly ", "musty ", "lumpy ", "snarly ", "fuzzy ", "quiet ",);
@@ -307,33 +296,24 @@ if ( ! defined( 'ABSPATH' ) ) {
 			}
 			?>
 		</div>
-<!-- 		<div id="process-panel" class="panel">
-			<p>Hello I am a dog</p>
-		</div> -->
-	</div>
-</div><!-- Radio tabs -->
+	</section>
+</div>
 <?php } ?>
 </div>
 </div>
 </div>
-<?php if($product->price){ ?>
+<?php if ( $product->is_type( 'simple' ) ) {?>
 	<div id="pricing" class="yellow-page product-footer">
 		<h1 class="footer-title"><?php the_title(); ?></h1>
 		<h4 class="price h4"><?php global $product; echo $product->get_price_html(); ?>
 		<meta itemprop="price" content="<?php echo esc_attr( $product->get_price() ); ?>" />
 		<meta itemprop="priceCurrency" content="<?php echo esc_attr( get_woocommerce_currency() ); ?>" /></h4>
-		<?php if ( $product->is_type( 'variable' ) ) {?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>terms" class="squiggle squiggle-black">View License</a>
-			<section class="box">
-				<?php echo do_shortcode("[vartable]"); ?>
-			</section>
-			<?php } else {?>
-			<form class="cart" method="post" enctype='multipart/form-data'>
-			 	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
-			 	<button type="submit" class="button chamfered-button"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
-			 	 	<a href="<?php echo esc_url( home_url( '/' ) ); ?>terms" class="squiggle squiggle-black">View License</a>
-			</form>
-			<?php } ?>
+		<form class="cart" method="post" enctype='multipart/form-data'>
+		 	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
+		 	<button type="submit" class="button chamfered-button"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+		 	<a href="../type/#trial" class="squiggle squiggle-black">Download Trials</a>
+		 	<a href="<?php echo esc_url( home_url( '/' ) ); ?>terms" class="squiggle squiggle-black">View License</a>
+		</form>
 	</div>
 <?php } else {?>
 

@@ -11,7 +11,15 @@
 add_action( 'wp_enqueue_scripts', 'enqueue_custom_styles_or_scripts' );
 
 function enqueue_custom_styles_or_scripts() {
+	wp_enqueue_style( 'verycool-style', get_stylesheet_uri() );
 
+	wp_enqueue_script( 'verycool-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+
+	wp_enqueue_script( 'verycool-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
 	if ( is_single('kansas-casual') ) {
 			wp_enqueue_style( 'webfonts-kansas-casual', get_stylesheet_directory_uri() . '/css/webfonts-kansas-casual.css' );
 	} else if ( is_single('ready-script') ) {
@@ -25,12 +33,10 @@ function enqueue_custom_styles_or_scripts() {
 	} else if ( is_single('cornbread') ) {
 			wp_enqueue_style( 'webfonts-cornbread', get_stylesheet_directory_uri() . '/css/webfonts-cornbread.css' );
 		}
-	if ( is_single() || is_product() ) {
-		$path = get_stylesheet_directory_uri() .'/js/';
-		wp_enqueue_script('post-navigation', $path.'jquery.navigate.js', array('jquery'));
-	} else 	if ( is_product() ) {
-		$path = get_stylesheet_directory_uri() .'/js/';
-		wp_enqueue_script('font-feature-controls', $path.'font-feature-controls.js', array());
+	if ( is_product() ) {
+		wp_deregister_script('jquery');
+		wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js', array(), null, true);
+		wp_enqueue_script( 'verycool-fontfeaturecontrols', get_template_directory_uri() . '/js/font-feature-controls.js', array(), '20151215', true );
 	}
 
 }
@@ -137,22 +143,6 @@ function verycool_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'verycool_widgets_init' );
-
-/**
- * Enqueue scripts and styles.
- */
-function verycool_scripts() {
-	wp_enqueue_style( 'verycool-style', get_stylesheet_uri() );
-
-	wp_enqueue_script( 'verycool-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
-	wp_enqueue_script( 'verycool-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
-}
-add_action( 'wp_enqueue_scripts', 'verycool_scripts' );
 
 /**
 	* Auto Assign templates

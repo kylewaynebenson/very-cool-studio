@@ -111,12 +111,6 @@
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'verycool' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
-			<?php if ( is_single() || is_product() ) { ?>
-				<div class="keyboard-navigation">
-					<div class="key key-left">◀</div>
-					<div class="key key-right">▶</div>
-				</div>
-			<?php }; ?>
 			<div class="squiggle-divider-full"></div>
 		</header><!-- #masthead -->
 		<div id="content" class="site-content">

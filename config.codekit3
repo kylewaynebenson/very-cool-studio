@@ -387,6 +387,15 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/js\/font-feature-controls.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/font-feature-controls-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/jquery.navigate.js": {
 		"ft": 64,
 		"mi": 1,
@@ -5561,6 +5570,24 @@
 		"oAP": "\/type\/cornbread\/Cornbread-Bold.woff2",
 		"oF": 0
 		},
+	"\/type\/cornbread\/Cornbread-BoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-BoldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-BoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-BoldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-BoldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-BoldItalic.woff2",
+		"oF": 0
+		},
 	"\/type\/cornbread\/Cornbread-Extrabold.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -5579,6 +5606,42 @@
 		"oAP": "\/type\/cornbread\/Cornbread-Extrabold.woff2",
 		"oF": 0
 		},
+	"\/type\/cornbread\/Cornbread-ExtraboldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-ExtraboldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-ExtraboldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-ExtraboldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-ExtraboldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-ExtraboldItalic.woff2",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-Italic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-Italic.eot",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-Italic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-Italic.woff",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-Italic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-Italic.woff2",
+		"oF": 0
+		},
 	"\/type\/cornbread\/Cornbread-Light.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -5595,6 +5658,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cornbread\/Cornbread-Light.woff2",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-LightItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-LightItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-LightItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-LightItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-LightItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-LightItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/cornbread\/Cornbread-Regular.eot": {
@@ -5631,6 +5712,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/type\/cornbread\/Cornbread-SemiBold.woff2",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-SemiBoldItalic.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-SemiBoldItalic.eot",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-SemiBoldItalic.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-SemiBoldItalic.woff",
+		"oF": 0
+		},
+	"\/type\/cornbread\/Cornbread-SemiBoldItalic.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/type\/cornbread\/Cornbread-SemiBoldItalic.woff2",
 		"oF": 0
 		},
 	"\/type\/gooper\/Gooper-Black.eot": {

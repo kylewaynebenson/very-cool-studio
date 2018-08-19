@@ -236,7 +236,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 </div><!-- #product-<?php the_ID(); ?> -->
 <?php do_action( 'woocommerce_after_single_product' ); ?>
 <div class="clear"></div>
-	<?php if (! $product->is_type( 'simple') && ! $product->is_in_stock()) { ?>
+	<?php if ($product->is_type( 'variable') && $product->is_in_stock()) { ?>
 	<ul class="tabs mt-30 mb-15" data-tabgroup="second-tab-group">	
 		<li class="tab"><a class="h6 active" href="#Pricing">Pricing</a></li>
 		<li class="tab"><a class="h6" href="#Specimen">Specimen</a></li>
@@ -310,8 +310,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 </div>
 </div>
 </div>
-<?php if ( $product->is_type( 'simple' ) ) {
-	if ( ! $product->is_in_stock()) {
+<?php if ( $product->is_type( 'simple' ) && $product->is_in_stock()) {
 	?>
 	<div id="pricing" class="yellow-page product-footer">
 		<h1 class="footer-title"><?php the_title(); ?></h1>
@@ -326,6 +325,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</form>
 	</div>
 	<?php } ?>
-<?php } else {?>
-
-<?php } ?>

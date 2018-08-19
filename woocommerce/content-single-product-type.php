@@ -249,7 +249,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<section id="second-tab-group" class="tabgroup">
 		<div id="Pricing" class="tab active">
 			<?php if ( $product->is_type( 'variable' ) ) {?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>terms">View License</a> or <a href="../type/#trial" class="squiggle squiggle-black">Download Trials</a>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>terms">View license agreement</a> or <a href="../type/#trial" >download trials</a>
 			<section class="box">
 				<?php echo do_shortcode("[vartable]"); ?>
 			</section>

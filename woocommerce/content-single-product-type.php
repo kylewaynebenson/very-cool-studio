@@ -138,7 +138,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				$typetesterdefault = "Regular";
 			}
 		?>
-		<div contenteditable="true" id="type-tester-editable" class="fontselect fontsize fontweight de 64 textfield <?php echo $post->post_name;?> <?php echo $typetesterdefault; ?>">Try <?php the_title(); ?></div> 
+		<div contenteditable="true" id="type-tester-editable" class="fontselect fontsize fontweight de 72 textfield <?php echo $post->post_name;?> <?php echo $typetesterdefault; ?>">Try <?php the_title(); ?></div> 
 		<div class="type-tester-header">
 			<input id="font-size-slider" type="range" min="10" max="160" value="48">
 			<div class="select">
@@ -249,7 +249,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<section id="second-tab-group" class="tabgroup">
 		<div id="Pricing" class="tab active">
 			<?php if ( $product->is_type( 'variable' ) ) {?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>terms" class="squiggle squiggle-black">View License</a>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>terms" class="squiggle squiggle-black">View License</a> <a href="../type/#trial" class="squiggle squiggle-black">Download Trials</a>
 			<section class="box">
 				<?php echo do_shortcode("[vartable]"); ?>
 			</section>

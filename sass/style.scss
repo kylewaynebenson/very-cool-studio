@@ -204,9 +204,6 @@ a.squiggle {
 		}
 	}
 }
-a.squiggle-black {
-
-}
 .cat-links {
 	a {
 		margin-right: 3px;
@@ -1406,7 +1403,7 @@ Product Styles
 .fontselect {
 	width: 100%;
 	display: block;
-	font-size: 60px;
+	font-size: 72px;
 	&.cardinal-grotesque { font-family: 'Cardinal Grotesque'; line-height: 1; &.condensed { font-family: 'Cardinal Grotesque Condensed';} &.extracondensed { font-family: 'Cardinal Grotesque ExtraCondensed';} &.wide { font-family: 'Cardinal Grotesque Wide';} &.semicondensed { font-family: 'Cardinal Grotesque SemiCondensed';} }
 	&.gooper { font-family: 'Gooper'; line-height: 1; &.italic { font-style: italic;} }
 	&.business-script { font-family: 'Business Script'; line-height: 1;}

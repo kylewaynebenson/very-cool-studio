@@ -764,59 +764,14 @@ article.product-trail-fonts {
 			margin-left: span(1);
 			width: span(11);
 			margin-bottom: span(1);
-			// &:nth-of-type(3) {
-			// 	position: relative;
-			// 	&:before, &:after {
-			// 		display: block;
-			// 		position: absolute;
-			// 		text-align: center;
-			// 		left: span(26);
-			// 		height: 50%;
-			// 		width: span(24);
-			// 	}
-			// 	&:before {
-			// 		color: $yellow;
-			// 		font-family: 'Very Cool Icons';
-			// 		font-size: 12em;
-			// 		padding-top: 20px;
-			// 		font-weight: 500;
-			// 		line-height: 1;
-			// 		top: 0px;
-			// 		content: "\E003";
-			// 		background:
-			// 			linear-gradient(135deg, transparent 15px, $gray-1 0) top left,
-			// 			linear-gradient(225deg, transparent 15px, $gray-1 0) top right,
-			// 			linear-gradient(315deg, transparent 0px, $gray-1 0) bottom right,
-			// 			linear-gradient(45deg,  transparent 0px, $gray-1 0) bottom left;
-			// 		background-size: 52% 52%;
-			// 		background-repeat: no-repeat;
-			// 	}
-			// 	&:after {
-			// 		color: $black;
-			// 		font-family: $type-headline-cond;
-			// 		font-weight: 700;
-			// 		font-size: 4.3em;
-			// 		line-height: .85;
-			// 		letter-spacing: .02em; 
-			// 		padding: 0px 10px;
-			// 		top: 50%;
-			// 		content: "Very Cool Studio: Established This Morning";
-			// 		background:
-			// 			linear-gradient(135deg, transparent 0px, $gray-1 0) top left,
-			// 			linear-gradient(225deg, transparent 0px, $gray-1 0) top right,
-			// 			linear-gradient(315deg, transparent 15px, $gray-1 0) bottom right,
-			// 			linear-gradient(45deg,  transparent 15px, $gray-1 0) bottom left;
-			// 		background-size: 52% 52%;
-			// 		background-repeat: no-repeat;
-			// 	}
-			// }
+			height: 267px;
 		}
 		@media (min-width: 920px) {
 			float: left;
 			width: span(7);
 			margin-left: span(1);
 			margin-bottom: span(1);
-
+			height: 267px;
 		}
 		.entry-header {
 			background: $white;
@@ -1464,7 +1419,7 @@ body {
 #Waterfall {
 	margin-bottom: 20px;
 	.fontselect {
-		overflow-y: visible;
+		overflow-y: hidden;
 		overflow-x: hidden;
 		word-break: keep-all;
     		white-space: nowrap;

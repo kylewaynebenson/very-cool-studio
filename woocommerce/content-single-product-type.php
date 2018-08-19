@@ -50,9 +50,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 			        <li><span class="post-meta-key">Widths</span> <?php echo get_post_meta($post->ID, 'Widths', true); ?></li>
 			    <?php } ?>
 			</ul>
-			<div class="summary-cart">
-				<?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?>
-			</div>
 			<meta itemprop="url" content="<?php the_permalink(); ?>" />
 	</header><!-- .entry-header -->
 	<div class="post-content">

@@ -1372,6 +1372,9 @@ Product Styles
 		.type-tester-title .amount {
 			display: none;	
 		}
+		#pricing.yellow-page {
+			display: none;
+		}
 	}
 }
 .single-product {
@@ -2784,6 +2787,9 @@ footer.footer {
 }
 .edit-link {
 	display: none;
+}
+.text-align-center {
+	text-align: center;
 }
 .mt-5 {
   margin-top: .5vw;

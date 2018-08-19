@@ -80,6 +80,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<label class="type-tester-radio"><input name="smcp" checked="checked" type="radio"> Off</label>
 					<label class="type-tester-radio"><input id="smcp" name="smcp" type="radio"> Small Caps <span class="hidden">(smcp)</span></label>
 					<label class="type-tester-radio"><input id="c2sc" name="smcp" type="radio"> Small Caps from Caps <span class="hidden">(c2sc)</span></label>
+					<label class="type-tester-radio"><input id="case" name="smcp" type="radio"> Caps <span class="hidden">(case)</span></label>
 				</div>
 				<div id="NumberCase">
 					<label class="type-tester-radio"><input name="numsty" checked="checked" type="radio"> Default</label>
@@ -246,7 +247,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<section id="second-tab-group" class="tabgroup">
 		<div id="Pricing" class="tab active">
 			<?php if ( $product->is_type( 'variable' ) ) {?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>terms">View license agreement</a> or <a href="../type/#trial" >download trials</a>
+			<span class="text-align-center"><a href="<?php echo esc_url( home_url( '/' ) ); ?>terms">View license agreement</a> or <a href="../type/#trial" >download trials</a></span>
 			<section class="box">
 				<?php echo do_shortcode("[vartable]"); ?>
 			</section>

@@ -49,7 +49,7 @@ function() {
   //     window.location.reload();
   //   }
   // )
-  refreshFeatures();
+
 
 function refreshSample() {
 
@@ -80,7 +80,7 @@ function refreshSample() {
 
 function refreshFeatures() {
   var defaultOff = [
-    'smcp', 'c2sc',
+    'smcp', 'c2sc', 'case',
     'lnum', 'onum', 'tnum', 'pnum',
     'frac', 'afrc',
     'liga', 'dlig', 'hlig', 'clig',
@@ -112,4 +112,5 @@ function refreshFeatures() {
 
   refreshSample();
 }
+  refreshFeatures();
 });

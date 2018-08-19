@@ -560,15 +560,18 @@ article.product-trail-fonts {
 			width: span(7);
 			margin-left: span(1);
 			margin-bottom: span(1);
+			height: 267px;
 		}
 		@media only screen and (min-width: 700px) and (max-width: 919px) {
 			float: left;
 			margin-left: span(1);
 			width: span(11);
 			margin-bottom: span(1);
+			height: 267px;
 		}
 		@media (min-width: 1048px) {
 			width: span(5);
+			height: 267px;
 		}
 	}
 	article.post:not(.type-product) {
@@ -764,14 +767,12 @@ article.product-trail-fonts {
 			margin-left: span(1);
 			width: span(11);
 			margin-bottom: span(1);
-			height: 267px;
 		}
 		@media (min-width: 920px) {
 			float: left;
 			width: span(7);
 			margin-left: span(1);
 			margin-bottom: span(1);
-			height: 267px;
 		}
 		.entry-header {
 			background: $white;

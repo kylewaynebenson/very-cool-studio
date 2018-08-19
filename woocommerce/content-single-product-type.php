@@ -252,6 +252,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<br/>
 	<?php } ?>
 	<section id="second-tab-group" class="tabgroup">
+		<?php if ( ! $gallerybool ) {?>
 		<div id="Pricing" class="tab active">
 			<?php if ( $product->is_type( 'variable' ) ) {?>
 			<span class="text-align-center"><a href="<?php echo esc_url( home_url( '/' ) ); ?>terms">View license agreement</a> or <a href="../type/#trial" >download trials</a></span>
@@ -260,10 +261,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</section>
 			<?php } ?>
 		</div>
-		<?php if ( $gallerybool ) {?>
-		<div id="Specimen" class="tab active">
-		<?php } else  {?>	
 		<div id="Specimen" class="tab">
+		<?php } else  {?>	
+		<div id="Specimen" class="tab active">
 		<?php } ?>
 			<?php
 			  global $product;

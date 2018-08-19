@@ -236,14 +236,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 </div><!-- #product-<?php the_ID(); ?> -->
 <?php do_action( 'woocommerce_after_single_product' ); ?>
 <div class="clear"></div>
-<?php if (!$product->get_gallery_attachment_ids()){ ?>
-	<br/>
-<?php }else{ ?>
-	<ul class="tabs mt-30 mb-15" data-tabgroup="second-tab-group">
+	<?php if (! $product->is_type( 'simple') && ! $product->is_in_stock()) { ?>
+	<ul class="tabs mt-30 mb-15" data-tabgroup="second-tab-group">	
 		<li class="tab"><a class="h6 active" href="#Pricing">Pricing</a></li>
 		<li class="tab"><a class="h6" href="#Specimen">Specimen</a></li>
 		<li class="tab"><a class="h6" href="#Waterfall">Waterfall</a></li>
 	</ul>
+	<?php } else if ($product->get_gallery_attachment_ids()) { 
+			$gallerybool = true; ?>
+	<ul class="tabs mt-30 mb-15" data-tabgroup="second-tab-group">	
+		<li class="tab"><a class="h6 active" href="#Specimen">Specimen</a></li>
+		<li class="tab"><a class="h6" href="#Waterfall">Waterfall</a></li>
+	</ul>
+	<?php } else {?>
+	<br/>
+	<?php } ?>
 	<section id="second-tab-group" class="tabgroup">
 		<div id="Pricing" class="tab active">
 			<?php if ( $product->is_type( 'variable' ) ) {?>
@@ -253,7 +260,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</section>
 			<?php } ?>
 		</div>
+		<?php if ( $gallerybool ) {?>
+		<div id="Specimen" class="tab active">
+		<?php } else  {?>	
 		<div id="Specimen" class="tab">
+		<?php } ?>
 			<?php
 			  global $product;
 			 $attachment_ids = $product->get_gallery_attachment_ids();
@@ -296,11 +307,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</div>
 	</section>
 </div>
-<?php } ?>
 </div>
 </div>
 </div>
-<?php if ( $product->is_type( 'simple' ) ) {?>
+<?php if ( $product->is_type( 'simple' ) ) {
+	if ( ! $product->is_in_stock()) {
+	?>
 	<div id="pricing" class="yellow-page product-footer">
 		<h1 class="footer-title"><?php the_title(); ?></h1>
 		<h4 class="price h4"><?php global $product; echo $product->get_price_html(); ?>
@@ -313,6 +325,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		 	<a href="<?php echo esc_url( home_url( '/' ) ); ?>terms" class="squiggle squiggle-black">View License</a>
 		</form>
 	</div>
+	<?php } ?>
 <?php } else {?>
 
 <?php } ?>

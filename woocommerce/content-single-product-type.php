@@ -69,7 +69,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<li class="tab"><a class="h6" href="#NumberCase">Number Case</a></li>
 				<li class="tab"><a class="h6" href="#Number">Number Spacing</a></li>
 				<li class="tab"><a class="h6" href="#Fractions">Fractions</a></li>
-				<!-- <li class="tab"><a class="h6" href="#Alternates">Alternates</a></li> -->
+				<li class="tab"><a class="h6" href="#Alternates">Alternates</a></li>
 				<li class="tab"><a class="h6" href="#Stylistic">Stylistic Sets</a></li>
 			</ul>
 			<section id="first-tab-group" class="tabgroup">
@@ -99,11 +99,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<label class="type-tester-radio"><input id="frac" name="frac" type="radio"> Normal <span class="hidden">(frac)</span></label>
 					<label class="type-tester-radio"><input id="afrc" name="frac" type="radio"> Alternate <span class="hidden">(afrc)</span></label>
 				</div>
-				<!-- <div id="Alternates">
+				<div id="Alternates">
 					<label class="type-tester-checkbox"><input id="swsh" type="checkbox"> Swash <span class="hidden">(swsh)</span></label>
 					<label class="type-tester-checkbox"><input id="calt" type="checkbox"> Contextual <span class="hidden">(calt)</span></label>
 					<label class="type-tester-checkbox"><input id="hist" type="checkbox"> Historical <span class="hidden">(hist)</span></label>
-				</div> -->
+				</div>
 				<div id="Stylistic">
 					<label class="type-tester-checkbox"><input id="ss01" type="checkbox"> Set 1 <span class="hidden">(ss01)</span></label>
 					<label class="type-tester-checkbox"><input id="ss02" type="checkbox"> Set 2 <span class="hidden">(ss02)</span></label>

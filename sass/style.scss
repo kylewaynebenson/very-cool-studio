@@ -75,7 +75,7 @@ $susy: (
 
 .squiggle-divider-full {
 	&:after {
-		user-select: none; 
+		user-select: none;
 		text-indent: 6px;
 		display: block;
 		width: 100%;
@@ -124,7 +124,7 @@ $susy: (
 }
 
 ::selection {
-    color: $black; 
+    color: $black;
     background: $yellow;
 }
 
@@ -477,14 +477,14 @@ article.product-trail-fonts {
 		}
 		.entry-footer {
 			padding: 4px;
-			padding-bottom: 8px;		
+			padding-bottom: 8px;
 			text-align: center;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			@media only screen and (min-width: 700px) {
 				min-height: 92px;
-			}	
+			}
 			.cat-links {
 				a {
 					background: $yellow;
@@ -887,7 +887,7 @@ Account Details
 Cart Styles
 --------------------------------------------------------------*/
 .woocommerce-checkout {
-	.woocommerce { 
+	.woocommerce {
 		@media (max-width: 649px) {
 			.checkout-extra-buttons:first-of-type {
 				margin-bottom: 10px;
@@ -1270,7 +1270,7 @@ Cart Styles
 				padding-bottom: 10px;
 			}
 		}
-	}	
+	}
 	.cart {
 		#coupon_code {
 			width: span(6);
@@ -1360,6 +1360,7 @@ Product Styles
 	font-size: 72px;
 	&.cardinal-grotesque { font-family: 'Cardinal Grotesque'; line-height: 1; &.condensed { font-family: 'Cardinal Grotesque Condensed';} &.extracondensed { font-family: 'Cardinal Grotesque ExtraCondensed';} &.wide { font-family: 'Cardinal Grotesque Wide';} &.semicondensed { font-family: 'Cardinal Grotesque SemiCondensed';} }
 	&.gooper { font-family: 'Gooper'; line-height: 1; &.italic { font-style: italic;} }
+      &.bruphy { font-family: 'Bruphy'; line-height: 1; &.italic { font-style: italic;} }
 	&.business-script { font-family: 'Business Script'; line-height: 1;}
 	&.kansas-casual { font-family: 'Kansas Casual'; line-height: 1;}
 	&.maritime-champion { font-family: 'Maritime Champion'; line-height: 1; &.st { font-family: 'Maritime Champion ST';} &.sl { font-family: 'Maritime Champion SL';}}
@@ -1383,7 +1384,7 @@ Product Styles
         opacity: 1;
     }
 }
-body {        
+body {
     animation: fake 1s infinite;
 }
 .tabs {
@@ -1412,7 +1413,7 @@ body {
 			text-decoration: none;
 			cursor: hand;
 			cursor: pointer;
-			white-space: nowrap; 
+			white-space: nowrap;
 			overflow: hidden;
 			text-overflow: ellipsis;
 			&:hover, &.active {
@@ -1550,7 +1551,7 @@ body {
 		font-size: 20px;
 		display: flex;
 		justify-content: space-between;
-		flex-wrap: wrap;		
+		flex-wrap: wrap;
 		.select {
 			height: 40px;
 			flex: 1;
@@ -1688,12 +1689,12 @@ body {
 						display: none;
 					}
 					&:first-letter {
-						float: left; 
-						font-size: 3em; 
-						line-height: .95; 
-						padding-top: 4px; 
-						padding-right: 9px; 
-						padding-left: 0px; 
+						float: left;
+						font-size: 3em;
+						line-height: .95;
+						padding-top: 4px;
+						padding-right: 9px;
+						padding-left: 0px;
 					}
 				}
 			}
@@ -1842,14 +1843,14 @@ body {
 						position: absolute;
 						content: " ";
 						background: $gray-1;
-						width: 24px; 
+						width: 24px;
 						height: 24px;
-						top: 0px; 
+						top: 0px;
 						border-top: 12px solid white;
 						border-bottom: 12px solid white;
 					}
 					@media only screen and (min-width: 768px) and (max-width: 1160px) {
-						user-select: none; 
+						user-select: none;
 					}
 					&:hover {
 						background: lighten($gray-1,2%);
@@ -1862,35 +1863,35 @@ body {
 			}
 			.nav-previous a {
 				&:before {
-					border-right: 12px solid $gray-1; 
+					border-right: 12px solid $gray-1;
 					border-left: 12px solid white;
 					left: -12px;
 				}
 				&:hover {
 					&:before {
-						border-right: 12px solid lighten($gray-1,2%); 
+						border-right: 12px solid lighten($gray-1,2%);
 					}
 				}
 				&:active {
 					&:before {
-						border-right: 12px solid darken($gray-1,8%); 
+						border-right: 12px solid darken($gray-1,8%);
 					}
 				}
 			}
 			.nav-next a {
 				&:before {
-					border-left:12px solid $gray-1; 
+					border-left:12px solid $gray-1;
 					border-right:12px solid white;
 					right: -12px;
 				}
 				&:hover {
 					&:before {
-						border-left: 12px solid lighten($gray-1,2%); 
+						border-left: 12px solid lighten($gray-1,2%);
 					}
 				}
 				&:active {
 					&:before {
-						border-left: 12px solid darken($gray-1,8%); 
+						border-left: 12px solid darken($gray-1,8%);
 					}
 				}
 			}
@@ -2024,13 +2025,13 @@ body {
 		position: relative;
 		left: 0px;
 		top: 0px;
-		
+
 	}
 	article .post-content footer {
 		margin-bottom: 1.25em;
 		margin-top: 1.25em;
 		&:before {
-			user-select: none; 
+			user-select: none;
 			text-indent: 6px;
 			display: block;
 			width: 100%;
@@ -2331,7 +2332,7 @@ body {
 	@media (min-width: 1460px) {
 		margin: 0 auto;
 		width: 1400px;
-	}	
+	}
 }
 .yellow-page {
 	color: $black;
@@ -2357,13 +2358,13 @@ body {
 		}
 	}
 	.intro-text {
-		&:first-letter { 
-			float: left; 
-			font-size: 3em; 
-			line-height: .95; 
-			padding-top: 4px; 
-			padding-right: 9px; 
-			padding-left: 0px; 
+		&:first-letter {
+			float: left;
+			font-size: 3em;
+			line-height: .95;
+			padding-top: 4px;
+			padding-right: 9px;
+			padding-left: 0px;
 		}
 		@media (min-width: 768px) {
 			margin-bottom: 3em;
@@ -2496,7 +2497,7 @@ body {
 				height: 24px;
 				text-align: center;
 				@media only screen and (min-width: 768px) and (max-width: 1160px) {
-					user-select: none; 
+					user-select: none;
 				}
 				&:hover {
 					background: lighten($gray-1,2%);
@@ -2515,18 +2516,18 @@ body {
 			position: absolute;
 			content: " ";
 			background-color: $gray-1;
-			width: 24px; 
-			height: 24px; 
+			width: 24px;
+			height: 24px;
 			border-top: 12px solid white;
 			border-bottom: 12px solid white;
 		}
 		.nav-previous:before {
-			border-right: 12px solid $gray-1; 
+			border-right: 12px solid $gray-1;
 			border-left: 12px solid white;
 			left: -22px;
 		}
 		.nav-next:before {
-			border-left:12px solid $gray-1; 
+			border-left:12px solid $gray-1;
 			border-right:12px solid white;
 			right: -22px;
 		}
@@ -2599,7 +2600,7 @@ footer.footer {
 		}
 		@media (min-width: 1048px) {
 			.contact-phone, .contact-title {
-				@include span(12);	
+				@include span(12);
 			}
 		}
 		.contact-title {
@@ -2695,9 +2696,9 @@ footer.footer {
 		}
 		.h3 {
 			line-height: 1.2;
-		}	
+		}
 	}
-	
+
 }
 /*--------------------------------------------------------------
 # Alert/Error Styles
@@ -2711,7 +2712,7 @@ footer.footer {
 		line-height: 1.2;
 	}
 	padding: 17px 20px;
-	@media (min-width: 500px) {	
+	@media (min-width: 500px) {
 		padding-right: 128px;
 		position: relative;
 	}
@@ -2727,7 +2728,7 @@ footer.footer {
 			margin-bottom: 12px;
 		}
 		@media (min-width: 500px) {
-			position: absolute; 
+			position: absolute;
 			right: 17px;
 			top: 50%;
 			transform: translateY(-50%);

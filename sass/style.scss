@@ -254,6 +254,15 @@ code {
 	}
 }
 /*--------------------------------------------------------------
+# Utility classes
+--------------------------------------------------------------*/
+.t__align-right {
+      text-align: right;
+}
+.t__align-center {
+      text-align: center;
+}
+/*--------------------------------------------------------------
 # Loop Styles
 --------------------------------------------------------------*/
 @-webkit-keyframes gradient-animation {
@@ -482,9 +491,6 @@ article.product-trail-fonts {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			@media only screen and (min-width: 700px) {
-				min-height: 92px;
-			}
 			.cat-links {
 				a {
 					background: $yellow;

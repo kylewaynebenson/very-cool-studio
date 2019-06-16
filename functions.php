@@ -33,6 +33,9 @@ function enqueue_custom_styles_or_scripts() {
 	} else if ( is_single('cornbread') ) {
 			wp_enqueue_style( 'webfonts-cornbread', get_stylesheet_directory_uri() . '/css/webfonts-cornbread.css' );
 		}
+	} else if ( is_single('bruphy') ) {
+			wp_enqueue_style( 'webfonts-bruphy', get_stylesheet_directory_uri() . '/css/webfonts-bruphy.css' );
+		}
 	if ( is_product() ) {
 		wp_deregister_script('jquery');
 		wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js', array(), null, true);
@@ -147,7 +150,7 @@ add_action( 'widgets_init', 'verycool_widgets_init' );
 /**
 	* Auto Assign templates
 	*/
-add_action('after_setup_theme', 'create_pages'); 
+add_action('after_setup_theme', 'create_pages');
 function create_pages(){
     $awesome_page_id = get_option("awesome_page_id");
     if (!$awesome_page_id) {
@@ -346,7 +349,7 @@ add_filter('request', function( $vars ) {
 			if ( !empty( $old_vars['orderby'] ) )
 	 	        	$vars['orderby'] = $old_vars['orderby'];
       			if ( !empty( $old_vars['order'] ) )
- 			        $vars['order'] = $old_vars['order'];	
+ 			        $vars['order'] = $old_vars['order'];
 		}
 	}
 	return $vars;

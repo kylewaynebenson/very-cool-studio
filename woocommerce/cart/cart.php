@@ -32,7 +32,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 		<tr>
 			<th class="product-name h5"><?php _e( 'Product', 'woocommerce' ); ?></th>
 			<th class="product-price h5"><?php _e( 'Price', 'woocommerce' ); ?></th>
-			<th class="product-quantity h5"><?php _e( 'QTY or Users', 'woocommerce' ); ?></th>
+			<th class="product-quantity h5"><?php _e( 'QTY or License(s)', 'woocommerce' ); ?></th>
 			<th class="product-remove h5">&nbsp;</th>
 			<th class="product-subtotal h5"><?php _e( 'Total', 'woocommerce' ); ?></th>
 		</tr>

@@ -1365,8 +1365,8 @@ Product Styles
 	display: block;
 	font-size: 72px;
 	&.cardinal-grotesque { font-family: 'Cardinal Grotesque'; line-height: 1; &.condensed { font-family: 'Cardinal Grotesque Condensed';} &.extracondensed { font-family: 'Cardinal Grotesque ExtraCondensed';} &.wide { font-family: 'Cardinal Grotesque Wide';} &.semicondensed { font-family: 'Cardinal Grotesque SemiCondensed';} }
-	&.gooper { font-family: 'Gooper'; line-height: 1; &.italic { font-style: italic;} }
-      &.bruphy { font-family: 'Bruphy'; line-height: 1; &.italic { font-style: italic;} }
+	&.gooper { font-family: 'Gooper'; line-height: 1; &.italic { font-style: italic;} &.condensed { font-family: 'Gooper Condensed';} }
+      &.bruphy { font-family: 'Bruphy'; line-height: 1; &.italic { font-style: italic;} &.condensed { font-family: 'Bruphy Condensed';} }
 	&.business-script { font-family: 'Business Script'; line-height: 1;}
 	&.kansas-casual { font-family: 'Kansas Casual'; line-height: 1;}
 	&.maritime-champion { font-family: 'Maritime Champion'; line-height: 1; &.st { font-family: 'Maritime Champion ST';} &.sl { font-family: 'Maritime Champion SL';}}

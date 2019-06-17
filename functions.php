@@ -32,11 +32,9 @@ function enqueue_custom_styles_or_scripts() {
 			wp_enqueue_style( 'webfonts-gooper', get_stylesheet_directory_uri() . '/css/webfonts-gooper.css' );
 	} else if ( is_single('cornbread') ) {
 			wp_enqueue_style( 'webfonts-cornbread', get_stylesheet_directory_uri() . '/css/webfonts-cornbread.css' );
-		}
 	} else if ( is_single('bruphy') ) {
 			wp_enqueue_style( 'webfonts-bruphy', get_stylesheet_directory_uri() . '/css/webfonts-bruphy.css' );
-		}
-	if ( is_product() ) {
+	} if ( is_product() ) {
 		wp_deregister_script('jquery');
 		wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js', array(), null, true);
 		wp_enqueue_script( 'verycool-fontfeaturecontrols', get_template_directory_uri() . '/js/font-feature-controls.js', array(), '20151215', true );

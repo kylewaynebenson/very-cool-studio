@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Kansas Casual';
+  font-weight: 300;
+  src: url("../type/kansas-casual/KansasCasual-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/kansas-casual/KansasCasual-Light.eot?#iefix") format("embedded-opentype"), url("../type/kansas-casual/KansasCasual-Light.woff2") format("woff2"), url("../type/kansas-casual/KansasCasual-Light.woff") format("woff"); }
+@font-face {
+  font-family: 'Kansas Casual';
+  font-weight: 400;
+  src: url("../type/kansas-casual/KansasCasual-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/kansas-casual/KansasCasual-Regular.eot?#iefix") format("embedded-opentype"), url("../type/kansas-casual/KansasCasual-Regular.woff2") format("woff2"), url("../type/kansas-casual/KansasCasual-Regular.woff") format("woff"); }
+@font-face {
+  font-family: 'Kansas Casual';
+  font-weight: 500;
+  src: url("../type/kansas-casual/KansasCasual-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/kansas-casual/KansasCasual-Medium.eot?#iefix") format("embedded-opentype"), url("../type/kansas-casual/KansasCasual-Medium.woff2") format("woff2"), url("../type/kansas-casual/KansasCasual-Medium.woff") format("woff"); }
+@font-face {
+  font-family: 'Kansas Casual';
+  font-weight: 600;
+  src: url("../type/kansas-casual/KansasCasual-SemiBold.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/kansas-casual/KansasCasual-SemiBold.eot?#iefix") format("embedded-opentype"), url("../type/kansas-casual/KansasCasual-SemiBold.woff2") format("woff2"), url("../type/kansas-casual/KansasCasual-SemiBold.woff") format("woff"); }
+@font-face {
+  font-family: 'Kansas Casual';
+  font-weight: 700;
+  src: url("../type/kansas-casual/KansasCasual-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/kansas-casual/KansasCasual-Bold.eot?#iefix") format("embedded-opentype"), url("../type/kansas-casual/KansasCasual-Bold.woff2") format("woff2"), url("../type/kansas-casual/KansasCasual-Bold.woff") format("woff"); }
+@font-face {
+  font-family: 'Kansas Casual';
+  font-weight: 900;
+  src: url("../type/kansas-casual/KansasCasual-Black.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/kansas-casual/KansasCasual-Black.eot?#iefix") format("embedded-opentype"), url("../type/kansas-casual/KansasCasual-Black.woff2") format("woff2"), url("../type/kansas-casual/KansasCasual-Black.woff") format("woff"); }
+
+/*# sourceMappingURL=webfonts-kansas-casual.css.map */

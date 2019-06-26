@@ -1,0 +1,65 @@
+/*
+Error: File to import not found or unreadable: bourbon.
+       Load path: /Users/kylebenson/Sites/1600_VeryCoolStudio/wp-content/themes/very-cool-studio/sass
+        on line 10 of sass/woocommerce/prettyPhoto.scss
+
+5:  *\/
+6: 
+7: /**
+8:  * Imports
+9:  *\/
+10: @import "bourbon";
+11: @import "mixins";
+12: @import "variables";
+13: @import "fonts";
+14: 
+15: /**
+
+Backtrace:
+sass/woocommerce/prettyPhoto.scss:10
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/tree/import_node.rb:44:in `import'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/stack.rb:79:in `with_base'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:294:in `watch'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/plugin.rb:109:in `method_missing'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/exec/base.rb:50:in `parse'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/lib/sass/exec/base.rb:18:in `parse!'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/gems/sass-3.6.0/bin/sass:13:in `<top (required)>'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/bin/sass:23:in `load'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/bin/sass:23:in `<main>'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/bin/ruby_executable_hooks:24:in `eval'
+/Users/kylebenson/.rvm/gems/ruby-2.4.5/bin/ruby_executable_hooks:24:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: bourbon.\A        Load path: /Users/kylebenson/Sites/1600_VeryCoolStudio/wp-content/themes/very-cool-studio/sass\A         on line 10 of sass/woocommerce/prettyPhoto.scss\A \A 5:  */\A 6: \A 7: /**\A 8:  * Imports\A 9:  */\A 10: @import \"bourbon\";\A 11: @import \"mixins\";\A 12: @import \"variables\";\A 13: @import \"fonts\";\A 14: \A 15: /**"; }

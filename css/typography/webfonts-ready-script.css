@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Ready Script';
+  font-weight: 300;
+  src: url("../type/ready-script/ReadyScript-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/ready-script/ReadyScript-Light.eot?#iefix") format("embedded-opentype"), url("../type/ready-script/ReadyScript-Light.woff2") format("woff2"), url("../type/ready-script/ReadyScript-Light.woff") format("woff"); }
+@font-face {
+  font-family: 'Ready Script';
+  font-weight: 400;
+  src: url("../type/ready-script/ReadyScript-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/ready-script/ReadyScript-Regular.eot?#iefix") format("embedded-opentype"), url("../type/ready-script/ReadyScript-Regular.woff2") format("woff2"), url("../type/ready-script/ReadyScript-Regular.woff") format("woff"); }
+@font-face {
+  font-family: 'Ready Script';
+  font-weight: 500;
+  src: url("../type/ready-script/ReadyScript-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/ready-script/ReadyScript-Medium.eot?#iefix") format("embedded-opentype"), url("../type/ready-script/ReadyScript-Medium.woff2") format("woff2"), url("../type/ready-script/ReadyScript-Medium.woff") format("woff"); }
+@font-face {
+  font-family: 'Ready Script';
+  font-weight: 600;
+  src: url("../type/ready-script/ReadyScript-SemiBold.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/ready-script/ReadyScript-SemiBold.eot?#iefix") format("embedded-opentype"), url("../type/ready-script/ReadyScript-SemiBold.woff2") format("woff2"), url("../type/ready-script/ReadyScript-SemiBold.woff") format("woff"); }
+@font-face {
+  font-family: 'Ready Script';
+  font-weight: 700;
+  src: url("../type/ready-script/ReadyScript-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/ready-script/ReadyScript-Bold.eot?#iefix") format("embedded-opentype"), url("../type/ready-script/ReadyScript-Bold.woff2") format("woff2"), url("../type/ready-script/ReadyScript-Bold.woff") format("woff"); }
+@font-face {
+  font-family: 'Ready Script';
+  font-weight: 800;
+  src: url("../type/ready-script/ReadyScript-UltraBold.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/ready-script/ReadyScript-UltraBold.eot?#iefix") format("embedded-opentype"), url("../type/ready-script/ReadyScript-UltraBold.woff2") format("woff2"), url("../type/ready-script/ReadyScript-UltraBold.woff") format("woff"); }
+@font-face {
+  font-family: 'Ready Script';
+  font-weight: 900;
+  src: url("../type/ready-script/ReadyScript-Black.eot");
+  /* IE9 Compat Modes */
+  src: url("../type/ready-script/ReadyScript-Black.eot?#iefix") format("embedded-opentype"), url("../type/ready-script/ReadyScript-Black.woff2") format("woff2"), url("../type/ready-script/ReadyScript-Black.woff") format("woff"); }
+
+/*# sourceMappingURL=webfonts-ready-script.css.map */
